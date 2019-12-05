@@ -1,0 +1,2221 @@
+
+<div class="container-xl clearfix px-3 mt-4">
+    
+
+
+  <div class="h-card col-lg-3 col-md-4 col-12 float-md-left pr-md-3 pr-xl-6" itemscope itemtype="http://schema.org/Person">
+
+    <div class="user-profile-sticky-bar js-user-profile-sticky-bar">
+      <div class="user-profile-mini-vcard d-table">
+        <span class="user-profile-mini-avatar d-table-cell v-align-middle lh-condensed-ultra pr-2">
+          <img class="rounded-1" height="32" width="32" alt="@LukeSmithxyz" src="https://avatars2.githubusercontent.com/u/29150857?s=88&amp;v=4" />
+        </span>
+        <span class="d-table-cell v-align-middle lh-condensed js-user-profile-following-mini-toggle">
+          <strong>LukeSmithxyz</strong>
+          
+    <span class="user-following-container js-toggler-container js-social-container ">
+
+      <span class="follow">
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/follow?target=LukeSmithxyz" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uy/Ucbid7QHk23evo85w7CA8u+JZ0MhcqncKeteXTyFy3upwQ61CKm+CJRaqT4TT+kt5QlUlY1q2DuMuEA2zyA==" />
+          <input type="submit" name="commit" value="Follow" class="btn btn-sm mini-follow-button  js-toggler-target" title="Follow LukeSmithxyz" aria-label="Follow this person" data-disable-with="Follow" />
+</form>      </span>
+
+      <span class="unfollow">
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/unfollow?target=LukeSmithxyz" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="zA4mPBAjvQbEPYi901ynH3zKGqExMdaL+PcaZswg0YEkVEbOTklfPmZ5zWC/qBHM87E85vP09EUVh9BLBbEtvQ==" />
+          <input type="submit" name="commit" value="Unfollow" class="btn btn-sm mini-follow-button js-toggler-target" title="Unfollow LukeSmithxyz" aria-label="Unfollow this person" data-disable-with="Unfollow" />
+</form>      </span>
+    </span>
+
+        </span>
+      </div>
+    </div>
+
+    <div class="clearfix mb-2">
+      <div class="float-left col-3 col-md-12 pr-3 pr-md-0">
+          <a itemprop="image" class="u-photo d-block position-relative" aria-hidden="true" href="https://avatars0.githubusercontent.com/u/29150857?s=400&amp;v=4"><img alt="" width="260" height="260" class="avatar width-full height-full avatar-before-user-status" src="https://avatars1.githubusercontent.com/u/29150857?s=460&amp;v=4" /></a>
+
+        
+  <div class="user-status-container border position-relative hide-sm hide-md ">
+    <div class="d-flex">
+      
+  <div class="d-flex p-2 width-full " data-team-hovercards-enabled>
+    <div class="flex-self-start mr-1 ml-1">
+      <div><g-emoji class="g-emoji" alias="sunglasses" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png">😎</g-emoji></div>
+    </div>
+    <div class="user-status-message-wrapper f6 mt-1 text-gray-dark ws-normal ">
+        <div>Boomer mindset</div>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+      </div>
+      <div class="float-left col-9 col-md-12 pl-2 pl-md-0">
+          
+<div class="vcard-names-container pt-1 pt-md-3 pb-1 pb-md-3 js-sticky js-user-profile-sticky-fields">
+  <h1 class="vcard-names">
+    <span class="p-name vcard-fullname d-block overflow-hidden" itemprop="name">Luke Smith</span>
+    <span class="p-nickname vcard-username d-block" itemprop="additionalName">LukeSmithxyz</span>
+  </h1>
+</div>
+
+
+  <div class="mb-1 ml-n2 mr-n2 user-status-container d-md-none">
+    
+  <div class="d-flex p-2 width-full " data-team-hovercards-enabled>
+    <div class="flex-self-start mr-1 ml-1">
+      <div><g-emoji class="g-emoji" alias="sunglasses" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png">😎</g-emoji></div>
+    </div>
+    <div class="user-status-message-wrapper f6 mt-1 text-gray-dark ws-normal lh-condensed">
+        <div>Boomer mindset</div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+      <div class="user-profile-following-container js-user-profile-following-toggle mb-3">
+        
+    <span class="user-following-container js-toggler-container js-social-container ">
+
+      <span class="follow">
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/follow?target=LukeSmithxyz" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="3hiZg0cfuETQ/88YHk+tvQ7g1aK+Moab3BDxhEjD1JMX6aeCvC8Xb1umnaEXzlmC1JcXArLHLZ3AaRjQj1koeg==" />
+          <input type="submit" name="commit" value="Follow" style="max-width: 100%" class="btn btn-block top-0 js-sticky js-user-profile-follow-button mb-2  js-toggler-target" title="Follow LukeSmithxyz" aria-label="Follow this person" data-disable-with="Follow" />
+</form>      </span>
+
+      <span class="unfollow">
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" action="/users/unfollow?target=LukeSmithxyz" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="MhPfV3doN9z8m9hOO52Y1ZCQ1iuHafeTU6XIRrkUxuTaSb+lKQLV5F7fnZNXaS4GH+vwbEWs1V2+1QJrcIU62A==" />
+          <input type="submit" name="commit" value="Unfollow" style="max-width: 100%" class="btn btn-block top-0 js-sticky js-user-profile-follow-button mb-2 js-toggler-target" title="Unfollow LukeSmithxyz" aria-label="Unfollow this person" data-disable-with="Unfollow" />
+</form>      </span>
+    </span>
+
+      </div>
+
+
+<div class="d-none d-md-block">
+  
+
+<div class="js-profile-editable-area">
+
+  <div class="p-note user-profile-bio js-user-profile-bio"><div>Boomer at large</div></div>
+
+  <ul class="vcard-details mb-3">
+
+        <li itemprop="worksFor" show_title="false" aria-label="Organization: I&#39;m a free man." class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
+          <span class="p-org"><div>I'm a free man.</div></span>
+</li>
+      <li itemprop="homeLocation" show_title="false" aria-label="Home location: Lake City, FL" class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-location" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+        <span class="p-label">Lake City, FL</span>
+</li>
+      <li itemprop="email" aria-label="Email: luke@lukesmith.xyz" class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"/></svg>
+          <a class="u-email " href="mailto:&#x6c;&#x75;&#x6b;&#x65;&#x40;&#x6c;&#x75;&#x6b;&#x65;&#x73;&#x6d;&#x69;&#x74;&#x68;&#x2e;&#x78;&#x79;&#x7a;">&#x6c;&#x75;&#x6b;&#x65;&#x40;&#x6c;&#x75;&#x6b;&#x65;&#x73;&#x6d;&#x69;&#x74;&#x68;&#x2e;&#x78;&#x79;&#x7a;</a>
+</li>
+    <li itemprop="url" data-test-selector="profile-website-url" class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg>
+      <a rel="nofollow me" href="https://lukesmith.xyz">https://lukesmith.xyz</a>
+</li>
+  </ul>
+
+</div>
+
+</div>
+
+
+    <div class="my-1 js-pro-badge d-none">
+        <svg class="octicon octicon-star mr-2 text-gray-light" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+<span class="label bg-purple text-uppercase" >Pro</span>
+
+    </div>
+
+
+
+
+
+  <div class="d-none d-md-block">
+    
+<div>
+  
+<details
+  class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark d-inline-block text-left"
+  >
+  <summary
+      class="btn-link text-small muted-link my-1"
+     
+      
+      
+      
+      >
+    
+    Block or report user
+  </summary>
+  <details-dialog
+    aria-label="Report or block LukeSmithxyz"
+    class="Box Box--overlay d-flex flex-column anim-fade-in fast "
+    
+    >
+    <div class="Box-header">
+      <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <h3 class="Box-title ">Report or block LukeSmithxyz</h3>
+    </div>
+    
+    <div class="Box-body">
+      <div class="d-table width-full">
+        <div class="d-table-cell v-align-top pr-2">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/account/ignore_user/LukeSmithxyz" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="c0YSG7qDhgpgKhzHS68ojiaTMKguHXPTQGhN1P6cPFv/jS/vKefQSTRzutyEVI1MUpj5KbAi9oOXqP7iC58Ldw==" />
+              <p>Hide content and notifications from this user.</p>
+
+
+
+            <p class="text-small text-gray">
+              Learn more about <a href="https://help.github.com/en/articles/blocking-a-user-from-your-personal-account">blocking users</a>
+            </p>
+
+              <button type="submit" class="btn btn-block btn-danger">Block user</button>
+</form>        </div>
+        <div class="d-table-cell v-align-top pl-2">
+          <p>Contact Support about this user’s behavior.</p>
+          <p class="text-small text-gray">
+            Learn more about <a href="https://help.github.com/en/articles/reporting-abuse-or-spam">reporting abuse</a>
+          </p>
+          <a class="btn btn-block btn-danger" href="/contact/report-abuse?report=LukeSmithxyz+%28user%29">
+            Report abuse
+</a>        </div>
+      </div>
+    </div>
+
+  </details-dialog>
+</details>
+</div>
+
+  </div>
+
+
+          
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 d-md-none">
+    
+
+<div class="js-profile-editable-area">
+
+  <div class="p-note user-profile-bio js-user-profile-bio"><div>Boomer at large</div></div>
+
+  <ul class="vcard-details mb-3">
+
+        <li itemprop="worksFor" show_title="false" aria-label="Organization: I&#39;m a free man." class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"/></svg>
+          <span class="p-org"><div>I'm a free man.</div></span>
+</li>
+      <li itemprop="homeLocation" show_title="false" aria-label="Home location: Lake City, FL" class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-location" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+        <span class="p-label">Lake City, FL</span>
+</li>
+      <li itemprop="email" aria-label="Email: luke@lukesmith.xyz" class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-mail" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 4v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1zm13 0L7 9 1 4h12zM1 5.5l4 3-4 3v-6zM2 12l3.5-3L7 10.5 8.5 9l3.5 3H2zm11-.5l-4-3 4-3v6z"/></svg>
+          <a class="u-email " href="mailto:&#x6c;&#x75;&#x6b;&#x65;&#x40;&#x6c;&#x75;&#x6b;&#x65;&#x73;&#x6d;&#x69;&#x74;&#x68;&#x2e;&#x78;&#x79;&#x7a;">&#x6c;&#x75;&#x6b;&#x65;&#x40;&#x6c;&#x75;&#x6b;&#x65;&#x73;&#x6d;&#x69;&#x74;&#x68;&#x2e;&#x78;&#x79;&#x7a;</a>
+</li>
+    <li itemprop="url" data-test-selector="profile-website-url" class="vcard-detail pt-1 css-truncate css-truncate-target"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg>
+      <a rel="nofollow me" href="https://lukesmith.xyz">https://lukesmith.xyz</a>
+</li>
+  </ul>
+
+</div>
+
+
+      
+<div>
+  
+<details
+  class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark d-inline-block text-left"
+  >
+  <summary
+      class="btn-link text-small muted-link my-1"
+     
+      
+      
+      
+      >
+    
+    Block or report user
+  </summary>
+  <details-dialog
+    aria-label="Report or block LukeSmithxyz"
+    class="Box Box--overlay d-flex flex-column anim-fade-in fast "
+    
+    >
+    <div class="Box-header">
+      <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <h3 class="Box-title ">Report or block LukeSmithxyz</h3>
+    </div>
+    
+    <div class="Box-body">
+      <div class="d-table width-full">
+        <div class="d-table-cell v-align-top pr-2">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/account/ignore_user/LukeSmithxyz" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="zthui9CMZuHLMS86Q1sGidVGget0lN3z4EtkyB9fS2dCE1N/Q+gwop9oiSGMoKNLoU1IauqrWKM3i9f+6lx8Sw==" />
+              <p>Hide content and notifications from this user.</p>
+
+
+
+            <p class="text-small text-gray">
+              Learn more about <a href="https://help.github.com/en/articles/blocking-a-user-from-your-personal-account">blocking users</a>
+            </p>
+
+              <button type="submit" class="btn btn-block btn-danger">Block user</button>
+</form>        </div>
+        <div class="d-table-cell v-align-top pl-2">
+          <p>Contact Support about this user’s behavior.</p>
+          <p class="text-small text-gray">
+            Learn more about <a href="https://help.github.com/en/articles/reporting-abuse-or-spam">reporting abuse</a>
+          </p>
+          <a class="btn btn-block btn-danger" href="/contact/report-abuse?report=LukeSmithxyz+%28user%29">
+            Report abuse
+</a>        </div>
+      </div>
+    </div>
+
+  </details-dialog>
+</details>
+</div>
+
+  </div>
+
+  <div class="col-lg-9 col-md-8 col-12 float-md-left pl-md-2">
+
+
+    <div class="UnderlineNav width-full user-profile-nav js-sticky top-0">
+      <nav class="UnderlineNav-body" data-pjax aria-label="User profile">
+        <a class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 " data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:29150857,&quot;target&quot;:&quot;TAB_OVERVIEW&quot;,&quot;user_id&quot;:25698837,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;D344:4E45:1A89C29:2CA0181:5DE3062C&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz?tab=repositories&amp;_pjax=%23js-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz&quot;}}" data-hydro-click-hmac="012bd84aec4d835e28cba66f9caf67aad4663bbe530c9235567897fe9621d432" href="/LukeSmithxyz">
+          Overview
+</a>
+        <a aria-current="page" class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 selected " data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:29150857,&quot;target&quot;:&quot;TAB_REPOSITORIES&quot;,&quot;user_id&quot;:25698837,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;D344:4E45:1A89C29:2CA0181:5DE3062C&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz?tab=repositories&amp;_pjax=%23js-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz&quot;}}" data-hydro-click-hmac="87cba9f6dcc19eea77e84f72799adfd65696f1b09e18f45892a1f123f9590431" href="/LukeSmithxyz?tab=repositories">
+          Repositories
+          <span class="Counter hide-lg hide-md hide-sm">
+            25
+          </span>
+</a>
+        <a class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 " data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:29150857,&quot;target&quot;:&quot;TAB_PROJECTS&quot;,&quot;user_id&quot;:25698837,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;D344:4E45:1A89C29:2CA0181:5DE3062C&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz?tab=repositories&amp;_pjax=%23js-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz&quot;}}" data-hydro-click-hmac="372d0863fc5eb53a3aeedb797789ee46cb14c394143955787388ae494117e17e" href="/LukeSmithxyz?tab=projects">
+          Projects
+          <span class="Counter hide-lg hide-md hide-sm">
+            0
+          </span>
+</a>
+
+        <a class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 " data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:29150857,&quot;target&quot;:&quot;TAB_STARS&quot;,&quot;user_id&quot;:25698837,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;D344:4E45:1A89C29:2CA0181:5DE3062C&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz?tab=repositories&amp;_pjax=%23js-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz&quot;}}" data-hydro-click-hmac="5f75531abc60f9e987f5e8be02b4f697604b4843d0b967e23b05cd035fe1611e" href="/LukeSmithxyz?tab=stars">
+          Stars
+          <span class="Counter hide-lg hide-md hide-sm">
+            0
+          </span>
+</a>
+        <a class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 " data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:29150857,&quot;target&quot;:&quot;TAB_FOLLOWERS&quot;,&quot;user_id&quot;:25698837,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;D344:4E45:1A89C29:2CA0181:5DE3062C&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz?tab=repositories&amp;_pjax=%23js-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz&quot;}}" data-hydro-click-hmac="5e40b701e533fb3576c9a299b180563a32bfa6872687685af632f3f08fd8f0ea" href="/LukeSmithxyz?tab=followers">
+          Followers
+          <span class="Counter hide-lg hide-md hide-sm" >
+            3.9k
+          </span>
+</a>
+        <a class="UnderlineNav-item mr-0 mr-md-1 mr-lg-3 " data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:29150857,&quot;target&quot;:&quot;TAB_FOLLOWING&quot;,&quot;user_id&quot;:25698837,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;D344:4E45:1A89C29:2CA0181:5DE3062C&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz?tab=repositories&amp;_pjax=%23js-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz&quot;}}" data-hydro-click-hmac="6dabcd6d0ea0cd42cd41bf702a83b25f1c7c9903a709aa4f1152a2a1a02b2041" href="/LukeSmithxyz?tab=following">
+          Following
+          <span class="Counter hide-lg hide-md hide-sm" >
+            0
+          </span>
+</a>      </nav>
+    </div>
+
+    <div class="position-relative">
+        
+
+<div class="border-bottom border-gray-dark py-3">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="d-block d-md-flex" data-autosearch-results-container="user-repositories-list" aria-label="Repositories" role="search" action="/LukeSmithxyz" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <div class="mb-3 mb-md-0 mr-md-3 flex-auto">
+      <input type="hidden" name="tab" value="repositories">
+      <input type="search" id="your-repos-filter" name="q"
+             class="form-control width-full"
+             placeholder="Find a repository&hellip;"
+             autocomplete="off"
+             aria-label="Find a repository&hellip;"
+             value=""
+             data-throttled-autosubmit>
+    </div>
+
+    <div class="d-flex">
+      <details class="details-reset details-overlay position-relative mr-2" id="type-options">
+        <summary class="btn">
+          <i>Type:</i>
+          <span data-menu-button>
+            All
+          </span>
+          <span class="dropdown-caret"></span>
+        </summary>
+
+        <details-menu class="SelectMenu right-md-0">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <span class="SelectMenu-title">Select type</span>
+              <button class="SelectMenu-closeButton" type="button" data-toggle-for="type-options"><svg aria-label="Close menu" class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg></button>
+            </header>
+            <div class="SelectMenu-list">
+                <label class="SelectMenu-item" role="menuitemradio" aria-checked="true" tabindex="0">
+                  <input type="radio" name="type" id="type_" value="" hidden="hidden" data-autosubmit="true" checked="checked" />
+                  <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <span class="text-normal" data-menu-button-text>All</span>
+                </label>
+                <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                  <input type="radio" name="type" id="type_source" value="source" hidden="hidden" data-autosubmit="true" />
+                  <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <span class="text-normal" data-menu-button-text>Sources</span>
+                </label>
+                <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                  <input type="radio" name="type" id="type_fork" value="fork" hidden="hidden" data-autosubmit="true" />
+                  <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <span class="text-normal" data-menu-button-text>Forks</span>
+                </label>
+                <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                  <input type="radio" name="type" id="type_archived" value="archived" hidden="hidden" data-autosubmit="true" />
+                  <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <span class="text-normal" data-menu-button-text>Archived</span>
+                </label>
+                <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                  <input type="radio" name="type" id="type_mirror" value="mirror" hidden="hidden" data-autosubmit="true" />
+                  <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <span class="text-normal" data-menu-button-text>Mirrors</span>
+                </label>
+            </div>
+          </div>
+        </details-menu>
+      </details>
+
+        <details class="details-reset details-overlay position-relative flex-auto" id="language-options">
+          <summary class="btn">
+            <i>Language:</i>
+            <span data-menu-button>
+              All
+            </span>
+            <span class="dropdown-caret"></span>
+          </summary>
+
+          <details-menu class="SelectMenu right-md-0">
+            <div class="SelectMenu-modal">
+              <header class="SelectMenu-header">
+                <span class="SelectMenu-title">Select language</span>
+                <button class="SelectMenu-closeButton" type="button" data-toggle-for="language-options"><svg aria-label="Close menu" class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg></button>
+              </header>
+              <div class="SelectMenu-list">
+                <label class="SelectMenu-item" role="menuitemradio" aria-checked="true" tabindex="0">
+                  <input type="radio" name="language" id="language_" value="" hidden="hidden" data-autosubmit="true" checked="checked" />
+                  <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                  <span class="text-normal" data-menu-button-text>All</span>
+                </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_shell" value="shell" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>Shell</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_c" value="c" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>C</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_javascript" value="javascript" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>JavaScript</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_awk" value="awk" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>Awk</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_vim_script" value="vim script" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>Vim script</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_tex" value="tex" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>TeX</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_css" value="css" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>CSS</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_html" value="html" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>HTML</span>
+                  </label>
+                  <label class="SelectMenu-item" role="menuitemradio" aria-checked="false" tabindex="0">
+                    <input type="radio" name="language" id="language_python" value="python" hidden="hidden" data-autosubmit="true" />
+                    <svg class="octicon octicon-check SelectMenu-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+                    <span class="text-normal" data-menu-button-text>Python</span>
+                  </label>
+              </div>
+            </div>
+          </details-menu>
+        </details>
+
+    </div>
+</form></div>
+
+        
+<div id="user-repositories-list">
+
+    <ul data-filterable-for="your-repos-filter" data-filterable-type="substring">
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/LARBS" itemprop="name codeRepository" >
+        LARBS</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Luke's Auto-Rice Bootstrapping Scripts: Installation Scripts for My Arch Linux Meta-Distribution
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/LARBS/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          949
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/LARBS/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          380
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>GNU General Public License v3.0
+        </span>
+
+
+        Updated <relative-time datetime="2019-11-30T17:23:03Z" class="no-wrap">Nov 30, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/LARBS/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="394uVCJQwRJw3RYPwzHYFHXTGSBgiuZgRuOhGoA9WdTcEplelUkTijtR4CQoGFAJF68AFHG9jcfxTrAinJacIA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/LARBS" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/LARBS/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="1eUPtkS83gw/Z05YLUNh6x2JcwFUV2LT/8rgIIUhsv+D3tPHpns5rPMwgoSStkECgH560jQAiTa5XakqUqil2w==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/LARBS" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/LARBS/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/mutt-wizard" itemprop="name codeRepository" >
+        mutt-wizard</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          A system for automatically configuring mutt and isync with a simple interface and safe passwords
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/mutt-wizard/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          784
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/mutt-wizard/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          176
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>GNU General Public License v3.0
+        </span>
+
+
+        Updated <relative-time datetime="2019-11-28T21:27:15Z" class="no-wrap">Nov 28, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/mutt-wizard/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="tzerMnRpDDzPtHjWSgpV/F9l91xtWiou08GdMyX6OsoncD074qHhFxfaqJ4wP1rapINQq0VGHQ/ivyvsaB+CWg==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/mutt-wizard" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/mutt-wizard/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uBs0saSsLG2gKpytb28GIj7mCkGT4OlGujO8jP1xHkSVrU4MTNPHI3Tfl/+C0ZAdczbZ66phEb9jt6fekJBfXA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/mutt-wizard" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/mutt-wizard/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/voidrice" itemprop="name codeRepository" >
+        voidrice</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          My dotfiles (deployed by LARBS)
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/voidrice/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          1,975
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/voidrice/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          648
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>GNU General Public License v3.0
+        </span>
+
+
+        Updated <relative-time datetime="2019-11-26T22:50:50Z" class="no-wrap">Nov 26, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/voidrice/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="At0dFcDp96/hlVcAiRBKpv/NF258L6auaWvJBJZ99HY0+R+If/pqskWMZx3Mc+AFbOqDAGcYQE7dAqmXS4x3Jg==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/voidrice" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/voidrice/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xzZwhUC/f3mrpfE0vdSD0YBKWV5B5+k9clEUgn21VppSPLuaKAOWXSK0UmG6m0Q8Fd7fNk9BNfJJjjHJydWhJw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/voidrice" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/voidrice/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/lb" itemprop="name codeRepository" >
+        lb</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Blog &amp; RSS system in less than 100 lines of shell script
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/lb/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          128
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/lb/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          46
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>GNU General Public License v3.0
+        </span>
+
+
+        Updated <relative-time datetime="2019-11-25T18:06:31Z" class="no-wrap">Nov 25, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/lb/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="2zI8YuXoaJR2Vn3c25zuqV9ypHP74mxNGJJhyu7XfueX3QSWq66mnj0KYC551vEGfJMgoPddvsx1Faq+hoOIHA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/lb" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/lb/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="amwYhEEk712bV+/m6GlAPoW6TGmuchgtUuA9OOq1FM990qUJpus7TYLFe9/UUck0VchafrkEuW7G4kmu/f87PQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/lb" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/lb/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/dwm" itemprop="name codeRepository" >
+        dwm</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Luke's build of dwm
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #555555"></span>
+  <span itemprop="programmingLanguage">C</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/dwm/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          47
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/dwm/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          35
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>MIT License
+        </span>
+
+
+        Updated <relative-time datetime="2019-11-23T00:02:32Z" class="no-wrap">Nov 22, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/dwm/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="naBkWR4M49Q9x90NVT0Vtq55MWYo1qmt3yqVTncN3mggFex1MBHkJ9Kw5bT+Mo/NHMzD5e/BkYoYxJO+Cofj2A==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/dwm" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/dwm/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="QPAAInTPA7YPhqvwpBz/ogktfkf1w0HMP2j2aA2V1wjarwp5v99yhdMlHgEMNjP+6M446hPP52ICPJPjPBYXJA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/dwm" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/dwm/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/emailwiz" itemprop="name codeRepository" >
+        emailwiz</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Script that installs/configures a Dovecot, Postfix, Spam Assassin, OpenDKIM Debian web server
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/emailwiz/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          71
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/emailwiz/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          20
+        </a>
+
+
+
+        Updated <relative-time datetime="2019-11-09T15:50:00Z" class="no-wrap">Nov 9, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/emailwiz/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Ke2A/VAYEuUhi0c3c7DXMzilDEQM6sKtHWb1oJMsPLZ2EQthPdXBXiBJfaICkGWQz1/f5urg8/FrBnDLop9y1A==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/emailwiz" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/emailwiz/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="lnimckfFSFX+oQrFS9xC+0QbSikFQsL1J3nI1BGd8NIDYjQK8BPerpMf/P5jE3Jocqh+f0NYzhBroZTfY6KZGA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/emailwiz" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/emailwiz/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/st" itemprop="name codeRepository" >
+        st</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Luke's fork of the suckless simple terminal (st) with vim bindings and Xresource compatibility.
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #555555"></span>
+  <span itemprop="programmingLanguage">C</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/st/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          605
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/st/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          447
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>MIT License
+        </span>
+
+
+        Updated <relative-time datetime="2019-10-23T01:18:14Z" class="no-wrap">Oct 22, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/st/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="esGuus7gTx1uGQuKGw8mhqiQE7V0M/uUNGlbmd4j/6ZVO8oJExz2x9+UiAvLd7nJLUwRNMM0jI/lKvVMAguYIQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/st" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/st/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GRlKFeQMauQ39JVCU3Cp5ZvaNCbJkEIY4TBHE7i+ayVfQH3LJh4CN+/I/MIxg8qlzaQcQ2GGsJUPCf9v+ASrVQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/st" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/st/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/dwmblocks" itemprop="name codeRepository" >
+        dwmblocks</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          My status bar: my build of the modular dwmblocks
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #555555"></span>
+  <span itemprop="programmingLanguage">C</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/dwmblocks/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          22
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/dwmblocks/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          5
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>GNU General Public License v2.0
+        </span>
+
+
+        Updated <relative-time datetime="2019-09-21T19:37:26Z" class="no-wrap">Sep 21, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/dwmblocks/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="rgGxNOuROA3pc1GMtIN5AVe/y1LRE14u4U4xorRCIS/6iu+0d3iLGIqcfCX4+O4XkmsaKk6V/iL/0X1Y0vGugA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/dwmblocks" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/dwmblocks/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="V8aMdRBIbvjl/U7hrhVpuZRMnmw39avWvJtV9hNagXJacIVeMz65FEHgy/4h4yoAc2xS5DWlJeBtGyzavpZHNw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/dwmblocks" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/dwmblocks/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/wallpapers" itemprop="name codeRepository" >
+        wallpapers</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          A lot of people ask for the wallpapers/backgrounds in my videos or that I use as decor. Here they all are!
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/wallpapers/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          291
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/wallpapers/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          80
+        </a>
+
+
+
+        Updated <relative-time datetime="2019-07-13T10:06:57Z" class="no-wrap">Jul 13, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/wallpapers/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="YhHxOXyA8SFOblVL2f45PG4S8SLNhKiRb1NlYvnuVktld7XPTfD/5A+QZwEkpCw9Lq5Hi2jjrWgpUi5pwzvGyQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/wallpapers" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/wallpapers/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="i+13mdi6zygBauMIihlk1Xrb9BAB8iV0P9ukHxx5djW7zIytBtf6E/ZyYHAZ9A3g0Am3B9x2/robCYEN605OJQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/wallpapers" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/wallpapers/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/surf" itemprop="name codeRepository" >
+        surf</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Luke's build of the surf web browser
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #555555"></span>
+  <span itemprop="programmingLanguage">C</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/surf/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          28
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/surf/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          16
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>MIT License
+        </span>
+
+
+        Updated <relative-time datetime="2019-05-26T03:18:19Z" class="no-wrap">May 25, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/surf/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="c09fwAz4QlIQo5RTpRpw4+JJ9Fzl590sl+Grkhmk0gA/C5ycL1qPODxXlRxw8NAa/7gq08sl1y+AR+K6z6X+gQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/surf" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/surf/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="BGYOHqOaKRZmkMnedx4t3VKvWMGFziu964jlTkEKVAOeaEJYwf63Orpc+Db0c2V7x6EwSWd4muGzMzRZID4PUg==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/surf" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/surf/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/etc" itemprop="name codeRepository" >
+        etc</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Random files that could be of interest
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/etc/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          20
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/etc/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          10
+        </a>
+
+
+
+        Updated <relative-time datetime="2019-04-23T08:34:32Z" class="no-wrap">Apr 23, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/etc/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="DdE3bK7B5uCrfjG27LtuKOaLuovyFeeN84TBK/S5RabWxq9xXiTO0pEEjmfTBgdrT0qs2vQTk6kHcbyfD0+bXw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/etc" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/etc/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="GnPjRq8JhOJ6Gj4pGkEmLGs0Kd4QwgW4rKB/pf7aVB46X7k73kbHkcJ3peOzfmtBpfVBJw1BS1RYWXpbhmgndw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/etc" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/etc/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/mozillarbs" itemprop="name codeRepository" >
+        mozillarbs</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          A Firefox profile used in LARBS with privacy features, vim bindings and more
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #f1e05a"></span>
+  <span itemprop="programmingLanguage">JavaScript</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/mozillarbs/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          26
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/mozillarbs/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          14
+        </a>
+
+
+
+        Updated <relative-time datetime="2019-03-25T12:51:52Z" class="no-wrap">Mar 25, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/mozillarbs/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="e/0r6T3lF2l+NmkBUxdinROWQek7mA3/00lXmBJgVvdcx22Eg3p9Nug5KVRctOgfFGg3k6Rey3JgNnB763SxiA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/mozillarbs" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/mozillarbs/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Fi21TaBh+BYWHZp+6D7jcXm6wm/EuVZmAMr5GUTxyQHJivEOIGlkFtAPQNsc5FmmyAR5VUfxlIFjsUmxR1Ogxg==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/mozillarbs" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/mozillarbs/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public fork" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/kjv" itemprop="name codeRepository" >
+        kjv</a>
+        
+      </h3>
+
+        <span class="f6 text-gray mb-1">
+          Forked from <a class="muted-link" href="/bontibon/kjv">bontibon/kjv</a>
+        </span>
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Read the Word of God from your terminal
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #ccc"></span>
+  <span itemprop="programmingLanguage">Awk</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/kjv/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          25
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/kjv/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          27
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>The Unlicense
+        </span>
+
+
+        Updated <relative-time datetime="2019-03-11T15:05:21Z" class="no-wrap">Mar 11, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/kjv/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="t7Z5DBvAASBPbSkFiWG5gtdTTHXNL1IJywGXz2guOwFWcrwfwVbOLJjj1pY+Uhscc5NNM5Od/ehdO3xESkGwug==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/kjv" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/kjv/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xxssvyQ9JAP5sDNouuJLST6n4K6KSgQvA/7wj/x3IEliCESz4ANX/SFs+qV6+CCKqkwrVFpNedKY1ycfCAm+BQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/kjv" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/kjv/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/vul" itemprop="name codeRepository" >
+        vul</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Latin Vulgate Bible on the Command Line
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #ccc"></span>
+  <span itemprop="programmingLanguage">Awk</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/vul/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          22
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/vul/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          6
+        </a>
+
+
+
+        Updated <relative-time datetime="2019-03-06T19:52:36Z" class="no-wrap">Mar 6, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/vul/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="5WtqiZy0Nb232rsqt1YrkDCuAQY3SDWzVc/lEprRWLTKiq6LSVJyFQQmavhVXKiIgmBBtLwgzuO9vmWiCxLI5A==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/vul" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/vul/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="jroHKM9IAfX6IN4Q2LYELvyvUGr6y4h14CJM1QaY/ibeZdm8AmWezPM7rVaESnFvpVHyn7HGM7EDUENVzdbs2g==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/vul" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/vul/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/grb" itemprop="name codeRepository" >
+        grb</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          A cli-accessible Greek Bible with the Septuagint, SBL and Apocrypha
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #ccc"></span>
+  <span itemprop="programmingLanguage">Awk</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/grb/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          23
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/grb/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          3
+        </a>
+
+
+
+        Updated <relative-time datetime="2019-03-06T18:54:34Z" class="no-wrap">Mar 6, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/grb/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="S1gGUUWMNvW0a8q1wfTrcvzlTI8xtEVrWl1A1e+TWUEUKlWlZ/zCuRtf2yftA4RLjLKxsOmcapEhWwm+NgQUjQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/grb" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/grb/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="y13zqmb/7IIbVL7HX+U4ZFYJ1SaD78YnbtA/tbsZwQ3wuF10fMi0yDotTHutPmweUHo0N61Z9jmq3gQ2vH3iBw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/grb" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/grb/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/dmenu" itemprop="name codeRepository" >
+        dmenu</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          dmenu setup for LARBS
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #555555"></span>
+  <span itemprop="programmingLanguage">C</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/dmenu/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          15
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/dmenu/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          27
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>MIT License
+        </span>
+
+
+        Updated <relative-time datetime="2019-02-08T23:32:22Z" class="no-wrap">Feb 8, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/dmenu/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="2dqv+LnXEEy/XLacwtwlXAlSLnoEokFOIgi9b56iUQNggtjeHrmBhOnYbgvdFT5ou/gprzVK07SVmqO+TD5qUw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/dmenu" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/dmenu/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="A6QAdl+B57AFxfDP2wQMZ1HBoh1RiBKwpPEz+pi7Rvz5etjG5IBFpz4H+LQG2+j7eXpteR6zUvjLHHAphzcI4g==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/dmenu" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/dmenu/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/vimling" itemprop="name codeRepository" >
+        vimling</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Small vim scripts for writing IPA and other special characters
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #199f4b"></span>
+  <span itemprop="programmingLanguage">Vim script</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/vimling/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          11
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/vimling/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          2
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>GNU General Public License v3.0
+        </span>
+
+
+        Updated <relative-time datetime="2019-02-02T13:19:44Z" class="no-wrap">Feb 2, 2019</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/vimling/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="nqtN+LlcTPkyN+WO4u+u/cGtNiqd/XzeX2hlHAGfUfZWQoKYEu5onsyi2ADKw8t/r2IOitAUO4gzh5t9wqwvRA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/vimling" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/vimling/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9UmnHVepyd2fz5/IfwVmLTJ86ivLHL0GJ/TDyd9Q7Ecgnz7thriCk7Pz3o9usdgJJoCIq8obZ1F1Vz6ReTvdug==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/vimling" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/vimling/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/arch-postinstall-wizard" itemprop="name codeRepository" >
+        arch-postinstall-wizard</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          A dialog interface for installing and configuring things after an Arch install (usually LARBS)
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/arch-postinstall-wizard/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          18
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/arch-postinstall-wizard/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          7
+        </a>
+
+
+
+        Updated <relative-time datetime="2018-10-20T00:13:34Z" class="no-wrap">Oct 19, 2018</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/arch-postinstall-wizard/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="mfdLrkHBEV7IY57ioXJJVencyzf0UqwAunKuccPhnypnW4twGZDSQlCfULzx2WYKxShv26R0ID3l1VDn/uTQQw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/arch-postinstall-wizard" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/arch-postinstall-wizard/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VG2syuSRmFe/jsQF/hXJlUd959ODLYeglS5PCbreNZuQ/hs7hE614r6R9H3F20JLX0wtqTDE6As+rHbYuTn56g==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/arch-postinstall-wizard" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/arch-postinstall-wizard/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/scope-without-syntax" itemprop="name codeRepository" >
+        scope-without-syntax</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Quantifier scope ambiguities are derived entirely from pragmatic assumptions, implemented in Game Theory.
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #3D6117"></span>
+  <span itemprop="programmingLanguage">TeX</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/scope-without-syntax/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          3
+        </a>
+
+
+
+        Updated <relative-time datetime="2018-08-30T15:40:46Z" class="no-wrap">Aug 30, 2018</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/scope-without-syntax/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="v2fomxtpeKpF4FET3w4FRR2FnRlIf2HbKRWs3efB5soIZmFVt029pJkjBuXCisHqS/fWtfK8Zj5Jwi5BBhjOng==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/scope-without-syntax" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/scope-without-syntax/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ra2jp1Lx4KObCkRXLFwN3jiJqXrlMiIrSMnoPyoOx4jaA2jvFVMCJKtAvQMVhrkD0U6a0NLej9L3Ar2GQW4nUQ==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/scope-without-syntax" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/scope-without-syntax/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source archived" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/shortcut-sync" itemprop="name codeRepository" >
+        shortcut-sync</a>
+        <span class="Label Label--outline v-align-middle ml-1 mb-1">Archived</span>
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Luke's Scripts for bash, ranger and qutebrowser synchronization
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #89e051"></span>
+  <span itemprop="programmingLanguage">Shell</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/shortcut-sync/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          34
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/shortcut-sync/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          13
+        </a>
+
+
+
+        Updated <relative-time datetime="2018-08-02T14:40:42Z" class="no-wrap">Aug 2, 2018</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/shortcut-sync/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ycHDQbkLAzws1SHbadDKoPL4G3Jp/oDysdHIfrvKb21116xu3zio4AoVWAlwoXupVZVSn7n0lqjvuqUkziqghw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/shortcut-sync" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/shortcut-sync/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="UJmX9m5F2lEDAcNBT3yp0AYqvDiJ1wybLlhApLzz/+UkiRcS7wUYucWw3aW7P2ctNj5SOq9Ao9HTAXHO/Kw46Q==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/shortcut-sync" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/shortcut-sync/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/md-website-cv" itemprop="name codeRepository" >
+        md-website-cv</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          A system for CVs/resumes and websites based on markdown files
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #e34c26"></span>
+  <span itemprop="programmingLanguage">HTML</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/md-website-cv/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          33
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/md-website-cv/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          23
+        </a>
+
+
+
+        Updated <relative-time datetime="2018-04-14T06:05:10Z" class="no-wrap">Apr 14, 2018</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/md-website-cv/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="B54ifYwJzy6R3kIOdOCNBHxQF3Mam7fxthrwTgA3cQs0gQTqTIrAhnbZbtpsTrBUeLcOottOWNmwYbb+hxajfA==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/md-website-cv" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/md-website-cv/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Y4sINnuvxr31NAJoi4U8PTR18madzAeKRdDzrq0LEjIUUx7qAZKOKcaGomKYfFkuig3IH8Rc3nSXeDPeprC7Cg==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/md-website-cv" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/md-website-cv/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/critique-of-reason" itemprop="name codeRepository" >
+        critique-of-reason</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Term paper on Rationality
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #3D6117"></span>
+  <span itemprop="programmingLanguage">TeX</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/critique-of-reason/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          6
+        </a>
+
+
+
+        Updated <relative-time datetime="2018-04-01T03:27:49Z" class="no-wrap">Mar 31, 2018</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/critique-of-reason/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Q5arf1LwHGUZ0PU7ItMwncwi/61Reef4QtuuMFE9w8OaewpCjKu/BeFelaR6hgikAe+zYyrMgri3SMDnNiLYdw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/critique-of-reason" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/critique-of-reason/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Q5IEVMj1o5PQhwfh5Q71Ym0XtC6kk1+jrBN20eWh4xTz1EKbdaKbQYuEggLhXXLZvykBInS962jymjoSzUA7Jg==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/critique-of-reason" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/critique-of-reason/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/latex-templates" itemprop="name codeRepository" >
+        latex-templates</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          My LaTeX templates, bibliography file, etc.
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #3D6117"></span>
+  <span itemprop="programmingLanguage">TeX</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/latex-templates/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          81
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/latex-templates/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          19
+        </a>
+
+
+
+        Updated <relative-time datetime="2018-02-14T20:21:37Z" class="no-wrap">Feb 14, 2018</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/latex-templates/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="gaTkB+ef0Bg4yFmy4XOAB+V1Eu3lxPUhqIFBUkRgN5c+GlxcWAOresGFMnzP+UASPbkgTtJdGq1WTUW15hvOpw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/latex-templates" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/latex-templates/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LoWMxt1ddt3wa+zU4BujqyRUxSmNhjR4ImkqVbXizJWLkI0DOC9K0brfi2yRVRLCLM/ZZOm28xHLAr52273pww==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/latex-templates" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/latex-templates/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/syntax-without-syntax" itemprop="name codeRepository" >
+        syntax-without-syntax</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Qualifying paper on how word orders are driven by prosodic parameters
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #3D6117"></span>
+  <span itemprop="programmingLanguage">TeX</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/syntax-without-syntax/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          5
+        </a>
+
+
+
+        Updated <relative-time datetime="2018-02-13T06:21:03Z" class="no-wrap">Feb 13, 2018</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/syntax-without-syntax/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9bohQMsBTOSmNYZWeTPWvZmuq6dlkxnXnriaxPCNfP+rTqeYeeDmSkPZp4pZRIVuCqCen/5PMQ/J/FjwNMmi9A==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/syntax-without-syntax" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/syntax-without-syntax/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4OCxz0UKcGrMWOS82g2OjkhCuRPcUfnXs7FrDxM4SDVo9uWz8L3U0UE40U58+/rqTJ12PtT/Lk0+ikypHFnkDw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/syntax-without-syntax" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/syntax-without-syntax/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+        
+
+<li class="col-12 d-flex width-full py-4 border-bottom public source" itemprop="owns" itemscope itemtype="http://schema.org/Code">
+  <div class="col-10 col-lg-9 d-inline-block">
+    <div class="d-inline-block mb-1">
+      <h3>
+        <a href="/LukeSmithxyz/corpus-latinum" itemprop="name codeRepository" >
+        corpus-latinum</a>
+        
+      </h3>
+
+
+    </div>
+
+    <div>
+        <p class="col-9 d-inline-block text-gray mb-2 pr-4" itemprop="description">
+          Luke's Latin Tagger and (under construction) Corpus
+        </p>
+    </div>
+
+
+    <div class="f6 text-gray mt-2">
+
+        <span class="ml-0 mr-3">
+  <span class="repo-language-color" style="background-color: #3572A5"></span>
+  <span itemprop="programmingLanguage">Python</span>
+</span>
+
+        <a class="muted-link mr-3" href="/LukeSmithxyz/corpus-latinum/stargazers">
+          <svg aria-label="star" class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+          5
+        </a>
+        <a class="muted-link mr-3" href="/LukeSmithxyz/corpus-latinum/network/members">
+          <svg aria-label="fork" class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" role="img"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+          1
+        </a>
+
+        <span class="mr-3">
+          <svg class="octicon octicon-law mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"/></svg>Other
+        </span>
+
+
+        Updated <relative-time datetime="2017-12-12T00:27:14Z" class="no-wrap">Dec 11, 2017</relative-time>
+    </div>
+  </div>
+
+  <div class="col-2 col-lg-3 d-flex flex-column flex-justify-around">
+      <div class="text-right">
+        
+  <div class="d-inline-block js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" data-remote="true" action="/LukeSmithxyz/corpus-latinum/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Pt5K6WDHexMiSrGF6MrQ4526U9NVAS5qDtt92FJg0jizL03G26Pu6QY7Z5S0r+1xCIpxGnyXrgFwbvegbHaGqw==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Unstar" aria-label="Unstar this repository" title="Unstar LukeSmithxyz/corpus-latinum" data-ga-click="Repository, click unstar button, action:profiles#show; text:Unstar">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Unstar
+      </button>
+</form>    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" data-remote="true" action="/LukeSmithxyz/corpus-latinum/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="uiCNHGUz8WEuvI4pnnU5cXEkJZefl+en2BcQfoCMPBbdUC0tuzapqxgMwuO5cdkI7VwA0fTqYGIWtDULzwFdQg==" />
+      <input type="hidden" name="context" value="user_stars">
+      <button class="btn btn-sm  js-toggler-target" type="submit" value="Star" aria-label="Star this repository" title="Star LukeSmithxyz/corpus-latinum" data-ga-click="Repository, click star button, action:profiles#show; text:Star">
+        <svg class="octicon octicon-star mr-1" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>Star
+      </button>
+</form>  </div>
+
+      </div>
+
+    <div class="text-right hide-lg hide-md hide-sm hide-xs ">
+      <poll-include-fragment src="/LukeSmithxyz/corpus-latinum/graphs/participation?w=155&amp;h=28&amp;type=sparkline)">
+      </poll-include-fragment>
+    </div>
+  </div>
+</li>
+
+    </ul>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="pjax-head">
+  <title>LukeSmithxyz (Luke Smith) / Repositories</title>
+  <meta name="selected-link" value="/LukeSmithxyz">
+  
+  
+  <meta name="analytics-location" content="/&lt;user-name&gt;" data-pjax-transient="true" />
+  
+  <meta name="request-id" content="D344:4E45:1A89C29:2CA0181:5DE3062C" data-pjax-transient>
+  
+
+
+  
+</div>
+
+<div id="js-flash-container">
+
+</div>
+
+

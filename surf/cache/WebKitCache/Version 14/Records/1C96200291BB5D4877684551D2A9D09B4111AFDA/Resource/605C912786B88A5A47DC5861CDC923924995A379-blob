@@ -1,0 +1,724 @@
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div class=" pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+
+
+
+
+  <li>
+    
+  <a class="tooltipped tooltipped-s btn btn-sm btn-with-count" aria-label="You must be signed in to watch a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;8B5C:3FBD:118D87:1EA539:5DD4278D&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz/voidrice/tree/archi3/.config?_pjax=%23js-repo-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz/voidrice&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3f1b2a12bb0dbeebf2b8ed75af3d38c5f9717447bc062a194f327e65667d2204" href="/login?return_to=%2FLukeSmithxyz%2Fvoidrice">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+</a>    <a class="social-count" href="/LukeSmithxyz/voidrice/watchers"
+       aria-label="114 users are watching this repository">
+      114
+    </a>
+
+  </li>
+
+  <li>
+        <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:93192704,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;8B5C:3FBD:118D87:1EA539:5DD4278D&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz/voidrice/tree/archi3/.config?_pjax=%23js-repo-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz/voidrice&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="3a6edd3083692006dbb08c924787e0a6fd2a7884e1adead644c6f556020b2c43" href="/login?return_to=%2FLukeSmithxyz%2Fvoidrice">
+      <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      Star
+</a>
+    <a class="social-count js-social-count" href="/LukeSmithxyz/voidrice/stargazers"
+      aria-label="1926 users starred this repository">
+      1.9k
+    </a>
+
+  </li>
+
+  <li>
+      <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:93192704,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;client_id&quot;:&quot;439154796.1574184792&quot;,&quot;originating_request_id&quot;:&quot;8B5C:3FBD:118D87:1EA539:5DD4278D&quot;,&quot;originating_url&quot;:&quot;https://github.com/LukeSmithxyz/voidrice/tree/archi3/.config?_pjax=%23js-repo-pjax-container&quot;,&quot;referrer&quot;:&quot;https://github.com/LukeSmithxyz/voidrice&quot;,&quot;user_id&quot;:null}}" data-hydro-click-hmac="76f12eed3a9ec79cb6036033602f8b7cfd867a8d94e523c9d472a75165ceabff" href="/login?return_to=%2FLukeSmithxyz%2Fvoidrice">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 00-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 002 1a1.993 1.993 0 00-1 3.72V6.5l3 3v1.78A1.993 1.993 0 005 15a1.993 1.993 0 001-3.72V9.5l3-3V4.72A1.993 1.993 0 008 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+</a>
+    <a href="/LukeSmithxyz/voidrice/network/members" class="social-count"
+       aria-label="640 users forked this repository">
+      640
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=29150857" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/LukeSmithxyz">LukeSmithxyz</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/LukeSmithxyz/voidrice">voidrice</a></strong>
+  
+
+</h1>
+
+    </div>
+    
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /LukeSmithxyz/voidrice" href="/LukeSmithxyz/voidrice">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /LukeSmithxyz/voidrice/issues" href="/LukeSmithxyz/voidrice/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 011.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">15</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /LukeSmithxyz/voidrice/pulls" href="/LukeSmithxyz/voidrice/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">6</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /LukeSmithxyz/voidrice/projects" href="/LukeSmithxyz/voidrice/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 00-1 1v14a1 1 0 001 1h13a1 1 0 001-1V1a1 1 0 00-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy code_scanning /LukeSmithxyz/voidrice/security/advisories" href="/LukeSmithxyz/voidrice/security/advisories">
+      <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /LukeSmithxyz/voidrice/pulse" href="/LukeSmithxyz/voidrice/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+
+</nav>
+
+
+  </div>
+<div class="container-lg clearfix new-discussion-timeline experiment-repo-nav  px-3">
+  <div class="repository-content ">
+
+    
+    
+  <div class="file-navigation">
+    
+<details class="details-reset details-overlay select-menu branch-select-menu float-left hx_rsm" id="branch-select-menu">
+  <summary class="btn btn-sm select-menu-button css-truncate"
+           data-hotkey="w"
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target" data-menu-button>archi3</span>
+  </summary>
+
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/LukeSmithxyz/voidrice/ref-list/archi3/.config?source_action=disambiguate&amp;source_controller=files" preload>
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+    </include-fragment>
+  </details-menu>
+</details>
+
+    <div class="BtnGroup float-right">
+      
+  <button class="btn btn-sm BtnGroup-item disabled tooltipped tooltipped-n" aria-label="You must be signed in to make or propose changes" type="button">
+    Create new file
+  </button>
+
+
+
+
+      <a href="/LukeSmithxyz/voidrice/find/archi3" data-pjax data-hotkey="t" class="js-pjax-capture-input btn btn-sm BtnGroup-item empty-icon">
+        Find file
+      </a>
+      <a href="/LukeSmithxyz/voidrice/commits/archi3/.config" class="btn btn-sm BtnGroup-item empty-icon">
+        History
+      </a>
+    </div>
+    <div class="breadcrumb mb-2"><span class="js-repo-root text-bold"><span class="js-path-segment"><a data-pjax="true" href="/LukeSmithxyz/voidrice"><span>voidrice</span></a></span></span><span class="separator">/</span><strong class="final-path">.config</strong><span class="separator">/</span></div>
+  </div>
+
+  
+
+
+  <div class="commit-tease js-details-container Details d-flex rounded-top-1" data-issue-and-pr-hovercards-enabled>
+    
+<div class="AvatarStack flex-self-start AvatarStack--two">
+  <div class="AvatarStack-body" aria-label="guidocella and LukeSmithxyz (non-author committer)">
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=11783568" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/guidocella">
+          <img height="20" width="20" alt="@guidocella" src="https://avatars1.githubusercontent.com/u/11783568?s=60&amp;v=4" />
+</a>        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=29150857" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/LukeSmithxyz">
+          <img height="20" width="20" alt="@LukeSmithxyz" src="https://avatars3.githubusercontent.com/u/29150857?s=60&amp;v=4" />
+</a>  </div>
+</div>
+
+    <div class="flex-auto f6 mr-3">
+      
+      <a href="/LukeSmithxyz/voidrice/commits?author=guidocella"
+     class="commit-author tooltipped tooltipped-s user-mention"
+     aria-label="View all commits by guidocella">guidocella</a>
+
+
+   and   <a href="/LukeSmithxyz/voidrice/commits?author=LukeSmithxyz"
+     class="commit-author tooltipped tooltipped-s user-mention"
+     aria-label="View all commits by LukeSmithxyz">LukeSmithxyz</a>
+
+  
+
+
+        <a data-pjax="true" title="echo readlink is redundant (#375)" class="message text-inherit" href="/LukeSmithxyz/voidrice/commit/f255cad8e59191856e9ae9a87cca31e577deb9f8">echo readlink is redundant (</a><a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="493883544" data-permission-text="Issue title is private" data-url="https://github.com/LukeSmithxyz/voidrice/issues/375" data-hovercard-type="pull_request" data-hovercard-url="/LukeSmithxyz/voidrice/pull/375/hovercard" href="https://github.com/LukeSmithxyz/voidrice/pull/375">#375</a><a data-pjax="true" title="echo readlink is redundant (#375)" class="message text-inherit" href="/LukeSmithxyz/voidrice/commit/f255cad8e59191856e9ae9a87cca31e577deb9f8">)</a>
+
+    </div>
+    <div class="no-wrap d-flex flex-self-start flex-items-baseline">
+        <span class="mr-2 flex-self-center">
+          <include-fragment src="/LukeSmithxyz/voidrice/commit/f255cad8e59191856e9ae9a87cca31e577deb9f8/rollup" class="d-inline"></include-fragment>
+        </span>
+      <span class="mr-1">Latest commit</span>
+      <a class="commit-tease-sha mr-1" href="/LukeSmithxyz/voidrice/commit/f255cad8e59191856e9ae9a87cca31e577deb9f8" data-pjax>
+        f255cad
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2019-09-16T17:28:14Z" class="no-wrap">Sep 16, 2019</relative-time></span>
+    </div>
+  </div>
+
+
+
+<div class="file-wrap">
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/LukeSmithxyz/voidrice/tree/f255cad8e59191856e9ae9a87cca31e577deb9f8/.config">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax>
+    <thead>
+      <tr>
+        <th><span class="sr-only">Type</span></th>
+        <th><span class="sr-only">Name</span></th>
+        <th><span class="sr-only">Latest commit message</span></th>
+        <th><span class="sr-only">Commit time</span></th>
+      </tr>
+    </thead>
+      <tr class="up-tree js-navigation-item">
+        <td></td>
+        <td><a rel="nofollow" title="Go to parent directory" class="js-navigation-open" href="/LukeSmithxyz/voidrice">..</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 000 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 00.01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="calcurse" id="d4a01250c0428ddb1ca1f01f54339f69-a2a1653a32a68b7af47fa2e08b91c04fb6c6873b" href="/LukeSmithxyz/voidrice/tree/archi3/.config/calcurse">calcurse</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="comments are bloat" class="link-gray" href="/LukeSmithxyz/voidrice/commit/78e7d69aa983ce543dcf33848921d07a74a5da73">comments are bloat</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-10T21:52:35Z" class="no-wrap">Apr 10, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="dunst" id="0267228df9590e529a82bf28d1d8df32-a74b56d7ee32f0216dcb59774cd69fbbb0869932" href="/LukeSmithxyz/voidrice/tree/archi3/.config/dunst">dunst</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix for dunst update" class="link-gray" href="/LukeSmithxyz/voidrice/commit/fd57c4350b5cebe82ca0790856340eae1dbb3d81">fix for dunst update</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-02T23:20:26Z" class="no-wrap">Apr 2, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="fontconfig" id="7013f04a9776fb7542fc63d6532fd09d-9418f61d78afa2919f7e773e9da6de7f80200344" href="/LukeSmithxyz/voidrice/tree/archi3/.config/fontconfig">fontconfig</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Update fonts.conf" class="link-gray" href="/LukeSmithxyz/voidrice/commit/c28d66bae8090ec7190430caa7ec750643065879">Update fonts.conf</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-05T18:29:37Z" class="no-wrap">May 5, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="getkeys" id="c6ca548e6506b1970cc09d8b68f757e2-3592033a6a75c046244198a1fb980a15f1310d9e" href="/LukeSmithxyz/voidrice/tree/archi3/.config/getkeys">getkeys</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="🦀 ranger is gone! 🦀" class="link-gray" href="/LukeSmithxyz/voidrice/commit/05f46122b5496e43c3725558c606df83530a6daf"><g-emoji class="g-emoji" alias="crab" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f980.png">🦀</g-emoji> ranger is gone! <g-emoji class="g-emoji" alias="crab" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f980.png">🦀</g-emoji></a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-29T21:50:38Z" class="no-wrap">Mar 29, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="gtk-2.0" id="69ba0cd29a7af05f5c841deeeae13af3-34f926c77a18b82876f2f685ac2028115463974f" href="/LukeSmithxyz/voidrice/tree/archi3/.config/gtk-2.0">gtk-2.0</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="gtk2, refer, notmuch moved to conf" class="link-gray" href="/LukeSmithxyz/voidrice/commit/c6b6c4b71af70769136a4c1d76d9e4bb446cb508">gtk2, refer, notmuch moved to conf</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-02-19T18:56:15Z" class="no-wrap">Feb 19, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="gtk-3.0" id="bcee8903c25ff93262ed17134855ad6c-1df13b40e2e5efcf5e8d1e4dfc8d968d1ce44c9b" href="/LukeSmithxyz/voidrice/tree/archi3/.config/gtk-3.0">gtk-3.0</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="gruvbox theme" class="link-gray" href="/LukeSmithxyz/voidrice/commit/7312a5acea93d202c601a7c6fed12baada2358fb">gruvbox theme</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-02-07T11:51:35Z" class="no-wrap">Feb 7, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="i3" id="51d4b581d21c20a16147b17c3adc7867-7f553f604504f61eed3f307c3fda4ede29810824" href="/LukeSmithxyz/voidrice/tree/archi3/.config/i3">i3</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="screen up down" class="link-gray" href="/LukeSmithxyz/voidrice/commit/eebdb937a6aaa5e6a8b41534e9451d3ca664218d">screen up down</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-23T07:44:23Z" class="no-wrap">May 23, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="i3blocks" id="d6b8ea18f9137882156a9d41fd989cd6-987ca4ee48f6b3237a4204df8404c4848bd6521a" href="/LukeSmithxyz/voidrice/tree/archi3/.config/i3blocks">i3blocks</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="scripts moved to ~/.local/bin" class="link-gray" href="/LukeSmithxyz/voidrice/commit/54920103c2843f5a3620effbccaceaee7f6885c1">scripts moved to ~/.local/bin</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-18T04:07:32Z" class="no-wrap">May 18, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mpd" id="c1442c2c6ec7407b0e3ebfc8006dc819-741a5583d2f15c3775a001dc547fb8451bac62e7" href="/LukeSmithxyz/voidrice/tree/archi3/.config/mpd">mpd</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="mpd autoupdate and overt switch to pulse" class="link-gray" href="/LukeSmithxyz/voidrice/commit/2572ae89d831fe21e5121c6aa19b293992d2df5a">mpd autoupdate and overt switch to pulse</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-11-01T17:50:09Z" class="no-wrap">Nov 1, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mpv" id="a50ebbf3b00db049f8437d8323b088c1-051b06603af0deeac527fbf05e001822bc0dd356" href="/LukeSmithxyz/voidrice/tree/archi3/.config/mpv">mpv</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="&quot;first&quot; commit, preparing for LARBS 2.0" class="link-gray" href="/LukeSmithxyz/voidrice/commit/50adee4e79febf6f74594604e9f7083461b04227">"first" commit, preparing for LARBS 2.0</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-01-22T01:29:48Z" class="no-wrap">Jan 21, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="ncmpcpp" id="39257370963abf0fe080075ecdecf062-82e6faed275aa8ab00c268e2ba0c93f8c208e3b2" href="/LukeSmithxyz/voidrice/tree/archi3/.config/ncmpcpp">ncmpcpp</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix" class="link-gray" href="/LukeSmithxyz/voidrice/commit/31fd794d87d49c09548b2037f132ff17b2442c01">fix</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-02-10T19:04:09Z" class="no-wrap">Feb 10, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="newsboat" id="7ca6b99f9f689d6573e8b5633ff34cab-00c80d41641d9a9bf18d0fffa90488725a2d1a39" href="/LukeSmithxyz/voidrice/tree/archi3/.config/newsboat">newsboat</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix to newsboat config and additions to init.vim (#374)
+
+* removed duplicate keybinding with same function
+
+* added command to install plugins on first run
+
+* w!! command to save file buffer as sudo on files that require
+root privileges" class="link-gray" href="/LukeSmithxyz/voidrice/commit/125712f1bb3371f7676258599a28c68b0b1ffa6e">fix to newsboat config and additions to init.vim (</a><a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="493560029" data-permission-text="Issue title is private" data-url="https://github.com/LukeSmithxyz/voidrice/issues/374" data-hovercard-type="pull_request" data-hovercard-url="/LukeSmithxyz/voidrice/pull/374/hovercard" href="https://github.com/LukeSmithxyz/voidrice/pull/374">#374</a><a data-pjax="true" title="fix to newsboat config and additions to init.vim (#374)
+
+* removed duplicate keybinding with same function
+
+* added command to install plugins on first run
+
+* w!! command to save file buffer as sudo on files that require
+root privileges" class="link-gray" href="/LukeSmithxyz/voidrice/commit/125712f1bb3371f7676258599a28c68b0b1ffa6e">)</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-09-14T00:35:41Z" class="no-wrap">Sep 13, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="nvim" id="5f611233060e6d01f6697a0ae9f55d4a-1959f7a84fa2480b2037390e819ae5f5d875aa8f" href="/LukeSmithxyz/voidrice/tree/archi3/.config/nvim">nvim</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix to newsboat config and additions to init.vim (#374)
+
+* removed duplicate keybinding with same function
+
+* added command to install plugins on first run
+
+* w!! command to save file buffer as sudo on files that require
+root privileges" class="link-gray" href="/LukeSmithxyz/voidrice/commit/125712f1bb3371f7676258599a28c68b0b1ffa6e">fix to newsboat config and additions to init.vim (</a><a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="493560029" data-permission-text="Issue title is private" data-url="https://github.com/LukeSmithxyz/voidrice/issues/374" data-hovercard-type="pull_request" data-hovercard-url="/LukeSmithxyz/voidrice/pull/374/hovercard" href="https://github.com/LukeSmithxyz/voidrice/pull/374">#374</a><a data-pjax="true" title="fix to newsboat config and additions to init.vim (#374)
+
+* removed duplicate keybinding with same function
+
+* added command to install plugins on first run
+
+* w!! command to save file buffer as sudo on files that require
+root privileges" class="link-gray" href="/LukeSmithxyz/voidrice/commit/125712f1bb3371f7676258599a28c68b0b1ffa6e">)</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-09-14T00:35:41Z" class="no-wrap">Sep 13, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="sxhkd" id="ca05365baddf549b97814927beabd661-202357627b6037b5e5e7f14a83fedbefbeba101f" href="/LukeSmithxyz/voidrice/tree/archi3/.config/sxhkd">sxhkd</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="better fix (#358)" class="link-gray" href="/LukeSmithxyz/voidrice/commit/02b7c10ea28ba0bd404efe6ed689400d992db68a">better fix (</a><a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="479275573" data-permission-text="Issue title is private" data-url="https://github.com/LukeSmithxyz/voidrice/issues/358" data-hovercard-type="pull_request" data-hovercard-url="/LukeSmithxyz/voidrice/pull/358/hovercard" href="https://github.com/LukeSmithxyz/voidrice/pull/358">#358</a><a data-pjax="true" title="better fix (#358)" class="link-gray" href="/LukeSmithxyz/voidrice/commit/02b7c10ea28ba0bd404efe6ed689400d992db68a">)</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-08-14T17:36:49Z" class="no-wrap">Aug 14, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="This path skips through empty directories" id="f8156d6026a6b460c2b31acf90131928-71c8a83994afb110e939056020b716584703bfd2" href="/LukeSmithxyz/voidrice/tree/archi3/.config/sxiv/exec"><span class="simplified-path">sxiv/</span>exec</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="echo readlink is redundant (#375)" class="link-gray" href="/LukeSmithxyz/voidrice/commit/f255cad8e59191856e9ae9a87cca31e577deb9f8">echo readlink is redundant (</a><a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="493883544" data-permission-text="Issue title is private" data-url="https://github.com/LukeSmithxyz/voidrice/issues/375" data-hovercard-type="pull_request" data-hovercard-url="/LukeSmithxyz/voidrice/pull/375/hovercard" href="https://github.com/LukeSmithxyz/voidrice/pull/375">#375</a><a data-pjax="true" title="echo readlink is redundant (#375)" class="link-gray" href="/LukeSmithxyz/voidrice/commit/f255cad8e59191856e9ae9a87cca31e577deb9f8">)</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-09-16T17:28:14Z" class="no-wrap">Sep 16, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="vifm" id="f39326c4fcdc264333f78c291b6e4a94-c1bf5e5578baf7c0233253d4b7f86280046476fc" href="/LukeSmithxyz/voidrice/tree/archi3/.config/vifm">vifm</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="dumb mistake" class="link-gray" href="/LukeSmithxyz/voidrice/commit/cc9554422142db79e71ed6cf31ce2f02c33be2d1">dumb mistake</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-02T21:43:11Z" class="no-wrap">May 2, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="zathura" id="6ab47bc4c4faa19aefd56413d0a25841-6380d6ce07934c58825c22a8968f4c71b5f3d172" href="/LukeSmithxyz/voidrice/tree/archi3/.config/zathura">zathura</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="p to print in zathura" class="link-gray" href="/LukeSmithxyz/voidrice/commit/9020ef0b5920bff3bdeabb6aba055ac8c26ea040">p to print in zathura</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-11-27T19:31:55Z" class="no-wrap">Nov 27, 2018</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="aliasrc" id="b24d258976380113a2d444504ea39f97-d67e6716c047007957be6ba141e84d5a124319ed" href="/LukeSmithxyz/voidrice/blob/archi3/.config/aliasrc">aliasrc</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Use /usr/bin/env * instead of /bin/* (#355)" class="link-gray" href="/LukeSmithxyz/voidrice/commit/ff0366fc7dd456bc363015da09749942d9308d94">Use /usr/bin/env * instead of /bin/* (</a><a class="issue-link js-issue-link" data-error-text="Failed to load issue title" data-id="476588775" data-permission-text="Issue title is private" data-url="https://github.com/LukeSmithxyz/voidrice/issues/355" data-hovercard-type="pull_request" data-hovercard-url="/LukeSmithxyz/voidrice/pull/355/hovercard" href="https://github.com/LukeSmithxyz/voidrice/pull/355">#355</a><a data-pjax="true" title="Use /usr/bin/env * instead of /bin/* (#355)" class="link-gray" href="/LukeSmithxyz/voidrice/commit/ff0366fc7dd456bc363015da09749942d9308d94">)</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-08-06T12:30:12Z" class="no-wrap">Aug 6, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="bmdirs" id="087dc9daaa90f669abdda8c9d39722fe-24bdd218a7118110e1eef1b82124ed092fddf79f" href="/LukeSmithxyz/voidrice/blob/archi3/.config/bmdirs">bmdirs</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="scripts moved to ~/.local/bin" class="link-gray" href="/LukeSmithxyz/voidrice/commit/54920103c2843f5a3620effbccaceaee7f6885c1">scripts moved to ~/.local/bin</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-18T04:07:32Z" class="no-wrap">May 18, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="bmfiles" id="436e6a12ae4c2875cd3c5d50a303c20d-6f9c17d7d8fc1fbae2977e0a75a16abbb2bd79d7" href="/LukeSmithxyz/voidrice/blob/archi3/.config/bmfiles">bmfiles</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="sxhkd dox and perks" class="link-gray" href="/LukeSmithxyz/voidrice/commit/797055a9b5c5b100f98f9c96d78f754c15009a3a">sxhkd dox and perks</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-23T23:35:07Z" class="no-wrap">May 23, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="emoji" id="ba323c3f5b3f1b536461d41cc7f1ba60-35c1e1be65ad6ea0be95d20b7060786cc3f463fd" href="/LukeSmithxyz/voidrice/blob/archi3/.config/emoji">emoji</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="emojis file moved to config" class="link-gray" href="/LukeSmithxyz/voidrice/commit/0111667627f403e1940a08c43d6dee8591919853">emojis file moved to config</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-12T04:02:14Z" class="no-wrap">Mar 12, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="fontawesome" id="4121662a0e17705c5dce874c683e353b-f58fbf5bc17894dd940fddef690eed3cbe9edb23" href="/LukeSmithxyz/voidrice/blob/archi3/.config/fontawesome">fontawesome</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="fix" class="link-gray" href="/LukeSmithxyz/voidrice/commit/9220538725701596808784b4e9469823545bd4e8">fix</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-05-18T17:01:01Z" class="no-wrap">May 18, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="mimeapps.list" id="040ba40cdf974a4f6b1fab60e689f976-84bf43bf12958b86d7c9965d5c2a4b0fafabc867" href="/LukeSmithxyz/voidrice/blob/archi3/.config/mimeapps.list">mimeapps.list</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="actual mimeapps fix" class="link-gray" href="/LukeSmithxyz/voidrice/commit/61e257693bb8856dc4268bbcff00f71f34b369a2">actual mimeapps fix</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-03-13T01:21:04Z" class="no-wrap">Mar 12, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="user-dirs.dirs" id="8b7c38b845f41b66018b7e61b9df5991-5a28707c325accdacc28f2a0bc63cc95f1ac88dc" href="/LukeSmithxyz/voidrice/blob/archi3/.config/user-dirs.dirs">user-dirs.dirs</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="chomd -x user-dirs.dirs" class="link-gray" href="/LukeSmithxyz/voidrice/commit/b937082b98cb2210497a9e6766b46ddfd5a4548f">chomd -x user-dirs.dirs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-10T21:53:07Z" class="no-wrap">Apr 10, 2019</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"/></svg>
+            <img width="16" height="16" class="spinner" alt="" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" />
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="wall.png" id="4acd0385d2476070301ca49f6a0657e1-6e9889ccfabe8ba0b43f31881558c599bcd70c2d" href="/LukeSmithxyz/voidrice/blob/archi3/.config/wall.png">wall.png</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="gaby is new wallpaper" class="link-gray" href="/LukeSmithxyz/voidrice/commit/4abff95c8cc90b271f298d347fb9ca36cb46ae73">gaby is new wallpaper</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2018-08-05T18:44:42Z" class="no-wrap">Aug 5, 2018</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+  
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<div id="pjax-head">
+  <title>voidrice/.config at archi3 · LukeSmithxyz/voidrice · GitHub</title>
+  <meta name="selected-link" value="repo_source">
+  
+  
+  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/files/disambiguate" data-pjax-transient="true" />
+  
+  <meta name="request-id" content="8B5C:3FBD:118D87:1EA539:5DD4278D" data-pjax-transient>
+  
+
+
+    <link rel="canonical" href="https://github.com/LukeSmithxyz/voidrice/tree/archi3/.config" data-pjax-transient>
+    <link href="https://github.com/LukeSmithxyz/voidrice/commits/archi3.atom" rel="alternate" title="Recent Commits to voidrice:archi3" type="application/atom+xml">
+
+</div>
+
+<div id="js-flash-container">
+
+</div>
+
+

@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Practice - multiple choice questions (Ch 8)</title>
+    <link rel="shortcut icon" href="https://culearn.carleton.ca/moodle/theme/image.php/culearn/theme/1573220288/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Practice - multiple choice questions (Ch 8)" />
+<link rel="stylesheet" type="text/css" href="https://culearn.carleton.ca/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://culearn.carleton.ca/moodle/theme/styles.php/culearn/1573220288_1557080650/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/culearn.carleton.ca\/moodle","sesskey":"PDRHd9rHCC","themerev":"1573220288","slasharguments":1,"theme":"culearn","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1573220290","admin":"admin","svgicons":true,"usertimezone":"America\/Toronto","contextid":3323369};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/culearn.carleton.ca\/moodle\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/culearn.carleton.ca\/moodle\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/culearn.carleton.ca\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/culearn.carleton.ca\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/culearn.carleton.ca\/moodle\/theme\/yui_combo.php?m\/1573220290\/","combine":true,"comboBase":"https:\/\/culearn.carleton.ca\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1573220290\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-broker":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-imports":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-recordings":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-rooms":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-mod_scheduler-limitchoices":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bsgrid-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_imagedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_kalturamedia-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-local_kaltura-ltiservice":{"requires":["base","node","node-event-simulate"]},"moodle-local_kaltura-lticontainer":{"requires":["base","node"]},"moodle-local_kaltura-ltipanel":{"requires":["base","node","panel","node-event-simulate"]},"moodle-local_kaltura-ltitinymcepanel":{"requires":["base","node","panel","node-event-simulate"]}}},"gallery":{"name":"gallery","base":"https:\/\/culearn.carleton.ca\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/culearn.carleton.ca\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1573220290\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/culearn.carleton.ca\/moodle\/lib\/javascript.php\/1573220290\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/culearn.carleton.ca\/moodle\/lib\/javascript.php\/1573220290\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"},"core_question_flags":{"name":"core_question_flags","fullpath":"https:\/\/culearn.carleton.ca\/moodle\/lib\/javascript.php\/1573220290\/question\/flags.js","requires":["base","dom","event-delegate","io-base"]},"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/culearn.carleton.ca\/moodle\/lib\/javascript.php\/1573220290\/question\/qengine.js","requires":["node","event"]},"mod_quiz":{"name":"mod_quiz","fullpath":"https:\/\/culearn.carleton.ca\/moodle\/lib\/javascript.php\/1573220290\/mod\/quiz\/module.js","requires":["base","dom","event-delegate","event-key","core_question_engine","moodle-core-formchangechecker"]}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+ <meta name="addr" content="10.254.246.198" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-mod-quiz-attempt" class="format-topcoll  path-mod path-mod-quiz safari dir-ltr lang-en yui-skin-sam yui3-skin-sam culearn-carleton-ca--moodle pagelayout-incourse course-131251 context-3323369 cmid-1495380 category-1069 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="https://culearn.carleton.ca/moodle/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://culearn.carleton.ca/moodle/lib/javascript.php/1573220290/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="fixed-top navbar navbar-light bg-white navbar-expand moodle-has-zindex" aria-label="Site navigation">
+    
+            <div data-region="drawer-toggle" class="d-inline-block mr-3">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  ></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+            <a href="https://culearn.carleton.ca/moodle" class="navbar-brand 
+                    d-none d-sm-inline
+                    ">
+                <span class="site-name d-none d-md-inline">cuLearn</span>
+            </a>
+    
+            <ul class="navbar-nav d-none d-md-flex">
+                <!-- custom_menu -->
+                <li class="nav-item">
+    <a class="nav-item nav-link" href="http://carleton.ca/" title="Carleton.ca">Carleton.ca</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="http://www1.carleton.ca/academics/support/" title="Academic Support">Academic Support</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="http://www.library.carleton.ca/" title="Library">Library</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="http://central.carleton.ca/" title="Carleton Central">Carleton Central</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="http://www5.carleton.ca/portal/" title="MyCarleton">MyCarleton</a>
+</li><li class="nav-item">
+    <a class="nav-item nav-link" href="http://www5.carleton.ca/portal/" title="Email">Email</a>
+</li>
+                <!-- page_heading_menu -->
+                
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <div class="d-none d-lg-block">
+                
+            </div>
+                <!-- navbar_plugin_output -->
+                <li class="nav-item">
+                <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="104410"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-5dd8a4752d10b5dd8a4750d95a5"
+        aria-haspopup="true"
+        aria-label="Show notification window with no new notifications"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw "  title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-5dd8a4752d10b5dd8a4750d95a5"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Notification window"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw "  title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="https://culearn.carleton.ca/moodle/message/notificationpreferences.php?userid=104410"
+           title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw "  title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://culearn.carleton.ca/moodle/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                </li>
+                <!-- user_menu -->
+                <li class="nav-item d-flex align-items-center">
+                    <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar" role="menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class=" dropdown-toggle icon-no-margin" id="dropdown-1" aria-label="User menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            
+                            <span class="userbutton"><span class="usertext mr-1">Eric Romano</span><span class="avatars"><span class="avatar current"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/u/f2" class="userpicture defaultuserpic" width="35" height="35" role="presentation" aria-hidden="true" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br" id="dropdown-menu-1">
+                                        <a href="https://culearn.carleton.ca/moodle/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1">
+                                                <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-1">
+                                                Dashboard
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://culearn.carleton.ca/moodle/user/profile.php?id=104410" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2">
+                                                <i class="icon fa fa-user fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-2">
+                                                Profile
+                                            </span>
+                                        </a>
+                                        <a href="https://culearn.carleton.ca/moodle/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3">
+                                                <i class="icon fa fa-table fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-3">
+                                                Grades
+                                            </span>
+                                        </a>
+                                        <a href="https://culearn.carleton.ca/moodle/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-4">
+                                                <i class="icon fa fa-wrench fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-4">
+                                                Preferences
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                        <a href="https://culearn.carleton.ca/moodle/login/logout.php?sesskey=PDRHd9rHCC" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-5">
+                                                <i class="icon fa fa-sign-out fa-fw " aria-hidden="true"  ></i>
+                                            <span class="menu-action-text" id="actionmenuaction-5">
+                                                Log out
+                                            </span>
+                                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></div>
+                </li>
+            </ul>
+            <!-- search_box -->
+    </nav>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex">
+                    <div class="mr-auto">
+                        <div class="page-context-header"><div class="page-header-headings"><h1>BUSI1001R [30525] Financial Accounting (LEC) Fall 2019</h1></div></div>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav role="navigation" aria-label="Breadcrumb trail">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://culearn.carleton.ca/moodle/my/"  >Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">My courses</li>
+                <li class="breadcrumb-item">
+                    <a href="https://culearn.carleton.ca/moodle/course/view.php?id=131251"  title="BUSI1001R [30525] Financial Accounting (LEC) Fall 2019">BUSI1001R Fall 2019</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-12"  >Ch 8 - Property, Plant and Equipment &amp; Intangibles</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="https://culearn.carleton.ca/moodle/mod/quiz/view.php?id=1495380" aria-current="page" title="Quiz">Practice - multiple choice questions (Ch 8)</a>
+                </li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row pb-3">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="has-blocks mb-3">
+
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><form action="https://culearn.carleton.ca/moodle/mod/quiz/processattempt.php?cmid=1495380" method="post" enctype="multipart/form-data" accept-charset="utf-8" id="responseform"><div><div id="q1" class="que multichoice immediatefeedback complete"><div class="info"><h3 class="no">Question <span class="qno">1</span></h3><div class="state">Complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:1_:flagged" value="0" /><input type="checkbox" id="q2756579:1_:flaggedcheckbox" name="q2756579:1_:flagged" value="1" /><input type="hidden" value="qaid=31999281&amp;qubaid=2756579&amp;qid=1972691&amp;slot=1&amp;checksum=abb948bffae6121344c88a5c19c0ce48&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:1_:flaggedlabel" for="q2756579:1_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:1_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:1_:sequencecheck" value="2" /><div class="qtext"><p>On July 1, Mancini Inc. purchased equipment costing $60,000. The equipment is expected to produce 50,000 units over its 5-year life. The residual value is $10,000. A total of 4,000 units were produced to the end of December, the company’s year-end. What will the depreciation expense for the year be if the units of production method of depreciation is used?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:1_answer" disabled="disabled" value="0" id="q2756579:1_answer0" /><label for="q2756579:1_answer0" class="m-l-1"><span class="answernumber">a. </span>$5,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:1_answer" disabled="disabled" value="1" id="q2756579:1_answer1" checked="checked" /><label for="q2756579:1_answer1" class="m-l-1"><span class="answernumber">b. </span>$4,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:1_answer" disabled="disabled" value="2" id="q2756579:1_answer2" /><label for="q2756579:1_answer2" class="m-l-1"><span class="answernumber">c. </span>$4,800</label> </div>
+<div class="r1"><input type="radio" name="q2756579:1_answer" disabled="disabled" value="3" id="q2756579:1_answer3" /><label for="q2756579:1_answer3" class="m-l-1"><span class="answernumber">d. </span>$10,000</label> </div>
+</div></div></div></div></div><div id="q2" class="que multichoice immediatefeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">2</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:2_:flagged" value="0" /><input type="checkbox" id="q2756579:2_:flaggedcheckbox" name="q2756579:2_:flagged" value="1" /><input type="hidden" value="qaid=31999282&amp;qubaid=2756579&amp;qid=1972689&amp;slot=2&amp;checksum=8fb4b7b18d27ac380f2a7114941b2d43&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:2_:flaggedlabel" for="q2756579:2_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:2_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:2_:sequencecheck" value="2" /><div class="qtext"><p>On July 1, Mancini Inc. purchased equipment costing $60,000. The equipment is expected to produce 50,000 units over its 5-year life. The residual value is $10,000. A total of 4,000 units were produced to the end of December, the company’s year-end. What will the depreciation expense for the year be if the straight line method of depreciation is used?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:2_answer" value="0" id="q2756579:2_answer0" /><label for="q2756579:2_answer0" class="m-l-1"><span class="answernumber">a. </span>$4,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:2_answer" value="1" id="q2756579:2_answer1" /><label for="q2756579:2_answer1" class="m-l-1"><span class="answernumber">b. </span>$4,800</label> </div>
+<div class="r0"><input type="radio" name="q2756579:2_answer" value="2" id="q2756579:2_answer2" /><label for="q2756579:2_answer2" class="m-l-1"><span class="answernumber">c. </span>$10,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:2_answer" value="3" id="q2756579:2_answer3" checked="checked" /><label for="q2756579:2_answer3" class="m-l-1"><span class="answernumber">d. </span>$5,000</label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q2756579:2_-submit" name="q2756579:2_-submit" value="Check" class="submit btn btn-default" /></div></div></div></div><div id="q3" class="que multichoice immediatefeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">3</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:3_:flagged" value="0" /><input type="checkbox" id="q2756579:3_:flaggedcheckbox" name="q2756579:3_:flagged" value="1" /><input type="hidden" value="qaid=31999283&amp;qubaid=2756579&amp;qid=1972633&amp;slot=3&amp;checksum=afaa953f210db376bbb6a0525ec2ff4f&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:3_:flaggedlabel" for="q2756579:3_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:3_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:3_:sequencecheck" value="2" /><div class="qtext"><p>Basie Inc. acquired an asset for $200,000 in January 1, 20x3. The estimated useful life and residual value are 5 years and $20,000, respectively. On January 1, 20x4, the residual value estimate was revised to $50,000. Assuming that Basie uses the straight line method, what will depreciation expense be for 20x4?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:3_answer" value="0" id="q2756579:3_answer0" /><label for="q2756579:3_answer0" class="m-l-1"><span class="answernumber">a. </span>$30,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:3_answer" value="1" id="q2756579:3_answer1" /><label for="q2756579:3_answer1" class="m-l-1"><span class="answernumber">b. </span>$36,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:3_answer" value="2" id="q2756579:3_answer2" /><label for="q2756579:3_answer2" class="m-l-1"><span class="answernumber">c. </span>$27,500</label> </div>
+<div class="r1"><input type="radio" name="q2756579:3_answer" value="3" id="q2756579:3_answer3" checked="checked" /><label for="q2756579:3_answer3" class="m-l-1"><span class="answernumber">d. </span>$28,500</label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q2756579:3_-submit" name="q2756579:3_-submit" value="Check" class="submit btn btn-default" /></div></div></div></div><div id="q4" class="que multichoice immediatefeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">4</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:4_:flagged" value="0" /><input type="checkbox" id="q2756579:4_:flaggedcheckbox" name="q2756579:4_:flagged" value="1" /><input type="hidden" value="qaid=31999284&amp;qubaid=2756579&amp;qid=1972599&amp;slot=4&amp;checksum=6dfc459000605aec22ce3bf1de239300&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:4_:flaggedlabel" for="q2756579:4_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:4_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:4_:sequencecheck" value="2" /><div class="qtext"><p>On January 1, 20x0, the Mendes Corporation acquired a patent at a cost of $518,500 and spent $85,000 in legal costs to successfully defend the patent against infringement. The patent is valid for 17 years, but the company only expects to be able to use it for 10 years. What would the annual amortization on the patent be?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:4_answer" value="0" id="q2756579:4_answer0" checked="checked" /><label for="q2756579:4_answer0" class="m-l-1"><span class="answernumber">a. </span>$60,350</label> </div>
+<div class="r1"><input type="radio" name="q2756579:4_answer" value="1" id="q2756579:4_answer1" /><label for="q2756579:4_answer1" class="m-l-1"><span class="answernumber">b. </span>$30,500</label> </div>
+<div class="r0"><input type="radio" name="q2756579:4_answer" value="2" id="q2756579:4_answer2" /><label for="q2756579:4_answer2" class="m-l-1"><span class="answernumber">c. </span>$35,500</label> </div>
+<div class="r1"><input type="radio" name="q2756579:4_answer" value="3" id="q2756579:4_answer3" /><label for="q2756579:4_answer3" class="m-l-1"><span class="answernumber">d. </span>$51,850</label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q2756579:4_-submit" name="q2756579:4_-submit" value="Check" class="submit btn btn-default" /></div></div></div></div><div id="q5" class="que multichoice immediatefeedback complete"><div class="info"><h3 class="no">Question <span class="qno">5</span></h3><div class="state">Complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:5_:flagged" value="0" /><input type="checkbox" id="q2756579:5_:flaggedcheckbox" name="q2756579:5_:flagged" value="1" /><input type="hidden" value="qaid=31999285&amp;qubaid=2756579&amp;qid=1972636&amp;slot=5&amp;checksum=6d8cab734fa4af56a684e985981a2315&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:5_:flaggedlabel" for="q2756579:5_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:5_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:5_:sequencecheck" value="3" /><div class="qtext"><p>On July 1, 20x11, Nesser Company purchased for $540,000 a warehouse building and the land on which it is located. The following data were available concerning the property:</p>
+<table border="0">
+<tbody>
+<tr>
+<td> </td>
+<td style="text-align: right;"><em>Current Appraised Value</em></td>
+<td style="text-align: right;"><em>Seller's Original Cost</em></td>
+</tr>
+<tr>
+<td>Land</td>
+<td style="text-align: right;">$200,000</td>
+<td style="text-align: right;">$140,000</td>
+</tr>
+<tr>
+<td>Warehouse building</td>
+<td style="text-align: right;"><span style="text-decoration: underline;">300,000</span></td>
+<td style="text-align: right;"><span style="text-decoration: underline;">420,000</span></td>
+</tr>
+<tr>
+<td> </td>
+<td style="text-align: right;"><span style="text-decoration: underline;">$500,000</span></td>
+<td style="text-align: right;"><span style="text-decoration: underline;">$420,000</span></td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p>Nesser should record the land at</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:5_answer" disabled="disabled" value="0" id="q2756579:5_answer0" /><label for="q2756579:5_answer0" class="m-l-1"><span class="answernumber">a. </span>$140,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:5_answer" disabled="disabled" value="1" id="q2756579:5_answer1" checked="checked" /><label for="q2756579:5_answer1" class="m-l-1"><span class="answernumber">b. </span>$216,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:5_answer" disabled="disabled" value="2" id="q2756579:5_answer2" /><label for="q2756579:5_answer2" class="m-l-1"><span class="answernumber">c. </span>$180,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:5_answer" disabled="disabled" value="3" id="q2756579:5_answer3" /><label for="q2756579:5_answer3" class="m-l-1"><span class="answernumber">d. </span>$200,000</label> </div>
+</div></div></div></div></div><div id="q6" class="que multichoice immediatefeedback complete"><div class="info"><h3 class="no">Question <span class="qno">6</span></h3><div class="state">Complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:6_:flagged" value="0" /><input type="checkbox" id="q2756579:6_:flaggedcheckbox" name="q2756579:6_:flagged" value="1" /><input type="hidden" value="qaid=31999286&amp;qubaid=2756579&amp;qid=1972650&amp;slot=6&amp;checksum=ce500ed93087c3804332ce0edd467d20&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:6_:flaggedlabel" for="q2756579:6_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:6_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:6_:sequencecheck" value="2" /><div class="qtext"><p>Foerster Corporation bought a parcel of land for $500,000 for the purpose of building a factory. The land contained a shed that needed to be demolished. The demolition costs were $15,000, but $5,000 was salvaged by selling the materials recovered from the demolished shed. Closing costs of $20,000 included legal and brokerage fees. At what amount should the cost of the land be recorded in the books of Foerster Corporation?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:6_answer" disabled="disabled" value="0" id="q2756579:6_answer0" /><label for="q2756579:6_answer0" class="m-l-1"><span class="answernumber">a. </span>$500,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:6_answer" disabled="disabled" value="1" id="q2756579:6_answer1" /><label for="q2756579:6_answer1" class="m-l-1"><span class="answernumber">b. </span>$520,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:6_answer" disabled="disabled" value="2" id="q2756579:6_answer2" checked="checked" /><label for="q2756579:6_answer2" class="m-l-1"><span class="answernumber">c. </span>$530,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:6_answer" disabled="disabled" value="3" id="q2756579:6_answer3" /><label for="q2756579:6_answer3" class="m-l-1"><span class="answernumber">d. </span>$535,000</label> </div>
+</div></div></div></div></div><div id="q7" class="que multichoice immediatefeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">7</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:7_:flagged" value="0" /><input type="checkbox" id="q2756579:7_:flaggedcheckbox" name="q2756579:7_:flagged" value="1" /><input type="hidden" value="qaid=31999287&amp;qubaid=2756579&amp;qid=1972671&amp;slot=7&amp;checksum=af305261ca07b2232d6f4caf7d261346&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:7_:flaggedlabel" for="q2756579:7_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:7_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:7_:sequencecheck" value="2" /><div class="qtext"><p>Seow Ltd. began the year with capital assets of $888,000 and accumulated depreciation of $234,000. During the year, capital assets were purchased for $223,000, and capital assets with a net book value of $40,000 were sold for $47,000. At the end of the year, Seow had capital assets of $999,000 and accumulated depreciation of $207,000. What was the depreciation expense for the year?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:7_answer" value="0" id="q2756579:7_answer0" /><label for="q2756579:7_answer0" class="m-l-1"><span class="answernumber">a. </span>$112,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:7_answer" value="1" id="q2756579:7_answer1" /><label for="q2756579:7_answer1" class="m-l-1"><span class="answernumber">b. </span>$207,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:7_answer" value="2" id="q2756579:7_answer2" /><label for="q2756579:7_answer2" class="m-l-1"><span class="answernumber">c. </span>$72,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:7_answer" value="3" id="q2756579:7_answer3" checked="checked" /><label for="q2756579:7_answer3" class="m-l-1"><span class="answernumber">d. </span>$45,000</label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q2756579:7_-submit" name="q2756579:7_-submit" value="Check" class="submit btn btn-default" /></div></div></div></div><div id="q8" class="que multichoice immediatefeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">8</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:8_:flagged" value="0" /><input type="checkbox" id="q2756579:8_:flaggedcheckbox" name="q2756579:8_:flagged" value="1" /><input type="hidden" value="qaid=31999288&amp;qubaid=2756579&amp;qid=1972619&amp;slot=8&amp;checksum=e63e74f9761ba6ec20ffd2b4eedf1732&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:8_:flaggedlabel" for="q2756579:8_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:8_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:8_:sequencecheck" value="1" /><div class="qtext"><p>A land site was acquired for $1,000,000. To acquire the land, a $60,000 commission was paid to a real estate agent. Costs of $15,000 were incurred to clear the land in preparation for construction of an office building. At what amount should the land be reported on the balance sheet?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:8_answer" value="0" id="q2756579:8_answer0" /><label for="q2756579:8_answer0" class="m-l-1"><span class="answernumber">a. </span>$1,015,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:8_answer" value="1" id="q2756579:8_answer1" /><label for="q2756579:8_answer1" class="m-l-1"><span class="answernumber">b. </span>$1,075,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:8_answer" value="2" id="q2756579:8_answer2" /><label for="q2756579:8_answer2" class="m-l-1"><span class="answernumber">c. </span>$1,000,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:8_answer" value="3" id="q2756579:8_answer3" /><label for="q2756579:8_answer3" class="m-l-1"><span class="answernumber">d. </span>$1,060,000</label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q2756579:8_-submit" name="q2756579:8_-submit" value="Check" class="submit btn btn-default" /></div></div></div></div><div id="q9" class="que multichoice immediatefeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">9</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:9_:flagged" value="0" /><input type="checkbox" id="q2756579:9_:flaggedcheckbox" name="q2756579:9_:flagged" value="1" /><input type="hidden" value="qaid=31999289&amp;qubaid=2756579&amp;qid=1972632&amp;slot=9&amp;checksum=36b7fd62927398ea48ee28221198a05c&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:9_:flaggedlabel" for="q2756579:9_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:9_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:9_:sequencecheck" value="1" /><div class="qtext"><p>Sarah Company purchased equipment for $123,000. The equipment is estimated to have a useful life of 10 years and a residual value of $8,000. Sarah uses the double-declining-balance method for depreciation. What would be the amount of depreciation in the second year?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:9_answer" value="0" id="q2756579:9_answer0" /><label for="q2756579:9_answer0" class="m-l-1"><span class="answernumber">a. </span>$24,600</label> </div>
+<div class="r1"><input type="radio" name="q2756579:9_answer" value="1" id="q2756579:9_answer1" /><label for="q2756579:9_answer1" class="m-l-1"><span class="answernumber">b. </span>$23,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:9_answer" value="2" id="q2756579:9_answer2" /><label for="q2756579:9_answer2" class="m-l-1"><span class="answernumber">c. </span>$19,680</label> </div>
+<div class="r1"><input type="radio" name="q2756579:9_answer" value="3" id="q2756579:9_answer3" /><label for="q2756579:9_answer3" class="m-l-1"><span class="answernumber">d. </span>$18,400</label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q2756579:9_-submit" name="q2756579:9_-submit" value="Check" class="submit btn btn-default" /></div></div></div></div><div id="q10" class="que multichoice immediatefeedback notyetanswered"><div class="info"><h3 class="no">Question <span class="qno">10</span></h3><div class="state">Not complete</div><div class="grade">Marked out of 1.00</div><div class="questionflag editable" aria-atomic="true" aria-relevant="text" aria-live="assertive"><input type="hidden" name="q2756579:10_:flagged" value="0" /><input type="checkbox" id="q2756579:10_:flaggedcheckbox" name="q2756579:10_:flagged" value="1" /><input type="hidden" value="qaid=31999290&amp;qubaid=2756579&amp;qid=1972665&amp;slot=10&amp;checksum=d3de735d6dbbb7ad19d0997a9480e324&amp;sesskey=PDRHd9rHCC&amp;newstate=" class="questionflagpostdata" /><label id="q2756579:10_:flaggedlabel" for="q2756579:10_:flaggedcheckbox"><img src="https://culearn.carleton.ca/moodle/theme/image.php/culearn/core/1573220288/i/unflagged" alt="Not flagged" id="q2756579:10_:flaggedimg" /></label>
+</div></div><div class="content"><div class="formulation clearfix"><h4 class="accesshide">Question text</h4><input type="hidden" name="q2756579:10_:sequencecheck" value="1" /><div class="qtext"><p>Harrison Limited purchased equipment for $275,000. The equipment was being depreciated using the straight-line method over an estimated useful life of 10 years, with a residual value of $25,000. At the beginning of the 6th year, after the equipment had been in use for 5 years, the company paid $15,000 for a major overhaul of the equipment. As a result of this improvement, the company estimated that the useful life of the equipment would be extended by an additional 3 years and the equipment would have a new residual value of $5,000. What would be the depreciation expense recorded for the equipment for year 6?</p></div><div class="ablock"><div class="prompt">Select one:</div><div class="answer"><div class="r0"><input type="radio" name="q2756579:10_answer" value="0" id="q2756579:10_answer0" /><label for="q2756579:10_answer0" class="m-l-1"><span class="answernumber">a. </span>$20,000</label> </div>
+<div class="r1"><input type="radio" name="q2756579:10_answer" value="1" id="q2756579:10_answer1" /><label for="q2756579:10_answer1" class="m-l-1"><span class="answernumber">b. </span>$25,000</label> </div>
+<div class="r0"><input type="radio" name="q2756579:10_answer" value="2" id="q2756579:10_answer2" /><label for="q2756579:10_answer2" class="m-l-1"><span class="answernumber">c. </span>$17,500</label> </div>
+<div class="r1"><input type="radio" name="q2756579:10_answer" value="3" id="q2756579:10_answer3" /><label for="q2756579:10_answer3" class="m-l-1"><span class="answernumber">d. </span>$53,333</label> </div>
+</div></div><div class="im-controls"><input type="submit" id="q2756579:10_-submit" name="q2756579:10_-submit" value="Check" class="submit btn btn-default" /></div></div></div></div><div class="submitbtns"><input type="submit" name="next" value="Finish attempt ..." class="mod_quiz-next-nav btn btn-primary" /></div><input type="hidden" name="attempt" value="2649293" /><input type="hidden" name="thispage" value="0" id="followingpage" /><input type="hidden" name="nextpage" value="-1" /><input type="hidden" name="timeup" value="0" id="timeup" /><input type="hidden" name="sesskey" value="PDRHd9rHCC" /><input type="hidden" name="scrollpos" value="" id="scrollpos" /><input type="hidden" name="slots" value="1,2,3,4,5,6,7,8,9,10" /></div></form><div id="connection-error" style="display: none;" role="alert"><p>Network connection lost. (Autosave failed).</p>
+
+<p>Make a note of any responses entered on this page in the last few minutes, then try to re-connect.</p>
+
+<p>Once connection has been re-established, your responses should be saved and this message will disappear.</p>
+</div><div id="connection-ok" style="display: none;" role="alert"><p>Network connection restored. You may continue safely.</p>
+</div></div>
+                    <div class="m-t-2 m-b-1 activity-navigation">
+<div class="row">
+    <div class="col-md-4">        <div class="pull-left">
+                <a href="https://culearn.carleton.ca/moodle/mod/forum/view.php?id=1495379&forceview=1" id="prev-activity-link" class="btn btn-link"  title="Ch 8 discussion forum" >&#x25C4; Ch 8 discussion forum</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="https://culearn.carleton.ca/moodle/course/jumpto.php" class="form-inline" id="url_select_f5dd8a4750d95a13">
+        <input type="hidden" name="sesskey" value="PDRHd9rHCC">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity"  id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected>Jump to...</option>
+                    <option value="/mod/forum/view.php?id=1495264&amp;forceview=1" >Announcements</option>
+                    <option value="/mod/forum/view.php?id=1495265&amp;forceview=1" >General discussion forum</option>
+                    <option value="/mod/resource/view.php?id=1496536&amp;forceview=1" >Course Outline Fall 2019</option>
+                    <option value="/mod/url/view.php?id=1495268&amp;forceview=1" >Course Outline Video</option>
+                    <option value="/mod/url/view.php?id=1495269&amp;forceview=1" >cuLearn Orientation Video</option>
+                    <option value="/mod/page/view.php?id=1495271&amp;forceview=1" >Technical requirements</option>
+                    <option value="/mod/quiz/view.php?id=1495272&amp;forceview=1" >Quiz 1</option>
+                    <option value="/mod/quiz/view.php?id=1495273&amp;forceview=1" >Quiz 2</option>
+                    <option value="/mod/quiz/view.php?id=1495274&amp;forceview=1" >Quiz 3</option>
+                    <option value="/mod/quiz/view.php?id=1495275&amp;forceview=1" >Quiz 4</option>
+                    <option value="/mod/quiz/view.php?id=1495276&amp;forceview=1" >Quiz 5</option>
+                    <option value="/mod/quiz/view.php?id=1495277&amp;forceview=1" >Quiz 6</option>
+                    <option value="/mod/quiz/view.php?id=1495278&amp;forceview=1" >Quiz 7</option>
+                    <option value="/mod/quiz/view.php?id=1495279&amp;forceview=1" >Quiz 8</option>
+                    <option value="/mod/quiz/view.php?id=1495280&amp;forceview=1" >Quiz 9</option>
+                    <option value="/mod/quiz/view.php?id=1495281&amp;forceview=1" >Quiz 10</option>
+                    <option value="/mod/resource/view.php?id=1495290&amp;forceview=1" >Sample MidTerm</option>
+                    <option value="/mod/resource/view.php?id=1495292&amp;forceview=1" >Sample Final Exam</option>
+                    <option value="/mod/resource/view.php?id=1575085&amp;forceview=1" >Mid-Term Questions and Solutions</option>
+                    <option value="/mod/resource/view.php?id=1496375&amp;forceview=1" >Chapter 1 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495293&amp;forceview=1" >Slides &amp; instructions for Ch 1 File</option>
+                    <option value="/mod/url/view.php?id=1495294&amp;forceview=1" >Video 1 - The Balance Sheet (25 min)</option>
+                    <option value="/mod/url/view.php?id=1495295&amp;forceview=1" >Video 2 - ICP1 - Harrison Corporation (16 min)</option>
+                    <option value="/mod/url/view.php?id=1495296&amp;forceview=1" >Video 3 - The Income Statement and ICP 1-2 (20 min)</option>
+                    <option value="/mod/url/view.php?id=1495297&amp;forceview=1" >Video 4 - Statement of Changes in Equity (10 min)</option>
+                    <option value="/mod/url/view.php?id=1495298&amp;forceview=1" >Video 5 - ICP1-3 - Peters Corporation (17 min)</option>
+                    <option value="/mod/page/view.php?id=1495299&amp;forceview=1" >Solutions to selected problems (videos) for Ch. 1</option>
+                    <option value="/mod/forum/view.php?id=1495300&amp;forceview=1" >Ch. 1 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495301&amp;forceview=1" >Practice - multiple choice questions (Ch. 1)</option>
+                    <option value="/mod/resource/view.php?id=1496376&amp;forceview=1" >Chapter 2 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495302&amp;forceview=1" >Slides &amp; instructions for Ch. 2</option>
+                    <option value="/mod/url/view.php?id=1495303&amp;forceview=1" >Video 1 - Accounting Information Systems (22 min)</option>
+                    <option value="/mod/url/view.php?id=1495304&amp;forceview=1" >Video 2 - ICP2-1 Morrissey Co Part 1 (21 min)</option>
+                    <option value="/mod/url/view.php?id=1495305&amp;forceview=1" >Video 3 - ICP2-1 Morrissey Co Part 2 (13 min)</option>
+                    <option value="/mod/url/view.php?id=1495306&amp;forceview=1" >Video 4 - ICP2-2 Heavenly Copies (9 min)</option>
+                    <option value="/mod/page/view.php?id=1495307&amp;forceview=1" >Solutions to selected problems (videos) for Ch. 2</option>
+                    <option value="/mod/forum/view.php?id=1495308&amp;forceview=1" >Ch. 2 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495309&amp;forceview=1" >Practice - multiple choice questions (Ch. 2)</option>
+                    <option value="/mod/resource/view.php?id=1496377&amp;forceview=1" >Chapter 3 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495310&amp;forceview=1" >Slides &amp; instructions for Ch. 3</option>
+                    <option value="/mod/url/view.php?id=1495311&amp;forceview=1" >Video 1 - ICP3-1 Introductory Example (20 min)</option>
+                    <option value="/mod/url/view.php?id=1495312&amp;forceview=1" >Video 2 - Accrual Accounting 1 (39 min)</option>
+                    <option value="/mod/url/view.php?id=1495313&amp;forceview=1" >Video 3 - Accrual Accounting 2 (22 min)</option>
+                    <option value="/mod/url/view.php?id=1495314&amp;forceview=1" >Video 4 - Accrual Accounting 3 (10 min)</option>
+                    <option value="/mod/url/view.php?id=1495315&amp;forceview=1" >Video 5 - ICP3-2 Accrual Journal Entries (10 min)</option>
+                    <option value="/mod/url/view.php?id=1495316&amp;forceview=1" >Video 6 - ICP3-3 KP Sports Part 1 (28 min)</option>
+                    <option value="/mod/url/view.php?id=1495317&amp;forceview=1" >Video 7 - ICP3-3 KP Sports Part 2 (14 min)</option>
+                    <option value="/mod/url/view.php?id=1495318&amp;forceview=1" >Video 8 - ICP3-4 Heavenly Copies Part 1 (30 min)</option>
+                    <option value="/mod/url/view.php?id=1495319&amp;forceview=1" >Video 9 - ICP3-4 Heavenly Copies Part 2 (10 min)</option>
+                    <option value="/mod/page/view.php?id=1495320&amp;forceview=1" >Solutions to selected problems (videos) for Ch. 3</option>
+                    <option value="/mod/resource/view.php?id=1495321&amp;forceview=1" >BlankT-Accounts 1 page</option>
+                    <option value="/mod/resource/view.php?id=1495322&amp;forceview=1" >BlankT-Accounts 2 Pages</option>
+                    <option value="/mod/forum/view.php?id=1495323&amp;forceview=1" >Ch. 3 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495324&amp;forceview=1" >Practice - multiple choice questions (Ch. 3)</option>
+                    <option value="/mod/resource/view.php?id=1496378&amp;forceview=1" >Chapter 4 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495326&amp;forceview=1" >Slides and Instructions File (ch 4) </option>
+                    <option value="/mod/url/view.php?id=1495327&amp;forceview=1" >Video 1 - Financial Statement Analysis (16 min)</option>
+                    <option value="/mod/url/view.php?id=1495328&amp;forceview=1" >Video 2 - ICP 4-1A: Gamma Corp Part 1 (11 min)</option>
+                    <option value="/mod/url/view.php?id=1495329&amp;forceview=1" >Video 3 - ICP 4-1A: Gamma Corp Part 2 (16 min)</option>
+                    <option value="/mod/url/view.php?id=1495330&amp;forceview=1" >Video 4 - Loblaw/Sobey Financial Statement Analysis (25 min)</option>
+                    <option value="/mod/resource/view.php?id=1495331&amp;forceview=1" >Loblaw 2018 Financial Statements</option>
+                    <option value="/mod/resource/view.php?id=1495332&amp;forceview=1" >Sobey 2018 Financial Statements</option>
+                    <option value="/mod/page/view.php?id=1495333&amp;forceview=1" >Solutions to selected problems (videos) for Ch 4</option>
+                    <option value="/mod/forum/view.php?id=1495334&amp;forceview=1" >Ch. 4 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495335&amp;forceview=1" >Practice - multiple choice questions (Ch. 4)</option>
+                    <option value="/mod/resource/view.php?id=1564315&amp;forceview=1" >Slides and Instructions for Ch 5</option>
+                    <option value="/mod/resource/view.php?id=1496379&amp;forceview=1" >Chapter 5 Textbook Chapter</option>
+                    <option value="/mod/url/view.php?id=1495338&amp;forceview=1" >Video 1 - Cash (16 min)</option>
+                    <option value="/mod/url/view.php?id=1495339&amp;forceview=1" >Video 2 - Investments in the shares of other corporations (27 min)</option>
+                    <option value="/mod/url/view.php?id=1495340&amp;forceview=1" >Video 3 - ICP5-1 Joanne Corporation (8 min)</option>
+                    <option value="/mod/url/view.php?id=1495341&amp;forceview=1" >Video 4 - ICP 5-5 Tiersen Company (18 min)</option>
+                    <option value="/mod/url/view.php?id=1495342&amp;forceview=1" >Video 5 - Chapter 3 Review ICP (21 min)</option>
+                    <option value="/mod/page/view.php?id=1495343&amp;forceview=1" >Solutions to selected problems (videos) for Ch 5</option>
+                    <option value="/mod/forum/view.php?id=1495344&amp;forceview=1" >Ch 5 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495345&amp;forceview=1" >Practice - multiple choice questions (Ch 5)</option>
+                    <option value="/mod/resource/view.php?id=1496380&amp;forceview=1" >Chapter 6 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495347&amp;forceview=1" >Slides and Instructions for Ch 6</option>
+                    <option value="/mod/url/view.php?id=1495348&amp;forceview=1" >Video 1 - Revenue Recognition (23 min)</option>
+                    <option value="/mod/url/view.php?id=1495349&amp;forceview=1" >Video 2 - Accounts Receivable  (28 min)</option>
+                    <option value="/mod/url/view.php?id=1495350&amp;forceview=1" >Video 3 - ICP 6-1A: Revenue Recognition (9 min)</option>
+                    <option value="/mod/url/view.php?id=1495351&amp;forceview=1" >Video 4 - ICP 6-2A Eden Ltd (12 min)</option>
+                    <option value="/mod/url/view.php?id=1495352&amp;forceview=1" >Video 5 - ICP 6-3A: Kelsey Co.. (12 min)</option>
+                    <option value="/mod/url/view.php?id=1495353&amp;forceview=1" >Video 6 - ICP 6-4A Nicol Corp. (8 min)</option>
+                    <option value="/mod/url/view.php?id=1495354&amp;forceview=1" >Video 7 - ICP 6-5A Application of the % of Completion Method (14 min)</option>
+                    <option value="/mod/page/view.php?id=1495355&amp;forceview=1" >Solutions to selected problems (videos) for Ch. 6</option>
+                    <option value="/mod/forum/view.php?id=1495356&amp;forceview=1" >Ch 6 Discussion Forum</option>
+                    <option value="/mod/quiz/view.php?id=1495357&amp;forceview=1" >Practice - multiple choce questions (Ch 6)</option>
+                    <option value="/mod/resource/view.php?id=1496381&amp;forceview=1" >Chapter 7 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495359&amp;forceview=1" >Slides &amp; Instructions for Ch 7 File</option>
+                    <option value="/mod/url/view.php?id=1495360&amp;forceview=1" >Video 1 - Inventory 1  (8 min)</option>
+                    <option value="/mod/url/view.php?id=1495361&amp;forceview=1" >Video 2 - Inventory 2 (30 min)</option>
+                    <option value="/mod/url/view.php?id=1495362&amp;forceview=1" >Video 3 - Inventory 3 (17 min)</option>
+                    <option value="/mod/url/view.php?id=1495363&amp;forceview=1" >Video 4 - ICP 7-1A (2 min)</option>
+                    <option value="/mod/url/view.php?id=1495364&amp;forceview=1" >Video 5 - ICP 7-2A (27 min)</option>
+                    <option value="/mod/url/view.php?id=1495365&amp;forceview=1" >Video 6 - ICP 7-3A (7 min)</option>
+                    <option value="/mod/url/view.php?id=1495366&amp;forceview=1" >Video 7 - ICP 7-4A (4 min)</option>
+                    <option value="/mod/page/view.php?id=1495367&amp;forceview=1" >Solutions to selected problems (videos) for Ch 7</option>
+                    <option value="/mod/forum/view.php?id=1495368&amp;forceview=1" >Ch 7 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495369&amp;forceview=1" >Practice - multiple choice questions (Ch 7)</option>
+                    <option value="/mod/resource/view.php?id=1496382&amp;forceview=1" >Chapter 8 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495371&amp;forceview=1" >Slides &amp; Instructions for Ch 8 File</option>
+                    <option value="/mod/url/view.php?id=1495372&amp;forceview=1" >Video 1 - Property, Plant &amp; Equipment 1 (30 min)</option>
+                    <option value="/mod/url/view.php?id=1495373&amp;forceview=1" >Video 2 - Property, Plant &amp; Equipment 2 (26 min)</option>
+                    <option value="/mod/url/view.php?id=1495374&amp;forceview=1" >Video 3 - ICP 8-1A  (13 min)</option>
+                    <option value="/mod/url/view.php?id=1495375&amp;forceview=1" >Video 4 - ICP 8-2A (2 min)</option>
+                    <option value="/mod/url/view.php?id=1495376&amp;forceview=1" >Video 5 - ICP 8-3A (5 min)</option>
+                    <option value="/mod/url/view.php?id=1495377&amp;forceview=1" >Video 6 - ICP 8-4A (13 min)</option>
+                    <option value="/mod/page/view.php?id=1495378&amp;forceview=1" >Solutions to selected problems (videos) for Ch 8</option>
+                    <option value="/mod/forum/view.php?id=1495379&amp;forceview=1" >Ch 8 discussion forum</option>
+                    <option value="/mod/resource/view.php?id=1496383&amp;forceview=1" >Chapter 9 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495382&amp;forceview=1" >Slides and Instructions for Ch 9</option>
+                    <option value="/mod/url/view.php?id=1495383&amp;forceview=1" >Video 1 - Liabilities 1 (24 min)</option>
+                    <option value="/mod/url/view.php?id=1495384&amp;forceview=1" >Video 2 - Liabilities 2 (21 min)</option>
+                    <option value="/mod/url/view.php?id=1495385&amp;forceview=1" >Video 3 - ICP 9-1A (17 min)</option>
+                    <option value="/mod/url/view.php?id=1495386&amp;forceview=1" >Video 4 - ICP 9-2A (21 min)</option>
+                    <option value="/mod/url/view.php?id=1495387&amp;forceview=1" >Video 5 - ICP 9-3A (9 min)</option>
+                    <option value="/mod/url/view.php?id=1495388&amp;forceview=1" >Video 6 - Chapter 5 Review ICP (8 min)</option>
+                    <option value="/mod/url/view.php?id=1495389&amp;forceview=1" >Video 7 - Chapter 6 Review ICP 1 (8 min)</option>
+                    <option value="/mod/url/view.php?id=1495390&amp;forceview=1" >Video 8 - Chapter 6 Review ICP 2 (5 min)</option>
+                    <option value="/mod/page/view.php?id=1495391&amp;forceview=1" >Solutions to selected problems (videos) for Ch 9</option>
+                    <option value="/mod/forum/view.php?id=1495392&amp;forceview=1" >Ch 9 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495393&amp;forceview=1" >Practice - multiple choice questions (Ch 9)</option>
+                    <option value="/mod/resource/view.php?id=1496534&amp;forceview=1" >Chapter 10 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1495395&amp;forceview=1" >Slides &amp; instructions for Ch 10</option>
+                    <option value="/mod/url/view.php?id=1495396&amp;forceview=1" >Video 1 - Shareholders' Equity (24 min)</option>
+                    <option value="/mod/url/view.php?id=1495397&amp;forceview=1" >Video 2 - ICP 10-1A (25 min)</option>
+                    <option value="/mod/url/view.php?id=1495398&amp;forceview=1" >Video 3 - Chapter 7 Review ICP (11 min)</option>
+                    <option value="/mod/url/view.php?id=1495399&amp;forceview=1" >Video 4 - Chapter 8 Review ICP (6 min)</option>
+                    <option value="/mod/url/view.php?id=1495400&amp;forceview=1" >Video 5 - Chapter 9 Review ICP (8 min)</option>
+                    <option value="/mod/page/view.php?id=1495401&amp;forceview=1" >Solutions to selected problems (videos) for Ch 10</option>
+                    <option value="/mod/forum/view.php?id=1495402&amp;forceview=1" >Ch 10 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495403&amp;forceview=1" >Practice - multiple choice questions (Ch 10)</option>
+                    <option value="/mod/resource/view.php?id=1496535&amp;forceview=1" >Chapter 11 Textbook Chapter</option>
+                    <option value="/mod/resource/view.php?id=1530441&amp;forceview=1" >Slides &amp; instructions for Ch 11</option>
+                    <option value="/mod/url/view.php?id=1495406&amp;forceview=1" >Video 1 - Statement of Cash Flow (32 min)</option>
+                    <option value="/mod/url/view.php?id=1495407&amp;forceview=1" >Video 2 - ICP 11-1A (14 min)</option>
+                    <option value="/mod/url/view.php?id=1495408&amp;forceview=1" >Video 3 - ICP 11-2A  (13 min)</option>
+                    <option value="/mod/url/view.php?id=1495409&amp;forceview=1" >Video 4 - ICP 11-3A (24 min)</option>
+                    <option value="/mod/page/view.php?id=1495410&amp;forceview=1" >Solutions to selected problems (videos) for Ch 11</option>
+                    <option value="/mod/forum/view.php?id=1495411&amp;forceview=1" >Ch 11 discussion forum</option>
+                    <option value="/mod/quiz/view.php?id=1495412&amp;forceview=1" >Practice - multiple choice questions (Ch 11)</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="pull-right">
+                <a href="https://culearn.carleton.ca/moodle/mod/resource/view.php?id=1496383&forceview=1" id="next-activity-link" class="btn btn-link"  title="Chapter 9 Textbook Chapter" >Chapter 9 Textbook Chapter &#x25BA;</a>
+
+        </div>
+</div>
+</div>
+</div>
+                    
+
+                </section>
+                <section data-region="blocks-column" class="d-print-none">
+                    <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Skip &lt;span id=&quot;mod_quiz_navblock_title&quot;&gt;Quiz navigation&lt;/span&gt;</a>
+
+<section id="mod_quiz_navblock"
+     class=" block block__fake  card mb-3"
+     role="navigation"
+     data-block="_fake"
+          aria-labelledby="instance-0-header"
+     >
+
+    <div class="card-body p-3">
+
+            <h5 id="instance-0-header" class="card-title d-inline"><span id="mod_quiz_navblock_title">Quiz navigation</span></h5>
+
+
+        <div class="card-text content mt-3">
+            <div id="quiznojswarning">Warning: these links will not save your answers. Use the next button at the bottom of the page.</div><div class="qn_buttons clearfix multipages"><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton1" title="Complete" data-quiz-page="0" href="#"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>1<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton2" title="Not complete" data-quiz-page="0" href="#q2"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>2<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton3" title="Not complete" data-quiz-page="0" href="#q3"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>3<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton4" title="Not complete" data-quiz-page="0" href="#q4"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>4<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton5" title="Complete" data-quiz-page="0" href="#q5"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>5<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton complete free btn btn-secondary thispage" id="quiznavbutton6" title="Complete" data-quiz-page="0" href="#q6"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>6<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton7" title="Not complete" data-quiz-page="0" href="#q7"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>7<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton8" title="Not complete" data-quiz-page="0" href="#q8"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>8<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton9" title="Not complete" data-quiz-page="0" href="#q9"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>9<span class="accesshide"> This page <span class="flagstate"></span></span></a><a class="qnbutton notyetanswered free btn btn-secondary thispage" id="quiznavbutton10" title="Not complete" data-quiz-page="0" href="#q10"><span class="thispageholder"></span><span class="trafficlight"></span><span class="accesshide">Question </span>10<span class="accesshide"> This page <span class="flagstate"></span></span></a></div><div class="othernav"><a class="endtestlink" href="https://culearn.carleton.ca/moodle/mod/quiz/summary.php?attempt=2649293&amp;cmid=1495380">Finish attempt ...</a><div id="quiz-timer" role="timer" aria-atomic="true" aria-relevant="text">Time left <span id="quiz-time-left"></span></div></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+  <span id="sb-1"></span></aside>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <div id="nav-drawer" data-region="drawer" class="d-print-none moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">BUSI1001R Fall 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/user/index.php?id=131251&amp;unified-filters%5B%5D=5%3A0&amp;unified-filter-submitted=1" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-users fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Participants</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/grade/report/index.php?id=131251" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-table fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Grades</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-0" data-key="1420522" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">  </span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-1" data-key="1420523" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Getting Started</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-2" data-key="1420524" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Quizzes</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-4" data-key="1420527" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Mid-Term and Sample Exams</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-5" data-key="1420528" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 1 - Intro to Financial Statements</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-6" data-key="1420529" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 2 - Accounting Information Systems</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-7" data-key="1420530" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 3 - Accrual Accounting</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-8" data-key="1420531" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 4 - Financial Statement Analysis</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-9" data-key="1420532" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 5 - Cash &amp; Investments</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-10" data-key="1420533" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch. 6 - Revenue and Accounts Receivable</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-11" data-key="1420534" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 7 - Inventory</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action active" href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-12" data-key="1563682" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body font-weight-bold">Ch 8 - Property, Plant and Equipment &amp; Intangibles</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-13" data-key="1563683" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 9 - Liabilities</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-14" data-key="1563684" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 10 - Shareholders' Equity</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251#section-15" data-key="1563685" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="131251">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-folder-o fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Ch 11 - The Statement of Cash Flow</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" >
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Dashboard</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/?redirect=0" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-home fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Site home</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/calendar/view.php?view=month&amp;course=131251" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-calendar fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Calendar</span>
+                    </div>
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-fw fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body">My courses</span>
+                    </div>
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131251" data-key="131251" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">BUSI1001R Fall 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=131851" data-key="131851" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">COMP3203A Fall 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=142422" data-key="142422" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist CGSC1001A CGSC1001T Fall 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=142901" data-key="142901" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP4202A COMP5204F Fall 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=142553" data-key="142553" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist RELI1710A RELI1710T Fall 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=122734" data-key="122734" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP3004A COMP3004B Winter 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=119499" data-key="119499" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">MATH2107B Winter 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=119855" data-key="119855" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">PHIL2001B Winter 2019</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=123304" data-key="123304" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist PHYS1901A PHYS1901T Fall 2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=115162" data-key="115162" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">PHIL2003A Fall 2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=98032" data-key="98032" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">COMP3007A Winter 2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=102864" data-key="102864" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP3804B MATH3804B Winter 2018</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=92820" data-key="92820" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">COMP3007A Fall 2017</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=93715" data-key="93715" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">ENGL2201A Fall 2017</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=79779" data-key="79779" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">COMP2804B Winter 2017</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=84007" data-key="84007" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP2406A COMP2406Z Winter 2017</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=75106" data-key="75106" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">COMP2402A Fall 2016</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=78585" data-key="78585" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">STAT2507D Fall 2016</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=68340" data-key="68340" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP1005T01 COMP1405T01 Summer 2016</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=68342" data-key="68342" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP1006A COMP1406A Summer 2016</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=68343" data-key="68343" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP1006T01 COMP1406T01 Summer 2016</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=55541" data-key="55541" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">Crosslist COMP1805B COMP1805M Winter 2016</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=63942" data-key="63942" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">HIST2502A Winter 2016</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=58129" data-key="58129" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">COMP1405B Fall 2015</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=58130" data-key="58130" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">COMP1405B1 Fall 2015</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=60564" data-key="60564" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">PHIL2003A Fall 2015</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=60608" data-key="60608" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">PHYS1901T Fall 2015</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=60609" data-key="60609" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">PHYS1901TOD Fall 2015</span>
+                    </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://culearn.carleton.ca/moodle/course/view.php?id=56510" data-key="56510" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                    <div class="media">
+                        <span class="media-left">
+                            <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                        </span>
+                        <span class="media-body ">PSCI1100A Fall 2015</span>
+                    </div>
+                </div>
+            </a>
+        </nav>
+    </div>
+    
+    <footer>
+    
+    	<div class="b-footerhelp">
+    		<ul>
+    			<li><a href="https://carleton.ca/culearnsupport/students/" target="_blank">Student Support</a></li>
+    			<li><a href="https://carleton.ca/culearnsupport/tas/" target="_blank">TA Support</a></li>
+    			<li><a href="https://carleton.ca/culearnsupport/instructors/" target="_blank">Instructor Support</a></li>
+    			<li>ITS Service Desk Support: <a href="mailto:its.service.desk@carleton.ca">Email</a> or <a href="tel: 613-520-3700">613-520-3700</a></li>
+    		</ul>
+    	</div>
+    
+    	<div class="b-footerbrand">
+    		<a class="footerbrand__logo" href="https://carleton.ca target="_blank"">
+    			<svg xmlns="http://www.w3.org/2000/svg" role="img" width="331" height="85" viewBox="0 0 351 90"><g fill="none" fill-rule="nonzero"><g fill="#FFF"><path d="M65.348 61.022c.205-.54.399-1.086.578-1.637 1.45-4.3 2.17-8.873 2.13-13.667 0 0-.025-29.332-.124-39.652-.87-.25-1.744-.483-2.622-.7a49.886 49.886 0 0 0-2.665-.63C54.18 2.879 44.36 1.872 36.084 1.628l.02.04a51.55 51.55 0 0 0-2.588.02l.053-.107C24.15 1.536 12.716 3.118 3.563 5.55c-.835.193-1.475.368-1.864.516-.02 2.115-.038 5.034-.053 8.33-.07 14.385-.071 31.322-.071 31.322-.055 6.593 1.31 12.77 4.073 18.38.21.433.43.863.66 1.29.065.122.121.246.188.368l.003-.013c.316.575.646 1.148.998 1.714h-.001l.018.028a39.392 39.392 0 0 0 1.966 2.87c.37.481.745.951 1.124 1.41.28.342.568.672.856 1.004.09.103.177.21.266.311 5.318 6.026 11.725 10.45 18.803 13.59.269.132.532.264.803.395.02.01.244.086.567.195.638.263 1.433.496 2.149.72l.766.256c.855-.312 2.053-.617 2.933-.983l.57-.19c.546-.255 1.078-.51 1.604-.766a56.668 56.668 0 0 0 9.33-5.408l.155-.112c.246-.178.492-.355.737-.538 3.744-2.76 6.964-5.926 10.007-9.884 2.248-2.992 3.924-6.011 5.148-9.202l.05-.13z"></path><path d="M34.836 89.908l-1.647-.542c-.62-.193-1.263-.392-1.838-.626-.573-.193-.61-.208-.712-.259l-.799-.392c-7.582-3.363-14.09-8.069-19.291-13.963l-.274-.32c-.32-.37-.605-.697-.882-1.034-.391-.474-.777-.957-1.158-1.453-.37-.491-.729-.991-1.076-1.499l-.062.264-1.978-3.563c-.047-.085-.09-.173-.133-.26l-.062-.121c-.239-.446-.47-.896-.69-1.351C1.37 58.978-.056 52.553.002 45.703c0-.156.001-17.092.071-31.315.015-3.3.032-6.222.053-8.338l.01-1.081 1.008-.381c.45-.17 1.126-.36 2.065-.577C12.505 1.541 24.013 0 33.193 0l2.918.013-.018.035h.037c9.195.273 18.983 1.419 26.852 3.146 1.016.214 1.942.433 2.736.646a76.24 76.24 0 0 1 2.65.707l1.127.326.011 1.176c.098 10.21.123 39.373.124 39.665.04 4.928-.705 9.702-2.213 14.176a37.632 37.632 0 0 1-.598 1.694l-.06.157c-1.286 3.352-3.04 6.488-5.352 9.564-3.137 4.08-6.417 7.32-10.333 10.207-.21.157-.433.318-.655.479l-.265.19a58.471 58.471 0 0 1-9.574 5.55c-.505.246-1.045.503-1.598.761l-.164.066-.52.175c-.57.232-1.207.43-1.822.62-.4.124-.79.244-1.123.366l-.517.189zm-2.887-4.3c.087.032.247.085.45.153l.098.037c.456.19 1.049.373 1.62.55l.69.22c.236-.076.485-.153.738-.232.567-.176 1.154-.358 1.601-.543l.589-.201c.501-.235 1.001-.474 1.5-.716a55.414 55.414 0 0 0 9.1-5.272l.244-.176c.209-.15.416-.3.622-.455 3.683-2.714 6.763-5.757 9.704-9.583 2.123-2.826 3.738-5.71 4.926-8.805l1.5.482-1.47-.56c.213-.565.398-1.086.57-1.614 1.4-4.156 2.09-8.58 2.052-13.164 0-.294-.025-27.366-.114-38.461a103.2 103.2 0 0 0-1.44-.373 48.249 48.249 0 0 0-2.606-.615c-7.358-1.615-16.428-2.71-25.08-3.036h-1.164c-.31-.006-.62-.009-.93-.009l-.325.002c-.401.004-.825.014-1.259.027l-2.634.082.08-.161c-8.522.22-18.672 1.667-27.045 3.891-.274.063-.507.12-.705.171-.017 1.967-.03 4.432-.043 7.156-.069 14.217-.07 31.144-.07 31.314-.052 6.364 1.263 12.308 3.91 17.68.203.42.415.833.635 1.243.025.046.05.094.074.143l.11.197c.336.612.649 1.15.955 1.642l.056.093c.578.923 1.195 1.82 1.848 2.69.348.452.712.908 1.08 1.354.261.316.528.623.794.93l.296.347c4.898 5.549 11.042 9.987 18.26 13.19l.783.383z"></path></g><g fill="#FFF"><path d="M34.813 88.236l3.504-1.174c9.565-4.455 16.015-9.138 21.832-16.706 5.51-7.332 7.629-14.819 7.906-24.638 0-.001-.132-31.714-.189-39.442-3.392-1.947-23.791-4.699-33.057-4.616"></path><path d="M35.311 89.734l-.996-2.996 3.419-1.146c9.653-4.506 15.79-9.204 21.169-16.2 5.029-6.692 7.299-13.79 7.58-23.72-.002-.249-.122-29.232-.182-38.365-4.61-1.631-22.409-4.173-31.477-4.068L34.795.081c9.3-.084 30.055 2.645 33.853 4.823l.785.451.008.908c.055 7.453.188 39.312.188 39.454-.3 10.681-2.76 18.321-8.223 25.59-5.737 7.463-12.232 12.439-22.426 17.187l-.164.065-3.505 1.175z"></path></g><g fill="#FFF"><path d="M34.81 1.66c-9.918.09-29.901 3.194-33.111 4.406-.123 15.086-.124 39.65-.124 39.65.238 9.377 2.4 17.317 7.905 24.64 5.822 7.578 12.76 12.34 21.852 16.708.083.04 3.482 1.172 3.482 1.172"></path><path d="M34.318 89.735c-3.49-1.164-3.551-1.192-3.66-1.244C20.4 83.563 13.696 78.429 8.234 71.32 2.877 64.193.264 56.074.002 45.756c0-.286.002-24.785.123-39.705l.009-1.084 1.01-.38C4.824 3.2 25.02.168 34.796.08l.028 3.158c-8.872.08-26.497 2.707-31.562 4.004-.112 14.98-.114 38.235-.114 38.474.247 9.718 2.588 17.036 7.587 23.687 5.188 6.753 11.34 11.455 21.208 16.203.369.13 2.22.748 3.366 1.13l-.99 2.998z"></path></g><path fill="#282828" d="M56.808 45.993l-.837-.274-.182-.878-1.438-.563c-3.914-1.366-7.927-2.467-12.07-2.864-2.669-.256-5.37-.055-7.421 1.27-2.044-1.326-4.744-1.526-7.413-1.27-4.145.397-8.163 1.497-12.083 2.864l-1.439.563-.185.878-.839.274-4.687 19.653c2.643-.488 8.09-1.281 11.108-1.595 3.754-.421 6.952-.58 11.19-.437-.018.17-.068.313.038.483.491.472 1.48.427 2.271.498.822.032 1.187.045 1.996.051.807.006 1.176-.019 1.995-.051.79-.071 1.782-.026 2.275-.498.105-.17.057-.313.038-.483 4.24-.143 7.44.016 11.19.437 3.016.314 8.459 1.107 11.103 1.595l-4.61-19.653zM34.294 60.786c-2.183-1.174-4.906-1.35-7.559-1.2-5.666.366-10.76 1.616-16.095 3.44l4.082-17.777c4.096-1.565 8.402-2.808 12.854-3.185 2.916-.18 5.425.19 6.869 1.23l-.151 17.492zm8.624-1.199c-2.65-.15-5.375.025-7.562 1.2l-.08-17.49c1.446-1.041 3.959-1.41 6.873-1.231 4.452.378 8.751 1.62 12.843 3.184L59 63.028c-5.326-1.826-10.415-3.076-16.081-3.44z"></path><path fill="#282828" d="M36.084 1.627l4.652 9.388.013.031c.019.04.08.167.247.458.155-.06.306-.12.456-.183.21-.118 7.793-4.449 7.793-4.449l-3.688 18.183 7.523-7.945 3.165 6.042c.104-.016.825-.138.825-.138l-.41.069 9.247-2.552-2.94 10.416s-.04.07-.056.089l.007.003-.038.12.028-.041s-.242.735-.352 1.063c-.044.135-.146.466-.174.55l4.735 2.452-9.837 8.752.107.51.81.267 4.932 21.046c3.349-6.04 4.984-12.794 4.925-20.042 0 0-.025-29.331-.123-39.652-9.418-2.717-21.777-4.14-31.847-4.437m-1.27 86.61c.871-.318 2.107-.63 2.992-1.006 8.633-3.601 16.324-9.04 22.343-16.875a40.259 40.259 0 0 0 1.983-2.898l-1.014-.187c-2.72-.502-8.156-1.284-10.988-1.58a75.53 75.53 0 0 0-1.099-.115c-.302-.03-.603-.06-.898-.087h-.012a68.004 68.004 0 0 0-7.842-.253l-.057.055c-.837.803-2.001.87-2.852.92l-.473.032-.481.02-1.613.035-2.047-.052-.494-.034c-.85-.05-2.015-.118-2.852-.923l-.054-.053a70.548 70.548 0 0 0-6.217.125l-.02.003c-.188.012-.374.024-.562.04l-.037.002-.55.044a1.82 1.82 0 0 0-.088.008c-.169.015-.337.028-.508.044l-.165.016-.446.042-.288.028-.338.036c-.212.022-.427.047-.646.069-2.825.295-8.263 1.078-10.979 1.579l-1.016.185c.618.995 1.28 1.962 1.984 2.899 6.02 7.833 13.71 13.273 22.342 16.875.885.376 2.122.687 2.992 1.005M33.57 1.58C23.499 1.533 11.126 3.344 1.699 6.066c-.1 10.32-.124 39.65-.124 39.65-.06 7.249 1.575 14.001 4.92 20.04l5.02-21.047.813-.265.094-.443-9.91-8.818 4.734-2.451-.196-.623-.266-.806a.86.86 0 0 0-.029-.035L3.723 20.53l9.247 2.552-.4-.066c.08.014.717.119.817.137l3.165-6.044 7.52 7.943-3.688-18.179 7.796 4.448c.15.062.3.123.455.183a6.69 6.69 0 0 0 .244-.451l.015-.036 4.136-8.341.54-1.096"></path><path fill="#BF112B" d="M9.312 33.06c-.034.493-.494 1.052-.759 1.249l-2.538 1.314 8.228 7.32.551-.215.03-.01c4.736-1.652 8.698-2.588 12.467-2.948 3.1-.297 5.587.044 7.57 1.028 1.989-.984 4.477-1.325 7.577-1.028 3.768.36 7.725 1.297 12.454 2.948l.03.01.49.193 8.201-7.298-2.538-1.314c-.262-.197-.723-.756-.756-1.249-.01-.147-.027-.131-.041-.088l.007-.041c.048-.292 0-.231.264-1.019-.021.02.484-1.5.497-1.512l1.974-6.994-5.83 1.608c-.32.02-.614.132-.928.177-.548.078-.986.152-1.314-.21l-2.34-4.466-6.656 7.028-.528.526c-1.12.854-2.703-.066-2.01-2.496l2.998-14.78-4.084 2.331c-.55.23-1.024.42-1.78.657-.25.079-.5-.083-.668-.242-.29-.476-.78-1.293-.949-1.663l-4.115-8.31-4.12 8.31c-.166.371-.656 1.186-.947 1.663-.167.158-.418.32-.668.242a18.665 18.665 0 0 1-1.78-.657l-4.085-2.331 2.998 14.78c.691 2.43-.89 3.35-2.01 2.496l-.527-.526-6.655-7.028-2.34 4.466c-.33.362-.77.288-1.314.21-.314-.045-.608-.157-.927-.177L6.61 23.406 8.584 30.4c.013.013.52 1.533.496 1.512.263.788.216.727.263 1.019a.416.416 0 0 0 .006.033c-.012-.037-.029-.041-.037.096z"></path><path fill="#282828" d="M32.05 47.638c-2.328-.991-5.03-.686-7.49-.259-2.906.506-4.256.873-7.456 1.948l.18-.8s4.03-1.575 9.473-2.214c0 0 3.128-.396 5.293.566v.759zm0 3.536c-2.328-.99-5.03-.686-7.49-.258-2.906.506-4.988.827-8.283 1.928l.18-.8s4.858-1.556 10.3-2.195c0 0 3.13-.396 5.294.566v.759zm0 3.583c-2.328-.99-5.03-.686-7.49-.258-2.906.504-5.857 1.285-9.195 2.406l.18-.8s5.77-2.034 11.212-2.673c0 0 3.13-.397 5.294.565v.76zm5.446-7.12c2.328-.99 5.03-.685 7.49-.258 2.905.506 4.255.873 7.455 1.948l-.18-.8s-4.03-1.575-9.472-2.214c0 0-3.129-.396-5.293.566v.759zm0 3.537c2.328-.99 5.03-.686 7.49-.258 2.905.506 4.988.827 8.283 1.928l-.18-.8s-4.857-1.556-10.3-2.195c0 0-3.129-.396-5.293.566v.759zm0 3.583c2.328-.99 5.03-.686 7.49-.258 2.905.504 5.858 1.285 9.193 2.406l-.178-.8s-5.77-2.034-11.213-2.673c0 0-3.129-.397-5.293.565v.76z"></path><path fill="#FFF" d="M136.002 20.31h-2.18c-.28-10.693-4.577-15.636-14.532-15.636-14.315 0-16.277 12.436-16.277 24.582 0 10.254 1.162 24.655 15.04 24.655 10.1 0 15.42-6.956 15.695-17.31h2.18V51c-6.54 3.564-12.207 5.164-18.093 5.164-15.767 0-24.415-11.272-24.415-26.909 0-15.492 9.664-26.837 25.433-26.837 5.74 0 11.844 1.745 17.148 4.219V20.31zm16.49 13.963c2.98-.726 5.232-1.381 7.993-2.326v-3.055c0-5.018-.871-8.29-5.667-8.29-3.633 0-5.851 1.09-5.851 5.89 0 2.837-1.09 4.16-3.634 4.16-1.888 0-3.594-.887-3.594-3.07 0-6.981 7.049-8.8 12.861-8.8 11.117 0 13.297 4.582 13.297 10.619v18.473c0 5.528 1.671 5.601 5.74 5.601v1.818h-5.522c-4.07 0-6.903-.364-8.066-4.727-2.834 4.363-6.394 5.6-11.19 5.6-7.557 0-9.955-3.928-9.955-10.545 0-6.037 3.124-8.873 9.227-10.328l4.362-1.02zm.437 1.964c-4.36 1.309-5.74 2.91-5.74 9.31 0 4.436.799 8.363 4.723 8.363 6.321 0 8.574-8 8.574-12.945v-6.983l-7.557 2.255z"></path><path fill="#FFF" d="M178.79 21.474h-6.25v-1.82h13.66v8.365h.147c1.525-4.219 4.65-9.237 10.172-9.237 4.288 0 6.613 2.764 6.613 6.982 0 2.91-1.163 4.874-3.779 4.874-1.962 0-3.632-1.456-3.632-3.71 0-1.017.363-2.763.363-3.708 0-1.018-.728-1.819-1.818-1.819-3.778 0-8.066 8.292-8.066 16.146v15.928h6.032v1.818h-19.589v-1.818h6.146V21.474z"></path><path fill="#FFF" d="M200.993 3.291h13.66v50.183h6.25v1.818h-19.91v-1.818h6.249V5.109h-6.249z"></path><path fill="#FFF" d="M227.496 35.218v.583c0 10.181 1.381 18.109 10.755 18.109 6.612 0 9.955-4.072 11.844-9.309l1.599.582c-3.124 8.436-8.068 10.98-16.06 10.98-10.899 0-16.42-8.435-16.42-18.69 0-9.819 6.321-18.691 16.93-18.691 9.301 0 15.622 6.691 15.622 16.436h-24.27zm15.55-2.254c0-5.236-.29-12.363-7.702-12.363-6.25 0-7.848 7.855-7.848 12.363h15.55zm8.808-13.31h5.013v-9.67h7.412v9.672h8.065v1.818h-8.065v25.31c0 4.291.87 6.327 3.851 6.327 2.76 0 3.924-2.036 5.086-4.364l1.67.728-.652 1.308c-1.454 2.619-3.925 4.947-9.156 4.947-7.557 0-8.21-4.291-8.21-8.946v-25.31h-5.014v-1.82z"></path><path fill="#FFF" d="M291.024 18.782c12.933 0 16.93 11.346 16.93 18.692 0 7.345-3.997 18.69-16.93 18.69s-16.932-11.345-16.932-18.69c0-7.346 3.998-18.692 16.932-18.692zm0 35.565c8.574 0 8.646-9.236 8.646-16.873 0-7.637-.072-16.873-8.646-16.873-8.575 0-8.647 9.236-8.647 16.873 0 7.637.072 16.873 8.647 16.873z"></path><path fill="#FFF" d="M314.15 53.474v-32H307.9v-1.82h13.66v6.837h.147c2.252-4.945 6.612-7.71 12.57-7.71 7.122 0 10.682 2.982 10.682 10.255v24.437h5.74v1.819h-18.892v-1.819h5.74V29.401c0-4-.728-8-5.814-8-6.756 0-10.171 6.399-10.171 13.164v18.91h5.74v1.817H307.9v-1.818h6.249zM114.79 80.888c0 3.764-2.528 6.559-7.382 6.559-4.88 0-7.407-2.795-7.407-6.56v-9.804h3.864v9.67c0 1.96 1.487 3.448 3.543 3.448 2.03 0 3.517-1.488 3.517-3.448v-9.67h3.865v9.805zm14.712-9.805h5.252l7.456 11.09h.05v-11.09h3.865v15.959h-5.055l-7.655-11.36h-.048v11.36h-3.865V71.083zm31.408 0h3.864v15.959h-3.864V71.083zm16.67 0h4.41l4.334 10.459h.05l4.41-10.459h4.137l-7.235 15.959h-3.095l-7.012-15.959zm28.855 0h11.915v3.246h-8.05v2.975h7.605v3.246h-7.606v3.246h8.497v3.245h-12.362V71.083zm26.85 0h6.786c3.593 0 6.615 1.127 6.615 4.847 0 2.231-1.313 3.966-3.792 4.372l4.46 6.74h-4.632l-3.667-6.38h-1.907v6.38h-3.864V71.083zm3.863 6.604h2.279c1.412 0 3.246-.045 3.246-1.78 0-1.6-1.587-1.848-2.998-1.848h-2.527v3.628zm33.119-2.704c-.62-.721-1.858-1.06-2.8-1.06-1.09 0-2.602.45-2.602 1.646 0 2.907 8.077 1.037 8.077 6.627 0 3.562-3.146 5.25-6.763 5.25-2.254 0-4.236-.607-5.896-2.004l2.75-2.75c.793.947 2.08 1.51 3.368 1.51 1.265 0 2.676-.54 2.676-1.668 0-2.929-8.224-1.352-8.224-6.671 0-3.404 3.244-5.184 6.688-5.184 1.981 0 3.888.473 5.375 1.668l-2.65 2.636zm17.017-3.9h3.865v15.959h-3.865V71.083zm21.796 3.11h-5.005v-3.109h13.873v3.11h-5.004v12.848h-3.864V74.194zm26.033 6.042l-6.59-9.152h4.807l3.717 5.973 3.938-5.973h4.584l-6.59 9.152v6.807h-3.865v-6.807h-.001z"></path></g></svg>
+    		</a>
+    		<nav>
+    			<ul class="footerbrand__legal">
+    				<li><a href="https://carleton.ca/privacy/policies/" target="_blank">Privacy Policy</a></li>
+    				<li><a href="https://carleton.ca/accessibility/" target="_blank">Accessibility</a></li>
+    				<li><a href="https://library.carleton.ca/content/copyright-carleton" target="_blank">© Copyright 2019</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    
+    	<div class="b-footerstats">
+    		<div class="logininfo">You are logged in as <a href="https://culearn.carleton.ca/moodle/user/profile.php?id=104410" title="View profile">Eric Romano</a> (<a href="https://culearn.carleton.ca/moodle/login/logout.php?sesskey=PDRHd9rHCC">Log out</a>)</div>
+    		
+    	</div>
+    
+    </footer>
+    
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2885440-7', 'auto');
+  ga('send', 'pageview');
+
+</script><script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://culearn.carleton.ca/moodle/lib/requirejs.php/1573220290/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://culearn.carleton.ca/moodle/lib/javascript.php/1573220290/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'https://culearn.carleton.ca/moodle/lib/javascript.php/1573220290/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://culearn.carleton.ca/moodle/lib/javascript.php/1573220290/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://culearn.carleton.ca/moodle/lib/javascript.php/1573220290/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://culearn.carleton.ca/moodle/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://culearn.carleton.ca/moodle/mod/url/view.php?id=1495375&redirect=1'); return false; };
+function legacy_activity_onclick_handler_2(e) { e.halt(); window.open('https://culearn.carleton.ca/moodle/mod/url/view.php?id=1495376&redirect=1'); return false; };
+function legacy_activity_onclick_handler_3(e) { e.halt(); window.open('https://culearn.carleton.ca/moodle/mod/url/view.php?id=1495377&redirect=1'); return false; };
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f5dd8a4750d95a13').submit();
+            });
+        });
+    ;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(3323369, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });;
+require(["core/page_global"], function(amd) { amd.init(); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.yui.add_module({"core_question_engine":{"name":"core_question_engine","fullpath":"https:\/\/culearn.carleton.ca\/moodle\/lib\/javascript.php\/1573220290\/question\/qengine.js","requires":["node","event"]}});
+
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","changesmadereallygoaway":"You have made changes. Are you sure you want to navigate away and lose your changes?","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"question":{"flagged":"Flagged"},"quiz":{"functiondisabledbysecuremode":"That functionality is currently disabled","startattempt":"Start attempt","timesup":"Time is up!"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ M.util.js_pending('random5dd8a4750d95a1'); Y.use('core_question_flags', function(Y) { M.core_question_flags.init(Y, "https:\/\/culearn.carleton.ca\/moodle\/question\/toggleflag.php", [{"src":"https:\/\/culearn.carleton.ca\/moodle\/theme\/image.php\/culearn\/core\/1573220288\/i\/unflagged","title":"Flag this question for future reference","alt":"Not flagged"},{"src":"https:\/\/culearn.carleton.ca\/moodle\/theme\/image.php\/culearn\/core\/1573220288\/i\/flagged","title":"Remove flag","alt":"Flagged"}], ["Flag question","Remove flag"]);  M.util.js_complete('random5dd8a4750d95a1'); });
+ M.util.js_pending('random5dd8a4750d95a2'); Y.use('mod_quiz', function(Y) { M.mod_quiz.init_attempt_form(Y);  M.util.js_complete('random5dd8a4750d95a2'); });
+ M.util.js_pending('random5dd8a4750d95a3'); Y.use('mod_quiz', function(Y) { M.mod_quiz.nav.init(Y);  M.util.js_complete('random5dd8a4750d95a3'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5dd8a4750d95a14'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q2756579:2_-submit", "2");  M.util.js_complete('random5dd8a4750d95a14'); });
+ M.util.js_pending('random5dd8a4750d95a15'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q2756579:3_-submit", "3");  M.util.js_complete('random5dd8a4750d95a15'); });
+ M.util.js_pending('random5dd8a4750d95a16'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q2756579:4_-submit", "4");  M.util.js_complete('random5dd8a4750d95a16'); });
+ M.util.js_pending('random5dd8a4750d95a17'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q2756579:7_-submit", "7");  M.util.js_complete('random5dd8a4750d95a17'); });
+ M.util.js_pending('random5dd8a4750d95a18'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q2756579:8_-submit", "8");  M.util.js_complete('random5dd8a4750d95a18'); });
+ M.util.js_pending('random5dd8a4750d95a19'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q2756579:9_-submit", "9");  M.util.js_complete('random5dd8a4750d95a19'); });
+ M.util.js_pending('random5dd8a4750d95a20'); Y.use('core_question_engine', function(Y) { M.core_question_engine.init_submit_button(Y, "q2756579:10_-submit", "10");  M.util.js_complete('random5dd8a4750d95a20'); });
+ M.util.js_pending('random5dd8a4750d95a21'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5dd8a4750d95a21'); });
+})();
+//]]>
+</script>
+
+    
+    
+    
+    
+    
+</div>
+
+</body>
+</html>

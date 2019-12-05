@@ -1,0 +1,2009 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="canonical" href="https://alternativeto.net/software/mypaint/" />
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width" />
+<link rel="next" href="https://alternativeto.net/software/mypaint/?p=2">
+<script defer src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/combine/npm/hogan.js@3.0.2/dist/hogan-3.0.2.min.js,npm/algoliasearch@3.30.0/dist/algoliasearch.min.js,npm/autocomplete.js@0.31.0/dist/autocomplete.min.js"></script>
+<script src="//m2d.m2.ai/pg.alternativeto.net.js" async></script>
+<script>
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='/Scripts/jquery-2.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+
+    var fb_appid = $(Facebook.AppId );
+</script>
+<script async src="/assets/js/ads.js"></script>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="shortcut icon" href="//alternativeto.net/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" title="AlternativeTo" href="/os-software.xml" />
+<link href="https://plus.google.com/109480227713813493496" rel="publisher" />
+<link title="AlternativeTo - News" type="application/rss+xml" rel="alternate" href="https://alternativeto.net/news/feed/" />
+<script type="text/javascript">
+    var customPath = "/assets/fonts";
+    var blockAds = false;
+    var algoliaPrefix = '';
+    var loginView = '';
+</script>
+<script type="text/javascript">var protocol=document.location.protocol;"https:"!=protocol&&(protocol="http:");var count=document.createElement("script");count.type="text/javascript";count.async=!0;count.src=protocol+"//hello.myfonts.net/count/352259";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(count,s);var browserName,browserVersion,webfontType;if("undefined"==typeof woffEnabled){var woffEnabled=!0}var svgEnabled=0,woff2Enabled=1;if("undefined"!=typeof customPath){var path=customPath}else{var scripts=document.getElementsByTagName("SCRIPT"),script=scripts[scripts.length-1].src;script.match("://")||"/"==script.charAt(0)||(script="./"+script);path=script.replace(/\\/g,"/").replace(/\/[^\/]*\/?$/,"")}var wfpath=path+"/webfonts/",browsers=[{regex:"MSIE (\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:9,type:"woff"},{version:5,type:"eot"}]},{regex:"Trident/(\\d+\\.\\d+); (.+)?rv:(\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$3)",type:[{version:11,type:"woff"}]},{regex:"Firefox[/s](\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:3.6,type:"woff"},{version:3.5,type:"ttf"}]},{regex:"Edge/(\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:12,type:"woff"}]},{regex:"Chrome/(\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:36,type:"woff2"},{version:6,type:"woff"},{version:4,type:"ttf"}]},{regex:"Mozilla.*Android (\\d+\\.\\d+).*AppleWebKit.*Safari",versionRegex:"new Number(RegExp.$1)",type:[{version:4.1,type:"woff"},{version:3.1,type:"svg#wf"},{version:2.2,type:"ttf"}]},{regex:"Mozilla.*(iPhone|iPad).* OS (\\d+)_(\\d+).* AppleWebKit.*Safari",versionRegex:"new Number(RegExp.$2) + (new Number(RegExp.$3) / 10)",unhinted:!0,type:[{version:5,type:"woff"},{version:4.2,type:"ttf"},{version:1,type:"svg#wf"}]},{regex:"Mozilla.*(iPhone|iPad|BlackBerry).*AppleWebKit.*Safari",versionRegex:"1.0",type:[{version:1,type:"svg#wf"}]},{regex:"Version/(\\d+\\.\\d+)(\\.\\d+)? Safari/(\\d+\\.\\d+)",versionRegex:"new Number(RegExp.$1)",type:[{version:5.1,type:"woff"},{version:3.1,type:"ttf"}]},{regex:"Opera/(\\d+\\.\\d+)(.+)Version/(\\d+\\.\\d+)(\\.\\d+)?",versionRegex:"new Number(RegExp.$3)",type:[{version:24,type:"woff2"},{version:11.1,type:"woff"},{version:10.1,type:"ttf"}]}],browLen=browsers.length,suffix="",i=0;a:for(;i<browLen;i++){var regex=new RegExp(browsers[i].regex);if(regex.test(navigator.userAgent)){browserVersion=eval(browsers[i].versionRegex);var typeLen=browsers[i].type.length;for(j=0;j<typeLen;j++){if(browserVersion>=browsers[i].type[j].version&&(1==browsers[i].unhinted&&(suffix="_unhinted"),webfontType=browsers[i].type[j].type,"woff"!=webfontType||woffEnabled)&&("woff2"!=webfontType||woff2Enabled)&&("svg#wf"!=webfontType||svgEnabled)){break a}}}else{webfontType="woff"}}/(Macintosh|Android)/.test(navigator.userAgent)&&"svg#wf"!=webfontType&&(suffix="_unhinted");var head=document.getElementsByTagName("head")[0],stylesheet=document.createElement("style");stylesheet.setAttribute("type","text/css");head.appendChild(stylesheet);for(var fonts=[{fontFamily:"ProximaNova-Bold",url:wfpath+"301A6B_0"+suffix+"_0."+webfontType},{fontFamily:"ProximaNova-Regular",url:wfpath+"301A6B_1"+suffix+"_0."+webfontType},{fontFamily:"ProximaNova-Semibold",url:wfpath+"301A6B_2"+suffix+"_0."+webfontType},{fontFamily:"ProximaNovaCond-Regular",url:wfpath+"301A6B_3"+suffix+"_0."+webfontType},{fontFamily:"ProximaNovaCond-Semibold",url:wfpath+"301A6B_4"+suffix+"_0."+webfontType},{fontFamily:"ProximaNovaCond-Bold",url:wfpath+"352259_5"+suffix+"_0."+webfontType}],len=fonts.length,css="",i=0;i<len;i++){var format="svg#wf"==webfontType?'format("svg")':"ttf"==webfontType?'format("truetype")':"eot"==webfontType?"":'format("'+webfontType+'")',css=css+("@font-face{font-family: "+fonts[i].fontFamily+";src:url("+fonts[i].url+")"+format+";");fonts[i].fontWeight&&(css+="font-weight: "+fonts[i].fontWeight+";");fonts[i].fontStyle&&(css+="font-style: "+fonts[i].fontStyle+";");css+="}"}stylesheet.styleSheet?stylesheet.styleSheet.cssText=css:stylesheet.innerHTML=css;</script>
+<link rel="stylesheet" href="/assets/compiled/styles-normal-c1eca74494.css" />
+<script src="/assets/compiled/activity-8729c6076c.js" defer></script>
+<meta name="description" content="Popular Alternatives to MyPaint for Windows, Mac, Linux, iPhone, iPad and more. Explore 25+ apps like MyPaint, all suggested and ranked by the AlternativeTo user community." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@AlternativeTo" />
+<meta property="og:title" content="MyPaint Alternatives and Similar Software - AlternativeTo.net" />
+<meta property="og:url" content="https://alternativeto.net/software/mypaint/" />
+<meta property="og:description" content="Popular Alternatives to MyPaint for Windows, Mac, Linux, iPhone, iPad and more. Explore 25+ apps like MyPaint, all suggested and ranked by the AlternativeTo user community." />
+<meta property="og:image" content="https://d2.alternativeto.net/dist/s/9bed5d01-9b14-4ff7-96b3-baaa66bec556_4_full.png?format=jpg&width=1200&height=1200&mode=crop" />
+<meta property="og:site_name" content="AlternativeTo" />
+<meta property="fb:app_id" content="$(Facebook.AppId )" />
+<title>MyPaint Alternatives and Similar Software - AlternativeTo.net</title>
+</head>
+<body role="document">
+
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-P4GVLG"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<div id="topNotifier" class="darkNotifier" style="display: none;">
+<div id="topNotifierContent" class="darkNotifierContent">
+</div>
+<i id="closeTopBar" class="closeLight icon-cancel" onclick="javascript: CloseTopBar()">&nbsp;</i>
+</div>
+<nav class="navbar navbar-default navbar-static">
+<div class="container">
+<div class="navbar-header">
+<a href="/" class="brand visible-xs" itemscope itemtype="http://schema.org/Organization">
+<img alt="AlternativeTo" src="/assets/images/logo-new.svg" />
+<meta itemprop="name" content="AlternativeTo">
+<meta itemprop="url" content="http://alternativeto.net">
+<meta itemprop="logo" content="http://alternativeto.net/assets/images/logo-new.svg">
+</a>
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-categories navbar-platforms">
+<li><a href="#" class="mega-toggle-platforms"><i class="icon-laptop"></i></a></li>
+<li class="hidden-xs"><a href="/platform/windows/">Windows</a></li>
+<li class="hidden-xs"><a href="/platform/mac/">Mac</a></li>
+<li class="hidden-xs"><a href="/platform/linux/">Linux</a></li>
+<li class="hidden-xs"><a href="/platform/online/">Web</a></li>
+<li class="hidden-xs"><a href="/platform/iphone/">iPhone</a></li>
+<li class="hidden-xs"><a href="/platform/android/">Android</a></li>
+<li class="hidden-xs">
+<a href="#" class="mega-toggle-platforms" role="button" aria-expanded="false"><span class="hidden-xs"></span> <i class="icon-menu-sm"></i></a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-categories navbar-cat">
+<li><a href="#" class="mega-toggle-categories"><i class="icon-tags"></i></a></li>
+<li class="hidden-xs"><a href="//alternativeto.net/category/developer-tools/">Development</a></li>
+<li class="hidden-xs"><a href="//alternativeto.net/category/productivity/">Productivity</a></li>
+<li class="hidden-xs"><a href="//alternativeto.net/category/backup-and-sync/">Backup</a></li>
+<li class="hidden-xs"><a href="//alternativeto.net/category/cryptocurrencies/">Cryptocurrency</a></li>
+<li class="hidden-xs"><a href="#" class="mega-toggle-categories link-button" role="button" aria-expanded="false"><span class="hidden-xs"></span> <i class="icon-menu-sm"></i></a></li>
+</ul>
+
+<nav role="navigation">
+<ul class="nav navbar-nav navbar-right navbar-user">
+<li class="dropdown hidden-xs">
+<button class="dropdown-toggle link-button list-not-logged-in" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-list-bullet"></i><span>Lists</span></button>
+<ul id="customListMenu" class="dropdown-menu dropdown-menu-right dropdown-menu-lg">
+</ul>
+</li>
+<li class="hidden-xs"><a rel="nofollow" class="link-button" href="https://alternativeto.net/account/signup?returnUrl=https://alternativeto.net/software/mypaint/">Sign up</a></li>
+<li class="hidden-xs"><a rel="nofollow" class="link-button" href="https://alternativeto.net/account/login?returnUrl=https://alternativeto.net/software/mypaint/">Login</a></li>
+<li class="dropdown">
+<button data-link-action="dot menu" class="dropdown-toggle link-button" data-toggle="dropdown" title="Other" role="button" aria-expanded="false"><i class="icon-dots"></i></button>
+<ul class="dropdown-menu" role="menu">
+<li><a rel="nofollow" href="https://alternativeto.net/account/signup">Sign up</a></li>
+<li><a rel="nofollow" href="#loginDialog" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/" class="notloggedin">Login</a></li>
+<li class="divider"></li>
+<li><a href="/about/">About</a></li>
+<li class="divider"></li>
+<li><a href="/discussions/">Forum</a></li>
+<li><a href="/lists/">Lists</a></li>
+<li class="divider"></li>
+<li><a href="/faq/">FAQ</a></li>
+<li><a href="http://blog.alternativeto.net">Blog</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+</div>
+<div class="mega-menu mega-menu-platforms panels">
+</div>
+<div class="mega-menu mega-menu-categories panels">
+<div class="container panel">
+<div class="row main-panel panel-body">
+<div class="col-xs-12">
+<h4>Categories</h4>
+<ul class="sub-categories-menu">
+<li><a href="//alternativeto.net/category/developer-tools/">Development</a></li>
+<li><a href="//alternativeto.net/category/productivity/">Office &amp; Productivity</a></li>
+<li><a href="//alternativeto.net/category/games/">Games</a></li>
+<li><a href="//alternativeto.net/category/social/">Social &amp; Communications</a></li>
+<li><a href="//alternativeto.net/category/business-and-commerce/">Business &amp; Commerce</a></li>
+<li><a href="//alternativeto.net/category/utilities/">OS &amp; Utilities</a></li>
+<li><a href="//alternativeto.net/category/phots-and-graphics/">Photos &amp; Graphics</a></li>
+<li><a href="//alternativeto.net/category/education-and-reference/">Education &amp; Reference</a></li>
+<li><a href="//alternativeto.net/category/security/">Security &amp; Privacy</a></li>
+<li><a href="//alternativeto.net/category/video/">Video &amp; Movies</a></li>
+<li><a href="//alternativeto.net/category/audio-and-music/">Audio &amp; Music</a></li>
+<li><a href="//alternativeto.net/category/online-services/">Online Services</a></li>
+<li><a href="//alternativeto.net/category/networking-and-admin/">Network &amp; Admin</a></li>
+<li><a href="//alternativeto.net/category/books--news/">News &amp; Books</a></li>
+<li><a href="//alternativeto.net/category/file-sharing/">File Sharing</a></li>
+<li><a href="//alternativeto.net/category/browsers/">Web Browsers</a></li>
+<li><a href="//alternativeto.net/category/backup-and-sync/">Backup &amp; Sync</a></li>
+<li><a href="//alternativeto.net/category/travel-and-location/">Travel &amp; Location</a></li>
+<li><a href="//alternativeto.net/category/file-management/">File Management</a></li>
+<li><a href="//alternativeto.net/category/sport-and-health/">Sport &amp; Health</a></li>
+<li><a href="//alternativeto.net/category/home-and-family/">Home &amp; Family</a></li>
+<li><a href="//alternativeto.net/category/cryptocurrencies/">Bitcoin &amp; Cryptocurrency</a></li>
+<li><a href="//alternativeto.net/category/system-and-hardware/">System &amp; Hardware</a></li>
+<li><a href="//alternativeto.net/category/gaming-software/">Gaming Software</a></li>
+<li><a href="//alternativeto.net/category/burn-and-rip/">CD/DVD Tools</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<header>
+<div class="main">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-lg-4 col-md-5 hidden-xs">
+<a href="/" class="brand">
+<img alt="AlternativeTo" src="/assets/images/logo-new.svg" />
+ </a>
+</div>
+<div class="col-xs-12 col-lg-8 col-sm-6 col-md-7 text-right">
+<script>$(function () { $("#algolia-template").attr("autofocus"); });</script>
+<form class="form search" action="/browse/search" id="searchform" name="searchform" method="get">
+<div class="row">
+<div class="col-lg-3 text arrow hidden-xs hidden-sm col-md-2">
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-9 col-md-10">
+<div class="search-group">
+<input type="search" aria-labelledby="search-label" class="form-control" name="q" id="algolia-template" placeholder="Find an alternative to..." spellcheck="false">
+<button class="btn btn-primary" type="submit">Find</button>
+</div>
+</div>
+</div>
+</form>
+<script id="itemsearchTmpl" type="x-tmpl-mustache">
+    <div data-value='{{UrlName}}' data-selectable='' class='option'>
+        {{#HasIcon}}
+        <img class="autosuggest-icon" src="//d2.alternativeto.net/dist/icons/{{{UrlName}}}_{{{IconId}}}{{{IconExtension}}}?format=png&width=26&height=26&mode=crop&anchor=middlecenter" />{{/HasIcon}}
+        {{^HasIcon}}
+        <span class="no-icon">&nbsp;</span>
+        {{/HasIcon}}
+        <a href="/software/{{{UrlName}}}/">{{{_highlightResult.Name.value}}}</a><span class="meta">{{{LicenseText}}} {{#Creator}} by {{{Creator}}}{{/Creator}}</span>
+    </div>
+</script>
+</div>
+</div>
+</div>
+</div>
+</header>
+<form method="post" action="/software/mypaint/" id="mainform">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="08fBgYJf70Z6v6C7BpjbkuNhf987pbhxWLcJw384RxsqiJuIEr3KVFPSPQ1RNhGMFFnrT0/T2Dmdtdsj4gnSUspue2C/ey6rDPhvRRjfQazznhcaAZesJAyr85Fnzo8dUPXk3A==" />
+</div>
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="27BD6557" />
+</div>
+<section class="blue app bluebox">
+<div id="div-gpt-ad-atf1" class="banner size1200x90 header atf1">
+</div>
+<div class="container" itemscope itemtype='http://schema.org/SoftwareApplication'>
+<meta itemprop="operatingSystem" content="Mac, Windows, Linux, PortableApps.com">
+<meta itemprop="dateModified" content="2019-10-16 2:19:00 AM">
+<meta itemprop="image" content="//d2.alternativeto.net/dist/icons/mypaint_77082.png?width=200&amp;height=200&amp;mode=crop&amp;upscale=false">
+<header id="appHeader" data-behavior="Default">
+<div class="row">
+<div class="col-sm-12">
+<div class="like-box-wrapper">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/mypaint_77082.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/mypaint_77082.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="MyPaint icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/mypaint_77082.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="MyPaint icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">306</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="" data-urlname="mypaint" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|mypaint" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+<h1 itemprop="name">
+MyPaint
+</h1>
+<p class="lead">
+MyPaint is a fast, distraction-free, and easy painting tool for digital artists.
+<span class="creator">
+<a rel="nofollow" data-link-action="Creator Link" class="ga_outgoing" target="_blank" href="http://mypaint.org/" title="Go to Martin Renold Official site">Created by Martin Renold</a>
+</span>
+</p>
+<ul class="labels">
+<li>
+<span class="label label-pricing">
+<span class="pricing-free">Free</span>
+<span class="oss-label">Open Source</span>
+</span>
+</li>
+<li title="See https://github.com/mypaint/mypaint/wiki/FAQ-Mac-OS-X" class="label label-default ">Mac<i class="icon-info-circled"></i></li>
+<li class="label label-default ">Windows</li>
+<li class="label label-default ">Linux</li>
+<li class="label label-default ">PortableApps.com</li>
+<li>
+</li>
+</ul>
+</div>
+</div>
+<hr id="platformHr" />
+<div class="tools">
+<div class="hidden-sm hidden-xs">
+<div class="share-buttons">
+<a class='btn btn-facebook ga_share btn-sm' title="Share on Facebook" data-link-action='Share MainApp' onclick='ShareUrlFacebook("https://alternativeto.net/software/mypaint/", "MyPaint on AlternativeTo")'><i class="icon-facebook"></i></a>
+<a class="btn btn-twitter ga_share btn-sm" title="Share on Twitter" data-link-action='Share MainApp' onclick='ShareUrlTwitter("https://alternativeto.net/software/mypaint/", "MyPaint on AlternativeTo")'><i class="icon-twitter"></i></a>
+</div>
+</div>
+<div class="dropdown">
+<a href="#" class="big-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-cog-sm"></i></a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a class="notloggedin" data-redirecturl="/Manage/EditItem.aspx?itemid=9bed5d01-9b14-4ff7-96b3-baaa66bec556" data-target="#loginDialog" data-toggle="modal" href="#loginDialog" rel="nofollow"><i class='icon-pencil-sm'></i>Edit Information</a></li>
+<li><a class="notloggedin" data-redirecturl="/Manage/AddAlternative.aspx?addToItemId=9bed5d01-9b14-4ff7-96b3-baaa66bec556&amp;context=item" data-target="#loginDialog" data-toggle="modal" href="#loginDialog" rel="nofollow"><i class='icon-plus-sm'></i>Suggest alternative</a></li>
+<li><a rel="nofollow" title="Report this application as discontinues, duplicated, spam or some other reason." data-urlname="mypaint" data-reporttype="other"><i class='icon-warning-sm'></i>Report a problem</a></li>
+</ul>
+</div>
+</div>
+</header>
+<div class="row full-view Default">
+<div class="col-md-8">
+<div class="limit">
+<span class="item-desc" itemprop="description">
+<p>MyPaint is a fast painting program with an emphasis on full-screen use. It lets you focus on the art instead of the program. You work on your canvas with minimum distractions, bringing up the interface only when you need it. MyPaint supports pressure or tilt sensitive graphic tablets and comes with an easy-to-use brush collection. There is a complex interface for creating own brushes, focusing on brush dynamics (changes with speed, pressure, randomly).</p>
+</span>
+<div class="banner">
+<div id="div-gpt-ad-application-linkunit" class="banner">
+</div>
+</div>
+<div class="jq_moreInfo">
+<div class="requirements jq_moreInfo">
+<h3 class="subtitle">
+MyPaint is listed in
+</h3>
+<p>
+<a href="//alternativeto.net/list/10925/open-source-vfx" title="Go to Open Source &amp; Free Animation &amp; VFX List">Open Source & Free Animation & VFX</a>, <a href="//alternativeto.net/list/536/linux-graphics" title="Go to Linux • Graphics List">Linux • Graphics</a>, <a href="//alternativeto.net/list/3907/how-to-cure-adobe-addiction" title="Go to How to live without Adobe  List">How to live without Adobe </a>, <a href="//alternativeto.net/list/1092/drawing-software-windows-" title="Go to Drawing Software [Windows] List">Drawing Software [Windows]</a>, and <a href="//alternativeto.net/list/12514/linux--2d-graphics" title="Go to Linux • 2D Graphics List">Linux • 2D Graphics</a>
+</p>
+</div>
+<h3 class="subtitle">Links to official MyPaint sites</h3>
+<p><a Class="site-links ga_outgoing icon-official-website" data-link-action="Official Website Link" href="http://mypaint.org/" rel="nofollow" title="Go to Official Website Page">Official Website</a>&nbsp;&nbsp;&nbsp;&nbsp;<a Class="site-links ga_outgoing icon-github" data-link-action="GitHub Link" href="https://github.com/mypaint/mypaint" rel="nofollow" title="Go to GitHub Page">GitHub</a></p>
+<h3 class="subtitle">
+Features
+</h3>
+<p>
+<a Class="label label-feature" href="/feature/color-blending" title="Go to Color blending Feature">Color blending</a> <a Class="label label-feature" href="/feature/drawing" title="Go to Drawing Feature">Drawing</a> <a Class="label label-feature" href="/feature/fullscreen-support" title="Go to Fullscreen support Feature">Fullscreen support</a> <a Class="label label-feature" href="/feature/image-editing" title="Go to Image Editing Feature">Image Editing</a> <a Class="label label-feature" href="/feature/infinite-canvas" title="Go to Infinite canvas Feature">Infinite canvas</a> <a Class="label label-feature" href="/feature/layer-support" title="Go to Support for Layers Feature">Support for Layers</a> <a Class="label label-feature" href="/feature/portable" title="Go to Portable Feature">Portable</a> <a Class="label label-feature" href="/feature/sketching" title="Go to Sketching Feature">Sketching</a> <a Class="label label-feature" href="/feature/soundcloud-downloader" title="Go to Download from Soundcloud Feature">Download from Soundcloud</a> <a Class="label label-feature" href="/feature/wacom-tablet-support" title="Go to Support for Wacom Tablets Feature">Support for Wacom Tablets</a>
+<a class="add-feature meta" data-urlname="mypaint" data-name="MyPaint"><i class="icon-plus-sm"></i>Add a feature</a>
+</p>
+<h3 class="subtitle">
+Category
+</h3>
+<p> <meta itemprop="applicationCategory" content="Photos &amp; Graphics">
+<a Class="label label-default" href="/category/phots-and-graphics/" title="Go to Photos &amp; Graphics Category">Photos & Graphics</a></p>
+<h3 class="subtitle">Tags</h3>
+<p>
+<span class='label label-default'>digital-painting</span> <span class='label label-default'>free-hand-painting</span> <span class='label label-default'>ink</span> <span class='label label-default'>painter</span> </p>
+<p class="meta meta-border hidden-xs">
+MyPaint was added by <a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/gyorgyjano/modal" rel="nofollow" tabindex="0">gyorgyjano</a> in
+<span title='2009-05-28 11:22:00 AM'>May 2009</span> and the latest update was made in
+<span title='2019-08-19 5:34:00 AM'>Aug 2019</span>. The list of alternatives was updated <span title='2019-10-16 2:19:00 AM'>Oct 2019</span>.
+It's possible to <a class="notloggedin" data-redirecturl="/Manage/EditItem.aspx?itemid=9bed5d01-9b14-4ff7-96b3-baaa66bec556" data-target="#loginDialog" data-toggle="modal" href="#loginDialog" rel="nofollow">update the information</a> on MyPaint or <a title="Report this application as discontinued, duplicated, spam or some other reason." data-reporttype="other" data-urlname="mypaint" href="#ReportItem">report it</a> as discontinued, duplicated or spam.
+</p>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-12">
+<div class="row screenshots thumbnails">
+<div class="col-md-4 col-sm-2 col-xs-4 ">
+<a class="screenshot-thumbnail thumbnail jq_screens" itemprop="screenshot" data-caption="The 0.9.0 interface" title="The 0.9.0 interface" href="//d2.alternativeto.net/dist/s/9bed5d01-9b14-4ff7-96b3-baaa66bec556_4_full.png?format=jpg&amp;width=1600&amp;height=1600&amp;mode=min&amp;upscale=false">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/s/9bed5d01-9b14-4ff7-96b3-baaa66bec556_4_full.png?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" data-src-retina="//d2.alternativeto.net/dist/s/9bed5d01-9b14-4ff7-96b3-baaa66bec556_4_full.png?format=jpg&amp;width=376&amp;height=376&amp;mode=crop" class="img-responsive jq_unveil" alt="The 0.9.0 interface">
+<noscript>
+        <img src="//d2.alternativeto.net/dist/s/9bed5d01-9b14-4ff7-96b3-baaa66bec556_4_full.png?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" class="center-block img-responsive" alt="The 0.9.0 interface icon" />
+    </noscript>
+</a>
+</div>
+<div class="col-md-4 col-sm-2 col-xs-4 ">
+<a class="screenshot-thumbnail thumbnail jq_screens" itemprop="screenshot" data-caption="" href="//d2.alternativeto.net/dist/s/mypaint_883555_full.jpg?format=jpg&amp;width=1600&amp;height=1600&amp;mode=min&amp;upscale=false">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/s/mypaint_883555_full.jpg?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" data-src-retina="//d2.alternativeto.net/dist/s/mypaint_883555_full.jpg?format=jpg&amp;width=376&amp;height=376&amp;mode=crop" class="img-responsive jq_unveil">
+<noscript>
+        <img src="//d2.alternativeto.net/dist/s/mypaint_883555_full.jpg?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" class="center-block img-responsive" alt="icon" />
+    </noscript>
+</a>
+</div>
+<div class="col-md-4 col-sm-2 col-xs-4 ">
+<a class="screenshot-thumbnail thumbnail jq_screens" itemprop="screenshot" data-caption="" href="//d2.alternativeto.net/dist/s/mypaint_191666_full.png?format=jpg&amp;width=1600&amp;height=1600&amp;mode=min&amp;upscale=false">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/s/mypaint_191666_full.png?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" data-src-retina="//d2.alternativeto.net/dist/s/mypaint_191666_full.png?format=jpg&amp;width=376&amp;height=376&amp;mode=crop" class="img-responsive jq_unveil">
+<noscript>
+        <img src="//d2.alternativeto.net/dist/s/mypaint_191666_full.png?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" class="center-block img-responsive" alt="icon" />
+    </noscript>
+</a>
+</div>
+<div class="col-md-4 col-sm-2 col-xs-4 jq_moreInfo">
+<a class="screenshot-thumbnail thumbnail jq_screens" itemprop="screenshot" data-caption="" href="//d2.alternativeto.net/dist/s/mypaint_396926_full.jpg?format=jpg&amp;width=1600&amp;height=1600&amp;mode=min&amp;upscale=false">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/s/mypaint_396926_full.jpg?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" data-src-retina="//d2.alternativeto.net/dist/s/mypaint_396926_full.jpg?format=jpg&amp;width=376&amp;height=376&amp;mode=crop" class="img-responsive jq_unveil">
+<noscript>
+        <img src="//d2.alternativeto.net/dist/s/mypaint_396926_full.jpg?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" class="center-block img-responsive" alt="icon" />
+    </noscript>
+</a>
+</div>
+<div class="col-md-4 col-sm-2 col-xs-4 jq_moreInfo">
+<a class="screenshot-thumbnail thumbnail jq_screens" itemprop="screenshot" data-caption="" href="//d2.alternativeto.net/dist/s/mypaint_563607_full.png?format=jpg&amp;width=1600&amp;height=1600&amp;mode=min&amp;upscale=false">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/s/mypaint_563607_full.png?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" data-src-retina="//d2.alternativeto.net/dist/s/mypaint_563607_full.png?format=jpg&amp;width=376&amp;height=376&amp;mode=crop" class="img-responsive jq_unveil">
+<noscript>
+        <img src="//d2.alternativeto.net/dist/s/mypaint_563607_full.png?format=jpg&amp;width=94&amp;height=94&amp;mode=crop" class="center-block img-responsive" alt="icon" />
+    </noscript>
+</a>
+</div>
+</div>
+<div class="banner">
+<div id="div-gpt-ad-app-sidebar-small" class="app-sidebar-banner-small">
+</div>
+</div>
+</div>
+</div>
+
+<div class="row buttons hidden-xs hidden-md hidden-lg">
+<div class="col-xs-12">
+<a href="#" id="showAllInfoSecond" data-link-action="MORE APP INFO" class="btn btn-primary btn-block jq_showAllInfo showAllInfoButton"><span>MORE APP INFO</span></a>
+</div>
+</div>
+<div class="row buttons">
+<div class="col-xs-12 col-md-6 col-md-push-6 col-sm-5 col-sm-push-7 button-list">
+<div style="text-align: right">
+<a href="#" id="showAllInfo" data-link-action="MORE APP INFO" class="btn btn-primary jq_showAllInfo showAllInfoButton hidden-sm"><span>MORE APP INFO</span></a>
+<a href="http://mypaint.org/" class="btn btn-success website-link ga_outgoing" data-link-action="Official Website Button" target="_blank" title="Visit MyPaint Official site" itemprop="url" rel="nofollow"><span>Official website</span></a>
+</div>
+</div>
+<div class="col-xs-12  col-sm-7 col-sm-pull-5 col-md-6 col-md-pull-6">
+<ul class="nav nav-tabs">
+<li role="presentation" class=active><button class="tab-link" data-link-action="Alternatives Tab" data-tab-action="alternatives" title="Alternatives to MyPaint">Alternatives <span class="badge">105</span></button></li>
+<li role="presentation"><button class="tab-link comments" data-link-action="Comment Tab" data-tab-action="comments" title="MyPaint Comments" itemprop="discussionUrl">Comments <span class="badge">5</span></button></li>
+<li role="presentation"><a class="tab-link" data-link-action="Review Tab" title="MyPaint Reviews" itemprop="discussionUrl" href="/software/mypaint/reviews/">Reviews <span class="badge">7</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<div id="content">
+<main role="main">
+<div class="container alternatives">
+<div class="alternatives-selector">
+<div class="headings">
+<div class="row main-filter" data-clearplatformurl="/software/mypaint/" data-clearfiltersurl="/software/mypaint/" data-clearlicenseurl="/software/mypaint/">
+<div class="col-sm-12">
+<h1 class="alternatives-header">
+<span>Alternatives</span> to MyPaint for <span class='platform-filter'>all platforms<i data-filter-category='Platform' data-filter='clear' class='icon-down-open'></i></span> with <span class='license-filter'>any license<i data-filter-category='License' data-filter='clear' class='icon-down-open'></i></span><span class="paging-info hidden-xs"></span>
+</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="atf2">
+<div id="div-gpt-ad-atf2" class="banner divLeaderboardLimitHeight">
+</div>
+</div>
+<div class="phAlternatives">
+<div class="row">
+ <div class="col-sm-8">
+<div class="alert alert-warning" style="" role="alert">
+<strong>Looking for a great VPN?</strong> Try <a data-link-action="vpn-experiment-yellow" style="font-weight: bold" target="_blank" class="blocked-link ga_outgoing" href="/outgoing/software/protonvpn">ProtonVPN</a>, a high-speed Swiss VPN that safeguards your privacy.
+</div>
+<ul class="app-list alternative-list" id="alternativeList" data-indexpos="15" data-pagesize="45">
+<li data-alternativeName="GIMP" data-mainitemid="4037660d-11f2-e311-b848-002590a05f5f" data-urlname="gimp" id="item-gimp">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/gimp/">GIMP</a>
+</h3>
+<p class="text">
+GIMP is a free program for such photo retouching, image composition and image authoring. Essentially it&#39;s the closest thing to Photoshop you can get for free. </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Free</span>
+<span class="oss-label">Open Source</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-linux platform-icon">Linux</span>
+<span class="label label-platform icon-laptop platform-icon">Chrome OS</span>
+<span class="label label-platform icon-laptop platform-icon">BSD</span>
+<a href="#" class="label label-platform toggle-more">...</a>
+<span class="more">
+<span class="label label-platform icon-laptop platform-icon">PortableApps.com</span>
+<span class="label label-platform icon-laptop platform-icon">Haiku</span>
+<span class="label label-platform icon-laptop platform-icon">AmigaOS</span>
+</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="customizable" href="#">Customizable</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-manipulation" href="#">Layer manipulation</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="photo-effects" href="#">Photo effects</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="batch-image-manipulation" href="#">Batch image manipulation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="blur-filter" href="#">Blur Filter</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="built-in-color-picker" href="#">Built-in Color picker</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="color-correction" href="#">Color correction</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="color-to-alpha" href="#">Color to Alpha</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drm-free" href="#">DRM Free</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="editing-photos" href="#">Editing photos</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="extensible" href="#">Extensible by Plugins/Extensions</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="high-resolution-images" href="#">High-resolution images</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-masking" href="#">Image Masking</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="keyframe-animation" href="#">Keyframe animation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="lossless-cropping" href="#">Lossless Cropping</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="open-source-software" href="#">Open source software</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photo-retouching" href="#">Retouch photos</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="portable" href="#">Portable</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="psd-support" href="#">Open PSD files</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="scalable" href="#">Scalable</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="scripting-support" href="#">Scripting support</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="symmetry-brush" href="#">Symmetry brush</a></span>
+<a class="meta add-feature" data-urlname="gimp" data-name="GIMP"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/gimp_154706.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/gimp_154706.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="GIMP icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/gimp_154706.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="GIMP icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">3605</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="4037660d-11f2-e311-b848-002590a05f5f" data-urlname="gimp" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|gimp" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Krita" data-mainitemid="167968c8-6960-df11-82d2-0022190f5762" data-urlname="krita" id="item-krita">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/krita/">Krita</a>
+</h3>
+<p class="text">
+Professional, open-source raster graphics editor with advanced digital painting and sketching tools and workflow features. </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Free</span>
+<span class="oss-label">Open Source</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-linux platform-icon">Linux</span>
+<span class="label label-platform icon-laptop platform-icon">PortableApps.com</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="keyframe-animation" href="#">Keyframe animation</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="animations" href="#">Animations</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="blending-brushes" href="#">Blending brushes</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="frame-by-frame-animation" href="#">Frame by frame animation</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-painting" href="#">Texture painting</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="wacom-tablet-support" href="#">Support for Wacom Tablets</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="customizable" href="#">Customizable</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="lightweight" href="#">Lightweight</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="multi-choice-brushes" href="#">Multi-choice brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="sketching" href="#">Sketching</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="smooth-lines" href="#">Smooth lines</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="3d-poser" href="#">3D Poser</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="advanced-brush-settings" href="#">Advanced brush settings</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="auto-aligment-rulers" href="#">Auto aligment rulers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="autocorrect" href="#">Auto Correction</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="background-transparency" href="#">Background transparency</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="blending-and-lineart" href="#">Blending and lineart</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="brush-stabilizers" href="#">Brush Stabilizers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="color-blending" href="#">Color blending</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="digital-drawing" href="#">Digital Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="digital-painting-focused" href="#">Digital-painting focused</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="document-templates" href="#">Document templates</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="fullscreen-support" href="#">Fullscreen support</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="instant-edit-screenshots" href="#">Instant edit screenshots</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-manipulation" href="#">Layer manipulation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="no-kernel-mode-components" href="#">No Kernel-Mode Components</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="open-source-software" href="#">Open source software</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="page-labeling" href="#">Page labeling</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="penetration-tools" href="#">Penetration tools</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="pop-up-palette" href="#">Pop-up Palette</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="portable" href="#">Portable</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="psd-support" href="#">Open PSD files</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="rewind-the-changes" href="#">Rewind the changes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="support-for-hotkeys" href="#">Support for Hotkeys</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="svg" href="#">SVG Editors</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="symmetry-brush" href="#">Symmetry brush</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tablet-pressure-sensitivity" href="#">Tablet Pressure Sensitivity</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-for-brushes" href="#">Texture for brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="timeline-based" href="#">Timeline-based</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="touch-screen-optimized" href="#">Optimized for Touch screen </a></span>
+<a class="meta add-feature" data-urlname="krita" data-name="Krita"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/krita_147250.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/krita_147250.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Krita icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/krita_147250.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Krita icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">745</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="167968c8-6960-df11-82d2-0022190f5762" data-urlname="krita" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|krita" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Adobe Photoshop" data-mainitemid="4237660d-11f2-e311-b848-002590a05f5f" data-urlname="adobe-photoshop" id="item-adobe-photoshop">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/adobe-photoshop/">Adobe Photoshop</a>
+</h3>
+<p class="text">
+Photoshop is a professional image editor and the de-facto industry standard. It supports layers, non-destructive-editing, vector graphics and color management and... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-paid">Commercial</span>
+<span class="price-indicator price-indicator-filled">
+$
+$
+</span>
+<span class="price-indicator price-indicator-empty">
+$
+</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-tablet platform-icon">iPad</span>
+<span class="label label-platform icon-laptop platform-icon">Wine</span>
+<span class="label label-platform icon-laptop platform-icon">ReactOS</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="editing-photos" href="#">Editing photos</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="resizing-dpi" href="#">Resizing dpi</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="adjusting-dpi" href="#">Adjusting DPI</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="advanced-brush-settings" href="#">Advanced brush settings</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="animations" href="#">Animations</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="cmyk-mode" href="#">Support for CMYK mode</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="color-correction" href="#">Color correction</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing-2d" href="#">Drawing 2D</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="hardware-accelerated" href="#">Hardware Accelerated</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="integrated-stock-library" href="#">Integrated stock library</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="intuitive-interface" href="#">Intuitive Interface</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="non-destructive-editing" href="#">Non destructive editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="psd-support" href="#">Open PSD files</a></span>
+<a class="meta add-feature" data-urlname="adobe-photoshop" data-name="Adobe Photoshop"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/adobe-photoshop_147835.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/adobe-photoshop_147835.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Adobe Photoshop icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/adobe-photoshop_147835.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Adobe Photoshop icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">1947</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="4237660d-11f2-e311-b848-002590a05f5f" data-urlname="adobe-photoshop" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|adobe-photoshop" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Paint.NET" data-mainitemid="41d5313a-e51b-e011-a236-0200d897d049" data-urlname="paintnet" id="item-paintnet">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/paintnet/about/">Paint.NET</a>
+</h3>
+<p class="text">
+Paint.net is a free and very capable image editing software for Windows. Great alternative to Photoshop for people that do not need all the stuff PS offers. </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Free</span>
+</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-windows platform-icon">Windows S</span>
+<span class="label label-platform icon-laptop platform-icon">.NET Framework</span>
+<div class="features">
+ <a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="extensible" href="#">Extensible by Plugins/Extensions</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-manipulation" href="#">Layer manipulation</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="beginner-friendly" href="#">Beginner friendly</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="easy-to-use" href="#">Easy to use</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="alpha-channel" href="#">Alpha Channel</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="built-in-color-picker" href="#">Built-in Color picker</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="community-based" href="#">Community based</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="consistent-ui" href="#">Consistent UI</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="curve-manipulation" href="#">Curve Manipulation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="editing-photos" href="#">Editing photos</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="export-to-png" href="#">Export to PNG</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="history-panel" href="#">History Panel</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="lightweight" href="#">Lightweight</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="minimalistic-ui" href="#">Minimalistic UI</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photo-to-painting" href="#">Convert Photo to Painting</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="plugins" href="#">Plugins</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="png-compression" href="#">PNG Compression</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="portable" href="#">Portable</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="save-as-pdf" href="#">Export to PDF</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="support-for-image-plugins" href="#">Support for image plugins</a></span>
+<a class="meta add-feature" data-urlname="paintnet" data-name="Paint.NET"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/paintnet_101076.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/paintnet_101076.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Paint.NET icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/paintnet_101076.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Paint.NET icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">1439</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="41d5313a-e51b-e011-a236-0200d897d049" data-urlname="paintnet" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|paintnet" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Pixelmator" data-mainitemid="4437660d-11f2-e311-b848-002590a05f5f" data-urlname="pixelmator" id="item-pixelmator">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/pixelmator/">Pixelmator</a>
+</h3>
+<p class="text">
+Pixelmator is a powerful, beautiful, and easy to use image editor. Featuring an elegant and streamlined single-window interface, it puts all the focus on the images you... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-paid">Commercial</span>
+<span class="price-indicator price-indicator-filled">
+$
+</span>
+<span class="price-indicator price-indicator-empty">
+$
+$
+</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-mobile platform-icon">iPhone</span>
+<span class="label label-platform icon-tablet platform-icon">iPad</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="healing-brush" href="#">Healing brush</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="photo-retouching" href="#">Retouch photos</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="64-bit-support" href="#">Support for 64 bit</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="asset-pipeline" href="#">Asset Pipeline</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="customizable" href="#">Customizable</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="multiple-font-colors" href="#">Multiple Font Colors</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photo-effects" href="#">Photo effects</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photo-retouching" href="#">Retouch photos</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="psd-support" href="#">Open PSD files</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="raw-photo-processing" href="#">Raw Photo processing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="realtime-magic-wand-tool" href="#">Realtime magic wand tool</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="specific-for-64-bit" href="#">Specific for 64-Bit</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="stickers" href="#">Stickers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tablet-support" href="#">Tablet support</a></span>
+<a class="meta add-feature" data-urlname="pixelmator" data-name="Pixelmator"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/pixelmator_117201.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/pixelmator_117201.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Pixelmator icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/pixelmator_117201.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Pixelmator icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">363</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="4437660d-11f2-e311-b848-002590a05f5f" data-urlname="pixelmator" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|pixelmator" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li> <li class="banner btf-middle">
+<div id="div-gpt-ad-middle" class="banner">
+</div>
+</li>
+<li data-alternativeName="Photopea" data-mainitemid="5fc2aaaf-0919-4e68-8c0b-151d9e4ed94c" data-urlname="photopea" id="item-photopea">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/photopea/">Photopea</a>
+</h3>
+<p class="text">
+Online photo editor, which can work with PSD, XCF and Sketch files (Photoshop, Gimp and Sketch App). Convert between PSD, XCF, JPG, PNG and many other formats. . </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Free</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-linux platform-icon">Linux</span>
+<span class="label label-platform icon-cloud-sm platform-icon">Web</span>
+<span class="label label-platform icon-android platform-icon">Android</span>
+<a href="#" class="label label-platform toggle-more">...</a>
+<span class="more">
+<span class="label label-platform icon-mobile platform-icon">iPhone</span>
+<span class="label label-platform icon-laptop platform-icon">Chrome OS</span>
+<span class="label label-platform icon-tablet platform-icon">iPad</span>
+</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="psd-support" href="#">Open PSD files</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="vectorize-raster-images" href="#">Vectorize raster images</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="web-based" href="#">Web-Based</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="online-photo-editor" href="#">Online Photo Editor</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="sketch-to-psd" href="#">Sketch to PSD</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="browser-based" href="#">Browser based</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="import-from-sketch" href="#">Import from Sketch</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="realtime-magic-wand-tool" href="#">Realtime magic wand tool</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="color-blending" href="#">Color blending</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="easy-to-use" href="#">Easy to use</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="editing-photos" href="#">Editing photos</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="kids-mode" href="#">Kids Mode</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-manipulation" href="#">Layer manipulation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photo-filters" href="#">Photographic filters</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photo-to-painting" href="#">Convert Photo to Painting</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photoshop-like" href="#">Photoshop-like</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="rest-api" href="#">REST API</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-painting" href="#">Texture painting</a></span>
+<a class="meta add-feature" data-urlname="photopea" data-name="Photopea"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/photopea_110107.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/photopea_110107.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Photopea icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/photopea_110107.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Photopea icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">131</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="5fc2aaaf-0919-4e68-8c0b-151d9e4ed94c" data-urlname="photopea" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|photopea" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Autodesk SketchBook" data-mainitemid="0100e879-31b8-df11-95fb-0200d897d049" data-urlname="autodesk-sketchbook" id="item-autodesk-sketchbook">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/autodesk-sketchbook/">Autodesk SketchBook</a>
+</h3>
+<p class="text">
+Autodesk Sketchbook drawing software features an artist-friendly, gesture-based user interface that is so fast and intuitive even new users can be productive within... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Free Personal</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-android platform-icon">Android</span>
+<span class="label label-platform icon-mobile platform-icon">iPhone</span>
+<span class="label label-platform icon-windows platform-icon">Windows S</span>
+<a href="#" class="label label-platform toggle-more">...</a>
+<span class="more">
+<span class="label label-platform icon-android platform-icon">Android Tablet</span>
+<span class="label label-platform icon-tablet platform-icon">iPad</span>
+</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="drawing-board" href="#">Drawing Board</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="advanced-brush-settings" href="#">Advanced brush settings</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="color-blending" href="#">Color blending</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="easy-to-use" href="#">Easy to use</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="photo-sync" href="#">Photo synchronization</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="psd-support" href="#">Open PSD files</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="raw-photo-processing" href="#">Raw Photo processing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="sketching" href="#">Sketching</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-for-brushes" href="#">Texture for brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="wacom-tablet-support" href="#">Support for Wacom Tablets</a></span>
+<a class="meta add-feature" data-urlname="autodesk-sketchbook" data-name="Autodesk SketchBook"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/autodesk-sketchbook_66649.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/autodesk-sketchbook_66649.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Autodesk SketchBook icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/autodesk-sketchbook_66649.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Autodesk SketchBook icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">102</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="0100e879-31b8-df11-95fb-0200d897d049" data-urlname="autodesk-sketchbook" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|autodesk-sketchbook" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Microsoft Paint" data-mainitemid="a0449d82-0ec6-444d-9d93-686bf698cc51" data-urlname="microsoft-paint" id="item-microsoft-paint">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/microsoft-paint/about/">Microsoft Paint</a>
+</h3>
+<p class="text">
+Paint (formerly Paintbrush) is a simple, ultra-basic graphics painting program that is included with almost all versions of Microsoft Windows. It opens and saves files... </p>
+<ul class="opinion-comments">
+<li class="opinion-note status-Approved">
+<div class="note-icon-container warning-color-bg">
+<i class="custom-icon-discontinued note-icon"></i>
+</div>
+<span class="note"><strong>Discontinued</strong> Microsoft announced that Paint is officially deprecated with the Windows 10 Fall Creators Update. Anyway last version of the program will still be usable in Windows 10.</span>
+</li>
+</ul>
+<ul class="opinion-comments">
+<li class="opinion-note status-Approved">
+<div class="note-icon-container success-color-bg">
+<i class="custom-icon-thumbs-up-alt note-icon"></i>
+</div>
+<span class="note">I love MS Paint, I used to use it a lot. Was really sad when it was discontinued, since our old computer that had it gave out. Really good alternative though.</span>
+<span class="meta">
+Guest
+• <span title='2017-11-12 2:42:00 PM'>Nov 2017</span>
+</span>
+<span data-voteid="539216" class="meta opinion-vote">
+<i data-vote="disagree" class="icon-thumbs-down-alt">Disagree </i>&nbsp;&nbsp;<i data-vote="agree" class="icon-thumbs-up-alt">Agree</i>
+</span>
+</li>
+</ul>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Free</span>
+</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="minimalistic" href="#">Minimalistic</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="windows-built-in" href="#">Bundled with Windows</a>
+<a class="meta add-feature" data-urlname="microsoft-paint" data-name="Microsoft Paint"><i class="icon-plus-sm"></i>Add a feature</a>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/microsoft-paint_77725.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/microsoft-paint_77725.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Microsoft Paint icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/microsoft-paint_77725.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Microsoft Paint icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">155</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="a0449d82-0ec6-444d-9d93-686bf698cc51" data-urlname="microsoft-paint" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|microsoft-paint" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="MediBang Paint" data-mainitemid="c9fb8697-fc9e-4aa9-bb24-0fb6b48b2631" data-urlname="medibang-paint" id="item-medibang-paint">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/medibang-paint/about/">MediBang Paint</a>
+</h3>
+<p class="text">
+A lightweight software for illustration and making comic books on Windows and Mac OS. </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Freemium</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-android platform-icon">Android</span>
+<span class="label label-platform icon-mobile platform-icon">iPhone</span>
+<span class="label label-platform icon-android platform-icon">Android Tablet</span>
+<a href="#" class="label label-platform toggle-more">...</a>
+<span class="more">
+<span class="label label-platform icon-tablet platform-icon">iPad</span>
+</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="color-blending" href="#">Color blending</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="frame-by-frame-animation" href="#">Frame by frame animation</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="alpha-lock" href="#">Alpha lock</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="auto-saving" href="#">Auto-saving</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="category-filters" href="#">Category filters</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="comic-" href="#">Comic templates</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="custom-brushes" href="#">Create Custom brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="gradients" href="#">Gradients</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-smoothing" href="#">Image Smoothing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="lightweight" href="#">Lightweight</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="multi-choice-brushes" href="#">Multi-choice brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="night-mode" href="#">Night mode/Dark Theme</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="no-subscription" href="#">No Subscription</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="non-linear-presentation" href="#">Non linear presentation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="pen-pressure" href="#">Pen pressure</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="pen-stabilization" href="#">Pen Stabilization</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="social-posting" href="#">Social posting</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tablet-pressure-sensitivity" href="#">Tablet Pressure Sensitivity</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="text-tool" href="#">Text tool</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-for-brushes" href="#">Texture for brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="transformation-toolbox" href="#">Transformation toolbox</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="unlimited-layers" href="#">Unlimited layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="wacom-tablet-support" href="#">Support for Wacom Tablets</a></span>
+<a class="meta add-feature" data-urlname="medibang-paint" data-name="MediBang Paint"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/medibang-paint_68566.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/medibang-paint_68566.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="MediBang Paint icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/medibang-paint_68566.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="MediBang Paint icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">75</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="c9fb8697-fc9e-4aa9-bb24-0fb6b48b2631" data-urlname="medibang-paint" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|medibang-paint" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="PaintTool SAI" data-mainitemid="ab4ff55b-ab68-4dc9-90fe-ec50d06c4cdd" data-urlname="painttool-sai" id="item-painttool-sai">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/painttool-sai/">PaintTool SAI</a>
+</h3>
+<p class="text">
+PaintTool SAI is high quality and lightweight painting software, fully digitizer support, amazing anti-aliased paintings, provide easy and stable operation, this... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-paid">Commercial</span>
+<span class="price-indicator price-indicator-filled">
+$
+$
+</span>
+<span class="price-indicator price-indicator-empty">
+$
+</span>
+</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="color-blending" href="#">Color blending</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="texture-for-brushes" href="#">Texture for brushes</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="advanced-brush-settings" href="#">Advanced brush settings</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="alpha-lock" href="#">Alpha lock</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="curve-manipulation" href="#">Curve Manipulation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="customizable" href="#">Customizable</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing-2d" href="#">Drawing 2D</a></span>
+ <span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="ghost-mode" href="#">Ghost Mode</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-manipulation" href="#">Layer manipulation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="out-of-the-box" href="#">Out Of The Box</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="pen-pressure" href="#">Pen pressure</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="sketching" href="#">Sketching</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tabbed-interface" href="#">Tabbed interface</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tablet-support" href="#">Tablet support</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="unlimited-canvas-area" href="#">Unlimited Canvas Area</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="vector-like" href="#">Vector-like</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="vector-strokes" href="#">Vector strokes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="workflow-automation" href="#">Workflow Automation</a></span>
+<a class="meta add-feature" data-urlname="painttool-sai" data-name="PaintTool SAI"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/painttool-sai_111360.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/painttool-sai_111360.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="PaintTool SAI icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/painttool-sai_111360.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="PaintTool SAI icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">116</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="ab4ff55b-ab68-4dc9-90fe-ec50d06c4cdd" data-urlname="painttool-sai" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|painttool-sai" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Clip Studio Paint" data-mainitemid="e29f76cf-3ba1-4657-aac0-17b40494ec30" data-urlname="clip-studio-paint" id="item-clip-studio-paint">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/clip-studio-paint/about/">Clip Studio Paint</a>
+</h3>
+<p class="text">
+Clip Studio Paint, previously Manga Studio or ComicStudio in Japan, is a family of software applications for Mac OS X and Microsoft Windows used for the digital creation... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-paid">Commercial</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="built-in-3d-model-viewer" href="#">Built-in 3D model viewer</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="cloud-sync" href="#">Cloud sync</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="customizable" href="#">Customizable</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="keyframe-animation" href="#">Keyframe animation</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="natural-media-painting" href="#">Natural media painting</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="optimal-performance" href="#">Optimal performance</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="psd-support" href="#">Open PSD files</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="smooth-lines" href="#">Smooth lines</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tablet-pressure-sensitivity" href="#">Tablet Pressure Sensitivity</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tablet-support" href="#">Tablet support</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-for-brushes" href="#">Texture for brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-painting" href="#">Texture painting</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="track-everything" href="#">Track everything</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="user-story-mapping" href="#">User story mapping</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="vector-drawing" href="#">Vector Drawing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="vector-strokes" href="#">Vector strokes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="wacom-tablet-support" href="#">Support for Wacom Tablets</a></span>
+<a class="meta add-feature" data-urlname="clip-studio-paint" data-name="Clip Studio Paint"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/clip-studio-paint_87203.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/clip-studio-paint_87203.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Clip Studio Paint icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/clip-studio-paint_87203.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Clip Studio Paint icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">81</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="e29f76cf-3ba1-4657-aac0-17b40494ec30" data-urlname="clip-studio-paint" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|clip-studio-paint" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="FireAlpaca" data-mainitemid="8e547b66-6f55-e111-9775-0025902c7e73" data-urlname="firealpaca" id="item-firealpaca">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/firealpaca/">FireAlpaca</a>
+</h3>
+<p class="text">
+FireAlpaca is the image editor that can be used readily and easily. We made it possible to provide the completely free download, in order for our products to be... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-free">Free</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="smooth-lines" href="#">Smooth lines</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="beginner-friendly" href="#">Beginner friendly</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="digital-drawing" href="#">Digital Drawing</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="drawing-board" href="#">Drawing Board</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="tablet-support" href="#">Tablet support</a></span>
+<a class="meta add-feature" data-urlname="firealpaca" data-name="FireAlpaca"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/firealpaca_15964.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/firealpaca_15964.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="FireAlpaca icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/firealpaca_15964.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="FireAlpaca icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">57</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="8e547b66-6f55-e111-9775-0025902c7e73" data-urlname="firealpaca" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|firealpaca" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li> <li style="text-align: center">
+<h3 style="margin: 0 0 12px 0">Know any more alternatives to MyPaint?</h3>
+<a class="notloggedin btn btn-primary" data-redirecturl="/Manage/AddAlternative.aspx?addToItemId=9bed5d01-9b14-4ff7-96b3-baaa66bec556&amp;context=item" data-target="#loginDialog" data-toggle="modal" href="#loginDialog" rel="nofollow">Suggest an application to this list</a>
+</li>
+<li data-alternativeName="Corel Painter" data-mainitemid="fd3c5aff-0f8a-4f20-bf59-4b17cc0dae45" data-urlname="corel-painter" id="item-corel-painter">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/corel-painter/">Corel Painter</a>
+</h3>
+<p class="text">
+Corel Painter is a raster-based digital art application created to simulate as accurately as possible the appearance and behavior of traditional media associated with... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-paid">Commercial</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="conditional-styles" href="#">Conditional styles</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="drawing" href="#">Drawing</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="sketching" href="#">Sketching</a>
+<a class="meta add-feature" data-urlname="corel-painter" data-name="Corel Painter"><i class="icon-plus-sm"></i>Add a feature</a>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/corel-painter_76744.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/corel-painter_76744.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Corel Painter icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/corel-painter_76744.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Corel Painter icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">53</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="fd3c5aff-0f8a-4f20-bf59-4b17cc0dae45" data-urlname="corel-painter" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|corel-painter" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Adobe Photoshop Elements" data-mainitemid="b02e9dca-e5e3-e311-865b-002590a05f5f" data-urlname="adobe-photoshop-elements" id="item-adobe-photoshop-elements">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/adobe-photoshop-elements/">Adobe Photoshop Elements</a>
+</h3>
+<p class="text">
+Adobe Photoshop Elements combines power and simplicity so you can make ordinary photos extraordinary; tell engaging stories in beautiful, personalized creations for... </p>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-paid">Commercial</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-windows platform-icon">Windows S</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="face-recognition" href="#">Facial recognition</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="layer-manipulation" href="#">Layer manipulation</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="lossless-cropping" href="#">Lossless Cropping</a>
+<a class="meta add-feature" data-urlname="adobe-photoshop-elements" data-name="Adobe Photoshop Elements"><i class="icon-plus-sm"></i>Add a feature</a>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/adobe-photoshop-elements_99836.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/adobe-photoshop-elements_99836.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Adobe Photoshop Elements icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/adobe-photoshop-elements_99836.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Adobe Photoshop Elements icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">64</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="b02e9dca-e5e3-e311-865b-002590a05f5f" data-urlname="adobe-photoshop-elements" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|adobe-photoshop-elements" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li data-alternativeName="Artrage" data-mainitemid="c9fdafbe-9cf8-4f7c-b92d-3a771e5a635a" data-urlname="artrage" id="item-artrage">
+<article class="row app-list-item">
+<div class="col-xs-12 col-sm-10 col-md-11 col-lg-12">
+<h3>
+<a data-link-action="Alternatives" href="/software/artrage/">Artrage</a>
+</h3>
+<p class="text">
+A simple but lovely natural media painting and sketching program. Art oriented, but capable of loading/saving photoshop files. ArtRage is a digital artist’s studio... </p>
+<ul class="opinion-comments">
+<li class="opinion-note status-Approved">
+<div class="note-icon-container success-color-bg">
+<i class="custom-icon-thumbs-up-alt note-icon"></i>
+</div>
+<span class="note">Wonderful small program, imitates brushes perfectly</span>
+<span class="meta">
+Guest
+• <span title='2016-05-03 5:35:00 PM'>May 2016</span>
+• 1 agrees and 0 disagrees
+</span>
+<span data-voteid="232598" class="meta opinion-vote">
+<i data-vote="disagree" class="icon-thumbs-down-alt">Disagree </i>&nbsp;&nbsp;<i data-vote="agree" class="icon-thumbs-up-alt">Agree</i>
+</span>
+</li>
+</ul>
+<p class="meta platform-list">
+<span class="label label-pricing">
+<span class="pricing-paid">Commercial</span>
+<span class="price-indicator price-indicator-filled">
+$
+</span>
+<span class="price-indicator price-indicator-empty">
+$
+$
+</span>
+</span>
+<span class="label label-platform icon-apple platform-icon">Mac</span>
+<span class="label label-platform icon-windows platform-icon">Windows</span>
+<span class="label label-platform icon-android platform-icon">Android</span>
+<span class="label label-platform icon-mobile platform-icon">iPhone</span>
+<span class="label label-platform icon-android platform-icon">Android Tablet</span>
+<a href="#" class="label label-platform toggle-more">...</a>
+<span class="more">
+<span class="label label-platform icon-tablet platform-icon">iPad</span>
+</span>
+<div class="features">
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="4k-support" href="#">Support for 4K</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="apple-pencil-support" href="#">Apple Pencil support</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="color-blending" href="#">Color blending</a>
+<a class="label label-feature" rel="nofollow" data-filter-category='Tag' data-filter="colour-control" href="#">Colour control</a>
+<a href="#" class="label label-feature toggle-more">...</a>
+<span class="more">
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="image-editing" href="#">Image Editing</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="layer-support" href="#">Support for Layers</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="multi-choice-brushes" href="#">Multi-choice brushes</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="multi-touch" href="#">MultiTouch</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="offline-access" href="#">Works Offline</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="sketching" href="#">Sketching</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="stylus-support" href="#">Support for styluses</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="texture-painting" href="#">Texture painting</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="upload-to-dropbox" href="#">Upload directly to Dropbox</a></span>
+<span class="label label-feature"><a rel="nofollow" data-filter-category='Tag' data-filter="wacom-tablet-support" href="#">Support for Wacom Tablets</a></span>
+<a class="meta add-feature" data-urlname="artrage" data-name="Artrage"><i class="icon-plus-sm"></i>Add a feature</a>
+</span>
+</div>
+</p>
+<div class="icon-and-like">
+<div class="image-wrapper">
+<img src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/icons/artrage_72822.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" data-src-retina='//d2.alternativeto.net/dist/icons/artrage_72822.png?width=128&height=128&mode=crop&upscale=false' class="center-block img-responsive jq_unveil" alt="Artrage icon">
+<noscript>
+            <img src="//d2.alternativeto.net/dist/icons/artrage_72822.png?width=64&amp;height=64&amp;mode=crop&amp;upscale=false" class="center-block img-responsive" alt="Artrage icon" />
+        </noscript>
+</div>
+<div class="like-box">
+<span class="num">59</span>
+<a rel="nofollow" href="#loginDialog" data-alternativeid="c9fdafbe-9cf8-4f7c-b92d-3a771e5a635a" data-urlname="artrage" data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/|artrage" class="notloggedin btn btn-primary"><i class="icon-heart-sm"></i><span class="text">Like</span></a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-lg-12">
+</div>
+</article>
+</li>
+<li>
+<button class="btn btn-default btn-block btn-load-more btn-load-apps">Load more apps <i class="icon-down-open-big"></i></button>
+<noscript>
+            <a class="btn btn-default btn-block btn-load-more" href="/software/mypaint/?p=2"> NEXT PAGE <i class="icon-right-open-big"></i></a>
+
+        </noscript>
+</li>
+<script>
+        $(function () {initBottomBar('alternatives to MyPaint', '//d2.alternativeto.net/dist/icons/mypaint_77082.png?width=36&amp;height=36&amp;mode=crop&amp;upscale=false');});
+    </script>
+</ul>
+</div>
+<aside class="col-sm-4 border-left hidden-xs app-sidebar">
+<section class="widget">
+<h2>What's in this list?</h2>
+<p>Alternatives to MyPaint for Windows, Mac, Linux, iPhone, iPad and more. Filter by license to discover only free or Open Source alternatives. This list contains a total of 25+ apps similar to MyPaint.<br><br><span class='meta'>List updated: 2019-10-16 2:19:00 AM</span></p>
+</section>
+<section class="widget">
+<div id="div-gpt-ad-sidebar1" class="banner divSidebarLowerLove">
+</div>
+</section>
+<section class="widget">
+<h2 class="underline">Sort alternatives</h2>
+<ul class="list-key-value categories sort-list">
+<li><a href="#" class="not-active-link" data-sortvalue="rank"><i class="icon-sort-alt-up"></i>Sort by rank</a></li>
+<li><a href="#" data-sortvalue="recentlikes">Recent popularity</a></li>
+<li><a href="#" data-sortvalue="addeddate">Recently added</a></li>
+</ul>
+</section>
+<section class="widget">
+<h2 class="underline">Filter by tags</h2>
+<ul class="list-key-value categories" role="menu">
+<li>
+ <a title="Discontinued" data-filter="Discontinued" data-filter-category="Tag" rel="nofollow" href='#'><i class='icon-tag'></i>Discontinued</a>
+</li>
+<li>
+<a title="drawing" data-filter="drawing" data-filter-category="Tag" rel="nofollow" href='#'>drawing</a>
+</li>
+<li>
+<a title="digital-painting" data-filter="digital-painting" data-filter-category="Tag" rel="nofollow" href='#'>digital-painting</a>
+</li>
+<li>
+<a title="image-editing" data-filter="image-editing" data-filter-category="Tag" rel="nofollow" href='#'>image-editing</a>
+</li>
+<li>
+<a title="photo-editing" data-filter="photo-editing" data-filter-category="Tag" rel="nofollow" href='#'>photo-editing</a>
+</li>
+<li>
+<a title="sketching" data-filter="sketching" data-filter-category="Tag" rel="nofollow" href='#'>sketching</a>
+</li>
+<li>
+<a title="layer-support" data-filter="layer-support" data-filter-category="Tag" rel="nofollow" href='#'>layer-support</a>
+</li>
+<li>
+<a title="painter" data-filter="painter" data-filter-category="Tag" rel="nofollow" href='#'>painter</a>
+</li>
+<li>
+<a title="illustration" data-filter="illustration" data-filter-category="Tag" rel="nofollow" href='#'>illustration</a>
+</li>
+<li>
+<a title="graphics" data-filter="graphics" data-filter-category="Tag" rel="nofollow" href='#'>graphics</a>
+</li>
+<li>
+<a title="wacom-tablet-support" data-filter="wacom-tablet-support" data-filter-category="Tag" rel="nofollow" href='#'>wacom-tablet-suppor...</a>
+</li>
+<li>
+<a title="art" data-filter="art" data-filter-category="Tag" rel="nofollow" href='#'>art</a>
+</li>
+<li>
+<a title="tablet-support" data-filter="tablet-support" data-filter-category="Tag" rel="nofollow" href='#'>tablet-support</a>
+</li>
+<li>
+<a title="image-processing" data-filter="image-processing" data-filter-category="Tag" rel="nofollow" href='#'>image-processing</a>
+</li>
+<li>
+<a title="photo-retouching" data-filter="photo-retouching" data-filter-category="Tag" rel="nofollow" href='#'>photo-retouching</a>
+</li>
+<li>
+<a title="digital-art" data-filter="digital-art" data-filter-category="Tag" rel="nofollow" href='#'>digital-art</a>
+</li>
+<li>
+<a title="psd-support" data-filter="psd-support" data-filter-category="Tag" rel="nofollow" href='#'>psd-support</a>
+</li>
+<li>
+<a title="paint-brushes" data-filter="paint-brushes" data-filter-category="Tag" rel="nofollow" href='#'>paint-brushes</a>
+</li>
+<li>
+<a title="sketch" data-filter="sketch" data-filter-category="Tag" rel="nofollow" href='#'>sketch</a>
+</li>
+<li>
+<a title="graphics-editor" data-filter="graphics-editor" data-filter-category="Tag" rel="nofollow" href='#'>graphics-editor</a>
+</li>
+<li>
+<a title="photo-effects" data-filter="photo-effects" data-filter-category="Tag" rel="nofollow" href='#'>photo-effects</a>
+</li>
+<li>
+<a title="color-blending" data-filter="color-blending" data-filter-category="Tag" rel="nofollow" href='#'>color-blending</a>
+</li>
+<li>
+<a title="customizable" data-filter="customizable" data-filter-category="Tag" rel="nofollow" href='#'>customizable</a>
+</li>
+<li>
+<a title="layer-manipulation" data-filter="layer-manipulation" data-filter-category="Tag" rel="nofollow" href='#'>layer-manipulation</a>
+</li>
+<li>
+<a title="portable" data-filter="portable" data-filter-category="Tag" rel="nofollow" href='#'>portable</a>
+</li>
+<li>
+<a title="texture-for-brushes" data-filter="texture-for-brushes" data-filter-category="Tag" rel="nofollow" href='#'>texture-for-brushes</a>
+</li>
+<li>
+<a title="paintings" data-filter="paintings" data-filter-category="Tag" rel="nofollow" href='#'>paintings</a>
+</li>
+<li>
+<a title="lightweight" data-filter="lightweight" data-filter-category="Tag" rel="nofollow" href='#'>lightweight</a>
+</li>
+<li>
+<a title="texture-painting" data-filter="texture-painting" data-filter-category="Tag" rel="nofollow" href='#'>texture-painting</a>
+</li>
+<li>
+<a title="photo-filters" data-filter="photo-filters" data-filter-category="Tag" rel="nofollow" href='#'>photo-filters</a>
+</li>
+</ul>
+</section>
+<section class="widget">
+<h2>Reviews<a href="#nav-tabs" class="headline-link" data-commentlink>View all</a></h2>
+<p class="review review-positive"><a href="/software/mypaint/reviews/#post-49500">MyPaint is an excellent application for uncompromising sketches or drawings. The infinite canvas allows you to make drawings at will, without worrying about the space available in a &quot;virtual...</a></p>
+<a href="/software/mypaint/reviews/" class="meta">See why people&nbsp;<span class="emotion emotion-positive">like</span> MyPaint 😍</a>
+<p class="review review-negative"><a href="/software/mypaint/reviews/#post-51517">If you uses a Mac getting this app working will be complicated:
+You need to install MacPorts, which requires Xcode + Xcode Command Line Tools (which is over 5 GB!)
+Wasting 5-6GB of disk space for a...</a></p>
+<a href="/software/mypaint/reviews/" class="meta">See why people&nbsp;<span class="emotion emotion-negative">do not like</span> MyPaint 😡</a>
+<a class="notloggedin show-more-link" data-itemid="9bed5d01-9b14-4ff7-96b3-baaa66bec556" data-redirecturl="/software/mypaint/" data-target="#loginDialog" data-toggle="modal" href="#loginDialog" rel="nofollow"><i class='icon-right-open-1'></i>Post your review</a>
+</section>
+<section class="widget">
+<h2 class="underline">In lists</h2>
+<div class="custom-item-list">
+<div class="col-xs-12 col-md-12">
+<div class="content-box">
+<img class="content-box-cover" width="700" height="200" src="https://alt2-lists-covers.imgix.net/nasa-53884.jpg?h=200&amp;w=700&amp;blend64=aHR0cHM6Ly9hbHQyLWNvdmVyLWljb25zLmltZ2l4Lm5ldC9saXN0LTEwOTI1LTE1NjQzODEyNTgtY292ZXIucG5nP2g9MTAwJnM9MDdhYzFlYWQ2YjFhYWZlNTRiZmYwMzAxMTI3ZDJlZDY%3D&amp;s=8d2ea3e37794ab622ed0eb7f22883767" />
+<span class="pre-header"> List by Rastkar</span>
+<h2><a data-showmore="open-source-and-free-animation-and-vfx" href="//alternativeto.net/list/10925/open-source-vfx">Open Source &amp; Free Animation &amp; VFX</a></h2>
+<p>
+</p>
+<h4 class="discrete-header">List with 76 Apps</h4>
+</div>
+</div>
+</div>
+<div class="custom-item-list">
+<div class="col-xs-12 col-md-12">
+<div class="content-box">
+<img class="content-box-cover" width="700" height="200" src="https://alt2-lists-covers.imgix.net/nasa-53884.jpg?h=200&amp;w=700&amp;ba=top%2Cright&amp;bs=inherit&amp;bc=top%2Cright&amp;blend64=aHR0cHM6Ly9hbHQyLWNvdmVyLWljb25zLmltZ2l4Lm5ldC9saXN0LTUzNi0xNTY3MTk1MTA0LWNvdmVyLnBuZz9zPTRlZTQzOTYxYmVjMWUzMTllMDAxOWJhMzYyOTBkMjU4&amp;s=0ad8c8e79c6ad2917bfad6117300af93" />
+<span class="pre-header"> List by dco3lh0</span>
+<h2><a data-showmore="linux--graphics" href="//alternativeto.net/list/536/linux-graphics">Linux • Graphics</a></h2>
+<p>
+</p>
+<h4 class="discrete-header">List with 104 Apps</h4>
+</div>
+</div>
+</div>
+</section>
+<section class="widget">
+</section>
+<section class="widget">
+<h2 class="underline">Recent Activities</h2>
+<ul class="activity-list">
+<li>
+<span style="background-color: #39F240" class="imageHolder profile-image pull-left">S</span>
+<div class="activity-header">
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/squarepluto/modal" rel="nofollow" tabindex="0">squarepluto</a>
+liked <a href='//alternativeto.net/software/mypaint/'>MyPaint</a> </div>
+<span class="activity-meta meta">
+<span title='2019-11-21 7:30:59 AM'>18 hours ago</span>
+</span>
+</li>
+<li>
+<span style="background-color: #D3DDDE" class="imageHolder profile-image pull-left">G</span>
+<div class="activity-header">
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/guest/modal" rel="nofollow" tabindex="0">Guest</a>
+thinks this post on <a href='//alternativeto.net/software/mypaint/reviews/#post-49500'>MyPaint</a> is helpful </div>
+<span class="activity-meta meta">
+<span title='2019-11-14 12:20:34 AM'>8 days ago</span>
+</span>
+</li>
+<li>
+<img alt="gjsiempreon-image" class="profile-image pull-left jq_unveil" src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/user/8a547d23-c445-452e-99e6-d526507327f9-2536.png?width=36&amp;height=36&amp;mode=crop&amp;anchor=middlecenter" data-src-retina="//d2.alternativeto.net/dist/user/8a547d23-c445-452e-99e6-d526507327f9-2536.png?width=72&amp;height=72&amp;mode=crop&amp;anchor=middlecenter" />
+<noscript>
+        <img alt="gjsiempreon-image" src="//d2.alternativeto.net/dist/user/8a547d23-c445-452e-99e6-d526507327f9-2536.png?width=36&amp;height=36&amp;mode=crop&amp;anchor=middlecenter" class="profile-image pull-left jq_unveil" />
+    </noscript>
+<div class="activity-header">
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/gjsiempreon/modal" rel="nofollow" tabindex="0">gjsiempreon</a>
+liked <a href='//alternativeto.net/software/mypaint/'>MyPaint</a> </div>
+<span class="activity-meta meta">
+<span title='2019-11-05 7:27:59 PM'>Nov 2019</span>
+</span>
+</li>
+<li>
+<img alt="wowdogethedog-image" class="profile-image pull-left jq_unveil" src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/user/fc0c862e-1319-4bef-9b25-b6be2951e5b7-0744.png?width=36&amp;height=36&amp;mode=crop&amp;anchor=middlecenter" data-src-retina="//d2.alternativeto.net/dist/user/fc0c862e-1319-4bef-9b25-b6be2951e5b7-0744.png?width=72&amp;height=72&amp;mode=crop&amp;anchor=middlecenter" />
+<noscript>
+        <img alt="wowdogethedog-image" src="//d2.alternativeto.net/dist/user/fc0c862e-1319-4bef-9b25-b6be2951e5b7-0744.png?width=36&amp;height=36&amp;mode=crop&amp;anchor=middlecenter" class="profile-image pull-left jq_unveil" />
+    </noscript>
+<div class="activity-header">
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/wowdogethedog/modal" rel="nofollow" tabindex="0">wowdogethedog</a>
+added <a href='//alternativeto.net/software/mypaint/#item-dogetizer-meme-generator'>MyPaint</a> as alternative(s) to <a href='//alternativeto.net/software/dogetizer-meme-generator/'>Dogetizer Meme Generator</a> </div>
+<span class="activity-meta meta">
+<span title='2019-10-16 2:19:07 AM'>Oct 2019</span>
+</span>
+</li>
+<li>
+<img alt="saqqernet-image" class="profile-image pull-left jq_unveil" src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/user/9960f8b6-241f-4957-8412-e854abe74f9a-0432.png?width=36&amp;height=36&amp;mode=crop&amp;anchor=middlecenter" data-src-retina="//d2.alternativeto.net/dist/user/9960f8b6-241f-4957-8412-e854abe74f9a-0432.png?width=72&amp;height=72&amp;mode=crop&amp;anchor=middlecenter" />
+<noscript>
+        <img alt="saqqernet-image" src="//d2.alternativeto.net/dist/user/9960f8b6-241f-4957-8412-e854abe74f9a-0432.png?width=36&amp;height=36&amp;mode=crop&amp;anchor=middlecenter" class="profile-image pull-left jq_unveil" />
+    </noscript>
+<div class="activity-header">
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/saqqernet/modal" rel="nofollow" tabindex="0">saqqernet</a>
+added <a href='https://alternativeto.net/software/mypaint/'>toppng as an alternative to MyPaint</a> </div>
+<span class="activity-meta meta">
+<span title='2019-08-19 10:18:30 PM'>Aug 2019</span>
+</span>
+</li>
+</ul>
+<a class="show-more-link" href="/software/mypaint/activity/"><i class="icon-right-open-1"></i>Show all activities</a>
+</section>
+</aside>
+</div>
+</div>
+<div class="panels jq_filterbarPanels">
+<div style="z-index: 9999;" class="panel panel-default filter-panel">
+<div class="panel-body">
+<div class="row">
+<div class="col-md-9 main-panel">
+<h3 class="underline">Platforms</h3>
+<div>
+<h4>Desktop</h4>
+<div class="menugroup" role="menu">
+<a title="Top 41 Mac alternatives to MyPaint " data-filter-category='Platform' data-filter="mac" href='/software/mypaint/?platform=mac'>Mac</a>
+</div>
+<h4>Mobile</h4>
+<div class="menugroup" role="menu">
+<a title="Top 10 Android alternatives to MyPaint " data-filter-category='Platform' data-filter="android" href='/software/mypaint/?platform=android'>Android</a>
+</div>
+</div>
+<span id="showHiddenPlatforms" class="btn btn-sm btn-primary" data-number="24">
+Show 24 less popular platforms
+</span>
+<input type="hidden" id="hdnTotalShownPlatforms" value="1" />
+</div>
+<div class="col-md-3 side-panel">
+<div class="side-wrapper">
+<h3 class="underline">License</h3>
+<ul class="list-key-value" role="menu">
+<li>
+<a title="Free alternatives to MyPaint " data-filter-category='License' data-filter="free" class="jq_LicensesFilter" href="/software/mypaint/?license=free">Free</a>
+</li>
+<li>
+<a title="Commercial alternatives to MyPaint " data-filter-category='License' data-filter="commercial" class="jq_LicensesFilter" href="/software/mypaint/?license=commercial">Commercial</a>
+</li>
+<li>
+<a title="Open Source alternatives to MyPaint " data-filter-category='License' data-filter="opensource" class="jq_LicensesFilter" href="/software/mypaint/?license=opensource">Open Source</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="phDiscussion">
+<div class="row">
+<div id="discussionsList" class="col-sm-12 jq_server-comments" data-indexpos="14" data-pagesize="14">
+<div style="position: relative; top: 16px;">
+<a Class="notloggedin btn btn-success pull-right" data-redirecturl="/discussions/AddThread?urlName=applications&amp;itemId=9bed5d01-9b14-4ff7-96b3-baaa66bec556&amp;type=comment" data-target="#loginDialog" data-toggle="modal" href="#loginDialog" rel="nofollow">Post a Comment</a>
+</div>
+<h2 class="underline">MyPaint Comments</h2>
+<div class="discussionApp">
+<div class="threadTable row post-5546 threadHeader half-gutters" id="post-3999">
+<div class="imageHolder col-xs-1 hidden-xs" style="vertical-align: top">
+<img alt="Gurudev1000-image" class="profile-image pull-left jq_unveil" src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/user/260952ba-d3fd-426d-8305-2370a49d9803-3401.jpg?width=120&amp;height=120&amp;mode=crop&amp;anchor=middlecenter" data-src-retina="" />
+<noscript>
+        <img alt="Gurudev1000-image" src="//d2.alternativeto.net/dist/user/260952ba-d3fd-426d-8305-2370a49d9803-3401.jpg?width=120&amp;height=120&amp;mode=crop&amp;anchor=middlecenter" class="profile-image pull-left jq_unveil" />
+    </noscript>
+</div>
+<div class="col-xs-11">
+<div class="threadMetaWrapper meta">
+<span class="threadMeta">
+Comment by
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/gurudev1000/modal" itemProp="Name" rel="nofollow" tabindex="0">Gurudev1000</a>
+</span>
+<div class="threadMeta">
+about
+<a class='mainApp' href='/software/mypaint/'>MyPaint</a>
+<span title="A review or comment" class="ThreadReview clear small-icon"></span>
+&middot; <span> <span title='2011-06-29 2:20:16 PM'>Jun 2011</span></span>
+&middot;
+<span data-helpful-threadid="3999" class="emotion emotion-positive forum-hover helpful-comment"><i class="icon-thumbs-up-alt"></i>Helpful</span>
+<span data-helpful-threadid="3999" class="emotion emotion-negative forum-hover not-helpful-comment"><i class="icon-thumbs-down-alt"></i>Not helpful</span>
+<span class="emotion emotion-positive helpful-comment forum-hover-hide"><i class="icon-thumbs-up-alt"></i>3 Helpful</span>
+<span data-spam-threadid="3999" class="meta pull-right forum-hover report-spam"><i class="icon-cancel-circled"></i>Report as spam</span>
+</div>
+</div>
+<div class="do-not-break forumText wmd">
+<p>Just found this software when looking around for a painting tool that wil be faster to delivery than GIMP. Works perfect so far. The interface is really going the way the makers want it to - right after installing it I was up with doodling around without having to worry about complicated settings and such.... Hope this software catches up with more people. Perfect lightweight painting tool!!</p>
+</div>
+<div class="meta">
+<span data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/" class="reply meta notloggedin"><span class="link-color">reply</span></span>
+</div>
+</div>
+</div>
+<div class="row app-forum-wrapper col-xs-offset-1 col-xs-11" id="replies-3999">
+</div>
+<div class="SubDiscussionList">
+<div id="postReply-3999" style="display: none">
+<textarea id="textReply" class="form-control forum-reply" onblur="HideReplyForm(3999)"></textarea>
+<a onclick='PostReplyForm(3999)' class="btn btn-success jq_reply-button-3999" id="postReplyButton">Reply</a>
+<input type="hidden" id="forumUrlName" value="" />
+</div>
+<br class="clear" />
+</div>
+</div>
+<div class="discussionApp">
+<div class="threadTable row post-5547 threadHeader half-gutters" id="post-4000">
+<div class="imageHolder col-xs-1 hidden-xs" style="vertical-align: top">
+<img alt="xxavx-image" class="profile-image pull-left jq_unveil" src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/user/8ad9cb21-4f8f-4443-8c7d-ff4060d68c61-.png?width=120&amp;height=120&amp;mode=crop&amp;anchor=middlecenter" data-src-retina="" />
+<noscript>
+        <img alt="xxavx-image" src="//d2.alternativeto.net/dist/user/8ad9cb21-4f8f-4443-8c7d-ff4060d68c61-.png?width=120&amp;height=120&amp;mode=crop&amp;anchor=middlecenter" class="profile-image pull-left jq_unveil" />
+    </noscript>
+</div>
+<div class="col-xs-11">
+<div class="threadMetaWrapper meta">
+<span class="threadMeta">
+Comment by
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/xxavx/modal" itemProp="Name" rel="nofollow" tabindex="0">xxavx</a>
+</span>
+<div class="threadMeta">
+about
+<a class='mainApp' href='/software/mypaint/'>MyPaint</a>
+<span title="A review or comment" class="ThreadReview clear small-icon"></span>
+&middot; <span> <span title='2011-06-29 2:20:17 PM'>Jun 2011</span></span>
+&middot;
+<span data-helpful-threadid="4000" class="emotion emotion-positive forum-hover helpful-comment"><i class="icon-thumbs-up-alt"></i>Helpful</span>
+<span data-helpful-threadid="4000" class="emotion emotion-negative forum-hover not-helpful-comment"><i class="icon-thumbs-down-alt"></i>Not helpful</span>
+<span class="emotion emotion-positive helpful-comment forum-hover-hide"><i class="icon-thumbs-up-alt"></i>2 Helpful</span>
+<span data-spam-threadid="4000" class="meta pull-right forum-hover report-spam"><i class="icon-cancel-circled"></i>Report as spam</span>
+</div>
+</div>
+<div class="do-not-break forumText wmd">
+<p>The strength of MyPaint definitely lies in the strong/straightforward brush customization and unlimited canvas features. It virtually has no image filters, nor any fancy tools you can find in any-other-image-editor, only a color selector, and layer feature... but you don't need them to doodle around!!!! If you double click the MyPaint icon, you are ready to draw in a new canvas with access to infinite brushes. As a friend of mine likes to repeat, MyPaint is best used together with Photoshop/GIMP: doodle in MyPaint, edit in Photoshop/GIMP. I guess, something in between would be PaintToolSAI</p>
+</div>
+<div class="meta">
+<span data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/" class="reply meta notloggedin"><span class="link-color">reply</span></span>
+</div>
+</div>
+</div>
+<div class="row app-forum-wrapper col-xs-offset-1 col-xs-11" id="replies-4000">
+</div>
+<div class="SubDiscussionList">
+<div id="postReply-4000" style="display: none">
+<textarea id="textReply" class="form-control forum-reply" onblur="HideReplyForm(4000)"></textarea>
+<a onclick='PostReplyForm(4000)' class="btn btn-success jq_reply-button-4000" id="postReplyButton">Reply</a>
+<input type="hidden" id="forumUrlName" value="" />
+</div>
+<br class="clear" />
+</div>
+</div>
+<div class="discussionApp">
+<div class="threadTable row post-34574 threadHeader half-gutters" id="post-26556">
+<div class="imageHolder col-xs-1 hidden-xs" style="vertical-align: top">
+<span style="background-color: #F1D907" class="imageHolder profile-image pull-left">Z</span>
+</div>
+<div class="col-xs-11">
+<h3>
+CRASH
+</h3>
+<div class="threadMetaWrapper meta">
+<span class="threadMeta">
+Comment by
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/zionpronink/modal" itemProp="Name" rel="nofollow" tabindex="0">zionpronink</a>
+</span>
+<div class="threadMeta">
+about
+<a class='mainApp' href='/software/mypaint/'>MyPaint</a>
+<span title="A review or comment" class="ThreadReview clear small-icon"></span>
+&middot; <span> <span title='2016-10-06 4:07:54 PM'>Oct 2016</span></span>
+&middot;
+<span data-helpful-threadid="26556" class="emotion emotion-positive forum-hover helpful-comment"><i class="icon-thumbs-up-alt"></i>Helpful</span>
+<span data-helpful-threadid="26556" class="emotion emotion-negative forum-hover not-helpful-comment"><i class="icon-thumbs-down-alt"></i>Not helpful</span>
+<span data-spam-threadid="26556" class="meta pull-right forum-hover report-spam"><i class="icon-cancel-circled"></i>Report as spam</span>
+</div>
+</div>
+<div class="do-not-break forumText wmd">
+<p>mypaint looks awesome, but CRASH everytime on windows............</p>
+</div>
+<div class="meta">
+<span data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/" class="reply meta notloggedin"><span class="link-color">reply</span></span>
+</div>
+</div>
+</div>
+<div class="row app-forum-wrapper col-xs-offset-1 col-xs-11" id="replies-26556">
+</div>
+<div class="SubDiscussionList">
+<div id="postReply-26556" style="display: none">
+<textarea id="textReply" class="form-control forum-reply" onblur="HideReplyForm(26556)"></textarea>
+<a onclick='PostReplyForm(26556)' class="btn btn-success jq_reply-button-26556" id="postReplyButton">Reply</a>
+<input type="hidden" id="forumUrlName" value="" />
+</div>
+<br class="clear" />
+</div>
+</div>
+<div class="discussionApp">
+<div class="threadTable row post-46053 threadHeader half-gutters" id="post-53230">
+<div class="imageHolder col-xs-1 hidden-xs" style="vertical-align: top">
+<span style="background-color: #4855D0" class="imageHolder profile-image pull-left">E</span>
+</div>
+<div class="col-xs-11">
+<div class="threadMetaWrapper meta">
+<span class="threadMeta">
+Comment by
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/eltortuga/modal" itemProp="Name" rel="nofollow" tabindex="0">ElTortuga</a>
+</span>
+<div class="threadMeta">
+about
+<a class='mainApp' href='/software/mypaint/'>MyPaint</a>
+<span title="A review or comment" class="ThreadReview clear small-icon"></span>
+&middot; <span> <span title='2017-12-15 5:15:11 PM'>Dec 2017</span></span>
+&middot;
+<span data-helpful-threadid="53230" class="emotion emotion-positive forum-hover helpful-comment"><i class="icon-thumbs-up-alt"></i>Helpful</span>
+<span data-helpful-threadid="53230" class="emotion emotion-negative forum-hover not-helpful-comment"><i class="icon-thumbs-down-alt"></i>Not helpful</span>
+<span class="emotion emotion-negative not-helpful-comment  forum-hover-hide"><i class="icon-thumbs-down-alt"></i>-1 Helpful</span>
+<span data-spam-threadid="53230" class="meta pull-right forum-hover report-spam"><i class="icon-cancel-circled"></i>Report as spam</span>
+</div>
+</div>
+<div class="do-not-break forumText wmd">
+<p>Official Site uses Macports to download and install for OSx. I only use Homebrew so won't be using this app.</p>
+</div>
+<div class="meta">
+<span data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/" class="reply meta notloggedin"><span class="link-color">reply</span></span>
+</div>
+</div>
+</div>
+<div class="row app-forum-wrapper col-xs-offset-1 col-xs-11" id="replies-53230">
+</div>
+<div class="SubDiscussionList">
+<div id="postReply-53230" style="display: none">
+<textarea id="textReply" class="form-control forum-reply" onblur="HideReplyForm(53230)"></textarea>
+<a onclick='PostReplyForm(53230)' class="btn btn-success jq_reply-button-53230" id="postReplyButton">Reply</a>
+<input type="hidden" id="forumUrlName" value="" />
+</div>
+<br class="clear" />
+</div>
+</div>
+<div class="discussionApp">
+<div class="threadTable row post-25473 threadHeader half-gutters" id="post-19056">
+<div class="imageHolder col-xs-1 hidden-xs" style="vertical-align: top">
+<span style="background-color: #BB32C6" class="imageHolder profile-image pull-left">K</span>
+</div>
+<div class="col-xs-11">
+<h3>
+free but not so good as Gimp or MyBrushes
+</h3>
+<div class="threadMetaWrapper meta">
+<span class="threadMeta">
+Comment by
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/kwokkenneth/modal" itemProp="Name" rel="nofollow" tabindex="0">kwokkenneth</a>
+</span>
+<div class="threadMeta">
+about
+<a class='mainApp' href='/software/mypaint/'>MyPaint</a>
+and
+<a href="/software/mybrushes/" title="Go to MyBrushes">MyBrushes</a>
+<span title="A review or comment" class="ThreadReview clear small-icon"></span>
+&middot; <span> <span title='2014-11-26 5:59:14 AM'>Nov 2014</span></span>
+&middot;
+<span data-helpful-threadid="19056" class="emotion emotion-positive forum-hover helpful-comment"><i class="icon-thumbs-up-alt"></i>Helpful</span>
+<span data-helpful-threadid="19056" class="emotion emotion-negative forum-hover not-helpful-comment"><i class="icon-thumbs-down-alt"></i>Not helpful</span>
+<span class="emotion emotion-negative not-helpful-comment  forum-hover-hide"><i class="icon-thumbs-down-alt"></i>-4 Helpful</span>
+<span data-spam-threadid="19056" class="meta pull-right forum-hover report-spam"><i class="icon-cancel-circled"></i>Report as spam</span>
+</div>
+</div>
+<div class="do-not-break forumText wmd">
+<p>Frankly speaking, it is not so good. I prefer to a more professional one, <a href="http://alternativeto.net/software/mybrushes/" rel="nofollow">MyBrushes</a> is the choice.</p>
+<p><img src="http://cdn.altrn.tv/s/2e3f1bff-22db-e311-865b-002590a05f5f_2_full.jpg?format=jpg" alt="Mybrushes mac art" /></p>
+</div>
+<div class="meta">
+<span data-toggle="modal" data-target="#loginDialog" data-redirecturl="/software/mypaint/" class="reply meta notloggedin"><span class="link-color">reply</span></span>
+</div>
+</div>
+</div>
+<div class="row app-forum-wrapper col-xs-offset-1 col-xs-11" id="replies-19056">
+<div style="display:" class="threadHeader half-gutters row post-25474">
+<div class="imageHolder forumsidebar col-xs-1 hidden-xs" style="vertical-align: top">
+<img alt="adeelsharif-image" class="profile-image pull-left jq_unveil" src="/assets/images/bg.png" data-src="//d2.alternativeto.net/dist/user/56738316-79f5-4e83-a43b-a975b03f59e9-4004.jpeg?width=120&amp;height=120&amp;mode=crop&amp;anchor=middlecenter" data-src-retina="" />
+<noscript>
+        <img alt="adeelsharif-image" src="//d2.alternativeto.net/dist/user/56738316-79f5-4e83-a43b-a975b03f59e9-4004.jpeg?width=120&amp;height=120&amp;mode=crop&amp;anchor=middlecenter" class="profile-image pull-left jq_unveil" />
+    </noscript>
+</div>
+<div class="postMeta col-xs-11 threadMeta meta">
+<a data-container="body" data-placement="bottom" data-toggle="popover-ajax" data-url="/user/adeelsharif/modal" rel="nofollow" tabindex="0">adeelsharif</a> &middot; <span title='2014-11-26 8:54:02 AM'>Nov 2014</span>
+</div>
+<div class="col-xs-11 forumText do-not-break wmd">
+<p>&gt; &gt; - 1.</p>
+</div>
+</div>
+</div>
+<div class="SubDiscussionList">
+<div id="postReply-19056" style="display: none">
+<textarea id="textReply" class="form-control forum-reply" onblur="HideReplyForm(19056)"></textarea>
+<a onclick='PostReplyForm(19056)' class="btn btn-success jq_reply-button-19056" id="postReplyButton">Reply</a>
+<input type="hidden" id="forumUrlName" value="" />
+</div>
+<br class="clear" />
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div id="sidebar">
+<div class="modal fade" id="VideoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+</div>
+</div>
+</div>
+<div class="modal fade standard-form" id="PostReviewDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+</div>
+</div>
+</div>
+<input type="hidden" id="hdnItemId" value="9bed5d01-9b14-4ff7-96b3-baaa66bec556" />
+<input type="hidden" id="hdnUrlname" value="mypaint" />
+<input type="hidden" id="hdnItemName" value="MyPaint" />
+<input type="hidden" id="hdnPlatformFilter" value="all" />
+<input type="hidden" id="hdnLicenseFilter" value="any" />
+<input type="hidden" id="hdnTagFilter" value="" />
+<input type="hidden" id="hdnOrder" value="rank" />
+<script>
+        if ($(".atf2").height() === 0) {
+            $(".app-sidebar").css("margin-top", "0");
+        }
+    </script>
+</div>
+<br class="clear" />
+<span id="hdnNotifyIcon" class="hdn hdn_notify_icon" style="display: none">//d2.alternativeto.net/dist/icons/mypaint_77082.png?width=36&height=36&mode=crop&upscale=false</span>
+<span id="hdnNotify" class="hdn hdn_notify" style="display: none"></span>
+</form>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-7">
+<h4><a href="/" class="brand-footer"><img src="/assets/images/logo-new.svg" /></a></h4>
+<p>AlternativeTo is a free service that helps you find better alternatives to the products you love and hate.</p>
+<p>The site is made by <a rel="nofollow" href="/user/ola">Ola</a> and <a rel="nofollow" href="/user/markus">Markus</a> in Sweden, with a lot of help from our friends and colleagues in Italy, Finland, USA, Colombia, Philippines, France and contributors from all over the world. That's right, all the lists of alternatives are crowd-sourced, and that's what makes the data powerful and relevant.</p>
+ <p>Feel free to send us your questions and feedback on <a href="mailto:hello@alternativeto.net">hello@alternativeto.net</a>, in our <a rel="nofollow" href="/discussions/">discussion forums</a>, in our <a href="https://discord.gg/VS45yNS">Discord channel</a> or tweet us at <a rel="nofollow" href="https://twitter.com/alternativeto">@AlternativeTo</a></p>
+</div>
+<div class="col-sm-1 hidden-xs"></div>
+<div class="col-xs-12 col-sm-4">
+<h4>Menu</h4>
+<ul class="menu">
+<li><a class="notloggedin" data-redirecturl="/Manage/AddItem.aspx" data-target="#loginDialog" data-toggle="modal" href="#loginDialog" rel="nofollow">Add an application</a> </li>
+<li><a href="/faq/">Frequently Asked Questions</a></li>
+<li><a href="//blog.alternativeto.net/">AlternativeTo Blog</a></li>
+<li><a href="/about/">About</a></li>
+<li>
+<a href="/about/privacy/" title="Privacy Policy ">Privacy Policy</a>
+</li>
+<li>
+<a href="/about/cookie-policy/" title="Cookie Policy ">Cookie Policy</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="credits">
+<div class="container">
+<div class="row">
+<div class="col-sm-8">
+<p><span class="flag svg-sprite-svensk-flagga"></span> Made in <a rel="nofollow" href="http://www.visitsweden.com/">Sweden</a>, Fueled by <a href="//alternativeto.net/list/1/what-we-use-to-build-alternativeto">great apps</a>, coffee & <a rel="nofollow" href="https://open.spotify.com/user/raawmarkus/playlist/4paCdG9OC9k0FrsWsuNTA8">good music</a>, version: Release-92</p>
+</div>
+<div class="col-sm-4">
+<p class="pull-left">Follow us on</p>
+<ul class="socials">
+<li><a title="AlternativeTo Twitter" rel="nofollow" href="https://twitter.com/alternativeto"><i class="icon-twitter"></i></a></li>
+<li><a title="AlternativeTo Facebook" rel="nofollow" href="https://www.facebook.com/AlternativeTo"><i class="icon-facebook"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+
+    var adBlock = "False";
+
+    if (window.canRunAds === undefined) {
+        // adblocker detected, show fallback
+        adBlock = "True";
+    }
+
+
+
+    dataLayer = [{
+    'adsenseBlocked': 'True',
+    'noIndexOrCanonical': 'DoIndex',
+    'pageHasMMBanner': 'False',
+    'loggedIn': 'False',
+        'alternativeCount': 'Many',
+                'abTestNumber2': '1',
+        'alternativeFilterType': 'None',
+        'appAddedDate': '2009-05-28',
+        'hasAffiliateUrl': 'False',
+        'appLicense': 'Free',
+        'sponsoredAlternative': 'None',
+        'category': 'phots-and-graphics',
+    'adBlock': adBlock,
+    'isCopywrited': 'False',
+    }];
+
+</script>
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P4GVLG');
+</script>
+<div class="modal fade" id="loginDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+</div>
+</div>
+</div>
+<div id="bottomNotifier" class="darkNotifier" style="display: none">
+</div>
+<div class="modal fade" id="userInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog modal-sm" role="document">
+<div class="modal-content">
+</div>
+</div>
+</div>
+<script src="/assets/compiled/main-60040f4c64.js" defer></script>
+<script type="text/javascript">$(function(){if($("#errorDialog").length>0){$(".phDiscussion").css("display","block")}var g=window.location.hash.substr(1);if(g=="comments"||g=="reviews"||g.startsWith("post-")){$('li[role="presentation"]').removeClass("active");e($(".tab-link.comments"))}$("body").on("click","[data-tab-action]",function(h){h.preventDefault();$('li[role="presentation"]').removeClass("active");if($(this).data("tab-action")=="comments"){e(this)}else{d(this)}});$("body").on("click","[data-commentlink]",function(h){$('li[role="presentation"]').removeClass("active");e($(".tab-link.comments"))});var c=false;function e(h){if($(".jq_server-comments").length===0&&!c){$.get("/item/_ItemDiscussion/?itemId="+$("#hdnItemId").val()+"&type=comment&itemName="+$("#hdnItemName").val()+"&startIndex=0",function(i){$("#discussionsList").after(i);c=true})}$(".phDiscussion").show();$(h).parent().addClass("active");$(".phAlternatives").hide();$(".phTopXAlternatives").hide();$(".atf2 .banner").css("text-align","center");$(".alternatives-selector").hide()}function d(h){$(".phDiscussion").hide();$(h).parent().addClass("active");$(".phAlternatives").show();$(".atf2 .banner").css("text-align","left");$(".alternatives-selector").show()}var a=$("#appHeader").data("behavior");var b="normal";if(a==="ForceFull"){b="full"}if(a==="ForceFullWithJS"){b="full"}if(a==="ForceCompact"){b="compact"}if(b==="full"){f()}function f(){$(".jq_moreInfo").show();$(".desc-readmore").remove();b="full";$(".showAllInfoButton").html("LESS APP INFO")}$(".jq_showAllInfo").click(function(h){var i=$(h.target);if(!i.hasClass("disabled")){h.preventDefault();if($(".full-view").length>0){if(b==="normal"||b==="compact"){$(".jq_moreInfo").show();if(b==="normal"){f()}else{$(".full-view").slideDown(100,function(){b="full";console.log("hejk");$(".showAllInfoButton").html("LESS APP INFO");$("#appHeader").toggleClass("collapsed")})}}else{if(i.hasClass("btn")){$(".full-view").slideUp(100,function(){b="compact";$(".showAllInfoButton").html("MORE APP INFO");$("#appHeader").toggleClass("collapsed")})}}}else{$(".showAllInfoButton").html("Loading...");$.get("/item/_ItemFullView/?urlName="+$("#hdnUrlname").val(),function(j){$("#appHeader").after(j);$("#appHeader").toggleClass("collapsed");$(".screenshots a.thumbnail").lightbox();f()})}}})});</script>
+<script src="/assets/compiled/item-main-533e8ff544.js" defer></script>
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://alternativeto.net",
+    "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://alternativeto.net/browse/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+    }
+    }
+</script>
+<script src="//m2d.m2.ai/pg.alternativeto.net_tc.js" async></script>
+</body>
+</html>

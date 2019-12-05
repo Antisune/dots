@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <!-- Served from: 242 -->
+				<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"bb8014186b",applicationID:"2136716"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+		<title>Lenovo ThinkPad X61 Review</title>	
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<!--CMP start-->
+<script src="https://cdn.ttgtmedia.com/cmp/ttCmpApi.min.js"></script>
+<script src="https://cdn.ttgtmedia.com/cmp/sourcepoint/sp-config.min.js"></script>
+<!--CMP end-->
+<script src="https://acdn.adnxs.com/prebid/c/8156/pb.js" async=true></script> 
+<script>var googletag=googletag||{};googletag.cmd=googletag.cmd||[],googletag.cmd.push(function()
+{googletag.pubads().disableInitialLoad();});</script><!-- enqueue GPT //-->	<script type='text/javascript'>
+		/* <![CDATA[ */
+		var adParams = {"acct":"atgnb","viewport":""};
+		/* ]]> */
+	</script>
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- This site is optimized with the Yoast SEO plugin v7.9.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="The Lenovo ThinkPad X61 is an ultraportable business laptop geared to individuals who demand the best. Like its larger brothers of the ThinkPad line, it shares all of the same rugged features, as well as the creature comforts of a full-size keyboard. Take a look at how the X61 stacks up in our review." />
+<meta name="twitter:title" content="Lenovo ThinkPad X61 Review" />
+<meta name="twitter:image" content="http://www.notebookreview.com/wp-content/uploads/sites/2/23651.jpg" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//cdn.rawgit.com' />
+<link rel='dns-prefetch' href='//cdn.ttgtmedia.com' />
+<link rel='dns-prefetch' href='//ajax.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="NotebookReview.com &raquo; Feed" href="http://www.notebookreview.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="NotebookReview.com &raquo; Comments Feed" href="http://www.notebookreview.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="NotebookReview.com &raquo; Lenovo ThinkPad X61 Review Comments Feed" href="http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.1.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.1.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-4207262-4';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-4207262-4', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.notebookreview.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='techtarget-top-reads-css'  href='http://www.notebookreview.com/wp-content/plugins/techtarget-top-reads/style/wpp.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.notebookreview.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='super-rss-reader-css-css'  href='http://www.notebookreview.com/wp-content/plugins/super-rss-reader/public/css/style.min.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://www.notebookreview.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='tg-stars-css'  href='https://cdn.ttgtmedia.com/techguide/v12/css/jquery.raty.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='techguide-style-css'  href='https://cdn.ttgtmedia.com/techguide/v12/css/styles.min.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='site-style-css'  href='https://cdn.ttgtmedia.com/techguide/v12/css/notebookreview.min.css' type='text/css' media='screen' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=4.9.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"http:\/\/www.notebookreview.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.notebookreview.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.1.0'></script>
+<script type='text/javascript' src='http://www.notebookreview.com/wp-content/plugins/super-rss-reader/public/js/script.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://cdn.rawgit.com/vaakash/jquery-easy-ticker/92e6e76c/jquery.easy-ticker.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://cdn.ttgtmedia.com//rms/ux/javascript/gpt-1.0.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var adParams = "";
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.notebookreview.com/wp-content/plugins/techtarget-ads-gpt-tg/javascript/tt_responsiveAds.js?ver=4.9.8'></script>
+<script type='text/javascript' src='http://www.notebookreview.com/wp-content/plugins/techtarget-duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.9.2'></script>
+<script type='text/javascript' src='https://cdn.ttgtmedia.com/techguide/v12/js/css3-mediaqueries.min.js?ver=4.9.8'></script>
+<link rel='https://api.w.org/' href='http://www.notebookreview.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.notebookreview.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.notebookreview.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.notebookreview.com/?p=25095' />
+<link rel="alternate" type="application/json+oembed" href="http://www.notebookreview.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.notebookreview.com%2Fnotebookreview%2Flenovo-thinkpad-x61-review%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.notebookreview.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.notebookreview.com%2Fnotebookreview%2Flenovo-thinkpad-x61-review%2F&#038;format=xml" />
+    <style type="text/css" media="screen">
+      div.printfriendly a, div.printfriendly a:link, div.printfriendly a:hover, div.printfriendly a:visited {
+        text-decoration: none;
+        border: none;
+      }
+    </style>
+           <style type="text/css" media="screen">
+          div.printfriendly {
+            margin: 12px 12px 12px 12px;
+            position: relative;
+            z-index: 1000;
+          }
+          div.printfriendly a, div.printfriendly a:link, div.printfriendly a:visited {
+            font-size: 14px;
+            color: #6D9F00;
+            vertical-align: bottom;
+          }
+          .printfriendly a {
+            box-shadow:none;
+          }
+          .printfriendly a:hover {
+            cursor: pointer;
+          }
+          .printfriendly a img  {
+            border: none;
+            padding:0;
+            margin-right: 6px;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+          }
+          .printfriendly a span{
+            vertical-align: bottom;
+          }
+          .pf-alignleft {
+            float: left;
+          }
+          .pf-alignright {
+            float: right;
+          }
+          div.pf-aligncenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+          }
+        </style>
+        <style type="text/css" media="print">
+          .printfriendly {
+            display: none;
+          }
+        </style>
+
+
+
+<script type="text/javascript">
+//DPM DATAPOINT
+(function() {
+var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'); 
+s.type='text/javascript'; 
+s.async=true; 
+s.src='https://s.dpmsrv.com/dpm_b7eb6c689c037217079766fdb77c3bac3e51cb4c.min.js';  
+h.appendChild(s); 
+})();
+</script>
+<!-- Begin Google Plus -->
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js" async></script>
+<link href="https://plus.google.com/112259777441168223252/" rel="publisher" />
+<!-- End Google Plus -->
+
+
+<!-- Begin JS URL Update -->
+<script type="text/javascript" src="https://a.dpmsrv.com/dpmpxl/index.php?q=xSegList&cl=68"></script>
+
+<!-- nativo tag -->
+<script type="text/javascript" src="http://a.postrelease.com/serve/load.js?async=true"></script>
+
+
+<style>
+    .google_top_posts {
+        border: 1px solid #dadada;
+        margin-bottom: 40px;
+    }
+    .sidebar .google_top_posts .splashTitle {
+        padding: 10px;
+        background: #e07b00;
+        color: #fff;
+        display:block;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    .sidebar .google_top_posts .splashTitle:after {
+        content:'';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-top: solid 10px #e07b00;
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+    }
+    .sidebar .google_top_posts .gtc-list li {
+        color: #666;
+        transition: background-color 0.2s ease;
+    }
+    .sidebar .google_top_posts .gtc-list li:hover {
+        background: #6688a0;
+    }
+    .sidebar .google_top_posts .gtc-list li:hover > a {
+        color: #fff;
+        border-bottom: none;
+    }
+    .sidebar .google_top_posts .gtc-list li a{
+        color: #666666;
+        display:block;
+        margin: 0 10px;
+        text-decoration: none;
+        border-bottom: 1px solid #dadada;
+        padding: 17px 0;
+    }
+    .sidebar .google_top_posts .gtc-list li:last-child {
+        border-bottom: none;
+    }
+
+.sidebar .google_top_posts .gtc-count-container {
+        float:left;
+        padding: 13px 0;
+        position: relative;
+    }
+    .sidebar .google_top_posts .gtc-count {
+        background: #e6e6e6;
+        height: 25px;
+        width: 25px;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 13px;
+        position:relative;
+    }
+    .sidebar .google_top_posts .gtc-list-item {
+        border-bottom: 1px solid #dadada;
+        margin: 0 10px;
+        position:relative;
+    }
+    .sidebar .google_top_posts li:last-child .gtc-list-item {
+        border-bottom: none;
+    }
+    .sidebar .google_top_posts .gtc-list-item:hover {
+        border-bottom: none;
+    }
+    .sidebar .google_top_posts .gtc-count .number {
+        position: relative;
+        top: 5px;
+    }
+    .sidebar .google_top_posts .gtc-list li:hover  a{
+        color: #fff !important;
+        border-bottom: none;
+    }
+</style>
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+	dataLayer.push({"siteID":"2","siteName":"NotebookReview.com","visitorLoginState":"logged-out","visitorType":"visitor-logged-out","visitorRegistrationDate":"","visitorUsername":"","pageTitle":"Lenovo ThinkPad X61 Review","pagePostType":"notebookreview","pagePostType2":"single-notebookreview","pageCategory":["lenovo"],"pagePostAuthor":"Kevin O'Brien","pagePostDate":"June 20, 2007","pagePostDateYear":"2007","pagePostDateMonth":"06","pagePostDateDay":"20","browserName":"Surf","browserVersion":"2.0","browserEngineName":"Webkit","browserEngineVersion":"605.1.15","postCountOnPage":1,"postCountTotal":1,"postID":25095,"postFormat":"standard"});//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WRN4PK');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><!-- Wordpress Popular Posts v2.3.2 -->
+<script type="text/javascript">
+    /* <![CDATA[ */				
+	jQuery.post('http://www.notebookreview.com/wp-admin/admin-ajax.php', {action: 'wpp_update', token: 'b6a3c9596a', id: 25095}, function(data){/*alert(data);*/});
+    /* ]]> */
+</script>
+<!-- End Wordpress Popular Posts v2.3.2 -->
+            <script type="text/javascript">
+	var adzone = "reviews";
+	GPT(function () {
+	this.unitName = "/3618/atgnb/reviews";
+	var pubads = this.googletag.pubads();
+	pubads.collapseEmptyDivs();
+	
+    //START CMP
+    //Check CMP with vendor ID mapped to external ID in ttCmpApi.js	
+    var cmp = "1";
+	if (typeof ttCmpApi === "function") {
+    	var cmpApi = new ttCmpApi();			
+    	if( cmpApi.getConsent("DFP") ) {			
+    		pubads.setRequestNonPersonalizedAds(0);
+    		console.log("CMP - DFP personalized ads can be served");
+    	} else {			
+    		pubads.setRequestNonPersonalizedAds(1);
+    		cmp = "0";
+    		console.log("CMP - DFP no personalized ads can be served");
+    	}
+    } else {
+        console.log("CMP - DFP personalized ads can be served due to missing ttCmpApi");
+    }
+    pubads.setTargeting("cmp", cmp);
+    //END CMP
+    pubads.setTargeting("cat", ["lenovo","lenovo","laptop"]);
+pubads.setTargeting("postid", "25095");
+pubads.setTargeting("content", "notebookreview");
+pubads.setTargeting("section", "reviews");
+pubads.setTargeting("site", "notebookreview");
+
+	});
+	</script>
+			
+		
+					
+			
+					
+
+		<!-- Begin Google Analytics -->
+					<!-- ENG Google Analytics -->	
+		
+	</head>
+
+	<body>
+		
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRN4PK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->		
+<div id="networkBar">
+	<div class="networkBarInner">
+		<ul>
+			<li class="description">Visit our network of sites:</li>
+		<li class='siteName on'><a href='//www.notebookreview.com'>NotebookReview</a></li><li class='siteName'><a href='//www.tabletpcreview.com'>TabletPCReview</a></li><li class='siteName'><a href='//www.brighthand.com'>Brighthand</a></li><li class='siteName'><a href='//www.digitalcamerareview.com'>DigitalCameraReview</a></li><li class='siteName'><a href='//www.desktopreview.com'>DesktopReview</a></li><li class='siteName'><a href='//www.printercomparison.com'>PrinterComparison</a></li><li class='siteName'><a href='//www.technologyguide.com'>TechnologyGuide</a></li>		</ul>
+	</div>
+</div>				<header id="siteHeader">
+				<div id="headerContent">
+				<div id="headerLogo">
+					<div id="headerLogoCompress">
+					<a href="http://www.notebookreview.com">NotebookReview.com</a>
+					</div>
+				</div>
+				<div id="headerRight">
+					<div class="searchLoginBarContainer">
+						<div class="searchLoginBarContent" >
+							
+	<div class="generalLinksContainer">
+		<div class="loginBar">
+			<ul>
+				<li><a href="https://users.notebookreview.com/registration/notebookreview/LoginRegister.page?fromURL=http%3A%2F%2Fwww.notebookreview.com%2Fnotebookreview%2Flenovo-thinkpad-x61-review%2F">Join / Log in</a></li>
+			</ul>
+		</div>
+		<div class="generalLinks">
+			<ul>
+				<li class="miniHide"><a href="/about/">About</a></li>
+				<li class="miniHide">|</li>
+				<li class="miniHide"><a href="/contact/">Contact</a></li>
+				<li class="miniHide">|</li>
+				<li class="miniHide"><a href="https://users.notebookreview.com/registration/notebookreview/Register.page?fromURL=http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/">Newsletter Signup</a></li>
+			</ul>
+		</div>
+		
+	</div>			
+								
+							<nav id="headerSearch" class="headerSearch">
+								<form action="http://www.notebookreview.com/" method="get" id="headerSearchForm">
+									<fieldset>
+									<label for="headerSearchTextbox" class="headerSearchLabel">Search this site</label>
+									<input type="text" name="s" id="headerSearchTextbox" class="headerSearchBox" value="Search NotebookReview"/>
+									<div class="headerSearchSubmitButtonContainer">
+										<input type="submit" value="Search" id="headerSearchSubmit" class="headerSearchSubmitButton"/>
+									</div>
+									</fieldset>
+								</form>
+							</nav>	
+						</div>		
+					</div>
+					<div class="miniNav-search-container">
+												<div class="miniNav-container">
+	<nav id="nav-primary">
+		<ul class="nav-list parent">
+			<li class="parent"><a href="#" class="miniHide">Sections <span class="downArrow">&#9660;</span></a>
+				<ul id="menu-top-nav" class="nav-list child"><li><a href="/notebookreview/">Reviews <span class="downArrow">▼</span></a>
+<ul class="sub-nav-list child">
+	<li class="summary">All Reviews</li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/best_laptops/">Most Popular Notebook/Laptops</a></li>
+	<li class="sub-nav-item"><a href="/notebookreview/">Notebook Reviews</a></li>
+	<li class="sub-nav-item"><a href="/softwarereview/">Software Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/phonereview/">Smartphone Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/desktopreview/">Desktop Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/printerreview/">Printer Reviews</a></li>
+	<li class="summary">Top Brands</li>
+	<li class="sub-nav-item"><a href="/brands/laptop/dell/notebookreview/">Dell Laptop Reviews</a></li>
+	<li class="sub-nav-item"><a href="/brands/laptop/hp/notebookreview/">HP Laptop Reviews</a></li>
+	<li class="sub-nav-item"><a href="/brands/laptop/lenovo/notebookreview/">Lenovo Laptop Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/brands/laptop/msi-computer/">MSI Laptop Reviews</a></li>
+</ul>
+</li>
+<li><a href="/news/">News  <span class="downArrow">▼</span></a>
+<ul class="sub-nav-list child">
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/news/">All Notebook News</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/software/news/">Software News</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/printer/">Printer News</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/desktop/">Desktop News</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/archive/">News Archive</a></li>
+	<li class="summary">Top Categories</li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/dell/news/">Dell News</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/hp/news/">HP News</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/lenovo/news/">Lenovo News</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/msi/">MSI News</a></li>
+</ul>
+</li>
+<li><a href="/buyers-guides/">Shop  <span class="downArrow">▼</span></a>
+<ul class="sub-nav-list child">
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/shop/notebook/">Notebook Price Search</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/buyers-guides/business-laptops/">Business Notebooks</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/buyers-guides/budget-laptops/">Budget Notebooks</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/buyers-guides/multimedia-laptops/">Multimedia Notebooks</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/buyers-guides/gaming-laptops/">Gaming Laptops</a></li>
+</ul>
+</li>
+<li><a href="http://www.notebookreview.com/deals/">Deals and Coupons <span class="downArrow">▼</span></a>
+<ul class="sub-nav-list child">
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/deal/best-cheap-laptops-tablets-2014/">Best Cheap Laptops and Tablets of 2015</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/deals/apple/">Apple MacBook Deals and Coupons</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/deals/dell/">Dell Laptop Deals and Coupons</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/deals/hp/">HP Laptop Deals and Coupons</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/deals/lenovo/">Lenovo Laptop Deals and Coupons</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/deals/toshiba/">Toshiba Laptop Deals and Coupons</a></li>
+</ul>
+</li>
+<li><a href="http://forum.notebookreview.com">Community</a></li>
+<li><a href="http://www.notebookreview.com/topics/accessories/">Accessories <span class="downArrow">▼</span></a>
+<ul class="sub-nav-list child">
+	<li class="summary">All Accessories</li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/accessories/">Accessory Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/accessories/storage/">Storage Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/accessories/monitor/">Monitor Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/printerreview/">Printer Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/accessories/mouse/">Mouse Reviews</a></li>
+	<li class="sub-nav-item"><a href="http://www.notebookreview.com/topics/accessories/backpack/">Backpack Reviews</a></li>
+</ul>
+</li>
+<li><a href="/video/">Video</a></li>
+<li><a href="http://www.notebookreview.com/topics/business/">Business</a></li>
+<li><a href="http://www.notebookreview.com/topics/smartphone/">Smartphones</a></li>
+</ul>			</li>
+		</ul>
+	</nav>
+</div>							<nav id="headerSearchMiniShowHide" class="headerSearchMiniShowHide"><a class="show_hide" rel="#slidingDiv" href="#" ><span class="button">View Search</span></a>
+							
+							</nav>
+						</div>
+						<div id="slidingDiv" class="toggleDiv" style="display: none;">
+							<div class="headerSearchMiniFullWidth">
+									<form action="http://www.notebookreview.com/" method="get" id="headerSearchFormMini">
+										<fieldset>
+											<label for="headerSearchTextbox" class="headerSearchLabel">Search this site</label>
+											<input type="text" name="s" id="headerSearchTextboxMini" class="headerSearchBoxMini" value="Search NotebookReview"/>
+											<input type="submit" value="Search" id="headerSearchSubmitMini" class="headerSearchSubmitButtonMini shadow" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+				</div>
+			</div>
+		</header>
+ <!-- end header -->		
+<!-- welcome ad -->
+ <div id="welcome" style="width:1px;height:1px">
+	<!-- adSizes: 1x1 -->
+	<!-- 1x1 ad start -->
+	<div class="tt-ad" id="div-gpt1x1" data-adsize="1x1" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[1,1]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // welcome ad out of page slot
+			if ( (viewport > 1) && (window.location.search.indexOf("int=off") == "-1") ) {
+				var slot = this.googletag.defineOutOfPageSlot(this.unitName, "div-gpt1x1");
+				slot.setTargeting("type", "oop");
+			}
+	if (slot != "noad") {
+	
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 1x1 ad end -->
+	</div>
+<!-- leaderboard -->
+<div id="ttadContainer" class="on">
+	<!-- adSizes: 970x250,728x90 -->
+	<!-- 970x250 ad start -->
+	<div class="tt-ad" id="div-gpt970x250X728x90" data-adsize="970x250,728x90" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[970,250], [728,90]];
+		var viewport = adRange();
+		var slot = "noad";
+			if (viewport == 1) {
+				adstring = [[300,50], [320,50]];		
+			} else if (viewport == 2) {
+				adstring = [728,90];
+			} else if (viewport == 3) {
+				adstring = [728,90];
+			} else {
+				// switch request order of ads to page from shrinking if no billboard ad
+				adstring = [[728,90], [970,250]];		
+			} 	var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt970x250X728x90");
+	if (slot != "noad") {
+	
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 970x250 ad end -->
+	</div>
+
+	<div id="page" class="">
+		<div id="pageContainer">
+		<div class="breadcrumbs">
+<a href='http://www.notebookreview.com'>Home</a> &gt; <a href="http://www.notebookreview.com/topics/">Topics</a> &gt; <a href="http://www.notebookreview.com/topics/lenovo/">Lenovo</a>  &gt; <a href='http://www.notebookreview.com/topics/lenovo/notebookreview/'>Laptop Reviews</a> &gt; Lenovo ThinkPad X61 Review</div>			
+			<div class="mainContainer">	
+				<div class="mainContainer_col1">
+	</div>
+				<!--  begin review schema -->
+<span itemscope itemtype="http://schema.org/Review">
+	<div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Product">
+			<meta itemprop="name" content="Lenovo ThinkPad X61">
+		</div>
+	<div class="articleContainer">
+		<article id="articleBody">
+			<header id="articleHeader">
+				<h1 id="headline" itemprop="headline">Lenovo ThinkPad X61 Review</h1>				
+			<div id="articleToolbar">
+	<div id="byline">
+		<time itemprop='datePublished' datetime='2007-06-20' class='publishDate'>June 20, 2007</time>
+<span class='verticalBar'></span>by <span itemprop='author' itemscope itemtype='http://schema.org/Person'><span itemprop='name'>Kevin O'Brien</span>
+</span>		<span class="verticalBar"></span><span class="readsIcon"></span>Reads (1,123,969)
+	</div>
+	<div id='contentTools'>
+<ul class='tools-socialMedia'><li id='socialMedia-twitter'><a href='https://twitter.com/share' class='twitter-share-button' data-url='http://www.notebookreview.com/default.asp?newsID=3765'>Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+<li id='socialMedia-facebook' title='Add to Facebook'><div style='float:left;width:100px;height:25px'><div id='fb-root'></div>
+<script src='https://connect.facebook.net/en_US/all.js#xfbml=1'></script><fb:like href='http://www.notebookreview.com/default.asp?newsID=3765' send='false' layout='button_count' width='100' show_faces='false' action='like' font=''></fb:like></div>
+</li></ul><ul class='tools'><li class='toolItem'><a href='#comments'><span class='commentsIcon'></span>Comments (2)</a></li><li class='toolItem'><a href="http://forum.notebookreview.com"><span class='discussIcon'></span>Discuss</a></li><li class='toolItem'><a href='http://www.printfriendly.com/print?url=http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/' rel='nofollow' onclick="window.print();if(typeof(_gaq) != 'undefined') { _gaq.push(['_trackEvent','PRINTFRIENDLY', 'print', 'NULL']);} return false;"><span class='emailIcon'></span>Email</a></li><li class='toolItem'><a href='http://www.printfriendly.com/print?url=http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/' rel='nofollow' onclick="window.print();if(typeof(_gaq) != 'undefined') { _gaq.push(['_trackEvent','PRINTFRIENDLY', 'print', 'NULL']);} return false;"><span class='printIcon'></span>Print</a></li><li class='toolItem' style='display:none'><div class="printfriendly pf-alignleft"><a href="#" rel="nofollow" onclick="window.print(); return false;" class="noslimstat" title="Printer Friendly, PDF & Email"><img style="border:none;-webkit-box-shadow:none; box-shadow:none;" src="https://cdn.printfriendly.com/buttons/printfriendly-button.png" alt="Print Friendly, PDF & Email" /></a></div></li></ul></div>
+</div>
+											
+			<nav id="reviewNav">
+	<div class="articleColumns">
+		<ul class="columnCount3">
+			<li class='on' >
+				<div class="splash columnSplash" id="review">
+					<ul>
+						<li><a href="http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/">Review</a></li>
+					</ul>
+				</div>
+			</li>
+			<li  >
+				<div class="splash columnSplash" id="overview">
+					<ul>
+						<li><a href="http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/specs/">Specs</a></li>
+					</ul>
+				</div>
+			</li>
+			<li  >
+					<div class="splash columnSplash" id="shop">
+					<ul>
+						<li><a href="http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/shop/">Shop</a></li>
+					</ul>
+				</div>
+			</li>	
+		</ul>
+	</div>
+</nav>		</header>
+		<article id="review_summaryTab">
+			<section id='gallerySlider'>
+<div id='gallery-1' class='royalSlider rsDefault fwImage col span_4'>
+<a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/23661-752x190.jpg' href='http://www.notebookreview.com/wp-content/uploads/sites/2/23661-752x190.jpg' data-rsdelay='1000'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/23661-752x190.jpg' itemprop='image'></a><a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/23663-752x94.jpg' href='http://www.notebookreview.com/wp-content/uploads/sites/2/23663-752x94.jpg'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/23663-752x94.jpg'></a><a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/25145.gif' href='http://www.notebookreview.com/wp-content/uploads/sites/2/25145.gif'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/25145.gif'></a><a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/23653-752x274.jpg' href='http://www.notebookreview.com/wp-content/uploads/sites/2/23653-752x274.jpg'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/23653-752x274.jpg'></a><a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/23655-687x501.jpg' href='http://www.notebookreview.com/wp-content/uploads/sites/2/23655-687x501.jpg'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/23655-687x501.jpg'></a><a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/23657-752x362.jpg' href='http://www.notebookreview.com/wp-content/uploads/sites/2/23657-752x362.jpg'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/23657-752x362.jpg'></a><a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/23659-752x412.jpg' href='http://www.notebookreview.com/wp-content/uploads/sites/2/23659-752x412.jpg'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/23659-752x412.jpg'></a><a class='rsImg' data-rsbigimg='http://www.notebookreview.com/wp-content/uploads/sites/2/23665-752x278.jpg' href='http://www.notebookreview.com/wp-content/uploads/sites/2/23665-752x278.jpg'><img class='rsTmb' height='50px' width='66px' alt='' src='http://www.notebookreview.com/wp-content/uploads/sites/2/23665-752x278.jpg'></a></div></section>
+	
+
+				<div class="allowBullets" itemprop="reviewBody">
+		<!-- adSizes: 300x250 --><!-- adSizes: 300x250 --><div class="pf-content"><p><!-- Generated by XStandard version 1.7.1.0 on 2007-07-30T17:05:10 --></p>
+<p><em>by Kevin O&#8217;Brien</em></p>
+	<!-- 300x250 ad start -->
+	<div class="tt-ad" id="div-gpt300x250top-content" data-adsize="300x250" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[300,250]];
+		var viewport = adRange();
+		var slot = "noad";
+		 
+			if (viewport <= 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt300x250top-content");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "top");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 300x250 ad end -->
+	
+<p>The <a href="http://www.notebookreview.com/price/default.asp?productID=19640&amp;productFamilyID=1000&amp;display=priceDetail" onclick="window.open(this.href);return false;" onkeypress="window.open(this.href);return false;">Lenovo ThinkPad X61</a> is an ultraportable business laptop geared to individuals who demand the best. Like its larger brothers of the ThinkPad line, it shares all of the same rugged features, as well as the creature comforts of a full-size keyboard. The X61 looks as if Lenovo took a <a href="http://www.notebookreview.com/price/default.asp?productFamilyID=720&amp;display=priceDetail&amp;productID=15451" onclick="window.open(this.href);return false;" onkeypress="window.open(this.href);return false;">ThinkPad T60</a> and shrunk it down by 30 percent. Although it is much smaller than its counterparts, it is every bit as fast. This model came loaded with a 7200rpm hard drive, 2GHz Core 2 Duo processor, and 2GB of RAM. Light business travelers can rest easy knowing they didn&#8217;t sacrifice anything but weight when they bring the X61 on the road.</p>
+<p><script src="http://www.NotebookReview.com/assets/19640.js"></script></p>
+	<!-- 300x250 ad start -->
+	<div class="tt-ad" id="div-gpt300x250bottom-content" data-adsize="300x250" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[300,250]];
+		var viewport = adRange();
+		var slot = "noad";
+		 
+			if (viewport <= 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt300x250bottom-content");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "bottom");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 300x250 ad end -->
+	
+<p>Specifications of the X61 being reviewed:</p>
+<ul>
+<li>CPU: Intel Core 2 Duo 2.0GHz T7300</li>
+<li>Chipset: Intel 965 Express</li>
+<li>Memory: 2048MB DDR2 PC5300 (2x 1024MB)</li>
+<li>Hard Drive: 7200RPM 100GB Hitachi (HTS721010G9SA00) SATA</li>
+<li>Screen: 12.1&quot; 1024&#215;768 LCD</li>
+<li>Optical Drive: LG GCC-4247N DVD/CDRW (Through X6 UltraBase)
+<ul>
+<li>8x DVD-ROM</li>
+<li>24x CD-R</li>
+<li>24x CD-RWX</li>
+</ul>
+</li>
+<li>GPU:&#160; Intel X3100 Integrated</li>
+<li>Network/Wireless: Intel Wireless 4965AGN, 1Gb Ethernet Card, Verizon WWAN Modem and Bluetooth</li>
+<li>Inputs: 95 Key Keyboard with Three Button Touchpoint</li>
+<li>Buttons: Power, ThinkVantage, Power, Volume Up and Down, Mute, and WiFi/Bluetooth On/Off Switch.</li>
+<li>Slots: PCMCIA/PC-Card</li>
+<li>Battery: Eight Cell</li>
+<li>Dimensions:
+<ul>
+<li>Width: 10.58&quot;, With WWAN Antenna: 10.91&#8221;</li>
+<li>Depth: 8.35&#8221; ,With 8 Cell Battery: 9.37&#8221;</li>
+<li>Height: 1.41&quot;</li>
+</ul>
+</li>
+<li>Weight: 3lbs 10.6oz</li>
+<li>Operating System: Windows Vista Business</li>
+<li>Warranty: One Year Warranty</li>
+<li>Price as Configured: $2033 ($1863 without UltraBase and Optical Drive)</li>
+</ul>
+<p><img alt="" border="0" height="237" src="http://www.notebookreview.com/assets/23652.jpg" width="400" /><br /><em>Lenovo ThinkPad X61s on the left, X61 on the right (<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23651','Picture',1070,772,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</em></p>
+<p><strong>Design and Build</strong></p>
+<p><img alt="" border="0" height="131" src="http://www.notebookreview.com/assets/23654.jpg" width="360" /><br /><em>ThinkPad X61 (<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23653','Picture',1070,545,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</em></p>
+<p>The X61 is a durable ultraportable computer. It shares many design characteristics with the rest of the ThinkPad line including its internal unibody structure, full-size keyboard, stainless steel display hinges, and complete port selection. The fit and finish is astounding, with no creaks anywhere (not even a small creak), as well as little unused space. The outside case is very strong giving it a good deal of protection when thrown into a briefcase or maybe even a tall purse. It really seems like a handbag sized ThinkPad down to the smallest detail.</p>
+<p><img alt="" border="0" height="124" src="http://www.notebookreview.com/assets/23672.jpg" width="360" /><br /><em>Thickness of X61 compared to Blackberry Pearl (<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23671','Picture',1070,524,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</em></p>
+<p>For upgrades and repairs that might come up down the road, the X61 has the user in mind with easy to remove access panels and covers. The most frequent upgrade items being the HD and RAM are accessed through panels on the bottom and side of the X61. Other items such as the keyboard, wireless cards, and backup battery can be reached by removing a handful of labeled screws on the bottom, and easily popped out. For my first time taking it apart it took roughly three minutes to figure out how the panels came off once the screws were out. I found almost little to no risk of breaking other components during this process, unlike other laptops which are not so user friendly in this area.</p>
+<p><img alt="" border="0" height="270" src="http://www.notebookreview.com/assets/23656.jpg" width="370" /><br />(<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23655','Picture',1070,909,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</p>
+<p>One concern worth mentioning is the amount of heat that can build up below the palm rest after the computer has been powered up for about an hour. The right side was fairly warm to the touch, and when I took the laptop apart to find the cause of the heat, I found that both the WiFi and WWAN cards were directly under this area. Lenovo includes an additional fan with models equipped with the WWAN card, but this may not activate if the card is not in use. During my testing, I was only using the WiFi card for internet access. Since items are packed quite densely in this ultraportable laptop, it is hard to win on all design points.</p>
+<p><strong>Input and Output Ports</strong></p>
+<p><em>Front</em></p>
+<p><img alt="" border="0" height="55" src="http://www.notebookreview.com/assets/23664.jpg" width="440" /><br /><em>Front view of X61s and X61 (<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23663','Picture',1070,480,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</em></p>
+<p>The only items in the front of the laptop is the screen latch and wireless on/off switch</p>
+<p><em>Left Side</em></p>
+<p><img alt="" border="0" height="219" src="http://www.notebookreview.com/assets/23660.jpg" width="400" /><br /><em>Left side view of X61 on top of X61s (<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23659','Picture',1070,728,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</em></p>
+<p>Left to right we have the CPU heatsink output grill, USB Port, VGA connector, 1Gb LAN, PCMCIA Slot with SD card reader below it.</p>
+<p><em>Right Side</em></p>
+<p><img alt="" border="0" height="192" src="http://www.notebookreview.com/assets/23658.jpg" width="400" /><br /><em>Right side view of X61 on top of X61s</em> (<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23657','Picture',1070,661,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</p>
+<p>Left to right we have the mini 4 pin firewire port, 2 USB connectors, headphone/mic jacks, HD access panel, 56k modem jack, power plug, and Kensington lock port.</p>
+<p><em>Back</em></p>
+<p><img alt="" border="0" height="148" src="http://www.notebookreview.com/assets/23666.jpg" width="400" /><br />(<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23665','Picture',1070,550,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</p>
+<p>One really wide battery</p>
+<p><strong>Keyboard and Touchpoint</strong></p>
+<p><img alt="" border="0" height="244" src="http://www.notebookreview.com/assets/23668.jpg" width="400" /><br /><em>Keyboard view of X61s and X61 (<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23667','Picture',1070,789,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</em></p>
+<p>The most surprising thing about the 12&#8221; X series laptops is it has a &#8220;full-size&#8221; keyboard. The primary letters, numbers, and function keys are all the same size as the larger 14&#8221; and 15&#8221; models, with only the outer keys reduced in size. This gives you a comfortable typing surface, that once you get used to the odd size outer keys, becomes a pleasure to type on. Build quality is 2<sup>nd</sup> to none, and it shows with the very precise quiet clicks that each key press gives as feedback.</p>
+<p>The touchpad or lack thereof will probably come as a shock to most users seeing only the red cap of the ThinkPad Touchpoint. To save space the X61 omits the touchpad system in favor of a touchpoint. I never really used the Touchpoint on my T60, falling back to the touchpad on almost all occasions. Even so I found transitioning to the Touchpoint to be painless, and I even found myself using it on my T60 without realizing it. The only problem that did come up is occasionally the pointer would start to drift without any input from me. I had to tap the Touchpoint a bit to make it stop. This may be a result of the fine sensitivity I had it set to, but it was hard to duplicate the problem enough to pinpoint the cause.</p>
+<p><strong>Screen</strong></p>
+<p>The screen lacks defined blacks and good contrast. Vertical viewing angles are not that good &#8212; quickly inverting colors at the slightest change of angle from being perpendicular to the screen. Since this laptop will be close to you during normal use, this shouldn&#8217;t be too much of a problem. I found the brightness of the screen to be pleasant typing indoors, although it would be quickly washed out outside in the sun. For normal use inside, my comfortable viewing level was six or seven notches down from the max of 15.</p>
+<p><img alt="" border="0" height="240" src="http://www.notebookreview.com/assets/23670.jpg" width="400" /><br />(<span onClick="displayWindow('http://www.notebookreview.com/picture.asp?f=23669','Picture',1070,780,'');" style="color:blue; text-decoration:underline; cursor:pointer">view large image</span>)</p>
+<p>Protection from the display cover is very good, requiring a ton of pressure before you start seeing any ripples on the screen. The hinges are strong, but they don&#8217;t feel as tight as other ThinkPad models. Normally it requires two hands to open up the display of a ThinkPad, but the X61 only requires one. Given that the hinges are so much smaller on this model, it could be that they have a much smaller friction surface.</p>
+<p>The screen on my X61 had no defects like dead pixels or backlight leakage.</p>
+<p><strong>Speakers</strong></p>
+<p>The speakers inside the X61 are very weak, and I would have to suggest wearing headphones for watching movies. For better speaker performance, the optional X6 base provides much better sound quality. The differences between the 2 systems are pretty amazing. Playing music outside of the dock sounds like headphones with the volume cranked, then when docked it sounded like a boom box.</p>
+<p><strong>Performance</strong></p>
+<p>The X61 is very impressive when it comes to raw power in such a small package. As the following results show, it provided some very respectable benchmarks. Overall I think the 7200rpm hard drive provided the biggest benefit, giving it instantaneous load times. Windows Vista startup time from the moment I pressed the power button to no activity on the desktop was 46 seconds.</p>
+<p><em>PCMark05 System Results</em></p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr>
+<td><strong>Notebook</strong></td>
+<td><strong>PCMark05 Score</strong></td>
+</tr>
+<tr align="left" valign="top">
+<td><strong>Lenovo ThinkPad X61 (2.0GHz Intel Core 2 Duo T7300, Intel X3100)</strong></td>
+<td><strong>4,153 PCMarks</strong></td>
+</tr>
+<tr align="left" valign="top">
+<td>Lenovo 3000 V200 (2.0GHz Intel Core 2 Duo T7300, Intel X3100)</td>
+<td>3,987 PCMarks</td>
+</tr>
+<tr>
+<td>Lenovo T60 Widescreen (2.0GHz Intel T7200, ATI X1400 128MB)</td>
+<td>4,189 PCMarks</td>
+</tr>
+<tr>
+<td>HP dv6000t (2.16GHz Intel T7400, NVIDA GeForce Go 7400)</td>
+<td>4,234 PCMarks</td>
+</tr>
+<tr>
+<td>Fujitsu N6410&#160;(1.66GHz Core Duo, ATI X1400)</td>
+<td>3,487 PCMarks</td>
+</tr>
+<tr>
+<td>Alienware M7700 (AMD Athlon FX-60, Nvidia Go 7800GTX)</td>
+<td>5,597&#160;PCMarks</td>
+</tr>
+<tr>
+<td>Sony Vaio SZ-110B in Speed Mode (Using Nvidia GeForce Go 7400)</td>
+<td>3,637 PCMarks</td>
+</tr>
+<tr>
+<td>Asus V6J (1.86GHz Core Duo T2400, Nvidia Go 7400)</td>
+<td>3,646 PCMarks</td>
+</tr>
+</table>
+<p>&#160;</p>
+<p><em>Super Pi Comparison Results</em></p>
+<table border="1" cellpadding="4" cellspacing="0">
+<tr>
+<td><strong>Notebook</strong></td>
+<td><strong>Time</strong></td>
+</tr>
+<tr align="left" valign="top">
+<td><strong>Lenovo ThinkPad X61 (2.0GHz Intel Core 2 Duo T7300)</strong></td>
+<td><strong>1m 01s</strong></td>
+</tr>
+<tr>
+<td valign="top">Lenovo 3000 V200 (2.0GHz Intel Core 2 Duo T7300)</td>
+<td valign="top">0m 59s</td>
+</tr>
+<tr>
+<td valign="top">HP dv2500t (1.80GHz Intel 7100)</td>
+<td valign="top">1m 09s</td>
+</tr>
+<tr>
+<td valign="top">Lenovo ThinkPad T61 (2.00GHz Core 2 Duo Intel T7300)</td>
+<td valign="top">0m 59s</td>
+</tr>
+<tr>
+<td valign="top">Lenovo ThinkPad T60 (2.00GHz Core 2 Duo T7200)</td>
+<td valign="top">1m 03s</td>
+</tr>
+<tr>
+<td valign="top">Toshiba Satellite P205-S6287 (1.73 GHz Core 2 Duo Intel T5300)</td>
+<td valign="top">1m 24s</td>
+</tr>
+<tr>
+<td valign="top">Toshiba Satellite A205 (1.66GHz Core 2 Duo)</td>
+<td valign="top">1m 34s</td>
+</tr>
+<tr>
+<td valign="top">HP Compaq 6515b (1.6GHz AMD Turion 64 X2 TL-52)</td>
+<td valign="top">2m 05s</td>
+</tr>
+<tr>
+<td>HP dv6000t (2.16 GHz Intel T2400)</td>
+<td>0m 59s</td>
+</tr>
+<tr>
+<td>Dell Inspiron e1705 (2.0GHz Core 2 Duo)</td>
+<td>1m 02s</td>
+</tr>
+</table>
+<p>&#160;</p>
+<p><strong>Battery Life</strong></p>
+<p>I found the battery life to net between four to five hours of use on the 8-cell extended battery. With Vista the system likes to occasionally go wild in the background almost pegging the processor, eating up precious power from the battery at times. I also had problems with the ThinkPad power management software competing against Vista&#8217;s power management settings. After every reboot settings such as HD spindown, standby, LCD shutdown, etc. were all changed back to the default Vista settings. Even though I had the Vista and ThinkPad settings both set to &#8220;Never&#8221; for every power option, it still returned to 5-10 minute intervals after every reboot. I found myself returning from a coffee break to the computer shutting itself down, only to have to spend another minute powering it back up. Compared to Windows XP, Vista has been horrible in my uses for power management or power efficiency. It was hard to ever have a moment just sitting where the HD didn&#8217;t start seeking like crazy, or the CPU going under load wearing the battery down.</p>
+<p>When compared to other Lenovo laptops, the X61 recharges its battery extremely fast. I could easily say it was between 30-50% faster than my T60 trying to charge, especially as the battery got to a higher charge level. Around 90% the T60 slows down to about 40-50 minutes left, but the X61 takes 15-20 minutes from this point. Both systems were using their respective extended batteries, which were around the 80Ah capacity.</p>
+<p>The power adapter is 65w model, measuring 4.134&#8221; x 1.709&#8221; x 1.138&#8221; and 8 oz in weight.&#160; This was small enough to not add any real bulk to my carrying case, a great pair to the X61.</p>
+<p><strong>Heat and Noise</strong></p>
+<p>Heat output from the laptop is more than you would expect from such a small machine. Unless idle, the laptop usually had its fan spinning at a low speed outputting a fair amount of heat. Fan noise was minimal though, so when its one you may not notice it.</p>
+<p>The palm rest was also another heat source, with both wireless cards mounted under the right side. After being powered on for 30-40 minutes, the right side gets pretty warm. With a room temperature of 76F, the right side of the palm rest was measuring 97F, with the rest of the laptop around 90F. If you were typing for a couple of hours, your wrist may start feeling some discomfort from the heat.</p>
+<p><strong>Wireless</strong></p>
+<p>This X61 was equipped with the Intel 4965AGN, and reception through the laptop was above average. The Atheros alternative (ThinkPad 11a/b/g) which I have in my T60 did manage to pull in wireless networks that the X61 could not see, and may be a better option if you are customizing it on the Lenovo website yourself.</p>
+<p>I wasn&#8217;t able to fully test the built-in Verizon wireless WWAN card since I don&#8217;t have that service, but I did check its reception in my house. Usually cell phones barely work and cutout frequently. The X61&#8217;s antenna saw a 30% signal, and didn&#8217;t seem to change if the antenna was fully seated, or extended all the way.</p>
+<p><strong>Conclusion</strong></p>
+<p><script src="http://www.NotebookReview.com/assets/19640.js"></script></p>
+<p>I found the <a href="http://www.notebookreview.com/price/default.asp?productID=19640&amp;productFamilyID=1000&amp;display=priceDetail" onclick="window.open(this.href);return false;" onkeypress="window.open(this.href);return false;">ThinkPad X61</a> to be a fantastic alternative to my larger 15&#8221; T60 in situations that I didn&#8217;t want to lug around the heavier machine. It had all the grunt of the much larger machine, but inside a much smaller package. I was also surprised by how easy it was to upgrade the ram in the X61, by removing a access panel on the bottom of the laptop. This is the only ThinkPad that doesn&#8217;t require you to remove the palm rest for this upgrade. Besides the screen, the only qualms I had with this laptop related back to Vista. For the ultimate travel machine, I personally would install XP Professional on it for better battery life.</p>
+<p><img alt="" border="0" height="175" src="http://www.notebookreview.com/assets/25145.gif" width="336" /></p>
+<p><strong>Pros</strong></p>
+<ul>
+<li>Primary keyboard keys are full-size for easy typing</li>
+<li>Extremely fast ultraportable</li>
+<li>Lightweight, even with the 8 cell battery</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li>The display has poor contrast and view angles</li>
+<li>The palm rest gets very warm from the wireless cards mounted below it.</li>
+<li>Touchpoint made mouse drift at random times</li>
+</ul>
+</div></p>	</div>
+			</span>
+		<!--  end review schema -->
+		
+	
+
+</article>
+<br clear="all">
+ 
+	</article>
+	
+
+
+<script type="text/javascript">
+amzn_assoc_placement = "adunit0";
+amzn_assoc_enable_interest_ads = "false";
+amzn_assoc_tracking_id = "technol071-20";
+amzn_assoc_ad_mode = "auto";
+amzn_assoc_ad_type = "smart";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_linkid = "6f49905f77aa9f655ec77411877c8b65";
+amzn_assoc_fallback_mode = {"type":"search","value":"laptop"};
+amzn_assoc_default_category = "PCHardware";
+amzn_assoc_emphasize_categories = "13900871";
+</script>
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+
+<div class="OUTBRAIN" data-src="http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/" data-widget-id="AR_1" data-ob-template="technologyguide"></div> 
+<div class="OUTBRAIN" data-src="http://www.notebookreview.com/notebookreview/lenovo-thinkpad-x61-review/" data-widget-id="AR_2" data-ob-template="technologyguide"></div> 
+<script type="text/javascript" async="async" src="https://widgets.outbrain.com/outbrain.js"></script>
+
+<div id="comments">
+	<header>
+		<h4 class="title">LEAVE A COMMENT</h4>
+		<div class="commentSummary"><p class="totalComments">2 Comments</p><span class="verticalBar"> | </span>
+			<p class="loginLinks">
+					
+					
+					<a href="https://users.notebookreview.com/registration/notebookreview/LoginRegister.page?fromURL=http%3A%2F%2Fwww.notebookreview.com%2Fnotebookreview%2Flenovo-thinkpad-x61-review%2F">Log in to comment</a>
+									
+						</p>
+		</div>
+	</header>
+
+		<section id="commentForm">
+			<form action="http://www.notebookreview.com/wp-comments-post.php" method="post" id="commentform">
+							<div>
+					<textarea name="comment" id="commentFormTextbox" tabindex="4" disabled></textarea>
+				</div>				
+							<div style="padding-top:15px;padding-bottom:10px;font-size:11px">All content posted on TechnologyGuide is granted to TechnologyGuide with electronic publishing rights in perpetuity, as all content posted on this site becomes a part of the community.</div>
+								<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="30dc88ab88" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="147"/></p>			</form>	
+		</section>
+	
+			<section>
+			<ol class="commentlist">
+								<li class="comment byuser comment-author-jptjmj3 even thread-even depth-1" id="comment-440">
+										<article id="div-comment-440" class="comment-body">
+										<div class="comment-author vcard">
+												<cite class="fn">jptjmj3</cite>						<time>
+							June 11, 2014 at 1:55 am				
+						</time>
+					</div>
+		
+				<p>Alright, first things first. 4/10. We have had this model for three years for school, and on the first year, I was on the verge of breaking. The computer is clunky, the keyboard is cramped (Gives you arthritis), the mouse (If thats what you want to call it) is terrible, and the battery, ooh I could go on and on on that piece of garbage. Ive gone through, oh lets see here, *Talking to self* &#8220;One, five&#8230;&#8221; At least TEN batteries in three years! The locks on the bottom to keep it in don&#8217;t work properly and the battery lasts on power-saver 4 hours. Ok, now the good things about it: It works for any school uses, some basic games, (Minecraft, Torchlight, Spelunky, ect) and processes pretty fast. I would recommend this laptop to people who are dumb and low on money. Yeah, not a very good laptop&#8230;</p>
+								</article>
+						</li><!-- #comment-## -->
+				<li class="comment byuser comment-author-sunnyboy88 odd alt thread-odd thread-alt depth-1" id="comment-2883">
+										<article id="div-comment-2883" class="comment-body">
+										<div class="comment-author vcard">
+												<cite class="fn">SunnyBoy88</cite>						<time>
+							September 19, 2015 at 3:09 pm				
+						</time>
+					</div>
+		
+				<p>I find this notebook  7.5/10. I use it for traveling&#8230;.. super light weight, good for watching online movies n simple surfing net n some office app. </p>
+<p>It is very affordable now&#8230;.simply up the ram to 8gb ram install win7 64bit plus any 7200rpm hard disk n you are good to go.</p>
+<p>You can even run VM on this machine, tried Linux n Unix&#8230;no problem at all.</p>
+<p>Cons &#8211;  Battery life is pathetic, mine last about 1hr for 4 cell battery but mine is a used battery so can&#8217;t complain much.If only IBM/Lenovo could invent a 12cell battery for this machine&#8230;.it would be a champion.</p>
+								</article>
+						</li><!-- #comment-## -->
+			</ol>					
+		</section>
+	</div>
+
+			
+</div> <!-- end articleContainer -->
+	</span>
+<!--  end review schema -->
+			</div> <!-- end mainContainer -->								
+		<div class="sidebar">
+
+
+</div>
+
+		</div><!-- end pageContainer-->	
+</div><!-- end page -->	
+
+<div id="scrolltofixed_endContainer">
+		<!-- begin todaysPromos div -->
+		<aside id="todaysPromos"><div class="todaysPromosContentContainer"><h4 class="title">Today's Promotions</h4><div class="threeCol_col1"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column1row1" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column1row1");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column1row1");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col2"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column2row2" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column2row2");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column2row2");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col3"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column3row3" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column3row3");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column3row3");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col1"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column1row4" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column1row4");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column1row4");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col2"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column2row5" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column2row5");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column2row5");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col3"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column3row6" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column3row6");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column3row6");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col1"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column1row7" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column1row7");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column1row7");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col2"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column2row8" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column2row8");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column2row8");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col3"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column3row9" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column3row9");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column3row9");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col1"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column1row10" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column1row10");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column1row10");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col2"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column2row11" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column2row11");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column2row11");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div><div class="threeCol_col3"><!-- adSizes: 240x140 -->
+	<!-- 240x140 ad start -->
+	<div class="tt-ad" id="div-gpt240x140column3row12" data-adsize="240x140" data-viewport="">
+	<script type="text/javascript">
+		GPT(function () {
+		var adstring = [[240,140]];
+		var viewport = adRange();
+		var slot = "noad";
+		 // todays promos
+			if (viewport > 2) {
+				var slot = this.googletag.defineSlot(this.unitName, adstring, "div-gpt240x140column3row12");
+			}
+	if (slot != "noad") {
+	slot.setTargeting("pos", "column3row12");
+
+			slot.display();
+		}
+		});
+	</script>
+	</div>
+	<!-- 240x140 ad end -->
+	</div></div></aside>		<!-- end todaysPromos div -->
+		<!-- Begin ADSENSE -->
+					
+		<!-- End ADSENSE -->
+		
+		<footer id="siteFooter">
+			
+<div class="siteListingContainer">
+	<div class="siteListing">
+		<div class="siteListingIntro">Visit our sister sites</div>
+			<div>
+		<ul><li><a href='//www.tabletpcreview.com'>TabletPCReview</a></li><li><a href='//www.brighthand.com'>Brighthand</a></li></ul><ul><li><a href='//www.digitalcamerareview.com'>DigitalCameraReview</a></li><li><a href='//www.desktopreview.com'>DesktopReview</a></li></ul><ul><li><a href='//www.printercomparison.com'>PrinterComparison</a></li><li><a href='//www.technologyguide.com'>TechnologyGuide</a></li></ul>			</div>
+	</div>
+</div>						<div class="bottomContentContainer">
+				<p class="siteSummary">
+									
+				</p>
+				<div class="techtargetLogo"><a href="http://www.techtarget.com">TechTarget</a></div>
+				<ul>
+						<li><a href="/about/">About Us</a></li>
+						<li>|</li>
+						<li><a href="/advertising/">Advertising</a></li>
+						<li>|</li>
+						<li><a href="/mediakit/">Media Kit</a></li>
+						<li>|</li>
+						<li><a href="/archive/">Archive</a></li>
+						<li>|</li>
+						<li><a href="/contact/">Contact Us</a></li>
+				</ul>
+				<p>All Rights Reserved. Copyright 2000 - 2019, TechTarget | <a href="http://www.techtarget.com/html/privacy_policy.html" target=_>Read our Privacy Statement</a></p>
+				<p>TechTarget publishes more than 100 focused websites providing quick access to  a deep store of news, advice and analysis about the products, technologies and processes
+					crucial to the jobs of IT pros.</a></p>
+			</div>
+		</footer>
+	</div>
+
+	<!--  look into removing possible duplicate JS includes wp_enqueue/dequeue -->
+	<!--  beware of issues with scrolling left nav breaking when trying enqueue -->	
+		
+	<script src="https://cdn.ttgtmedia.com/techguide/v12/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="https://cdn.ttgtmedia.com/techguide/v12/js/jquery.raty.min.js" type="text/javascript"></script>
+	<script src="https://cdn.ttgtmedia.com/techguide/v12/js/technologyguide.js" type="text/javascript"></script>
+		
+		
+		<!-- /// LOAD CHARTBEAT /// -->
+		<script type="text/javascript">
+		var _sf_async_config={};
+		_sf_async_config.uid = 41935;
+		_sf_async_config.useCanonical = true;
+		_sf_async_config.domain = 'technologyguidenetwork.com'; 
+		_sf_async_config.sections = 'nbr, nbr - WWW';
+		if(typeof adzone != "undefined") {
+			_sf_async_config.sections += ', nbr - ' + adzone;
+		}			
+		
+					_sf_async_config.authors = 'Kevin O\'Brien, nbr - BRAND - lenovo';
+
+		(function(){
+		  function loadChartbeat() {
+			window._sf_endpt=(new Date()).getTime();
+			var e = document.createElement('script');
+			e.setAttribute('language', 'javascript');
+			e.setAttribute('type', 'text/javascript');
+			e.setAttribute('src',
+			   (("https:" == document.location.protocol) ? "https://" : "http://") +
+			   "static.chartbeat.com/js/chartbeat.js");
+			document.body.appendChild(e);
+		  }
+		  var oldonload = window.onload;
+		  window.onload = (typeof window.onload != 'function') ?
+			 loadChartbeat : function() { try { oldonload(); } catch (e) { loadChartbeat(); throw e} loadChartbeat(); };
+		})();
+		</script>
+		
+
+
+
+<!--smooth scroll -->
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+	</script>
+
+<script type="text/javascript" src="//s.skimresources.com/js/525X1521902.skimlinks.js"></script>
+<!-- start Vibrant Media IntelliTXT script section -->
+
+<script type="text/javascript" src="http://notebookreview.us.intellitxt.com/intellitxt/front.asp?ipid=88252"></script>
+
+<!-- end Vibrant Media IntelliTXT script section -->
+
+
+
+
+
+
+
+      <script type="text/javascript">
+
+          var pfHeaderImgUrl = '';
+          var pfHeaderTagline = '';
+          var pfdisableClickToDel = '0';
+          var pfImagesSize = 'full-size';
+          var pfImageDisplayStyle = 'right';
+          var pfDisableEmail = '0';
+          var pfDisablePDF = '0';
+          var pfDisablePrint = '0';
+          var pfCustomCSS = '';
+          var pfPlatform = 'Wordpress';
+      (function() {
+            var e = document.createElement('script'); e.type="text/javascript";
+            e.src = 'https://cdn.printfriendly.com/printfriendly.js';
+            document.getElementsByTagName('head')[0].appendChild(e);
+        })();
+      </script>
+<script type='text/javascript' src='http://www.notebookreview.com/wp-includes/js/jquery/suggest.min.js?ver=1.1-20110113'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/www.notebookreview.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.notebookreview.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.3'></script>
+<script type='text/javascript' src='http://www.notebookreview.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+<script async="async" type='text/javascript' src='http://www.notebookreview.com/wp-content/plugins/akismet/_inc/form.js?ver=4.1.2'></script>
+		
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"bb8014186b","applicationID":"2136716","transactionName":"b1dQNUsEX0BYB0wICVYdcwJNDF5dFhdRDwFUVw==","queueTime":0,"applicationTime":223,"atts":"QxBTQwMeTE4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+	</html>
+		<!-- 84 queries. 0.222 seconds. --> 	
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+
+Served from: www.notebookreview.com @ 2019-11-21 22:02:20 by W3 Total Cache
+--><script id="f5_cspm">(function(){var f5_cspm={f5_p:'IOHLDBPDLKABHIHDHKCIOMCDPCELJDLIJAABHGANPJIMABFNJLLEOEBKAIOABIAINNGCOGFLJGBBALPLHDCGOFJFHKOANDCIAAMLDNIBCBHKOGFLAAPFFCAGMDEFONCL',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,48,(latency>>8));str=f5_cspm.set_byte(str,49,(latency&0xff));str=f5_cspm.set_byte(str,43,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1978677010aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>

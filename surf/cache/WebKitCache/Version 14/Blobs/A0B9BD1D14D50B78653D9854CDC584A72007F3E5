@@ -1,0 +1,977 @@
+function pageInitExtracted(){if(location.search.substring(1).indexOf("=")!==-1){var a="";
+if(location.search.substring(1).indexOf("&")!==-1){if(location.search.substring(1).split("=")[0]==="jump"){a=location.search.substring(1).split("=")[1]
+}}else{var f=location.search.substring(1).split("&");
+f.forEach(function(d){if(d.indexOf("jump=")!==-1){a=d.split("=")[1]
+}})
+}if(a===undefined||a===""){return
+}var e=document.getElementsByName(a)[0];
+if(e===undefined){return
+}var c="";
+while(e.tagName!=="BODY"){e=e.parentNode;
+c=">"+e.tagName+c
+}e=document.getElementsByName(a)[0];
+for(var b=0;
+b<(c.match(/DETAILS/g)||[]).length;
+b++){while(e.tagName!=="DETAILS"){e=e.parentNode
+}e.setAttribute("open","open");
+e=e.parentNode
+}e=document.getElementsByName(a)[0];
+e.parentNode.scrollIntoView(true)
+}}var _salesForceArticle0=_salesForceArticle0||{};
+_salesForceArticle0.getLocale=function(){var b=window.location.href;
+var c=b.indexOf("/content/www/");
+var a=b.substr(c+13,5).toLowerCase();
+if(_salesForceArticle0.dict[a]===undefined){a="en/us"
+}return a
+};
+function modalButtonClick(){$("body").on("click","a#modalButton",function(){if(_salesForceArticle0._pendding&&(document.getElementsByTagName("details").length)){var c=$("body");
+var b=c.find("section#printableArea").length;
+if(b<2){_salesForceArticle0._pendding=false;
+return
+}var f=c.find("section#printableArea:eq(1)");
+var a=f.find("span#sample-arrow:eq(0)");
+var d=$("<p></p>");
+d.attr("id",_salesForceArticle0.toggleall);
+d.attr("name",_salesForceArticle0.toggleall);
+d.html(_salesForceArticle0.toggleall_1+_salesForceArticle0.expand+_salesForceArticle0.toggleallEnd);
+var e=document.getElementsByTagName("article")[0];
+if(a){d.insertBefore(a.parent())
+}else{if(e.getElementsByTagName("script").length){d=document.createElement("p");
+d.setAttribute("id",_salesForceArticle0.toggleall);
+d.setAttribute("name",_salesForceArticle0.toggleall);
+d.innerHTML=_salesForceArticle0.toggleall_1+_salesForceArticle0.dict[locale][0]+_salesForceArticle0.toggleallEnd;
+e.getElementsByTagName("script")[0].parentNode.insertBefore(d,e.getElementsByTagName("script")[0])
+}else{if(e.getElementsByTagName("details").length){d=document.createElement("p");
+d.setAttribute("id",_salesForceArticle0.toggleall);
+d.setAttribute("name",_salesForceArticle0.toggleall);
+d.innerHTML=_salesForceArticle0.toggleall_1+_salesForceArticle0.dict[locale][0]+_salesForceArticle0.toggleallEnd;
+e.getElementsByTagName("details")[0].parentNode.insertBefore(d,e.getElementsByTagName("details")[0])
+}}}_salesForceArticle0._pendding=false
+}})
+}$(document).ready(function(){_salesForceArticle0._pendding=true;
+_salesForceArticle0.toggleall="toggleall";
+_salesForceArticle0.toggleall_0='<a toggleall="0" class="_salesForceArticle0_toggleall">';
+_salesForceArticle0.toggleall_1='<a toggleall="1" class="_salesForceArticle0_toggleall">';
+_salesForceArticle0.toggleallEnd="</a>";
+_salesForceArticle0.expand="Expand all";
+_salesForceArticle0.collapse="Collapse all";
+_salesForceArticle0.dict={"en/us":["Expand all","Collapse all"],"cn/zh":["全部展开","全部折叠"],"tw/zh":["全部展開","全部收合"],"ru/ru":["Развернуть все","Свернуть все"],"br/pt":["Expandir tudo","Recolher tudo"],"kr/ko":["모두 확대","모두 축소"],"jp/ja":["すべて展開する","すべて折りたたむ"],"it/it":["Espandi tutto","Comprimi tutto"],"fr/fr":["Développer tout","Réduire tout"],"xl/es":["Expandir todo","Contraer todo"],"de/de":["Alle erweitern","Alle reduzieren"]};
+page_init();
+$("body").on("click","a._salesForceArticle0_toggleall",function(){var b=$(this);
+var a=b.attr("toggleall");
+if(a!==undefined){toggleall(this,a)
+}});
+modalButtonClick()
+});
+function page_init(){if((document.getElementsByTagName("details").length)&&!(document.getElementById(_salesForceArticle0.toggleall))){var d=_salesForceArticle0.getLocale();
+var c=$("body");
+var b=c.find("span#sample-arrow").length;
+var g=null;
+if(b<2){g=c.find("span#sample-arrow:eq(0)")
+}else{g=c.find("span#sample-arrow:eq(1)")
+}var a=g;
+var e=$("<p></p>");
+e.attr("id",_salesForceArticle0.toggleall);
+e.attr("name",_salesForceArticle0.toggleall);
+e.html(_salesForceArticle0.toggleall_1+_salesForceArticle0.dict[d][0]+_salesForceArticle0.toggleallEnd);
+var f=document.getElementsByTagName("article")[0];
+if(a){e.insertBefore(a.parent())
+}else{if(f.getElementsByTagName("script").length){e=document.createElement("p");
+e.setAttribute("id",_salesForceArticle0.toggleall);
+e.setAttribute("name",_salesForceArticle0.toggleall);
+e.innerHTML=_salesForceArticle0.toggleall_1+_salesForceArticle0.dict[d][0]+_salesForceArticle0.toggleallEnd;
+f.getElementsByTagName("script")[0].parentNode.insertBefore(e,f.getElementsByTagName("script")[0])
+}else{if(f.getElementsByTagName("details").length){e=document.createElement("p");
+e.setAttribute("id",_salesForceArticle0.toggleall);
+e.setAttribute("name",_salesForceArticle0.toggleall);
+e.innerHTML=_salesForceArticle0.toggleall_1+_salesForceArticle0.dict[d][0]+_salesForceArticle0.toggleallEnd;
+f.getElementsByTagName("details")[0].parentNode.insertBefore(e,f.getElementsByTagName("details")[0])
+}}}pageInitExtracted()
+}}function toggleall(d,k){var f=$(d);
+var h=f.parents("article");
+var c=f.html();
+var g=_salesForceArticle0.getLocale();
+var a=h.find("details");
+if(k==="0"){for(var e=0;
+e<a.length;
+e++){a[e].open=false
+}if(c===_salesForceArticle0.collapse){f.parent().html(_salesForceArticle0.toggleall_1+_salesForceArticle0.expand+_salesForceArticle0.toggleallEnd)
+}else{f.parent().html(_salesForceArticle0.toggleall_1+_salesForceArticle0.dict[g][k]+_salesForceArticle0.toggleallEnd)
+}}else{for(var b=0;
+b<a.length;
+b++){a[b].open=true
+}if(c===_salesForceArticle0.expand){f.parent().html(_salesForceArticle0.toggleall_0+_salesForceArticle0.collapse+_salesForceArticle0.toggleallEnd)
+}else{f.parent().html(_salesForceArticle0.toggleall_0+_salesForceArticle0.dict[g][k]+_salesForceArticle0.toggleallEnd)
+}}}function subdetailsShim(a){Object.defineProperty(a,"open",{get:function(){return"open"===this.getAttribute("data-open")
+},set:function(e){details_shim.toggle(this,e)
+}});
+for(var b=0;
+b<a.childNodes.length;
+b++){if(a.childNodes[b].nodeType===3&&/[^\s]/.test(a.childNodes[b].data)){var c=document.createElement("span");
+var d=a.childNodes[b];
+a.insertBefore(c,d);
+a.removeChild(d);
+c.appendChild(d)
+}}}function detailsShimExtracted(a,c){var b=a.outerHTML||new XMLSerializer().serializeToString(a);
+b=b.substring(0,b.indexOf(">"));
+b=(-1!==b.indexOf("open")&&-1===b.indexOf('open=""'))?"open":"closed";
+a.setAttribute("data-open",b);
+a.className+=" details_shim_"+b;
+c.addEventListener?c.addEventListener("click",function(){details_shim.toggle(a)
+}):c.attachEvent&&c.attachEvent("onclick",function(){details_shim.toggle(a)
+});
+subdetailsShim(a)
+}function getSummaryfromDetails(b){var a=true;
+var c;
+if("details"===b.tagName.toLowerCase()){c=b.getElementsByTagName("summary")[0]
+}else{if(!!b.parentNode&&"summary"===b.tagName.toLowerCase()){c=b;
+b=c.parentNode
+}else{a=false
+}}return{Summary:c,Details:b,status:a}
+}function details_shim(b){if(!b||!("nodeType" in b)||!("tagName" in b)){return details_shim.init()
+}var a=getSummaryfromDetails(b);
+var c=a.Summary;
+b=a.Details;
+if(a.status){if("boolean"===typeof b.open){if(!b.getAttribute("data-open")){b.className=b.className.replace(/\bdetails_shim_open\b|\bdetails_shim_closed\b/g," ")
+}return false
+}detailsShimExtracted(b,c)
+}else{return false
+}}details_shim.toggle=function(a,b){if("undefined"===typeof b){b=a.getAttribute("data-open")==="open"?"closed":"open"
+}else{b=!!b?"open":"closed"
+}a.setAttribute("data-open",b);
+a.className=a.className.replace(/\bdetails_shim_open\b|\bdetails_shim_closed\b/g," ")+" details_shim_"+b
+};
+details_shim.init=function(){var b=document.getElementsByTagName("summary");
+for(var a=0;
+a<b.length;
+a++){details_shim(b[a])
+}};
+window.addEventListener?window.addEventListener("load",details_shim.init,false):window.attachEvent&&window.attachEvent("onload",details_shim.init);
+(function(){function a(b){window.$&&window.Tablesaw?b():setTimeout(function(){a(b)
+},50)
+}a(function(){$(".icstable .icstablehead").each(function(c,b){$(b).children("th,td").toArray().reduce(function(e,d){d=$(d);
+d.attr("data-tablesaw-sortable-col","");
+if(d.hasClass("icstablefixed")){d.attr("data-tablesaw-priority","persist")
+}else{d.attr("data-tablesaw-priority",e);
+e++
+}return e
+},1)
+});
+$(".icstable").addClass("tablesaw").attr("data-tablesaw-mode","swipe").attr("data-tablesaw-minimap","").each(function(b){Tablesaw.init(b)
+})
+})
+})();
+/*! Tablesaw - v3.0.9 - 2018-02-14
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2018 Filament Group; Licensed MIT */
+(function(a,b){if(typeof define==="function"&&define.amd){define(["jquery"],function(c){return(a.Tablesaw=b(c,a))
+})
+}else{if(typeof exports==="object"){if("document" in a){module.exports=b(require("jquery"),a)
+}else{module.exports=b(require("jquery")(a),a)
+}}else{a.Tablesaw=b(jQuery,a)
+}}}(typeof window!=="undefined"?window:this,function(e,c){var a=c.document;
+var d=false;
+a.addEventListener("DOMContentLoaded",function(){d=true
+});
+var b={i18n:{modeStack:"Stack",modeSwipe:"Swipe",modeToggle:"Toggle",modeSwitchColumnsAbbreviated:"Cols",modeSwitchColumns:"Columns",columnToggleButton:"Columns",columnToggleError:"No eligible columns.",sort:"Sort",swipePreviousColumn:"Previous column",swipeNextColumn:"Next column"},mustard:"head" in a&&(!c.blackberry||c.WebKitPoint)&&!c.operamini,$:e,_init:function(f){b.$(f||a).trigger("enhance.tablesaw")
+},init:function(f){if(!d){if("addEventListener" in a){a.addEventListener("DOMContentLoaded",function(){b._init(f)
+})
+}}else{b._init(f)
+}}};
+e(a).on("enhance.tablesaw",function(){if(typeof TablesawConfig!=="undefined"&&TablesawConfig.i18n){b.i18n=e.extend(b.i18n,TablesawConfig.i18n||{})
+}b.i18n.modes=[b.i18n.modeStack,b.i18n.modeSwipe,b.i18n.modeToggle]
+});
+if(b.mustard){e(a.documentElement).addClass("tablesaw-enhanced")
+}(function(){var l="tablesaw";
+var g={toolbar:"tablesaw-bar"};
+var p={create:"tablesawcreate",destroy:"tablesawdestroy",refresh:"tablesawrefresh",resize:"tablesawresize"};
+var h="stack";
+var k="table";
+var m="[data-tablesaw],[data-tablesaw-mode],[data-tablesaw-sortable]";
+var i={};
+b.events=p;
+var n=function(r){if(!r){throw new Error("Tablesaw requires an element.")
+}this.table=r;
+this.$table=e(r);
+this.$thead=this.$table.children().filter("thead").eq(0);
+this.$tbody=this.$table.children().filter("tbody");
+this.mode=this.$table.attr("data-tablesaw-mode")||h;
+this.$toolbar=null;
+this.attributes={subrow:"data-tablesaw-subrow",ignorerow:"data-tablesaw-ignorerow"};
+this.init()
+};
+n.prototype.init=function(){if(!this.$thead.length){throw new Error("tablesaw: a <thead> is required, but none was found.")
+}if(!this.$thead.find("th").length){throw new Error("tablesaw: no header cells found. Are you using <th> inside of <thead>?")
+}if(!this.$table.attr("id")){this.$table.attr("id",l+"-"+Math.round(Math.random()*10000))
+}this.createToolbar();
+this._initCells();
+this.$table.data(l,this);
+this.$table.trigger(p.create,[this])
+};
+n.prototype.getConfig=function(s){var r=e.extend(i,s||{});
+return e.extend(r,typeof TablesawConfig!=="undefined"?TablesawConfig:{})
+};
+n.prototype._getPrimaryHeaderRow=function(){return this._getHeaderRows().eq(0)
+};
+n.prototype._getHeaderRows=function(){return this.$thead.children().filter("tr").filter(function(){return !e(this).is("[data-tablesaw-ignorerow]")
+})
+};
+n.prototype._getRowIndex=function(r){return r.prevAll().length
+};
+n.prototype._getHeaderRowIndeces=function(){var r=this;
+var s=[];
+this._getHeaderRows().each(function(){s.push(r._getRowIndex(e(this)))
+});
+return s
+};
+n.prototype._getPrimaryHeaderCells=function(r){return(r||this._getPrimaryHeaderRow()).find("th")
+};
+n.prototype._$getCells=function(s){var r=this;
+return e(s).add(s.cells).filter(function(){var v=e(this);
+var t=v.parent();
+var u=v.is("[colspan]");
+return(!t.is("["+r.attributes.subrow+"]")&&(!t.is("["+r.attributes.ignorerow+"]")||!u))
+})
+};
+n.prototype._getVisibleColspan=function(){var r=0;
+this._getPrimaryHeaderCells().each(function(){var s=e(this);
+if(s.css("display")!=="none"){r+=parseInt(s.attr("colspan"),10)||1
+}});
+return r
+};
+n.prototype.getColspanForCell=function(s){var t=this._getVisibleColspan();
+var r=0;
+if(s.closest("tr").data("tablesaw-rowspanned")){r++
+}s.siblings().each(function(){var v=e(this);
+var u=parseInt(v.attr("colspan"),10)||1;
+if(v.css("display")!=="none"){r+=u
+}});
+return t-r
+};
+n.prototype.isCellInColumn=function(s,r){return e(s).add(s.cells).filter(function(){return this===r
+}).length
+};
+n.prototype.updateColspanCells=function(s,v,u){var t=this;
+var r=t._getPrimaryHeaderRow();
+this.$table.find("[rowspan][data-tablesaw-priority]").each(function(){var y=e(this);
+if(y.attr("data-tablesaw-priority")!=="persist"){return
+}var w=y.closest("tr");
+var x=parseInt(y.attr("rowspan"),10);
+if(x>1){w=w.next();
+w.data("tablesaw-rowspanned",true);
+x--
+}});
+this.$table.find("[colspan],[data-tablesaw-maxcolspan]").filter(function(){return e(this).closest("tr")[0]!==r[0]
+}).each(function(){var x=e(this);
+if(u===undefined||t.isCellInColumn(v,this)){}else{return
+}var y=t.getColspanForCell(x);
+if(s&&u!==undefined){x[y===0?"addClass":"removeClass"](s)
+}var w=parseInt(x.attr("data-tablesaw-maxcolspan"),10);
+if(!w){x.attr("data-tablesaw-maxcolspan",x.attr("colspan"))
+}else{if(y>w){y=w
+}}x.attr("colspan",y)
+})
+};
+n.prototype._findPrimaryHeadersForCell=function(r){var v=this._getPrimaryHeaderRow();
+var x=this._getPrimaryHeaderCells(v);
+var u=this._getRowIndex(v);
+var w=[];
+for(var s=0;
+s<this.headerMapping.length;
+s++){if(s===u){continue
+}for(var t=0;
+t<this.headerMapping[s].length;
+t++){if(this.headerMapping[s][t]===r){w.push(x[t])
+}}}return w
+};
+n.prototype.getRows=function(){var r=this;
+return this.$table.find("tr").filter(function(){return e(this).closest("table").is(r.$table)
+})
+};
+n.prototype.getBodyRows=function(r){return(r?e(r):this.$tbody).children().filter("tr")
+};
+n.prototype.getHeaderCellIndex=function(r){var t=this.headerMapping[0];
+for(var s=0;
+s<t.length;
+s++){if(t[s]===r){return s
+}}return -1
+};
+n.prototype._initCells=function(){this.$table.find("[data-tablesaw-maxcolspan]").each(function(){var A=e(this);
+A.attr("colspan",A.attr("data-tablesaw-maxcolspan"))
+});
+var w=this.getRows();
+var y=[];
+w.each(function(A){y[A]=[]
+});
+w.each(function(A){var C=0;
+var D=e(this);
+var B=D.children();
+B.each(function(){var H=parseInt(this.getAttribute("data-tablesaw-maxcolspan")||this.getAttribute("colspan"),10);
+var G=parseInt(this.getAttribute("rowspan"),10);
+while(y[A][C]){C++
+}y[A][C]=this;
+if(H){for(var E=0;
+E<H-1;
+E++){C++;
+y[A][C]=this
+}}if(G){for(var F=1;
+F<G;
+F++){y[A+F][C]=this
+}}C++
+})
+});
+var x=this._getHeaderRowIndeces();
+for(var z=0;
+z<y[0].length;
+z++){for(var s=0,r=x.length;
+s<r;
+s++){var v=y[x[s]][z];
+var t=x[s];
+var u;
+if(!v.cells){v.cells=[]
+}while(t<y.length){u=y[t][z];
+if(v!==u){v.cells.push(u)
+}t++
+}}}this.headerMapping=y
+};
+n.prototype.refresh=function(){this._initCells();
+this.$table.trigger(p.refresh,[this])
+};
+n.prototype._getToolbarAnchor=function(){var r=this.$table.parent();
+if(r.is(".tablesaw-overflow")){return r
+}return this.$table
+};
+n.prototype._getToolbar=function(r){if(!r){r=this._getToolbarAnchor()
+}return r.prev().filter("."+g.toolbar)
+};
+n.prototype.createToolbar=function(){var s=this._getToolbarAnchor();
+var r=this._getToolbar(s);
+if(!r.length){r=e("<div>").addClass(g.toolbar).insertBefore(s)
+}this.$toolbar=r;
+if(this.mode){this.$toolbar.addClass("tablesaw-mode-"+this.mode)
+}};
+n.prototype.destroy=function(){this._getToolbar().each(function(){this.className=this.className.replace(/\btablesaw-mode\-\w*\b/gi,"")
+});
+var r=this.$table.attr("id");
+e(a).off("."+r);
+e(c).off("."+r);
+this.$table.trigger(p.destroy,[this]);
+this.$table.removeData(l)
+};
+e.fn[l]=function(){return this.each(function(){var r=e(this);
+if(r.data(l)){return
+}new n(this)
+})
+};
+var j=e(a);
+j.on("enhance.tablesaw",function(r){if(b.mustard){e(r.target).find(k).filter(m)[l]()
+}});
+var f=false;
+var o;
+j.on("scroll.tablesaw",function(){f=true;
+c.clearTimeout(o);
+o=c.setTimeout(function(){f=false
+},300)
+});
+var q;
+e(c).on("resize",function(){if(!f){c.clearTimeout(q);
+q=c.setTimeout(function(){j.trigger(p.resize)
+},150)
+}});
+b.Table=n
+})();
+(function(){var g={stackTable:"tablesaw-stack",cellLabels:"tablesaw-cell-label",cellContentLabels:"tablesaw-cell-content"};
+var i={key:"tablesaw-stack"};
+var f={labelless:"data-tablesaw-no-labels",hideempty:"data-tablesaw-hide-empty"};
+var h=function(j,k){this.tablesaw=k;
+this.$table=e(j);
+this.labelless=this.$table.is("["+f.labelless+"]");
+this.hideempty=this.$table.is("["+f.hideempty+"]");
+this.$table.data(i.key,this)
+};
+h.prototype.init=function(){this.$table.addClass(g.stackTable);
+if(this.labelless){return
+}var j=this;
+this.$table.find("th, td").filter(function(){return !e(this).closest("thead").length
+}).filter(function(){return(!e(this).closest("tr").is("["+f.labelless+"]")&&(!j.hideempty||!!e(this).html()))
+}).each(function(){var m=e(a.createElement("b")).addClass(g.cellLabels);
+var l=e(this);
+e(j.tablesaw._findPrimaryHeadersForCell(this)).each(function(p){var o=e(this.cloneNode(true));
+var s=o.find(".tablesaw-sortable-btn");
+o.find(".tablesaw-sortable-arrow").remove();
+var q=o.find("[data-tablesaw-checkall]");
+q.closest("label").remove();
+if(q.length){m=e([]);
+return
+}if(p>0){m.append(a.createTextNode(", "))
+}var n=s.length?s[0]:o[0];
+var r;
+while((r=n.firstChild)){m[0].appendChild(r)
+}});
+if(m.length&&!l.find("."+g.cellContentLabels).length){l.wrapInner("<span class='"+g.cellContentLabels+"'></span>")
+}var k=l.find("."+g.cellLabels);
+if(!k.length){l.prepend(m)
+}else{k.replaceWith(m)
+}})
+};
+h.prototype.destroy=function(){this.$table.removeClass(g.stackTable);
+this.$table.find("."+g.cellLabels).remove();
+this.$table.find("."+g.cellContentLabels).each(function(){e(this).replaceWith(this.childNodes)
+})
+};
+e(a).on(b.events.create,function(l,j){if(j.mode==="stack"){var k=new h(j.table,j);
+k.init()
+}}).on(b.events.refresh,function(k,j){if(j.mode==="stack"){e(j.table).data(i.key).init()
+}}).on(b.events.destroy,function(k,j){if(j.mode==="stack"){e(j.table).data(i.key).destroy()
+}});
+b.Stack=h
+})();
+(function(){var g="tablesawbtn",f={_create:function(){return e(this).each(function(){e(this).trigger("beforecreate."+g)[g]("_init").trigger("create."+g)
+})
+},_init:function(){var h=e(this),i=this.getElementsByTagName("select")[0];
+if(i){e(this).addClass("btn-select tablesaw-btn-select")[g]("_select",i)
+}return h
+},_select:function(h){var i=function(q,k){var j=e(k).find("option");
+var r=a.createElement("span");
+var m;
+var n;
+var s=false;
+r.setAttribute("aria-hidden","true");
+r.innerHTML="&#160;";
+j.each(function(){var l=this;
+if(l.selected){r.innerHTML=l.text
+}});
+n=q.childNodes;
+if(j.length>0){for(var p=0,o=n.length;
+p<o;
+p++){m=n[p];
+if(m&&m.nodeName.toUpperCase()==="SPAN"){q.replaceChild(r,m);
+s=true
+}}if(!s){q.insertBefore(r,q.firstChild)
+}}};
+i(this,h);
+e(this).on("change refresh",function(){i(this,h)
+})
+}};
+e.fn[g]=function(j,i,h,k){return this.each(function(){if(j&&typeof j==="string"){return e.fn[g].prototype[j].call(this,i,h,k)
+}if(e(this).data(g+"active")){return e(this)
+}e(this).data(g+"active",true);
+e.fn[g].prototype._create.call(this)
+})
+};
+e.extend(e.fn[g].prototype,f)
+})();
+(function(){var f={key:"tablesaw-coltoggle"};
+var g=function(h){this.$table=e(h);
+if(!this.$table.length){return
+}this.tablesaw=this.$table.data("tablesaw");
+this.attributes={btnTarget:"data-tablesaw-columntoggle-btn-target",set:"data-tablesaw-columntoggle-set"};
+this.classes={columnToggleTable:"tablesaw-columntoggle",columnBtnContain:"tablesaw-columntoggle-btnwrap tablesaw-advance",columnBtn:"tablesaw-columntoggle-btn tablesaw-nav-btn down",popup:"tablesaw-columntoggle-popup",priorityPrefix:"tablesaw-priority-"};
+this.set=[];
+this.$headers=this.tablesaw._getPrimaryHeaderCells();
+this.$table.data(f.key,this)
+};
+g.prototype.initSet=function(){var i=this.$table.attr(this.attributes.set);
+if(i){var h=this.$table[0];
+this.set=e("table["+this.attributes.set+"='"+i+"']").filter(function(){return this!==h
+}).get()
+}};
+g.prototype.init=function(){if(!this.$table.length){return
+}var l,j,m,h,i,n,w=this;
+var o=this.tablesaw.getConfig({getColumnToggleLabelTemplate:function(x){return"<label><input type='checkbox' checked>"+x+"</label>"
+}});
+this.$table.addClass(this.classes.columnToggleTable);
+l=this.$table.attr("id");
+j=l+"-popup";
+n=e("<div class='"+this.classes.columnBtnContain+"'></div>");
+m=e("<a href='#"+j+"' class='btn tablesaw-btn btn-micro "+this.classes.columnBtn+"' data-popup-link><span>"+b.i18n.columnToggleButton+"</span></a>");
+h=e("<div class='"+this.classes.popup+"' id='"+j+"'></div>");
+i=e("<div class='btn-group'></div>");
+this.$popup=h;
+var p=false;
+this.$headers.each(function(){var z=e(this),y=z.attr("data-tablesaw-priority"),x=w.tablesaw._$getCells(this);
+if(y&&y!=="persist"){x.addClass(w.classes.priorityPrefix+y);
+e(o.getColumnToggleLabelTemplate(z.text())).appendTo(i).find('input[type="checkbox"]').data("tablesaw-header",this);
+p=true
+}});
+if(!p){i.append("<label>"+b.i18n.columnToggleError+"</label>")
+}i.appendTo(h);
+function v(z){var y=z.checked;
+var A=w.getHeaderFromCheckbox(z);
+var x=w.tablesaw._$getCells(A);
+x[!y?"addClass":"removeClass"]("tablesaw-toggle-cellhidden");
+x[y?"addClass":"removeClass"]("tablesaw-toggle-cellvisible");
+w.updateColspanCells(A,y);
+w.$table.trigger("tablesawcolumns")
+}i.find('input[type="checkbox"]').on("change",function(y){v(y.target);
+if(w.set.length){var x;
+e(w.$popup).find("input[type='checkbox']").each(function(z){if(this===y.target){x=z;
+return false
+}});
+e(w.set).each(function(){var z=e(this).data(f.key).$popup.find("input[type='checkbox']").get(x);
+if(z){z.checked=y.target.checked;
+v(z)
+}})
+}});
+m.appendTo(n);
+var r=e(this.$table.attr(this.attributes.btnTarget));
+n.appendTo(r.length?r:this.tablesaw.$toolbar);
+function t(x){if(x&&e(x.target).closest("."+w.classes.popup).length){return
+}e(a).off("click."+l);
+m.removeClass("up").addClass("down");
+n.removeClass("visible")
+}var u;
+function k(){n.addClass("visible");
+m.removeClass("down").addClass("up");
+e(a).off("click."+l,t);
+c.clearTimeout(u);
+u=c.setTimeout(function(){e(a).on("click."+l,t)
+},15)
+}m.on("click.tablesaw",function(x){x.preventDefault();
+if(!n.is(".visible")){k()
+}else{t()
+}});
+h.appendTo(n);
+this.$menu=i;
+var q=this.$table.closest(".tablesaw-overflow");
+if(q.css("-webkit-overflow-scrolling")){var s;
+q.on("scroll",function(){var x=e(this);
+c.clearTimeout(s);
+s=c.setTimeout(function(){x.css("-webkit-overflow-scrolling","auto");
+c.setTimeout(function(){x.css("-webkit-overflow-scrolling","touch")
+},0)
+},100)
+})
+}e(c).on(b.events.resize+"."+l,function(){w.refreshToggle()
+});
+this.initSet();
+this.refreshToggle()
+};
+g.prototype.getHeaderFromCheckbox=function(h){return e(h).data("tablesaw-header")
+};
+g.prototype.refreshToggle=function(){var i=this;
+var h=0;
+this.$menu.find("input").each(function(){var j=i.getHeaderFromCheckbox(this);
+this.checked=i.tablesaw._$getCells(j).eq(0).css("display")==="table-cell"
+});
+this.updateColspanCells()
+};
+g.prototype.updateColspanCells=function(i,h){this.tablesaw.updateColspanCells("tablesaw-toggle-cellhidden",i,h)
+};
+g.prototype.destroy=function(){this.$table.removeClass(this.classes.columnToggleTable);
+this.$table.find("th, td").each(function(){var h=e(this);
+h.removeClass("tablesaw-toggle-cellhidden").removeClass("tablesaw-toggle-cellvisible");
+this.className=this.className.replace(/\bui\-table\-priority\-\d\b/g,"")
+})
+};
+e(a).on(b.events.create,function(j,h){if(h.mode==="columntoggle"){var i=new g(h.table);
+i.init()
+}});
+e(a).on(b.events.destroy,function(i,h){if(h.mode==="columntoggle"){e(h.table).data(f.key).destroy()
+}});
+e(a).on(b.events.refresh,function(i,h){if(h.mode==="columntoggle"){e(h.table).data(f.key).refreshPriority()
+}});
+b.ColumnToggle=g
+})();
+(function(){function k(m){var n=[];
+e(m.childNodes).each(function(){var o=e(this);
+if(o.is("input, select")){n.push(o.val())
+}else{if(o.is(".tablesaw-cell-label")){}else{n.push((o.text()||"").replace(/^\s+|\s+$/g,""))
+}}});
+return n.join("")
+}var j="tablesaw-sortable",h="table[data-"+j+"]",l="[data-"+j+"-switch]",g={sortCol:"data-tablesaw-sortable-col",defaultCol:"data-tablesaw-sortable-default-col",numericCol:"data-tablesaw-sortable-numeric",subRow:"data-tablesaw-subrow",ignoreRow:"data-tablesaw-ignorerow"},i={head:j+"-head",ascend:j+"-ascending",descend:j+"-descending",switcher:j+"-switch",tableToolbar:"tablesaw-bar-section",sortButton:j+"-btn"},f={_create:function(m){return e(this).each(function(){var n=e(this).data(j+"-init");
+if(n){return false
+}e(this).data(j+"-init",true).trigger("beforecreate."+j)[j]("_init",m).trigger("create."+j)
+})
+},_init:function(){var n=e(this);
+var u=n.data("tablesaw");
+var s;
+var o;
+function p(w){e.each(w,function(y,x){e(x).addClass(i.head)
+})
+}function r(x,w){e.each(x,function(A,z){var y=e("<button class='"+i.sortButton+"'/>");
+y.on("click",{col:z},w);
+e(z).wrapInner(y).find("button").append("<span class='tablesaw-sortable-arrow'>")
+})
+}function v(w){e.each(w,function(z,x){var y=e(x);
+y.removeAttr(g.defaultCol);
+y.removeClass(i.ascend);
+y.removeClass(i.descend)
+})
+}function t(y){if(e(y.target).is("a[href]")){return
+}y.stopPropagation();
+var w=e(y.target).closest("["+g.sortCol+"]"),x=y.data.col,z=s.index(w[0]);
+v(w.closest("thead").find("th").filter(function(){return this!==w[0]
+}));
+if(w.is("."+i.descend)||!w.is("."+i.ascend)){n[j]("sortBy",x,true);
+z+="_asc"
+}else{n[j]("sortBy",x);
+z+="_desc"
+}if(o){o.find("select").val(z).trigger("refresh")
+}y.preventDefault()
+}function m(w){e.each(w,function(x,z){var y=e(z);
+if(y.is("["+g.defaultCol+"]")){if(!y.is("."+i.descend)){y.addClass(i.ascend)
+}}})
+}function q(x){o=e("<div>").addClass(i.switcher).addClass(i.tableToolbar);
+var w=["<label>"+b.i18n.sort+":"];
+w.push('<span class="btn tablesaw-btn"><select>');
+x.each(function(A){var G=e(this);
+var z=G.is("["+g.defaultCol+"]");
+var C=G.is("."+i.descend);
+var F=G.is("["+g.numericCol+"]");
+var E=0;
+var B=5;
+e(this.cells.slice(0,B)).each(function(){if(!isNaN(parseInt(k(this),10))){E++
+}});
+var D=E===B;
+if(!F){G.attr(g.numericCol,D?"":"false")
+}w.push("<option"+(z&&!C?" selected":"")+' value="'+A+'_asc">'+G.text()+" "+(D?"&#x2191;":"(A-Z)")+"</option>");
+w.push("<option"+(z&&C?" selected":"")+' value="'+A+'_desc">'+G.text()+" "+(D?"&#x2193;":"(Z-A)")+"</option>")
+});
+w.push("</select></span></label>");
+o.html(w.join(""));
+var y=u.$toolbar.children().eq(0);
+if(y.length){o.insertBefore(y)
+}else{o.appendTo(u.$toolbar)
+}o.find(".tablesaw-btn").tablesawbtn();
+o.find("select").on("change",function(){var A=e(this).val().split("_"),z=x.eq(A[0]);
+v(z.siblings());
+n[j]("sortBy",z.get(0),A[1]==="asc")
+})
+}n.addClass(j);
+s=n.children().filter("thead").find("th["+g.sortCol+"]");
+p(s);
+r(s,t);
+m(s);
+if(n.is(l)){q(s)
+}},sortRows:function(x,m,p,n,q){function v(A,z){var y=[];
+e.each(A,function(G,C){var H=C.parentNode;
+var B=e(H);
+var F=[];
+var D=B.next();
+while(D.is("["+g.subRow+"]")){F.push(D[0]);
+D=D.next()
+}var E=H.parentNode;
+if(B.is("["+g.subRow+"]")){}else{if(E===z){y.push({element:C,cell:k(C),row:H,subrows:F.length?F:null,ignored:B.is("["+g.ignoreRow+"]")})
+}}});
+return y
+}function u(z,B){var y,A=/[^\-\+\d\.]/g;
+if(z){y=function(D,C){if(D.ignored||C.ignored){return 0
+}if(B){return(parseFloat(D.cell.replace(A,""))-parseFloat(C.cell.replace(A,"")))
+}else{return D.cell.toLowerCase()>C.cell.toLowerCase()?1:-1
+}}
+}else{y=function(D,C){if(D.ignored||C.ignored){return 0
+}if(B){return(parseFloat(C.cell.replace(A,""))-parseFloat(D.cell.replace(A,"")))
+}else{return D.cell.toLowerCase()<C.cell.toLowerCase()?1:-1
+}}
+}return y
+}function o(z){var B=[],A,y;
+for(A=0,y=z.length;
+A<y;
+A++){B.push(z[A].row);
+if(z[A].subrows){B.push(z[A].subrows)
+}}return B
+}var t;
+var s;
+var w=v(n.cells,q);
+var r=e(n).data("tablesaw-sort");
+t=(r&&typeof r==="function"?r(p):false)||u(p,e(n).is("["+g.numericCol+"]")&&!e(n).is("["+g.numericCol+'="false"]'));
+s=w.sort(t);
+x=o(s);
+return x
+},makeColDefault:function(n,m){var o=e(n);
+o.attr(g.defaultCol,"true");
+if(m){o.removeClass(i.descend);
+o.addClass(i.ascend)
+}else{o.removeClass(i.ascend);
+o.addClass(i.descend)
+}},sortBy:function(n,p){var o=e(this);
+var m;
+var q=o.data("tablesaw");
+q.$tbody.each(function(){var u=this;
+var r=e(this);
+var w=q.getBodyRows(u);
+var v;
+var x=q.headerMapping[0];
+var t,s;
+for(t=0,s=x.length;
+t<s;
+t++){if(x[t]===n){m=t;
+break
+}}v=o[j]("sortRows",w,m,p,n,u);
+for(t=0,s=v.length;
+t<s;
+t++){r.append(v[t])
+}});
+o[j]("makeColDefault",n,p);
+o.trigger("tablesaw-sorted")
+}};
+e.fn[j]=function(n){var m=Array.prototype.slice.call(arguments,1),o;
+if(n&&typeof n==="string"){o=e.fn[j].prototype[n].apply(this[0],m);
+return typeof o!=="undefined"?o:e(this)
+}if(!e(this).data(j+"-active")){e(this).data(j+"-active",true);
+e.fn[j].prototype._create.call(this,n)
+}return e(this)
+};
+e.extend(e.fn[j].prototype,f);
+e(a).on(b.events.create,function(n,m){if(m.$table.is(h)){m.$table[j]()
+}})
+})();
+(function(){var g={hideBtn:"disabled",persistWidths:"tablesaw-fix-persist",hiddenCol:"tablesaw-swipe-cellhidden",persistCol:"tablesaw-swipe-cellpersist",allColumnsVisible:"tablesaw-all-cols-visible"};
+var f={disableTouchEvents:"data-tablesaw-no-touch",ignorerow:"data-tablesaw-ignorerow",subrow:"data-tablesaw-subrow"};
+function h(o,r){var G=r.data("tablesaw");
+var H=e("<div class='tablesaw-advance'></div>");
+var p=e("<a href='#' class='btn tablesaw-nav-btn tablesaw-btn btn-micro left'>"+b.i18n.swipePreviousColumn+"</a>").appendTo(H);
+var z=e("<a href='#' class='btn tablesaw-nav-btn tablesaw-btn btn-micro right'>"+b.i18n.swipeNextColumn+"</a>").appendTo(H);
+var C=o._getPrimaryHeaderCells();
+var n=C.not('[data-tablesaw-priority="persist"]');
+var w=[];
+var s=e(a.head||"head");
+var t=r.attr("id");
+if(!C.length){throw new Error("tablesaw swipe: no header cells found.")
+}r.addClass("tablesaw-swipe");
+function u(){r.css({width:"1px"});
+r.find("."+g.hiddenCol).removeClass(g.hiddenCol);
+w=[];
+C.each(function(){w.push(this.offsetWidth)
+});
+r.css({width:""})
+}u();
+H.appendTo(G.$toolbar);
+if(!t){t="tableswipe-"+Math.round(Math.random()*10000);
+r.attr("id",t)
+}function D(I){G._$getCells(I).removeClass(g.hiddenCol)
+}function j(I){G._$getCells(I).addClass(g.hiddenCol)
+}function A(I){G._$getCells(I).addClass(g.persistCol)
+}function q(I){return e(I).is('[data-tablesaw-priority="persist"]')
+}function y(){r.removeClass(g.persistWidths);
+e("#"+t+"-persist").remove()
+}function F(){var M="#"+t+".tablesaw-swipe ",L=[],I=r.width(),N=[],K;
+C.each(function(O){var P;
+if(q(this)){P=this.offsetWidth;
+if(P<I*0.75){N.push(O+"-"+P);
+L.push(M+" ."+g.persistCol+":nth-child("+(O+1)+") { width: "+P+"px; }")
+}}});
+K=N.join("_");
+if(L.length){r.addClass(g.persistWidths);
+var J=e("#"+t+"-persist");
+if(!J.length||J.data("tablesaw-hash")!==K){J.remove();
+e("<style>"+L.join("\n")+"</style>").attr("id",t+"-persist").data("tablesaw-hash",K).appendTo(s)
+}}}function m(){var J=[],I;
+n.each(function(L){var M=e(this),K=M.css("display")==="none"||M.is("."+g.hiddenCol);
+if(!K&&!I){I=true;
+J[0]=L
+}else{if(K&&I){J[1]=L;
+return false
+}}});
+return J
+}function l(){var I=m();
+return[I[1]-1,I[0]-1]
+}function E(I){return I?m():l()
+}function B(I){return I[1]>-1&&I[1]<n.length
+}function i(){var I=r.attr("data-tablesaw-swipe-media");
+return !I||("matchMedia" in c&&c.matchMedia(I).matches)
+}function v(){if(!i()){return
+}var M=r.parent().width(),L=[],K=0,J=[],I=C.length;
+C.each(function(P){var Q=e(this),O=Q.is('[data-tablesaw-priority="persist"]');
+L.push(O);
+K+=w[P];
+J.push(K);
+if(O||K>M){I--
+}});
+var N=I===0;
+C.each(function(O){if(J[O]>M){j(this)
+}});
+C.each(function(O){if(L[O]){A(this);
+return
+}if(J[O]<=M||N){N=false;
+D(this);
+G.updateColspanCells(g.hiddenCol,this,true)
+}});
+y();
+r.trigger("tablesawcolumns")
+}function x(I){var J=E(I);
+if(B(J)){if(isNaN(J[0])){if(I){J[0]=0
+}else{J[0]=n.length-1
+}}F();
+j(n.get(J[0]));
+G.updateColspanCells(g.hiddenCol,n.get(J[0]),false);
+D(n.get(J[1]));
+G.updateColspanCells(g.hiddenCol,n.get(J[1]),true);
+r.trigger("tablesawcolumns")
+}}p.add(z).on("click",function(I){x(!!e(I.target).closest(z).length);
+I.preventDefault()
+});
+function k(J,I){return(J.touches||J.originalEvent.touches)[0][I]
+}if(!r.is("["+f.disableTouchEvents+"]")){r.on("touchstart.swipetoggle",function(M){var K=k(M,"pageX");
+var J=k(M,"pageY");
+var I;
+var N;
+var L=c.pageYOffset;
+e(c).off(b.events.resize,v);
+e(this).on("touchmove.swipetoggle",function(O){I=k(O,"pageX");
+N=k(O,"pageY")
+}).on("touchend.swipetoggle",function(){var P=o.getConfig({swipeHorizontalThreshold:30,swipeVerticalThreshold:30});
+var O=P.swipe?P.swipe.verticalThreshold:P.swipeVerticalThreshold;
+var Q=P.swipe?P.swipe.horizontalThreshold:P.swipeHorizontalThreshold;
+var S=Math.abs(c.pageYOffset-L)>=O;
+var R=Math.abs(N-J)>=O;
+if(!R&&!S){if(I-K<-1*Q){x(true)
+}if(I-K>Q){x(false)
+}}c.setTimeout(function(){e(c).on(b.events.resize,v)
+},300);
+e(this).off("touchmove.swipetoggle touchend.swipetoggle")
+})
+})
+}r.on("tablesawcolumns.swipetoggle",function(){var J=B(l());
+var I=B(m());
+p[J?"removeClass":"addClass"](g.hideBtn);
+z[I?"removeClass":"addClass"](g.hideBtn);
+G.$toolbar[!J&&!I?"addClass":"removeClass"](g.allColumnsVisible)
+}).on("tablesawnext.swipetoggle",function(){x(true)
+}).on("tablesawprev.swipetoggle",function(){x(false)
+}).on(b.events.destroy+".swipetoggle",function(){var I=e(this);
+I.removeClass("tablesaw-swipe");
+G.$toolbar.find(".tablesaw-advance").remove();
+e(c).off(b.events.resize,v);
+I.off(".swipetoggle")
+}).on(b.events.refresh,function(){y();
+u();
+v()
+});
+v();
+e(c).on(b.events.resize,v)
+}e(a).on(b.events.create,function(j,i){if(i.mode==="swipe"){h(i,i.$table)
+}})
+})();
+(function(){var f={attr:{init:"data-tablesaw-minimap"},show:function(i){var h=i.getAttribute(f.attr.init);
+if(h===""){return true
+}else{if(h&&"matchMedia" in c){return c.matchMedia(h).matches
+}}return false
+}};
+function g(k){var m=k.data("tablesaw");
+var j=e('<div class="tablesaw-advance minimap">');
+var n=e('<ul class="tablesaw-advance-dots">').appendTo(j);
+var i="tablesaw-advance-dots-hide";
+var l=k.data("tablesaw")._getPrimaryHeaderCells();
+l.each(function(){n.append("<li><i></i></li>")
+});
+j.appendTo(m.$toolbar);
+function h(){if(!f.show(k[0])){j.css("display","none");
+return
+}j.css("display","block");
+var o=n.find("li").removeClass(i);
+k.find("thead th").each(function(p){if(e(this).css("display")==="none"){o.eq(p).addClass(i)
+}})
+}h();
+e(c).on(b.events.resize,h);
+k.on("tablesawcolumns.minimap",function(){h()
+}).on(b.events.destroy+".minimap",function(){var o=e(this);
+m.$toolbar.find(".tablesaw-advance").remove();
+e(c).off(b.events.resize,h);
+o.off(".minimap")
+})
+}e(a).on(b.events.create,function(i,h){if((h.mode==="swipe"||h.mode==="columntoggle")&&h.$table.is("[ "+f.attr.init+"]")){g(h.$table)
+}});
+b.MiniMap=f
+})();
+(function(){var f={selectors:{init:"table[data-tablesaw-mode-switch]"},attributes:{excludeMode:"data-tablesaw-mode-exclude"},classes:{main:"tablesaw-modeswitch",toolbar:"tablesaw-bar-section"},modes:["stack","swipe","columntoggle"],init:function(s){var r=e(s);
+var t=r.data("tablesaw");
+var h=r.attr(f.attributes.excludeMode);
+var l=t.$toolbar;
+var i=e("<div>").addClass(f.classes.main+" "+f.classes.toolbar);
+var o=['<label><span class="abbreviated">'+b.i18n.modeSwitchColumnsAbbreviated+'</span><span class="longform">'+b.i18n.modeSwitchColumns+"</span>:"],p=r.attr("data-tablesaw-mode"),g;
+o.push('<span class="btn tablesaw-btn"><select>');
+for(var n=0,m=f.modes.length;
+n<m;
+n++){if(h&&h.toLowerCase()===f.modes[n]){continue
+}g=p===f.modes[n];
+o.push("<option"+(g?" selected":"")+' value="'+f.modes[n]+'">'+b.i18n.modes[n]+"</option>")
+}o.push("</select></span></label>");
+i.html(o.join(""));
+var q=l.find(".tablesaw-advance").eq(0);
+if(q.length){i.insertBefore(q)
+}else{i.appendTo(l)
+}i.find(".tablesaw-btn").tablesawbtn();
+i.find("select").on("change",function(j){return f.onModeChange.call(s,j,e(this).val())
+})
+},onModeChange:function(j,k){var g=e(this);
+var i=g.data("tablesaw");
+var h=i.$toolbar.find("."+f.classes.main);
+h.remove();
+i.destroy();
+g.attr("data-tablesaw-mode",k);
+g.tablesaw()
+}};
+e(a).on(b.events.create,function(h,g){if(g.$table.is(f.selectors.init)){f.init(g.table)
+}})
+})();
+(function(){var g="tablesawCheckAll";
+function f(h){this.tablesaw=h;
+this.$table=h.$table;
+this.attr="data-tablesaw-checkall";
+this.checkAllSelector="["+this.attr+"]";
+this.forceCheckedSelector="["+this.attr+"-checked]";
+this.forceUncheckedSelector="["+this.attr+"-unchecked]";
+this.checkboxSelector='input[type="checkbox"]';
+this.$triggers=null;
+this.$checkboxes=null;
+if(this.$table.data(g)){return
+}this.$table.data(g,this);
+this.init()
+}f.prototype._filterCells=function(h){return h.filter(function(){return !e(this).closest("tr").is("[data-tablesaw-subrow],[data-tablesaw-ignorerow]")
+}).find(this.checkboxSelector).not(this.checkAllSelector)
+};
+f.prototype.getCheckboxesForButton=function(h){return this._filterCells(e(e(h).attr(this.attr)))
+};
+f.prototype.getCheckboxesForCheckbox=function(h){return this._filterCells(e(e(h).closest("th")[0].cells))
+};
+f.prototype.init=function(){var h=this;
+this.$table.find(this.checkAllSelector).each(function(){var i=e(this);
+if(i.is(h.checkboxSelector)){h.addCheckboxEvents(this)
+}else{h.addButtonEvents(this)
+}})
+};
+f.prototype.addButtonEvents=function(i){var h=this;
+e(i).on("click",function(m){m.preventDefault();
+var l=h.getCheckboxesForButton(this);
+var j=true;
+l.each(function(){if(!this.checked){j=false
+}});
+var k;
+if(e(this).is(h.forceCheckedSelector)){k=true
+}else{if(e(this).is(h.forceUncheckedSelector)){k=false
+}else{k=j?false:true
+}}l.each(function(){this.checked=k;
+e(this).trigger("change."+g)
+})
+})
+};
+f.prototype.addCheckboxEvents=function(i){var h=this;
+e(i).on("change",function(){var k=this.checked;
+h.getCheckboxesForCheckbox(this).each(function(){this.checked=k
+})
+});
+var j=h.getCheckboxesForCheckbox(i);
+j.on("change."+g,function(){var l=0;
+j.each(function(){if(this.checked){l++
+}});
+var k=l===j.length;
+i.checked=k;
+i.indeterminate=l!==0&&!k
+})
+};
+e(a).on(b.events.create,function(i,h){new f(h)
+});
+b.CheckAll=f
+})();
+return b
+}));
+/*! Tablesaw - v3.0.9 - 2018-02-14
+* https://github.com/filamentgroup/tablesaw
+* Copyright (c) 2018 Filament Group; Licensed MIT */
+(function(a){if(!("Tablesaw" in a)){throw new Error("Tablesaw library not found.")
+}if(!("init" in Tablesaw)){throw new Error("Your tablesaw-init.js is newer than the core Tablesaw version.")
+}Tablesaw.init()
+})(typeof window!=="undefined"?window:this);
+var TablesawConfig={i18n:{swipePreviousColumn:"The column before",swipeNextColumn:"The column after"},swipe:{horizontalThreshold:45,verticalThreshold:45}};

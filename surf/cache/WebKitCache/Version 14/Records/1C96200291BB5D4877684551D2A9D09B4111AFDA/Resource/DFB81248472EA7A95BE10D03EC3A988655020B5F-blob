@@ -1,0 +1,1698 @@
+var intel=intel||{};
+function stringEndsWith(a,b){return a.indexOf(b,a.length-b.length)!==-1
+}function prepareOutHtml(a){var d;
+var c;
+var b='<ul class="nav navbar-nav primary support-util">';
+for(d=0;
+d<a.length;
+d++){var f=a[d];
+if(f.secondary.length>0){b+='<li class="dropdown"><a data-wap_ref="dropdown-toggle_"'+d+' class="dropdown-toggle menu-arrow" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">'+f.linkText+'</a><ul class="dropdown-menu secondary">';
+for(c=0;
+c<f.secondary.length;
+c++){var e=f.secondary[c];
+b+='<li><a href="'+e.linkUrl+'" x-cq-linkchecker="skip" target="_self" onkeypress="setCtaAutoPath()" onclick="setCtaAutoPath()" >'+e.linkText+((e.isLockDisplayed==="true")?'&nbsp<span class="fa fa-lock"></span>':"")+"</a></li>"
+}b+="</ul></li>"
+}else{if(f.linkUrl.indexOf("contact-support")>-1){b+='<li class="'+((f.linkUrl.indexOf("/support.")>-1||stringEndsWith(f.linkUrl,"/support"))?"hidden-md hidden-lg hidden-xl":"")+'" ><a href="'+f.linkUrl+'" x-cq-linkchecker="skip" target="_self" onkeypress="setCtaEpmIdPath(this)" onclick="setCtaEpmIdPath(this)" >'+f.linkText+"</a></li>"
+}else{b+='<li class="'+((f.linkUrl.indexOf("/support.")>-1||stringEndsWith(f.linkUrl,"/support"))?"hidden-md hidden-lg hidden-xl":"")+'" ><a href="'+f.linkUrl+'" x-cq-linkchecker="skip" target="_self" onkeypress="setCtaAutoPath()" onclick="setCtaAutoPath()" >'+f.linkText+"</a></li>"
+}}}b+="</ul>";
+return b
+}function getDataFromUtilNode(a){$.getJSON(a).done(function(c){if(c!=null&&c.length>0){var b=prepareOutHtml(c);
+$(".collapse.navbar-collapse").empty();
+$("#utility-bar-desktop-nav").append(b);
+intel.navigationScroll.supportByProductHeight()
+}})
+}function getUtilityData(){var a="";
+if(typeof dataEntryPath!=="undefined"){a=dataEntryPath
+}if(""!==a){getDataFromUtilNode(a)
+}}intel.navigationScroll=(function(d){var e;
+var b="#utility-bar";
+var f=d(".shader");
+function j(){e=jQuery("html");
+c();
+if(intel.buttonClear!=null&&intel.buttonClear!=undefined){intel.buttonClear.initialize(d("#search-query-input"),d("#support-btn-clear"))
+}}function g(m){var l=d(m).closest(b);
+var k=window.innerHeight-d(".global-menu").height();
+if(l.height()>k){l.css({"overflow-y":"scroll",height:k+"px"})
+}}function h(l){var k=d(l).closest(b);
+k.css({"overflow-y":"",height:""})
+}function c(){f.on("click",function(){d("#utility-bar .navbar-toggle").trigger("click")
+});
+d(b).on("click",function(){var k=d(this).find(".navbar-toggle");
+h(this);
+setTimeout(function(){if(k.hasClass("collapsed")){a()
+}else{i()
+}}.bind(this),50);
+setTimeout(function(){if(k.hasClass("collapsed")){h(this)
+}else{g(this)
+}}.bind(this),500)
+})
+}function i(){e.css("overflow","hidden");
+f.show()
+}function a(){e.css("overflow","visible");
+f.hide()
+}return{initialize:j}
+})(jQuery);
+jQuery(document).ready(intel.navigationScroll.initialize);
+function utilityBarReSize(){var b=0;
+$("ul.support-util li:visible").each(function(){b+=$(this).innerWidth()
+});
+var a=$("#supportUtilityBar-1");
+if((b===0&&$(window).width()<992)||$("ul.support-util").innerWidth()<(b-5)){a.removeClass("resize-desktop");
+a.addClass("resize-mobile")
+}else{a.removeClass("resize-mobile");
+a.addClass("resize-desktop")
+}}intel.navigationScroll.supportByProductHeight=function(){var d=$("li.dropdown ul.dropdown-menu.secondary:last");
+d.removeAttr("style");
+if($(".resize-desktop").length>0){var a=parseInt(d.css("height"));
+var c=window.innerHeight-150;
+var b=(a>c)?c:a;
+d.css({height:b+"px","overflow-y":"scroll"})
+}};
+$(function(){getUtilityData();
+$(window).load(function(){utilityBarReSize()
+})
+});
+$(window).resize(function(){$("#supportUtilityBar-1").removeClass("resize-mobile");
+setTimeout(utilityBarReSize(),500);
+intel.navigationScroll.supportByProductHeight()
+});
+var productsMore=".moreProducts";
+var showLessProd=".myShowLess";
+var showMoreProd=".myShowMore";
+var showAllProd=".myShowAll";
+var searchParam=".searchParameter";
+var dispAlert=".display-alert";
+var disp="display";
+var dispNone="none";
+var inBlock="inline-block";
+var dispBlock="block";
+var changed="changed";
+var visibility="visibility",visible="visible",hidden="hidden";
+function showmoreClick(e,b,c,d){if(""!==e&&parseInt(e)>0){for(var a=0;
+a<=parseInt(e)-1;
+a++){b=a;
+c("#"+d).click()
+}}else{c("#"+d).click()
+}return b
+}var articleExplorer=(function(i){var p="articleTypeId";
+var f="showMoreId";
+var k=";path=/";
+var c="expires=";
+var a=0;
+var h="showMoreCss";
+var v="showLessId";
+var j="; secure";
+function x(){i(productsMore).css(disp,dispBlock);
+i(showLessProd).css(disp,inBlock);
+i(showMoreProd).css(disp,dispNone);
+i(showAllProd).css(disp,inBlock)
+}function e(){i(productsMore).css(disp,dispNone);
+i(showLessProd).css(disp,dispNone);
+i(showMoreProd).css(disp,inBlock);
+i(showAllProd).css(disp,dispNone)
+}function l(){var D=new Date();
+D.setTime(D.getTime()+(5*60*1000));
+var C=c+D.toUTCString();
+document.cookie=v+"=; "+C+j+k;
+document.cookie=h+"="+0+"; "+C+j+k;
+document.cookie=f+"=; "+C+j+k
+}function s(C){a=0;
+if(C>2){i(showAllProd).css(disp,inBlock)
+}i('*[class^="moreProducts-"]').css(disp,dispNone);
+l();
+i(".product-list-accordion-link.current").next().find(searchParam).val("");
+o();
+y()
+}function r(C){if(a<Math.floor(C)){a++;
+i(".moreProducts-"+a).css(disp,dispBlock)
+}if(a===0){i(showLessProd).css(disp,dispNone);
+i(showMoreProd).css(disp,inBlock);
+i(showLessProd).removeClass(changed)
+}else{if(a>=1&&a<Math.floor(C)){i(showAllProd).css(disp,dispNone);
+i(showLessProd).css(disp,inBlock);
+if(parseFloat(a+1)===parseFloat(C)){i(showMoreProd).css(disp,dispNone);
+i(showLessProd).removeClass(changed)
+}else{i(showMoreProd).css(disp,inBlock);
+i(showLessProd).addClass(changed)
+}}else{if(a===Math.floor(C)){i(showAllProd).css(disp,dispNone);
+i(showLessProd).css(disp,inBlock);
+i(showMoreProd).css(disp,dispNone);
+i(showLessProd).removeClass(changed)
+}}}}function z(C){if(a>0){i(".moreProducts-"+a).css(disp,dispNone);
+a--
+}if(a===0){i(showLessProd).css(disp,dispNone);
+i(showMoreProd).css(disp,inBlock);
+i(showAllProd).css(disp,inBlock);
+i(showLessProd).removeClass(changed)
+}else{if(a>=1&&a<Math.floor(C)){i(showAllProd).css(disp,dispNone);
+i(showLessProd).css(disp,inBlock);
+i(showMoreProd).css(disp,inBlock);
+i(showLessProd).addClass(changed)
+}else{if(a===Math.floor(C)){i(showAllProd).css(disp,dispNone);
+i(showLessProd).css(disp,inBlock);
+i(showMoreProd).css(disp,dispNone);
+i(showLessProd).removeClass(changed)
+}}}}function t(){var C=getCookie(p);
+var E=getCookie(f);
+var D=getCookie(v);
+var F=getCookie(h);
+if(""!==C){i(document).ready(function(){i("#"+C).click();
+if(""!==E){a=showmoreClick(F,a,i,E)
+}else{if(""!==D&&(""!==F&&parseInt(F)>0)){for(var G=0;
+G<=parseInt(F)-1;
+G++){a=G;
+i("#showMoreId-"+D.charAt(D.length-1)).click()
+}}}})
+}}function B(F){var D=new Date();
+D.setTime(D.getTime()+(5*60*1000));
+var C=c+D.toUTCString();
+document.cookie=p+"="+F+"; "+C+j+k;
+var E=window.location.href;
+E=CQ.shared.XSS.getXSSValue(E);
+document.cookie="articleTypeIdCookieSetURL="+E+"; "+C+j+k
+}function q(E){var D=new Date();
+D.setTime(D.getTime()+(5*60*1000));
+var C=c+D.toUTCString();
+document.cookie=f+"="+E+"; "+C+j+k;
+document.cookie=h+"="+a+"; "+C+j+k;
+document.cookie=v+"=; "+C+j+k
+}function d(E){var D=new Date();
+D.setTime(D.getTime()+(5*60*1000));
+var C=c+D.toUTCString();
+document.cookie=v+"="+E+"; "+C+j+k;
+document.cookie=h+"="+a+"; "+C+j+k;
+document.cookie=f+"=; "+C+j+k
+}function A(F){var D=new RegExp(i(F).val(),"i");
+var E=0;
+i("[class^=moreProducts-]").css(disp,dispBlock);
+i("[class^=show-more-container ]").css({disp:dispNone,visibility:hidden});
+function C(G){if(G>-1){i(this).show();
+E++
+}else{i(this).hide()
+}}i(".product-list-accordion-link.current").next().find(".list-unstyled li").each(function(){var G=i(this).text().search(D);
+C.call(this,G)
+});
+i("#collapse-object-desktop .list-unstyled li").each(function(){var G=i(this).text().search(D);
+C.call(this,G)
+});
+if(i(F).val().length>0){i("[class^=button-clear]").css(disp,dispBlock)
+}else{i("[class^=button-clear]").css(disp,dispNone)
+}if(E===0){i(dispAlert).css(disp,dispBlock)
+}else{i(dispAlert).css(disp,dispNone)
+}}function m(){i("#articleExplorer").on("keyup",function(C){var D=C.target;
+if(i(D).val()!==""){A(D)
+}else{o()
+}})
+}function w(C){var D=i(C).parent().find(searchParam);
+A(D)
+}function o(){i("[class^=button-clear]").css(disp,dispNone);
+i(dispAlert).css(disp,dispNone);
+i("[class^=show-more-container ]").css({disp:dispBlock,visibility:visible});
+i("[class^=moreProducts-]").css(disp,dispNone);
+i(".list-unstyled > li").show()
+}function y(){if(i(".product-list-accordion-link.collapsed").hasClass("current")){i(".product-list-accordion-link").removeClass("current")
+}i(".product-list-accordion-link").addClass("collapsed")
+}function u(C){i(C).parent().find(searchParam).val("");
+o()
+}function n(C){i(".product-list-content.row").attr({"data-component":"ics-results","data-component-id":"1","data-wap":"{&quot;category&quot;:&quot;"+C+"&quot;}"})
+}function g(){var D=new Date();
+D.setTime(D.getTime()+(1*5*1000));
+var C=c+D.toUTCString();
+document.cookie="isArticleLinkClicked="+true+"; "+C+j+k
+}function b(E){var F=window.location.href;
+if(F.indexOf("/support/products")!==-1){var K=F.split("products/");
+var D=K[1].split("/");
+var I=D[0];
+var C=i(E).attr("href");
+var J=F.split("content/www/");
+var G=J[1].split("/");
+var H=G[0]+"_"+G[1];
+if(C.indexOf("?productId")===-1&&H!==null){C=C+"?productId="+I+"&localeCode="+H
+}i(E).attr("href",C)
+}}return{showMore:x,showLess:e,reloadArticleInfo:t,setArticleId:B,setShowMoreId:q,showMoreArticle:r,showLessArticle:z,resetProductClick:s,setShowLessId:d,resetArticleExplorerCookies:l,articleFilter:m,resetArticleFilter:u,articleFilterOnClick:w,removeCurrent:y,addWapReq:n,isArticleLinkClicked:g,setProductEpmIdPath:b}
+})(jQuery);
+function showMore(){$(productsMore).css(disp,dispBlock);
+$(showLessProd).css(disp,inBlock);
+$(showMoreProd).css(disp,dispNone);
+$(showAllProd).css(disp,inBlock)
+}function showLess(){$(productsMore).css(disp,dispNone);
+$(showLessProd).css(disp,dispNone);
+$(showMoreProd).css(disp,inBlock);
+$(showAllProd).css(disp,dispNone)
+}$(document).ready(function(){if($("#articleExplorer").length){articleExplorer.removeCurrent();
+articleExplorer.reloadArticleInfo();
+articleExplorer.articleFilter()
+}$(document).on("click",".articleListSet",function(){var a=this.getAttribute("data-articleNumber");
+articleExplorer.setArticleId(a);
+articleExplorer.isArticleLinkClicked();
+articleExplorer.setProductEpmIdPath(this);
+return true
+});
+$(document).on("mousedown",".articleListSet",function(){articleExplorer.setProductEpmIdPath(this)
+})
+});
+$(window).on("beforeunload",function(){var e=getCookie("isArticleLinkClicked");
+var b=getCookie("articleTypeIdCookieSetURL");
+var d=window.location.href;
+var c=window.location.protocol==="https:"?"; secure":"";
+d=CQ.shared.XSS.getXSSValue(d);
+if(e===""&&b===d){var a=new Date();
+a.setTime(a.getTime());
+document.cookie="articleTypeId = -1; expires="+a.toUTCString()+c+";path=/";
+document.cookie="articleTypeIdCookieSetURL = -1; expires="+a.toUTCString()+c+";path=/"
+}});
+var intel=intel||{};
+intel.supportNotification=(function(v){var i,B,C,p,I,u=false,c=[],n=[],d=[],q=[],F=[],m="IT Notification",A="IP&M Global Alert",t="IP&M Product Alert",a="End of Interactive Service (EOIS)",H="Support Landing Page Template",y="Support Article Detail Template",h="Support Topic Detail Template",k="Support Dynamic Hub Page Template",r="true",o="notificationType",J="enableNotification",G="linkText",l="linkUrl",j="urlTarget",b="productIdList",z="alert",s="currentPage",e="pageProductId",f="isvcKmStatus",x="parentPage",g="eoisNotification",w="undefined",D="startTime",E="endTime";
+v(document).ready(function(){if(typeof _notificationBarInfo!==w){var M=v("#"+_notificationBarInfo.notificationIdOnPage);
+if(M.length){var L=_notificationBarInfo.notificationPageInfo;
+var K=_notificationBarInfo.dataEntryJsonPath;
+B=_notificationBarInfo.currentPageTemplateTitle;
+I="."+_notificationBarInfo.notificationClassName;
+i.processNotificationEntry(K,L,M)
+}}});
+i={processNotificationEntry:function(M,K,L){v.ajax(M,{dataType:"text",success:function(N){if(N!=null&&N.length>0){C=v.parseJSON(K);
+p=v.parseJSON(N);
+i.getPageNotificationData();
+i.renderNotificationHTML(L)
+}},error:function(){}})
+},getPageNotificationData:function(){switch(B){case H:i.getLandingPageNotifications();
+break;
+case h:i.getTopicNotifications();
+break;
+case k:i.getDynamicNotifications();
+break;
+case y:i.getArticlePageNotifications();
+break;
+default:break
+}if(n.length>0){F.push(n)
+}if(d.length>0){F.push(d)
+}if(c.length>0){F.push(c)
+}if(q.length>0){F.push(q)
+}},isNotificationEnabled:function(K){return K!=null&&r===K.toLowerCase()
+},isValidTimeFrame:function(O){var L=false;
+if(O[o]!=null&&i.isNotificationEnabled(O[J])){if(O[D]==null&&O[E]==null){L=true
+}else{var N=new Date();
+var M=new Date(O[D]);
+var K=new Date(O[E]);
+if((N>=M)&&(N<K)){L=true
+}}}return L
+},getLandingPageNotifications:function(){v.each(p,function(M,N){var K=N[J];
+if(N[o]!=null&&i.isNotificationEnabled(K)&&i.isValidTimeFrame(N)){var L=N[o];
+if(m===L||A===L){i.populateNotificationsList(L,N)
+}}})
+},getArticlePageNotifications:function(){var K=C[s];
+v.each(p,function(O,P){var M=P[J];
+var N=P[o];
+if(N!=null&&i.isNotificationEnabled(M)&&N===a&&i.isValidTimeFrame(P)){i.getArticlePageNotificationsData(P,K,N)
+}});
+if(d.length===0&&K.hasOwnProperty(x)&&u===true){var L=K[x];
+i.articleEOISNotification(L)
+}},articleEOISNotification:function(K){v.each(p,function(N,O){var L=O[J];
+var M=O[o];
+if(M!=null&&i.isNotificationEnabled(L)&&a===M&&i.isValidTimeFrame(O)){i.getArticlePageNotificationsData(O,K,M)
+}})
+},setEOISPageStatus:function(K,L){if(K[g]&&r===K[g]){L=true;
+u=true
+}else{u=false
+}return L
+},getArticlePageNotificationsData:function(T,P,L){var M=false;
+u=false;
+var O=window.location.pathname.replace(".html","");
+var Q=P.pagePath;
+if(null!==Q&&(O===Q||O.indexOf(Q)>-1)){M=i.setEOISPageStatus(P,M)
+}else{M=true;
+u=true
+}if(M&&P[e]!=null&&u){var K=P[e];
+if(K!=null){var N=K.length;
+for(var S=0;
+S<N;
+S++){var R=T[b];
+i.addTemplateNotifyData(R,K,S,L,T)
+}}}},addDynamicNotifications:function(N,L){if(N[o]!=null&&i.isNotificationEnabled(L)&&i.isValidTimeFrame(N)){var M=N[o];
+switch(M){case m:i.populateNotificationsList(M,N);
+break;
+case A:i.templateNotificationsData(r,M,N);
+break;
+case t:i.templateNotificationsData(r,M,N);
+break;
+case a:var K=C[s][f];
+i.templateNotificationsData(K,M,N);
+break;
+default:break
+}}},getDynamicNotifications:function(){v.each(p,function(M,N){var L=N[J];
+i.addDynamicNotifications(N,L)
+});
+var K=C[s][x];
+if(d.length===0&&typeof K!==w&&!u){i.EOISTemplateData(K)
+}},EOISTemplateData:function(K){v.each(p,function(N,O){var M=O[o];
+if(M!=null&&M===a&&i.isValidTimeFrame(O)){i.getDynamicEOISNotificationsData(K,O)
+}});
+var L=K[x];
+if(d.length===0&&typeof L!==w){i.EOISTemplateData(L)
+}},getDynamicEOISNotificationsData:function(K,P){var O=K[e];
+if(O!=null){var M=O.length;
+for(var N=0;
+N<M;
+N++){var L=P[b];
+i.addTemplateNotifyData(L,O,N,a,P)
+}}},getTopicNotifications:function(){v.each(p,function(M,N){var K=N[J];
+if(N[o]!=null&&i.isNotificationEnabled(K)&&i.isValidTimeFrame(N)){var L=N[o];
+if(m===L){i.populateNotificationsList(L,N)
+}else{if(A===L){i.templateNotificationsData(r,L,N)
+}}}})
+},addTemplateNotifyData:function(K,O,N,M,P){if(K!=null){var L=K.length;
+for(var Q=0;
+Q<L;
+Q++){if(K[Q]===O[N]){i.populateNotificationsList(M,P)
+}}}return{productIdListLength_DE:L,prdIndex_DE:Q}
+},templateNotificationsData:function(O,N,Q){if(O!=null&&(r===O.toLowerCase()||O==="EOIS")){var P=C[s][e];
+if(P!=null){var L=P.length;
+for(var M=0;
+M<L;
+M++){var K=Q[b];
+i.addTemplateNotifyData(K,P,M,N,Q)
+}}}else{u=true
+}},populateNotificationsList:function(L,M){var K={};
+K[G]=M[G];
+K[l]=M[l];
+K[j]=M[j];
+K[z]=M[z];
+switch(L){case m:c.push(K);
+break;
+case A:n.push(K);
+break;
+case a:d.push(K);
+break;
+case t:q.push(K);
+break;
+default:break
+}},renderNotificationHTML:function(L){if(L.length){var K=[];
+var M=L.find(I);
+v.each(F,function(O,N){v.each(N,function(S,T){var R=T[G];
+var P=T[l];
+var V=T[z];
+var U="_self";
+v(".alert").addClass(V);
+var Q='<div class="blade-alert-headline-content text-center alert alert-warning" role="alert">';
+if(P){Q=Q+'<a href ="'+P+'" class ="alert-link" target="'+U+'" style="">'+R+"</a>"
+}else{Q=Q+'<a href ="'+P+'" class ="alert-no-link" target="'+U+'" style="pointer-events:none;cursor:default">'+R+"</a>"
+}Q=Q+"</div>";
+K.push(Q)
+})
+});
+M.empty();
+M.append(K)
+}}}
+})(jQuery);
+function replaceSpecChars(b,c,a){return((typeof b[c]!=="undefined")?b[c].split(a).join(","):"")
+}function getArticleExportResults(){var f=$("#resultTextHidden").text().split(",");
+if(!f){return
+}var k="";
+var h,j,a;
+h=",";
+j="\n";
+k+=" Browser Title , Page URL , Article Type \r\n";
+for(var d=0;
+d<f.length;
+d++){var e=f[d].split("|||");
+k+='"'+replaceSpecChars(e,0,"$$$")+'"'+h+e[1]+".html"+h+'"'+replaceSpecChars(e,2,"-")+'"'+h;
+k+=j
+}a="search-article-results-page-report-.csv";
+var b=new Blob([k],{type:"text/csv;charset=utf-8;"});
+if(navigator.msSaveBlob){navigator.msSaveBlob(b,a)
+}else{var g=document.createElement("a");
+if(g.download!==undefined){var c=URL.createObjectURL(b);
+g.setAttribute("href",c);
+g.setAttribute("download",a);
+g.style.visibility="hidden";
+document.body.appendChild(g);
+g.click();
+document.body.removeChild(g)
+}}}function getArticleResponse(){var a=document.getElementById("productPath").value;
+if(!a){alert("You must enter Product Path");
+return false
+}var b="/libs/apps/intel/support/product/productdetails?productpath="+encodeURIComponent(a);
+$.ajax({async:false,type:"GET",url:b,dataType:"text",contentType:"application/json"}).done(function(e){var h=$("#resultTextHidden");
+var g=$("#resultText");
+if(null!==e&&e.length>2){var k=e.substring(1,e.length-1);
+h.empty();
+h.append(k);
+var c=k.split(",");
+var d='<table border = "1">';
+d=d+"<tr><th>Browser Title</th><th>page URL</th><th>Article type</th></tr>";
+for(var f=0;
+f<=c.length;
+f++){if(c[f]!==undefined){var l=c[f].split("|||");
+d=d+"<tr><td>"+replaceSpecChars(l,0,"$$$")+'</td><td><a target="_blank" rel="noopener noreferrer" href='+l[1]+".html>"+((typeof l[1]!=="undefined")?l[1]+".html":"")+"</a></td><td>"+replaceSpecChars(l,2,"-")+"</td></tr>"
+}}d=d+"</table>";
+g.empty();
+g.append(d)
+}else{var j="No results found";
+h.empty();
+h.append(j);
+g.empty();
+g.append(j)
+}})
+}function msieversion(){var b=window.navigator.userAgent;
+var a=b.indexOf("MSIE ");
+return a>0||!!navigator.userAgent.match(/Trident.*rv\:11\./)
+}function getUsageInCsv(d){var e="";
+var b=d.length;
+for(var c=0;
+c<b;
+c++){var a=d[c]===null?"":'="'+d[c]+'"';
+if(c!==b-1){e+=a+","
+}else{e+=a
+}}return e
+}function getDataRow(c,d,b){for(var f in c[d]){if(c[d].hasOwnProperty(f)){var e=c[d][f];
+var a;
+if(f==="usages"){a=getUsageInCsv(e)
+}else{a=c[d][f]==null?"":'="'+e+'"'
+}b+=a+","
+}}return{columnCsv:e,arrValue:a,dataRow:b}
+}function jsonToCsvConvertor(m,c,j){var e=typeof m!="object"?JSON.parse(m):m;
+var l="";
+if(j){var n="";
+for(var g in e[0]){if(e[0].hasOwnProperty(g)){n+=g+","
+}}n=n.slice(0,-1);
+l+=n+"\r\n"
+}for(var d=0;
+d<e.length;
+d++){var h="";
+var f=getDataRow(e,d,h);
+h=f.dataRow;
+h.slice(0,h.length-1);
+l+=h+"\r\n"
+}if(l===""){return
+}if(msieversion()){var b=new Blob([l],{type:"text/csv;charset=utf-8;"});
+window.navigator.msSaveOrOpenBlob(b,c+".csv")
+}else{var a="data:application/csv;charset=utf-8,"+encodeURIComponent(l);
+var k=document.createElement("a");
+k.href=a;
+k.style="visibility:hidden";
+k.download=c+".csv";
+document.body.appendChild(k);
+k.click();
+document.body.removeChild(k)
+}document.getElementById("resultText").innerHTML="<h2>File downloaded...</h2>"
+}function downloadJsonReport(a,d){if(msieversion()){var c=new Blob([d],{type:"text/plain;charset=utf-8;"});
+window.navigator.msSaveOrOpenBlob(c,a+".txt")
+}else{var b=document.createElement("a");
+b.setAttribute("href","data:text/plain;charset=utf-8,"+encodeURIComponent(d));
+b.setAttribute("download",a);
+b.style.display="none";
+document.body.appendChild(b);
+b.click();
+document.body.removeChild(b)
+}document.getElementById("resultText").innerHTML="<h2>File downloaded...</h2>"
+}function getDisclaimerAuditResults(c){document.getElementById("resultText").innerHTML="<h2>File will be downloaded in a short while..</h2>";
+var d=jQuery.trim(document.getElementById("usagesLimit").value);
+if(d.length===0){d="0"
+}var a=document.getElementById("locale").value;
+if(a==="default"){a="US/en"
+}var b="/libs/apps/intel/support/disclaimeraudit?usageLimit="+d+"&geo="+a;
+$.ajax({type:"GET",url:b,dataType:"text",contentType:"application/json"}).done(function(f){if(null!=f){if(c==="csv"){jsonToCsvConvertor(f,"Disclaimer Audit Report",true)
+}else{if(c==="json"){var e=JSON.stringify(JSON.parse(f),null,"\t");
+downloadJsonReport("Disclaimer Audit Json",e)
+}}}else{document.getElementById("resultText").innerHTML="<h2>No Results found</h2>"
+}})
+}$(document).ready(function(){$("#getResultsInCSV").on("click keypress",function(){getDisclaimerAuditResults("csv")
+});
+$("#getResultsInJson").on("click keypress",function(){getDisclaimerAuditResults("json")
+})
+});
+var getArticleURL=function(a){if(a!=="N/A"){return" <a href ='"+a+"'>"+a+"</a>"
+}else{return"N/A"
+}};
+var resetArticlePublishStatusResult=function(){for(var a=0;
+a<10;
+a++){var b=document.getElementById("resultText"+a);
+b.innerHTML=""
+}};
+var getArticlePublishStatusData=function(c,b){var a="/libs/apps/intel/support/articlePublishStatus";
+$.ajax({type:"GET",data:{articleId:c,localeForArticlePublishStatus:b},dataType:"json",url:a,success:function(h){var d=c.split(",");
+var j=d.length<10?d.length:10;
+for(var f=0;
+f<j;
+f++){var g=d[f];
+g=g.trim();
+if(g!==""&&g!==null&&g!=="undefined"){var e=h[g];
+document.getElementById("resultText"+f).innerHTML="Article Id: "+e.articleId+"<br/></br>URL: "+getArticleURL(e.ArticleURL)+"<br /><br/>Publish Date: "+e.replicationDate+"<br /><br/>Last Replicated By: "+e.lastReplicatedBy+"<br /><br/>Last Modified Date: "+e.lastModifiedDate+"<br/><br/>Last Modified By: "+e.lastModifiedBy+"<br/><br/>Publish Status: "+e.publishStatus+"<br/><br/>"
+}}},error:function(){console.error("Error while fetching data. Please try adding correct article Ids")
+}})
+};
+$(document).ready(function(){$("#getArticlePublishStatus").on("click",function(){resetArticlePublishStatusResult();
+var b=$("#articleIdListForPublishStatus").val();
+var a=$("#localeForArticlePublishStatus").val();
+getArticlePublishStatusData(b,a)
+})
+});
+$(document).ready(function(){var d=window.location.href;
+if(d.indexOf("/support/articles")!==-1){var c=intel.utility.paramValuesByName("productId",d);
+var h=d.split("content/www/");
+var e=h[1].split("/");
+var f=e[0]+"_"+e[1];
+if(c!==0){var a="/libs/apps/intel/support/articleUrlFormation?productId="+c+"&localeCode="+f;
+$.ajax({type:"GET",url:a,dataType:"text",contentType:"application/json"}).done(function(j){b(j)
+})
+}}function b(k){if(null!=k){var j=JSON.parse(k);
+if(!jQuery.isEmptyObject(j)){i(j);
+g(j)
+}}}function i(l){if(l.showBreadCrumb==="yes"){var k="<a href="+l.url+">"+l.displayName+"</a>";
+var j=$(".intel-cta1");
+j.html(k);
+j.addClass("intel-cta")
+}}function g(k){var j=k.includingProductText;
+var l="<a href="+k.url+">"+k.displayName+"</a>";
+j=j.replace("$LINKAPPEND",l);
+$(".includingProducts").html(j)
+}});
+/*! Respond.js v1.4.2: min/max-width media query polyfill
+ * Copyright 2014 Scott Jehl
+ * Licensed under MIT
+ * http://j.mp/respondjs */
+;
+!function(b){b.matchMedia=b.matchMedia||function(h){var g,l=h.documentElement,k=l.firstElementChild||l.firstChild,j=h.createElement("body"),i=h.createElement("div");
+return i.id="mq-test-1",i.style.cssText="position:absolute;top:-100em",j.style.background="none",j.appendChild(i),function(c){return i.innerHTML='&shy;<style media="'+c+'"> #mq-test-1 { width: 42px; }</style>',l.insertBefore(j,k),g=42===i.offsetWidth,l.removeChild(j),{matches:g,media:c}
+}
+}(b.document)
+}(this),function(X){function W(){C(!0)
+}var V={};
+X.respond=V,V.update=function(){};
+var U=[],T=function(){var a=!1;
+try{a=new X.XMLHttpRequest
+}catch(d){a=new X.ActiveXObject("Microsoft.XMLHTTP")
+}return function(){return a
+}
+}(),S=function(e,d){var f=T();
+f&&(f.open("GET",e,!0),f.onreadystatechange=function(){4!==f.readyState||200!==f.status&&304!==f.status||d(f.responseText)
+},4!==f.readyState&&f.send(null))
+},R=function(b){return b.replace(V.regex.minmaxwh,"").match(V.regex.other)
+};
+if(V.ajax=S,V.queue=U,V.unsupportedmq=R,V.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,comments:/\/\*[^*]*\*+([^/][^*]*\*+)*\//gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\(\s*min\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,maxw:/\(\s*max\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,minmaxwh:/\(\s*m(in|ax)\-(height|width)\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/gi,other:/\([^\)]*\)/g},V.mediaQueriesSupported=X.matchMedia&&null!==X.matchMedia("only all")&&X.matchMedia("only all").matches,!V.mediaQueriesSupported){var Q,P,O,N=X.document,M=N.documentElement,L=[],K=[],J=[],I={},H=30,G=N.getElementsByTagName("head")[0]||M,F=N.getElementsByTagName("base")[0],E=G.getElementsByTagName("link"),D=function(){var h,g=N.createElement("div"),l=N.body,k=M.style.fontSize,j=l&&l.style.fontSize,i=!1;
+return g.style.cssText="position:absolute;font-size:1em;width:1em",l||(l=i=N.createElement("body"),l.style.background="none"),M.style.fontSize="100%",l.style.fontSize="100%",l.appendChild(g),i&&M.insertBefore(l,M.firstChild),h=g.offsetWidth,i?M.removeChild(l):l.removeChild(g),M.style.fontSize=k,j&&(l.style.fontSize=j),h=O=parseFloat(h)
+},C=function(ab){var aa="clientWidth",Z=M[aa],Y="CSS1Compat"===N.compatMode&&Z||N.body[aa]||Z,v={},u=E[E.length-1],t=(new Date).getTime();
+if(ab&&Q&&H>t-Q){return X.clearTimeout(P),P=X.setTimeout(C,H),void 0
+}Q=t;
+for(var m in L){if(L.hasOwnProperty(m)){var j=L[m],i=j.minw,h=j.maxw,a=null===i,r=null===h,q="em";
+i&&(i=parseFloat(i)*(i.indexOf(q)>-1?O||D():1)),h&&(h=parseFloat(h)*(h.indexOf(q)>-1?O||D():1)),j.hasquery&&(a&&r||!(a||Y>=i)||!(r||h>=Y))||(v[j.media]||(v[j.media]=[]),v[j.media].push(K[j.rules]))
+}}for(var o in J){J.hasOwnProperty(o)&&J[o]&&J[o].parentNode===G&&G.removeChild(J[o])
+}J.length=0;
+for(var n in v){if(v.hasOwnProperty(n)){var l=N.createElement("style"),k=v[n].join("\n");
+l.type="text/css",l.media=n,G.insertBefore(l,u.nextSibling),l.styleSheet?l.styleSheet.cssText=k:l.appendChild(N.createTextNode(k)),J.push(l)
+}}},B=function(Y,y,x){var w=Y.replace(V.regex.comments,"").replace(V.regex.keyframes,"").match(V.regex.media),v=w&&w.length||0;
+y=y.substring(0,y.lastIndexOf("/"));
+var u=function(b){return b.replace(V.regex.urls,"$1"+y+"$2$3")
+},t=!v&&x;
+y.length&&(y+="/"),t&&(v=1);
+for(var s=0;
+v>s;
+s++){var r,n,m,g;
+t?(r=x,K.push(u(Y))):(r=w[s].match(V.regex.findStyles)&&RegExp.$1,K.push(RegExp.$2&&u(RegExp.$2))),m=r.split(","),g=m.length;
+for(var c=0;
+g>c;
+c++){n=m[c],R(n)||L.push({media:n.split("(")[0].match(V.regex.only)&&RegExp.$2||"all",rules:K.length-1,hasquery:n.indexOf("(")>-1,minw:n.match(V.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:n.match(V.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})
+}}C()
+},A=function(){if(U.length){var a=U.shift();
+S(a.href,function(b){B(b,a.href,a.media),I[a.href]=!0,X.setTimeout(function(){A()
+},0)
+})
+}},z=function(){for(var a=0;
+a<E.length;
+a++){var j=E[a],i=j.href,h=j.media,d=j.rel&&"stylesheet"===j.rel.toLowerCase();
+i&&d&&!I[i]&&(j.styleSheet&&j.styleSheet.rawCssText?(B(j.styleSheet.rawCssText,i,h),I[i]=!0):(!/^([a-zA-Z:]*\/\/)/.test(i)&&!F||i.replace(RegExp.$1,"").split("/")[0]===X.location.host)&&("//"===i.substring(0,2)&&(i=X.location.protocol+i),U.push({href:i,media:h})))
+}A()
+};
+z(),V.update=z,V.getEmValue=D,X.addEventListener?X.addEventListener("resize",W,!1):X.attachEvent&&X.attachEvent("onresize",W)
+}}(this);
+SupportDialogListener={};
+function displayErrorMessages(a){showErrorMessage(a);
+return false
+}SupportDialogListener=(function(){var D=function(S){var W=CQ.utils.WCM.getPagePath();
+var M=W+"/jcr:content/par/driversanddownloadsb/bladeTitle";
+var P=d(M);
+if(P){S.getField("./bladeTitle").setValue(P);
+var X=P.trim().replace(/\s+/g,"-");
+S.getField("./jumplinktargetname").setValue(X)
+}else{var R=f("driversAndDownloadsBlade","bladeTitle");
+S.getField("./bladeTitle").setValue(R);
+var L=R.trim().replace(/\s+/g,"-");
+S.getField("./jumplinktargetname").setValue(L)
+}var Q=W+"/jcr:content/par/driversanddownloadsb/buttonText";
+var V=d(Q);
+if(V){S.getField("./buttonText").setValue(V)
+}else{var O=f("driversAndDownloadsBlade","buttonText");
+S.getField("./buttonText").setValue(O)
+}var U=W+"/jcr:content/par/driversanddownloadsb/buttonUrl";
+var T=d(U);
+if(T){S.getField("./buttonUrl").setValue(T)
+}else{var N=f("driversAndDownloadsBlade","targetUrl");
+S.getField("./buttonUrl").setValue(N)
+}};
+var A=function(L){var M=L.getField("./buttonText").getValue();
+if(!M){showErrorMessage("You must enter Button Text");
+return false
+}};
+var a=function(V){var ab=CQ.utils.WCM.getPagePath();
+var N=ab+"/jcr:content/par/productspecification/bladeTitle";
+var S=d(N);
+if(S){V.getField("./bladeTitle").setValue(S);
+var Z=S.trim().replace(/[^a-z\d]+/gi,"").toLowerCase();
+V.getField("./jumplinkTargetName").setValue(Z)
+}else{var U=f("productSpecificationsBlade","bladeTitle");
+V.getField("./bladeTitle").setValue(U);
+var Z=U.trim().replace(/[^a-z\d]+/gi,"").toLowerCase();
+V.getField("./jumplinkTargetName").setValue(Z)
+}var T=ab+"/jcr:content/par/productspecification/buttonText";
+var aa=d(T);
+if(aa){V.getField("./buttonText").setValue(aa)
+}else{var Q=f("productSpecificationsBlade","buttonText");
+V.getField("./buttonText").setValue(Q)
+}var Y=ab+"/jcr:content/par/productspecification/buttonUrl";
+var X=d(Y);
+if(X){V.getField("./buttonUrl").setValue(X)
+}else{var O=u("supportUrls","arkUrl");
+var W=v();
+var M="products/";
+var R="75121";
+var L;
+if(W.toLowerCase()==="en"){L=O
+}else{L=O+W+"/"
+}var P=L.concat(M+R);
+V.getField("./buttonUrl").setValue(P)
+}};
+var s=function(L){var M=L.getField("./buttonText").getValue();
+if(!M){showErrorMessage("Validation Failed:  You must enter Button Text");
+return false
+}};
+function b(){url=window.location.href;
+var O="";
+if(null!=url||""!=url||"undefined"!=url){var P=url.split("/");
+var M;
+var L;
+for(var N=0;
+N<P.length;
+N++){if("www"==P[N]){M=N+1;
+L=N+2;
+var Q=P[M];
+var R=P[L];
+O=Q.toUpperCase()+"/"+R.toLowerCase();
+break
+}}if(""==O){O="US/en"
+}}else{O="US/en"
+}return O
+}function u(S,M){var W="/content/data/globalelements/";
+var P="US/en";
+var T=b();
+var V="/support/support_site_settings/jcr:content/propnode/";
+var N="/componentproperty/";
+var L=W+T+V+S+N+M;
+var R=W+P+V+S+N+M;
+var U="/valueLocal";
+var Q="/defaultValue";
+var O;
+if((O=d(L+U))){return O
+}else{if((O=d(L+Q))){return O
+}else{if((O=d(R+U))){return O
+}else{if((O=d(R+Q))){return O
+}}}}return O
+}function f(S,M){var X="/content/data/globalelements/";
+var P="US/en";
+var T=b();
+var W="/global-text/category_support/jcr:content/propnode/";
+var N="/componentproperty/";
+var L=X+T+W+S+N+M;
+var R=X+P+W+S+N+M;
+var V="/valueLocal";
+var U="/value";
+var Q="/defaultValue";
+var O;
+if((O=d(L+V))){return O
+}else{if((O=d(L+U))){return O
+}else{if((O=d(L+Q))){return O
+}else{if((O=d(R+V))){return O
+}else{if((O=d(R+U))){return O
+}else{if((O=d(R+Q))){return O
+}}}}}}return O
+}function d(L){return CQ.utils.HTTP.get(L).responseText
+}function I(L,M){return L.indexOf(M)>-1
+}function v(){var L=b().toLowerCase();
+var N="en";
+if(L!=null&&L.length>0){var M=L.lastIndexOf("/");
+if(M>0){N=L.substring(M+1).toLowerCase();
+if(N.length>1){if(I(N,"es")){N="es"
+}else{if(I(N,"ru")){N="ru"
+}else{if(I(N,"pt")){N="pt-BR"
+}else{if(I(N,"ko")){N="ko"
+}else{if(I(N,"ja")){N="ja"
+}else{if(I(N,"cn")){N="zh-CN"
+}else{if(I(N,"tw")){N="zh-TW"
+}else{if(I(N,"de")){N="de"
+}else{if(I(N,"fr")){N="fr"
+}else{if(I(N,"it")){N="it"
+}else{N="en"
+}}}}}}}}}}}else{N="en"
+}}}return N
+}var x=function(N){var M=N.findParentByType("dialog");
+var L=M.getField("./level").getValue();
+if(L=="First"){M.getField("./epmId").hide();
+M.getField("./isLockDisplayed").hide()
+}if(L=="Second"){M.getField("./epmId").show();
+M.getField("./isLockDisplayed").show()
+}};
+var l=function(M){var L=M.getField("./level").getValue();
+if(L=="First"){M.getField("./epmId").hide();
+M.getField("./isLockDisplayed").hide()
+}if(L=="Second"){M.getField("./epmId").show();
+M.getField("./isLockDisplayed").show()
+}};
+var c=function(N){var R=["heading","processor_multiAddText","processor_ctaButtonText","ssd_multiAddText","ssd_ctaButtonText","board_multiAddText","board_ctaButtonText","other_multiAddText","other_ctaButtonText","results_linkText","results_ctaButtonText"];
+var O=CQ.utils.WCM.getPagePath();
+for(var M=0;
+M<R.length;
+M++){var L=O+"/jcr:content/par/supportwarrantyblade/"+R[M];
+var P=d(L);
+if(P){N.getField("./"+R[M]).setValue(P)
+}else{var Q=f("supportWarrantyBlade",R[M]);
+N.getField("./"+R[M]).setValue(Q)
+}}};
+function B(L){return L.findParentByType("dialog")
+}function C(M,L){M.setVisible(L)
+}var i=function(O){var N=O.getField("./downloadsDrivers").getValue();
+var L=O.getField("./community").getValue();
+var M=O.getField("./productSpecifications").getValue();
+if(String(N)!=="true"&&String(L)!=="true"&&String(M)!=="true"){showErrorMessage("At least one Tile must be selected for display in order to save the configuration changes and close dialog");
+return false
+}};
+var F=function(M){var N=M.getField("./isvckmDrivers").getValue();
+var L=M.getField("./enableTopDnD").getValue();
+if(String(N)==="NO"&&String(L)==="true"){M.getField("./enableTopDnD").setValue("")
+}};
+var r=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./supportCommunityTitle"),true);
+C(L.getField("./supportLinkUrl"),true);
+C(L.getField("./supportIcon"),true);
+C(L.getField("./supportDescription"),true);
+C(L.getField("./supportLinkUrlTarget"),true)
+}else{C(L.getField("./supportCommunityTitle"),false);
+C(L.getField("./supportLinkUrl"),false);
+C(L.getField("./supportIcon"),false);
+C(L.getField("./supportDescription"),false);
+C(L.getField("./supportLinkUrlTarget"),false)
+}};
+var p=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./supportFacebookTitle"),true);
+C(L.getField("./supportFacebookUrl"),true);
+C(L.getField("./supportFacebookIcon"),true);
+C(L.getField("./supportFacebookDescription"),true);
+C(L.getField("./supportFaceebookUrlTarget"),true)
+}else{C(L.getField("./supportFacebookTitle"),false);
+C(L.getField("./supportFacebookUrl"),false);
+C(L.getField("./supportFacebookIcon"),false);
+C(L.getField("./supportFacebookDescription"),false);
+C(L.getField("./supportFaceebookUrlTarget"),false)
+}};
+var G=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./twitterTitle"),true);
+C(L.getField("./twitterUrl"),true);
+C(L.getField("./twitterIcon"),true);
+C(L.getField("./twitterDescription"),true);
+C(L.getField("./twitterUrlTarget"),true)
+}else{C(L.getField("./twitterTitle"),false);
+C(L.getField("./twitterUrl"),false);
+C(L.getField("./twitterIcon"),false);
+C(L.getField("./twitterDescription"),false);
+C(L.getField("./twitterUrlTarget"),false)
+}};
+var j=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./youtubeTitle"),true);
+C(L.getField("./youtubeUrl"),true);
+C(L.getField("./youtubeIcon"),true);
+C(L.getField("./youtubeDescription"),true);
+C(L.getField("./youtubeUrlTarget"),true)
+}else{C(L.getField("./youtubeTitle"),false);
+C(L.getField("./youtubeUrl"),false);
+C(L.getField("./youtubeIcon"),false);
+C(L.getField("./youtubeDescription"),false);
+C(L.getField("./youtubeUrlTarget"),false)
+}};
+var K=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./onlineServiceTitle"),true);
+C(L.getField("./onlineServiceUrl"),true);
+C(L.getField("./onlineServiceIcon"),true);
+C(L.getField("./onlineServiceDescription"),true);
+C(L.getField("./onlineServiceUrlTarget"),true)
+}else{C(L.getField("./onlineServiceTitle"),false);
+C(L.getField("./onlineServiceUrl"),false);
+C(L.getField("./onlineServiceIcon"),false);
+C(L.getField("./onlineServiceDescription"),false);
+C(L.getField("./onlineServiceUrlTarget"),false)
+}};
+var e=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./emailTitle"),true);
+C(L.getField("./emailUrl"),true);
+C(L.getField("./emailIcon"),true);
+C(L.getField("./emailDescription"),true);
+C(L.getField("./emailUrlTarget"),true)
+}else{C(L.getField("./emailTitle"),false);
+C(L.getField("./emailUrl"),false);
+C(L.getField("./emailIcon"),false);
+C(L.getField("./emailDescription"),false);
+C(L.getField("./emailUrlTarget"),false)
+}};
+var H=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./preSalesTitle"),true);
+C(L.getField("./preSalesUrl"),true);
+C(L.getField("./preSalesIcon"),true);
+C(L.getField("./preSalesDescription"),true);
+C(L.getField("./preSalesUrlTarget"),true)
+}else{C(L.getField("./preSalesTitle"),false);
+C(L.getField("./preSalesUrl"),false);
+C(L.getField("./preSalesIcon"),false);
+C(L.getField("./preSalesDescription"),false);
+C(L.getField("./preSalesUrlTarget"),false)
+}};
+var n=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./chatTitle"),true);
+C(L.getField("./chatUrl"),true);
+C(L.getField("./chatIcon"),true);
+C(L.getField("./chatDescription"),true);
+C(L.getField("./chatUrlTarget"),true)
+}else{C(L.getField("./chatTitle"),false);
+C(L.getField("./chatUrl"),false);
+C(L.getField("./chatIcon"),false);
+C(L.getField("./chatDescription"),false);
+C(L.getField("./chatUrlTarget"),false)
+}};
+var E=function(M){var L=B(M);
+if(String(M.getValue())==="true"){C(L.getField("./phoneIcon"),true);
+C(L.getField("./phoneDescription"),true);
+C(L.getField("./phoneTitle"),true)
+}else{C(L.getField("./phoneIcon"),false);
+C(L.getField("./phoneDescription"),false);
+C(L.getField("./phoneTitle"),false)
+}};
+var k=function(M){var L=M.findParentByType("dialog");
+var N=L.getField("./product");
+var O=L.getField("./notificationType").getValue();
+N.allowBlank=O!=="IP&M Product Alert"
+};
+var z=function(M){for(var L=0;
+L<M.length;
+L++){if(M[L].indexOf("/")===-1){return displayErrorMessages("EPM L1 product category pages are not allowed for IP&M Product Alert. Please remove any EPM L1 from product list.")
+}}return true
+};
+var o=function(L){L.allowBlank=false;
+if(null!=L&&L.length>0){var M=z(L);
+if(!M){return false
+}}else{return displayErrorMessages("Verify the values of the marked fields")
+}return true
+};
+function y(N){var L=true;
+var O=N.getField("./startTime").getValue();
+var M=N.getField("./endTime").getValue();
+if((O==null||O==="")&&M!==""){showErrorMessage("On time is required when off time is set.");
+L=false
+}if(L&&(M==null||M==="")&&O!==""){showErrorMessage("Off time is required when on time is set.");
+L=false
+}if(L&&(O>M)){showErrorMessage("Please provide a valid date/time range.");
+L=false
+}return L
+}var m=function(L){var N=L.getField("./product").getValue();
+var O=L.getField("./notificationType").getValue();
+if(O==="IP&M Product Alert"){var M=o(N);
+if(!M){return false
+}}else{N.allowBlank=true
+}return y(L)
+};
+function J(O){var L;
+if(O[0].indexOf("/")>-1){L=O[0].substring(0,O[0].indexOf("/"))
+}else{L=O[0]
+}var N=false;
+for(var M=0;
+M<O.length;
+M++){if(O[M].indexOf("/")>-1){N=true;
+break
+}}return{firstval:L,secAlert:N}
+}var h=function(M){var N=M.getField("./productPage").getValue();
+if(N!==null&&N.length>1){var L=J(N);
+if(L.secAlert===true){return q(N,L.firstval)
+}else{return g(N,L.firstval)
+}}};
+var t=function(M){var N=M.getField("./sfdcProductMap").getValue();
+if(N!==null&&N.length>1){var L=J(N);
+if(L.secAlert===true){return q(N,L.firstval)
+}else{return g(N,L.firstval)
+}}};
+function q(O,M){for(var N=0;
+N<O.length;
+N++){var L;
+if(O[N].indexOf("/")>-1){L=O[N].substring(0,O[N].indexOf("/"))
+}else{L=O[N]
+}if(M!==L){showErrorMessage("Invalid product selection. Selected product pages must have same parent (sibling product pages).");
+return false
+}}return true
+}function g(O,L){for(var N=0;
+N<O.length;
+N++){var M;
+if(O[N].indexOf("/")>-1){M=O[N].substring(0,O[N].indexOf("/"))
+}else{M=O[N]
+}if(L!==M){showErrorMessage("Multiple EPM L1 product category pages not allowed.");
+return false
+}}return true
+}var w=function(){var N=CQ.Ext.getCmp("multifieldProductCategories");
+var L=N.minLimit;
+var M=N.findByType("pathfield").length;
+if(M<L){showErrorMessage("Configure at least "+L+" product category.");
+return false
+}return true
+};
+return{driversAndDownloads:D,newDriversAndDownload:A,productSpecifications:a,productSpecificationsValidation:s,supportUtilityBarDataEntry:x,supportUtilityBar:l,loadWarranty:c,supportTilesValidation:i,checkDownloadsFlag:F,contactUsDataEntrySupport:r,contactUsDataEntryFacebook:p,contactUsDataEntryTwitter:G,contactUsDataEntryYouTube:j,contactUsDataEntryOnlineService:K,contactUsDataEntryEmail:e,contactUsDataEntryEmailPreSales:H,contactUsDataEntryChat:n,contactUsDataEntryPhone:E,notificationFieldDisplay:k,getProducts:m,getProductsPage:h,getSfdcProductMap:t,checkProductCategoryFields:w}
+})();
+var _ContactSupport;
+_ContactSupport={lastHash:"",showProductDetails:function(a){jQuery(".rwd .contact-support-detail").hide(0);
+jQuery("#contact-support-detail-"+a).show(0,function(){});
+jQuery(".rwd .contact-support-details").slideDown("fast",function(){jQuery("html, body").animate({scrollTop:jQuery(".rwd .contact-support-details").offset().top-112},"fast")
+});
+var b;
+b="#@"+a;
+document.location.hash=b
+}};
+jQuery(document).ready(function(){jQuery(".rwd .contact-support-products ul.products li a.details-cta").click(function(){_ContactSupport.showProductDetails(jQuery(this).data("type"))
+})
+});
+jQuery(window).on("hashchange",function(){var a=String(document.location.hash);
+if(a.length>0){a=a.replace(/[#<>&.?{}]/g,"");
+if(_ContactSupport.lastHash!==a){a=a.replace("@","");
+if(jQuery("#contact-support-detail-"+a).length>0){_ContactSupport.showProductDetails(a)
+}}}else{jQuery(".rwd .contact-support-details").hide()
+}});
+$(window).load(function(){if(typeof liveAgentConstants!=="undefined"){$.getScript(liveAgentConstants.deploymentScript,function(){var b="online_";
+var c="offlineID_";
+var a=JSON.parse(contactsupportJson1);
+if(!window._laq){window._laq=[]
+}window._laq.push(function(){for(var d=0;
+d<a.productList.length;
+d++){if(a.productList[d].chatUrl!==""){liveagent.showWhenOffline(a.productList[d].chatUrl,document.getElementById(c+a.productList[d].productIndex));
+liveagent.showWhenOnline(a.productList[d].chatUrl,document.getElementById(b+a.productList[d].productIndex))
+}}});
+liveagent.setChatWindowWidth(800);
+liveagent.setChatWindowHeight(1000);
+liveagent.init(liveAgentConstants.liveCharUrl,liveAgentConstants.deploymentId,liveAgentConstants.orgId)
+})
+}});
+var rootApp=angular.module("rootApp",[]);
+var onResearchUrl;
+var url;
+var feedbackFunction=feedbackFunction||{};
+rootApp.controller("feedbackController",["$scope","$http",function(a,b){a.formData={};
+a.formData.onYesNo=0;
+a.isNumeric=function(c){var d=c.which?c.which:c.keyCode;
+if(d===64||d===40||d===41||d===45){c.preventDefault()
+}};
+a.onYesNoClick=function(c){a.formData.onYesNo=c
+};
+a.onCurrentUrl=function(){a.formData.onCUrl=window.location.href
+};
+a.onLang=function(){url=window.location.href;
+var f="";
+if(null!==url&&""!==url&&"undefined"!==url){var g=url.split("/");
+var d;
+var c;
+for(var e=0;
+e<g.length;
+e++){if("www"===g[e]){d=e+1;
+c=e+2;
+var h=g[d];
+var l=g[c];
+f=l.toLowerCase()+"-"+h.toUpperCase();
+break
+}}if(""===f){f="en-US"
+}}else{f="en-US"
+}a.formData.onLang=f
+};
+$(".blade-support-feedback button").unbind("click").on("click",function(f){f.preventDefault();
+a.onCurrentUrl();
+a.onLang();
+var d=$(".support-feedback-form"),c=$(".support-feedback-sent"),g=$(".support-feedback-content");
+a.processForm();
+a.formData.onLang="";
+a.formData.onCUrl="";
+a.formData.onComment="";
+a.formData.onYesNo=0;
+$("#feedback-character-count").text("500");
+$("#useful-information-yes").attr("checked",false);
+$("#useful-information-no").attr("checked",false);
+d.toggle();
+c.toggle();
+setTimeout(function(){g.addClass("closing");
+setTimeout(function(){$(".support-feedback-content").removeClass("closing expanded").attr("style","display:none;");
+$(".blade-support-feedback .feedback-title").removeClass("expanded");
+$(".feedback-title").removeClass("col-sm-12").addClass("col-sm-10");
+d.toggle();
+c.toggle();
+window.localStorage.setItem("autoFeedBackOpen",false)
+},1000)
+},2000)
+});
+a.processForm=function(){if(window.location.protocol==="http:"){onResearchUrl=onResearchHttpUrl
+}else{onResearchUrl=onResearchHttpsUrl
+}b({method:"POST",url:onResearchUrl,headers:{"Content-Type":"application/x-www-form-urlencoded"},data:$.param(a.formData)}).success(function(c){})
+}
+}]);
+rootApp.controller("downloadControl",["$scope","downloadDriversResults",function(a,b){a.mainCollapse=false;
+a.viewAllUrlUpdated=viewAllUrl+"/"+epmid;
+b.resultData(epmid,driversUrl,function(d){angular.forEach(d.ResultsForDisplay,function(l){if(null!=l.PublishDateMMDDYYYY){var f=l.PublishDateMMDDYYYY;
+var g=f.split("-");
+var i=window.location.href;
+var n=i.split("content/www/");
+var j=n[1].split("/");
+var m=j[1]+"_"+j[0];
+if("es_xl"===m.toLowerCase()||"fr_fr"===m.toLowerCase()||"it_it"===m.toLowerCase()||"pt_br"===m.toLowerCase()){l.PublishDateMMDDYYYY=g[1]+"/"+g[0]+"/"+g[2]
+}else{if("ru_ru"===m.toLowerCase()||"de_de"===m.toLowerCase()){l.PublishDateMMDDYYYY=g[1]+"."+g[0]+"."+g[2]
+}else{if("ko_kr"===m.toLowerCase()){l.PublishDateMMDDYYYY=g[2]+"-"+g[0]+"-"+g[1]
+}else{if("zh_cn"===m.toLowerCase()||"zh_tw"===m.toLowerCase()){var k=$("input[name=chineseYear]").val().toString();
+var h=k.split("_");
+l.PublishDateMMDDYYYY=g[2]+" "+h[0]+" "+g[0]+" "+h[1]+" "+g[1]+" "+h[2]
+}else{if("ja_jp"===m.toLowerCase()){l.PublishDateMMDDYYYY=g[2]+"/"+g[0]+"/"+g[1]
+}else{l.PublishDateMMDDYYYY=g[0]+"/"+g[1]+"/"+g[2]
+}}}}}}});
+a.downloadResult=d.ResultsForDisplay;
+if(a.downloadResult!==null&&a.downloadResult!==""&&a.downloadResult.length!==0){a.mainCollapse=true;
+for(var c=0;
+c<a.downloadResult.length;
+c++){var e=a.downloadResult[c].InIduu;
+if(e===true){a.iniduu=true;
+$("#iniduuDiv").addClass("visible-md visible-lg");
+break
+}}}})
+}]);
+rootApp.controller("productSpecControl",["$scope","ProdSpecService",function(b,d){var a;
+var c=4;
+if(window.location.protocol==="http:"){a=arkUrlDefaultHttp
+}else{a=arkUrlDefaultHttps
+}if(locale!=="en"){a=a+"/"+locale+"/"+level+"/JsonData/"+epmId
+}else{a=a+"/"+level+"/JsonData/"+epmId
+}a=a.trim();
+b.size="";
+b.limit=c;
+b.showFlag=true;
+d.loadData(a,function(e){b.newJSON=e;
+b.eachValue=b.newJSON.data;
+b.size=b.eachValue.length;
+b.increaseLimit=function(){b.limit=b.size;
+b.showFlag=!b.showFlag
+};
+b.decreaseLimit=function(){b.limit=c;
+b.showFlag=!b.showFlag
+}
+})
+}]);
+function showHideChat(a){var c="outer_";
+var d="online_";
+var e="offlineID_";
+for(var b=0;
+b<a.productList.length;
+b++){if(a.productList[b].productIndex!==a.productIndex){$("#"+c+a.productList[b].productIndex).hide()
+}else{if(a.chatUrl!==""&&a.chatUrl!=null){$("#"+c+a.productList[b].productIndex).show()
+}else{$("#"+c+a.productList[b].productIndex).show();
+$("#"+d+a.productList[b].productIndex).hide();
+$("#"+e+a.productList[b].productIndex).show()
+}}}$("#chat_"+a.productIndex).bind("click",function(){liveagent.startChat(a.chatUrl)
+})
+}function productSelectorModule(a,b){a.productSelector=function(c,d){a.enableSupport=false;
+a.enableSupportFacebook=false;
+a.enableTwitter=false;
+a.enableYouTube=false;
+a.enableOnlineService=false;
+a.enableEmail=false;
+a.enableEmailPreSales=false;
+a.enableChat=false;
+a.enablePhone=false;
+a.productIndex=c;
+a.productName=a.productList[a.productIndex].productName;
+a.Title=a.productList[a.productIndex].title;
+a.Description=a.productList[a.productIndex].description;
+a.supportTitle=a.productList[a.productIndex].supportTitle;
+a.enableSupport=(a.productList[a.productIndex].enableSupport===b);
+a.supportCommunityTitle=a.productList[a.productIndex].supportCommunityTitle;
+a.supportLinkUrl=a.productList[a.productIndex].supportLinkUrl;
+a.supportIcon=a.productList[a.productIndex].supportIcon;
+a.supportDescription=a.productList[a.productIndex].supportDescription;
+a.supportAltText=a.productList[a.productIndex].supportCommunityTitle;
+a.supportLinkUrlTarget=(a.productList[a.productIndex].supportLinkUrlTarget===b);
+a.enableSupportFacebook=(a.productList[a.productIndex].enableSupportFacebook===b);
+a.supportFacebookTitle=a.productList[a.productIndex].supportFacebookTitle;
+a.supportFacebookUrl=a.productList[a.productIndex].supportFacebookUrl;
+a.supportFacebookIcon=a.productList[a.productIndex].supportFacebookIcon;
+a.supportFacebookDescription=a.productList[a.productIndex].supportFacebookDescription;
+a.supportFacebookAltText=a.productList[a.productIndex].supportFacebookTitle;
+a.supportFaceebookUrlTarget=(a.productList[a.productIndex].supportFaceebookUrlTarget===b);
+a.enableTwitter=(a.productList[a.productIndex].enableTwitter===b);
+a.twitterTitle=a.productList[a.productIndex].twitterTitle;
+a.twitterUrl=a.productList[a.productIndex].twitterUrl;
+a.twitterIcon=a.productList[a.productIndex].twitterIcon;
+a.twitterDescription=a.productList[a.productIndex].twitterDescription;
+a.twitterAltText=a.productList[a.productIndex].twitterTitle;
+a.twitterUrlTarget=(a.productList[a.productIndex].twitterUrlTarget===b);
+a.enableYouTube=(a.productList[a.productIndex].enableYouTube===b);
+a.youtubeTitle=a.productList[a.productIndex].youtubeTitle;
+a.youtubeUrl=a.productList[a.productIndex].youtubeUrl;
+a.youtubeIcon=a.productList[a.productIndex].youtubeIcon;
+a.youtubeDescription=a.productList[a.productIndex].youtubeDescription;
+a.youtubeAltText=a.productList[a.productIndex].youtubeTitle;
+a.youtubeUrlTarget=(a.productList[a.productIndex].youtubeUrlTarget===b);
+a.enableOnlineService=(a.productList[a.productIndex].enableOnlineService===b);
+a.onlineServiceTitle=a.productList[a.productIndex].onlineServiceTitle;
+a.onlineServiceUrl=a.productList[a.productIndex].onlineServiceUrl;
+a.onlineServiceIcon=a.productList[a.productIndex].onlineServiceIcon;
+a.onlineServiceDescription=a.productList[a.productIndex].onlineServiceDescription;
+a.onlineServiceAltText=a.productList[a.productIndex].onlineServiceTitle;
+a.onlineServiceUrlTarget=(a.productList[a.productIndex].onlineServiceUrlTarget===b);
+a.enableEmail=(a.productList[a.productIndex].enableEmail===b);
+a.emailTitle=a.productList[a.productIndex].emailTitle;
+a.emailUrl=a.productList[a.productIndex].emailUrl;
+a.emailIcon=a.productList[a.productIndex].emailIcon;
+a.emailDescription=a.productList[a.productIndex].emailDescription;
+a.emailAltText=a.productList[a.productIndex].emailTitle;
+a.emailUrlTarget=(a.productList[a.productIndex].emailUrlTarget===b);
+a.enableEmailPreSales=(a.productList[a.productIndex].enableEmailPreSales===b);
+a.preSalesTitle=a.productList[a.productIndex].preSalesTitle;
+a.preSalesUrl=a.productList[a.productIndex].preSalesUrl;
+a.preSalesIcon=a.productList[a.productIndex].preSalesIcon;
+a.preSalesDescription=a.productList[a.productIndex].preSalesDescription;
+a.preSalesAltText=a.productList[a.productIndex].preSalesTitle;
+a.preSalesUrlTarget=(a.productList[a.productIndex].preSalesUrlTarget===b);
+a.enableChat=(a.productList[a.productIndex].enableChat===b);
+a.chatTitle=a.productList[a.productIndex].chatTitle;
+a.chatUrl=a.productList[a.productIndex].chatUrl;
+a.chatIcon=a.productList[a.productIndex].chatIcon;
+a.chatDescription=a.productList[a.productIndex].chatDescription;
+a.chatAltText=a.productList[a.productIndex].chatTitle;
+a.chatUrlTarget=(a.productList[a.productIndex].chatUrlTarget===b);
+a.enablePhone=(a.productList[a.productIndex].enablePhone===b);
+a.phoneTitle=a.productList[a.productIndex].phoneTitle;
+a.phoneIcon=a.productList[a.productIndex].phoneIcon;
+a.phoneDescription=a.productList[a.productIndex].phoneDescription;
+a.phoneAltText=a.productList[a.productIndex].phoneTitle;
+a.topTopics=a.productList[a.productIndex].topTopics;
+a.topTopicsLst=a.productList[a.productIndex].topTopicsLst;
+a.productPageMap=a.productList[a.productIndex].productPageMap;
+a.productPage=a.productList[a.productIndex].productPage;
+a.sfdcProductMap=a.productList[a.productIndex].sfdcProductMap;
+a.sfdcProductPagePath=a.productList[a.productIndex].sfdcProductPagePath;
+a.epmIdNodeId="";
+a.outerIndex=d;
+showHideChat(a)
+}
+}function setOnlineServiceUrl(a){if(a.epmIdNodeId!==""&&a.onlineServiceUrl!==""){if(a.onlineServiceUrl.indexOf("?lang")>-1){var b="&";
+if(a.onlineServiceUrl.indexOf("RelayState")>-1){b=encodeURIComponent("&")
+}a.onlineServiceUrl=a.onlineServiceUrl+b+a.epmIdNodeId
+}else{a.onlineServiceUrl=a.onlineServiceUrl+"?"+a.epmIdNodeId
+}}}function setCtaEpmIdPath(b){var g=window.location.href;
+if(g.indexOf("/support/products")!==-1){var f=document.getElementById("epmidList").value;
+f=f.substring(1,f.length-1);
+var e=f.split(",");
+var d="";
+for(var a=e.length-1;
+a>0;
+a--){d=d+e[a].trim()+","
+}d=d+e[0].trim();
+var c=$(b).attr("href");
+if(c.indexOf("?productId")===-1){c=c+"?productId="+d
+}$(b).attr("href",c)
+}}function productIdmapModule(a){a.productIdMap=function(c,i,g,e){if(""!==i&&i.indexOf("-")>-1&&""===i.split("-")[1]){g=c;
+e=i
+}var b=getCookie("ctaAutoPagePath");
+var f=getCookie("ctaMainProductId");
+if(""!==b){if(""!==e){var h=e.replace("-","");
+var d=validateIsSameProductClicked(b,h);
+if(d){a.epmIdNodeId="productId="+f
+}else{a.epmIdNodeId="productId="+g
+}}else{a.epmIdNodeId=""
+}}else{if(""!==g){a.epmIdNodeId="productId="+g
+}else{a.epmIdNodeId=""
+}}setOnlineServiceUrl(a)
+}
+}rootApp.controller("locationController",["$scope",function(b){var f=JSON.parse(contactsupportJson1);
+var d="true";
+b.productList=f.productList;
+b.productCategories=f.productCategories;
+b.htmlConvert=function(i,h){document.getElementById(i).innerHTML=h
+};
+productSelectorModule(b,d);
+b.isExists=function(h,i){return h.indexOf(i)>-1
+};
+productIdmapModule(b);
+var e=productId;
+if(""!==e){var g=JSON.parse(contactsupportJson1);
+var a=g.productList;
+var c=contactSupportAutoSelect(e,a);
+if(""!==c){b.productSelector(c.split("_")[1]);
+setTimeout(function(){jQuery("#"+c).click()
+},1000)
+}}}]);
+var familyProduct;
+rootApp.controller("productController",["$scope","$http",function(a){a.main=false;
+a.child=false;
+String.prototype.escapeSpecialChars=function(){return this.replace(/\n/g,"\\n").replace(/'/g,"'").replace(/&/g,"&").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(/\f/g,"\\f").replace(/&#44;/g,"'")
+};
+if(null!==familyProduct&&""!==familyProduct){familyProduct=familyProduct.escapeSpecialChars();
+a.getResult=JSON.parse(familyProduct);
+if(a.getResult[0].productFamily!==""){if(template==="/apps/intel/support/template/topicdetail"){a.newProduct=a.getResult[0].productFamily;
+a.main=true
+}else{if(template==="/apps/intel/support/template/supportDynamicHubPage"){a.newProductLine=a.getResult[0].productFamily;
+a.main=false;
+a.child=true
+}}}}}]);
+function linkToEmailArticle(e){var f=INTEL.I18n["category_support.pageTools.subjectLine"];
+var b=INTEL.I18n["category_support.pageTools.bodyLine"];
+var a="%0D%0A";
+var c=window.location.href;
+var d=b+" "+e+a+c;
+$("#linkToEmailArticle").attr("href","mailto:&subject="+f+"&body="+d)
+}function createPrintWindow(b,a){b.document.write("<html><head><title>Print Article</title>");
+b.document.write("</head><body >");
+b.document.write(a);
+b.document.write("</body></html>");
+b.document.close();
+b.print()
+}jQuery("#linkToPrintArticle").click(function(){var c=navigator.userAgent;
+var a=jQuery("#printableArea").html();
+var b;
+if((c.indexOf("MSIE"))!==-1||(c.indexOf("Trident/"))!==-1){b=window.open("","","height=400,width=800,scrollbars=yes");
+createPrintWindow(b,a)
+}else{if(jQuery.browser.chrome){window.print()
+}else{b=window.open("","","height=400,width=800,scrollbars=yes");
+createPrintWindow(b,a);
+b.close()
+}}});
+jQuery(function(){jQuery("a").each(function(){if(jQuery(this).attr("href")){if(jQuery('a[href*="/support/solidstate-drives"]')){jQuery(this).attr("href",jQuery(this).attr("href").replace("/support/solidstate-drives","/support/solid-state-drives"))
+}if(jQuery('a[href*="/support/network-and-io"]')){jQuery(this).attr("href",jQuery(this).attr("href").replace("/support/network-and-io","/support/network-and-i-o"))
+}}if(jQuery(this).attr("ng-href")){if(jQuery('a[ng-href*="/support/solidstate-drives"]')){jQuery(this).attr("ng-href",jQuery(this).attr("ng-href").replace("/support/solidstate-drives","/support/solid-state-drives"))
+}if(jQuery('a[ng-href*="/support/network-and-io"]')){jQuery(this).attr("ng-href",jQuery(this).attr("ng-href").replace("/support/network-and-io","/support/network-and-i-o"))
+}}})
+});
+jQuery(function(){jQuery("#searchDrop").focusin(function(){jQuery(".predictive-search-dropdown").hide()
+})
+});
+jQuery(function(){var b=jQuery("#calcLine").height();
+var c=parseInt(jQuery("#calcLine").css("line-height"),10);
+var a=Math.round(b/parseInt(c));
+if(a===2){jQuery("#calcLine").addClass("paddind-two-lines")
+}});
+function setDelay(a){if(a>0){setTimeout(function(){var b=window.localStorage.getItem("autoFeedBackOpen");
+if(b===null||b===true){$(".support-feedback-content").addClass("expanded").attr("style","display:block;");
+$(".feedback-title").removeClass("col-sm-10").addClass("col-sm-12 expanded")
+}},1000*a)
+}}jQuery(function(){if(typeof INTEL!=="undefined"){var c;
+try{c=INTEL.SupportSettings["feedback.delayValue"]
+}catch(b){c=20
+}var a;
+if(c===undefined||c==null||isNaN(c)||c<=0){a=0
+}else{a=c
+}setDelay(a)
+}});
+jQuery(function(){if(navigator.userAgent.match(/msie/i)){$(".searchComp .btn-clear").css("right","67px")
+}});
+feedbackFunction.trimUrl=function(c){var b=c.indexOf("?");
+var a=c;
+if(b!==-1){a=c.substring(0,b)
+}return a
+};
+function setCtaAutoPath(){invalidateCookie();
+var i="";
+var f=";path=/";
+var a="expires=";
+var h=$("#ctaProdPagePath");
+if(h.length){i=h.val()
+}var e="";
+var c=$("#ctaMainProductId");
+if(c.length){e=c.val()
+}var g=window.location.protocol==="https:"?"; secure":"";
+var d=new Date();
+d.setTime(d.getTime()+(5*60*1000));
+var b=a+d.toUTCString();
+document.cookie="ctaAutoPagePath="+i+"; "+b+g+f;
+document.cookie="ctaMainProductId="+e+"; "+b+g+";path=/"
+}function getCookie(d){var b=d+"=";
+var a=document.cookie.split(";");
+for(var e=0;
+e<a.length;
+e++){var f=a[e];
+while(f.charAt(0)===" "){f=f.substring(1)
+}if(f.indexOf(b)===0){return f.substring(b.length,f.length)
+}}return""
+}function validateIsSameProductClicked(a,f){if(a.indexOf("/")>-1){var e=a.split("/");
+var d=a;
+var c=a.length;
+for(var b=e.length;
+b>0;
+b--){d=a.substr(0,c);
+if(f===d){return true
+}c=c-(e[b-1].length+1)
+}}else{if(a===f){return true
+}}return false
+}function iterateProductList(e,g,h,a){var f=g.split(",");
+for(var b=0;
+b<f.length;
+b++){for(var d=0;
+d<a.length;
+d++){var c=h[d];
+if(""!==c&&""!==f[b]&&c===f[b]){return"product_"+e
+}}}return""
+}function validateAllProducts(d,a){for(var c=0;
+c<a.length;
+c++){var e=a[c];
+var g=e.productPageMap.toString();
+if(g){var f=g.split(":");
+var b=iterateProductList(c,d,f,a);
+if(""!==b){return b
+}}}return""
+}function contactSupportAutoSelect(c,a){var b="";
+if(c!==""){b=validateAllProducts(c,a);
+if(""!==b){return b
+}}else{b=validateAllProducts(c,a)
+}return b
+}var searchBox=$("#search-query-input");
+var buttonClear=$("#support-btn-clear");
+searchBox.on("keyup",function(){var a=$(this);
+if(a.val().length!==0){buttonClear.css("display","inline-block");
+buttonClear.show()
+}else{buttonClear.hide()
+}});
+buttonClear.on("click",function(){searchBox.val("").keyup();
+$(this).hide()
+});
+$(document).ready(function(){var d=$("header.testToggle-open");
+var c="open-arrow";
+d.find(".arrow-image").on("click",function(g){var f=$(g.target);
+f.toggleClass(c);
+f.closest("div.blade").toggleClass("expanded");
+f.parent("header.testToggle-open").siblings().toggle()
+});
+var b=getCookie("tabval");
+var a=$("#"+b);
+if(b.length>0){a.find(".arrow-image").click()
+}});
+$("a").click(function(){var c=$(this).hasClass("productName");
+if(c){var g=$(this).closest("div.blade").prop("id");
+$(this).find("span.arrow-image").addClass("open-arrow");
+var a="; expires=";
+var e=window.location.protocol==="https:"?"; secure":"";
+var f=e+"; path=/";
+var b=new Date();
+b.setTime(b.getTime()+(5*60*1000));
+var d=a+b.toUTCString();
+document.cookie="tabval="+g+d+f
+}else{invalidateCookie()
+}});
+function invalidateCookie(){var d="expires=";
+var c=window.location.protocol==="https:"?"; secure":"";
+var e=c+"; path=/";
+var b=new Date();
+b.setTime(b.getTime());
+var a=d+b.toUTCString();
+document.cookie="tabval=-1; "+a+e
+}function dropdownButton(){var b=$(".supportdropdownbutton");
+var a=$(".supportdropdownbutton").attr("data-wap");
+if(a==='{"action": "collapse"}'){b.attr("data-wap",'{"action": "expand"}')
+}else{b.attr("data-wap",'{"action": "collapse"}')
+}}rootApp.service("downloadDriversResults",["$http",function(c){var b="GET";
+this.resultData=function a(e,d,f){c({method:b,url:d,params:{productId:e}}).success(function(g){f(g)
+}).error(function(g){f(g)
+})
+}
+}]);
+rootApp.service("ProdSpecService",["$http",function(a){String.prototype.escapeSpecialChars=function(){return this.replace(/\n/g,"\\n").replace(/'/g,"'").replace(/&/g,"&").replace(/\r/g,"\\r").replace(/\t/g,"\\t").replace(/\b/g,"\\b").replace(/\f/g,"\\f").replace(/"/g,'\\"')
+};
+this.loadData=function(b,d){var c=b;
+a({method:"GET",url:c,headers:{"Content-Type":"application/json; charset=UTF-8"}}).success(function(e,r){var j=e.StructuredProductInfo.length;
+var v;
+for(var u=0;
+u<j;
+u++){var s=e.StructuredProductInfo[u].Category;
+if(s==="Essentials"){v=u;
+break
+}}var o=e.StructuredProductInfo[v].Fields;
+var q=e.LocalizedFieldNames;
+var f=e.LocalizedFieldDescription;
+var w;
+var k=[];
+for(var u=0;
+u<o.length;
+u++){var h=o[u].FieldName;
+var m=o[u].FormattedValue!=undefined?o[u].FormattedValue.escapeSpecialChars():"NA";
+var t=o[u].HasToolTip;
+var g=q[h]!=undefined?q[h].escapeSpecialChars():"NA";
+var l=f[h]!=undefined?f[h].escapeSpecialChars():"NA";
+var p='{"fieldLabel":"'+g+'","fieldValue":"'+m+'"';
+if(t!=null||t!=undefined){p=p.concat(',"hasToolTip":"'+t+'","fieldDescription":"'+l+'"}')
+}else{p=p.concat("}")
+}k.push(p)
+}w='{"data":['+k+"]}";
+var n=JSON.parse(w);
+d(n)
+}).error(function(f,e){console.log("Returned with Error")
+})
+}
+}]);
+function formTable(e,k){var b=JSON.parse(productAttribute);
+var a=e[1]["result"].length;
+for(var f=0;
+f<a;
+f++){var n="false";
+var g="";
+var o="<td>";
+var l="</td>";
+var m;
+if(f<5){m=""
+}else{m="showhide"
+}g+='<tr id="row_'+f+'" class="hidden '+m+' ">'+o+'<a href="'+e[2]["arkUrl"]+e[1]["result"][f]["product_id"]+'">'+e[1]["result"][f]["product_name"]+"</a>"+l;
+var h="highlights";
+var c=e[1]["result"][f][h].length;
+for(var d=0;
+d<c;
+d++){if(b["i"+d]!=="undefined"&&b["i"+d]==="true"&&e[1]["result"][f][h][d]!==""){g+=o+e[1]["result"][f][h][d]+l;
+$("#head_"+d).removeClass(k);
+$("#productSpec").removeClass(k);
+n="true"
+}else{g+=o+""+l
+}}if(g!==""){g+="</tr>";
+$("#spec").append(g).removeClass(k)
+}if(n==="true"){$("#row_"+f).removeClass(k)
+}}}var seeLess="#seeless";
+var seeAll="#seeall";
+var showHide=".showhide";
+var hiddenVar="hidden";
+var none="none";
+var display="display";
+var inlineBlock="inline-block";
+function executeData(e){if(e){var c="";
+var a=e[0]["displayName"];
+var d=a.split(",");
+for(var b=0;
+b<d.length;
+b++){c+='<th id="head_'+b+'" class="header hidden" onclick="sortTable('+b+')">'+d[b]+"</th>"
+}if(c!==""){$("#productSpec").find(">thead>tr").append(c).removeClass(hiddenVar)
+}formTable(e,hiddenVar)
+}}$(document).ready(function(){if(typeof productAttribute!=="undefined"){var b="/libs/apps/intel/support/product/pim?category_id="+epmid+"&locale="+globalSearch.locale;
+$.ajax({async:false,type:"GET",url:b,dataType:"json",contentType:"application/json"}).done(function(d){executeData(d)
+});
+var c=$("#productSpec");
+var a=$("#showmoreless");
+if(c.hasClass(hiddenVar)){$("#dataMsg").removeClass(hiddenVar);
+a.addClass(hiddenVar)
+}else{a.removeClass(hiddenVar)
+}c.find("tr th").each(function(d){var e=$(this).parents("table").find("tr td:nth-child("+(d+1)+")");
+if(e.length===e.filter(":empty").length){$(this).hide();
+e.hide()
+}});
+$(seeLess).css(display,none);
+$(showHide).addClass(hiddenVar)
+}});
+$(seeAll).click(function(a){a.preventDefault();
+$(showHide).removeClass(hiddenVar);
+$(seeLess).css(display,inlineBlock);
+$(seeAll).css(display,none)
+});
+$(seeLess).click(function(a){a.preventDefault();
+$(showHide).addClass(hiddenVar);
+$(seeAll).css(display,inlineBlock);
+$(seeLess).css(display,none)
+});
+function sortTable(a){var j,k,b,e,h,g,f,c,d=0;
+j=document.getElementById("productSpec");
+b=true;
+c="asc";
+while(b){b=false;
+k=j.getElementsByTagName("TR");
+for(e=1;
+e<(k.length-1);
+e++){f=false;
+h=k[e].getElementsByTagName("TD")[a];
+g=k[e+1].getElementsByTagName("TD")[a];
+if((c==="asc"&&(h.innerHTML.toLowerCase()>g.innerHTML.toLowerCase()))||((c==="desc")&&(h.innerHTML.toLowerCase()<g.innerHTML.toLowerCase()))){f=true;
+break
+}}if(f){k[e].parentNode.insertBefore(k[e+1],k[e]);
+b=true;
+d++
+}else{if(d===0&&c==="asc"){c="desc";
+b=true
+}}}}var intel=intel||{};
+function articleExplorerCEvent(){jQuery(".blade-product-list .row.in").collapse("hide");
+if($(this).hasClass("current")){$("#collapse-object-desktop").addClass("contract");
+$(this).removeClass("current")
+}else{$("#collapse-object-desktop").removeClass("contract").children(".container").children(".product-list-content").children("div").html($(this).next("div").html());
+$(".product-list-accordion-link").removeClass("current");
+$(this).addClass("current")
+}if(intel.breakpoints.getBreakpointNumber()<2){$(_).parent().on("shown.bs.collapse shown",function(){var b=$(_).offset().top-$(".navbar-fixed-top").height();
+$("html, body").animate({scrollTop:b},"fast")
+})
+}else{var a=$("#collapse-object-desktop").offset().top-$(".navbar-fixed-top").height();
+$("html, body").animate({scrollTop:a},500)
+}}intel.togglecustomaccordion=(function(a){return{initialize:function(){setTimeout(function(){if(a(location.hash).length>0&&!a(location.hash).is(":visible")){a(location.hash).closest(".panel").children("a:first").trigger("click")
+}},2000);
+a(".product-list-accordion-link").unbind("click").on("click",function(){articleExplorerCEvent.call(this)
+})
+}}
+})(jQuery);
+jQuery(document).ready(intel.togglecustomaccordion.initialize);
+var intel=intel||{};
+intel.customfeedbackwidget=(function(b){function d(){a();
+c()
+}function a(){b(".feedback-title").unbind("click").on("click",function(h){h.preventDefault();
+var f=b(this).closest(".blade-support-feedback");
+var g=f.find(".support-feedback-content");
+if(b(this).hasClass("expanded")){b(this).removeClass("col-sm-12 expanded").addClass("col-sm-10");
+g.removeClass("expanded");
+g.hide();
+window.localStorage.setItem("autoFeedBackOpen",false)
+}else{b(this).removeClass("col-sm-10").addClass("col-sm-12 expanded");
+g.addClass("expanded");
+g.show();
+g.find("textarea").focus()
+}})
+}function c(){var e="oninput" in document.createElement("textarea");
+b("#feedback-character-area").each(function(){var g=b(this);
+var f=parseInt(g.attr("maxlength"));
+g.attr("maxlength",null);
+g.bind(e?"input":"keyup",function(k){var i=g.val().length;
+var j=f-i;
+var h=b("#feedback-character-count");
+if(f<i){k.preventDefault();
+b("#feedback-character-area").val(b(this).val().substr(0,500));
+j=0
+}h.text(j)
+})
+})
+}return{initialize:d}
+})(jQuery);
+jQuery(document).ready(intel.customfeedbackwidget.initialize);
+var intel=intel||{};
+intel.supportEOISProducts=(function(e){var a,d,c,b="undefined";
+e(document).ready(function(){if(typeof _supportEOISProductList!==b){c=e("#"+_supportEOISProductList.eoisProductListIdOnPage);
+if(c.length){a.setWarrantyButtonLink();
+a.init()
+}}});
+a={setWarrantyButtonLink:function(){var f=INTEL.SupportSettings["warrantyBar.WarrantyBarLinkURL"];
+e(".EOISWarrantyButton").attr("href",f)
+},init:function(){d=c.find(".responsive-table-component table");
+d.each(function(g,f){var h=e(f).attr("disprows");
+a.initSimpleShowMore(f,h)
+})
+},initSimpleShowMore:function(k,i){k.showMoreContainer=e(k).parents(".responsive-table-component").find(".show-more-eoisproducts");
+var j=k.showMoreContainer.data("eois-toggle");
+k.originalRows=e(k).find("tbody."+j).children();
+var h=k.originalRows.length;
+var f=5;
+if(i!==undefined){f=i
+}if(h>0){k.originalRows.hide();
+if(h<=f){k.originalRows.slice(0,h).show();
+k.showMoreContainer.hide();
+e(k).removeClass("table-collapsed")
+}else{k.originalRows.slice(0,f).show();
+k.showMoreContainer.show();
+var g=f;
+e(k).addClass("table-collapsed");
+k.showMoreContainer.find(".show-less-eois").hide();
+e(k).parents(".responsive-table-component").on("click",".show-more-eois",function(l){l.preventDefault();
+g=a.showMoreProducts(k,h,f,g)
+});
+e(k).parents(".responsive-table-component").on("click",".show-less-eois",function(l){l.preventDefault();
+g=a.showLessProducts(k,h,f,g)
+})
+}}},showLessForFinalSet:function(g,f,i,k,j){if(g>=f){var h=parseInt(f)%parseInt(i);
+if(h!==0){k=parseInt(f)-parseInt(h);
+j.originalRows.slice(k,f).hide()
+}else{k=parseInt(f)-parseInt(i);
+j.originalRows.slice(k,f).hide()
+}e(j).addClass("table-collapsed").parents(".responsive-table-component").removeClass("opened")
+}return k
+},showLessProducts:function(i,g,h,f){var j=h;
+if(f>h){if(!e(i).hasClass("table-collapsed")){j=a.showLessForFinalSet(f,g,h,j,i)
+}else{j=parseInt(f)-parseInt(h);
+i.originalRows.slice(j,f).hide()
+}}if(parseInt(j)===parseInt(h)){i.showMoreContainer.find(".show-less-eois").hide()
+}return j
+},showMoreProducts:function(j,i,g,h){var f;
+if(e(j).hasClass("table-collapsed")){j.showMoreContainer.find(".show-less-eois").show();
+f=parseInt(h)+parseInt(g);
+if(f>=i){j.originalRows.slice(h).show();
+e(j).removeClass("table-collapsed").parents(".responsive-table-component").addClass("opened");
+f=i
+}else{j.originalRows.slice(h,f).show()
+}}return f
+}}
+})(jQuery);
+$(document).ready(function(){if(!("ontouchstart" in window||window.DocumentTouch&&document instanceof DocumentTouch)){$('[data-tooltip="tooltip"]').tooltip()
+}var c={isNonEnglishArticleUsed:(function(h){var d=decodeURIComponent(h);
+if(d.indexOf("support/articles")!==-1){var e=INTEL.SupportSettings["geoattributes.articleLocalesForModal"];
+var g=e.split(",");
+for(var f=0;
+f<g.length;
+f++){if(d.indexOf(g[f])!==-1){return true
+}}}return false
+})(encodeURIComponent(window.location.href)),getEnglishURL:function(f){f=decodeURIComponent(f);
+var h=[];
+var e=f.indexOf("/content/www/");
+if(e!==-1){var g=f.substring(0,e+13);
+var d=f.substring(e+19);
+h.sameDomain=g+"us/en/"+d;
+h.intelCom=f.replace(".html",".englishversion.html")
+}return h
+},getEnglishContent:function(d){$("#modalContent").load(d.intelCom+" #printableArea ",function(j,g){if(g==="success"){$("#modalButton").show();
+var e=document.getElementById("myModal");
+var f=e.getElementsByClassName("container");
+var h;
+for(h=0;
+h<f.length;
+h++){f[h].style.backgroundColor="transparent"
+}$(".modal-body #modalContent #printableArea .article-actions .marginTop").hide();
+$(document).trigger("enhance.tablesaw")
+}})
+}};
+$("#modalButton").hide();
+var a=encodeURIComponent(window.location.href);
+if(Boolean(c.isNonEnglishArticleUsed)){var b=c.getEnglishURL(a);
+c.getEnglishContent(b)
+}});
+function searchOptions(b){var a=document.getElementById("support-search-input");
+a.onkeyup=function(){currentURL=window.location.origin+window.location.pathname;
+history.pushState(null,null,currentURL+"?searchTerm="+a.value);
+if(a.value.length>2){$(".predictive-search-dropdown").slideDown()
+}else{$(".predictive-search-dropdown").slideUp()
+}};
+a.onblur=function(){$(".predictive-search-dropdown").slideUp()
+}
+}function supportSearch(d,b){var c,e,f;
+var a=document.getElementById("search-query-input");
+if(b==="Y"){c=d+"#q=";
+e=c+a.value+"&t=Support"
+}else{c=d+"?keyword=";
+e=c+a.value+"&toplevelcategory=Support&query="+a.value+"&filters=Target%20Audience%2FSupport"
+}if(a.value!==""){window.location.href=e;
+return false
+}else{a.focus();
+return false
+}};

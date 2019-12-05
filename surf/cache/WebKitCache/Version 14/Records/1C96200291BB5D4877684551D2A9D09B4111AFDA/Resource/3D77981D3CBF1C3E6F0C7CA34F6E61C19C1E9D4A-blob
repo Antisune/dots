@@ -1,0 +1,1152 @@
+'use strict';
+
+window.quintesse = (function () {
+    var Q_SCRIPT_BOOT_ID = 'qBoot';
+    var Q_SCRIPT_PARENT_URL = 'data-purl';
+    var Q_SCRIPT_PARENT_TEXT_NODES = 'data-ptn';
+    var Q_SCRIPT_PARENT_SCRAPED_CONTENT = 'data-sc';
+    var Q_SCRIPT_PARENT_WINDOW_PARAMS = 'data-prms';
+    var WRAPPER_CONFIG_MAP = { // from 1 [close proximity] to 5 [whole set]
+        1: 0.2,
+        2: 0.3,
+        3: 0.45,
+        4: 0.675,
+        5: 1
+    };
+
+    var WRAPPER_TAG_PLACEHOLDER = '%TAG%';
+    var WRAPPER_DATA_SELECTOR = '[data-ss-tag="' + WRAPPER_TAG_PLACEHOLDER + '"]';
+    var OPS = {
+        PW: 'pw',
+        CW: 'cw',
+        INF: 'is',
+        PS: 'ps'
+    };
+    var VIEWABILITY_POLLING_CYCLE = 100; // poll viewability every 100ms
+    var VIEWABILITY_STATS_SEND_CYCLE = 1000; // if visible, send event no more than once per second
+    var VIEWABILITY_STOP_THRESHOLD = 30000; // after 30s in view, can stop polling
+
+    var mHref = '';
+
+    var mParentUrl = null;
+    var mParentTextNodes = null;
+    var mParentScrapedContent = null;
+    var mParentWindowParams = null;
+    // eslint-disable-next-line no-unused-vars
+    var mHasLoader = false;
+
+    // used to clear any pending timeout if a page change is detected
+    var pendingViewabilityTimeoutId = null;
+
+    // top-level variable so that any pending stats can be sent if a page change is detected
+    var viewabilityStats = null;
+
+    var currentScript = document.getElementById(Q_SCRIPT_BOOT_ID);
+    // If anything was injected from a preloader, save it
+    if (currentScript) {
+        mParentUrl = currentScript.getAttribute(Q_SCRIPT_PARENT_URL) || null;
+        mParentTextNodes = currentScript.getAttribute(Q_SCRIPT_PARENT_TEXT_NODES) || null;
+        mParentScrapedContent = currentScript.getAttribute(Q_SCRIPT_PARENT_SCRAPED_CONTENT) || null;
+        mParentWindowParams = currentScript.getAttribute(Q_SCRIPT_PARENT_WINDOW_PARAMS) || null; // used to push down params expected into the injected creative (i.e., for the kormorant template)
+        mParentScrapedContent = JSON.parse(mParentScrapedContent); // expected to be stringified, if present
+        mParentTextNodes = JSON.parse(mParentTextNodes); // expected to be stringified, if present
+        mParentWindowParams = JSON.parse(mParentWindowParams); // expected to be stringified, if present
+        if (mParentUrl) {
+            mHasLoader = true;
+        }
+    }
+
+    /**
+     * Log wrapper (will skip logging on older browsers that don't support logging)
+     * Might want to add critical issues logging to ad-hoc frontend endpoint
+     * @param msg
+     */
+    function log (msg) {
+        if (console && typeof (console.log) === 'function') {
+            console.log(msg);
+        }
+    }
+
+    function extractNodes (root, options) {
+        options = options || {};
+
+        var fInspect = options.inspect || function (/* n */) {
+            return true;
+        };
+        var fCollect = options.collect || function (/* n */) {
+            return true;
+        };
+
+        // IE 11 and under expect a function, rather than an object with acceptNode property
+        var filterFunc = function (node) {
+            if (!fInspect(node)) {
+                return NodeFilter.FILTER_REJECT; // skip this node AND prune everything under
+            }
+            if (!fCollect(node)) {
+                return NodeFilter.FILTER_SKIP; // skip this node, but examine the children
+            }
+
+            return NodeFilter.FILTER_ACCEPT; // accept this node
+        };
+
+        var walker = isIE() ? document.createTreeWalker(
+            root,
+            NodeFilter.SHOW_ALL,
+            filterFunc,
+            false // required for IE 11 and lower
+        ) : document.createTreeWalker(
+            root,
+            NodeFilter.SHOW_ALL,
+            {
+                acceptNode: filterFunc
+            }
+        );
+
+        var nodes = [];
+        var n = walker.nextNode();
+        while (n) {
+            // if there is any post-processing set for picked nodes
+            var insertCandidate = typeof (options.process) === 'function' ? options.process(n) : n;
+            // only push if there is something to (so skip undefined/null/empty strings)
+            if (insertCandidate) {
+                nodes.push(insertCandidate);
+            }
+
+            // iterate
+            n = walker.nextNode();
+        }
+
+        return nodes;
+    }
+
+    /**
+     * Identifies IE9/10/11. From 12 up it's Edge, and that works fine without any need for special handling
+     * @return {boolean}
+     */
+    function isIE () {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf('MSIE '); // IE 9/10 or older
+        var trident = ua.indexOf('Trident/'); //IE 11
+
+        return (msie > 0 || trident > 0);
+    }
+
+    /**
+     * Hashes text nodes for comparison purposes server-side
+     * @return number java-like hash
+     */
+    function hashNodes (nodes) {
+        var hash = 0;
+
+        if (nodes.length > 0) {
+            var s = nodes.join();
+            var char;
+
+            for (var i = 0; i < s.length; i++) {
+                char = s.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash |= 0; // Convert to 32bit integer
+            }
+        }
+
+        return hash;
+    }
+
+    function evalBoundingRect (element) {
+        if (element) {
+            return element.getBoundingClientRect();
+        }
+
+        return null;
+    }
+
+    function findAndEvaluateWrapper (tag) {
+        var creativeWrapper = document.querySelector(WRAPPER_DATA_SELECTOR.replace(WRAPPER_TAG_PLACEHOLDER, tag));
+
+        if (creativeWrapper) {
+            var boundingRect = evalBoundingRect(creativeWrapper);
+            if (boundingRect !== null) {
+                creativeWrapper.boundingRect = boundingRect;
+            }
+        }
+
+        return creativeWrapper;
+    }
+
+    // not needed with modified adjacent paragraph logic
+    // function intersect (rect1, rect2, thresholds) {
+    //     // for safety, only rely on top, left, right, bottom
+    //     // see https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+    //     //  compute top and bottom of the area we want to consider around the wrapped creative
+    //     var topPlusThreshold = rect1.top - thresholds.aboveWrapperThreshold;
+    //     var bottomPlusThreshold = rect1.bottom + thresholds.belowWrapperThreshold;
+    //
+    //     // intersection occurs if either
+    //     // the top of the text node falls into the area, or
+    //     // the bottom does, or
+    //     // the top is above the area top and the bottom is below the area bottom (in which case the text node includes the creative completely)
+    //     return ((rect2.top >= topPlusThreshold && rect2.top <= bottomPlusThreshold) ||
+    //         (rect2.bottom >= topPlusThreshold && rect2.bottom <= bottomPlusThreshold) ||
+    //         (rect2.top <= topPlusThreshold && rect2.bottom >= bottomPlusThreshold));
+    // }
+
+    function getAdjacentTextNodes (wrapper, textAggregates, wrapperConfig) {
+        var maxConfig = Math.max.apply(null, Object.keys(WRAPPER_CONFIG_MAP));
+        // safeguard (overwrite with most lenient threshold if it's not a number)
+        wrapperConfig = isNaN(wrapperConfig) ? maxConfig : wrapperConfig;
+        var textNodes = [];
+
+        // positional context...sort text aggregates by their y, then check which ones are above and below, and pick part of them, based on the wrapper config
+        if (wrapperConfig >= 1 && wrapperConfig < maxConfig) {
+            // never less than 1 above and below (equally distributed)
+            var threshold = Math.max(1, Math.round(WRAPPER_CONFIG_MAP[wrapperConfig] * textAggregates.length / 2));
+            // sort text aggregates by their top y
+            textAggregates.sort(function (a, b) {
+                var aTop = a.hasOwnProperty('boundingRect') ? a.boundingRect.top : 0;
+                var bTop = b.hasOwnProperty('boundingRect') ? b.boundingRect.top : 0;
+                return aTop - bTop;
+            });
+            // then insert the wrapper top y in the ordered list
+            var wrapperTop = wrapper.hasOwnProperty('boundingRect') ? wrapper.boundingRect.top : 0;
+
+            // and pick the surroundings
+            for (var j = 0; j < textAggregates.length; j++) {
+                var aggregateTop = textAggregates[j].hasOwnProperty('boundingRect') ? textAggregates[j].boundingRect.top : 0;
+                if (wrapperTop <= aggregateTop) { // then we can select the text nodes and then exit
+                    for (var i = 1; i <= threshold; i++) {  // checks on existence of the element in the array are necessary since the node might have been removed due to the text length being 0 after clean up and trimming
+                        if (j - i >= 0 && textAggregates[j - i]) {
+                            textNodes.push(textAggregates[j - i].text);
+                        }
+                        if (j + i < textAggregates.length && textAggregates[j + i]) {
+                            textNodes.push(textAggregates[j + i].text);
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+        else { // take all
+            textNodes = getAllTextNodes(textAggregates);
+        }
+
+        return textNodes;
+    }
+
+    function getAllTextNodes (textAggregates) {
+        var textNodes = [];
+
+        for (var i = 0; i < textAggregates.length; i++) {
+            if (textAggregates[i]) { // this is necessary since the node might have been removed due to the text length being 0 after clean up and trimming
+                textNodes.push(textAggregates[i].text);
+            }
+        }
+
+        return textNodes;
+    }
+
+    function getHref () {
+        return mHref;
+    }
+
+    function setHref (httpReferrer) {
+        if (mParentUrl) { // pre-set as an attribute
+            log('Preset parent url: ' + mParentUrl);
+            mHref = mParentUrl;
+        }
+        else {
+            try {
+                var prevLocation = parent.window.location;
+                var topMostParent = parent;
+                for (var i = 0; i < 100; i++) { // assuming no more than 100-level depth
+                    topMostParent = topMostParent.parent;
+                    if (topMostParent.window.location === prevLocation) break;
+                }
+
+                mHref = topMostParent.window.location.href;
+            }
+            catch (e) {
+                log('Unable to get top level location, fall back');
+
+                if (document.referrer && document.referrer.length > 0) { // unfriendly iframe
+                    mHref = document.referrer;
+                }
+                else if (httpReferrer) {
+                    mHref = httpReferrer;
+                }
+            }
+        }
+    }
+
+    /**
+     * If iframe wrapper, try to get to the top-most iframe container for viewability purposes
+     * @return {HTMLIFrameElement} || null
+     */
+    function getTopMostWrapper () {
+        var topMostIframe = window.frameElement;
+
+        // then try to reach the top iframe
+        if (topMostIframe && topMostIframe.tagName === 'IFRAME') {
+            var el = topMostIframe;
+            for (var i = 0; i < 100; i++) { // assuming no more than 100 level depth
+                el = el.parentNode;
+
+                if (!el) break;
+                if (el.tagName === 'IFRAME') {
+                    topMostIframe = el;
+                }
+            }
+        }
+
+        return topMostIframe;
+    }
+
+    /**
+     * Return the top level window
+     * @return {Window}
+     */
+    function getTopMostWindow () {
+        var topMostWindow = window; // window.parent will return window if there is no parent
+
+        for (var i = 0; i < 100; i++) { // assuming no more than 100 level depth
+            if (topMostWindow === topMostWindow.parent) break;
+            topMostWindow = topMostWindow.parent;
+        }
+
+        return topMostWindow;
+    }
+
+    function buildAndSendXHR (method, args, endpoint, auth, cb) {
+        function buildQueryString (params) {
+            if (params) {
+                var queryString = '?';
+                for (var key in params) {
+                    if (params.hasOwnProperty(key)) {
+                        queryString += (key+'='+encodeURIComponent(params[key])+'&');
+                    }
+                }
+
+                return queryString.substring(0, queryString.length-1); // remove the last &
+            }
+
+            return '';
+        }
+
+        var xhr = new XMLHttpRequest();
+
+        // Setup completion listener
+        xhr.onload = cb;
+
+        // prepare req (if args are present and it's a get, params are built into the query string)
+        xhr.open(method, endpoint + ((method === 'GET' && args) ? buildQueryString(args) : ''));
+
+        if (auth) {
+            xhr.withCredentials = true;
+            // now set authentication header (either token or api key, based on previous request)
+            xhr.setRequestHeader(auth.headerName, auth.credentials);
+        }
+
+        xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+
+        // then send
+        if (method === 'POST' && args) {
+            xhr.send(JSON.stringify(args));
+        }
+        else {
+            xhr.send();
+        }
+    }
+
+    /**
+     * Utility method to send XHR requests. Implements retry on 503/504 errors
+     * @param method Either GET or POST
+     * @param args Object key-value map defining call arguments (either via GET query string, or POST body)
+     * @param endpoint call url endpoint
+     * @param auth Authorization header credentials, if any
+     * @param callback (err, data) callback. 503/504 are retried up to 3 times. Err is null if the call is successful, otherwise it has status and msg properties. Data is only defined if the call is successful
+     */
+    function sendXHRReq (method, args, endpoint, auth, callback) {
+        var triesLeft = 3;
+
+        buildAndSendXHR(method, args, endpoint, auth, function cb () {
+            if (--triesLeft > 0 && (this.status === 503 || this.status === 504)) { // then it's hopefully a temporary issue, hence retry
+                buildAndSendXHR(method, args, endpoint, auth, cb);
+            }
+            else if (callback) {
+                var err = (this.status >= 200 && this.status < 300) ? null : {
+                    status: this.status,
+                    msg: this.statusText
+                };
+
+                if (err) {
+                    callback(err);
+                }
+                else {
+                    try {
+                        var response = this.hasOwnProperty('response') ? this.response : this.responseText; // to cover older IE versions
+                        callback(null, JSON.parse(response, true));
+                    }
+                    catch (e) {
+                        log('Failed to parse response');
+                    }
+                }
+            }
+        });
+    }
+
+    function computeVisibleArea (boundingRect) {
+        var topWindow = getTopMostWindow();
+
+        var viewportWidth = (topWindow.innerWidth || topWindow.document.documentElement.clientWidth);
+        var viewportHeight = (topWindow.innerHeight || topWindow.document.documentElement.clientHeight);
+        var xOverlap = Math.max(0, Math.min(boundingRect.right, viewportWidth) - Math.max(boundingRect.left, 0));
+        var yOverlap = Math.max(0, Math.min(boundingRect.bottom, viewportHeight) - Math.max(boundingRect.top, 0));
+        return xOverlap * yOverlap;
+    }
+
+    /**
+     * Create a ref to the SafeFrame API (also acts as flag to know whether the creative was dropped into a SafeFrame)
+     * @return {*}
+     */
+    function getSafeFrameAPI () {
+        var api = undefined;
+
+        if (window.sfAPI) {
+            api = window.sfAPI;
+        }
+        else if (window.$sf && window.$sf.ext) {
+            api = window.$sf.ext;
+        }
+
+        return api;
+    }
+
+    function updateViewabilityStats (target, topWindow, currentStats, creativeDeclaredSize) {
+        currentStats.timeSinceLastPost += VIEWABILITY_POLLING_CYCLE;
+        currentStats.visible = false; // assume it's not visible
+
+        var safeFrameAPI = getSafeFrameAPI();
+
+        if (safeFrameAPI) {
+            var viewablePercentage = safeFrameAPI.inViewPercentage();
+
+            if (viewablePercentage >= 50) { // if at least 50% in view, then mark as visible
+                currentStats.visible = true;
+                currentStats.timeVisible += VIEWABILITY_POLLING_CYCLE;
+            }
+        }
+        else {
+            // get the current bounding rect, and then make it relevant to the viewport, adjusting it based on the position of any containing frame
+            // note that if the wrapper is not contained within any iframe, the adjustment will be null and the original bounding rect will be used
+            var currentBoundingRect = evalBoundingRect(target);
+            if (currentBoundingRect) {
+                var useAssumedDimensions = ((currentBoundingRect.left === currentBoundingRect.right &&
+                    currentBoundingRect.top === currentBoundingRect.bottom)
+                    || isIE())
+                    && (creativeDeclaredSize && creativeDeclaredSize.hasOwnProperty('width') && creativeDeclaredSize.hasOwnProperty('height'));
+
+                // if we have the empty creative size, then the rectangle should be adjusted accordingly
+                if (useAssumedDimensions) {
+                    currentBoundingRect = {
+                        left: currentBoundingRect.left,
+                        top: currentBoundingRect.top,
+                        width: creativeDeclaredSize.width,
+                        height: creativeDeclaredSize.height,
+                        right: currentBoundingRect.left + creativeDeclaredSize.width,
+                        bottom: currentBoundingRect.top + creativeDeclaredSize.height
+                    };
+                }
+
+                var adjustedRectangle = getAdjustedRectangle(currentBoundingRect);
+
+                var visibleArea = computeVisibleArea(adjustedRectangle);
+                // for empty creative (and for IE11-, which do not update the client dimensions correctly after injecting the creative) use predefined dimensions instead
+                var creativeArea = useAssumedDimensions ? (creativeDeclaredSize.width * creativeDeclaredSize.height) : (target.clientWidth * target.clientHeight);
+
+                // if the portion in view is at least 50%, mark as visible
+                if (creativeArea > 0 && visibleArea >= creativeArea / 2) { // the > 0 comparison is necessary to avoid passing the check if the creative has not been expanded yet
+                    currentStats.visible = true;
+                    currentStats.timeVisible += VIEWABILITY_POLLING_CYCLE;
+                }
+            }
+        }
+
+        // debug
+        //console.log(currentStats);
+    }
+
+    function checkATF (target, topWindow, auth, endpoint, eventsId, wrapperTag, creativeDeclaredSize) {
+        var triesLeft = 20;
+
+        var safeFrameAPI = getSafeFrameAPI();
+
+        var postArgs = {
+            clientEventsId: eventsId,
+            tag: wrapperTag,
+            url: getHref()
+        };
+
+        // give it a little to load, and then (unless we know it's in a SafeFrame or it's going to be empty) do a rough check to make sure the injection has completed before running the ATF check (if either dimension is still zero, the ad hasn't loaded yet)
+        setTimeout(function check () {
+            if (safeFrameAPI) {
+                var viewablePercentage = safeFrameAPI.inViewPercentage();
+                postArgs.atf = (viewablePercentage >= 50); // if at least 50% in view, then mark as above the fold
+
+                sendXHRReq('POST', postArgs, endpoint, auth); // don't care about the outcome, so skip callback
+            }
+            else if (!creativeDeclaredSize && (target.clientWidth === 0 || target.clientHeight === 0) && triesLeft-- > 0) {
+                setTimeout(check, VIEWABILITY_POLLING_CYCLE);
+            }
+            else {
+                var isATF = false;
+
+                var currentBoundingRect = evalBoundingRect(target); // this is relative to the viewport, so it's quite easy to know what is in view
+
+                if (currentBoundingRect) {
+                    var useAssumedDimensions = ((currentBoundingRect.left === currentBoundingRect.right &&
+                                                 currentBoundingRect.top === currentBoundingRect.bottom)
+                                                || isIE())
+                                                && (creativeDeclaredSize && creativeDeclaredSize.hasOwnProperty('width') && creativeDeclaredSize.hasOwnProperty('height'));
+
+                    // if we have the empty creative size, then the rectangle should be adjusted accordingly
+                    if (useAssumedDimensions) {
+                        currentBoundingRect = {
+                            left: currentBoundingRect.left,
+                            top: currentBoundingRect.top,
+                            width: creativeDeclaredSize.width,
+                            height: creativeDeclaredSize.height,
+                            right: currentBoundingRect.left + creativeDeclaredSize.width,
+                            bottom: currentBoundingRect.top + creativeDeclaredSize.height
+                        };
+                    }
+
+                    var adjustedRectangle = getAdjustedRectangle(currentBoundingRect);
+
+                    var scrollX = (topWindow.scrollX || topWindow.pageXOffset);
+                    var scrollY = (topWindow.scrollY || topWindow.pageYOffset);
+
+                    // Compute the intersection of the target bounding rectangle (in absolute coordinates)
+                    // with the viewport rectangle (which without scrolling would have left and top = 0)
+                    var absoluteTargetBoundingRect = {
+                        left: adjustedRectangle.left + scrollX,
+                        right: adjustedRectangle.right + scrollX,
+                        top: adjustedRectangle.top + scrollY,
+                        bottom: adjustedRectangle.bottom + scrollY
+                    };
+
+                    var visibleArea = computeVisibleArea(absoluteTargetBoundingRect);
+                    // if the portion in view is at least 50% when checking starting from the top of the document, then it is above the fold
+                    var creativeArea = useAssumedDimensions ? (creativeDeclaredSize.width * creativeDeclaredSize.height) : (target.clientWidth * target.clientHeight);
+                    isATF = creativeArea > 0 && (visibleArea >= creativeArea / 2);
+                }
+
+                postArgs.atf = isATF;
+
+                sendXHRReq('POST', postArgs, endpoint, auth); // don't care about the outcome, so skip callback
+            }
+        }, VIEWABILITY_POLLING_CYCLE);
+    }
+
+    /**
+     * When performing viewability checks, this is required to adjust the position of the client bounding rect
+     * according to the position of the containing iframe(s) (if any)
+     * @param wrapperBoundingRectangle ad wrapper bounding rectangle computed with getClientBoundingRect
+     * @return {*}
+     */
+    function getAdjustedRectangle (wrapperBoundingRectangle) {
+        var currentWindow = window;
+        var currentParentWindow;
+        var positions = [];
+        var rect;
+        var adjustedRectangle = { // since the bounding client rectangle has read-only properties, create a new object
+            left: wrapperBoundingRectangle.left,
+            top: wrapperBoundingRectangle.top,
+            right: wrapperBoundingRectangle.right,
+            bottom: wrapperBoundingRectangle.bottom
+        };
+
+        // walk through all windows to identify potential multiple iframe containers, and add relative positions to compute the adjusted position
+        while (currentWindow !== window.top) {
+            currentParentWindow = currentWindow.parent;
+            for (var i = 0; i < currentParentWindow.frames.length; i++)
+                if (currentParentWindow.frames[i] === currentWindow) {
+                    var iframes = currentParentWindow.document.getElementsByTagName('iframe');
+                    for (var h = 0; h < iframes.length; h++) {
+                        var frameElement = iframes[h];
+                        if (frameElement.contentWindow === currentWindow) {
+                            rect = frameElement.getBoundingClientRect();
+
+                            positions.push({
+                                left: rect.left, // for compatibility purposes, use top and left, rather than x and y
+                                top: rect.top
+                            });
+                        }
+                    }
+                    currentWindow = currentParentWindow;
+                    break;
+                }
+        }
+
+        var topLeftShift = {
+            left: 0,
+            top: 0
+        };
+
+        for (var j = 0; j < positions.length; j++) {
+            topLeftShift.left += positions[j].left;
+            topLeftShift.top += positions[j].top;
+        }
+
+        // now use it to shift the wrapped bounding rectangle (have to adjust both top and bottom based on top shift, and left and right based on the left shift)
+        adjustedRectangle.top += topLeftShift.top;
+        adjustedRectangle.bottom += topLeftShift.top;
+        adjustedRectangle.left += topLeftShift.left;
+        adjustedRectangle.right += topLeftShift.left;
+
+        return adjustedRectangle;
+    }
+
+    function sendViewablityStats (auth, endpoint, eventsId, wrapperTag) {
+        if (viewabilityStats && viewabilityStats.visible) {
+            var postArgs = {
+                timeVisible: viewabilityStats.timeVisible,
+                clientEventsId: eventsId,
+                tag: wrapperTag,
+                url: getHref()
+            };
+
+            sendXHRReq('POST', postArgs, endpoint, auth); // don't care about the outcome, so skip callback
+            viewabilityStats.timeSinceLastPost = 0;
+        }
+    }
+
+    function clearViewabilityTimeoutAndStats (auth, endpoint, eventsId, wrapperTag) {
+        if (pendingViewabilityTimeoutId) {
+            clearTimeout(pendingViewabilityTimeoutId);
+            // then if there is anything pending send it
+            sendViewablityStats(auth, endpoint, eventsId, wrapperTag);
+        }
+    }
+
+    function pollViewability (target, topWindow, auth, endpoint, eventsId, wrapperTag, creativeDeclaredSize) {
+        // reset stats to be sure
+        viewabilityStats = {
+            visible: false, // true means 50%+ in view
+            timeVisible: 0,
+            timeSinceLastPost: 0
+        };
+
+        // register for window unload to clear pending timeouts
+        try {
+            window.addEventListener('beforeunload', function () {
+                clearViewabilityTimeoutAndStats(auth, endpoint, eventsId, wrapperTag);
+            });
+        }
+        catch (e) {
+            log('Failed to register for beforeunload event');
+        }
+
+        pendingViewabilityTimeoutId = setTimeout(function poll () {
+            updateViewabilityStats(target, topWindow, viewabilityStats, creativeDeclaredSize);
+
+            if (viewabilityStats && viewabilityStats.visible && (viewabilityStats.timeSinceLastPost >= VIEWABILITY_STATS_SEND_CYCLE || viewabilityStats.timeVisible >= VIEWABILITY_STOP_THRESHOLD)) {
+                sendViewablityStats(auth, endpoint, eventsId, wrapperTag);
+            }
+
+            if (viewabilityStats.timeVisible < VIEWABILITY_STOP_THRESHOLD) {
+                pendingViewabilityTimeoutId = setTimeout(poll, VIEWABILITY_POLLING_CYCLE);
+            }
+        }, VIEWABILITY_POLLING_CYCLE);
+    }
+
+    function checkDelegateATF (auth, endpoint, eventsId, wrapperTag) {
+        function check () {
+            window.parent.postMessage({
+                type: 'QATFDelegate',
+                content: '',
+            }, '*');
+        }
+
+        var triesLeft = 20;
+
+        window.addEventListener('message', function (event) {
+            if (event.data.type && event.data.type === 'QATFResult') {
+                if (event.data.content && event.data.content.notReady && triesLeft-- > 0) {
+                    setTimeout(check, VIEWABILITY_POLLING_CYCLE);
+                }
+                else {
+                    var isATF = event.data.content && event.data.content.isATF;
+
+                    var postArgs = {
+                        atf: isATF,
+                        clientEventsId: eventsId,
+                        tag: wrapperTag,
+                        url: getHref()
+                    };
+
+                    sendXHRReq('POST', postArgs, endpoint, auth); // don't care about the outcome, so skip callback
+                }
+            }
+        });
+
+        // give it a little to load, and then do a rough check to make sure the injection has completed before running the ATF check (if either dimension is still zero, the ad hasn't loaded yet)
+        setTimeout(check, VIEWABILITY_POLLING_CYCLE);
+    }
+
+    function pollDelegateViewability (auth, endpoint, eventsId, wrapperTag) {
+        var viewabilityStats = {
+            visible: false, // that means 50%+ in view
+            timeVisible: 0,
+            timeSinceLastPost: 0
+        };
+
+        function poll () {
+            window.parent.postMessage({
+                type: 'QViewabilityDelegate',
+                content: '',
+            }, '*');
+        }
+
+        window.addEventListener('message', function (event) {
+            if (event.data.type && event.data.type === 'QViewabilityResult') {
+                viewabilityStats.timeSinceLastPost += VIEWABILITY_POLLING_CYCLE;
+
+                if (event.data.content && event.data.content.visible) {
+                    viewabilityStats.visible = true;
+                    viewabilityStats.timeVisible += VIEWABILITY_POLLING_CYCLE;
+                }
+
+                if (viewabilityStats.visible && (viewabilityStats.timeSinceLastPost >= VIEWABILITY_STATS_SEND_CYCLE || viewabilityStats.timeVisible >= VIEWABILITY_STOP_THRESHOLD)) {
+                    var postArgs = {
+                        timeVisible: viewabilityStats.timeVisible,
+                        clientEventsId: eventsId,
+                        tag: wrapperTag,
+                        url: getHref()
+                    };
+
+                    sendXHRReq('POST', postArgs, endpoint, auth); // don't care about the outcome, so skip callback
+                    viewabilityStats.timeSinceLastPost = 0;
+                }
+
+                if (viewabilityStats.timeVisible < VIEWABILITY_STOP_THRESHOLD) {
+                    setTimeout(poll, VIEWABILITY_POLLING_CYCLE);
+                }
+            }
+        });
+
+        setTimeout(poll, VIEWABILITY_POLLING_CYCLE);
+    }
+
+    /**
+     * Try to get the top level document
+     */
+    function getTopLevelDoc () {
+        return getTopMostWindow().document;
+    }
+
+    /**
+     *  RFC4122 version 4 compliant uuid generation
+     * @return {string}
+     */
+    function uuidv4 () {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+
+    /**
+     * Drop whenever empty or a sequence of whitespace characters
+     * @param text
+     * @return boolean
+     */
+    function shouldDropTextNode (text) {
+        return (text.length < 1 || (/^\s+$/).test(text));
+    }
+
+    /**
+     * Remove any attribute that is not needed, to reduce scraped content length
+     * @param node DOM node to be cleaned up
+     * @return boolean
+     */
+    function cleanUpAttributes (node) {
+        var removableAttributes = new RegExp('(class|style|data.+)', 'i');
+        var toBeRemoved = [];
+        for (var i = 0; i < node.attributes.length; i++) {
+            if (removableAttributes.test(node.attributes[i].name)) {
+                toBeRemoved.push(node.attributes[i]);
+            }
+        }
+        toBeRemoved.forEach(function (aNode) {
+            node.removeAttributeNode(aNode);
+        });
+    }
+
+    /**
+     * Drop whenever empty or a sequence of whitespace characters
+     * @param classes
+     * @return boolean
+     */
+    function matchesFlaggedClass (classes) {
+        var dropClassesRegex = new RegExp('.*(gdpr|privacy|consent|disclaimer|byline|theater-container|overlay|credit|metadata|popup|cookie|widget)', 'i');
+        if (classes && classes.length > 0) {
+            for (var i = 0; i < classes.length; i++) {
+                if (dropClassesRegex.test(classes[i])) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    function scrapeContent () {
+        function cleanUp (node) {
+            for (var n = 0; n < node.childNodes.length; n++) {
+                var child = node.childNodes[n];
+                var remove = false;
+                var nodeName = child.nodeName ? child.nodeName.toUpperCase().replace('#', '') : null;
+                switch (child.nodeType) {
+                    case Node.ELEMENT_NODE: // recurse
+                        // get rid of HEAD, SVGs, vector graphics
+                        switch (nodeName) {
+                            case 'HEAD':
+                            case 'SVG':
+                            case 'PATH':
+                            case 'BUTTON':
+                            case 'IFRAME':
+                            case 'NOSCRIPT':
+                            case 'SCRIPT':
+                            case 'STYLE':
+                                remove = true;
+                                break;
+                            default:
+                                remove = matchesFlaggedClass(child.classList);
+                        }
+                        break;
+                    case Node.TEXT_NODE:
+                        if (child.childNodes.length === 0) { // if it's a leaf
+                            remove = shouldDropTextNode(child.nodeValue);
+                        }
+                        break;
+                    default:
+                        remove = true;
+                }
+
+                if (remove) {
+                    node.removeChild(child);
+                    n--;
+                }
+                else {
+                    // get rid of as much HTML attributes as possible
+                    if (child.attributes) {
+                        cleanUpAttributes(child);
+                    }
+
+                    cleanUp(child);
+                }
+            }
+        }
+
+        var scrapedContent = '';
+
+        if (mParentScrapedContent) { // pre-set as an attribute
+            log('Preset parent scraped content length is: ' + mParentScrapedContent.length);
+            scrapedContent = mParentScrapedContent;
+        }
+        else {
+            try {
+                // attempt to get the top-level document...if it's an unfriendly iframe it will cause an exception, hence the catch
+                var doc = getTopLevelDoc();
+
+                var htmlDOMCopy = doc.querySelector('html').cloneNode(true);
+                // first empty head
+                var head = htmlDOMCopy.querySelector('head');
+                if (head) {
+                    head.innerHTML = '';
+                }
+
+                cleanUp(htmlDOMCopy);
+
+                scrapedContent = htmlDOMCopy.outerHTML;
+                // // now clean up any useless stuff, like script, style etc. to reduce the amount of data to be processed by justext
+                // var scriptsAndStyles = scrapedHTML.querySelectorAll('script,style');
+                // for (var i = 0; i < scriptsAndStyles.length; i++) {
+                //     scrapedHTML.removeChild(scriptsAndStyles[i]);
+                // }
+            }
+            catch (e) {
+                log('Unable to get top level document for html analysis, fall back');
+            }
+        }
+
+        return scrapedContent;
+    }
+
+    function getTextAggregates (op) {
+        var textAggregates = [];
+
+        if (mParentTextNodes && Array.isArray(mParentTextNodes)) { // pre-set as an attribute
+            log('Preset parent text nodes selected: ' + mParentTextNodes.length);
+            textAggregates = mParentTextNodes;
+        }
+        else {
+            try {
+                // attempt to get the top-level document...if it's an unfriendly iframe it will cause an exception, hence the catch
+                var doc = getTopLevelDoc();
+                // text containers with query selector, then tree walk to extract and stitch back together all text nodes
+                var textContainerNodes = doc.querySelectorAll('p');
+
+                // Now, if any paragraphs were retrieved, run text node analysis
+                for (var i = 0; i < textContainerNodes.length; i++) { // for each text container, walk the node and get all text nodes
+                    textContainerNodes[i].normalize(); // this step makes sure all text nodes inside are normalised, and empty text nodes removed
+                    var innerTextNodes = extractNodes(textContainerNodes[i], {
+                        collect: function (n) {
+                            return (n.nodeType === Node.TEXT_NODE); // only collect text nodes
+                        },
+                        process: function (n) {
+                            // for text nodes, the value is the text itself. If the string is a sequence of whitespace characters only or empty, skip it. Otherwise perform a replacement of multiple whitespace characters with a single space, and return
+                            return shouldDropTextNode(n.nodeValue) ? null : n.nodeValue.replace(/\s+/g, ' ');
+                        }
+                    });
+
+                    // stitch them all together into a single aggregate, and remove leading and trailing spaces
+                    var joined = innerTextNodes.join('').trim();
+
+                    if (joined.length > 0) {
+                        textAggregates[i] = {
+                            text: joined
+                        };
+
+                        // if it's a positional wrapper, then we also care about paragraph positioning
+                        if (op === OPS.PW) {
+                            textAggregates[i].boundingRect = evalBoundingRect(textContainerNodes[i]);
+                        }
+                    }
+                }
+            }
+            catch (e) {
+                log('Unable to get top level document for text analysis, fall back');
+            }
+        }
+
+        return textAggregates;
+    }
+
+    return {
+        run: function (op, data) {
+            setHref(data.args.httpReferrer);
+
+            if (op) {
+                var auth = data.hasOwnProperty('auth') ? data.auth : null;
+                if (auth !== null) {
+                    switch (op) {
+                        case OPS.PS: // pixel post script
+                        case OPS.INF: // info script (since it's now cached in CF for page load performance reasons, info has to make a tracking POST call for billing purposes, so it works pretty much just like pixel, only with a different endpoint)
+                            if (data.args) {
+                                var callArgs = { // at the very minimum the url (note that other params, like customer id, campaign id etc. are embedded in the auth token)
+                                    url: getHref()
+                                };
+
+                                var fTrack = function () {
+                                    // first call with url only
+                                    sendXHRReq('POST', callArgs, data.endpoints.serveRequest, auth, function (err, res) {
+                                        if (!err) { // success
+                                            if (res) {
+                                                // now check whether we need to scrape or not
+                                                var shouldScrape = res.hasOwnProperty('scrape') && res.scrape;
+                                                // if present, it means that there is already an hash for the whole page text nodes, for this browser class
+                                                // so it should be used for comparison
+                                                var refTextNodesHash = res.hasOwnProperty('nodesHash') ? res.nodesHash : null;
+
+                                                if (shouldScrape && data.endpoints.hasOwnProperty('postServe')) {
+                                                    callArgs.scrapedContent = scrapeContent();
+                                                    if (callArgs.scrapedContent.length > 0) { // only do this if there is some scraped content to send
+                                                        callArgs.nodesHash = hashNodes(getAllTextNodes(getTextAggregates(null))); // add hash of text nodes to be used for comparison on the server
+                                                        callArgs.noResponseNeeded = true; // since we are using the same endpoint for serve and postServe, add a flag to avoid it logging it as if the client had requested the ad twice
+
+                                                        if (callArgs.nodesHash !== refTextNodesHash) { // then it should be sent, because the content has actually changed
+                                                            // Now send js POST request to frontend post pixel endpoint, no need for callback as we don't care about the result
+                                                            sendXHRReq('POST', callArgs, data.endpoints.postServe, auth);
+                                                        }
+                                                    }
+                                                }
+                                                // the pixel post call is just meant for reporting, with no action taken client-side, so do not do anything else
+                                            }
+                                        }
+                                        else { // anything else, bail (since there is nothing to do to recover)
+                                            log('Q ' + op + ' req failed');
+                                        }
+                                    });
+                                };
+
+                                // make sure the whole document has loaded first
+                                if (document.readyState === 'complete') {
+                                    fTrack();
+                                }
+                                else {
+                                    // docReady at this point has already been defined by the loader script, so it's safe to invoke (need this for IE9+, rather than a simple window.addEventListener('load', fTrack);)
+                                    // eslint-disable-next-line no-undef
+                                    docReady(fTrack);
+                                }
+                            }
+                            break;
+                        case OPS.CW: // creative and positional wrapper
+                        case OPS.PW:
+                            if (data.args && data.args.tag) {
+                                var creativeWrapper = findAndEvaluateWrapper(data.args.tag);
+
+                                // if there is something to do
+                                if (creativeWrapper) {
+                                    var clientEventsId = uuidv4();
+
+                                    // Create a ref to the SafeFrame API (also acts as flag to know whether the creative was dropped into a SafeFrame)
+                                    var safeFrameAPI = getSafeFrameAPI();
+
+                                    // Now for each wrapper send plain js POST requests to frontend postbid endpoint, to know if it should be served
+                                    var postArgs = { // at the very minimum the url (note that other params, like customer id, campaign id etc. are embedded in the auth token)
+                                        url: getHref()
+                                    };
+
+                                    // only relevant for the positional wrapper
+                                    var textNodes = [];
+
+                                    // for the positional wrapper compute the text nodes hash (skip if it's in a SafeFrame, since the host page context cannot be accessed
+                                    if (op === OPS.PW && !safeFrameAPI) {
+                                        var textAggregates = getTextAggregates(op);
+                                        textNodes = (op === OPS.PW && textAggregates.length > 0) ? getAdjacentTextNodes(creativeWrapper, textAggregates, parseInt(data.wrapperConfig, 10)) : [];
+                                        // only send the nodes hash, to see if a quick reply is available
+                                        if (textNodes.length > 0) {
+                                            postArgs.posNodesHash = hashNodes(textNodes); // this is hash is relative only to the positional text nodes set
+                                        }
+                                    }
+                                    // else { // for the standard wrapper, do not send anything... if the page was not scraped yet, decision will be based on the url
+                                    //     postArgs.scrapedContent = scrapeContent();
+                                    //     postArgs.fullScrape = postArgs.scrapedContent.length > 0; // if anything was scraped, it's supposed to be the full content
+                                    // }
+
+                                    sendXHRReq('POST', postArgs, data.endpoints.serveRequest, auth, function (err, res) {
+                                        if (!err) { // success
+                                            //log('Received ' + JSON.stringify(res));
+                                            if (res.serve) {
+                                                if (res.hasOwnProperty('creative')) { // this will inject even empty creatives
+                                                    if (mParentWindowParams !== null) { // assume it's an object to be merged into window
+                                                        for (var topLevelKey in mParentWindowParams) {
+                                                            if (mParentWindowParams.hasOwnProperty(topLevelKey) && !window.hasOwnProperty(topLevelKey)) {
+                                                                window[topLevelKey] = mParentWindowParams[topLevelKey];
+                                                            }
+                                                        }
+                                                    }
+
+                                                    // this assumes postscribe script was loaded
+                                                    // eslint-disable-next-line no-undef
+                                                    postscribe(creativeWrapper, res.creative);
+
+                                                    // if a creative was injected, and we have a viewability endpoint, at the very least report atf
+                                                    if (data.endpoints.viewability) {
+                                                        // override with server side client events id if present
+                                                        if (res.hasOwnProperty('clientEventsId')) {
+                                                            clientEventsId = res.clientEventsId;
+                                                        }
+
+                                                        // viewability within a SafeFrame is detected using the SafeFrame API
+                                                        if (safeFrameAPI) {
+                                                            // use declared creative size to register to the SafeFrame API
+                                                            safeFrameAPI.register(res.size.width, res.size.height, function (/*status, info*/) {
+                                                                // debug
+                                                                //console.log(status, info);
+                                                            });
+
+                                                            // first check ATF (since it's in a SafeFrame, skip non relevant parameters, it will just use the API to check in view %)
+                                                            checkATF(null, null, auth, data.endpoints.viewability, clientEventsId, data.args.tag, null);
+
+                                                            // if the request is supposed to run viewability checks too, then start the polling
+                                                            if (data.args.vwc) {
+                                                                // since it's in a SafeFrame, skip non relevant parameters (it will just use the API to check in view %)
+                                                                pollViewability(null, null, auth, data.endpoints.viewability, clientEventsId, data.args.tag, null);
+                                                            }
+                                                        }
+                                                        else {
+                                                            var topMostWrapper = data.args.ifSrc ? getTopMostWrapper() : creativeWrapper;
+                                                            var topMostWindow = getTopMostWindow();
+
+                                                            if ((topMostWrapper && topMostWindow)) { // then it's possible to determine viewability
+                                                                var creativeDeclaredSize = (res.creative === '' || isIE()) ? res.size : null; // only relevant for empty creatives and IE
+                                                                checkATF(topMostWrapper, topMostWindow, auth, data.endpoints.viewability, clientEventsId, data.args.tag, creativeDeclaredSize);
+
+                                                                // if the request is supposed to run viewability checks too, then start the polling
+                                                                if (data.args.vwc) {
+                                                                    pollViewability(topMostWrapper, topMostWindow, auth, data.endpoints.viewability, clientEventsId, data.args.tag, creativeDeclaredSize);
+                                                                }
+                                                            }
+                                                            else if (mHasLoader) {
+                                                                checkDelegateATF(auth, data.endpoints.viewability, clientEventsId, data.args.tag);
+
+                                                                // if the request is supposed to run viewability checks too, then start the polling
+                                                                if (data.args.vwc) {
+                                                                    pollDelegateViewability(auth, data.endpoints.viewability, clientEventsId, data.args.tag);
+                                                                }
+                                                            }
+                                                            else {
+                                                                log('Unable to get top most wrapper/window, skip viewability checks');
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                else {
+                                                    log('Missing creative: skip');
+                                                }
+                                            }
+                                            else if (res.blockedPlaceholder) {
+                                                creativeWrapper.innerHTML = res.blockedPlaceholder;
+                                            }
+
+                                            var shouldScrape = res.hasOwnProperty('scrape') && res.scrape;
+                                            var shouldSendTextNodes = res.hasOwnProperty('sendNodes') && res.sendNodes;
+                                            // if present, it means that there is already an hash for the whole page text nodes, for this browser class
+                                            // so it should be used for comparison
+                                            var refTextNodesHash = res.hasOwnProperty('nodesHash') ? res.nodesHash : null;
+
+                                            // in any case, should it send scraped content AND/OR text nodes if needed (if within a SafeFrame skip, because the host page cannot be analysed)
+                                            if ((shouldScrape || shouldSendTextNodes)  && !safeFrameAPI && data.endpoints.hasOwnProperty('postServe')) {
+                                                if (shouldScrape) {
+                                                    var scrapedContent = scrapeContent();
+                                                    if (scrapedContent.length > 0) { // only do this if there is some scraped content to send
+                                                        var nodesHash = hashNodes(getAllTextNodes(getTextAggregates(null)));
+                                                        if (nodesHash !== refTextNodesHash) { // then it should be sent, because the content has actually changed
+                                                            postArgs.scrapedContent = scrapedContent;
+                                                            // add hash of text nodes to be used for comparison on the server (note that this is the hash of the whole set of text nodes, which is relevant for scraped content indexing)
+                                                            postArgs.nodesHash = nodesHash;
+                                                        }
+                                                    }
+                                                }
+
+                                                if (shouldSendTextNodes && textNodes.length > 0) {
+                                                    postArgs.textNodes = textNodes;
+                                                }
+
+                                                if ((postArgs.scrapedContent && postArgs.scrapedContent.length > 0) ||
+                                                    (postArgs.textNodes && postArgs.textNodes.length > 0)) { // only do this if there is some content to send
+                                                    postArgs.noResponseNeeded = true; // since we are using the same endpoint for serve and postServe, add a flag to avoid it logging it as if the client had requested the ad twice
+
+                                                    // Now send js POST request to frontend postbid endpoint, no need for callback as we don't care about the result
+                                                    sendXHRReq('POST', postArgs, data.endpoints.postServe, auth);
+                                                }
+                                            }
+                                        }
+                                        else { // anything else, bail (since there is nothing to do to recover)
+                                            log('Q serve req failed');
+                                        }
+                                    });
+                                }
+                            }
+                            break;
+                        default:
+                    }
+                }
+                else {
+                    log('No auth no party...');
+                }
+            }
+        }
+    };
+})();

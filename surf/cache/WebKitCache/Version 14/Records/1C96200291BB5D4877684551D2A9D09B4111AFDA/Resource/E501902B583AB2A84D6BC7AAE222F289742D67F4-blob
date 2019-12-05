@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><link rel="stylesheet" href="https://www.hostingadvice.com/wp-content/cache/minify/e4195.default.include.6ad922.css" media="all" />
+<script src="https://www.hostingadvice.com/wp-content/cache/minify/e4195.default.include.147c07.js"></script>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>How to Change File Permissions in Linux - HostingAdvice.com</title>
+<link rel="shortcut icon" href="https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/favicon/favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/apple-touch-icons/touch-icon-iphone.png">
+<link rel="apple-touch-icon" size="76x76" href="https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/apple-touch-icons/touch-icon-ipad.png">
+<link rel="apple-touch-icon" size="120x120" href="https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/apple-touch-icons/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" size="152x152" href="https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/apple-touch-icons/touch-icon-ipad-retina.png">
+<!--[if lt IE 9]>
+	<script src='https://www.hostingadvice.com/wp-content/themes/ha-desktop/js/html5shiv/html5shiv.js'></script>
+	<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-50488102-1', 'hostingadvice.com');
+
+		ga('require', 'displayfeatures');
+
+	  ga('send', 'pageview');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "name": "HostingAdvice.com",
+  "url": "https://www.hostingadvice.com",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/logos/ha-logo-2x.png",
+    "height": "38",
+    "width": "308"
+  },
+  "sameAs": [
+      "https://www.facebook.com/HostingAdviceCom",
+      "https://twitter.com/Hosting_Advice"
+  ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.hostingadvice.com?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="text/javascript">var ajaxurl = "https://www.hostingadvice.com/wp-admin/admin-ajax.php";</script>
+<script type="text/javascript">
+		rainmakerNoRefer = false; // true when on a jump page, false otherwise
+		site_specific = {
+				site_designator: "ha", // two character site designator, different for each site
+				offerid: 0, // the offer id for the clicked offer, often echo'd using PHP
+				offername: '', // the offer name for the clicked offer, often echo'd using PHP
+		};
+
+		(function() {
+				var rm = document.createElement('script'); rm.type = 'text/javascript'; rm.async = true; rm.defer = true;
+				rm.src = 'https://rainmaker-digitalbrandsinc.netdna-ssl.com/javascripts/rainmaker/rm.js';
+				var s = document.getElementsByTagName( 'script' )[0]; s.parentNode.insertBefore( rm, s );
+		})();
+	</script>
+
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://www.hostingadvice.com/how-to/change-file-permissions-linux/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to Change File Permissions in Linux - HostingAdvice.com" />
+<meta property="og:description" content="Linux, like other operating systems, organizes itself using directories and files that can potentially be accessed, altered, or executed. To prevent internal anarchy, Linux gives different levels of permission for interacting with those files and directories. If you want to modify those permissions, the chmod (change mode) command is what you need. Introducing the chmod &hellip;" />
+<meta property="og:url" content="https://www.hostingadvice.com/how-to/change-file-permissions-linux/" />
+<meta property="og:site_name" content="HostingAdvice.com" />
+<meta property="article:publisher" content="https://www.facebook.com/HostingAdviceCom" />
+<meta property="article:section" content="How-To" />
+<meta property="article:published_time" content="2014-08-05T12:09:45-04:00" />
+<meta property="article:modified_time" content="2015-10-09T18:19:48-04:00" />
+<meta property="og:updated_time" content="2015-10-09T18:19:48-04:00" />
+<meta property="og:image" content="https://www.hostingadvice.com/wp-content/uploads/2014/03/fingerprint-scanning.jpg" />
+<meta property="og:image:secure_url" content="https://www.hostingadvice.com/wp-content/uploads/2014/03/fingerprint-scanning.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="960" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Linux, like other operating systems, organizes itself using directories and files that can potentially be accessed, altered, or executed. To prevent internal anarchy, Linux gives different levels of permission for interacting with those files and directories. If you want to modify those permissions, the chmod (change mode) command is what you need. Introducing the chmod [&hellip;]" />
+<meta name="twitter:title" content="How to Change File Permissions in Linux - HostingAdvice.com" />
+<meta name="twitter:site" content="@hosting_advice" />
+<meta name="twitter:image" content="https://www.hostingadvice.com/wp-content/uploads/2014/03/fingerprint-scanning.jpg" />
+<meta name="twitter:creator" content="@hosting_advice" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.hostingadvice.com/#website","url":"https://www.hostingadvice.com/","name":"HostingAdvice.com","potentialAction":{"@type":"SearchAction","target":"https://www.hostingadvice.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.hostingadvice.com/how-to/change-file-permissions-linux/#primaryimage","url":"https://www.hostingadvice.com/wp-content/uploads/2014/03/fingerprint-scanning.jpg","width":1200,"height":960,"caption":"How to Change File Permissions in Linux"},{"@type":"WebPage","@id":"https://www.hostingadvice.com/how-to/change-file-permissions-linux/#webpage","url":"https://www.hostingadvice.com/how-to/change-file-permissions-linux/","inLanguage":"en-US","name":"How to Change File Permissions in Linux - HostingAdvice.com","isPartOf":{"@id":"https://www.hostingadvice.com/#website"},"primaryImageOfPage":{"@id":"https://www.hostingadvice.com/how-to/change-file-permissions-linux/#primaryimage"},"datePublished":"2014-08-05T12:09:45-04:00","dateModified":"2015-10-09T18:19:48-04:00","author":{"@id":"https://www.hostingadvice.com/#/schema/person/3a3a5a3bc8783fcf67bc2bc0fde37a42"}},{"@type":["Person"],"@id":"https://www.hostingadvice.com/#/schema/person/3a3a5a3bc8783fcf67bc2bc0fde37a42","name":"Roberto Sanchez","image":{"@type":"ImageObject","@id":"https://www.hostingadvice.com/#authorlogo","url":"https://secure.gravatar.com/avatar/ad1fe652232c01e42fd2725ee0068df7?s=96&d=mm&r=g","caption":"Roberto Sanchez"},"description":"<strong>Roberto Sanchez</strong> got his start with web hosting when he was still in high school, with a Perl script to conjugate verbs on a shared host. Roberto has been involved with web development ever since, experimenting with many web languages and hosting types. Roberto is on the web development team at Digital Brands Inc.,  where he applies his knowledge of PHP and WordPress to improve performance for the firm's various web properties. Roberto also leverages NodeJS to develop exciting products at Digital Brands Inc. and is eager to share his experience with HostingAdvice.com users.","sameAs":[]}]}</script>
+
+<link rel='dns-prefetch' href='//www.hostingadvice.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='crayon-theme-github-css' href='https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/themes/github/github.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css?family=Francois+One&#038;ver=5.3' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/www.hostingadvice.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<link rel="amphtml" href="https://www.hostingadvice.com/how-to/change-file-permissions-linux/amp/">
+<link rel='author' href='https://plus.google.com/116999736376269334510/?rel=publisher'>
+</head>
+<body class="post-template-default single single-post postid-668 single-format-standard">
+<header>
+<div class='navbar navbar-static-top' role='navigation'>
+<div class="navbar-inner">
+<div class='container'>
+<div class='row'>
+<div class='span8'>
+<a href='https://www.hostingadvice.com' class="header-logo brand">
+<img src='https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/logos/ha-logo-2x.png' alt='Hosting Advice' title='Hosting Advice' width='308' height='38'>
+</a>
+</div>
+<div class='span16'>
+<div class="search-form-container pull-right">
+<form role="search" method="get" class="search-form" action="https://www.hostingadvice.com/">
+<button type='submit' class='search-submit'><i class='ret-sprite search-icon'></i></button>
+<input type="search" class="search-field" placeholder="Search …" value="" name="s" title="Search for:" />
+</form>
+</div>
+<div class="pull-right menu-container nav-menu">
+<div class='nav-menu-item nav-menu-item-basics'>
+<a href="#" title="Basics">Basics <span class="caret"></span></a>
+<div class="header-dropdown-menu dropdown-menu-basics">
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-basics'></i>
+<span>Hosting Basics</span>
+</div>
+<div class='dropdown-section'>
+<a href='https://www.hostingadvice.com/the-basics/'><div class='ret-sprite dropdown-image-basics'></div></a>
+<div class='dropdown-description-image'>
+<div class='ret-sprite dropdown-avatar-ryan'></div>
+<p>New to web hosting? Not sure where to start? Our basics guide to web hosting takes readers step-by-step from intro level to advanced in mere minutes.</p>
+</div>
+</div>
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-sections'></i>
+<span>Sections</span>
+</div>
+<div class='dropdown-section dropdown-basics-navigation'>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/the-basics/#hosting'>1. Intro to Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/the-basics/#whats-first-step'>2. Types of Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/the-basics/#domain-strategies'>3. Choosing a Domain</a></li>
+</ul>
+</div>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/the-basics/#review-process'>4. Choosing a Host</a></li>
+<li><a href='https://www.hostingadvice.com/the-basics/#nameserver'>5. Nameserver &amp; DNS</a></li>
+<li><a href='https://www.hostingadvice.com/the-basics/#live-vs-windows-web-hosting'>6. Software Options</a></li>
+</ul>
+</div>
+</div>
+<div class='dropdown-section-footer'>
+<a class='dropdown-footer-link' href='https://www.hostingadvice.com/the-basics/'>Go to Hosting Basics <span class='dropdown-raquo'>&raquo;</span></a>
+</div>
+</div>
+</div>
+<div class='nav-menu-item nav-menu-item-howto'>
+<a href="#" title="How-To">How-To <span class="caret"></span></a>
+<div class="header-dropdown-menu dropdown-menu-howto">
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-howto'></i>
+<span>Hosting How-To's</span>
+</div>
+<div class='dropdown-section'>
+<a href='https://www.hostingadvice.com/how-to/'><div class='ret-sprite dropdown-image-howto'></div></a>
+<div class='dropdown-description-image'>
+<div class='ret-sprite dropdown-avatar-laura'></div>
+<p>From the simple to the complex, our ever-growing database of how-to guides have you covered on a wide range of hosting and programming topics.</p>
+</div>
+</div>
+<div class='dropdown-section article-list'>
+<div class='dropdown-subheader'>Latest How-To's</div>
+<ul>
+<li><a href='https://www.hostingadvice.com/how-to/best-web-hosting-online-retail-stores/'><span class='dropdown-arrow-right'></span>Shopping the Best Hosts for Online Retail Stores &raquo;</a></li>
+<li><a href='https://www.hostingadvice.com/how-to/best-unix-web-hosting/'><span class='dropdown-arrow-right'></span>12 Cheap and Powerful Unix Hosting Plans &raquo;</a></li>
+</ul>
+</div>
+<div class='dropdown-section-footer'>
+<a class='dropdown-footer-link' href='https://www.hostingadvice.com/how-to/'>Go to Hosting How-To's <span class='dropdown-raquo'>&raquo;</span></a>
+</div>
+</div>
+</div>
+<div class='nav-menu-item nav-menu-item-blog'>
+<a href="#" title="Blog">Blog <span class="caret"></span></a>
+<div class="header-dropdown-menu dropdown-menu-blog">
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-blog'></i>
+<span>The Hosting Blog</span>
+</div>
+<div class='dropdown-section'>
+<a href='https://www.hostingadvice.com/blog/'><div class='ret-sprite dropdown-image-blog'></div></a>
+<div class='dropdown-description-image'>
+<div class='ret-sprite dropdown-avatar-sean'></div>
+<p>Visit our creatively-named blog, where tech experts from around the Web share their experiences, insider tips, industry news, and more about web hosting.</p>
+</div>
+</div>
+<div class='dropdown-section article-list'>
+<div class='dropdown-subheader'>Latest Posts</div>
+<ul>
+<li><a href='https://www.hostingadvice.com/blog/xen-orchestra-delivers-turnkey-virtualization-solutions/'><span class='dropdown-arrow-right'></span>Xen Orchestra: Turnkey Virtualization Solutions &raquo;</a></li>
+<li><a href='https://www.hostingadvice.com/blog/killed-by-google-is-a-cemetery-of-bygone-products/'><span class='dropdown-arrow-right'></span> Killed by Google: A Cemetery of Bygone Products &raquo;</a></li>
+</ul>
+</div>
+<div class='dropdown-section-footer'>
+<a class='dropdown-footer-link' href='https://www.hostingadvice.com/blog/'>Go to Hosting Blog <span class='dropdown-raquo'>&raquo;</span></a>
+</div>
+</div>
+</div>
+<div class='nav-menu-item nav-menu-item-reviews'>
+<a href="#" title="Reviews">Reviews <span class="caret"></span></a>
+<div class="header-dropdown-menu dropdown-menu-reviews">
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-best-overall'></i>
+<span>Best Overall</span>
+</div>
+<div class='dropdown-section'>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/'>Best Web Hosting 2019</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/cheap/'>Cheap Web Hosting</a></li>
+</ul>
+</div>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/versus/'>Host vs. Host Reviews</a></li>
+<li><a href='https://www.hostingadvice.com/coupons/'>Hosting Deals &amp; Coupons</a></li>
+</ul>
+</div>
+</div>
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-by-feature'></i>
+<span>By Feature</span>
+</div>
+<div class='dropdown-section'>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/blog/'>Blog Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/cpanel/'>cPanel Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/domain/'>Domain Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/email/'>Email Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/ftp/'>FTP Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/managed-wordpress/'>Managed WordPress Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/shared/'>Shared Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/ssd-vps/'>SSD VPS Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/website-builder/'>Website Builder</a></li>
+</ul>
+</div>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/cloud/'>Cloud Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/dedicated/'>Dedicated Server Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/ecommerce/'>eCommerce Website Builder</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/forum/'>Forum Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/managed/'>Managed Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/reseller-hosting/'>Reseller Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/ssd/'>SSD Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/vps/'>VPS Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/wordpress-website-builder/'>WordPress Website Builder</a></li>
+</ul>
+</div>
+</div>
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-by-framework'></i>
+<span>By Framework</span>
+</div>
+<div class='dropdown-section'>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/drupal/'>Drupal Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/joomla/'>Joomla Hosting</a></li>
+</ul>
+</div>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/magento/'>Magento Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/wordpress/'>WordPress Hosting</a></li>
+</ul>
+</div>
+</div>
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-by-os'></i>
+<span>By Operating System</span>
+</div>
+<div class='dropdown-section'>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/linux/'>Linux Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/windows/'>Windows Hosting</a></li>
+</ul>
+</div>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/linux-vps/'>Linux VPS Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/windows-vps/'>Windows VPS Hosting</a></li>
+</ul>
+</div>
+</div>
+<div class='dropdown-header'>
+<i class='ret-sprite dropdown-icon dropdown-by-language'></i>
+<span>By Language</span>
+</div>
+<div class='dropdown-section'>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/asp-net/'>ASP.NET Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/mysql/'>MySQL Hosting</a></li>
+</ul>
+</div>
+<div class='dropdown-half-sections'>
+<ul>
+<li><a href='https://www.hostingadvice.com/reviews/java/'>Java Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/reviews/php/'>PHP Hosting</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class='container'>
+<div class='row'>
+<div class='span18'>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "TechArticle",
+  "mainEntityOfPage":{
+    "@type":"WebPage",
+    "@id":"https://www.hostingadvice.com/how-to/change-file-permissions-linux/"
+  },
+  "headline": "How to Change File Permissions in Linux",
+  "image": {
+    "@type": "ImageObject",    
+    "url": "https://www.hostingadvice.com/wp-content/uploads/2014/03/fingerprint-scanning.jpg",
+	"height": "960",
+	"width": "1200"
+  },
+  "datePublished": "2014-08-05T12:09:45-04:00",
+  "dateModified": "2015-10-09T14:19:48-04:00",
+  "author": {
+    "@type": "Person",
+	"name": "Roberto Sanchez",
+	"description":"Roberto Sanchez got his start with web hosting when he was still in high school, with a Perl script to conjugate verbs on a shared host. Roberto has been involved with web development ever since, experimenting with many web languages and hosting types. Roberto is on the web development team at Digital Brands Inc.,  where he applies his knowledge of PHP and WordPress to improve performance for the firm's various web properties. Roberto also leverages NodeJS to develop exciting products at Digital Brands Inc. and is eager to share his experience with HostingAdvice.com users."
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "HostingAdvice.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/logos/ha-logo-2x.png",
+      "height": "38",
+      "width": "308"
+    }
+  }
+}
+</script>
+<div class='row'>
+<div class='span18'>
+<div id='breadcrumbs' class='pull-right'>
+<a href="https://www.hostingadvice.com">home</a>
+<span>&nbsp;></span>
+<a href="https://www.hostingadvice.com/how-to/">How-To</a>
+</div>
+</div>
+</div>
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"item": {
+			"@id": "https://www.hostingadvice.com",
+			"name": "Home"
+		}
+	}
+							,{
+			"@type": "ListItem",
+			"position": 2,
+			"item": {
+				"@id": "https://www.hostingadvice.com/https://www.hostingadvice.com/how-to/",
+				"name": "How-To"    
+			}
+		}
+		]
+}
+</script>
+<h1>How to Change File Permissions in Linux</h1>
+<div class="article-content how-to">
+<div class="border-how-to"></div>
+<div class="article-header">
+<div class="row">
+<div class="span18">
+<div class="row">
+<div class="span12 pull-left article-image">
+<img width="484" height="230" src="https://www.hostingadvice.com/wp-content/uploads/2014/03/fingerprint-scanning-484x230.jpg" class="attachment-article-header size-article-header wp-post-image" alt="How to Change File Permissions in Linux" title="How to Change File Permissions in Linux" width="484" height="230" /> </div>
+<div class="span6 pull-right article-meta">
+<div class="row cat-heading">
+<i class="post-icon post-how-to"></i>
+<h2>how-to</h2>
+</div>
+<div class="row author-meta">
+<img alt='Roberto Sanchez' src='https://www.hostingadvice.com/wp-content/uploads/2019/04/roberto-avatar-90x90.jpg' class='avatar avatar-90 photo' height='90' width='90' /> <div class='author-text'>
+<span class="author">By: Roberto Sanchez</span>
+<span class="date">
+Updated: October 9, 2015 </span>
+</div>
+</div>
+<div class='row description-social-wrapper'>
+<div class="cat-description">
+<span>Our experts take readers step-by-step through a variety of hosting and programming tasks in our popular series of "How-To" guides.</span>
+</div>
+<div class="single-social-top">
+<div class="social-container social-small">
+<div class='social-button social-twitter-tweet social-small '><a class='twitter-share-button' href='https://twitter.com/intent/tweet' data-url='https://www.hostingadvice.com/how-to/change-file-permissions-linux/' data-text='How to Change File Permissions in Linux'></a></div> <div class='social-button social-fb-like '><div class='fb-like' data-href='https://www.hostingadvice.com/how-to/change-file-permissions-linux/' data-layout='button_count' data-width='400' data-font='trebuchet ms' data-colorscheme='light' data-action='like'></div></div> <a href="/cdn-cgi/l/email-protection#e5da9690878f808691d8ad8a92c5918ac5a68d848b8280c5a38c8980c5b58097888c96968c8a8b96c58c8bc5a98c8b909dc3878a819cd88d91919596dfcaca929292cb8d8a96918c8b828481938c8680cb868a88ca8d8a92c8918aca868d848b8280c8838c8980c8958097888c96968c8a8b96c8898c8b909dca" target="_blank" rel="noopener" class="social-button email-button">
+<i class="ret-sprite share-email"></i>
+<span class="email-button-text">Email</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='span18'>
+<div class='content'>
+<p>Linux, like other operating systems, organizes itself using directories and files that can potentially be accessed, altered, or executed. To prevent internal anarchy, Linux gives different levels of permission for interacting with those files and directories. If you want to modify those permissions, the <em>chmod </em>(change mode) command is what you need.</p>
+<div class="h2-header">
+<h2>Introducing the <em>chmod</em> Command</h2>
+<div class="ret-sprite watermark"></div>
+</div>
+<p>What can <em>chmod </em>allow you to<em> </em>change? Permission can be granted or refused to different users for reading(<em>r</em>) a file, writing(<em>w</em>) to the file, and executing(<em>x</em>) the file, in the case of a program. The permission system for directories is very similar: “<em>r</em>” for reading the directory contents, “<em>w</em>” for writing into the directory by creating files or subdirectories, and “<em>x</em>” for entering into that directory.</p>
+<p>These permission levels can be defined for the owner(<em>u</em>) of the file or directory, the group(<em>g</em>) to which the owner belongs, the other(<em>o</em>) users, or simply all(<em>a</em>) users all at once.</p>
+<h3>Using the <em>ls</em> Command for a Long Format Listing</h3>
+<p>If you use the <em>ls</em> command with the <em>-l option</em> (for a long format listing) on a given file like <em>my_app,</em> for example, you’ll see output similar to this:</p>
+<link rel="stylesheet" type="text/css" href="https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monospace.css">
+<div id="crayon-5de35801b8ba6066336313" class="crayon-syntax crayon-theme-github crayon-font-monospace crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 12px; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main" style=" max-height: 340px;">
+<table class="crayon-table"><tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5de35801b8ba6066336313-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5de35801b8ba6066336313-1">
+<span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-v">ls</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">l</span><span class="crayon-h"> </span><span class="crayon-v">my_app</span>
+</div></div></td>
+</tr></table>
+</div>
+</div>
+<p>OR</p>
+<link rel="stylesheet" type="text/css" href="https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monospace.css">
+<div id="crayon-5de35801b8bb0208815834" class="crayon-syntax crayon-theme-github crayon-font-monospace crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 12px; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main" style=" max-height: 340px;">
+<table class="crayon-table"><tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5de35801b8bb0208815834-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5de35801b8bb0208815834-1">
+<span class="crayon-o">-</span><span class="crayon-v">rwxr</span><span class="crayon-o">-</span><span class="crayon-v">x</span><span class="crayon-o">--</span><span class="crayon-i">x</span><span class="crayon-h"> </span><span class="crayon-cn">1</span><span class="crayon-h"> </span><span class="crayon-e">hadley </span><span class="crayon-i">tech</span><span class="crayon-h"> </span><span class="crayon-cn">729</span><span class="crayon-h"> </span><span class="crayon-i">Mar</span><span class="crayon-h"> </span><span class="crayon-cn">15</span><span class="crayon-h"> </span><span class="crayon-cn">08</span><span class="crayon-o">:</span><span class="crayon-cn">01</span><span class="crayon-h"> </span><span class="crayon-v">my_app</span>
+</div></div></td>
+</tr></table>
+</div>
+</div>
+<p>The very first character (“<b>–</b>” in this case) shows that the entity “my_app” is indeed a file. If it had been a directory, we would have seen <em>d</em> as the very first character. Next, we see three lots of three characters (rwxr-x–x). The first three (<em>rwx</em>) mean the owner of the file (named as “Hadley” a little further along) has the permission to read, write, and execute <em>my_app</em>. The next three (<em>r-x</em>) indicate that members of the same group as Hadley (the “tech” group) may read and execute<em> my_app</em>, but cannot write or modify it. The final three characters (<em>–x</em>). mean that other users may simply execute <em>my_app</em>, but neither read nor write to it.</p>
+<h3>The <em>chmod</em> Command in Action</h3>
+<p>So how do we use <em>chmod </em>to modify these permissions? We’ll use a command like:</p>
+<link rel="stylesheet" type="text/css" href="https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monospace.css">
+<div id="crayon-5de35801b8bb4315154619" class="crayon-syntax crayon-theme-github crayon-font-monospace crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 12px; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main" style=" max-height: 340px;">
+<table class="crayon-table"><tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5de35801b8bb4315154619-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5de35801b8bb4315154619-1">
+<span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-i">chmod</span><span class="crayon-h"> </span><span class="crayon-cn">771</span><span class="crayon-h"> </span><span class="crayon-v">my_app</span>
+</div></div></td>
+</tr></table>
+</div>
+</div>
+<p>OR</p>
+<link rel="stylesheet" type="text/css" href="https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monospace.css">
+<div id="crayon-5de35801b8bb7423990913" class="crayon-syntax crayon-theme-github crayon-font-monospace crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 12px; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main" style=" max-height: 340px;">
+<table class="crayon-table"><tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5de35801b8bb7423990913-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5de35801b8bb7423990913-1">
+<span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-i">chmod</span><span class="crayon-h"> </span><span class="crayon-v">g</span><span class="crayon-o">+</span><span class="crayon-i">w</span><span class="crayon-h"> </span><span class="crayon-v">my_app</span>
+</div></div></td>
+</tr></table>
+</div>
+</div>
+<p></p>
+<p>In the context above, these two commands in fact mean the same thing. To see why, we have to understand that <em>chmod </em>has a peculiarity. It accepts instructions to change file permissions for different users <i>either</i> by using combinations of these letters (text or symbolic format), <i>or</i> by using a system of numbers (numeric or octal format). Here’s how the two systems correspond:</p>
+<ul>
+<li>Permission to read, <em>r</em>, is given the numeric value of 4</li>
+<li>Permission to write, <em>w</em>, is given the value 2</li>
+<li>Permission to execute, <em>x</em>, is given the value 1</li>
+</ul>
+<p>So in the original situation in our example above, Hadley, who is the owner of the file, has permission to do everything (<em>rwx</em>), or in numerical terms, has permission 4 + 2 + 1 = 7. Similarly, other members of Hadley’s group, “tech,” have permission to read and execute the file, but not write to it. So they have <em>r-x</em> permission, or numerically they have 4 + 1 which makes 5. Everybody else just has <em>–x</em> or 1. Our string of characters <em>-rwxr-x–x</em> then becomes 751 in digits.</p>
+<p>So our command  <em>chmod 771 my_app</em> above is simply changing the 751 level of permission to 771. In other words, we’re just adding the write permission (<em>w</em> or 2) to members of Hadley’s group, “tech.” Now the meaning of the other version of this same command becomes clear as well: <em>g+w</em> simply means “add write permission to members of Hadley’s group,” just as before.</p>
+<p>If full permissions to read, write, and execute were to be given to everybody, then the two forms of the <em>chmod</em> command would look like:</p>
+<link rel="stylesheet" type="text/css" href="https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monospace.css">
+<div id="crayon-5de35801b8bbb148209888" class="crayon-syntax crayon-theme-github crayon-font-monospace crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 12px; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main" style=" max-height: 340px;">
+<table class="crayon-table"><tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5de35801b8bbb148209888-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5de35801b8bbb148209888-1">
+<span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-i">chmod</span><span class="crayon-h"> </span><span class="crayon-cn">777</span><span class="crayon-h"> </span><span class="crayon-v">my_app</span>
+</div></div></td>
+</tr></table>
+</div>
+</div>
+<p>OR</p>
+<link rel="stylesheet" type="text/css" href="https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monospace.css">
+<div id="crayon-5de35801b8bbe495736401" class="crayon-syntax crayon-theme-github crayon-font-monospace crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 12px; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main" style=" max-height: 340px;">
+<table class="crayon-table"><tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5de35801b8bbe495736401-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5de35801b8bbe495736401-1">
+<span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-e">chmod </span><span class="crayon-v">ugo</span><span class="crayon-o">+</span><span class="crayon-e">rwx </span><span class="crayon-v">my_app</span>
+</div></div></td>
+</tr></table>
+</div>
+</div>
+<p>And they would both have the same effect.</p>
+<div class="h2-header">
+<h2>Additional Options of the <em>chmod</em> Command</h2>
+<div class="ret-sprite watermark"></div>
+</div>
+<p>The <em>chmod </em>command also has options that may be useful to know about. They include:</p>
+<ul>
+<li>
+<em>-R</em> for recursively applying the same permissions to a directory, and all the subdirectories and files in the directory and its different subdirectories</li>
+<li>
+<em>-c</em> to report when a change is made, <em>-f</em> to suppress error messages, and <em>–v</em> (verbose) to output a diagnostics for every file or directory processed</li>
+</ul>
+<p>For example,</p>
+<link rel="stylesheet" type="text/css" href="https://www.hostingadvice.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monospace.css">
+<div id="crayon-5de35801b8bc1630271204" class="crayon-syntax crayon-theme-github crayon-font-monospace crayon-os-pc print-yes notranslate" data-settings=" no-popup minimize scroll-mouseover disable-anim" style=" margin-top: 12px; margin-bottom: 12px; margin-left: 10px; margin-right: 10px; font-size: 12px !important; line-height: 15px !important;">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main" style=" max-height: 340px;">
+<table class="crayon-table"><tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-5de35801b8bc1630271204-1">1</div></div>
+</td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5de35801b8bc1630271204-1">
+<span class="crayon-sy">$</span><span class="crayon-h"> </span><span class="crayon-v">chmod</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-i">R</span><span class="crayon-h"> </span><span class="crayon-v">a</span><span class="crayon-o">+</span><span class="crayon-v">rwx</span><span class="crayon-h"> </span><span class="crayon-o">/</span><span class="crayon-v">mydir</span>
+</div></div></td>
+</tr></table>
+</div>
+</div>
+<p>This would ensure everybody (<em>a</em>) had full read, write, and execute permissions for mydir and all the subdirectories and files in it.</p>
+<p><em>Photo Sources: newsyaps.com</em></p>
+</div>
+</div>
+</div>
+<div class='article-comments'>
+<div class='row'>
+<div class='span18'>
+<div class='comments'>
+<div class="comments-header">
+<img alt='Roberto Sanchez' src='https://www.hostingadvice.com/wp-content/uploads/2019/04/roberto-avatar-64x64.jpg' class='avatar avatar-64 photo' height='64' width='64' />
+<h3 id='comments-start'>Questions or Comments? Ask Roberto!</h3>
+</div>
+<p>Ask a question and Roberto <strong>will respond</strong> to you. We strive to provide the best advice on the net and we are here to help you in any way we can.</p>
+<div id="disqus_thread"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="article-footer">
+<h4>Was this helpful? Tell Us Thanks.</h4>
+<section class='article-social'>
+<div class="social-container social-large">
+<div class="social-button-container social-facebook">
+<span class="social-text">Like this article on Facebook</span>
+<div class='social-button social-fb-like '><div class='fb-like' data-href='https://www.hostingadvice.com/how-to/change-file-permissions-linux/' data-layout='button_count' data-width='400' data-font='trebuchet ms' data-colorscheme='light' data-action='like'></div></div> </div>
+<div class="social-button-container social-twitter">
+<span class="social-text">Tweet this article on Twitter</span>
+<div class='social-button social-twitter-tweet social-small '><a class='twitter-share-button' href='https://twitter.com/intent/tweet' data-url='https://www.hostingadvice.com/how-to/change-file-permissions-linux/' data-text='How to Change File Permissions in Linux'></a></div> </div>
+<div class="social-button-container social-email">
+<span class="social-text">Share this article email</span>
+<a href="/cdn-cgi/l/email-protection#dfe0acaabdb5babcabe297b0a8ffabb0ff9cb7beb1b8baff99b6b3baff8fbaadb2b6acacb6b0b1acffb6b1ff93b6b1aaa7f9bdb0bba6e2b7ababaface5f0f0a8a8a8f1b7b0acabb6b1b8bebba9b6bcbaf1bcb0b2f0b7b0a8f2abb0f0bcb7beb1b8baf2b9b6b3baf2afbaadb2b6acacb6b0b1acf2b3b6b1aaa7f0" target="_blank" rel="noopener" class="social-button email-button">
+<i class="ret-sprite share-email"></i>
+<span class="email-button-text">Email</span>
+</a>
+</div>
+</div>
+</section>
+<h4>About the Author</h4>
+<section class='author'>
+<div class="author-footer-meta">
+<div class="author-avatar">
+<img alt='Roberto Sanchez' src='https://www.hostingadvice.com/wp-content/uploads/2019/04/roberto-avatar-190x190.jpg' class='avatar avatar-190 photo' height='190' width='190' /> </div>
+<div class="author-name">
+<span>Roberto Sanchez</span>
+</div>
+</div>
+<div class="author-info">
+<p><strong>Roberto Sanchez</strong> got his start with web hosting when he was still in high school, with a Perl script to conjugate verbs on a shared host. Roberto has been involved with web development ever since, experimenting with many web languages and hosting types. Roberto is on the web development team at Digital Brands Inc., where he applies his knowledge of PHP and WordPress to improve performance for the firm's various web properties. Roberto also leverages NodeJS to develop exciting products at Digital Brands Inc. and is eager to share his experience with HostingAdvice.com users.</p>
+</div>
+</section>
+</div>
+</div>
+<section class='related-posts'>
+<div class='yarpp-related'>
+<h3>Other How-To's You May Enjoy</h3>
+<div class="row">
+<div class="span9">
+<div class="related-post">
+<div class='post-thumb'>
+<a href="https://www.hostingadvice.com/how-to/set-command-aliases-linuxubuntudebian/">
+<img width="162" height="122" src="https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-162x122.jpg" class="attachment-related-post-size size-related-post-size wp-post-image" alt="How to Set Up Command Aliases in Linux/Ubuntu/Debian" title="How to Set Up Command Aliases in Linux/Ubuntu/Debian" width="162" height="122" srcset="https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-162x122.jpg 162w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-72x54.jpg 72w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-73x55.jpg 73w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-210x158.jpg 210w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-89x67.jpg 89w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-698x523.jpg 698w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-232x174.jpg 232w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-180x135.jpg 180w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1-227x170.jpg 227w, https://www.hostingadvice.com/wp-content/uploads/2014/02/alias1.jpg 1200w" sizes="(max-width: 162px) 100vw, 162px" /> </a>
+</div>
+<div class="post-data">
+<h4><a href="https://www.hostingadvice.com/how-to/set-command-aliases-linuxubuntudebian/">How to Set Up Command Aliases (Linux + Ubuntu + Debian)</a></h4>
+<div class="author-meta">
+Ryan Frankel &bull; 07/22/2014 </div>
+</div>
+</div>
+</div>
+<div class="span9">
+<div class="related-post">
+<div class='post-thumb'>
+<a href="https://www.hostingadvice.com/how-to/install-gearman-ubuntu-12-04/">
+<img width="162" height="122" src="https://www.hostingadvice.com/wp-content/uploads/2014/09/install-gearman-162x122.jpg" class="attachment-related-post-size size-related-post-size wp-post-image" alt="How to Install Gearman on Ubuntu 12.04" title="How to Install Gearman on Ubuntu 12.04" width="162" height="122" srcset="https://www.hostingadvice.com/wp-content/uploads/2014/09/install-gearman-162x122.jpg 162w, https://www.hostingadvice.com/wp-content/uploads/2014/09/install-gearman-210x158.jpg 210w" sizes="(max-width: 162px) 100vw, 162px" /> </a>
+</div>
+<div class="post-data">
+<h4><a href="https://www.hostingadvice.com/how-to/install-gearman-ubuntu-12-04/">Install Gearman on Ubuntu 12.04 in 5 Simple Steps</a></h4>
+<div class="author-meta">
+Ryan Frankel &bull; 09/26/2014 </div>
+</div>
+</div>
+</div>
+<div class="span9">
+<div class="related-post">
+<div class='post-thumb'>
+<a href="https://www.hostingadvice.com/how-to/javascript-int-string/">
+<img width="162" height="122" src="https://www.hostingadvice.com/wp-content/uploads/2014/12/javascript-to-string-162x122.jpg" class="attachment-related-post-size size-related-post-size wp-post-image" alt="JavaScript: int to string" title="JavaScript: int to string" width="162" height="122" srcset="https://www.hostingadvice.com/wp-content/uploads/2014/12/javascript-to-string-162x122.jpg 162w, https://www.hostingadvice.com/wp-content/uploads/2014/12/javascript-to-string-210x158.jpg 210w" sizes="(max-width: 162px) 100vw, 162px" /> </a>
+</div>
+<div class="post-data">
+<h4><a href="https://www.hostingadvice.com/how-to/javascript-int-string/">JavaScript: int to string</a></h4>
+<div class="author-meta">
+Ryan Frankel &bull; 12/21/2014 </div>
+</div>
+</div>
+</div>
+<div class="span9">
+<div class="related-post">
+<div class='post-thumb'>
+<a href="https://www.hostingadvice.com/how-to/ubuntu-show-version/">
+<img width="324" height="244" src="https://www.hostingadvice.com/wp-content/uploads/2015/09/Ubuntu-Show-Version-Number-324x244.jpg" class="attachment-related-post-size size-related-post-size wp-post-image" alt="Ubuntu &mdash; Show Version Number (Command Line and Unity)" title="Ubuntu &mdash; Show Version Number (Command Line and Unity)" width="162" height="122" srcset="https://www.hostingadvice.com/wp-content/uploads/2015/09/Ubuntu-Show-Version-Number-324x244.jpg 324w, https://www.hostingadvice.com/wp-content/uploads/2015/09/Ubuntu-Show-Version-Number-210x158.jpg 210w" sizes="(max-width: 324px) 100vw, 324px" /> </a>
+</div>
+<div class="post-data">
+<h4><a href="https://www.hostingadvice.com/how-to/ubuntu-show-version/">How to Check Which Version of Ubuntu is Running (2 Ways)</a></h4>
+<div class="author-meta">
+Alexandra Leslie &bull; 09/29/2015 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class='span6'>
+<section id="sidebar-main">
+<aside id="sidebar-follow" class="sidebar">
+<div class="aside-header">
+<i class="sidebar-follow"></i>
+<h6>Follow the Experts</h6>
+</div>
+<div class="row">
+<div class="span6">
+<div class="aside-body">
+<span class="sidebar-faces"></span>
+<div class="sidebar-follow-text">
+<p>Our team of real web experts, with a combined experience of 50+ years, serve hosting advice to over <strong>12 million users</strong>!</p>
+</div>
+<div class="social-links">
+<a href="https://www.facebook.com/HostingAdviceCom" target="_blank">
+<span class="social-link ret-sprite sidebar-facebook">
+<div class="social-count facebook-count"><span>2k followers</span></div>
+</span>
+</a>
+<a href="https://twitter.com/Hosting_Advice" target="_blank">
+<span class="social-link ret-sprite sidebar-twitter">
+<div class="social-count twitter-count"><span>1.3k followers</span></div>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<aside id="sidebar-video" class="sidebar">
+<div class="aside-header">
+<i class="sidebar-brand"></i>
+<h6>We Know Hosting</h6>
+</div>
+<div class="row">
+<div class="span6">
+<div class="aside-body">
+<div class="hosting-video">
+<iframe title="HostingAdvice.com - The Authority On Web Hosting" width="210" height="118" src="https://www.youtube.com/embed/afgNeN690S0?feature=oembed&showinfo=0&autohide=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="span6">
+<div class="aside-body">
+<div class="counter">
+<span class="counter-number counter-bg dollar-sign"><p>$</p></span>
+<span class="counter-number counter-bg "><p>4</p></span>
+<span class="counter-number counter-bg "><p>8</p></span>
+<span class="counter-number counter-bg comma"><p>,</p></span>
+<span class="counter-number counter-bg "><p>2</p></span>
+<span class="counter-number counter-bg "><p>8</p></span>
+<span class="counter-number counter-bg "><p>3</p></span>
+</div>
+<div class="spent-text">
+<p>spent annually on <a href='https://www.hostingadvice.com/about/'>web hosting services!</a></p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<aside id='blog'>
+<div class="aside-header">
+<i class="sidebar-blog"></i><h6> From the Blog</h6>
+</div>
+<div class='row'>
+<div class='span6'>
+<div class="aside-body">
+<table>
+<tr>
+<td class='thumbnail-container'>
+<a href='https://www.hostingadvice.com/blog/xen-orchestra-delivers-turnkey-virtualization-solutions/'>
+<img alt='Christine Preusler' src='https://www.hostingadvice.com/wp-content/uploads/2019/02/Christine-Preusler_avatar_1551368953-90x90.jpg' class='avatar avatar-90 photo' height='90' width='90' /> </a>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/blog/xen-orchestra-delivers-turnkey-virtualization-solutions/' class='title'>
+Xen Orchestra: Turnkey Virtualization Solutions </a>
+<p class='tagline'>Christine Preusler, 11/22/19</p>
+</td>
+</tr>
+<tr>
+<td class='thumbnail-container'>
+<a href='https://www.hostingadvice.com/blog/10web-delivers-speedy-robust-wordpress-sites/'>
+<img alt='Sean Garrity' src='https://www.hostingadvice.com/wp-content/uploads/2019/02/Sean-Garrity_avatar_1551369035-90x90.jpg' class='avatar avatar-90 photo' height='90' width='90' /> </a>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/blog/10web-delivers-speedy-robust-wordpress-sites/' class='title'>
+10Web Delivers Speedy, Robust WordPress Sites </a>
+<p class='tagline'>Sean Garrity, 11/12/19</p>
+</td>
+</tr>
+ <tr>
+<td class='thumbnail-container'>
+<a href='https://www.hostingadvice.com/blog/wallarm-automates-accurate-application-protection/'>
+<img alt='Laura Bernheim' src='https://www.hostingadvice.com/wp-content/uploads/2019/02/Laura-Bernheim_avatar_1551369004-90x90.jpg' class='avatar avatar-90 photo' height='90' width='90' /> </a>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/blog/wallarm-automates-accurate-application-protection/' class='title'>
+Wallarm Automates App Protection & Security </a>
+<p class='tagline'>Laura Bernheim, 9/9/19</p>
+</td>
+</tr>
+</table>
+<div class="see-more">
+<a href="https://www.hostingadvice.com/blog/">more blog posts</a> &#187;
+</div>
+</div>
+</div>
+</div>
+</aside>
+<aside id='reviews'>
+<div class="aside-header">
+<i class="sidebar-reviews"></i><h6> Hosting Reviews</h6>
+</div>
+<div class="row">
+<div class="span6">
+<div class="aside-body">
+<ul>
+<li>
+<i class="overall-sidebar"></i> <a href='https://www.hostingadvice.com/reviews/'>Best Web Hosting 2019</a>
+</li>
+<li>
+<i class="cheap-sidebar"></i> <a href='https://www.hostingadvice.com/reviews/cheap/'>Cheap Web Hosting</a>
+</li>
+<li>
+<i class="dedicated-sidebar"></i> <a href='https://www.hostingadvice.com/reviews/dedicated/'>Dedicated Server Hosting</a>
+</li>
+<li>
+<i class="vps-sidebar"></i> <a href='https://www.hostingadvice.com/reviews/vps/'>VPS Hosting</a>
+</li>
+<li>
+<i class="wordpress-sidebar"></i> <a href='https://www.hostingadvice.com/reviews/wordpress/'>WordPress Hosting</a>
+</li>
+<li>
+<i class="website-builder-sidebar"></i> <a href='https://www.hostingadvice.com/reviews/website-builder/'>Website Builder</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<aside id='how-to'>
+<div class="aside-header">
+<i class="sidebar-howto"></i><h6> Hosting How To's</h6>
+</div>
+<div class='row'>
+<div class='span6'>
+<div class="aside-body">
+<table>
+<tr>
+<td class='thumbnail-container'>
+<span class="howto-placeholder"></span>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/how-to/best-web-hosting-online-retail-stores/' class='title'>
+Shopping the Best Hosts for Online Retail Stores </a>
+<p class='tagline'>11/21/19</p>
+</td>
+</tr>
+<tr>
+<td class='thumbnail-container'>
+<span class="howto-placeholder"></span>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/how-to/best-unix-web-hosting/' class='title'>
+12 Cheap and Powerful Unix Hosting Plans </a>
+<p class='tagline'>11/18/19</p>
+</td>
+</tr>
+<tr>
+<td class='thumbnail-container'>
+<span class="howto-placeholder"></span>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/how-to/most-secure-web-hosting-services/' class='title'>
+Keep Your Site Safe With Secure Hosting Plans </a>
+<p class='tagline'>11/6/19</p>
+</td>
+</tr>
+<tr>
+<td class='thumbnail-container'>
+<span class="howto-placeholder"></span>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/how-to/free-file-hosting-services/' class='title'>
+8 Free File Hosting Sites for Storage & Sharing </a>
+<p class='tagline'>11/1/19</p>
+</td>
+</tr>
+<tr>
+<td class='thumbnail-container'>
+<span class="howto-placeholder"></span>
+</td>
+<td class='content-container'>
+<a href='https://www.hostingadvice.com/how-to/best-webmail-hosting/' class='title'>
+Delivering 2019's Best Webmail Hosting Plans </a>
+<p class='tagline'>10/28/19</p>
+</td>
+</tr>
+</table>
+<div class="see-more">
+<a href="https://www.hostingadvice.com/how-to/">more how to's</a> &#187;
+</div>
+</div>
+</div>
+</div>
+</aside>
+</section>
+</div>
+</div>
+</div>
+<footer>
+<div class='container'>
+<div class='row'>
+<div class='span24'>
+<div class='row'>
+<div class='span8'>
+<div class="footer-logo">
+<a itemprop='url' href='https://www.hostingadvice.com' class="CR-Logo"><img itemprop='logo' src="https://www.hostingadvice.com/wp-content/themes/ha-desktop/images/logos/ha-logo-footer-2x.png" alt="HostingAdvice.com" title="HostingAdvice.com" /></a>
+</div>
+<div class="footer-mission">
+<p>Our mission: to inform and educate our visitors about the world of Web Hosting.</p>
+</div>
+<div class="footer-menu">
+<ul id="menu-footer" class="nav"><li id="menu-item-216" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-216"><span class="divider"> | </span><a href="https://www.hostingadvice.com/">Home</a></li>
+<li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><span class="divider"> | </span><a href="https://www.hostingadvice.com/about/">About</a></li>
+<li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218"><span class="divider"> | </span><a href="https://www.hostingadvice.com/contact/">Contact</a></li>
+<li id="menu-item-257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-257"><span class="divider"> | </span><a href="https://www.hostingadvice.com/privacy/">Privacy</a></li>
+<li id="menu-item-221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-221"><span class="divider"> | </span><a href="https://www.hostingadvice.com/terms/">Terms</a></li>
+<li id="menu-item-220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-220"><span class="divider"> | </span><a href="https://www.hostingadvice.com/sitemap/">Sitemap</a></li>
+</ul> </div>
+<div class="footer-info">
+<p>&copy; 2019 <span itemprop='name'>HostingAdvice.com</span> | <span itemprop='parentOrganization'>Digital Brands</span> | All Rights Reserved</p>
+</div>
+</div>
+<div class='span6'>
+<div class="footer-experts">
+<div class="footer-header">
+Contributing Experts
+</div>
+<div class="expert order-1">
+<img alt='Sean Garrity' src='https://www.hostingadvice.com/wp-content/uploads/2019/02/Sean-Garrity_avatar_1551369035-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+<div class="expert order-2">
+<img alt='Christine Preusler' src='https://www.hostingadvice.com/wp-content/uploads/2019/02/Christine-Preusler_avatar_1551368953-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+<div class="expert order-3">
+<img alt='Ryan Frankel' src='https://www.hostingadvice.com/wp-content/uploads/2019/04/ryan-avatar-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+<div class="expert order-4">
+<img alt='Toby Sembower' src='https://www.hostingadvice.com/wp-content/uploads/2019/04/toby-avatar-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+<div class="expert order-5">
+<img alt='Alexandra Leslie' src='https://www.hostingadvice.com/wp-content/uploads/2019/02/Alexandra-Leslie_avatar_1551368922-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+<div class="expert order-6">
+<img alt='PJ Fancher' src='https://www.hostingadvice.com/wp-content/uploads/2019/04/pj-avatar-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+<div class="expert order-7">
+<img alt='Levi Horowitz' src='https://www.hostingadvice.com/wp-content/uploads/2019/10/about-levi-2-1-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+<div class="expert order-8">
+<img alt='Roberto Sanchez' src='https://www.hostingadvice.com/wp-content/uploads/2019/04/roberto-avatar-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80' /> </div>
+</div>
+</div>
+<div class='span6'>
+<div class="footer-header">
+Latest Advice
+</div>
+<div class="select-boxes">
+<div class='select-box'>
+<span class='select-box-top'>
+<a><span> &mdash; Sections &mdash; <span class='caret-container'><b class='caret'></b></span></span></a>
+</span>
+<span class='select-box-list'>
+<ul>
+<li><a href='https://www.hostingadvice.com/how-to/'>How-To's of Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/blog/'>The Hosting Blog</a></li>
+<li><a href='https://www.hostingadvice.com/the-basics/'>The Basics of Hosting</a></li>
+<li><a href='https://www.hostingadvice.com/versus/'>Host vs. Host Reviews</a></li>
+<li><a href='https://www.hostingadvice.com/coupons/'>Hosting Deals & Coupons</a></li>
+</ul>
+</span>
+</div>
+<div class='select-box' id='host-reviews'>
+<span class='select-box-top'>
+<a>
+<span>
+&mdash; Reviews &mdash;
+<span class="caret-container"><b class="caret"></b></span>
+</span>
+</a>
+</span>
+<span class='select-box-list'>
+<ul>
+<li>
+<a href="https://www.hostingadvice.com/review/1and1/">- 1&#038;1 Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/a2-hosting/">- A2 Hosting Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/accuwebhosting/">- AccuWebHosting Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/bluehost/">- Bluehost Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/boldgrid/">- BoldGrid Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/dreamhost/">- DreamHost Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/fatcow/">- FatCow Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/flywheel/">- Flywheel Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/godaddy/">- GoDaddy Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/greengeeks/">- GreenGeeks Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/hostgator/">- HostGator Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/hostinger/">- Hostinger Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/hostpapa/">- HostPapa Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/hostwinds/">- Hostwinds Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/inmotion/">- InMotion Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/interserver/">- InterServer Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/ipage/">- iPage Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/justhost/">- JustHost Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/liquid-web/">- Liquid Web Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/media-temple/">- Media Temple Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/network-solutions/">- Network Solutions Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/one-com/">- One.com Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/resellerclub/">- ResellerClub Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/shopify/">- Shopify Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/siteground/">- SiteGround Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/volusion/">- Volusion Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/web-hosting-hub/">- Web Hosting Hub Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/web-com/">- Web.com Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/weebly/">- Weebly Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/wix/">- Wix Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/wordpress/">- WordPress Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/wpengine/">- WP Engine Review</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/review/yahoo/">- Yahoo! Web Hosting Review</a>
+</li>
+</ul>
+</span>
+</div>
+<div class='select-box' id='select-guide'>
+<span class='select-box-top'>
+<a>
+<span>
+&mdash; Guides &mdash;
+<span class="caret-container"><b class="caret"></b></span>
+</span>
+</a>
+</span>
+<span class='select-box-list'>
+<ul>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-adult-web-hosting/">- Best Adult Web Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-anonymous-web-hosting/">- Best Anonymous Web Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-cheap-vps-hosting/">- Best Cheap Vps Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-cloud-server-hosting/">- Best Cloud Server Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-domain-hosting/">- Best Domain Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-free-blog-hosting-sites/">- Best Free Blog Hosting Sites</a>
+ </li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-python-hosting/">- Best Python Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-unlimited-web-hosting/">- Best Unlimited Web Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-web-hosting-for-small-business/">- Best Web Hosting For Small Business</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/best-web-hosting-with-free-ssl/">- Best Web Hosting With Free Ssl</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/cheap-dedicated-server-hosting/">- Cheap Dedicated Server Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/cheap-windows-vps/">- Cheap Windows Vps</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/free-cpanel-hosting/">- Free Cpanel Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/free-domain-email-hosting/">- Free Domain Email Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/free-vps-hosting/">- Free Vps Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/free-web-hosting/">- Free Web Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/coupons/hostgator/">- Hostgator</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/how-to-get-a-free-domain-name-and-web-hosting/">- How To Get A Free Domain Name And Web Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/how-to-host-your-own-website/">- How To Host Your Own Website</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/master-reseller-hosting/">- Master Reseller Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/month-to-month-web-hosting/">- Month To Month Web Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/one-dollar-web-hosting/">- One Dollar Web Hosting</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/web-hosting-for-students-teachers/">- Web Hosting For Students Teachers</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/web-hosting-free-trials/">- Web Hosting Free Trials</a>
+</li>
+<li>
+<a href="https://www.hostingadvice.com/how-to/web-hosting-prices/">- Web Hosting Prices</a>
+</li>
+</ul>
+</span>
+</div>
+</div>
+</div>
+<div class='span4'>
+<div class="footer-follow">
+<div class="footer-header">
+Follow Us
+</div>
+<div class='social-icons'>
+<link itemprop='url' href='https://www.hostingadvice.com/'>
+<a itemprop='sameAs' href='https://www.facebook.com/HostingAdviceCom' target='_blank'>
+<div class='ret-sprite footer-facebook'></div>
+</a>
+<a itemprop='sameAs' href='https://twitter.com/Hosting_Advice' target='_blank'>
+<div class='ret-sprite footer-twitter'></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='row'>
+<div class='span24'>
+<div class='footer-advertiser-disclosure'>
+<p><p><strong>Disclaimer</strong>: Great efforts are made to maintain reliable data on all offers presented. However, this data is provided without warranty. Users should always check the offer provider&#8217;s official website for current terms and details. Our site receives compensation from many of the offers listed on the site. Along with key review factors, this compensation may impact how and where products appear across the site (including, for example, the order in which they appear). Our site does not include the entire universe of available offers. Editorial opinions expressed on the site are strictly our own and are not provided, endorsed, or approved by advertisers.</p>
+</p>
+</div>
+</div>
+</div>
+</div> 
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">(function(){function async_load(){window.twttr = (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};if (d.getElementById(id)) return t;js = d.createElement(s);js.id = id;js.src = "https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, "script", "twitter-wjs"));} if (window.attachEvent) window.attachEvent("onload", async_load); else window.addEventListener("load", async_load, false);})();</script><script type="text/javascript">(function(){function async_load(){(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document, "script", "facebook-jssdk"));} if (window.attachEvent) window.attachEvent("onload", async_load); else window.addEventListener("load", async_load, false);})();</script><script type="text/javascript">(function(){function async_load(){(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document, "script", "facebook-jssdk"));} if (window.attachEvent) window.attachEvent("onload", async_load); else window.addEventListener("load", async_load, false);})();</script><script type="text/javascript">(function(){function async_load(){window.twttr = (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};if (d.getElementById(id)) return t;js = d.createElement(s);js.id = id;js.src = "https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, "script", "twitter-wjs"));} if (window.attachEvent) window.attachEvent("onload", async_load); else window.addEventListener("load", async_load, false);})();</script><link rel='stylesheet' id='yarppRelatedCss-css' href='https://www.hostingadvice.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=5.3' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"hostingadvice"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.17"},"disqusIdentifier":"668 http:\/\/www.hostingadvice.com\/?p=668","disqusShortname":"hostingadvice","disqusTitle":"How to Change File Permissions in Linux","disqusUrl":"https:\/\/www.hostingadvice.com\/how-to\/change-file-permissions-linux\/","postId":"668"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.hostingadvice.com/wp-content/themes/ha-desktop/js/contact/contact.js'></script>
+<script src="https://www.hostingadvice.com/wp-content/cache/minify/e4195.single.include-footer.9b1ef0.js"></script>
+</body>
+</html>

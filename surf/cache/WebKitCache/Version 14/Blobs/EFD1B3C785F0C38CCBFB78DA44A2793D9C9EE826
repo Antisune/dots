@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>EmacsWiki: Xft Gnu Emacs</title><link rel="alternate" type="application/wiki" title="Edit this page" href="https://www.emacswiki.org/emacs?action=edit;id=XftGnuEmacs" /><link type="text/css" rel="stylesheet" href="https://www.emacswiki.org/light.css" /><meta name="robots" content="INDEX,FOLLOW" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki" href="https://www.emacswiki.org/emacs?action=rss" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki: XftGnuEmacs" href="https://www.emacswiki.org/emacs?action=rss;rcidonly=XftGnuEmacs" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content"
+      href="https://www.emacswiki.org/full.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content and diff"
+      href="https://www.emacswiki.org/full-diff.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki including minor differences"
+      href="https://www.emacswiki.org/minor-edits.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Changes for XftGnuEmacs only"
+      href="https://www.emacswiki.org/emacs?action=rss;rcidonly=XftGnuEmacs" /><meta content="width=device-width" name="viewport" />
+<script type="text/javascript" src="/outliner.0.5.0.62-toc.js"></script>
+<script type="text/javascript">
+
+  function addOnloadEvent(fnc) {
+    if ( typeof window.addEventListener != "undefined" )
+      window.addEventListener( "load", fnc, false );
+    else if ( typeof window.attachEvent != "undefined" ) {
+      window.attachEvent( "onload", fnc );
+    }
+    else {
+      if ( window.onload != null ) {
+	var oldOnload = window.onload;
+	window.onload = function ( e ) {
+	  oldOnload( e );
+	  window[fnc]();
+	};
+      }
+      else
+	window.onload = fnc;
+    }
+  }
+
+  // https://stackoverflow.com/questions/280634/endswith-in-javascript
+  if (typeof String.prototype.endsWith !== 'function') {
+    String.prototype.endsWith = function(suffix) {
+      return this.indexOf(suffix, this.length - suffix.length) !== -1;
+    };
+  }
+
+  var initToc=function() {
+
+    var outline = HTML5Outline(document.body);
+    if (outline.sections.length == 1) {
+      outline.sections = outline.sections[0].sections;
+    }
+
+    if (outline.sections.length > 1
+	|| outline.sections.length == 1
+           && outline.sections[0].sections.length > 0) {
+
+      var toc = document.getElementById('toc');
+
+      if (!toc) {
+	var divs = document.getElementsByTagName('div');
+	for (var i = 0; i < divs.length; i++) {
+	  if (divs[i].getAttribute('class') == 'toc') {
+	    toc = divs[i];
+	    break;
+	  }
+	}
+      }
+
+      if (!toc) {
+	var h2 = document.getElementsByTagName('h2')[0];
+	if (h2) {
+	  toc = document.createElement('div');
+	  toc.setAttribute('class', 'toc');
+	  h2.parentNode.insertBefore(toc, h2);
+	}
+      }
+
+      if (toc) {
+        var html = outline.asHTML(true);
+        toc.innerHTML = html;
+
+	items = toc.getElementsByTagName('a');
+	for (var i = 0; i < items.length; i++) {
+	  while (items[i].textContent.endsWith('✎')) {
+            var text = items[i].childNodes[0].nodeValue;
+	    items[i].childNodes[0].nodeValue = text.substring(0, text.length - 1);
+	  }
+	}
+      }
+    }
+  }
+
+  addOnloadEvent(initToc);
+  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body class="default" lang="en"><div class="header"><a class="logo" href="https://www.emacswiki.org/emacs/SiteMap"><img alt="[Home]" class="logo" src="https://www.emacswiki.org/images/logo218x38.png" /></a><div class="menu"><span class="gotobar bar"><a class="local" href="https://www.emacswiki.org/emacs/SiteMap">SiteMap</a> <a class="local" href="https://www.emacswiki.org/emacs/Search">Search</a> <a class="local" href="https://www.emacswiki.org/emacs/ElispArea">ElispArea</a> <a class="local" href="https://www.emacswiki.org/emacs/HowTo">HowTo</a> <a class="local" href="https://www.emacswiki.org/emacs/Glossary">Glossary</a> <a class="local" href="https://www.emacswiki.org/emacs/RecentChanges">RecentChanges</a> <a class="local" href="https://www.emacswiki.org/emacs/News">News</a> <a class="local" href="https://www.emacswiki.org/emacs/Problems">Problems</a> <a class="local" href="https://www.emacswiki.org/emacs/Suggestions">Suggestions</a> </span><form method="get" action="https://www.emacswiki.org/emacs" enctype="multipart/form-data" accept-charset="utf-8" class="search"><p><label for="search">Search:</label> <input type="text" name="search"  size="15" accesskey="f" id="search" /> <label for="searchlang">Language:</label> <input type="text" name="lang"  size="5" id="searchlang" /> <input type="submit" name="dosearch" value="Go!" /></p></form></div><h1><a href="https://www.emacswiki.org/emacs?search=%22XftGnuEmacs%22" rel="nofollow" title="Click to search for references to this page"><span style="padding-right: 0.5ex;">Xft</span><span style="padding-right: 0.5ex;">Gnu</span><span style="padding-right: 0.5ex;">Emacs</span></a></h1></div><div class="wrapper"><div class="content browse" lang="en"><p>With XFT support, <a class="local" href="https://www.emacswiki.org/emacs/GnuEmacs">GnuEmacs</a> is able to use anti-aliased fonts in the X11 UI since version 23.1. Note that <a class="local" href="https://www.emacswiki.org/emacs/GnuEmacs">GnuEmacs</a> already supported anti-aliased fonts for the Carbon and W32 UIs before.</p><h2>Status</h2><p>Xft support is included and enabled by default since emacs 23.1.</p><h2>GNU Emacs 23</h2><ul><li>release - Emacs 23.x<ul><li><a class="url ftp" href="ftp://ftp.gnu.org/pub/gnu/emacs/">ftp://ftp.gnu.org/pub/gnu/emacs/</a></li><li><a class="url http" href="http://ftp.gnu.org/pub/gnu/emacs/">http://ftp.gnu.org/pub/gnu/emacs/</a></li></ul></li></ul><h2>Ubuntu Packages</h2><h3>Hardy, Intrepid, Jaunty</h3><p>For 2008 and 2009 releases of Ubuntu (Hardy Heron 8.04, Intrepid Ibex 8,10, Jaunty Jackalope 9.04) install the emacs-snapshot package:</p><pre>  $ sudo apt-get install emacs-snapshot-gtk
+  $ echo <span class="string">"Emacs.FontBackend: xft"</span> &gt;&gt; ~/.Xresources
+  $ echo <span class="string">"Emacs.font: Monospace-10"</span> &gt;&gt; ~/.Xresources</pre><p>From <a class="url http" href="http://ubuntuforums.org/showpost.php?p=4737273&amp;postcount=100">http://ubuntuforums.org/showpost.php?p=4737273&amp;postcount=100</a></p><p><a class="local" href="https://www.emacswiki.org/emacs/AlexandreVassalotti">AlexandreVassalotti</a> also provides a Hardy package, although this is not stated in his blog posting (see below). A manual search of his ppa archive will show the Hardy packages.</p><p>To enable it, follow the instructions below, replacing RELEASE with hardy.</p><p>&#x2014; In Jaunty, latest emacs-snapshot version seems to render fonts rather thinner compared to Mac OS X. The simple fix for this would be set embolden property on. like:</p><pre>  (custom-set-faces '(default ((t (<span class="builtin">:height</span> 110 <span class="builtin">:family</span> <span class="string">"Consolas"</span> <span class="builtin">:embolden</span> t)))))</pre><p>But the :embolden specification seems to be ignored by emacs-snapshot one. I didn&#x2019;t check it out on emacs-23 but chances are that it might not work there neither. Simple fix for this is:</p><pre> Xft.embolden: true</pre><p>on ~/.Xresources or similar hack for .font.conf. &#x2014; jay</p><h3>Older Versions</h3><p>Pre-built binaries are available for Ubuntu. For Dapper, see <a href="http://g33k.wordpress.com/2006/11/06/gnu-emacs-with-xft-goodness/" class="url http">http://g33k.wordpress.com/2006/11/06/gnu-emacs-with-xft-goodness/</a></p><p>[Note: the emacs-unicode-2 is now obsolete (merged into the CVS trunk); are these packages still valid, and tracking the trunk, or are they obsolete too?]</p><p><a class="local" href="https://www.emacswiki.org/emacs/AlexandreVassalotti">AlexandreVassalotti</a> maintains Edgy, Dapper, Feisty and Gutsy packages of the emacs-unicode-2 branch. It is updated about once a week. Add the following lines to your /etc/apt/sources.list file:</p><pre>  deb     http://ppa.launchpad.net/avassalotti/ubuntu RELEASE main
+  deb-src http://ppa.launchpad.net/avassalotti/ubuntu RELEASE main</pre><p>Where RELEASE is one of dapper, edgy, feisty or gutsy. More information on his <a class="url http outside" href="http://peadrop.com/blog/2007/01/06/pretty-emacs/">blog</a>.</p><p>Some instruction <a href="http://www.chmouel.com/blog/2007/01/21/emacs-nighly-cvs-snapshot-with-xft-on-ubuntu-edgy/" class="url http outside">here</a> on how to generate nightly packages of CVS on Ubuntu Edgy.</p><h2>Fedora/RHEL Packages</h2><p>Install the YUM repository hosted by Chip Coldwell, Redhat&#x2019;s Emacs maintainer:</p><h2>Getting the code</h2><p>In order to get anti-aliased fonts in emacs on X11 you can get the cvs version:</p><pre>  $ cvs -z3 -d<span class="builtin">:pserver</span><span class="builtin">:anonymous</span>@cvs.savannah.gnu.org:/sources/emacs co emacs</pre><h2>Prerequisites</h2><p>A GNOME emacs from cvs for Debian:</p><pre>  $ sudo aptitude install build-essential gnome-dev libxpm-dev libgif-dev libtiff-dev libjpeg-dev libgtk2.0-dev</pre><p>(Watch out! The above command caused the gdm package to get uninstalled, along with a bunch of gnome packages, which meant X does not even invoke upon reboot. I am trying to figure out why via a  <a class="url http outside" href="http://forums.debian.net/viewtopic.php?p=179966#179966">Debian Forum posting</a>.)</p><p>For Ubuntu with all the extra goodies:</p><pre>  $ sudo aptitude install build-essential libxpm-dev libgif-dev libtiff-dev libjpeg-dev libgtk2.0-dev libdbus-1-dev texinfo</pre><h2>Configuration</h2><p>Your ./configure invocation should resemble the following:</p><pre>  $ ./configure --with-x-toolkit --with-xft</pre><p>Check the output of this script to make sure that the required libraries  were found on your system and Xft is enabled. You may also need to specify the --prefix=some_installation_directory option.</p><p>You may also need to add an X resource setting to get emacs to use the Xft renderer. You can place this line in your .Xresources file:</p><pre>  emacs.FontBackend: xft</pre><p>Or you can use this command to set it for the current X display:</p><pre>  $ echo <span class="string">"Emacs.FontBackend: xft"</span> | xrdb -merge</pre><h2>Compilation</h2><p>If this is the first time you&#x2019;ve built emacs, or if you had build errors on your last try, you should use:</p><pre>  $ make bootstrap</pre><p>Otherwise just</p><pre>  $ make all</pre><p>Regardless of using either make bootstrap or make all, install it with</p><pre>  $ make install</pre><h2>Choosing Fonts</h2><p>Note that selection of Xft fonts through the user interface is not yet working at the time of writing &#x2014; presumably there&#x2019;s a lot of X ilLogical Font Description code to be worked around. ;-)</p><p>You can specify a default font from the command line like so:</p><pre>  $ emacs --font <span class="string">"Bitstream Vera Sans Mono-10"</span></pre><p>Setting X resources appears to work as well:</p><pre>  Emacs.font: Bitstream Vera Sans Mono-8</pre><p>If you want to use bold font, use &#x201c;Bitstream Vera Sans Mono-10:bold&#x201d; or &#x201c;Bitstream Vera Sans Mono-10:weight=bold&#x201d;. You can even do it in your <a class="local" href="https://www.emacswiki.org/emacs/InitFile">InitFile</a>.</p><pre>    (set-default-font <span class="string">"Bitstream Vera Sans Mono-14"</span>)
+    (set-fontset-font (frame-parameter nil 'font)
+      'han '(<span class="string">"cwTeXHeiBold"</span> . <span class="string">"unicode-bmp"</span>))</pre><h3>Emacs menubar on X11 with Xt</h3><p>To set the font of the menubar when the GUI was compiled using the X toolkit (Xt) intrinsics (such as an Athena (Xaw) variant or Motif, for example, rather than GTK+ or Qt), the resource `emacs.pane.menubar.font` can be used. Set it using a <a class="local" href="https://www.emacswiki.org/emacs/FontConfig">FontConfig</a> pattern if Emacs was compiled with Xft, otherwise use an Xfs fontspec:</p><pre>  ! Xft:
+  emacs.pane.menubar.font: PragmataPro 9
+  
+  ! Xfs:
+  emacs.pane.menubar.font: -*-anonymous pro-medium-r-*-9-*</pre><p>Remember to run `xrdb -merge ~/.Xresources` after editing the file to have the X server refresh its resource database. You may need to quit and re-start Emacs for the changes to take effect.</p><p>The `editres` program that comes with Xorg can be used to determine the appropriate resource and dynamically set its value even while Emacs is running.</p><p>The `xfontsel` program can be used to determine a proper Xfs fontspec for a given font (note that a suffix of multiple `-*` attribute wildcards can be flattened into a single wildcard, as shown above).</p><p>See the `<a class="local" href="https://www.emacswiki.org/emacs/FcPatternFormat">FcPatternFormat</a>(3)` manpage for a description of <a class="local" href="https://www.emacswiki.org/emacs/FontConfig">FontConfig</a> patterns.</p><h2>Fixed problems</h2><h2>=</h2><p><a class="local" href="https://www.emacswiki.org/emacs/FreeBSD">FreeBSD</a> support </p><p>Use <b>gmake</b> rather than <b>make</b> to compile on FreeBSD.</p><h3>UI widgets</h3><p>By default the scrollbars use the toolkit that has been specified on the configure command line. Some distros might require special flags for this. For example, Gentoo  requires a <code>-toolkit-scroll-bars</code> use flag to get a GTK scroll bar.</p><p>If you encounter a monochromatic toolbar, be sure to have libxpm dev-headers installed.</p><h3>100% CPU usage</h3><p>A solution to the 100% CPU usage is mentioned here: <a href="http://lists.gnu.org/archive/html/emacs-pretest-bug/2006-10/msg00016.html" class="url http">http://lists.gnu.org/archive/html/emacs-pretest-bug/2006-10/msg00016.html</a> I applied the patch at <a href="http://cedet.cvs.sourceforge.net/cedet/cedet/semantic/semantic-idle.el?r1=1.34&amp;r2=1.35" class="url http">http://cedet.cvs.sourceforge.net/cedet/cedet/semantic/semantic-idle.el?r1=1.34&amp;r2=1.35</a> and now emacs-cvs-23 works fine.</p><p>Please update this section with further occurrences of this behaviour.</p><h3>Font specification/quality</h3><p>Fonts can be specified on the command line, in <code>.Xresources</code> or in <code>.emacs</code>. There was an issue with regression, see <a class="url http" href="http://article.gmane.org/gmane.emacs.devel/58987">http://article.gmane.org/gmane.emacs.devel/58987</a> and <a class="url http" href="http://permalink.gmane.org/gmane.emacs.pretest.bugs/14278">http://permalink.gmane.org/gmane.emacs.pretest.bugs/14278</a></p><p>With the GTK UI, it is possible that settings are being picked up from somewhere in your environment, most likely gnome-settings-daemon, whereas urxvt and Emacs are not, and are using the default system-wide xft settings. Try setting the X resources Xft.dpi, Xft.hinting, Xft.hintstyle, etc., or fooling with settings in ~/.fonts.conf or system-wide settings in /etc/fonts/</p><p>On SUSE 10.3, the default hinting for Xft is hintfull (from  /etc/fonts/suse-hinting.conf), which looks bad (at least it does for me). I prefer hintslight, my ~/.fonts.conf:</p><pre>&lt;?xml version=<span class="string">"1.0"</span>?&gt;
+&lt;!DOCTYPE fontconfig SYSTEM <span class="string">"fonts.dtd"</span>&gt;
+&lt;fontconfig&gt;
+ &lt;match target=<span class="string">"pattern"</span> &gt;
+  &lt;edit mode=<span class="string">"assign"</span> name=<span class="string">"rgba"</span> &gt;
+   &lt;const&gt;rgb&lt;/const&gt;
+  &lt;/edit&gt;
+
+  &lt;edit mode=<span class="string">"assign"</span> name=<span class="string">"hinting"</span> &gt;
+   &lt;bool&gt;true&lt;/bool&gt;
+  &lt;/edit&gt;
+
+  &lt;edit mode=<span class="string">"assign"</span> name=<span class="string">"hintstyle"</span> &gt;
+   &lt;const&gt;hintslight&lt;/const&gt;
+  &lt;/edit&gt;
+
+  &lt;edit mode=<span class="string">"assign"</span> name=<span class="string">"antialias"</span> &gt;
+   &lt;bool&gt;true&lt;/bool&gt;
+  &lt;/edit&gt;
+ &lt;/match&gt;
+&lt;/fontconfig&gt;
+</pre><p>Note &lt;match target=&#x201c;pattern&#x201d;&gt; as opposed to &lt;match target=&#x201c;font&#x201d;&gt; is  necessary, otherwise apparently emacs ignores the settings for the  actual editor font (although GTK applies them to the menu bar etc).</p><p>There was a problem with some weight (bold) not being visible. Setting the X server colour depth to 24 seems to have resolved this problem.</p><p>If one frame uses the specified font but new frames don&#x2019;t, add</p><pre>    (add-to-list 'default-frame-alist '(font . "Bitstream Vera Sans</pre><p>Mono-10&#x201d;))</p><p>to your <a class="local" href="https://www.emacswiki.org/emacs/InitFile">InitFile</a>.</p><p>If you&#x2019;re having trouble with latin characters being displayed in a different font, try the following, which is mentioned in passing at the end of README.unicode:</p><pre>    (set-fontset-font <span class="string">"fontset-default"</span> 'latin '(<span class="string">"arial"</span> .</pre><p>&#x201c;unicode-bmp&#x201d;))</p><p>If you&#x2019;re having trouble with the euro symbol € character being displayed in a different font, try the following:</p><pre>    (set-fontset-font <span class="string">"fontset-default"</span> 'gb18030 '(<span class="string">"dejavu sans mono"</span></pre><p>. &#x201c;unicode-bmp&#x201d;))</p><p>Or, to change ONLY the Euro symbol (or any other specific characters that aren&#x2019;t covered by a suitable predefined charset or script), try something along the lines of</p><pre>    (set-fontset-font <span class="string">"fontset-default"</span> '(#x20ac . #x20ac) '(<span class="string">"dejavu sans mono"</span></pre><p>. &#x201c;unicode-bmp&#x201d;))</p><p>where the hexadecimal numbers are the first and last Unicode codepoints you want to affect.</p><p>[Note: for all of the above suggestions, you should replace the font name with the one that you want&#x2026;]</p><h3>Memory leaks</h3><p>The MEMFULL errors have been fixed in CVS.</p><h3>Background colour</h3><p>The problem where the area of the window not covered by text is grey (window background color) as reported <a href="http://uncle-toby.livejournal.com/9536.html" class="url http outside">here</a> seems to have been a gtk-qt problem it is fixed. See <a href="http://www.ubuntuforums.org/showpost.php?p=1539310&amp;postcount=78" class="url http outside">this</a> UbuntuForum post.</p><h3>Indic font support</h3><p>The support for Devanagari, Kannada, Hindi, Tamil and Malayalam are correct as far as I can see. There might be bugs in the font encodings. See <a class="local" href="https://www.emacswiki.org/emacs/SupportHindi">SupportHindi</a>.</p><h2>Unfixed problems</h2><p>Has anyone noticed that buttons (links) blink much more than in Emacs 22? For example in irc #emacs via erc, there are so many user name buttons that Emacs 23 is using quite a bit of CPU and the window flickers once in a while. I try to track down this bug, but I don&#x2019;t know how to get more details for the developers to fix it. &#x2013; Leo</p><p>I find a recipe to see the bug. &#x201c;C-u 3 2 M-x hanoi&#x201d; you can see the screen is acting weirdly.</p><div class="color one level0"><p> July 12, 2007</p><p>All I get is square outlines, and aliased fonts otherwise (latest code on the branch as of today). libxft and libxft-dev are installed, ttf-bitstream-vera as well, current Debian Sid amd64. What are directions for troubleshooting and fixing? Is this branch going to be merged into trunk and part of an official release eventually? More than a year since this was started and there&#x2019;s still no consumer ready binary package? Emacs is the last app on my desktop not using AA fonts, I am starting to notice.</p></div><div class="color two level0"><p> August 31, 2007</p><p>I got it working for the most part, but the Italic and Bold Italic faces aren&#x2019;t anti-aliased, even though they seem to be with the same font (see the screenshot below). Any ideas?</p><dl class="quote"><dt /><dd>I fixed this by adding <tt>Emacs.fontBackend: xft</tt> to my .Xresources.</dd></dl><p><img alt="http://toshkov.org/tmp/emacs-fonts.png" src="http://toshkov.org/tmp/emacs-fonts.png" class="url http" /></p></div><div class="color one level0"><p> December 11, 2007</p><p>For set-fontset-font, I can find a list of charset (latin-iso-8859-1, etc) with list-character-sets, but I can&#x2019;t find a list of scripts (han, etc). charset-script-alist lists some scripts, but I&#x2019;ve ran across .emacs snippets that use script names not on that list (like cjk-misc). Where can I find the whole list?</p></div><div class="color two level0"><p> May 19, 2008</p><p>Starting emacs with</p><p>emacs -fn &#x201c;Bitstream Vera Sans Mono-12&#x201d; -g 80x40</p><p>doesn&#x2019;t show a frame with 80 columns width, but a frame with 66 columns width.</p><p>emacs -g 80x40</p><p>i.e. starting emacs without using true type fonts shows the frame with the correct width: 80 columns.</p></div><h2>Screenshots</h2><p><a class="local" href="https://www.emacswiki.org/emacs/XftGnuEmacs">XftGnuEmacs</a> with auctex and preview-latex</p><p><img alt="http://lh5.google.com/gongyi.liao/RxWgkE6PbWI/AAAAAAAAAGU/0LSziDuf9YU/s800/Screenshot-Emacs-AUCTEX.png" src="http://lh5.google.com/gongyi.liao/RxWgkE6PbWI/AAAAAAAAAGU/0LSziDuf9YU/s800/Screenshot-Emacs-AUCTEX.png" class="url http" /></p><p>With some kanji</p><p><img alt="http://farm1.static.flickr.com/107/312993958_fb13a395f5_o.png" src="http://farm1.static.flickr.com/107/312993958_fb13a395f5_o.png" class="url http" /></p><p>Gnus group mode. Note the Tango Icons in the tool bar:</p><p><img src="http://bp1.blogger.com/__lmoqbyBXEo/RvgdbvdNIGI/AAAAAAAAABk/aGPcKPncYiI/s1600/xft-gnu-emacs.jpg" class="url http" alt="http://bp1.blogger.com/__lmoqbyBXEo/RvgdbvdNIGI/AAAAAAAAABk/aGPcKPncYiI/s1600/xft-gnu-emacs.jpg" /></p><p>I did not get these when I compiled from CVS two days ago. Is this because of my local settings, or did something change in the CVS tree? I see no notes in the Changelog <a class="local" href="https://www.emacswiki.org/emacs/JoelAdamson">JoelAdamson</a></p><div class="color one level0"><p> October 26, 2007</p><p>I only get things properly displayed with &#x201c;<a class="local" href="https://www.emacswiki.org/emacs/DejaVu">DejaVu</a> Mono-10&#x201d;:</p><p><img alt="http://img230.imageshack.us/img230/2387/76353846yn2.png" class="url http" src="http://img230.imageshack.us/img230/2387/76353846yn2.png" /></p><p>With all other truetype fonts dired, calendar and so on, look a little weird:</p><p><img alt="http://img230.imageshack.us/img230/9144/23148118wm6.png" class="url http" src="http://img230.imageshack.us/img230/9144/23148118wm6.png" /></p><p>&#x2013; henry</p><p><em>A.</em> I think what&#x2019;s happened here is that the font specification doesn&#x2019;t match an actual font on your system, so a fallback font is used instead. In this case it is variable-width and it has thrown out the alignment of your calendar. Try one of the interactive methods of choosing fonts &#x2013; that way you&#x2019;ll be sure to pick one that&#x2019;s displayable.</p></div><div class="color two level0"><p> <a class="local" href="https://www.emacswiki.org/emacs/JohnBrow">JohnBrow</a> got it to run under Fedora 8, looks very nice. After checking the source out of CVS he had to do &#x201c;yum install gtk-*&#x201d; to pull all the required development packages in for the ./configure command to work.</p></div></div><div class="wrapper close"></div></div><div class="footer"><hr /><span class="translation bar"><br />  <a class="translation new" href="https://www.emacswiki.org/emacs?action=translate;id=XftGnuEmacs;missing=de_es_fr_it_ja_ko_pt_ru_se_uk_zh" rel="nofollow">Add Translation</a></span><div class="edit bar"><a accesskey="c" class="comment local edit" href="https://www.emacswiki.org/emacs/Comments_on_XftGnuEmacs">Talk</a> <a accesskey="e" class="edit" href="https://www.emacswiki.org/emacs?action=edit;id=XftGnuEmacs" rel="nofollow" title="Click to edit this page">Edit this page</a> <a class="history" href="https://www.emacswiki.org/emacs?action=history;id=XftGnuEmacs" rel="nofollow">View other revisions</a> <a class="admin" href="https://www.emacswiki.org/emacs?action=admin;id=XftGnuEmacs" rel="nofollow">Administration</a></div><div class="time">Last edited 2016-12-22 19:57 UTC by <a class="author" href="https://www.emacswiki.org/emacs/groovy2shoes">groovy2shoes</a> <a class="diff" href="https://www.emacswiki.org/emacs?action=browse;diff=2;id=XftGnuEmacs" rel="nofollow">(diff)</a></div><div style="float:right; margin-left:1ex;">
+<!-- Creative Commons License -->
+<a class="licence" href="https://creativecommons.org/licenses/GPL/2.0/"><img alt="CC-GNU GPL" style="border:none" src="/pics/cc-GPL-a.png" /></a>
+<!-- /Creative Commons License -->
+</div>
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <license rdf:resource="https://creativecommons.org/licenses/GPL/2.0/" />
+  <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" />
+</Work>
+
+<License rdf:about="https://creativecommons.org/licenses/GPL/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</License>
+</rdf:RDF>
+-->
+
+<p class="legal">
+This work is licensed to you under version 2 of the
+<a href="https://www.gnu.org/">GNU</a> <a href="/GPL">General Public License</a>.
+Alternatively, you may choose to receive this work under any other
+license that grants the right to use, copy, modify, and/or distribute
+the work, as long as that license imposes the restriction that
+derivative works have to grant the same rights and impose the same
+restriction. For example, you may choose to receive this work under
+the
+<a href="https://www.gnu.org/">GNU</a>
+<a href="/FDL">Free Documentation License</a>, the
+<a href="https://creativecommons.org/">CreativeCommons</a>
+<a href="https://creativecommons.org/licenses/sa/1.0/">ShareAlike</a>
+License, the XEmacs manual license, or
+<a href="/OLD">similar licenses</a>.
+</p>
+<p class="legal" style="padding-top: 0.5em">Please note our <a href="/emacs/Privacy">Privacy Statement</a>.</p>
+</div>
+</body>
+</html>

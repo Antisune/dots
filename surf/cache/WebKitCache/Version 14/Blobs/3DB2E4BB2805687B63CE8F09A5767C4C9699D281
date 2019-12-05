@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>EmacsWiki: Set Fonts</title><link rel="alternate" type="application/wiki" title="Edit this page" href="https://www.emacswiki.org/emacs?action=edit;id=SetFonts" /><link type="text/css" rel="stylesheet" href="https://www.emacswiki.org/light.css" /><meta name="robots" content="INDEX,FOLLOW" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki" href="https://www.emacswiki.org/emacs?action=rss" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki: SetFonts" href="https://www.emacswiki.org/emacs?action=rss;rcidonly=SetFonts" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content"
+      href="https://www.emacswiki.org/full.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content and diff"
+      href="https://www.emacswiki.org/full-diff.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki including minor differences"
+      href="https://www.emacswiki.org/minor-edits.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Changes for SetFonts only"
+      href="https://www.emacswiki.org/emacs?action=rss;rcidonly=SetFonts" /><meta content="width=device-width" name="viewport" />
+<script type="text/javascript" src="/outliner.0.5.0.62-toc.js"></script>
+<script type="text/javascript">
+
+  function addOnloadEvent(fnc) {
+    if ( typeof window.addEventListener != "undefined" )
+      window.addEventListener( "load", fnc, false );
+    else if ( typeof window.attachEvent != "undefined" ) {
+      window.attachEvent( "onload", fnc );
+    }
+    else {
+      if ( window.onload != null ) {
+	var oldOnload = window.onload;
+	window.onload = function ( e ) {
+	  oldOnload( e );
+	  window[fnc]();
+	};
+      }
+      else
+	window.onload = fnc;
+    }
+  }
+
+  // https://stackoverflow.com/questions/280634/endswith-in-javascript
+  if (typeof String.prototype.endsWith !== 'function') {
+    String.prototype.endsWith = function(suffix) {
+      return this.indexOf(suffix, this.length - suffix.length) !== -1;
+    };
+  }
+
+  var initToc=function() {
+
+    var outline = HTML5Outline(document.body);
+    if (outline.sections.length == 1) {
+      outline.sections = outline.sections[0].sections;
+    }
+
+    if (outline.sections.length > 1
+	|| outline.sections.length == 1
+           && outline.sections[0].sections.length > 0) {
+
+      var toc = document.getElementById('toc');
+
+      if (!toc) {
+	var divs = document.getElementsByTagName('div');
+	for (var i = 0; i < divs.length; i++) {
+	  if (divs[i].getAttribute('class') == 'toc') {
+	    toc = divs[i];
+	    break;
+	  }
+	}
+      }
+
+      if (!toc) {
+	var h2 = document.getElementsByTagName('h2')[0];
+	if (h2) {
+	  toc = document.createElement('div');
+	  toc.setAttribute('class', 'toc');
+	  h2.parentNode.insertBefore(toc, h2);
+	}
+      }
+
+      if (toc) {
+        var html = outline.asHTML(true);
+        toc.innerHTML = html;
+
+	items = toc.getElementsByTagName('a');
+	for (var i = 0; i < items.length; i++) {
+	  while (items[i].textContent.endsWith('✎')) {
+            var text = items[i].childNodes[0].nodeValue;
+	    items[i].childNodes[0].nodeValue = text.substring(0, text.length - 1);
+	  }
+	}
+      }
+    }
+  }
+
+  addOnloadEvent(initToc);
+  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body class="default" lang="en"><div class="header"><a class="logo" href="https://www.emacswiki.org/emacs/SiteMap"><img alt="[Home]" class="logo" src="https://www.emacswiki.org/images/logo218x38.png" /></a><div class="menu"><span class="gotobar bar"><a class="local" href="https://www.emacswiki.org/emacs/SiteMap">SiteMap</a> <a class="local" href="https://www.emacswiki.org/emacs/Search">Search</a> <a class="local" href="https://www.emacswiki.org/emacs/ElispArea">ElispArea</a> <a class="local" href="https://www.emacswiki.org/emacs/HowTo">HowTo</a> <a class="local" href="https://www.emacswiki.org/emacs/Glossary">Glossary</a> <a class="local" href="https://www.emacswiki.org/emacs/RecentChanges">RecentChanges</a> <a class="local" href="https://www.emacswiki.org/emacs/News">News</a> <a class="local" href="https://www.emacswiki.org/emacs/Problems">Problems</a> <a class="local" href="https://www.emacswiki.org/emacs/Suggestions">Suggestions</a> </span><form method="get" action="https://www.emacswiki.org/emacs" enctype="multipart/form-data" accept-charset="utf-8" class="search"><p><label for="search">Search:</label> <input type="text" name="search"  size="15" accesskey="f" id="search" /> <label for="searchlang">Language:</label> <input type="text" name="lang"  size="5" id="searchlang" /> <input type="submit" name="dosearch" value="Go!" /></p></form></div><h1><a href="https://www.emacswiki.org/emacs?search=%22SetFonts%22" rel="nofollow" title="Click to search for references to this page"><span style="padding-right: 0.5ex;">Set</span><span style="padding-right: 0.5ex;">Fonts</span></a></h1></div><div class="wrapper"><div class="content browse" lang="en"><p> The most important info first. Here&#x2019;s how to change the default font in your <a class="local" href="https://www.emacswiki.org/emacs/InitFile">InitFile</a>: use <code>M-x customize-face</code> to customize the <code>default</code> face.</p><p><a class="anchor" name="InspectingAndChangingFonts"></a> </p><h2>Inspecting and Changing Fonts</h2><ul><li>Use `<code>S-down-mouse-1</code>&#x2019; or `<code>M-x menu-set-font</code>&#x2019; to see the font and fontset menu. Emacs starts with the startup fontset.</li><li>Use `<code>M-x describe-font</code>&#x2019; to see the requested font and actual font being used.</li><li>See <a class="local" href="https://www.emacswiki.org/emacs/GoodFonts">GoodFonts</a> for some recommendations, see <a class="local" href="https://www.emacswiki.org/emacs/FontSets">FontSets</a> for how to set various fonts at the same time (one per coding system).</li><li>Use command <code>&#x2018;doremi-font&#x2019;</code> in <a class="local" href="https://www.emacswiki.org/emacs/DoReMi">DoReMi</a> to change the default font of a <a class="local" href="https://www.emacswiki.org/emacs/frame">frame</a> by cycling among the available fonts &#x2013; just stop when you get to the font you want.</li><li>Use command <code>&#x2018;icicle-font&#x2019;</code> in <strong><a class="local" href="https://www.emacswiki.org/emacs/Icicles">Icicles</a></strong> to do the same thing (cycle among fonts) &#x2013; but with the added benefit of <a class="local" href="https://www.emacswiki.org/emacs/completion">completion</a>, including <a class="local" href="https://www.emacswiki.org/emacs/regexp">regexp</a> matching.</li><li><a class="local" href="https://www.emacswiki.org/emacs/ChangeFontsPermanentlyOnWindows">ChangeFontsPermanentlyOnWindows</a></li><li>Use <a class="local" href="https://www.emacswiki.org/emacs/Anything">Anything</a> command <code>&#x2018;anything-select-xfont&#x2019;</code> to narrow the font list by typing some patterns.</li></ul><p><a class="anchor" name="GloballyChangingFont"></a> </p><h3>Globally Change the Default Font</h3><p>To change the default font for new (non special-display) frames, put either of these in your <a class="local" href="https://www.emacswiki.org/emacs/init_file">init file</a>:</p><dl class="quote"><dt /><dd><code>(add-to-list 'default-frame-alist '(font . </code> <em><code>FONT</code></em> <code>))</code></dd><dt /><dd><code>(set-face-attribute 'default t :font </code> <em><code>FONT</code></em> <code>)</code></dd></dl><p>To change the default font for the current frame, as well as future frames, put either of these in your init file:</p><dl class="quote"><dt /><dd><code>(set-face-attribute 'default nil :font </code> <em><code>FONT</code></em> <code>)</code></dd><dt /><dd><code>(set-frame-font  </code> <em><code>FONT</code></em> <code>nil t)</code></dd></dl><p>where <em><code>FONT</code></em> is a string naming the font you want, for example, <code>"Droid Sans Mono-10"</code>.</p><p>This should work on all platforms. As of Emacs 23, all of your system fonts including <span>TrueType</span> are available to Emacs.</p><p>If you are using a development snapshot for what will become Emacs 24.4 then see <a class="url http outside" href="http://debbugs.gnu.org/cgi/bugreport.cgi?bug=16529">Emacs bug #16529</a>.</p><p>(There needs to be an explanation for how to set fonts for particular modes or buffers here. Including a set-face-attribute hook as described above for a particular mode does not work; once you enter that mode the new font is set, but it is applied <i>globally</i> to all other open buffers!)</p><h4>Global Fonts, .Xresources, and Emacs Daemon</h4><p>I found that the only way to set fonts so that they remain consistent across emacs -nw, emacs23(-gtk), emacsclient -t, emacsclient -c, was to declare them in .Xresources and .emacs. But the declarations can&#x2019;t conflict with each other. Otherwise, emacs --daemon complains. It doesn&#x2019;t like (set-face-attribute &#x2018;default nil :font FONT) and the like. For instance, to use Terminus, 9 pixel size across the board, I needed to insert</p><p><tt>Emacs.font: Terminus-9</tt></p><p><tt>(set-default-font &#x201c;Terminus-9&#x201d;)</tt></p><p>in my ~/.Xresources and ~/.emacs, respectively.</p><p><a class="anchor" name="ChangingGtkFonts"></a> </p><h2>Changing the (buffer) menu fonts for GTK emacs</h2><p>According to <a class="url http" href="http://stackoverflow.com/questions/3454466/emacs23-buffer-menu-font-gtk">http://stackoverflow.com/questions/3454466/emacs23-buffer-menu-font-gtk</a> say in <code>~/.emacs.d/gtkrc</code>: </p><pre>style <span class="string">"menufont"</span>
+{
+  font_name = <span class="string">"monospace 10"</span>  # Pango font name
+}
+widget <span class="string">"*emacs-menuitem*"</span> style <span class="string">"menufont"</span>
+</pre><p>Using <code>widget "*" ...</code> will change all &#x201c;toolkit&#x201d; fonts (menus, dialogs).</p><p><a class="anchor" name="ChangingFontSize"></a> </p><h2>Changing Font Size</h2><p>You can resize (text-scale) the text in a buffer (in all windows showing it), or you can resize the default font of a frame.</p><p><a class="anchor" name="ZoomBuffer"></a> </p><h3>Resize (Zoom) Buffer Text Incrementally</h3><p>Starting with <a class="local" href="https://www.emacswiki.org/emacs/GnuEmacs">GnuEmacs</a> 23, you can zoom the text in the current <a class="local" href="https://www.emacswiki.org/emacs/buffer">buffer</a>, in all frames displaying it:</p><ul><li>Vanilla Emacs: You can use `<code>C-x C-+</code>&#x2019; and <code>&#x2018;C-x C--&#x2019;</code> (<code>&#x2018;text-scale-adjust&#x2019;</code>) to increase or decrease the buffer text size (`<code>C-+</code>&#x2019; or <code>&#x2018;C--&#x2019;</code> to repeat). To restore the default (global) face height, type <code>&#x2018;C-x C-0&#x2019;</code>. <code>&#x2018;S-mouse-1&#x2019;</code> pops up a menu where you can choose these same actions.</li></ul><div class="color one level0"><dl class="quote"><dl class="quote"><dt /><dd>BUG? &#x2013; If you use a fontset with Xft, `<code>C-x C-+</code>&#x2019; this does not scale the secondary font. For example, If you use a fontset &#x2013; <code>dejavu-sans-mono</code> for latin, <code>NanumGothic_Coding</code> for hangul(Korean) &#x2013; , increasing the text size does not scale the Korean characters. &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/cinsk">cinsk</a> </dd></dl></dl></div><div class="color two level0"><p><a class="anchor" name="zoom-in-out"></a> <a class="anchor" name="zoom-in"></a> <a class="anchor" name="zoom-out"></a> </p><ul><li><strong><code>&#x2018;zoom-in/out&#x2019;</code></strong>, <strong><code>&#x2018;zoom-in&#x2019;</code></strong>, <strong><code>&#x2018;zoom-out&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/zoom-frm.el">zoom-frm.el</a></tt>) &#x2013; The first is a more general replacement for the vanilla command (<code>&#x2018;text-scale-adjust&#x2019;</code>) bound by default to `<code>C-x C-+</code>&#x2019;, <code>&#x2018;C-x C--&#x2019;</code>, <code>&#x2018;C-x C-0&#x2019;</code>, and `<code>C-x C-=</code>&#x2019;. You can bind the other two to mouse-wheel rotations, so you can use the wheel like you do in a Web browser. You can also use these same commands to zoom a frame (see <a class="local anchor" href="#ZoomFrame">below</a>): <code>&#x2018;C-u&#x2019;</code> for each command toggles between buffer and frame zooming. And <code>&#x2018;C-u&#x2019;</code> while repeating toggles buffer/frame on the fly during <strong><code>&#x2018;zoom-in/out&#x2019;</code></strong>.</li><li><strong><code>&#x2018;doremi-buffer-font-size&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/doremi-frm.el">doremi-frm.el</a></tt>) &#x2013; Change buffer font size incrementally using the arrow keys or the mouse wheel.</li><li><tt><a class="local" href="https://www.emacswiki.org/emacs/face-remap%2b.el">face-remap+.el</a></tt> &#x2013; For <em>all</em> of the above, let buffer font resizing also zoom the <a class="local" href="https://www.emacswiki.org/emacs/window">window</a> size accordingly (horizontally, vertically, or both). That way, you can take advantage of the space freed up by resizing (text-scaling) to a smaller font.</li><li><a class="local" href="https://www.emacswiki.org/emacs/GlobalTextScaleMode">GlobalTextScaleMode</a> &#x2013; Adjust font size for all buffers at once using face remapping (Emacs 23+).</li></ul><p><a class="anchor" name="ZoomFrame"></a> </p></div><h3>Resize (Zoom) Frame Font Incrementally</h3><p>You can use any of the following to increase or decrease the font size for the current <a class="local" href="https://www.emacswiki.org/emacs/frame">frame</a>, effectively resizing it <em>incrementally</em> &#x2013; <em>zooming</em> the text in or out.</p><ul><li><strong><code>&#x2018;zoom-in/out&#x2019;</code></strong>, <strong><code>&#x2018;zoom-in&#x2019;</code></strong>, <strong><code>&#x2018;zoom-out&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/zoom-frm.el">zoom-frm.el</a></tt>) &#x2013; see <a class="local anchor" href="#zoom-in">above</a> for the descriptions. For frame zooming these zoom all windows of the frame, and they do not affect the display in another frame of a buffer that is shown in the frame.</li><li><strong><code>&#x2018;zoom-frm-unzoom&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/zoom-frm.el">zoom-frm.el</a></tt>) &#x2013; Undo any frame zooming from <code>&#x2018;zoom-in&#x2019;</code> and <code>&#x2018;zoom-out&#x2019;</code>.</li><li><strong><code>&#x2018;toggle-zoom-frame&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/zoom-frm.el">zoom-frm.el</a></tt>) &#x2013; Alternately zoom a frame and unzoom it.</li><li><strong><code>&#x2018;doremi-frame-font-size&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/doremi-frm.el">doremi-frm.el</a></tt>) &#x2013; Change frame font size incrementally using the arrow keys or the mouse wheel.</li><li><strong><code>&#x2018;enlarge-font&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/frame-cmds.el">frame-cmds.el</a></tt>) &#x2013; Change font size by a given increment (prefix arg).</li><li><strong><code>&#x2018;zoom-all-frames-in&#x2019;</code></strong>, <strong><code>&#x2018;zoom-all-frames-out&#x2019;</code></strong> (in <tt><a class="local" href="https://www.emacswiki.org/emacs/zoom-frm.el">zoom-frm.el</a></tt>) &#x2013; Incrementally zoom all frames at once, by changing the size of <a class="local" href="https://www.emacswiki.org/emacs/face">face</a> <code>&#x2018;default&#x2019;</code>.</li><li><a class="local" href="https://www.emacswiki.org/emacs/CycleFontSizes">CycleFontSizes</a> &#x2013; Cycle a sequence of font sizes.</li></ul><h3>Resize Frame Font using Lisp</h3><p>You can change the size of a font for the current frame <em>non</em>-incrementally using <code>&#x2018;set-face-attribute&#x2019;</code> with a <code>:height</code> parameter:</p><pre>  (set-face-attribute 'default (selected-frame) <span class="builtin">:height</span> 100)</pre><p>Alternatively, you can use <code>&#x2018;set-frame-font&#x2019;</code>, <code>&#x2018;set-face-font&#x2019;</code>, or <code>&#x2018;set-face-attribute&#x2019;</code> with a <code>FONT</code> string argument that has the size you want:</p><pre>  (set-frame-font
+    <span class="string">"-outline-Courier New-normal-normal-normal-mono-11-*-*-*-c-*-iso8859-1"</span>)</pre><pre>  (set-face-font
+    'default
+    (selected-frame)
+    <span class="string">"-outline-Courier New-normal-normal-normal-mono-11-*-*-*-c-*-iso8859-1"</span>)</pre><pre>  (set-face-attribute
+    'default (selected-frame) <span class="builtin">:font</span>
+    <span class="string">"-outline-Courier New-normal-normal-normal-mono-11-*-*-*-c-*-iso8859-1"</span>)</pre><h2>Installing Fonts</h2><p>If you are running Linux, you may be able to run `xfontsel` from a shell. This program helps you select a font. Once you&#x2019;ve found one that you like, save the specification string. In my version, clicking the &#x201c;select&#x201d; button near the top left copies the string to my clipboard so I can yank (paste) it into Emacs.</p><p>Either set them in your <a class="local" href="https://www.emacswiki.org/emacs/InitFile">InitFile</a>:</p><pre>  (set-face-font 'menu <span class="string">"-jmk-neep alt-medium-r-*-*-20-*-*-*-c-*-iso8859-1"</span>)
+  (set-face-font 'default <span class="string">"-jmk-neep alt-medium-r-*-*-20-*-*-*-c-*-iso8859-1"</span>)</pre><p>Or set them in your ~/.Xresources or ~/.Xdefaults file (depending on your setup):</p><pre>  *.font: -jmk-neep alt-medium-r-*-*-20-*-*-*-c-*-iso8859-1
+  Emacs.pane.menubar.font: -jmk-neep alt-medium-r-*-*-20-*-*-*-c-*-iso8859-1</pre><p>Actually, you may want to specify <a class="local" href="https://www.emacswiki.org/emacs/FontSets">FontSets</a> instead of a single font, if you are interested in displaying various fonts at the same time</p><p>Debian users: if your emacs startup fonts look ugly, that might be because you&#x2019;ve installed the gsfonts-x11 package. gsfonts-x11 gives X the ability to display Ghostscript fonts, and they are poorly rendered on screen. To fix this, read the document that comes with gsfonts-x11, or <a class="url http outside" href="http://www.linuxtopia.org/online_books/linux_system_administration/debian_linux_guides/debian_linux_reference_guide/ch-tune.en_036.html">Section 9.4.13 of the Debian Reference, "TrueType fonts in X"</a>.</p><div class="color one level0"><p> As an emacs newbie, I feel this section quite incomplete. For most people, Installing a font means two things : </p><ul><li>first downloading the font from the net and copy it in the proper place,</li><li>then select it be it from a dialog from the editor or as a line to add in a config file.</li></ul><p>The section covers only the second point. I am quite willing to agree that emacs does thing differently for a bunch of reason, but please give me some light. (Even to tell it is some sort of X dependency, which I suspect but that doesn&#x2019;t tell me what to do).</p><p>Note that arrived here after a search on &#x201c;font&#x201d; which, I think, seems quite a reasonable thing to do to install a new font. I didn&#x2019;t see a newbie-specific page. &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/LionelB">LionelB</a></p></div><div class="color two level0"><p> For downloading fonts and installing them, there&#x2019;s nothing Emacs-specific. Emacs uses your system&#x2019;s fonts. If you&#x2019;re using Emacs with X11, then use the X11 font installation technique (xset fp etc.). If you&#x2019;re using Emacs with X11/Xft, then use the Xft font installation technique (.fonts.conf). If you&#x2019;re using Emacs with MS Windows, then use the MS Windows font installation technique (Control Panel / Fonts). If you&#x2019;re using Emacs with Mac, then use the Mac font installation technique (Font Book / Add Fonts).</p></div><div class="color one level0"><p> X Logical Font Description (XLFD) python utility: <a class="url http" href="https://gist.github.com/tomleo/b14a7a75e49d57c08bc1">https://gist.github.com/tomleo/b14a7a75e49d57c08bc1</a> &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/TomLeo">TomLeo</a></p></div><div class="color two level0"><dl class="quote"><dt /><dd>Great. How about porting it to <a class="local" href="https://www.emacswiki.org/emacs/EmacsLisp">EmacsLisp</a>? ;-) &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/DrewAdams">DrewAdams</a></dd></dl></div><h3>Good Pixel Fonts</h3><ul><li><a class="url http" href="http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html">http://www.cl.cam.ac.uk/~mgk25/ucs-fonts.html</a> has a few good pixel fonts that won&#x2019;t anti-alias and work very well in Emacs in Linux.</li></ul><h2>Testing if fonts are available?</h2><p>Is it possible to test if a given font is available without an error or other side-effects? I just wrote:</p><pre>    (<span class="keyword">defun</span> <span class="function">font-existsp</span> (font)
+      (<span class="keyword elisp">if</span> (string-equal (describe-font font)
+                        <span class="string">"No matching font being used"</span>)
+          nil
+          t))</pre><p>but it has the side-effect of opening a description in <b>Help</b> if the font exists. I&#x2019;m trying to set my init files to try a series of fonts and use the first available one. (I&#x2019;m using Emacs 22.1.2 on <a class="local" href="https://www.emacswiki.org/emacs/OpenBSD">OpenBSD</a>, fwiw.) -<a class="local" href="https://www.emacswiki.org/emacs/ScottVokes">ScottVokes</a></p><pre> I figured out a simpler way:
+  (<span class="keyword">defun</span> <span class="function">font-existsp</span> (font)
+    (<span class="keyword elisp">if</span> (null (x-list-fonts font))
+        nil t))</pre><p>I use this:</p><pre>  (member font-name (font-family-list))</pre><p>-<a class="local" href="https://www.emacswiki.org/emacs/MichaelChen">MichaelChen</a></p><p>Also I use this:</p><pre>  (find-font (font-spec <span class="builtin">:name</span> font-name))</pre><p>And so..</p><pre>  (<span class="keyword">require</span> '<span class="constant">cl</span>)
+  (<span class="keyword">defun</span> <span class="function">font-candidate</span> (<span class="type">&amp;rest</span> fonts)
+     <span class="string">"Return existing font which first match."</span>
+     (find-if (<span class="keyword elisp">lambda</span> (f) (find-font (font-spec <span class="builtin">:name</span> f))) fonts))</pre><pre>  <span class="comment">;; Emacs23 style font setting.</span>
+  (set-face-attribute 'default nil <span class="builtin">:font</span> (font-candidate '<span class="string">"Consolas-10<span class="builtin">:weight</span>=normal"</span> <span class="string">"DejaVu Sans Mono-10<span class="builtin">:weight</span>=normal"</span>))</pre><p>Version using <a class="url http outside" href="https://github.com/magnars/dash.el">dash.el</a> (call it the same way as above):</p><pre>  (<span class="keyword">require</span> '<span class="constant">dash</span>)
+  (<span class="keyword">defun</span> <span class="function">font-candidate</span> (<span class="type">&amp;rest</span> fonts)
+    <span class="string">"Return the first available font."</span>
+    (--first (find-font (font-spec <span class="builtin">:name</span> it)) fonts))</pre><p>Version using loop:</p><pre>  (<span class="keyword">require</span> '<span class="constant">cl</span>)
+  (<span class="keyword">defun</span> <span class="function">font-candidate</span> (<span class="type">&amp;rest</span> fonts)
+    (<span class="keyword cl">loop</span> for font in fonts when (find-font (font-spec <span class="builtin">:name</span> font)) return font))</pre><h2>True type fonts?</h2><div class="color one level0"><p> I&#x2019;d like to use TrueType Fonts in Emacs in various places, but Emacs handles them badly. Can someone tell me why TTF fonts are so much trouble in Emacs, and if there&#x2019;s some way I could get emacs to play nicely with them anyway? --<a class="local" href="https://www.emacswiki.org/emacs/ShaeErisson">ShaeErisson</a> </p></div><div class="color two level0"><p> For TTF support, see <a class="local" href="https://www.emacswiki.org/emacs/XftGnuEmacs">XftGnuEmacs</a> --<a class="local" href="https://www.emacswiki.org/emacs/TimotheeBesset">TimotheeBesset</a> </p></div><div class="color one level0"><p> As of 23.3.1 TTF support is still quite defective (on Debian at least): for example, <a class="local" href="https://www.emacswiki.org/emacs/DejaVu">DejaVu</a> Sans Mono 11 is rendered at ~11.5pt, and 10pt is rendered at ~9.5pt. You&#x2019;ll need to set a font size of e.g. 102-108 tenths to actually get 10pt text.</p></div><div class="color two level0"><dl class="quote"><dt /><dd>See <a class="local" href="https://www.emacswiki.org/emacs/DisplayEngineForArabic">DisplayEngineForArabic</a>, perhaps the part about the bounding boxes for the ASCII characters being used helps? &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/AlexSchroeder">AlexSchroeder</a></dd></dl></div><div class="color one level0"><dl class="quote"><dt /><dd>I use TrueType fonts with Emacs on MS Windows with no problem. In fact, you even get anti-aliasing. However, I think there appears to be a problem with Emacs 21 &#x2013; they work fine in Emacs 20 and 22, at least. &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/DrewAdams">DrewAdams</a></dd></dl></div><h2>CarbonEmacs</h2><p>Customize the default face (<code>M-x customize-face RET default RET</code>).</p><p>Alternatively, follow the following procedure:</p><ol><li>M-x mac-font-panel-mode and pick the font you want.</li><li>M-x describe-font and copy the font name (e.g. &#x201c;-apple-inconsolata-medium-r-normal--13-130-72-72-m-130-iso10646-1&#x201d;)</li><li>Add the following to your <code>.emacs</code> file:</li></ol><pre>    (set-default-font
+     <span class="string">"-apple-inconsolata-medium-r-normal--13-130-72-72-m-130-iso10646-1"</span>)</pre><h2>Emacs for Mac OS X</h2><p>M-x mac-font-panel-mode is not available on Emacs builds downloaded from <a class="url http" href="http://emacsformacosx.com">http://emacsformacosx.com</a>. On these builds, use the default Mac shortcut to popup the font panel, i.e, Command+T. Alternatively, use M-x ns-popup-font-panel. Then follow the instructions in the Carbon Emacs section.</p><div class="color one level0"><p> From my personal experiences, there is no working-for-all-emacs solution for fontset. For current Emacs 24.x (from <a class="url http" href="http://emacsformacosx.com/">http://emacsformacosx.com/</a>), below script can be one of the solution:</p><pre>    (<span class="keyword cl">when</span> (eq system-type 'darwin)
+
+      <span class="comment">;; default Latin font (e.g. Consolas)</span>
+      (set-face-attribute 'default nil <span class="builtin">:family</span> <span class="string">"Consolas"</span>)
+
+      <span class="comment">;; default font size (point * 10)</span>
+      <span class="comment">;;</span>
+      <span class="comment">;; WARNING!  Depending on the default font,</span>
+      <span class="comment">;; if the size is not supported very well, the frame will be clipped</span>
+      <span class="comment">;; so that the beginning of the buffer may not be visible correctly. </span>
+      (set-face-attribute 'default nil <span class="builtin">:height</span> 165)
+
+      <span class="comment">;; use specific font for Korean charset.</span>
+      <span class="comment">;; if you want to use different font size for specific charset,</span>
+      <span class="comment">;; add <span class="builtin">:size</span> POINT-SIZE in the font-spec.</span>
+      (set-fontset-font t 'hangul (font-spec <span class="builtin">:name</span> <span class="string">"NanumGothicCoding"</span>))
+
+      <span class="comment">;; you may want to add different for other charset in this way.</span>
+      )
+</pre><p>&#x2013; cinsk </p></div><div class="color two level0"></div><hr /><p><a class="local" href="https://www.emacswiki.org/emacs/CategoryDisplay">CategoryDisplay</a> <a class="local" href="https://www.emacswiki.org/emacs/CategoryFrames">CategoryFrames</a> <a class="local" href="https://www.emacswiki.org/emacs/CategoryInternationalization">CategoryInternationalization</a></p></div><div class="wrapper close"></div></div><div class="footer"><hr /><span class="translation bar"><br /> <a class="translation zh" href="https://www.emacswiki.org/emacs/设置字体">中文</a> <a class="translation new" href="https://www.emacswiki.org/emacs?action=translate;id=SetFonts;missing=de_es_fr_it_ja_ko_pt_ru_se_uk" rel="nofollow">Add Translation</a></span><div class="edit bar"><a accesskey="c" class="comment local" href="https://www.emacswiki.org/emacs/Comments_on_SetFonts">Talk</a> <a accesskey="e" class="edit" href="https://www.emacswiki.org/emacs?action=edit;id=SetFonts" rel="nofollow" title="Click to edit this page">Edit this page</a> <a class="history" href="https://www.emacswiki.org/emacs?action=history;id=SetFonts" rel="nofollow">View other revisions</a> <a class="admin" href="https://www.emacswiki.org/emacs?action=admin;id=SetFonts" rel="nofollow">Administration</a></div><div class="time">Last edited 2019-05-23 06:29 UTC by <span class="ip-code" title="Anonymous"><span class="violet">6</span><span class="yellow">2</span><span class="orange">1</span><span class="indigo">5</span></span> <a class="diff" href="https://www.emacswiki.org/emacs?action=browse;diff=2;id=SetFonts" rel="nofollow">(diff)</a></div><div style="float:right; margin-left:1ex;">
+<!-- Creative Commons License -->
+<a class="licence" href="https://creativecommons.org/licenses/GPL/2.0/"><img alt="CC-GNU GPL" style="border:none" src="/pics/cc-GPL-a.png" /></a>
+<!-- /Creative Commons License -->
+</div>
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <license rdf:resource="https://creativecommons.org/licenses/GPL/2.0/" />
+  <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" />
+</Work>
+
+<License rdf:about="https://creativecommons.org/licenses/GPL/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</License>
+</rdf:RDF>
+-->
+
+<p class="legal">
+This work is licensed to you under version 2 of the
+<a href="https://www.gnu.org/">GNU</a> <a href="/GPL">General Public License</a>.
+Alternatively, you may choose to receive this work under any other
+license that grants the right to use, copy, modify, and/or distribute
+the work, as long as that license imposes the restriction that
+derivative works have to grant the same rights and impose the same
+restriction. For example, you may choose to receive this work under
+the
+<a href="https://www.gnu.org/">GNU</a>
+<a href="/FDL">Free Documentation License</a>, the
+<a href="https://creativecommons.org/">CreativeCommons</a>
+<a href="https://creativecommons.org/licenses/sa/1.0/">ShareAlike</a>
+License, the XEmacs manual license, or
+<a href="/OLD">similar licenses</a>.
+</p>
+<p class="legal" style="padding-top: 0.5em">Please note our <a href="/emacs/Privacy">Privacy Statement</a>.</p>
+</div>
+</body>
+</html>

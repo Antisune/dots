@@ -1,0 +1,1975 @@
+
+				body, td, th, font {
+					color: #666666;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 11px;
+					line-height: 1.25em;
+				}
+				strong,em,b,i {
+					font-family: Arial, Helvetica, sans-serif;
+					line-height: 1em;
+				}
+
+				strong,b {
+					font-weight: bold;
+				}
+
+				em,i {
+					font-style: italic;
+				}
+
+				h1,h2,h3,h4,h5,h6,address {
+					font-family: Arial, Helvetica, sans-serif;
+				}
+
+				h1 {
+					font-size: 18px;
+					text-decoration: none;
+				}
+                A {
+                    color: #009dd9;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 9pt;
+                    text-decoration: none;
+                }
+                A:Hover {
+                    text-decoration: underline;
+                }
+                .noScroll {
+                    overflow: hidden;
+                }
+                .blockPage[class~=blockPage] {
+                    background-color: #444444;
+                    filter:alpha(opacity=95);
+                /* IE */    
+                    opacity: 0.95;
+                /* Safari, Opera */    
+                    -moz-opacity:0.95;
+                /* FireFox */    
+                    z-index: 20;
+                    height: 100%;
+                    width: 100%;
+                    background-repeat:no-repeat;
+                    background-position:center;
+                    position:absolute;
+                    top: 0px;
+                    left: 0px;
+                    color: Black;
+                    text-align:center;
+                    vertical-align: middle;
+                    min-width: 960px;
+                    min-height: 500px;
+                }
+                .blockPage .popup {
+                    width: 660px;
+                    <-- min-height: 400px;
+                    color: Black;
+                    position:absolute;
+                    left:50%;
+                    top:30%;
+                    margin:-125px 0 0 -300px;
+                }
+                .blockPage .tabs {
+                    margin: 0px 0px 0px 0px;
+                    width: 660px;
+                }
+                .blockPage .noTab {
+                    border-bottom: 2px solid #000000;
+                    width: 82px;
+                    font-size: 10pt;
+                    padding: 5px 0px 5px 0px;
+                    text-align: center;
+                    color: #777777;
+                    float: left;
+                    height: 16px;
+                    background: #444444;
+                }
+                .blockPage .tabSelected {
+                    background-color: White;
+                    font-size: 10pt;
+                    font-weight: bold;
+                    padding: 5px 20px 5px 20px;
+                    border-bottom: 0px none #000000;
+                    border-top: 2px solid #000000;
+                    border-left: 2px solid #000000;
+                    border-right: 2px solid #000000;
+                    width: 130px;
+                    text-align: center;
+                    color: Black;
+                    float: left;
+                    cursor: pointer;
+                }
+                .blockPage .tab {
+                    background-color: White;
+                    font-size: 10pt;
+                    padding: 4px 20px 5px 20px;
+                    border-top: 1px solid #777777;
+                    border-left: 1px solid #777777;
+                    border-right: 1px solid #777777;
+                    border-bottom: 2px solid #000000;
+                    width: 130px;
+                    text-align: center;
+                    color: #777777;
+                    float: left;
+                    cursor: pointer;
+                }
+                .blockPage .tabContent {
+                    background-color: White;
+                    border-left: 2px solid black;
+                    border-right: 2px solid black;
+                    border-bottom: 2px solid black;
+                    margin: 0px 0px 20px 0px;
+                    text-align: left;
+					min-height: 250px;
+                }
+                .hidden {
+                    display: none;
+                }
+                .blockPage .tabContent .spanContent {
+                    border-bottom: 1px solid #000000;
+                }
+                .blockPage .tabContent .formInput {
+                    margin: 3px 0px 8px 0px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 8pt;
+                    padding: 2px;
+                    width: 80px;
+                }
+                .blockPage .tabContent .formSelect {
+                    margin: 3px 5px 2px 5px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 8pt;
+                    padding: 0px;
+                    width: 180px;
+                }
+                .blockPage .tabContent .formButton {
+                    margin: 5px 5px 3px 5px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 8pt;
+                }
+                .blockPage .tabContent .leftPopup {
+                    float: left;
+                    width: 310px;
+                    text-align: right;
+                }
+                .blockPage .tabContent a {
+                    color: #999999;
+					<-- float: left;
+                }
+                .blockPage .tabContent .rightPopup {
+                    float: left;
+                    height: 27px;
+                    text-align: right;
+                    margin-top: 43px;
+                    padding-bottom: 2px;
+                    border-bottom: 1px solid #999999;
+                }
+                .blockPage .tabContent .contentPane {
+                    margin: 0px 15px 0px 15px;
+                }
+                .blockPage .tabContent .quickPathPane {
+                    float: left;
+                    height: 149px;
+                    padding: 15px 0px 0px 0px;
+					width: 290px;
+                    max-width: 290px;
+                }
+                .blockPage .tabContent .quickPathResults {
+                    padding: 0px 10px 0px 15px;
+                    font-weight: bold;
+					overflow: hidden;
+                    <-- overflow: auto;
+                    <-- max-height: 200px;
+                }
+                .blockPage .tabContent .quickPathResults ul {
+                    float: left;
+                    list-style: none;
+                    margin: 5px 0px 0px 25px;
+                    padding: 0px 0px 0px 0px;
+                    font-weight: normal;
+                }
+                .blockPage .tabContent .quickPathResults a {
+                    color: #555555;
+                }
+                .blockPage .popupTitle {
+                    margin: 3px 0px 0px 0px;
+                    border-bottom: 1px solid #999999;
+                    border-top: 1px solid #999999;
+                    background: #e1e1e1;
+                }
+                .blockPage .popupBox {
+                    border: 1px solid black;
+                    margin: 30px 5px 0px 0px;
+                    padding: 5px;
+                    width: 200px;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -khtml-border-radius: 4px;
+                    border-radius: 4px;
+                    text-align: center;
+                }
+                .blockPage .title {
+                    font-size: 12pt;
+                    padding: 3px 5px 2px 10px;
+					line-height: 12pt;
+                }
+                .blockPage .titleSpacer {
+                    height: 7px;
+					margin: 0px 0px 5px 0px;
+                }
+                .blockPage .breadcrumb {
+                    font-size: 7pt;
+                    border-bottom: 1px solid #999999;
+                    padding: 5px 3px 3px 5px;
+                }
+                .blockPage .breadcrumb a {
+                    font-weight: bold;
+                    font-size: 7pt;
+                }
+                .blockPage .stepNumber {
+                    font-size: 16pt;
+                    font-weight: bold;
+                    margin-left: 12px;
+                    color: #999999;
+					line-height: 16pt;
+                }
+                .blockPage .stepName {
+                    font-size: 10pt;
+                    font-weight: normal;
+					margin-left: 5px;
+                    margin-right: 8px;
+                    vertical-align: middle;
+                    color: #999999;
+                }
+                .blockPage .largeStepNumber {
+                    color: #AA0000;
+                    font-size: 100pt;
+                    font-weight: bolder;
+                    margin: 0px;
+                    padding: 0px;
+                    text-align: right;
+                    float: right;
+					position: relative;
+					top: 60px;
+					left: 10px;
+                }
+                .blockPage .largeStepName {
+                    color: #aaaaaa;
+                    font-size: 18pt;
+                    font-weight: bolder;
+                    padding-bottom: 2px;
+                    padding-top: 46px;
+                    text-align: right;
+                    border-bottom: 1px solid #999999;
+                    float: right;
+					line-height: 18pt;
+                }
+                .blockPage .autoDetectContent {
+                    color: #000000;
+                    font-size: 12px;
+                    font-weight: normal;
+					line-height: 15px;
+                    float: left;
+                    padding-top: 46px;
+                    padding-bottom: 2px;
+                    text-align: left;
+                    border-bottom: 1px solid #999999;
+                    margin-bottom: 15px;
+                    height: 146px;
+                }
+				.blockPage .autoDetectContent img {
+					float: left;
+				}
+                .blockPage .cancel {
+                    width: 580px;
+                    text-align: right;
+                    padding: 0px 10px 10px 0px;
+                }
+                .blockPage .selected {
+                    color: #9c3022;
+                }
+                .selectedItem, .selectedItem a {
+                    color: #9c3022;
+                }
+                .clear {
+                    clear: both;
+                }
+                .canvas {
+                    text-align: center;
+                    border-top: 35px solid #efefef;
+                }
+                .header-band {
+					margin: auto;
+					padding: 0px 0px 0px 0px;
+					background-color: #efefef;
+					background-image: url("masthead_hr.png");
+					background-position: 0 70px;
+					background-repeat: repeat-x;
+					width: 960px;
+					color: #666666;
+                }
+                .header-band .logo {
+                    float: left;
+                }
+                .header-band .logo img {
+                    float: left;
+                }
+                .header-band .headerMenu {
+                    float: right;
+					height: 19px;
+                    margin: 25px 0px 39px 0px;
+                }
+				.header-band .headerMenu a {
+					color: #949494;
+					font-size: 12px;
+                }
+				.header-band .headerMenu a:link {
+                    TEXT-DECORATION: none;
+                }
+				.header-band .headerMenu a:visited {
+                    TEXT-DECORATION: none;
+                }
+				.header-band .headerMenu a:hover {
+                    TEXT-DECORATION: underline;
+                }
+				.header-band .headerMenu a:active {
+                    TEXT-DECORATION: none;
+                }
+				.header-band .headerMenuSeparator {
+					background-image: url("main_nav_link_separator.png");
+					background-position: 0 0;
+					background-repeat: no-repeat;
+					border-left: none;
+					display: inline;
+					list-style-position: inside;
+					margin-left: 5px;
+					margin-right: 5px;
+					marker-offset: 0px;
+					padding-left: 1px;
+					padding-right: 1px;
+					width: 10px;
+					vertical-align: middle;
+				}
+                .header-band .topNav {
+                    clear: both;
+                    height: 30px;
+					line-height: 30px;
+					margin: 0px 0px 0px 0px;
+                }
+                .header-band .topNav ul {
+                    list-style: none;
+                    padding: 0px 0px 0px 0px;
+                    margin: 0px;
+                    float: left;
+                }
+                /* Add bold and uppercase to primary navigation menu - Myles Novak - 3 Feb 2011 */
+                .header-band .topNav ul li {
+					background: transparent;
+					border: none;
+					color: #555;
+					display: block;
+					float: left;
+					font-weight: bold; 
+					height: 30px;
+					line-height: 30px;
+					margin: 0;
+					marker-offset: 0px;
+					padding: 0;
+					position: relative;
+					text-transform: uppercase;
+                }
+                /* Setting color of Support in primary navigation menu - Myles Novak - 1 Apr 2011 */
+                .header-band .topNav ul li a:link, .header-band .topNav ul li a:visited {
+                    color: #555;
+					display: block;
+					font-family: Arial, Helvetica, sans-serif !important;
+					font-size: 14px !important;
+					font-weight: bold;
+					line-height: 30px;
+					text-decoration: none;
+					text-transform: uppercase;
+					padding: 0 15px;
+                }
+				.header-band .topNav ul li a:hover {
+                    color: #dc291e;
+					background-color: #ffffff;
+                }
+				.header-band .topNav ul li a:active {
+                    color: #dc291e;
+					text-decoration: none;
+                }
+                .header-band .topNav ul li.active a {
+					background-color: #ffffff;
+                    color: #dc291e;
+					text-decoration: none;
+                }
+				.header-band .topNav ul li.active .menuLevel1SubMenuIndicator {
+					background-color: transparent;
+					background-image: url("menu_notch_white.png");
+					background-position: 50% 0;
+					background-repeat: no-repeat;
+					display: block;
+					height: 10px;
+					left: 0px;
+					position: absolute;
+					width: 100%;
+				}
+				
+				.header-band .topNav .menuAreaRight {
+					float: right;
+					position: relative;
+					left: 0px;
+					top: 0px;
+				}
+				
+				/* Search box
+				---------------------------------------------------------------------- */
+				.header-band .topNav .menuAreaRight .menuAreaSearchField .searchBox {
+                    background-color:transparent;
+					width: 120px;
+					color: #a7a7a7;
+					font-family: Arial, Helvetica, sans-serif;
+					font-size: 11px;
+                    float: right;
+                    margin: 3px 5px 0px 0px;
+                    height: 17px;
+                    border: none;
+                }
+                .header-band .topNav .menuAreaRight .menuAreaSearchField .searchButton {
+                    float: right;
+                    margin: 0px 0px 0px 0px;
+                }
+				.header-band .topNav .menuAreaRight .menuAreaSearchField {
+					background: transparent;
+					display: block;
+					float: none;
+					height: 30px;
+					position: absolute;
+					right: 0;
+					text-align: right;
+					top: 0;
+					vertical-align: middle;
+					white-space: nowrap;
+					width: 155px !important;
+				}
+
+				.header-band .topNav .menuAreaRight .menuAreaSearchField #searchMastHeadTable {
+					background: #fff;
+					border: 1px solid #ccc;
+					border-radius: 10px;
+					display: block;
+					height: 25px;
+					margin: 0;
+					padding: 0;
+					table-layout: fixed;
+				}
+
+				.header-band .topNav .menuAreaRight .menuAreaSearchField td.mh-search-field-left-edge,
+				.header-band .topNav .menuAreaRight .menuAreaSearchField td.mh-search-field-middle,
+				.header-band .topNav .menuAreaRight .menuAreaSearchField td.mh-search-field-right-edge {
+					background: none;
+					display: block;
+					float: left;
+					height: 24px;	
+					margin: 0;
+					padding: 0;
+					width: 10px;
+				}
+
+				.header-band .topNav .menuAreaRight .menuAreaSearchField td.mh-search-field-middle {
+					width: 120px;
+				}
+
+				.header-band .topNav .menuAreaRight .menuAreaSearchField td.mh-search-field-middle form {
+					background: none;
+					display: block;
+					height: 24px;
+					margin: 0;
+					padding: 0;
+				}
+				.header-band .topNav .menuAreaRight .menuAreaSearchField input.mh-search-field-middle {
+					background: none;
+					border: none;
+					border-color: #000000;
+					border-width: 0px;
+					color: #a7a7a7;
+					font-family: inherit;
+					font-size: 10px;
+					height: 24px;
+					line-height: 24px;
+					margin: 0;
+					padding: 0;
+					width: 100%;
+                }
+				.header-band .topNav .menuAreaRight .menuAreaSearchField td.mh-search-field-right-edge {
+					background: transparent url("http://www.lenovo.com/images/masthead/search_submit_red.png") no-repeat 50% 50%;
+					width: 20px;
+				}
+				.header-band .topNav .menuAreaRight .menuAreaSearchField td.mh-search-field-right-edge a {
+					display: block;
+					width: 20px;
+					height: 25px;
+					padding: 0;
+					margin: 0;
+				}
+				.typeAheadWrapper {
+					display: none;
+				}
+				.header-band .secondNav {
+					clear: both;
+					height: 30px;
+					line-height: 30px;
+					margin: 0px 0px 0px 0px;
+					background-color: #dc291e;
+                }
+                .header-band .secondNav ul {
+                    list-style: none;
+					padding: 0px 0px 0px 0px;
+					margin: 0px;
+					float: left;
+					background: none;
+					text-align: left;
+                }
+                .header-band .secondNav ul li {
+                    background: none;
+					border: none;
+					display: inline-block;
+					float: left;
+					height: 30px;
+					line-height: 30px;
+                }
+				.header-band .secondNav ul li a {
+					color: #ffffff;
+                    float: left;
+					padding: 0 10px;
+                }
+				.header-band .secondNav ul li a:link {
+					color: #ffffff;
+					text-decoration: none;
+                }
+				.header-band .secondNav ul li a:hover {
+					color: ffffff;
+					text-decoration: none;
+					background-color: #9c3022;
+                }
+                .header-band .iw-breadcrumb {
+                    background-color: #ffffff;
+                    height: 30px;
+					line-height: 30px;
+                    width: 100%;
+                    text-align: left;
+                    clear: both;
+                }
+                .header-band .iw-breadcrumb img {
+                    border: 0px;
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 4px 0px 0px;
+                    float: left;
+                }
+                .header-band .breadcrumb {
+                    float: left;
+                    margin: 0px 0px 0px 15px;
+					color: #666666;
+					font-size: 11px;
+					position: relative;
+                /* Remove uppercase from breadcrumb - Myles Novak - 3 Feb 2011 */
+                /* font-weight: bold; */
+                /* text-transform: uppercase; */
+                }
+				.header-band .breadcrumb a {
+					color: #666666;
+					font-size: 11px;
+					padding-right: 5px;
+                }
+				.header-band .breadcrumb a:link {
+					color: #666666;
+					text-decoration: none;
+                }
+                .header-band .downloadList {
+                    float: right;
+                    text-align: right;
+                    border-right: 1px solid white;
+                    padding-right: 5px;
+                    margin-top: 0px;
+                }
+				.header-band .downloadList img {
+					position: relative;
+					top: 4px;
+                }
+				.header-band .downloadList a {
+					font-size: 11px;
+				}
+                .header-band .socialList {
+                    float: right;
+                    padding-left: 5px;
+                    margin-top: 4px;
+                }
+                .middle-row-band {
+                    background: #ffffff;
+                }
+                .middle-row-band .ls-fxr {
+                    text-align: left;
+                    /* background: #E7EBEF; */
+                    /* background-image: url("/Navigation_Background.jpg");
+                    background-repeat: no-repeat; */
+                    margin: 0px 0px 0px 0px;
+                    color: #ffffff;
+                    width: 960px;
+                    clear: both;
+                    margin: auto;
+                }
+				/*Added by WaiJun for noDesign page */
+				.middle-row-band-noDesign .ls-fxr {
+                    text-align: left;
+                    background: #E7EBEF;
+                    /* background-image: url("/Navigation_Background.jpg");
+                    background-repeat: no-repeat; */
+                    margin: 0px 0px 0px 0px;
+                    color: #ffffff;
+                    /*width: 960px;*/
+                    clear: both;
+                    margin: auto;
+                }
+				/*END*/
+                .leftNav {
+                    color: #efefef;
+                    width: 240px;
+                    float: left;
+                    height: 100%;
+                }
+                .leftNav .navTitle {
+                    /* width: 220px; */
+                    height: 35px;
+                    background: #C9D3DD;
+                    color:#000000;
+                    font-weight: bold;
+                    font-size: 14pt;
+					position: relative;
+					/* top: 15px; */
+                    /* padding: 15px 5px 0px 20px; */
+                }
+                /* Setting styles for Support link in left navigation - Myles Novak - 1 Apr 2011 */
+                .leftNav .navTitle a.navTitle {
+                    color:#555;
+                    font-weight: bold;
+                    font-size: 14pt;
+					position: relative;
+					top: 15px;
+					left: 20px;
+                    /* margin-left:-20px; */
+                }
+                .leftNav .navTitle a.navTitle:link {
+                    TEXT-DECORATION: none;
+					color:#555;
+                }
+                .leftNav .navTitle a.navTitle:hover {
+                    TEXT-DECORATION: underline;
+                }
+                .leftNav .menu {
+                    width: 240px;
+                }
+                .leftNav .menu a {
+                    font-weight: bold;
+                    font-size: 9pt;
+					color: #555;
+                }
+                .leftNav .menu ul {
+                    margin: 0px 0px 20px 20px;
+                    padding: 0px;
+                    list-style-type: none;
+                }
+                .leftNav .menu li {
+                    padding: 30px 20px 0px 0px;
+                }
+                .leftNav .menu ul li ul {
+                    margin: 0px 0px 10px 20px;
+                    list-style-type: none;
+                }
+                .leftNav .menu ul li ul li {
+                    padding: 10px 20px 0px 0px;
+                }
+                .leftNav .menu ul li ul li ul {
+                    margin: 0px 0px 10px 20px;
+                    list-style-type: none;
+                }
+                .leftNav .menu ul li ul li ul li {
+                    padding: 10px 20px 0px 0px;
+                }
+                .contentSection {
+                    background: #FFFFFF;
+                    color: #000000;
+                    width: 720px;
+                    float: left;
+					min-height: 541px;  /* added by Myles Novak on 8 Dec 2011 to remove gray background in center of page */
+                }
+				/* Added by WaiJun for noDesign page */
+				.contentSection-noDesign {
+                    background: #FFFFFF;
+                    color: #000000;
+                    width: 520px;
+                    float: left;
+                }
+				/* END */
+                .contentSection .contentHeader {
+                    background: #FFFFFF;
+                    width: 720px;
+                    overflow: hidden;
+                }
+                .contentSection .contentHeader .contentTitle {
+                    height: 40px;
+                    font-size: 15pt;
+                    font-weight: bold;
+                    color: #000000;
+                    padding: 10px 0px 0px 10px;
+					line-height: 100%;
+                }
+                .contentSection .contentHeader .panel {
+                    padding: 0px 0px 0px 0px;
+                    width: 240px;
+                    text-align: center;
+                    background-repeat: repeat;
+                    float: left;
+                }
+                .contentSection .contentHeader .spanTitle {
+                    font-size: 18pt;
+                    font-weight: bold;
+                    color: #000000;
+					line-height: 100%;
+                }
+                .contentSection .contentHeader .spanPanel {
+                    width: 720px;
+                    text-align: center;
+                    color: #000000;
+                }
+                .contentSection .contentHeader .spanPanel .leftSpanPanel {
+                    padding: 10px 0px 0px 15px;
+                    width: 450px;
+                    text-align: left;
+                    float: left;
+                    font-size: 11pt;
+                }
+                .contentSection .contentHeader .spanPanel .rightSpanPanel {
+                    margin: 0px 0px 0px 5px;
+                    padding: 10px 10px 30px 15px;
+                    width: 225px;
+                    text-align: left;
+                    float: left;
+                    font-size: 8pt;
+                    background-image: url("BrowseProducts_BG.png");
+                    background-repeat: repeat;
+                }
+                .contentSection .contentHeader .spanPanel .rightSpanPanel ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .contentSection .contentHeader .spanPanel .rightSpanPanel ul li a {
+                    color: #000000;
+                }
+                .contentSection .contentHeader .spanPanel .panelSubTitle {
+                    font-size: 12pt;
+                    font-weight: bold;
+                    color: #000000;
+                }
+                .contentSection .contentHeader .spanPanel a {
+                    color: #D70311;
+                }
+                .contentSection .contentHeader .spanPanel .upgradeWarranty {
+                    padding-left: 20px;
+                }
+                .contentSection .contentHeader .spanPanel .modifyProduct {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    float: left;
+					font-weight: bold;
+                }
+                .contentSection .helpfulResources .panelSubTitle {
+                    font-size: 12pt;
+                    font-weight: bold;
+                    color: #000000;
+                }
+                .contentSection .helpfulResources ul {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .contentSection .helpfulResources ul li a {
+                    color: #000000;
+                }
+                .lightBorder {
+                    border: 1px solid #EEEEEE;
+                }
+				.contentSection .headerBgImage {
+                    /* background-image: url("/Content_Header_BG.jpg"); */
+                    background-repeat: repeat-x;
+                }
+                .contentSection .contentHeader p {
+                    margin: 5px 0px 0px 0px;
+                    padding: 0px 10px 0px 19px;
+                    text-align: left;
+					line-height: 1.25em;
+                    font-size: 8pt;
+                    color: #000000;
+                }
+                .contentSection .contentHeader .panelHeader {
+                    font-size: 12pt;
+					/* line-height: 100%; */
+                    color: #eb0010;
+                    padding: 27px 20px 20px 15px;
+                    
+                    /* Modified by rojesh from 203 to 201*/
+                    width: 201px;  
+                    text-align: left;
+                    background: #FFFFFF;
+                    border: 2px solid white;
+                /*
+                  background-image: url("/Fade_Bg.jpg");
+                  background-position: bottom;
+                  background-repeat: repeat-x;
+                 */
+                }
+                .contentSection .contentHeader .panelHeader:hover {
+                    color: White;
+                    /* background-image: url("/Panel_Highlight.png"); */
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-color: #D10D19;
+                    cursor: pointer;
+                }
+                .contentSection .contentHeader .leftPanel {
+                    /* background-image: url("BrowseProducts_BG.png"); */
+                }
+				.contentSection .contentHeader .leftPanel:hover {
+                    cursor: pointer;
+                }
+                .contentSection .contentHeader .centerPanel {
+                    /* background-image: url("RunAutoDetect_BG.png"); */
+                }
+                .contentSection .contentHeader .centerPanel:hover {
+                    cursor: pointer;
+                }
+				.contentSection .contentHeader .rightPanel {
+                    /* background-image: url("UseQuickPath_BG.png"); */
+                }
+				.contentSection .contentHeader .rightPanel:hover {
+                    cursor: pointer;
+                }
+                .contentSection .contentArea {
+                    padding: 0px 0px 10px 0px;
+					margin: 0px 0px 0px 0px;
+                    background: #FFFFFF;
+                    color: #000000;
+					font-size: 8pt;
+                }
+                /*
+                  .contentSection .contentArea img
+                  {
+                  margin: 4px 10px 10px 10px;
+                  border: 1px solid black;
+                  }
+                 */
+                .contentSection .contentArea A {
+                    color: #009dd9;
+                    font-size: 8pt;
+                }
+				.contentSection .contentArea .highlighted {
+                    background: #d7d7d7;
+                }
+                .contentSection .contentArea .contentTitle {
+                    font-size: 16pt;
+                    font-weight: bold;
+                    color: #000000;
+                    padding: 5px 0px 0px 0px;
+					margin: 5px 0px 5px 0px;
+                    background-image: url("Fade_Bg.jpg");
+                    background-position: bottom;
+                    background-repeat: repeat-x;
+					line-height: 100%;
+                }
+                .contentSection .contentArea .contentTitle img {
+                    max-height: 60px;
+                }
+                .contentSection .contentArea img {
+                    vertical-align: middle;
+                    padding-right: 3px;
+                }
+                .contentSection .contentArea .contentTable {
+                    margin: 0px;
+                    padding: 0px;
+                    border-collapse: collapse;
+                    width: 720px;
+                }
+                .contentSection .contentArea .highlightList {
+                    float: left;
+                    vertical-align: top;
+                    border-right: 1px solid #EEEEEE;
+                    border-bottom: 1px solid #EEEEEE;
+					margin: 0px;
+					width: 237px;
+					height: 144px;
+                }
+                .contentSection .contentArea .noRightBorderList {
+                    border-right: 0px;
+                }
+                .contentSection .contentArea .highlightList ul {
+                    float: left;
+                    margin: 0px;
+                    list-style: none;
+					padding: 0px;
+					position: relative;
+					top: 5px;
+					left: 5px;
+                }
+                .contentSection .contentArea .highlightList ul li {
+					padding: 0px;
+					line-height: 16px;
+                }
+                .contentSection .contentArea .spacedList {
+                    vertical-align: top;
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .contentSection .contentArea .spacedList ul {
+                    float: left;
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px;
+                    list-style: none;
+					border-right: 1px solid #EEEEEE;
+					width: 238px;
+					height: 144px;
+                }
+                .contentSection .contentArea .spacedList ul li {
+                    padding: 0px 0px 0px 0px;
+					line-height: 16px;
+					position: relative;
+					left: 4px;
+                }
+                .contentSection .contentArea .imageList ul li, .contentSection .contentArea .imageList li {
+                    min-height: 30px;
+                }
+                .contentSection .contentArea .imageList ul li img, .contentSection .contentArea .imageList li img {
+                    width: 27px;
+					line-height: 100%;
+                }
+                .contentSection .contentArea .noImageWrap p {
+                    margin: 0px;
+                    margin-left: 30px;
+                    padding-top: 0px;
+                }
+                .contentSection .contentArea .noImageWrap img, .contentSection .contentArea .imageWrap img {
+                    padding-top: 2px;
+                    float: left;
+                }
+                .contentSection .contentArea .imageWrap p {
+                    margin: 0px;
+                    padding-top: 0px;
+                    display: inline;
+                }
+                .contentSection .contentArea .singleLine p {
+                    display: inline;
+                    margin: 0px;
+                    padding-top: 0px;
+                }
+                .contentSection .contentArea .spacedList ul li:first-child {
+                    margin: 0px 0px 0px 0px;
+					padding: 0px 0px 5px 0px;
+                }
+                .contentSection .contentArea .contactService {
+                    padding: 18px 0px 5px 0px;
+                    font-size: 11pt;
+                    color: #000000;
+                }
+                .contentSection .contentArea .highlightList ul li a:link {
+                    color: #0092bd;
+                    TEXT-DECORATION: none;
+                }
+                .contentSection .contentArea .highlightList ul li a:visited {
+                    color: #a7a7a7;
+                    TEXT-DECORATION: none;
+                }
+                .contentSection .contentArea .highlightList ul li a:hover {
+                    color: #0092bd;
+                    TEXT-DECORATION: underline;
+                }
+                .contentSection .contentArea .highlightList ul li a:active {
+                    color: #d60010;
+                    TEXT-DECORATION: none;
+                }
+                .contentSection .contentArea .highlightList ul li:first-child {
+                    color: #D70311;
+                    font-size: 16px;
+                    padding: 0px 0px 5px 0px;
+					margin: 0px 0px 8px 0px;
+                }
+				.contentSection .contentArea .highlightList ul li:first-child a {
+                    color: #D70311;
+                    font-size: 16px;
+					position: relative;
+					top: 5px;
+					left: 5px;
+                }
+                .contentSection .contentArea .spacedList ul li:first-child a, .contentSection .contentArea .spacedList ul li:first-child {
+                    color: #D70311;
+                    font-size: 12pt;
+                    /* padding-left: 10px; */
+                }
+                .contentSection .contentArea .contentSeparator {
+                    background: #FFFFFF;
+                    color: #000000;
+                    font-size: 20px;
+                    width: 96%;
+					line-height: 115%;
+                    margin: 0px 20px 5px 8px;
+                    /* padding: 3px 0px 5px 10px; */
+                }
+                /* Added By Myles Novak: Callcenter confidential disclaimer */
+                .contentSection .contentArea .confidentialCC {
+                    background: #FFFFFF;
+                    color: #ff6600;
+                    font-size: 10px;
+                    width: 96%;
+                    margin: 0px 20px 0px 8px;
+                    padding: 3px 0px 3px 10px;
+                }
+                /* Added By Myles Novak: Servicer confidential disclaimer */
+                .contentSection .contentArea .confidentialSP {
+                    background: #FFFFFF;
+                    color: #ff6600;
+                    font-size: 10px;
+                    width: 96%;
+                    margin: 0px 20px 0px 8px;
+                    padding: 3px 0px 3px 10px;
+                }
+                .contentSection .contentArea .spanContent {
+                    width: 410px;
+                    float: left;
+                    padding: 0px 40px 0px 20px;
+                }
+                .contentSection .contentArea .spanFullContent {
+                    width: 650px;
+                    float: left;
+                    padding: 0px 40px 0px 20px;
+                }
+                .contentSection .contentArea .spanContent a {
+                    text-decoration: underline;
+                }
+                .contentSection .contentArea .contentSubtitle {
+                    font-size: 12pt;
+                    color: #000000;
+                    padding: 15px 0px 0px 0px;
+                }
+                .contentSection .contentArea .newsSubtitle {
+                    font-size: 12pt;
+                    color: #000000;
+                    padding: 0px 0px 0px 0px;
+                }
+                .contentSection .contentArea .spanContent p {
+                    padding: 3px 0px 0px 0px;
+                    margin: 0px;
+                }
+                .contentSection .contentArea .diagnosticLink {
+                    border: 1px solid black;
+                    float: left;
+                    margin: 30px 5px 0px 0px;
+                    padding: 5px;
+                    width: 210px;
+                    font-weight: bold;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -khtml-border-radius: 4px;
+                    border-radius: 4px;
+                }
+                .contentSection .subNote, .contentSection .subNote a {
+                    font-size: 7pt;
+                }
+				.contentSection .productDescription, .contentSection .productDescription a {
+                    /* border: 1px solid black; */
+                    float: left;
+                    margin: 0px 0px 0px 0px;
+                    padding: 3px;
+                    width: 450px;
+					/* background: #DEDBDE; */
+					font-size: 8pt;
+					font-weight: normal;
+                }
+                .contentSection .contentArea .contentBold {
+                    font-weight: bold;
+                }
+                .contentSection .contentArea .tableHeader {
+                    font-weight: bold;
+                    text-align: right;
+                }
+                .contentSection .contentArea .feedbackTable {
+                    padding: 1px;
+                    margin: 10px 0px 10px 40px;
+                }
+				.warningTable {
+                    padding: 1px;
+                    margin: 10px 0px 10px 40px;
+                }
+                .contentSection .contentArea .feedbackTable tr td:first-child{
+                    text-align: right;
+                    white-space: nowrap;
+                }
+				.contentSection .contentArea .feedbackTable tr td{
+                    padding: 3px;
+                    vertical-align: top;
+                }
+                .contentSection .contentArea .detailsDescription {
+                    margin: 0px 20px 0px 20px;
+                    border-bottom: 1px solid black;
+                /* Setting font color to black - Myles Novak - 10 Feb 2011 */
+                    background: #FFFFFF;
+                    color: #000000;
+                }
+                .contentSection .contentArea .detailsDescription p {
+                    margin: 10px 0px 10px 0px;
+                }
+                .contentSection .contentArea .detailsTable {
+                    padding: 1px;
+                    margin: 10px 0px 10px 0px;
+                    text-align: left;
+                }
+                .contentSection .contentArea .detailsTable tr td:first-child {
+                    text-align: left;
+                    white-space: nowrap;
+                    font-weight: bold;
+                }
+                .contentSection .contentArea .detailsTable tr td {
+                    padding: 3px;
+                    vertical-align: top;
+                    text-align: left;
+                    width: 210px;
+                }
+                .contentSection .contentArea .detailsTable th {
+                    border-bottom: 1px solid black;
+                }
+                .contentSection .contentArea .detailsTable td.alignLeft {
+                    text-align: left;
+                    white-space: nowrap;
+                    font-weight: bold;
+                }
+                .contentSection .contentArea .feedbackTable .formInput {
+                    width: 260px;
+                }
+                .contentSection .contentArea .feedbackTable .formText {
+                    width: 400px;
+                }
+                .contentSection .contentArea .warrantyTable {
+                    padding: 1px;
+                    margin: 10px 0px 10px 60px;
+                }
+                .contentSection .contentArea .warrantyTable .spacedRow td {
+                    padding-bottom: 15px;
+                }
+                .contentSection .contentArea .spanContent table tr td {
+                    vertical-align: top;
+                }
+                .contentSection .contentArea .warrantyNoticeTitle {
+                    background-color: #000000;
+                    color: #FFFFFF;
+                    padding: 5px 10px 5px 20px;
+                    float: left;
+                    width: 170px;
+                }
+                .contentSection .contentArea .warrantyNotice {
+                    background-color: #D7D7D7;
+                    float: left;
+                    color: #000000;
+                    padding: 20px;
+                    font-weight: bold;
+                    width: 160px;
+                }
+                .contentSection .contentArea .warrantyNotice a {
+                    color: #000000;
+                    text-decoration: underline;
+                }
+                .contentSection .contentArea .warrantyNotice p {
+                    font-weight: normal;
+                }
+                .contentSection .contentArea .rightBox {
+                    border: 1px solid black;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -khtml-border-radius: 4px;
+                    border-radius: 4px;
+                    padding: 10px;
+                    margin: 10px 10px 25px 0px;
+                    float: left;
+                    text-align: left;
+                    width: 178px;
+                }
+                .contentSection .contentArea .rightNewsBox {
+                    border: 1px solid black;
+                    -moz-border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -khtml-border-radius: 4px;
+                    border-radius: 4px;
+                    padding: 2px;
+                    margin: 0px 0px 0px 15px;
+                    float: left;
+                    width: 205px;
+                }
+                .contentSection .contentArea .rightBox a {
+                    color: #D70311;
+                    font-size: 8pt;
+                    font-weight: bold;
+                }
+                .contentSection .contentArea .tabs {
+                    margin: 0px 10px 0px 10px;
+                    width: 720px;
+                }
+                .contentSection .contentArea .noTab {
+                    border-bottom: 2px solid #000000;
+                    width: 374px;
+                    font-size: 10pt;
+                    padding: 5px 0px 5px 0px;
+                    text-align: center;
+                    color: #777777;
+                    float: left;
+                }
+                .contentSection .contentArea .tabSelected, .contentSection .contentArea .tabSelected a {
+                    font-size: 10pt;
+                    font-weight: bold;
+                    padding: 5px 20px 5px 20px;
+                    border-bottom: 0px none #000000;
+                    border-top: 2px solid #000000;
+                    border-left: 2px solid #000000;
+                    border-right: 2px solid #000000;
+                    width: 120px;
+                    text-align: center;
+                    color: Black;
+                    float: left;
+                    cursor: pointer;
+                }
+                .contentSection .contentArea .tab, .contentSection .contentArea .tab a {
+                    font-size: 10pt;
+                    padding: 4px 20px 5px 20px;
+                    border-top: 1px solid #777777;
+                    border-left: 1px solid #777777;
+                    border-right: 1px solid #777777;
+                    border-bottom: 2px solid #000000;
+                    width: 120px;
+                    text-align: center;
+                    color: #777777;
+                    float: left;
+                    cursor: pointer;
+                }
+                .contentSection .contentArea .tabContent {
+                    border-left: 2px solid black;
+                    border-right: 2px solid black;
+                    border-bottom: 2px solid black;
+                    margin: 0px 10px 20px 10px;
+                }
+                .contentSection .contentArea .hidden {
+                    display: none;
+                }
+                .contentSection .contentArea .tabContent .spanContent {
+                    border-bottom: 1px solid #000000;
+                }
+                .contentSection .contentArea .numberedList ul {
+                    list-style-type: decimal;
+                    color: Black;
+                }
+                .contentSection .contentArea .downloadHeader {
+                    background: #d7d7d7;
+                    color: #000000;
+                    font-size: 10pt;
+                    font-weight: bold;
+                    margin: 0px;
+                    padding: 1px 0px 3px 10px;
+                    border-bottom: 1px solid #000000;
+                }
+                .contentSection .contentArea .downloadHeader a {
+                    color: #000000;
+                    font-size: 10pt;
+                    font-weight: bold;
+                    text-decoration: none;
+                    padding: 5px;
+                }
+                .contentSection .contentArea .downloadHeaderSelected {
+                    background: #000000;
+                    color: #FFFFFF;
+                    font-size: 10pt;
+                    font-weight: bold;
+                    margin: 0px;
+                    padding: 3px 0px 3px 10px;
+                }
+                .contentSection .contentArea .downloadHeaderSelected a {
+                    color: #FFFFFF;
+                    font-size: 10pt;
+                    font-weight: bold;
+                    text-decoration: none;
+                    padding: 5px;
+                }
+                .contentSection .contentArea .downloadSubtitle {
+                    background: #d7d7d7;
+                    color: #000000;
+                    font-size: 9pt;
+                    font-weight: bold;
+                }
+				.contentSection .contentArea .downloadSubNote, .contentSection .contentArea .downloadSubNote a{
+					font-size: 8pt;
+					font-weight: normal;
+                }
+                .contentSection .contentArea .downloadTable {
+                    border-collapse: collapse;
+                    border: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    color: #000000;
+                }
+                .contentSection .contentArea .downloadTable tr:nth-child(odd) {
+                    /* Remove alternating gray background from download table - Myles Novak - 6 May 2011 */
+					/* background-color: #e5e5e5; */
+					background-color: #ffffff;
+                }
+				.contentSection .contentArea .downloadTable tr:first-child {
+                    /* Adding back gray background for first row of download table - Myles Novak - 6 May 2011 */
+					background-color: #e5e5e5;
+                }
+                .contentSection .contentArea .downloadTable th {
+                    border-top: 1px solid black;
+                    border-bottom: 1px solid black;
+                    padding: 2px 15px 2px 15px;
+                    white-space: nowrap;
+                }
+				.contentSection .contentArea .downloadTable tr {
+                    border-bottom: 1px solid black;
+                }
+                .contentSection .contentArea .downloadTable td {
+                    padding: 5px 15px 5px 15px;
+                    width: 150px;
+                }
+                .contentSection .contentArea .selectAll {
+                    margin: 2px 5px 2px 15px;
+                }
+                .contentSection .contentArea .bottomBorder {
+                    border-bottom: 3px solid black;
+                }
+                .contentSection .contentArea .centered, .contentSection .contentArea .centered td {
+                    text-align: center;
+                }
+                .contentSection .contentArea .downloadTable td:first-child {
+                    text-align: left;
+                    width: 700px;
+                }
+                .contentSection .contentArea .noWrap {
+                    white-space: nowrap;
+                }
+                .contentSection .contentArea .floatRight {
+                    float: right;
+                }
+                .contentSection .contentArea .floatLeft {
+                    float: left;
+                }
+				.contentSection .contentArea .warningText {
+					font-weight: bold;
+					color: #D70311;
+				}
+				.footer-band {
+                    background: #efefef;
+                    color: #949494;
+                    clear: both;
+                    /* height: 275px; */
+                    width: 100%;
+                    text-align: center;
+					/* padding: 0px 0px 30px 0px; */
+                }
+                .footer-band .ls-fxr {
+                    width: 960px;
+                    text-align: left;
+                    margin: auto;
+                }
+                .footer-band .footerPanel {
+					margin: 30px 15px 0px 15px;
+                    float: left;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+					color: #555;
+					text-transform: uppercase;
+				}
+                .footer-band .footerPanel a {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 14px;
+                    font-weight: bold;
+					color: #555;
+					text-transform: uppercase;
+                }
+				.footer-band .footerPanel ul {
+                    list-style-type: none;
+                    padding: 0px;
+                    font-weight: normal;
+					color: #949494;
+					text-transform: none;
+					margin: 10px 30px 0px 0px;
+				}
+                .footer-band .footerPanel ul li {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    font-weight: normal;
+					color: #949494;
+					margin: 0px 0px 5px 0px;
+					text-transform: none;
+                }
+				.footer-band .footerPanel ul li a {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    font-weight: normal;
+					color: #949494;
+					text-transform: none;
+				}
+				.footer-band .footerLinks {
+					clear: both;
+					/* float: left; */
+					/* height: 60px; */
+				}
+                .footer-band .footerLinks ul {
+                    list-style-type: none;
+                    margin: 20px 0px 0px 0px;
+                    padding: 0px;
+                }
+                .footer-band .footerLinks ul li {
+                    float: left;
+					color: #555;
+					background: #efefef;
+                }
+                .footer-band .footerLinksLeft {
+                    float: left;
+					margin: 0px 15px 0px 15px;
+					/* width: 500px; */
+                }
+                .footer-band .footerLinksLeft ul li {
+					background: #efefef;
+                    margin: 0px 0px 50px 0px;
+                }
+				.footer-band .footerLinksLeft ul li a {
+					padding: 0;
+					margin: 0;
+					color: #949494;
+                }
+				.footer-band .footerLinksLeft .footerLinkSeparator {
+					background-image: url("main_nav_link_separator.png");
+					background-position: 0 0;
+					background-repeat: no-repeat;
+					border-left: none;
+					display: inline;
+					list-style-position: inside;
+					margin-left: 10px;
+					margin-right: 10px;
+					marker-offset: 0px;
+					padding-left: 1px;
+					padding-right: 1px;
+					width: 10px;
+					vertical-align: middle;
+                }
+                .footer-band .footerLinksLeft ul li a .ft-copyright,
+				.footer-band .footerLinksLeft ul li a:link .ft-copyright,
+				.footer-band .footerLinksLeft ul li a:visited .ft-copyright{
+					color: #949494 !important;
+					cursor: pointer !important;
+					text-decoration: none !important;
+				}
+				.footer-band .footerLinksRight {
+                    float: right;
+					margin: 0px 15px 0px 15px;
+                }
+                .footer-band .footerLinksLeft .ft-copyright {
+                    color: #949494;
+                }
+                .footer-band .footerLinksRight .icon {
+                    PADDING-BOTTOM: 0px;
+                    BACKGROUND-COLOR: transparent;
+                    TEXT-INDENT: -90000em;
+                    MARGIN: 0px;
+                    PADDING-LEFT: 5px;
+                    WIDTH: 25px;
+                    PADDING-RIGHT: 0px;
+                    DISPLAY: block;
+                    BACKGROUND-REPEAT: no-repeat;
+                    BACKGROUND-POSITION: 0px 0px;
+                    HEIGHT: 25px;
+                    FONT-SIZE: 1px;
+                    CURSOR: pointer;
+                    PADDING-TOP: 0px
+                }
+                .footer-band .footerLinksRight .ft-email {
+                    BACKGROUND-IMAGE: url("email_25x25.png")
+                }
+                .footer-band .footerLinksRight .ft-print {
+                    BACKGROUND-IMAGE: url("print_25x25.png")
+                }
+                .footer-band .footerLinksRight .ft-facebook {
+                    BACKGROUND-IMAGE: url("facebook_25x25.png")
+                }
+                .footer-band .footerLinksRight .ft-twitter {
+                    BACKGROUND-IMAGE: url("twitter_25x25.png")
+                }
+                .footer-band .footerLinksRight .ft-flickr {
+                    BACKGROUND-IMAGE: url("flickr_25x25.png")
+                }
+                .footer-band .footerLinksRight .ft-youtube {
+                    BACKGROUND-IMAGE: url("youtube_25x25.png")
+                }
+                .footer-band .footerLinksRight .ft-forums {
+                    BACKGROUND-IMAGE: url("lenovoforums_25x25.png")
+                }
+                /* Controls --------------------------------------------------------- */
+                .countrySelect {
+					vertical-align: middle;
+					display: inline;
+					float: left;
+					margin: 25px 0 0 25px;
+					cursor: pointer;
+					font-size: 12px;
+					font-family: Arial, Helvetica, sans-serif;
+					color: #666666;
+                }
+				.countrySelect select,.countrySelect option {
+					font-size: 12px;
+				}
+				.contentSection .contentArea .driverUpdates {
+                    color: #888888;
+                    font-size: 8pt;
+                }
+                .contentSection .contentArea .driverUpdatesButton {
+                    font-size: 14pt;
+                    font-weight: bold;
+                }
+                .contentSection .contentArea .formInput {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 8pt;
+                }
+                /* Added by rojesh shrestha for login text */
+                .leftNav .navTitleLogin {
+                    width: 220px;
+                    height: 45px;
+                    background: #C9D3DD;
+                    color:#000000;
+                    font-weight: bold;
+                    font-size: 8pt;
+                    padding: 0px 5px 0px 20px;
+                }
+                .leftNav .navTitleLogin a {
+                    font-size: 7pt;
+					color: #949494;
+                }
+                .leftNav .navTitleLogin .loginTable table tbody tr td a {
+                    font-size: 7pt;
+                     
+                }
+                /* Added By Rojesh Shrestha: User registration forms */
+                fieldset {
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #ddd;
+                    background-color: #fbfffb;
+                    margin-top: 1em;
+                    padding:1em;
+                    position: relative;
+                    display: block;
+                }
+                div.ButtonBar {
+                    margin: .2em .2em .2em .2em;
+                    padding: .5em .2em .5em .2em;
+                    border-style: dotted;
+                    border-width: 0px;
+                    width: 25em;
+                    text-align: center;
+                }
+                .ButtonBar span {
+                    padding: 0em .5em 0em 0em;
+                    font-size: 8pt;
+                }
+                fieldset legend {
+                    position: absolute;
+                    top: -1em;
+                    left: 0em;
+                    font-size: .9em;
+                    padding: .2em .5em;
+                    margin: .1em .3em .1em .3em;
+                    padding: .1em .3em .1em .3em;
+                }
+                .EntryRow {
+                    clear: both;
+                    padding-bottom: .3em;
+                }
+                .EntryRow.Error {
+                    width: 32em;
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: .8em;
+                    color: #D70311;
+                }
+                .EntryRow label {
+                    float: left;
+                    width: 15em;
+                    white-space: no-wrap;
+                    text-align: right;
+                    padding-right: .2em;
+                    vertical-align: middle;
+                    font-size: 8pt;
+                }
+                .Message {
+                    width: 100%;
+                    text-align: center;
+                    vertical-align: middle;
+                    font-size: 1em;
+                }
+                .Message.Error {
+                    color: #D70311;
+                }
+                .contentSection .contentArea .generalTable {
+                    margin: 5px;
+                    padding: 2px;
+                    border-collapse: collapse;
+                }
+                .contentSection .contentArea .generalTable td a {
+                    color: #D70311;
+                    text-decoration: underline;
+                }
+                .contentSection .contentArea .importantMessage {
+                    color: #D70311;
+                    font-size: 12pt;
+                }
+                #iframe {
+                    margin:0;
+                    padding:0;
+                    height:800px;
+                    display:block;
+                    width:100%;
+                    border:none;
+                }
+				
+				/* Consolidating link styles - Myles Novak - 6 May 2011 */
+				A.fbox:link,
+				.contentSection .contentArea .diagnosticLink  a:link,
+				.contentSection .contentArea .spanContent a:link,
+				.contentSection .contentHeader .spanPanel .rightSpanPanel .helpfulResources ul li a:link,
+				.contentSection .contentArea .spacedList ul li a:link,
+				.contentSection .contentArea .downloadSubNote a,
+				.contentSection .contentArea .downloadSubNote a:link,
+				.contentSection .contentArea .downloadTable a:link,
+				.contentSection .subNote a:link,
+				.header-band .breadcrumb a:link,
+				.header-band .downloadList a:link
+				{
+				    color: #009dd9;
+                    TEXT-DECORATION: none;
+				}
+				A.fbox:visited,
+				.contentSection .contentArea .diagnosticLink  a:visited,
+				.contentSection .contentArea .spanContent a:visited,
+				.contentSection .contentHeader .spanPanel .rightSpanPanel .helpfulResources ul li a:visited,
+				.contentSection .contentArea .spacedList ul li a:visited,
+				.contentSection .contentArea .downloadSubNote a:visited,
+				.contentSection .contentArea .downloadTable a:visited,
+				.contentSection .subNote a:visited,
+				.header-band .breadcrumb a:visited,
+				.header-band .downloadList a:visited
+				{
+				    color: #a7a7a7;
+                    TEXT-DECORATION: none;
+				}
+				.helpfulResourcesFrntPg ul li a:visited{
+					color: #009dd9 !important;
+                    TEXT-DECORATION: none;
+				}
+				A.fbox:hover,
+				.contentSection .contentArea .diagnosticLink  a:hover,
+				.contentSection .contentArea .spanContent a:hover,
+				.contentSection .contentHeader .spanPanel .rightSpanPanel .helpfulResources ul li a:hover,
+				.contentSection .contentArea .spacedList ul li a:hover,
+				.contentSection .contentArea .downloadSubNote a:hover,
+				.contentSection .contentArea .downloadTable a:hover,
+				.contentSection .subNote a:hover,
+				.header-band .breadcrumb a:hover,
+				.header-band .downloadList a:hover
+				{
+				    color: #009dd9;
+                    TEXT-DECORATION: underline;
+				}
+				A.fbox:active,
+				.contentSection .contentArea .diagnosticLink  a:active,
+				.contentSection .contentArea .spanContent a:active,
+				.contentSection .contentHeader .spanPanel .rightSpanPanel .helpfulResources ul li a:active,
+				.contentSection .contentArea .spacedList ul li a:active,
+				.contentSection .contentArea .downloadSubNote a:active,
+				.contentSection .contentArea .downloadTable a:active,
+				.contentSection .subNote a:active,
+				.header-band .breadcrumb a:active,
+				.header-band .downloadList a:active
+				{
+				    color: #dc291e;
+                    TEXT-DECORATION: none;
+				}
+
+				# Lenovo table styles
+				TD.v14-header-1 {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TH.v14-header-1 {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666;
+					line-height: 1.5em;
+					text-align: left;
+					text-indent: 5px;
+                }
+                TD.v14-header-2 {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TH.v14-header-2 {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TD.v14-header-1-small {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TH.v14-header-1-small {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TD.v14-header-3 {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TH.v14-header-3 {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TD.v14-header-2-small {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TH.v14-header-2-small {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TD.v14-header-4 {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TH.v14-header-4 {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TD.v14-header-5 {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TH.v14-header-5 {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TD.v14-header-3-small {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TH.v14-header-3-small {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TD.v14-header-4-small {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #fff;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TH.v14-header-4-small {
+                    BORDER-BOTTOM: #e3e3e3 1px solid;
+                    BORDER-LEFT: #e3e3e3 1px solid;
+                    BACKGROUND: #fff;
+                    COLOR: #666;
+                    BORDER-TOP: #e3e3e3 1px solid;
+                    BORDER-RIGHT: #e3e3e3 1px solid
+                }
+                TD.v14-header-5-small {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                TH.v14-header-5-small {
+                    BACKGROUND: #e3e3e3;
+                    COLOR: #666
+                }
+                table.data-table-1 td,
+                table.data-table-1 th {
+                    border-top:#e3e3e3 solid 1px;
+                    padding-left:5px;
+                    padding-right:4px;
+                    padding-top:4px;
+                     
+                }
+                table.data-table-1 th {
+                    background:#efefef;
+                     
+                }
+                table.data-table-2 {
+                    margin-top:0px;
+                     
+                }
+                table.data-table-2 td,
+                table.data-table-2 th.tb-row {
+                    border-bottom:#e3e3e3 solid 1px;
+                     
+                }
+                table.data-table-2 td,
+                table.data-table-2 th {
+                    padding-left:5px;
+                    padding-right:5px;
+                    padding-top:4px;
+                     
+                }
+                table.data-table-2 th {
+                    background:#efefef;
+                     
+                }
+                table th.tb-row {
+                    background:#fff;
+                    font-weight:normal;
+                     
+                }
+                table.data-table-1 {
+                    border:1px solid #e3e3e3;
+                    border-top:0px;
+                     
+                }
+                table.data-table-1 caption,
+                table.data-table-2 caption {
+                    text-align:left;
+                    background:#e3e3e3;
+                    padding-top:3px;
+                    padding-bottom:4px;
+                    padding-left:6px;
+                     
+                }
+                table.data-table-2 caption {
+                    border-bottom:#e3e3e3 solid 1px;
+                     
+                }
+                table.data-table-1 caption em,
+                table.data-table-2 caption em {
+                    color:#666;
+                     
+                }
+                table.v14-gray-table-border table.data-table-1 {
+                    border:0px solid #e3e3e3;
+                    border-top:0px;
+                     
+                }
+                table.data-table-1 td.no-padding {
+                    padding-left:0;
+                    padding-right:0;
+                     
+                }
+                table.data-table-1 td.ntb {
+                    border-top:0;
+                     
+                }
+                table tr.alt-row td,
+                table tr.alt-row th.tb-row {
+                    background:#eee;
+                }
+                # End of Lenovo table styles
+				
+                # Lenovo masthead tagline styles
+                .mastheadTaglineArea span,
+                .mastheadTaglineArea div,
+                .mastheadTaglineArea a {
+                    font-size: 12px;
+                    color:#fff;
+                    white-space:nowrap;
+                }
+                .mstagline,
+                .mstaglinelink {
+                    font-family:"Segoe UI", sans-serif;
+                    font-weight:bold;
+                    font-size:12px;
+                    padding:0;
+                    margin:0;
+                    cursor:pointer;
+                     
+                }
+                .mstagline div,
+                .mstagline span,
+                .mstaglinelink div,
+                .mstaglinelink span {
+                    font-family:"Segoe UI", sans-serif;
+                    font-weight:bold;
+                    font-size:12px;
+                    padding:0;
+                    margin:0;
+                     
+                }
+                /* .mstaglinelink { font-weight:bold; font-size:13px; cursor: pointer; } */
+                .mastheadTaglineArea {
+                    width: 960px;
+                    background: #202020;
+                    white-space:nowrap;
+                    height:30px;
+                    text-align:right;
+                    margin: -35px 0px 0px 0px;
+                    float: right;
+                }
+                .mastheadTagline {
+                    position: relative;
+                    padding-top: 7px;
+                    !padding-top: 8px;
+                }
+                .mastheadTagline a {
+                    position:absolute;
+                    right:400px;
+                    top:210px;
+                }
+				
+				/* Added by WWJ for HTTS */
+				.HTTS {
+					border-left: 0px !important;
+                    border-right: 0px !important;
+                    border-bottom: 0px !important;
+                    margin: 0px 0px 0px 0px !important;
+                }
+	
+	.maxWidth {
+	      width:960px !important;
+                }
+
+	.contentArea .contentTitle2 {
+    		background-color: #FFFFFF;
+    		color: black;
+    		font-size: 20px;
+    		font-weight: bold;
+    		/* padding-top: 5px; */
+			padding: 5px 0 10px 0;
+			height:20px;
+	}
+                # End of Lenovo masthead tagline styles

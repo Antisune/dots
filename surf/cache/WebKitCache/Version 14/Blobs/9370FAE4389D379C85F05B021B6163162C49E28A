@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "//www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="//static.opensuse.org/themes/bento/css/style.fluid.css" type="text/css" media="screen" title="All" charset="utf-8" />
+    <link rel="icon" type="image/png" href="//static.opensuse.org/themes/bento/images/favicon.png" />
+    <script src="//static.opensuse.org/themes/bento/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//static.opensuse.org/themes/bento/js/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//static.opensuse.org/themes/bento/js/l10n/global-navigation-data-en_US.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//static.opensuse.org/themes/bento/js/global-navigation.js" type="text/javascript" charset="utf-8"></script>
+    <script src=../js-lib/js-specimen-view.js type="text/javascript" charset="utf-8"></script>
+    <script src=../js-lib/js-charset-view.js type="text/javascript" charset="utf-8"></script>
+    <title>ProggySmallTT</title>
+  </head>
+  
+  <body>
+    <!-- Start: Header -->
+    <div id="header">
+      <div id="header-content" class="container_12">
+        <a id="header-logo" href="//en.opensuse.org"><img src="//static.opensuse.org/themes/bento/images/header-logo.png" width="46" height="26" alt="Header Logo" /></a>
+        <ul id="global-navigation">
+          <li id="item-downloads"><a href="//opensuse.org/sitemap#downloads">Downloads</a></li>
+          <li id="item-support"><a href="//opensuse.org/sitemap#support">Support</a></li>
+          <li id="item-community"><a href="//opensuse.org/sitemap#community">Community</a></li>
+          <li id="item-development"><a href="//opensuse.org/sitemap#development">Development</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End: Header -->
+    
+    <!-- Start: Path -->
+    <div id="subheader" class="container_16">
+      <div id="path" class="grid_12 alpha">
+        <a href="//fontinfo.opensuse.org" title=""><img src="//static.opensuse.org/themes/bento/images/home_grey.png" width="16" height="16" alt="Home" /> fontinfo</a>  > <a href="../families.html" title="Index of all font families">Font Families</a> > <a href="../families/ProggySmallTT.html" title="Meta informations and styles of family">ProggySmallTT</a> > ProggySmallTT Regular
+      </div>
+    </div>
+    <!-- End: Path -->
+    
+    <!-- Begin: Main Content -->
+    <div id="content" class="container_16 content-wrapper">
+      <!-- Begin: Navigations -->
+      <div class="column grid_4 alpha">
+        <div id="navigation_0" class=" box box-shadow alpha clear-both navigation">
+          <h2 class="box-header">Main Menu</h2>
+          <ul class="navigation">
+            <li><a href="../families.html" title="Index of all font families">Font Families</a></li>
+            <li><a href="../languages.html" title="Covered languages">Supported Languages</a></li>
+            <li><a href="../fontformats.html" title="Families Sorted by Font Format">Families by Font Formats</a></li>
+            <li><a href="../scripts.html" title="Fonts Sorted by Script Coverage">Fonts by Scripts</a></li>
+            <li><a href="../blocks.html" title="Fonts Sorted by Unicode Block Coverage">Fonts by Unicode Blocks</a></li>
+            <li><a href="../thanks.html" title="People which land their hand">Thanks</a></li>
+          </ul>
+        </div>
+        <div id="navigation_1" class=" box box-shadow alpha clear-both navigation">
+          <h2 class="box-header">Font Card</h2>
+          <ul class="navigation">
+            <li><a href="#sw_package" title="">Software Package Information</a></li>
+            <li><a href="#shape" title="">Shape and Spacing</a></li>
+            <li><a href="#rendering" title="">Rendering Algorithms</a></li>
+            <li><a href="#languages" title="">Supported Languages</a></li>
+            <li><a href="#character_set" title="">Character Set</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End: Navigations -->
+      
+      <!-- Begin: Fontinfo -->
+      <div class="box box-shadow grid_12 clearfix">
+        <div class="grid_12 alpha omega row_30">
+          <h1>Font Card</h1>
+          
+          <table>
+            <tr><td><b>Family:</b></td><td><a href="../families/ProggySmallTT.html">ProggySmallTT</a></td></tr>
+            <tr><td><b>Style:</b></td><td>Regular</td></tr>
+            <tr>
+              <td><b>File(s):</b></td>
+              <td>
+                <table>
+                  <tr><td>/usr/share/fonts/truetype/ProggySmall.ttf</td></tr>
+                </table>
+               </td>
+            </tr>
+            <tr>
+              <td><b>Scripts (most covered):</b></td>
+              <td>
+                <table>
+                    <tr><td><a href="../scripts/script-Latin.html">Latin</a> (9.0%)</td></tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          
+          <h2 id="specimen">Specimen</h2>
+          <table>
+            <tr><td>
+              <script>
+                scripts = ['Latin'];
+                specimen_types = ['bitmap', 'svg'];
+                initialize_specimen_tabs(scripts, specimen_types, 'Specimen');
+              </script>
+            </td></tr>
+            <tr><td>
+              <div class="specimen" id="bitmapLatinSpecimen" style="display:block">
+                  <map name="specimenimgmapProggySmallTTRegularLatin">
+                    <area shape="rect" coords="0,0,393,17" title="7 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,17,393,35" title="8 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,35,393,54" title="9 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,54,393,74" title="10 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,74,393,95" title="11 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,95,393,117" title="12 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,117,393,140" title="13 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,140,393,164" title="14 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,164,393,189" title="15 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,189,393,215" title="16 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,215,393,242" title="17 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,242,393,270" title="18 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,270,393,299" title="19 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,299,393,329" title="20 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,329,393,360" title="21 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,360,393,392" title="22 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,392,393,425" title="23 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,425,393,459" title="24 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                    <area shape="rect" coords="0,459,393,494" title="25 px" href="img/ProggySmallTTRegular.Latin.s.png">
+                  </map>
+                  <img src="img/ProggySmallTTRegular.Latin.s.png" alt="Specimen for ProggySmallTT Regular (Latin script)." usemap="#specimenimgmapProggySmallTTRegularLatin"/></a>
+              </div>
+              <div class="specimen" id="svgLatinSpecimen" style="display:none">
+                    <svg version = "1.1" width="393px" height="504px">
+                      <text x = "0px" y = "17px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "7px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="7 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "34px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "8px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="8 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "52px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "9px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="9 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "71px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "10px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="10 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "91px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "11px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="11 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "112px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "12px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="12 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "134px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "13px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="13 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "157px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "14px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="14 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "181px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "15px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="15 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "206px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "16px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="16 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "232px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "17px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="17 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "259px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "18px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="18 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "287px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "19px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="19 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "316px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "20px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="20 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "346px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "21px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="21 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "377px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "22px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="22 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "409px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "23px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="23 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "442px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "24px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="24 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                      <text x = "0px" y = "476px" text-anchor = "start" writing-mode = "" font-family = "ProggySmallTT" font-size = "25px" font-weight = "400" font-style = "normal" font-stretch = "normal" title="25 px">&#x0056;&#x0069;&#x0074;&#x0072;&#x0075;&#x006d;&#x0020;&#x0065;&#x0064;&#x0065;&#x0072;&#x0065;&#x0020;&#x0070;&#x006f;&#x0073;&#x0073;&#x0075;&#x006d;&#x003b;&#x0020;&#x006d;&#x0069;&#x0068;&#x0069;&#x0020;&#x006e;&#x006f;&#x006e;&#x0020;&#x006e;&#x006f;&#x0063;&#x0065;&#x0074;&#x002e;</text>
+                    </svg>
+              </div>
+            </td></tr>
+          </table>
+          <style>div.specimen { height:504px }</style>
+          
+          <h2 id="sw_package">Software Package Information</h2>
+          <table>
+            <tr><td><b>Name:</b></td><td>proggy-fonts</td><td><a style="font-weight:bold;color:#690" href=../ymps/proggy-fonts.ymp>1&nbsp;Click Install</a></td></tr>
+            <tr><td><b>Version:</b></td><td colspan="2">1.0</td></tr>
+            <tr><td><b>Url:</b></td><td colspan="2"><a href="http://proggyfonts.com/">http://proggyfonts.com/</a></td></tr>
+            <tr><td><b>License:</b></td><td colspan="2">MIT</td></tr>
+            <tr><td><b>Description:</b></td><td colspan="2">The proggy fonts are a set of fixed-width screen fonts that are designed for
+code listings.</td></tr>
+          </table>
+          
+          <h2 id="shape">Shape and Spacing</h2>
+          <table>
+            <tr><td><b>Slant:</b></td><td>roman</td></tr>
+            <tr><td><b>Weight:</b></td><td>regular (80)</td></tr>
+            <tr><td><b>Width:</b></td><td>normal (100)</td></tr>
+            <tr><td><b>Spacing:</b></td><td>mono</td></tr>
+            <tr><td><b>Scalable:</b></td><td>yes</td></tr>
+            <tr>
+              <td><b>TrueType Tables:</b></td>
+              <td><table>
+                <tr><td>cmap</td><td>cvt </td><td>glyf</td><td>head</td><td>hhea</td></tr>
+                <tr><td>hmtx</td><td>loca</td><td>maxp</td><td>name</td><td>OS/2</td></tr>
+                <tr><td>post</td><td>prep</td><td></td><td></td><td></td></tr>
+              </table></td>
+            </tr>
+          </table>
+          
+          <h2 id="rendering">Rendering Algorithms</h2>
+          <table>
+            <tr><td><b>Antialias:</b></td><td>yes</td></tr>
+            <tr><td><b>Hinting:</b></td><td>yes</td></tr>
+            <tr><td><b>Force autohint:</b></td><td>yes</td></tr>
+            <tr><td><b>Hintstyle:</b></td><td>hintslight (1)</td></tr>
+      <tr><td><b>Subpixel layout:</b></td><td>none</td></tr>
+      <tr><td><b>LCD filter:</b></td><td>lcdnone</td></tr>
+            <tr><td><b>Available Bitmap Strikes:</b></td><td>none</td></tr>
+          </table>
+          
+          <h2 id="languages">Supported Languages</h2>
+          <table>
+            <tr><td> | <a href="../languages/lang-aa.html">aa</a> | <a href="../languages/lang-an.html">an</a> | <a href="../languages/lang-ay.html">ay</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-bi.html">bi</a> | <a href="../languages/lang-br.html">br</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-ch.html">ch</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-da.html">da</a> | <a href="../languages/lang-de.html">de</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-en.html">en</a> | <a href="../languages/lang-es.html">es</a> | <a href="../languages/lang-eu.html">eu</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-fil.html">fil</a> | <a href="../languages/lang-fj.html">fj</a> | <a href="../languages/lang-fo.html">fo</a> | <a href="../languages/lang-fur.html">fur</a> | <a href="../languages/lang-fy.html">fy</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-gd.html">gd</a> | <a href="../languages/lang-gl.html">gl</a> | <a href="../languages/lang-gv.html">gv</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-ho.html">ho</a> | <a href="../languages/lang-ht.html">ht</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-ia.html">ia</a> | <a href="../languages/lang-id.html">id</a> | <a href="../languages/lang-ie.html">ie</a> | <a href="../languages/lang-io.html">io</a> | <a href="../languages/lang-is.html">is</a> | <a href="../languages/lang-it.html">it</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-jv.html">jv</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-kj.html">kj</a> | <a href="../languages/lang-kwm.html">kwm</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-lb.html">lb</a> | <a href="../languages/lang-li.html">li</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-mg.html">mg</a> | <a href="../languages/lang-ms.html">ms</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-nb.html">nb</a> | <a href="../languages/lang-nds.html">nds</a> | <a href="../languages/lang-ng.html">ng</a> | <a href="../languages/lang-nl.html">nl</a> | <a href="../languages/lang-nn.html">nn</a> | <a href="../languages/lang-no.html">no</a> | <a href="../languages/lang-nr.html">nr</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-oc.html">oc</a> | <a href="../languages/lang-om.html">om</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-pap-an.html">pap-an</a> | <a href="../languages/lang-pap-aw.html">pap-aw</a> | <a href="../languages/lang-pt.html">pt</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-rm.html">rm</a> | <a href="../languages/lang-rn.html">rn</a> | <a href="../languages/lang-rw.html">rw</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-sc.html">sc</a> | <a href="../languages/lang-sg.html">sg</a> | <a href="../languages/lang-sma.html">sma</a> | <a href="../languages/lang-smj.html">smj</a> | <a href="../languages/lang-sn.html">sn</a> | <a href="../languages/lang-so.html">so</a> | <a href="../languages/lang-sq.html">sq</a> | <a href="../languages/lang-ss.html">ss</a> | <a href="../languages/lang-st.html">st</a> | <a href="../languages/lang-su.html">su</a> | <a href="../languages/lang-sv.html">sv</a> | <a href="../languages/lang-sw.html">sw</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-tl.html">tl</a> | <a href="../languages/lang-ts.html">ts</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-uz.html">uz</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-vo.html">vo</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-wa.html">wa</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-xh.html">xh</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-yap.html">yap</a> |</td></tr>
+            <tr><td> | <a href="../languages/lang-za.html">za</a> | <a href="../languages/lang-zu.html">zu</a> |</td></tr>
+          </table>
+          
+          <h2 id="character_set">Character Set</h2>
+          <table><tr>
+            <td><a onclick="charset_blocks_show()">Show all</a></td>             <td><a onclick="charset_blocks_hide()">Hide all</td>
+          </tr></table>
+          <table>
+            <script>charset_shown = {}; charset_html = {}; </script>
+            <script>charset_html['cellCharsetBasicLatin'] = 
+              '\
+                <map name="charsetimgmapBasicLatin0">\
+                  <area shape="rect" coords="59,0,88,29" title="SPACE (U+0020)">\
+                  <area shape="rect" coords="89,0,118,29" title="EXCLAMATION MARK (U+0021)">\
+                  <area shape="rect" coords="119,0,148,29" title="QUOTATION MARK (U+0022)">\
+                  <area shape="rect" coords="149,0,178,29" title="NUMBER SIGN (U+0023)">\
+                  <area shape="rect" coords="179,0,208,29" title="DOLLAR SIGN (U+0024)">\
+                  <area shape="rect" coords="209,0,238,29" title="PERCENT SIGN (U+0025)">\
+                  <area shape="rect" coords="239,0,268,29" title="AMPERSAND (U+0026)">\
+                  <area shape="rect" coords="269,0,298,29" title="APOSTROPHE (U+0027)">\
+                  <area shape="rect" coords="299,0,328,29" title="LEFT PARENTHESIS (U+0028)">\
+                  <area shape="rect" coords="329,0,358,29" title="RIGHT PARENTHESIS (U+0029)">\
+                  <area shape="rect" coords="359,0,388,29" title="ASTERISK (U+002A)">\
+                  <area shape="rect" coords="389,0,418,29" title="PLUS SIGN (U+002B)">\
+                  <area shape="rect" coords="419,0,448,29" title="COMMA (U+002C)">\
+                  <area shape="rect" coords="449,0,478,29" title="HYPHEN-MINUS (U+002D)">\
+                  <area shape="rect" coords="479,0,508,29" title="FULL STOP (U+002E)">\
+                  <area shape="rect" coords="509,0,538,29" title="SOLIDUS (U+002F)">\
+                  <area shape="rect" coords="59,30,88,59" title="DIGIT ZERO (U+0030)">\
+                  <area shape="rect" coords="89,30,118,59" title="DIGIT ONE (U+0031)">\
+                  <area shape="rect" coords="119,30,148,59" title="DIGIT TWO (U+0032)">\
+                  <area shape="rect" coords="149,30,178,59" title="DIGIT THREE (U+0033)">\
+                  <area shape="rect" coords="179,30,208,59" title="DIGIT FOUR (U+0034)">\
+                  <area shape="rect" coords="209,30,238,59" title="DIGIT FIVE (U+0035)">\
+                  <area shape="rect" coords="239,30,268,59" title="DIGIT SIX (U+0036)">\
+                  <area shape="rect" coords="269,30,298,59" title="DIGIT SEVEN (U+0037)">\
+                  <area shape="rect" coords="299,30,328,59" title="DIGIT EIGHT (U+0038)">\
+                  <area shape="rect" coords="329,30,358,59" title="DIGIT NINE (U+0039)">\
+                  <area shape="rect" coords="359,30,388,59" title="COLON (U+003A)">\
+                  <area shape="rect" coords="389,30,418,59" title="SEMICOLON (U+003B)">\
+                  <area shape="rect" coords="419,30,448,59" title="LESS-THAN SIGN (U+003C)">\
+                  <area shape="rect" coords="449,30,478,59" title="EQUALS SIGN (U+003D)">\
+                  <area shape="rect" coords="479,30,508,59" title="GREATER-THAN SIGN (U+003E)">\
+                  <area shape="rect" coords="509,30,538,59" title="QUESTION MARK (U+003F)">\
+                  <area shape="rect" coords="59,60,88,89" title="COMMERCIAL AT (U+0040)">\
+                  <area shape="rect" coords="89,60,118,89" title="LATIN CAPITAL LETTER A (U+0041)">\
+                  <area shape="rect" coords="119,60,148,89" title="LATIN CAPITAL LETTER B (U+0042)">\
+                  <area shape="rect" coords="149,60,178,89" title="LATIN CAPITAL LETTER C (U+0043)">\
+                  <area shape="rect" coords="179,60,208,89" title="LATIN CAPITAL LETTER D (U+0044)">\
+                  <area shape="rect" coords="209,60,238,89" title="LATIN CAPITAL LETTER E (U+0045)">\
+                  <area shape="rect" coords="239,60,268,89" title="LATIN CAPITAL LETTER F (U+0046)">\
+                  <area shape="rect" coords="269,60,298,89" title="LATIN CAPITAL LETTER G (U+0047)">\
+                  <area shape="rect" coords="299,60,328,89" title="LATIN CAPITAL LETTER H (U+0048)">\
+                  <area shape="rect" coords="329,60,358,89" title="LATIN CAPITAL LETTER I (U+0049)">\
+                  <area shape="rect" coords="359,60,388,89" title="LATIN CAPITAL LETTER J (U+004A)">\
+                  <area shape="rect" coords="389,60,418,89" title="LATIN CAPITAL LETTER K (U+004B)">\
+                  <area shape="rect" coords="419,60,448,89" title="LATIN CAPITAL LETTER L (U+004C)">\
+                  <area shape="rect" coords="449,60,478,89" title="LATIN CAPITAL LETTER M (U+004D)">\
+                  <area shape="rect" coords="479,60,508,89" title="LATIN CAPITAL LETTER N (U+004E)">\
+                  <area shape="rect" coords="509,60,538,89" title="LATIN CAPITAL LETTER O (U+004F)">\
+                  <area shape="rect" coords="59,90,88,119" title="LATIN CAPITAL LETTER P (U+0050)">\
+                  <area shape="rect" coords="89,90,118,119" title="LATIN CAPITAL LETTER Q (U+0051)">\
+                  <area shape="rect" coords="119,90,148,119" title="LATIN CAPITAL LETTER R (U+0052)">\
+                  <area shape="rect" coords="149,90,178,119" title="LATIN CAPITAL LETTER S (U+0053)">\
+                  <area shape="rect" coords="179,90,208,119" title="LATIN CAPITAL LETTER T (U+0054)">\
+                  <area shape="rect" coords="209,90,238,119" title="LATIN CAPITAL LETTER U (U+0055)">\
+                  <area shape="rect" coords="239,90,268,119" title="LATIN CAPITAL LETTER V (U+0056)">\
+                  <area shape="rect" coords="269,90,298,119" title="LATIN CAPITAL LETTER W (U+0057)">\
+                  <area shape="rect" coords="299,90,328,119" title="LATIN CAPITAL LETTER X (U+0058)">\
+                  <area shape="rect" coords="329,90,358,119" title="LATIN CAPITAL LETTER Y (U+0059)">\
+                  <area shape="rect" coords="359,90,388,119" title="LATIN CAPITAL LETTER Z (U+005A)">\
+                  <area shape="rect" coords="389,90,418,119" title="LEFT SQUARE BRACKET (U+005B)">\
+                  <area shape="rect" coords="419,90,448,119" title="REVERSE SOLIDUS (U+005C)">\
+                  <area shape="rect" coords="449,90,478,119" title="RIGHT SQUARE BRACKET (U+005D)">\
+                  <area shape="rect" coords="479,90,508,119" title="CIRCUMFLEX ACCENT (U+005E)">\
+                  <area shape="rect" coords="509,90,538,119" title="LOW LINE (U+005F)">\
+                  <area shape="rect" coords="59,120,88,149" title="GRAVE ACCENT (U+0060)">\
+                  <area shape="rect" coords="89,120,118,149" title="LATIN SMALL LETTER A (U+0061)">\
+                  <area shape="rect" coords="119,120,148,149" title="LATIN SMALL LETTER B (U+0062)">\
+                  <area shape="rect" coords="149,120,178,149" title="LATIN SMALL LETTER C (U+0063)">\
+                  <area shape="rect" coords="179,120,208,149" title="LATIN SMALL LETTER D (U+0064)">\
+                  <area shape="rect" coords="209,120,238,149" title="LATIN SMALL LETTER E (U+0065)">\
+                  <area shape="rect" coords="239,120,268,149" title="LATIN SMALL LETTER F (U+0066)">\
+                  <area shape="rect" coords="269,120,298,149" title="LATIN SMALL LETTER G (U+0067)">\
+                  <area shape="rect" coords="299,120,328,149" title="LATIN SMALL LETTER H (U+0068)">\
+                  <area shape="rect" coords="329,120,358,149" title="LATIN SMALL LETTER I (U+0069)">\
+                  <area shape="rect" coords="359,120,388,149" title="LATIN SMALL LETTER J (U+006A)">\
+                  <area shape="rect" coords="389,120,418,149" title="LATIN SMALL LETTER K (U+006B)">\
+                  <area shape="rect" coords="419,120,448,149" title="LATIN SMALL LETTER L (U+006C)">\
+                  <area shape="rect" coords="449,120,478,149" title="LATIN SMALL LETTER M (U+006D)">\
+                  <area shape="rect" coords="479,120,508,149" title="LATIN SMALL LETTER N (U+006E)">\
+                  <area shape="rect" coords="509,120,538,149" title="LATIN SMALL LETTER O (U+006F)">\
+                  <area shape="rect" coords="59,150,88,179" title="LATIN SMALL LETTER P (U+0070)">\
+                  <area shape="rect" coords="89,150,118,179" title="LATIN SMALL LETTER Q (U+0071)">\
+                  <area shape="rect" coords="119,150,148,179" title="LATIN SMALL LETTER R (U+0072)">\
+                  <area shape="rect" coords="149,150,178,179" title="LATIN SMALL LETTER S (U+0073)">\
+                  <area shape="rect" coords="179,150,208,179" title="LATIN SMALL LETTER T (U+0074)">\
+                  <area shape="rect" coords="209,150,238,179" title="LATIN SMALL LETTER U (U+0075)">\
+                  <area shape="rect" coords="239,150,268,179" title="LATIN SMALL LETTER V (U+0076)">\
+                  <area shape="rect" coords="269,150,298,179" title="LATIN SMALL LETTER W (U+0077)">\
+                  <area shape="rect" coords="299,150,328,179" title="LATIN SMALL LETTER X (U+0078)">\
+                  <area shape="rect" coords="329,150,358,179" title="LATIN SMALL LETTER Y (U+0079)">\
+                  <area shape="rect" coords="359,150,388,179" title="LATIN SMALL LETTER Z (U+007A)">\
+                  <area shape="rect" coords="389,150,418,179" title="LEFT CURLY BRACKET (U+007B)">\
+                  <area shape="rect" coords="419,150,448,179" title="VERTICAL LINE (U+007C)">\
+                  <area shape="rect" coords="449,150,478,179" title="RIGHT CURLY BRACKET (U+007D)">\
+                  <area shape="rect" coords="479,150,508,179" title="TILDE (U+007E)">\
+                  <area shape="rect" coords="509,150,538,179" title="<control> (U+007F)">\
+                </map>\
+                <img src="img/ProggySmallTTRegular.BasicLatin.c.0.png" alt="Character Set for ProggySmallTT Regular (part 0)." usemap="#charsetimgmapBasicLatin0"/>\
+              '
+            </script>
+            <script>charset_shown['cellCharsetBasicLatin'] = 0</script>
+            <tr><td><a onclick="charset_block_toggle('cellCharsetBasicLatin', charset_html['cellCharsetBasicLatin'])">[<b id="cellCharsetBasicLatinToggle" style="font-family: monospace;">+</b>] Basic Latin (U+00000 - U+0007F)</a></td></tr>
+            <tr><td style="display:none" id="cellCharsetBasicLatin">
+            </td></tr>
+            <script>charset_html['cellCharsetLatin-1Supplement'] = 
+              '\
+                <map name="charsetimgmapLatin-1Supplement0">\
+                  <area shape="rect" coords="59,0,88,29" title="NO-BREAK SPACE (U+00A0)">\
+                  <area shape="rect" coords="89,0,118,29" title="INVERTED EXCLAMATION MARK (U+00A1)">\
+                  <area shape="rect" coords="119,0,148,29" title="CENT SIGN (U+00A2)">\
+                  <area shape="rect" coords="149,0,178,29" title="POUND SIGN (U+00A3)">\
+                  <area shape="rect" coords="179,0,208,29" title="CURRENCY SIGN (U+00A4)">\
+                  <area shape="rect" coords="209,0,238,29" title="YEN SIGN (U+00A5)">\
+                  <area shape="rect" coords="239,0,268,29" title="BROKEN BAR (U+00A6)">\
+                  <area shape="rect" coords="269,0,298,29" title="SECTION SIGN (U+00A7)">\
+                  <area shape="rect" coords="329,0,358,29" title="COPYRIGHT SIGN (U+00A9)">\
+                  <area shape="rect" coords="359,0,388,29" title="FEMININE ORDINAL INDICATOR (U+00AA)">\
+                  <area shape="rect" coords="389,0,418,29" title="LEFT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00AB)">\
+                  <area shape="rect" coords="419,0,448,29" title="NOT SIGN (U+00AC)">\
+                  <area shape="rect" coords="449,0,478,29" title="SOFT HYPHEN (U+00AD)">\
+                  <area shape="rect" coords="479,0,508,29" title="REGISTERED SIGN (U+00AE)">\
+                  <area shape="rect" coords="59,30,88,59" title="DEGREE SIGN (U+00B0)">\
+                  <area shape="rect" coords="89,30,118,59" title="PLUS-MINUS SIGN (U+00B1)">\
+                  <area shape="rect" coords="119,30,148,59" title="SUPERSCRIPT TWO (U+00B2)">\
+                  <area shape="rect" coords="149,30,178,59" title="SUPERSCRIPT THREE (U+00B3)">\
+                  <area shape="rect" coords="179,30,208,59" title="ACUTE ACCENT (U+00B4)">\
+                  <area shape="rect" coords="209,30,238,59" title="MICRO SIGN (U+00B5)">\
+                  <area shape="rect" coords="239,30,268,59" title="PILCROW SIGN (U+00B6)">\
+                  <area shape="rect" coords="269,30,298,59" title="MIDDLE DOT (U+00B7)">\
+                  <area shape="rect" coords="299,30,328,59" title="CEDILLA (U+00B8)">\
+                  <area shape="rect" coords="329,30,358,59" title="SUPERSCRIPT ONE (U+00B9)">\
+                  <area shape="rect" coords="359,30,388,59" title="MASCULINE ORDINAL INDICATOR (U+00BA)">\
+                  <area shape="rect" coords="389,30,418,59" title="RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK (U+00BB)">\
+                  <area shape="rect" coords="419,30,448,59" title="VULGAR FRACTION ONE QUARTER (U+00BC)">\
+                  <area shape="rect" coords="449,30,478,59" title="VULGAR FRACTION ONE HALF (U+00BD)">\
+                  <area shape="rect" coords="479,30,508,59" title="VULGAR FRACTION THREE QUARTERS (U+00BE)">\
+                  <area shape="rect" coords="509,30,538,59" title="INVERTED QUESTION MARK (U+00BF)">\
+                  <area shape="rect" coords="59,60,88,89" title="LATIN CAPITAL LETTER A WITH GRAVE (U+00C0)">\
+                  <area shape="rect" coords="89,60,118,89" title="LATIN CAPITAL LETTER A WITH ACUTE (U+00C1)">\
+                  <area shape="rect" coords="119,60,148,89" title="LATIN CAPITAL LETTER A WITH CIRCUMFLEX (U+00C2)">\
+                  <area shape="rect" coords="149,60,178,89" title="LATIN CAPITAL LETTER A WITH TILDE (U+00C3)">\
+                  <area shape="rect" coords="179,60,208,89" title="LATIN CAPITAL LETTER A WITH DIAERESIS (U+00C4)">\
+                  <area shape="rect" coords="209,60,238,89" title="LATIN CAPITAL LETTER A WITH RING ABOVE (U+00C5)">\
+                  <area shape="rect" coords="239,60,268,89" title="LATIN CAPITAL LETTER AE (U+00C6)">\
+                  <area shape="rect" coords="269,60,298,89" title="LATIN CAPITAL LETTER C WITH CEDILLA (U+00C7)">\
+                  <area shape="rect" coords="299,60,328,89" title="LATIN CAPITAL LETTER E WITH GRAVE (U+00C8)">\
+                  <area shape="rect" coords="329,60,358,89" title="LATIN CAPITAL LETTER E WITH ACUTE (U+00C9)">\
+                  <area shape="rect" coords="359,60,388,89" title="LATIN CAPITAL LETTER E WITH CIRCUMFLEX (U+00CA)">\
+                  <area shape="rect" coords="389,60,418,89" title="LATIN CAPITAL LETTER E WITH DIAERESIS (U+00CB)">\
+                  <area shape="rect" coords="419,60,448,89" title="LATIN CAPITAL LETTER I WITH GRAVE (U+00CC)">\
+                  <area shape="rect" coords="449,60,478,89" title="LATIN CAPITAL LETTER I WITH ACUTE (U+00CD)">\
+                  <area shape="rect" coords="479,60,508,89" title="LATIN CAPITAL LETTER I WITH CIRCUMFLEX (U+00CE)">\
+                  <area shape="rect" coords="509,60,538,89" title="LATIN CAPITAL LETTER I WITH DIAERESIS (U+00CF)">\
+                  <area shape="rect" coords="59,90,88,119" title="LATIN CAPITAL LETTER ETH (U+00D0)">\
+                  <area shape="rect" coords="89,90,118,119" title="LATIN CAPITAL LETTER N WITH TILDE (U+00D1)">\
+                  <area shape="rect" coords="119,90,148,119" title="LATIN CAPITAL LETTER O WITH GRAVE (U+00D2)">\
+                  <area shape="rect" coords="149,90,178,119" title="LATIN CAPITAL LETTER O WITH ACUTE (U+00D3)">\
+                  <area shape="rect" coords="179,90,208,119" title="LATIN CAPITAL LETTER O WITH CIRCUMFLEX (U+00D4)">\
+                  <area shape="rect" coords="209,90,238,119" title="LATIN CAPITAL LETTER O WITH TILDE (U+00D5)">\
+                  <area shape="rect" coords="239,90,268,119" title="LATIN CAPITAL LETTER O WITH DIAERESIS (U+00D6)">\
+                  <area shape="rect" coords="269,90,298,119" title="MULTIPLICATION SIGN (U+00D7)">\
+                  <area shape="rect" coords="299,90,328,119" title="LATIN CAPITAL LETTER O WITH STROKE (U+00D8)">\
+                  <area shape="rect" coords="329,90,358,119" title="LATIN CAPITAL LETTER U WITH GRAVE (U+00D9)">\
+                  <area shape="rect" coords="359,90,388,119" title="LATIN CAPITAL LETTER U WITH ACUTE (U+00DA)">\
+                  <area shape="rect" coords="389,90,418,119" title="LATIN CAPITAL LETTER U WITH CIRCUMFLEX (U+00DB)">\
+                  <area shape="rect" coords="419,90,448,119" title="LATIN CAPITAL LETTER U WITH DIAERESIS (U+00DC)">\
+                  <area shape="rect" coords="449,90,478,119" title="LATIN CAPITAL LETTER Y WITH ACUTE (U+00DD)">\
+                  <area shape="rect" coords="479,90,508,119" title="LATIN CAPITAL LETTER THORN (U+00DE)">\
+                  <area shape="rect" coords="509,90,538,119" title="LATIN SMALL LETTER SHARP S (U+00DF)">\
+                  <area shape="rect" coords="59,120,88,149" title="LATIN SMALL LETTER A WITH GRAVE (U+00E0)">\
+                  <area shape="rect" coords="89,120,118,149" title="LATIN SMALL LETTER A WITH ACUTE (U+00E1)">\
+                  <area shape="rect" coords="119,120,148,149" title="LATIN SMALL LETTER A WITH CIRCUMFLEX (U+00E2)">\
+                  <area shape="rect" coords="149,120,178,149" title="LATIN SMALL LETTER A WITH TILDE (U+00E3)">\
+                  <area shape="rect" coords="179,120,208,149" title="LATIN SMALL LETTER A WITH DIAERESIS (U+00E4)">\
+                  <area shape="rect" coords="209,120,238,149" title="LATIN SMALL LETTER A WITH RING ABOVE (U+00E5)">\
+                  <area shape="rect" coords="239,120,268,149" title="LATIN SMALL LETTER AE (U+00E6)">\
+                  <area shape="rect" coords="269,120,298,149" title="LATIN SMALL LETTER C WITH CEDILLA (U+00E7)">\
+                  <area shape="rect" coords="299,120,328,149" title="LATIN SMALL LETTER E WITH GRAVE (U+00E8)">\
+                  <area shape="rect" coords="329,120,358,149" title="LATIN SMALL LETTER E WITH ACUTE (U+00E9)">\
+                  <area shape="rect" coords="359,120,388,149" title="LATIN SMALL LETTER E WITH CIRCUMFLEX (U+00EA)">\
+                  <area shape="rect" coords="389,120,418,149" title="LATIN SMALL LETTER E WITH DIAERESIS (U+00EB)">\
+                  <area shape="rect" coords="419,120,448,149" title="LATIN SMALL LETTER I WITH GRAVE (U+00EC)">\
+                  <area shape="rect" coords="449,120,478,149" title="LATIN SMALL LETTER I WITH ACUTE (U+00ED)">\
+                  <area shape="rect" coords="479,120,508,149" title="LATIN SMALL LETTER I WITH CIRCUMFLEX (U+00EE)">\
+                  <area shape="rect" coords="509,120,538,149" title="LATIN SMALL LETTER I WITH DIAERESIS (U+00EF)">\
+                  <area shape="rect" coords="59,150,88,179" title="LATIN SMALL LETTER ETH (U+00F0)">\
+                  <area shape="rect" coords="89,150,118,179" title="LATIN SMALL LETTER N WITH TILDE (U+00F1)">\
+                  <area shape="rect" coords="119,150,148,179" title="LATIN SMALL LETTER O WITH GRAVE (U+00F2)">\
+                  <area shape="rect" coords="149,150,178,179" title="LATIN SMALL LETTER O WITH ACUTE (U+00F3)">\
+                  <area shape="rect" coords="179,150,208,179" title="LATIN SMALL LETTER O WITH CIRCUMFLEX (U+00F4)">\
+                  <area shape="rect" coords="209,150,238,179" title="LATIN SMALL LETTER O WITH TILDE (U+00F5)">\
+                  <area shape="rect" coords="239,150,268,179" title="LATIN SMALL LETTER O WITH DIAERESIS (U+00F6)">\
+                  <area shape="rect" coords="269,150,298,179" title="DIVISION SIGN (U+00F7)">\
+                  <area shape="rect" coords="299,150,328,179" title="LATIN SMALL LETTER O WITH STROKE (U+00F8)">\
+                  <area shape="rect" coords="329,150,358,179" title="LATIN SMALL LETTER U WITH GRAVE (U+00F9)">\
+                  <area shape="rect" coords="359,150,388,179" title="LATIN SMALL LETTER U WITH ACUTE (U+00FA)">\
+                  <area shape="rect" coords="389,150,418,179" title="LATIN SMALL LETTER U WITH CIRCUMFLEX (U+00FB)">\
+                  <area shape="rect" coords="419,150,448,179" title="LATIN SMALL LETTER U WITH DIAERESIS (U+00FC)">\
+                  <area shape="rect" coords="449,150,478,179" title="LATIN SMALL LETTER Y WITH ACUTE (U+00FD)">\
+                  <area shape="rect" coords="479,150,508,179" title="LATIN SMALL LETTER THORN (U+00FE)">\
+                  <area shape="rect" coords="509,150,538,179" title="LATIN SMALL LETTER Y WITH DIAERESIS (U+00FF)">\
+                </map>\
+                <img src="img/ProggySmallTTRegular.Latin-1Supplement.c.0.png" alt="Character Set for ProggySmallTT Regular (part 0)." usemap="#charsetimgmapLatin-1Supplement0"/>\
+              '
+            </script>
+            <script>charset_shown['cellCharsetLatin-1Supplement'] = 0</script>
+            <tr><td><a onclick="charset_block_toggle('cellCharsetLatin-1Supplement', charset_html['cellCharsetLatin-1Supplement'])">[<b id="cellCharsetLatin-1SupplementToggle" style="font-family: monospace;">+</b>] Latin-1 Supplement (U+00080 - U+000FF)</a></td></tr>
+            <tr><td style="display:none" id="cellCharsetLatin-1Supplement">
+            </td></tr>
+            <script>charset_html['cellCharsetCurrencySymbols'] = 
+              '\
+                <map name="charsetimgmapCurrencySymbols0">\
+                  <area shape="rect" coords="419,0,448,29" title="EURO SIGN (U+20AC)">\
+                </map>\
+                <img src="img/ProggySmallTTRegular.CurrencySymbols.c.0.png" alt="Character Set for ProggySmallTT Regular (part 0)." usemap="#charsetimgmapCurrencySymbols0"/>\
+              '
+            </script>
+            <script>charset_shown['cellCharsetCurrencySymbols'] = 0</script>
+            <tr><td><a onclick="charset_block_toggle('cellCharsetCurrencySymbols', charset_html['cellCharsetCurrencySymbols'])">[<b id="cellCharsetCurrencySymbolsToggle" style="font-family: monospace;">+</b>] Currency Symbols (U+020A0 - U+020CF)</a></td></tr>
+            <tr><td style="display:none" id="cellCharsetCurrencySymbols">
+            </td></tr>
+          </table>
+        </div>
+      </div>
+      <!-- End: Fontinfo -->
+    </div>
+    <!-- End: Main Content -->
+    
+    <!-- Begin: Footer -->
+    <div id="footer" class="container_16">
+      <p style="text-align: center; font-size: 10px">
+        Generated by <a href="https://www.github.com/pgajdos/fontinfo">fontinfo</a> 20170627, fontconfig 2.12.3, libpng 1.6.29, freetype 2.7.1, harfbuzz 1.4.6 on 2017-06-28. Contact pgajdos at suse in case of any issues or proposals.
+      </p>
+      <div id="footer-legal" class="border-top grid_16">
+        <p>
+          &copy; 2017 Novell, Inc. All rights reserved. Novell is a registered trademark and
+          openSUSE and SUSE are trademarks of Novell, Inc. in the United States and other countries.
+        </p>
+      </div>
+    </div>
+    <!-- End: Footer -->
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Void Linux Wiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Main_Page","wgTitle":"Main Page","wgCurRevisionId":11882,"wgRevisionId":11882,"wgArticleId":1,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Main_Page","wgRelevantArticleId":1,"wgRequestId":"4b8845a9cd4f51650181e01b","wgIsProbablyEditable":false,"wgRestrictionEdit":["autoconfirmed"],"wgRestrictionMove":["sysop"],"wgIsMainPage":true});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@1xdtemz",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.action.view.postEdit","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.29.1"/>
+<link rel="shortcut icon" href="/resources/assets/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="Void Linux Wiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.voidlinux.org/api.php?action=rsd"/>
+<link rel="copyright" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Void Linux Wiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Main_Page rootpage-Main_Page skin-vector action-view">		<nav id="void-nav" class="noprint">
+			<ul>
+				<li><a href="https://www.voidlinux.org">Home</a></li>
+				<li><a href="https://www.voidlinux.org/news/">News</a></li>
+				<li><a href="https://www.voidlinux.org/download/">Download</a></li>
+				<li><a href="https://www.voidlinux.org/packages/">Packages</a></li>
+				<li><a href="https://wiki.voidlinux.org">Wiki</a></li>
+				<li><a href="https://reddit.com/r/voidlinux">Forum</a></li>
+				<li><a href="https://github.com/void-linux">GitHub</a></li>
+			</ul>
+		</nav>
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Main Page</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Void Linux Wiki</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p>Welcome to the <a rel="nofollow" class="external text" href="https://voidlinux.org">Void Linux</a> wiki! This wiki is a knowledge database created and maintained by Void users.
+</p>
+<h1><span class="mw-headline" id="Getting_Started">Getting Started</span></h1>
+<div style="float: left; margin-right: 1%; width: 49%;">
+<ul><li> <a href="/Void_Linux" title="Void Linux">About Void</a> - General information about the distribution</li>
+<li> <a href="/Frequently_Asked_Questions" title="Frequently Asked Questions">Frequently asked questions</a></li>
+<li> <a href="/Category:Guides" title="Category:Guides">Guides</a> - Various guides for specific tasks in Void</li>
+<li> <a href="/Category:Installation" title="Category:Installation">Installation</a> - All articles categorized as installation-related</li>
+<li> <a href="/Category:Security" title="Category:Security">Security</a> - Various guides for increasing the security of your Void installation</li>
+<li> <a href="/Category:Embedded" title="Category:Embedded">Embedded</a> - Articles about Void on embedded devices</li>
+<li> <a href="/Runit" title="Runit">runit</a> - init/service supervision framework used in Void</li>
+<li> <a rel="nofollow" class="external text" href="https://docs.voidlinux.org/">Void Linux Handbook</a> - <a rel="nofollow" class="external text" href="https://github.com/void-linux/void-docs/">Markdown</a> based documentation</li></ul>
+</div>
+<div style="float: left; width: 50%;">
+<ul><li> <a href="/XBPS" title="XBPS">XBPS</a> - The XBPS package manager</li>
+<li> <a href="/Xbps-src" title="Xbps-src">xbps-src</a> - Build packages from source</li>
+<li> <a href="/Category:Packages" title="Category:Packages">Packages</a> - Categorized articles about various packages</li>
+<li> <a rel="nofollow" class="external text" href="https://man.voidlinux.org">man.voidlinux.org</a> - Online manual pages</li>
+<li> <a href="/Applications" title="Applications">Applications</a> - List of applications with description</li>
+<li> <a href="/Games" title="Games">Games</a> - Some games ported especially for you</li></ul>
+</div>
+<div style="clear: both;"></div>
+<div style="float: left; margin-right: 1%; width: 49%;">
+<h1><span class="mw-headline" id="Installation">Installation</span></h1>
+<ul><li> <a href="/Live_Images" title="Live Images">Void Live Images</a> - Live images for common systems</li>
+<li> <a href="/Embedded_Images" title="Embedded Images">Void Embedded Images</a> - rootfs images for embedded devices</li>
+<li> <a href="/Installation" title="Installation">Installing Void</a> - Basic walkthrough for everyone</li>
+<li> <a href="/Installation_on_UEFI,_via_chroot" title="Installation on UEFI, via chroot">Installation on UEFI, via chroot</a> - Advanced installation</li>
+<li> <a href="/Install_LVM_LUKS" title="Install LVM LUKS">Install LVM LUKS</a> - Installing Void with LVM LUKS</li>
+<li> <a href="/Install_LVM_LUKS_on_UEFI_GPT" title="Install LVM LUKS on UEFI GPT">Install LVM LUKS on UEFI GPT</a> - Installing void with LVM LUKS on a UEFI based system</li>
+<li> <a href="/Full_Disk_Encryption_w/Encrypted_Boot" title="Full Disk Encryption w/Encrypted Boot">Install LVM LUKS w/Encrypted Boot</a> - Installing Void with full disk encryption</li>
+<li> <a href="/Installation_On_UEFI_With_MDRAID,_via_chroot" title="Installation On UEFI With MDRAID, via chroot">Installation On UEFI With MDRAID, via chroot</a></li>
+<li> <a href="/Install_alongside_Arch_Linux" title="Install alongside Arch Linux">Install alongside Arch Linux</a></li>
+<li> <a href="/Install_Void_Linux_onto_a_USB_Stick" title="Install Void Linux onto a USB Stick">Install Void Linux onto a USB Stick</a> - Full working install</li></ul>
+</div>
+<div style="float: left; width: 50%;">
+<h1><span class="mw-headline" id="Media_.26_Management">Media &amp; Management</span></h1>
+<ul><li> <a rel="nofollow" class="external text" href="https://build.voidlinux.org">Build Server Status Site</a> - The Void never sleeps</li>
+<li> <a href="/Infrastructure" title="Infrastructure">Infrastructure</a> - The servers doing the heavy lifting</li>
+<li> <a href="/Reviews" title="Reviews">Void Linux on the media</a></li></ul>
+<p><br />
+</p>
+<ul><li> <a href="/Help:Contents" title="Help:Contents">How to contribute to this wiki</a></li></ul>
+</div>
+<div style="clear: both;"></div>
+<div style="float: left; margin-right: 1%; width: 49%;">
+<h1><span class="mw-headline" id="Development">Development</span></h1>
+<ul><li> <a rel="nofollow" class="external text" href="https://github.com/void-linux/void-packages/blob/master/README.md">The XBPS source packages collection</a></li>
+<li> <a rel="nofollow" class="external text" href="https://github.com/void-linux/void-packages/blob/master/Manual.md">XBPS source packages manual</a></li>
+<li> <a rel="nofollow" class="external text" href="https://github.com/void-linux/void-packages/blob/master/CONTRIBUTING.md">Package contributing guide</a></li>
+<li> <a href="/Known_Issues" title="Known Issues">Known Issues</a> when building from scratch</li>
+<li> <a href="/Little_Helpers" title="Little Helpers">Little Helpers</a> for the packager</li></ul>
+</div>
+<div style="float: left; width: 50%;">
+<h1><span class="mw-headline" id="Community">Community</span></h1>
+<ul><li> <a rel="nofollow" class="external text" href="https://forum.voidlinux.org">Void Linux Forum</a></li>
+<li> <a rel="nofollow" class="external text" href="irc://irc.freenode.net/#voidlinux">IRC: #voidlinux on freenode.net</a></li>
+<li> <a href="/Mailing_List" title="Mailing List">Mailing List</a></li></ul>
+</div>
+<div style="clear: both;"></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20191122074812
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.286 seconds
+Preprocessor visited node count: 28/1000000
+Preprocessor generated node count: 42/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key void_wiki-voidlinux:pcache:idhash:1-0!*!0!!*!*!* and timestamp 20191122074812 and revision id 11882
+ -->
+</div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://wiki.voidlinux.org/index.php?title=Main_Page&amp;oldid=11882">https://wiki.voidlinux.org/index.php?title=Main_Page&amp;oldid=11882</a>"					</div>
+				<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Main+Page" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Main+Page" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/Main_Page"  title="View the content page [c]" accesskey="c">Main page</a></span></li>
+															<li  id="ca-talk"><span><a href="/Talk:Main_Page"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Discussion</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/Main_Page" >Read</a></span></li>
+															<li id="ca-viewsource"><span><a href="/index.php?title=Main_Page&amp;action=edit"  title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/index.php?title=Main_Page&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Void Linux Wiki" title="Search Void Linux Wiki [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-recentchanges"><a href="/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-randompage"><a href="/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li><li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="The place to find out">Help</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/Special:WhatLinksHere/Main_Page" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/Special:RecentChangesLinked/Main_Page" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="/index.php?title=Main_Page&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="/index.php?title=Main_Page&amp;oldid=11882" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/index.php?title=Main_Page&amp;action=info" title="More information about this page">Page information</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2019, at 23:19.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike</a> unless otherwise noted.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/Void_Linux_Wiki:Privacy_policy" title="Void Linux Wiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/Void_Linux_Wiki:About" title="Void Linux Wiki:About">About Void Linux Wiki</a></li>
+											<li id="footer-places-disclaimer"><a href="/Void_Linux_Wiki:General_disclaimer" title="Void Linux Wiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://creativecommons.org/licenses/by-sa/3.0/"><img src="/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution-ShareAlike" width="88" height="31"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.007","walltime":"0.286","ppvisitednodes":{"value":28,"limit":1000000},"ppgeneratednodes":{"value":42,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20191122074812","ttl":86400,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":125});});</script>
+	</body>
+</html>

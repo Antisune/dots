@@ -1,0 +1,12 @@
+# qutebrowser shortcuts
+config.bind(';d', 'set downloads.location.directory ~/documents ;; hint links download')
+config.bind(';D', 'set downloads.location.directory ~/downloads ;; hint links download')
+config.bind(';m', 'set downloads.location.directory ~/music ;; hint links download')
+config.bind(';P', 'set downloads.location.directory ~/pictures ;; hint links download')
+config.bind(';vv', 'set downloads.location.directory ~/videos ;; hint links download')
+config.bind(';s', 'set downloads.location.directory ~/.scripts ;; hint links download')
+config.bind(';cf', 'set downloads.location.directory ~/.config ;; hint links download')
+config.bind(';H', 'set downloads.location.directory ~/ ;; hint links download')
+config.bind(';pk', 'set downloads.location.directory ~/packages ;; hint links download')
+config.bind(';em', 'set downloads.location.directory ~/.emacs.d ;; hint links download')
+config.bind(';S', 'set downloads.location.directory ~/school ;; hint links download')

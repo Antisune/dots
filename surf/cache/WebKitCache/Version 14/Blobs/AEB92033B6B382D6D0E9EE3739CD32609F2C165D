@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>EmacsWiki: Good Fonts</title><link rel="alternate" type="application/wiki" title="Edit this page" href="https://www.emacswiki.org/emacs?action=edit;id=GoodFonts" /><link type="text/css" rel="stylesheet" href="https://www.emacswiki.org/light.css" /><meta name="robots" content="INDEX,FOLLOW" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki" href="https://www.emacswiki.org/emacs?action=rss" /><link rel="alternate" type="application/rss+xml" title="EmacsWiki: GoodFonts" href="https://www.emacswiki.org/emacs?action=rss;rcidonly=GoodFonts" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content"
+      href="https://www.emacswiki.org/full.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki with page content and diff"
+      href="https://www.emacswiki.org/full-diff.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Emacs Wiki including minor differences"
+      href="https://www.emacswiki.org/minor-edits.rss" />
+<link rel="alternate" type="application/rss+xml"
+      title="Changes for GoodFonts only"
+      href="https://www.emacswiki.org/emacs?action=rss;rcidonly=GoodFonts" /><meta content="width=device-width" name="viewport" />
+<script type="text/javascript" src="/outliner.0.5.0.62-toc.js"></script>
+<script type="text/javascript">
+
+  function addOnloadEvent(fnc) {
+    if ( typeof window.addEventListener != "undefined" )
+      window.addEventListener( "load", fnc, false );
+    else if ( typeof window.attachEvent != "undefined" ) {
+      window.attachEvent( "onload", fnc );
+    }
+    else {
+      if ( window.onload != null ) {
+	var oldOnload = window.onload;
+	window.onload = function ( e ) {
+	  oldOnload( e );
+	  window[fnc]();
+	};
+      }
+      else
+	window.onload = fnc;
+    }
+  }
+
+  // https://stackoverflow.com/questions/280634/endswith-in-javascript
+  if (typeof String.prototype.endsWith !== 'function') {
+    String.prototype.endsWith = function(suffix) {
+      return this.indexOf(suffix, this.length - suffix.length) !== -1;
+    };
+  }
+
+  var initToc=function() {
+
+    var outline = HTML5Outline(document.body);
+    if (outline.sections.length == 1) {
+      outline.sections = outline.sections[0].sections;
+    }
+
+    if (outline.sections.length > 1
+	|| outline.sections.length == 1
+           && outline.sections[0].sections.length > 0) {
+
+      var toc = document.getElementById('toc');
+
+      if (!toc) {
+	var divs = document.getElementsByTagName('div');
+	for (var i = 0; i < divs.length; i++) {
+	  if (divs[i].getAttribute('class') == 'toc') {
+	    toc = divs[i];
+	    break;
+	  }
+	}
+      }
+
+      if (!toc) {
+	var h2 = document.getElementsByTagName('h2')[0];
+	if (h2) {
+	  toc = document.createElement('div');
+	  toc.setAttribute('class', 'toc');
+	  h2.parentNode.insertBefore(toc, h2);
+	}
+      }
+
+      if (toc) {
+        var html = outline.asHTML(true);
+        toc.innerHTML = html;
+
+	items = toc.getElementsByTagName('a');
+	for (var i = 0; i < items.length; i++) {
+	  while (items[i].textContent.endsWith('✎')) {
+            var text = items[i].childNodes[0].nodeValue;
+	    items[i].childNodes[0].nodeValue = text.substring(0, text.length - 1);
+	  }
+	}
+      }
+    }
+  }
+
+  addOnloadEvent(initToc);
+  </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head><body class="default" lang="en"><div class="header"><a class="logo" href="https://www.emacswiki.org/emacs/SiteMap"><img alt="[Home]" class="logo" src="https://www.emacswiki.org/images/logo218x38.png" /></a><div class="menu"><span class="gotobar bar"><a class="local" href="https://www.emacswiki.org/emacs/SiteMap">SiteMap</a> <a class="local" href="https://www.emacswiki.org/emacs/Search">Search</a> <a class="local" href="https://www.emacswiki.org/emacs/ElispArea">ElispArea</a> <a class="local" href="https://www.emacswiki.org/emacs/HowTo">HowTo</a> <a class="local" href="https://www.emacswiki.org/emacs/Glossary">Glossary</a> <a class="local" href="https://www.emacswiki.org/emacs/RecentChanges">RecentChanges</a> <a class="local" href="https://www.emacswiki.org/emacs/News">News</a> <a class="local" href="https://www.emacswiki.org/emacs/Problems">Problems</a> <a class="local" href="https://www.emacswiki.org/emacs/Suggestions">Suggestions</a> </span><form method="get" action="https://www.emacswiki.org/emacs" enctype="multipart/form-data" accept-charset="utf-8" class="search"><p><label for="search">Search:</label> <input type="text" name="search"  size="15" accesskey="f" id="search" /> <label for="searchlang">Language:</label> <input type="text" name="lang"  size="5" id="searchlang" /> <input type="submit" name="dosearch" value="Go!" /></p></form></div><h1><a href="https://www.emacswiki.org/emacs?search=%22GoodFonts%22" rel="nofollow" title="Click to search for references to this page"><span style="padding-right: 0.5ex;">Good</span><span style="padding-right: 0.5ex;">Fonts</span></a></h1></div><div class="wrapper"><div class="content browse" lang="en"><p>Please post a small screenshot for the setup that you recommend. It&#x2019;s pain in the rear to hunt down the font, install it and see for yourself whether you like it.</p><h2>Recommendations</h2><p><a class="url http outside" href="https://gist.github.com/Earnestly/7024056">High Quality Monospace Fonts &amp; Configuration</a></p><p>Not so much a recommendation but I have just installed Dina. It has the virtue of including italic and bold italic variants. I have not yet decided whether I will stick with it. --<a class="local" href="https://www.emacswiki.org/emacs/JohnYates">JohnYates</a></p><div class="color one level0"><p> The proggy fonts are nice and I used them for more than a year. But I use Emacs for a lot more than programming alone. I also write and read prose in form of e-mail and (La)<a class="local" href="https://www.emacswiki.org/emacs/TeX">TeX</a> documents and much of it in languages other than English. I found it annoying that <b>all</b> of the many proggy fonts fail to provide all of the Latin-1 glyphs I need (áâãäéêíïóôõöúüçß).</p><p>Fonts with a &#x201c;geometric&#x201d; <code>a</code> like Monaco are unacceptable IMHO because the <code>a</code> can, at a glance, be confused with an <code>o</code>. The Neep font at 14 pt is not crispy enough to me. So the choice was between Andale and Terminus. I have used both before, and although they don&#x2019;t look as pretty as the proggy fonts at small sizes, they have all the glyphs I need and as a bonus the Euro currency symbol. I decided in favor of the Terminus. It&#x2019;s a <b>very</b> crispy font. I use it at either 14 pts and <code>(setq-default line-spacing 0)</code> or 12 pts and <code>line-spacing</code> 2 with a 15&#x201d; laptop LCD monitor</p><p>The table bellow summarizes the amount of text you get in Emacs in single-window mode with the fonts I&#x2019;ve tested:</p><pre>   Font/Size(PxlSz)      Lines   Columns
+   -------------------------------------
+   Andale 80             62      143
+   Neep 120              57      167
+   Neep 140              50      125
+   Neep 200              37      100
+   Proggy Clean 80       57      143
+   Proggy Small 80       75      143
+   Proggy Square 80      68      148
+   Proggy Tiny 80        75      167
+   Terminus 120          62      167
+   Terminus 140          53      125</pre><pre> --EmilioLopes.</pre></div><div class="color two level0"><p>What fonts to use depends on your monitor size and the screen resolution, and of course on personal taste. Here are some recommendations by users for specific situations. See also <a class="local" href="https://www.emacswiki.org/emacs/SetFonts">SetFonts</a>.</p></div><div class="color one level0"><p> On dark backgrounds, I recommend checking out bitmap fonts instead of <a class="local" href="https://www.emacswiki.org/emacs/TrueType">TrueType</a> ones.</p></div><h2>Variations</h2><p>This list is sorted by inch followed by screen resolution; Currently a  good customer rated 27&#x201d; monitor cost from $270 and give you most inch per dollar ($27) in contrast to other dimensions. Also, the free graphic driver Nouveau are stable and works fine with many graphic cards. softwares usually list screen resolutions beginning with the highest mode first (e.g., see xrandr -q in a terminal emulator).</p><h3>For every resolution</h3><p>As an atom/emacs new developer, I am recommending Hack, an open source font which fits very well in every situation and editor.</p><p>&#x2013; @Anteron_</p><p>Thanks so much for this recommendation &#x2026; I didn&#x2019;t know of this previously, but Hack (<a class="url http" href="https://sourcefoundry.org/hack/">https://sourcefoundry.org/hack/</a>) is a free, open source, and excellent programmers&#x2019; font under active development &#x2026; they actually add characters when you file a bug report. This should be preferred over many obsolete recommendations on this page (proggy? yow). The one other font I would recommend is <a class="local" href="https://www.emacswiki.org/emacs/DejaVu">DejaVu</a> Sans Mono. &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/JimBalter">JimBalter</a></p><h3>27", 1920x1080</h3><p><b>DejaVu Sans Mono 13</b> was very good.</p><p>&#x2013; David Englund</p><h3>19", 1600x1200</h3><ul><li><code>-jmk-neep alt-medium-r-*-*-20-*-*-*-c-*-iso8859-1</code> (<a class="local" href="https://www.emacswiki.org/emacs/AlexSchroeder">AlexSchroeder</a>) &#x2013; <strong>neep</strong> might require <code>(setq x-use-underline-position-properties nil)</code></li></ul><dl class="quote"><dt /><dd>Debian&#x2019;s <code>xfonts-jmk</code> package fixes the underline position bug as of 3.0-17.</dd></dl><h3>19", 1600x1200 or 1280x1024</h3><ul><li>-*-<strong><em>Lucida Console-normal</em></strong>-r-*-*-14-112-96-96-c-*-iso8859-1 &#x2013; on Windows (<a class="local" href="https://www.emacswiki.org/emacs/DrewAdams">DrewAdams</a>) <a class="image" href="https://www.emacswiki.org/emacs/DrewEmacsFontEg"><img alt="DrewEmacsFontEg" class="upload" src="https://www.emacswiki.org/pics/static/DrewEmacsFontEg.jpg" /></a></li><li><code>-outline-Bitstream Vera Sans Mono-normal-r-normal-normal-12-90-96-96-c-*-iso8859-1</code> (<a class="local" href="https://www.emacswiki.org/emacs/WalterHiggins">WalterHiggins</a>) <img alt="http://static.flickr.com/112/252293241_63415bf385_o.gif?type=.png" class="url http" src="http://static.flickr.com/112/252293241_63415bf385_o.gif?type=.png" /></li><li><code>-dec-terminal-medium-r-normal-*-*-140-*-*-c-*-iso8859-1</code> (<a class="local" href="https://www.emacswiki.org/emacs/ErikBourget">ErikBourget</a>)</li><li><code>-xos4-terminus-medium-r-normal--14-140-*-*-*-*-*-*</code> (<a class="local" href="https://www.emacswiki.org/emacs/JeremyCowgar">JeremyCowgar</a>)</li></ul><h3>19", 1024x768</h3><ul><li><code>7x14</code> (<a class="local" href="https://www.emacswiki.org/emacs/AlexSchroeder">AlexSchroeder</a>)</li><li><code>-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-2</code> (<a class="local" href="https://www.emacswiki.org/emacs/JakubNarebski">JakubNarebski</a>)</li></ul><h3>17" (LCD), 1280x1024</h3><ul><li><code>-*-Monaco-normal-r-*-*-17-102-120-120-c-*-iso8859-1</code> (<a class="local" href="https://www.emacswiki.org/emacs/MacChan">MacChan</a>)</li><li>10-point Monaco Windows XP with <a class="local" href="https://www.emacswiki.org/emacs/ClearType">ClearType</a> enable</li></ul><h3>17" (CRT), 1024x768</h3><ul><li><code>-xos4-terminus-medium-r-normal--20-200-72-72-c-100-iso10646-1</code> (<a class="local" href="https://www.emacswiki.org/emacs/JorgenSchaefer">JorgenSchaefer</a>)</li></ul><h3>15" (LCD), 1600x1200</h3><ul><li><code>neep-alt-24</code> &#x2013; Most XFree86 distributions come with Lucida Typewriter as a fixed-width font. It&#x2019;s about the best I&#x2019;ve found. I know a lot of others use it as well. The size depends on your monitor. I typically use 12pt. &#x2013; <a class="local" href="https://www.emacswiki.org/emacs/LathI">LathI</a></li><li><code>-*-lucidatypewriter-medium-*-*-*-12-*-*-*-*-*-*-*</code> &#x2013; In addition, if you want the italic shape, which isn&#x2019;t available in the free lucidatypewriter, try the iso8859-1 encoding of GNU Intlfonts (Where is this font? Is it the same as misc-fixed?) or the misc-fixed font (which is part of the standard XFree86 4.1 distro). If you only have occasional italics, it&#x2019;s reasonable to mix the faces, e.g. with an extra X resource as follows. &#x2013; fx</li><li><code>Emacs.italic.attributeFont:  -*-fixed-medium-o-*-*-*-120-*-*-*-*-*-*</code> &#x2013; The lucydatypewriter font is missing some more unicode characters than the fixed fonts. If you want to use lucidatypewriter but display unicode characters like math symbols or line drawing characters with the fixed font you can do this with <a class="local" href="https://www.emacswiki.org/emacs/FontSets">FontSets</a>.</li></ul><dl class="quote"><dt /><dd>The following lines are from my <code>~/.Xresources</code></dd></dl><pre>       Emacs*Fontset-0: -b<span class="type">&amp;h-lucidatypewriter-medium-r-normal-*-*-</span>120-*-*-m-*-fontset-normal,\
+       mule-unicode-2500-33ff<span class="builtin">:-misc-fixed-medium-r-normal-</span>*-13-*-*-*-*-*-iso10646-1,\
+       mule-unicode-e000-ffff<span class="builtin">:-misc-fixed-medium-r-normal-</span>*-13-*-*-*-*-*-iso10646-1,\
+       mule-unicode-0100-24ff<span class="builtin">:-misc-fixed-medium-r-normal-</span>*-13-*-*-*-*-*-iso10646-1
+       Emacs*font: fontset-normal</pre><dl class="quote"><dt /><dd>Actually my first emacs frame starts with a completely wrong font but it works for all the other frames.</dd></dl><div class="color one level0"><dl class="quote"><dt /><dd>I used lucidatypewriter for years and years, but finally got fed up with Ohs and Zeroes looking like each other. I now use:</dd></dl><pre>       -bitstream-bitstream vera sans mono-medium-r-*-*-*-120-*-*-*-*-*-*</pre><dl class="quote"><dt /><dd>Which is the tiniest bit larger than I&#x2019;d like it to be, but every character is unmistakable, and it looks a lot like ol&#x2019; lucidatypewriter (<a class="url http outside" href="http://deneb.collapsar.net/~mdxi/cruft/bvsm.png">sample</a>). (<a class="local" href="https://www.emacswiki.org/emacs/ShawnBoyette">ShawnBoyette</a>)</dd></dl></div><div class="color two level0"><dl class="quote"><dl class="quote"><dt /><dd><a class="url http" href="http://www.lowing.org/fonts/">http://www.lowing.org/fonts/</a> has a good overview of monospaced fonts for coding (<a class="local" href="https://www.emacswiki.org/emacs/AadityaSood">AadityaSood</a>)</dd></dl></dl></div><div class="color one level0"><p> I often need better Unicode coverage than provided by most monospaced fonts, like Proggy. The priorities are Cyrillic and Greek fonts. Terminus and Monaco are not bad, but they have a decorative spirit. My favorite font is GNU intlfonts, aka ETL. It has no bold or italic versions for non-Latin alphabets, but otherwise looks quite well. Here are some samples:</p><p><a class="image" href="https://www.emacswiki.org/emacs/DmFontETLSixteen"><img alt="DmFontETLSixteen" class="upload" src="https://www.emacswiki.org/pics/static/DmFontETLSixteen.png" /></a></p><p><a class="image" href="https://www.emacswiki.org/emacs/DmFontETLEighteen"><img alt="DmFontETLEighteen" class="upload" src="https://www.emacswiki.org/pics/static/DmFontETLEighteen.png" /></a></p></div><div class="color two level0"><p> Hello, this is one of your enemies: a Vim-fanatic. Nonetheless, I wondered if you might also seek for some feasible fonts at small sizes, and so didn&#x2019;t hardly hesitate to enter the evil world of Escape-Meta-Alt-Control-Shift, commonly known as EMACS. I personally found the DINA font very pleasing. When I saw it mentioned in the preface, I had to admit you have no bad taste - well, as far as fonts are concerned. When differentiating between an OS and an editing facility, you&#x2019;re still at odds (my opinion). I <em style="text-decoration: underline; font-style: normal;">found</em> DINA very pleasing indeed but in the last years got convinced of all the benefits one begets using <b>DejaVu Sans Mono</b>. Any size (small for myself, huge when showing off some snippets to others), a whole bunch of codepages supported (I use the NEO ergonomic keyboard layout giving direct access to many glyphs most of which DejaVu surprisingly knows about), and readability 24/7. I do love that font. Every now and then I&#x2019;d still switch back to DINA but never for too long. Glad to have found DejaVu here, too.</p><p>Greetings from Germany (apologies for any mistakes in English spelling/wording/…)</p></div><div class="color one level0"><p> The CVS Emacs (23.0.60.6) (see <a class="local" href="https://www.emacswiki.org/emacs/XftGnuEmacs">XftGnuEmacs</a>) has some problems with fonts because of the wrong &#x201c;preferred charset&#x201d; recognition, so I tried some TTF fonts, which I generally avoid. DejaVu Mono-12 was very good:</p><p><a class="image" href="https://www.emacswiki.org/emacs/DmFontDejaVuTwelve"><img alt="DmFontDejaVuTwelve" class="upload" src="https://www.emacswiki.org/pics/static/DmFontDejaVuTwelve.png" /></a></p><p>RedHat Liberation Mono is another acceptable option. There are two versions of this font. The first edition lacks the dotted 0, so be careful to download the right version (available <a class="url http outside" href="https://bugzilla.redhat.com/show_bug.cgi?id=427791">here</a>).</p><p>(<a class="local" href="https://www.emacswiki.org/emacs/DmitriMinaev">DmitriMinaev</a>)</p><p>Update @2008-04-01: This is Liberation Mono 12. Note a somewhat better hinting:</p><p><a class="image" href="https://www.emacswiki.org/emacs/DmFontLiberationTwelve"><img alt="DmFontLiberationTwelve" class="upload" src="https://www.emacswiki.org/pics/static/DmFontLiberationTwelve.png" /></a></p><p>If you need a better Unicode coverage, GNU Unifont might work. However, it only gives you regular (i.e. no bold / italics).</p></div><h3>15" (LCD), 1024x768</h3><ul><li><code>-jmk-neep alt-medium-r-*-*-20-*-*-*-c-*-iso8859-1</code> (<a class="local" href="https://www.emacswiki.org/emacs/AlexSchroeder">AlexSchroeder</a>, <a class="url http outside" href="http://www.emacswiki.org/alex/pics/root-2003-11-01.png">screenshot</a>) &#x2013; <strong>neep</strong> might require <code>(setq x-use-underline-position-properties nil)</code>. Gives 37 lines and 100 columns.</li></ul><dl class="quote"><dt /><dd>Debian&#x2019;s xfonts-jmk package fixes the underline position bug as of 3.0-17.</dd></dl><ul><li><code>-*-terminus-medium-r-*-*-*-140-75-75-*-*-iso8859-15</code> &#x2013; gives 53 lines and 125 columns, or even</li><li><code>-*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15</code> &#x2013; with <code>(setq line-spacing 2)</code> for 62 lines and 167 columns. --<a class="local" href="https://www.emacswiki.org/emacs/EmilioLopes">EmilioLopes</a></li><li><code>-raster-Fixedsys-normal-r-normal-normal-12-90-96-96-c-*-*-*</code> (<a class="local" href="https://www.emacswiki.org/emacs/MacChan">MacChan</a>)</li><li>9-point fixedsys windows xp</li></ul><dl class="quote"><dt /><dd><img alt="http://static.flickr.com/72/165054405_0296134b44_o.jpg" class="url http" src="http://static.flickr.com/72/165054405_0296134b44_o.jpg" /></dd></dl><h3>14" (iBook), 1024x768</h3><ul><li>Monaco, the default used by the <a class="local" href="https://www.emacswiki.org/emacs/CarbonEmacsPackage">CarbonEmacsPackage</a> (<a class="local" href="https://www.emacswiki.org/emacs/AlexSchroeder">AlexSchroeder</a>, <a class="url http outside" href="http://www.emacswiki.org/alex/pics/pink-bliss.png">screenshot</a>)</li></ul><h3>13", 1280x800</h3><ul><li><a class="url http outside" href="http://www.levien.com/type/myfonts/inconsolata.html">Inconsolata</a> <code>(set-face-attribute 'default nil :family "Inconsolata" :height 140)</code> (<a class="local" href="https://www.emacswiki.org/emacs/AmitPatel">AmitPatel</a>) </li></ul><dl class="quote"><dt /><dd><img alt="http://lh5.ggpht.com/_kV9ZnGnZL7M/Sol67UA6LlI/AAAAAAAABB0/9b1jkiM2XBU/s800/Inconsolata%20on%20Mac.png" class="url http" src="http://lh5.ggpht.com/_kV9ZnGnZL7M/Sol67UA6LlI/AAAAAAAABB0/9b1jkiM2XBU/s800/Inconsolata%20on%20Mac.png" /></dd></dl><ul><li><a class="url http outside" href="http://www.ms-studio.com/FontSales/anonymouspro.html">Anonymous Pro</a>: <code>(set-face-attribute 'default nil :family "Anonymous Pro" :height 140)</code> (<a class="local" href="https://www.emacswiki.org/emacs/AmitPatel">AmitPatel</a>)</li></ul><dl class="quote"><dt /><dd><img alt="http://lh6.ggpht.com/_kV9ZnGnZL7M/Sol718cBLnI/AAAAAAAABB4/C5WO42ZSIPU/s800/Anonymous%20Pro%20on%20Mac.png" class="url http" src="http://lh6.ggpht.com/_kV9ZnGnZL7M/Sol718cBLnI/AAAAAAAABB4/C5WO42ZSIPU/s800/Anonymous%20Pro%20on%20Mac.png" /></dd></dl><h3>10.6", 1280x768</h3><ul><li>20-point Lucida Console full-screens to 80x28, and is quite nice and readable. (<a class="local" href="https://www.emacswiki.org/emacs/EdwardOConnor">EdwardOConnor</a>)</li></ul><h3>8.9", 1024x600</h3><ul><li><code>(set-face-font 'default "fixed")</code> and <code>(scroll-bar-mode -1)</code> gave me an Emacs window that is 80 characters wide and that takes up exactly half the screen, perfect for a netbook running a tiling window manager. (<a class="local" href="https://www.emacswiki.org/emacs/DanielMoerner">DanielMoerner</a>)</li></ul><h2>Test</h2><p>Evaluate the following code in your <code>*scratch*</code> buffer:</p><pre>(<span class="keyword cl">dolist</span> (font-family (font-family-list))
+  (<span class="keyword elisp">let</span> ((str font-family))
+    (insert (propertize (concat <span class="string">"The quick brown fox jumps over the lazy dog ("</span>
+     str <span class="string">")"</span>) 'face `((<span class="builtin">:family</span> ,font-family))))
+    (newline)))
+</pre><div class="color one level0"><p> The above code will display variable-width fonts as well as monospace fonts which isn&#x2019;t much help for general Emacs usage. See <a class="url http outside" href="https://gist.github.com/3055728">this Gist</a> for a function to display only monospaced fonts.</p></div><div class="color two level0"><p> The following code is for me a working version of the above one. </p><pre>(<span class="keyword elisp">let</span> ((str <span class="string">"The quick brown fox jumps over the lazy dog ´`''<span>\"</span><span>\"</span>1lI|¦!Ø0Oo{[()]}.,:<span class="comment">; "</span>)</span>
+      (font-families (cl-remove-duplicates 
+		      (sort (font-family-list) 
+			    (<span class="keyword elisp">lambda</span>(x y) (string&lt; (upcase x) (upcase y))))
+		      <span class="builtin">:test</span> 'string=)))
+  (<span class="keyword cl">dolist</span> (ff font-families)
+    (insert 
+     (propertize str 'font-lock-face `(<span class="builtin">:family</span> ,ff))               ff <span class="string">"<span>\n</span>"</span>
+     (propertize str 'font-lock-face `(<span class="builtin">:family</span> ,ff <span class="builtin">:slant</span> italic)) ff <span class="string">"<span>\n</span>"</span>)))
+</pre><p>&#x2013; <a class="local" href="https://www.emacswiki.org/emacs/ThierryPirot">ThierryPirot</a></p></div><h2>Discussion</h2><div class="color one level0"><p> It would be really nice to have a &#x201c;fonts for beginners&#x201d; page, pointed to from this page. Such a page would have an executive summary &#x2013; basically a brief and useful reference card &#x2013; of the following:</p><pre>        - most important basic information
+                - for people who NEED BIG FONTS NOW
+                - for people who NEED SMALL FONTS NOW
+                - some people can't use emacs until this is
+                  fixed!
+        - a pointer to the above from the main emacs wiki page
+        - how to set the default font
+        - how to choose a font
+                - in emacs
+                - in linux, windows, and mac
+                - considerations (basic, terse)
+                        - 0O oa 1l|! for programming
+                        - monospace for programming
+                        - antialiasing, resizability, lcd/crt
+        - how to choose font properties (bold, etc.) and colors
+                - whether there are any xemacs vs. emacs issues
+        - how to identify a font problem and fix it
+                - wrong color, blinking, fuzzy, small, large
+                - what face is below point?
+                - how to set a face
+        - a pointer to this page for suggesting nice fonts</pre><p>I am not the person to write this, however. &#x2013; gambarimasu</p></div><div class="color two level0"><p> Heard on #emacs after a discussion about font issues:</p><pre>&lt;goron&gt; should think it shouldn't be too hard to configure an editor...
+&lt;kensanata&gt; depends on your definition of <span class="string">"editor"</span> i guess...
+&lt;kensanata&gt; we're known to have strange misconceptions in that regard.
+</pre></div><hr /><p><a class="local" href="https://www.emacswiki.org/emacs/CategoryDisplay">CategoryDisplay</a> <a class="local" href="https://www.emacswiki.org/emacs/CategoryFaces">CategoryFaces</a></p></div><div class="wrapper close"></div></div><div class="footer"><hr /><span class="translation bar"><br />  <a class="translation new" href="https://www.emacswiki.org/emacs?action=translate;id=GoodFonts;missing=de_es_fr_it_ja_ko_pt_ru_se_uk_zh" rel="nofollow">Add Translation</a></span><div class="edit bar"><a accesskey="c" class="comment local" href="https://www.emacswiki.org/emacs/Comments_on_GoodFonts">Talk</a> <a accesskey="e" class="edit" href="https://www.emacswiki.org/emacs?action=edit;id=GoodFonts" rel="nofollow" title="Click to edit this page">Edit this page</a> <a class="history" href="https://www.emacswiki.org/emacs?action=history;id=GoodFonts" rel="nofollow">View other revisions</a> <a class="admin" href="https://www.emacswiki.org/emacs?action=admin;id=GoodFonts" rel="nofollow">Administration</a></div><div class="time">Last edited 2018-11-02 10:53 UTC by <a class="author" href="https://www.emacswiki.org/emacs/JimBalter">JimBalter</a> <a class="diff" href="https://www.emacswiki.org/emacs?action=browse;diff=2;id=GoodFonts" rel="nofollow">(diff)</a></div><div style="float:right; margin-left:1ex;">
+<!-- Creative Commons License -->
+<a class="licence" href="https://creativecommons.org/licenses/GPL/2.0/"><img alt="CC-GNU GPL" style="border:none" src="/pics/cc-GPL-a.png" /></a>
+<!-- /Creative Commons License -->
+</div>
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <license rdf:resource="https://creativecommons.org/licenses/GPL/2.0/" />
+  <dc:type rdf:resource="http://purl.org/dc/dcmitype/Software" />
+</Work>
+
+<License rdf:about="https://creativecommons.org/licenses/GPL/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+   <requires rdf:resource="http://web.resource.org/cc/SourceCode" />
+</License>
+</rdf:RDF>
+-->
+
+<p class="legal">
+This work is licensed to you under version 2 of the
+<a href="https://www.gnu.org/">GNU</a> <a href="/GPL">General Public License</a>.
+Alternatively, you may choose to receive this work under any other
+license that grants the right to use, copy, modify, and/or distribute
+the work, as long as that license imposes the restriction that
+derivative works have to grant the same rights and impose the same
+restriction. For example, you may choose to receive this work under
+the
+<a href="https://www.gnu.org/">GNU</a>
+<a href="/FDL">Free Documentation License</a>, the
+<a href="https://creativecommons.org/">CreativeCommons</a>
+<a href="https://creativecommons.org/licenses/sa/1.0/">ShareAlike</a>
+License, the XEmacs manual license, or
+<a href="/OLD">similar licenses</a>.
+</p>
+<p class="legal" style="padding-top: 0.5em">Please note our <a href="/emacs/Privacy">Privacy Statement</a>.</p>
+</div>
+</body>
+</html>

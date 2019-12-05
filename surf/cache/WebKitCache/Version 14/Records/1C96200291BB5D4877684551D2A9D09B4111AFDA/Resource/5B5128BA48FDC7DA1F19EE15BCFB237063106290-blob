@@ -1,0 +1,624 @@
+/*
+OnlineOpinion v5.9.9
+Released: 08/02/2016. Compiled 08/02/2016 02:01:40 PM -0500
+Branch: master 2a8b05f36a87035a4e8fac9b85c18815b63da4e3
+Components: Full
+UMD: disabled
+The following code is Copyright 1998-2016 Opinionlab, Inc. All rights reserved. Unauthorized use is prohibited. This product and other products of OpinionLab, Inc. are protected by U.S. Patent No. 6606581, 6421724, 6785717 B1 and other patents pending. http://www.opinionlab.com
+*/
+
+function OpinionLab(w, d, o) {
+    'use strict';
+
+    var assetDirectory = '/esv4/plugins/onlineopinionV5/'; // Lenovo Update
+
+    var opinionlabhref = "http:\/\/www.opinionlab.com\/company\/";
+    var supporturl = "http://support.lenovo.com";
+
+    var domain_meta = $("meta[name='Domain']").attr("content");
+    var pageurl = [window.location.protocol, '//', window.location.host, window.location.pathname, (/\?/.test(window.location.href)) ? encodeURIComponent(window.location.search) : ''].join(''); //the query string encoding is being done as a security measure at Lenovo's request
+
+    var deviceType = getDeviceType();
+
+    var loadOpinionLab = function (url, callback) {
+
+        var script = d.createElement('script');
+        if (script.readyState) {
+            script.onreadystatechange = function () {
+                if (script.readyState === 'loaded' || script.readyState === 'complete') {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {
+            script.onload = function () {
+                callback();
+            };
+        }
+
+        script.src = url;
+        d.getElementsByTagName('head')[0].appendChild(script);
+
+        var link = d.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = assetDirectory + 'oo_style.css';
+
+        d.getElementsByTagName('head')[0].appendChild(link);
+    };
+
+    loadOpinionLab(assetDirectory + 'oo_engine.min.js', function () {
+
+        var tabText = 'Feedback',
+            webText = 'Website<span class="screen_reader"> This will open a new window</span>',
+            prodText = 'Product<span class="screen_reader"> This will open a new window</span>',
+            servText = 'Service<span class="screen_reader"> This will open a new window</span>',
+            chromePrompt = 'Please fill out the survey.',
+            wpIntro = '<strong>Help us serve you better.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">Select a category that closely fits the nature of your feedback.</span>',
+            tsText = 'Need technical support? <a href="' + supporturl + '/us/en/contactus" onclick=g("' + supporturl + '/us/en/contactus")>Contact Us</a>.',
+            poweredBy = 'Powered by OpinionLab. This will open a new window.',
+            closeDialog = 'Close dialog',
+            inviteIntro = '<strong>We value your opinion!</strong><br /><br />After your visit, would you be willing to provide some quick feedback? It will only take a minute.',
+            inviteYes = 'Yes<span class="screen_reader"> This will open a new window</span>',
+            inviteNo = 'No, thanks',
+            lang = typeof lmd !== 'undefined' ? (typeof lmd.language !== 'undefined' ? lmd.language : 'en') : 'en',
+            mw = 'oo_inv_monitor_en.html',
+            scripts = d.getElementsByTagName('script'),
+	        screenResolution = screen.width + ' x ' + screen.height;
+
+        if (/de/.test(lang)) {
+            tabText = 'R\u00FCckmeldung';
+            webText = 'Internetseite<span class="screen_reader"> Hiermit &#246;ffnet sich ein neues Fenster.</span>';
+            prodText = 'Produkt<span class="screen_reader"> Hiermit &#246;ffnet sich ein neues Fenster.</span>';
+            servText = 'Service<span class="screen_reader"> Hiermit &#246;ffnet sich ein neues Fenster.</span>';
+            chromePrompt = 'Bitte nehmen Sie an der Umfrage teil.';
+            wpIntro = '<strong>Helfen Sie uns Sie besser zu betreuen.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">W&#228;hlen Sie eine Kategorie, die am nahesten dem Grund ihrer R&#252;ckmeldung entspricht.</span>';
+            tsText = '<a href="' + supporturl + '/de/de/contactus" onclick=g("' + supporturl + '/de/de/contactus")>Brauchen Sie technische Hilfe?</a>';
+            poweredBy = 'Powered by OpinionLab.';
+            closeDialog = 'Dialog beenden';
+            inviteIntro = '<strong>Ihre Meinung ist uns wichtig!</strong><br /><br />M&#246;chten Sie uns nach Ihrem Besuch ein kurzes Feedback geben? Es dauert nur wenige Minuten.';
+            inviteYes = 'Ja<span class="screen_reader"> Hiermit &#246;ffnet sich ein neues Fenster.</span>';
+            inviteNo = 'Nein danke';
+            mw = 'oo_inv_monitor_de.html';
+        } else if (/es/.test(lang)) {
+            tabText = 'Opiniones';
+            webText = 'Sitio Web<span class="screen_reader"> Esto abrir&#225; una nueva ventana.</span>';
+            prodText = 'Producto<span class="screen_reader"> Esto abrir&#225; una nueva ventana.</span>';
+            servText = 'Servicio<span class="screen_reader"> Esto abrir&#225; una nueva ventana.</span>';
+            chromePrompt = 'Por favor rellene la encuesta.';
+            wpIntro = '<strong>Ay&#250;denos a servirle mejor.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">Seleccione una categor&#237;a que se asemeje m&#225;s a la naturaleza de sus comentarios.</span>';
+            tsText = 'Necesita asistencia t&#233;cnica?. <a href="' + supporturl + '/es/es/contactus" onclick=g("' + supporturl + '/es/es/contactus") >Por favor cont&#225;ctenos.</a>';
+            poweredBy = 'Potenciado por OpinionLab.';
+            closeDialog = 'Cerrar dialogo';
+            inviteIntro = '<strong>Nosotros valoramos su opini&#243;n!</strong><br /><br />Despu&#233;s de su visita &#191;estar&#237;a dispuesto a proporcionarnos con algunos comentarios r&#225;pidos?  Solo le llevar&#225; unos minutos.';
+            inviteYes = 'S&#237;<span class="screen_reader"> Esto abrir&#225; una nueva ventana.</span>';
+            inviteNo = 'No, gracias';
+            mw = 'oo_inv_monitor_es.html';
+        } else if (/fr/.test(lang)) {
+            tabText = 'Avis';
+            webText = 'Site Internet<span class="screen_reader"> Cela ouvrira une nouvelle fen&#234;tre.</span>';
+            prodText = 'Produit<span class="screen_reader"> Cela ouvrira une nouvelle fen&#234;tre.</span>';
+            servText = 'Service<span class="screen_reader"> Cela ouvrira une nouvelle fen&#234;tre.</span>';
+            chromePrompt = 'Veuillez remplir le questionnaire.';
+            wpIntro = '<strong>Aidez-nous &#224; mieux vous servir.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">S&#233;lectionnez une cat&#233;gorie qui correspond &#224; vos commentaires.</span>';
+            tsText = 'Besoin d\'un support technique? <a href="' + supporturl + '/fr/fr/contactus" onclick=g("' + supporturl + '/fr/fr/contactus")>Contactez nous</a>.';
+            poweredBy = 'D&#233;velopp&#233; par OpinionLab.';
+            closeDialog = 'Fermer la bo&#238;te de dialogue';
+            inviteIntro = '<strong>Nous appr&#233;cions votre opinion!</strong><br /><br />Apr&#232;s votre visite, seriez-vous pr&#234;t &#224; fournir des commentaires rapides? Cela ne prendra que quelques minutes.';
+            inviteYes = 'Oui<span class="screen_reader"> Une nouvelle fen&#234;tre va s&#8217;ouvrir.</span>';
+            inviteNo = 'Non merci';
+            mw = 'oo_inv_monitor_fr.html';
+        } else if (/id/.test(lang)) {
+            tabText = 'Komentar dan Saran';
+            webText = 'Situs<span class="screen_reader"> Ini akan membuka jendela baru.</span>';
+            prodText = 'Produk<span class="screen_reader"> Ini akan membuka jendela baru.</span>';
+            servText = 'Servis<span class="screen_reader"> Ini akan membuka jendela baru.</span>';
+            chromePrompt = 'Tolong bantu isi survey.';
+            wpIntro = '<strong>Membantu melayani Anda dengan lebih baik.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">Pilih kategori yang paling sesuai dengan komentar Anda.</span>';
+            tsText = 'Butuh bantuan teknis? Silakan <a href="' + supporturl + '/id/id/contactus" onclick=g("' + supporturl + '/id/id/contactus")>kontak kami</a>.';
+            poweredBy = 'Didukung oleh OpinionLab.';
+            closeDialog = 'Tutup dialog';
+            inviteIntro = '<strong>Kami menghargai masukan Anda!</strong><br /><br />Setelah kunjungan Anda, apakah Anda bersedia memberikan beberapa masukan? Hanya membutuhkan semenit saja.';
+            inviteYes = 'Ya<span class="screen_reader"> Ini akan membuka jendela baru.</span>';
+            inviteNo = 'Tidak, terima kasih.';
+            mw = 'oo_inv_monitor_id.html';
+        } else if (/it/.test(lang)) {
+            tabText = 'Feedback';
+            webText = 'Sito web<span class="screen_reader"> Questo aprir&#224; una nuova finestra.</span>';
+            prodText = 'Prodotto<span class="screen_reader"> Questo aprir&#224; una nuova finestra.</span>';
+            servText = 'Servizio<span class="screen_reader"> Questo aprir&#224; una nuova finestra.</span>';
+            chromePrompt = 'Si prega di compilare il sondaggio.';
+            wpIntro = '<strong>Aiutaci a servirti meglio.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">Selezionare una categoria che si adatta da vicino alla natura del tuo feedback.</span>';
+            tsText = 'Hai bisogno di assistenza tecnica? <a href="' + supporturl + '/it/it/contactus" onclick=g("' + supporturl + '/it/it/contactus")>Contattaci</a>.';
+            poweredBy = 'Powered by OpinionLab.';
+            closeDialog = 'Chiudi';
+            inviteIntro = '<strong>Apprezziamo la tua opinione!</strong><br /><br />Dopo la tua visita, saresti disposto a fornire un feedback rapido? Ci vorranno solo pochi minuti.';
+            inviteYes = 'S&#236;<span class="screen_reader"> Si aprir&#224; una nuova finestra</span>';
+            inviteNo = 'No, grazie';
+            mw = 'oo_inv_monitor_it.html';
+        } else if (/ja/.test(lang)) {
+            tabText = '\u30D5\u30A3\u30FC\u30C9\u30D0\u30C3\u30AF';
+            webText = 'Web&#12469;&#12452;&#12488;<span class="screen_reader">&#26032;&#12375;&#12356;&#12454;&#12451;&#12531;&#12489;&#12454;&#12364;&#38283;&#12365;&#12414;&#12377;&#12290;</span>';
+            prodText = '&#35069;&#21697;<span class="screen_reader">&#26032;&#12375;&#12356;&#12454;&#12451;&#12531;&#12489;&#12454;&#12364;&#38283;&#12365;&#12414;&#12377;&#12290;</span>';
+            servText = '&#12469;&#12540;&#12499;&#12473;<span class="screen_reader">&#26032;&#12375;&#12356;&#12454;&#12451;&#12531;&#12489;&#12454;&#12364;&#38283;&#12365;&#12414;&#12377;&#12290;</span>';
+            chromePrompt = '\u30A2\u30F3\u30B1\u30FC\u30C8\u306B\u3054\u56DE\u7B54\u304F\u3060\u3055\u3044\u3002';
+            wpIntro = '<strong>&#12424;&#12426;&#33391;&#12356;&#12469;&#12540;&#12499;&#12473;&#25552;&#20379;&#12398;&#12383;&#12417;&#12289;&#12372;&#24847;&#35211;&#12434;&#12362;&#32862;&#12363;&#12379;&#12367;&#12384;&#12373;&#12356;&#12290;</strong><br /><span style="font-size:0.7em;line-height:1.0em;">&#12372;&#24847;&#35211;&#12398;&#20869;&#23481;&#12395;&#19968;&#30058;&#36817;&#12356;&#12418;&#12398;&#12434; &#20197;&#19979;&#12398;&#38917;&#30446;&#12363;&#12425;&#12362;&#36984;&#12403;&#12367;&#12384;&#12373;&#12356;&#12290;</span>';
+            tsText = '&#25216;&#34899;&#30340;&#12394;&#12469;&#12509;&#12540;&#12488;&#12434;&#12372;&#24076;&#26395;&#12391;&#12377;&#12363;&#65311; <a href="' + supporturl + '/jp/ja/contactus" onclick=g("' + supporturl + '/jp/ja/contactus")>&#12362;&#21839;&#12356;&#21512;&#12431;&#12379;&#12399;&#12371;&#12385;&#12425;</a>&#12290;';
+            poweredBy = 'Powered by OpinionLab. &#26032;&#12375;&#12356;&#12454;&#12451;&#12531;&#12489;&#12454;&#12364;&#38283;&#12365;&#12414;&#12377;&#12290;';
+            closeDialog = '&#12480;&#12452;&#12450;&#12525;&#12464;&#12434;&#38281;&#12376;&#12427;';
+            inviteIntro = '<strong>&#12469;&#12540;&#12499;&#12473;<span class="screen_reader">&#26032;&#12375;&#12356;&#12454;&#12451;&#12531;&#12489;&#12454;&#12364;&#38283;&#12365;&#12414;&#12377;&#12290;</strong><br /><br />&#24403;&#12469;&#12509;&#12540;&#12488;&#12469;&#12452;&#12488;&#38322;&#35239;&#24460;&#12289;&#12356;&#12367;&#12388;&#12363;&#12398;&#30701;&#12356;&#36074;&#21839;&#12395;&#12362;&#31572;&#12360;&#12356;&#12383;&#12384;&#12369;&#12414;&#12377;&#12363;&#65311;';
+            inviteYes = '&#12399;&#12356;<span class="screen_reader"> &#26032;&#12375;&#12356;&#12454;&#12451;&#12531;&#12489;&#12454;&#12364;&#38283;&#12365;&#12414;&#12377;&#12290;</span>';
+            inviteNo = '&#12356;&#12356;&#12360;';
+            mw = 'oo_inv_monitor_ja.html';
+        } else if (/ko/.test(lang)) {
+            tabText = '\uACE0\uAC1D\uC758\u0020\uC18C\uB9AC';
+            webText = '&#50937;&#49324;&#51060;&#53944;<span class="screen_reader"> &#49352; &#52285;&#51060; &#50676;&#47549;&#45768;&#45796;.</span>';
+            prodText = '&#51228;&#54408;<span class="screen_reader"> &#49352; &#52285;&#51060; &#50676;&#47549;&#45768;&#45796;.</span>';
+            servText = '&#49436;&#48708;&#49828;<span class="screen_reader"> &#49352; &#52285;&#51060; &#50676;&#47549;&#45768;&#45796;.</span>';
+            chromePrompt = '\uC9C0\uAE08 \uC124\uBB38\uC5D0 \uC751\uB2F5\uD574\uC8FC\uC138\uC694.';
+            wpIntro = '<strong>&#44480;&#54616;&#50640;&#44172; &#48372;&#45796; &#45208;&#51008; &#49436;&#48708;&#49828;&#47484; &#51228;&#44277;&#54624; &#49688; &#51080;&#46020;&#47197; &#46020;&#50752; &#51452;&#49901;&#49884;&#50724;.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">&#44480;&#54616;&#51032; &#54588;&#46300;&#48177; &#49457;&#44201;&#44284; &#48128;&#51217;&#54616;&#44172; &#44288;&#47144;&#46108; &#48276;&#51452;&#47484; &#49440;&#53469;&#54616;&#49901;&#49884;&#50724;.</span>';
+            tsText = '<a href="' + supporturl + '/kr/ko/contactus" onclick=g("' + supporturl + '/kr/ko/contactus")>&#44592;&#49696; &#51648;&#50896;&#51060; &#54596;&#50836;&#54616;&#49901;&#45768;&#44620;? &#51200;&#55148;&#50640;&#44172; &#50672;&#46973;&#54616;&#49901;&#49884;&#50724;</a>.';
+            poweredBy = 'OpinionLab &#44284; &#54632;&#44760;&#54633;&#45768;&#45796;.';
+            closeDialog = '&#45208;&#44032;&#44592;';
+            inviteIntro = '<strong>&#44480;&#54616;&#51032; &#51032;&#44204;&#51012; &#49548;&#51473;&#55176; &#49373;&#44033;&#54633;&#45768;&#45796;.</strong><br /><br />&#48169;&#47928; &#54980;,  &#48736;&#47480; &#54588;&#46300;&#48177;&#51012; &#51452;&#49884;&#44192;&#49845;&#45768;&#44620;?  &#47751; &#48516; &#51221;&#46020;&#51032; &#49884;&#44036;&#47564; &#49548;&#50836;&#46121;&#45768;&#45796;.';
+            inviteYes = '&#45348;<span class="screen_reader"> &#49352;&#47196;&#50868; &#52285;&#51060; &#50676;&#47549;&#45768;&#45796;.</span>';
+            inviteNo = '&#50500;&#45768;&#50724;';
+            mw = 'oo_inv_monitor_ko.html';
+        } else if (/pl/.test(lang)) {
+            tabText = 'Informacje zwrotne';
+            webText = 'Witryna internetowa<span class="screen_reader"> Spowoduje to otwarcie nowego okna.</span>';
+            prodText = 'Produkt<span class="screen_reader"> Spowoduje to otwarcie nowego okna.</span>';
+            servText = 'Us&#322;uga<span class="screen_reader"> Spowoduje to otwarcie nowego okna.</span>';
+            chromePrompt = 'Wype\u0142nij ankiet\u0119.';
+            wpIntro = '<strong>Mo&#380;emy Ci pom&#243;c.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">Wybierz kategori&#281;, kt&#243;ra &#347;ci&#347;le pasuje do Twojej opinii.</span>';
+            tsText = 'Potrzebujesz wsparcia technicznego? <a href="' + supporturl + '/pl/pl/contactus" onclick=g("' + supporturl + '/pl/pl/contactus")>Skontaktuj si&#281; z nami</a>.';
+            poweredBy = 'Powered by OpinionLab.';
+            closeDialog = 'Close dialog';
+            inviteIntro = '<strong>Cenimy twoj&#261; opini&#281;!</strong><br /><br />Po skorzystaniu z naszych us&#322;ug, zgadzasz si&#281; na wype&#322;nienie kr&#243;tkiej ankiety klienta?To zajmie tylko kilka minut.';
+            inviteYes = 'Tak<span class="screen_reader"> Spowoduje to otwarcie nowego okna.</span>';
+            inviteNo = 'Nie, dzi&#281;kuj&#281;';
+            mw = 'oo_inv_monitor_pl.html';
+        } else if (/pt/.test(lang)) {
+            tabText = 'Feedback';
+            webText = 'Website<span class="screen_reader"> Uma nova janela se abrir&#225;.</span>';
+            prodText = 'Produto<span class="screen_reader"> Uma nova janela se abrir&#225;.</span>';
+            servText = 'Servi&#231;o<span class="screen_reader"> Uma nova janela se abrir&#225;.</span>';
+            chromePrompt = 'Por favor, responda a pesquisa.';
+            wpIntro = '<strong>Ajude a melhorar nosso servi&#231;o.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">Selecione a categoria que melhor representa o seu feedback.</span>';
+            tsText = 'Precisa de suporte t&#233;nico? <a href="' + supporturl + '/br/pt/contactus" onclick=g("' + supporturl + '/br/pt/contactus")>Fale Conosco</a>.';
+            poweredBy = 'Powered by OpinionLab.';
+            closeDialog = 'Fechar janela';
+            inviteIntro = '<strong>N&#243;s valorizamos sua opini&#227;o!</strong><br /><br />Ap&#243;s a sua visita, voc&#234; poderia nos promover algum feedback? S&#243; vai levar alguns minutos.';
+            inviteYes = 'Sim<span class="screen_reader"> Uma nova janela se abrir&#225;.</span>';
+            inviteNo = 'N&#227;o, obrigada';
+            mw = 'oo_inv_monitor_pt.html';
+        } else if (/ru/.test(lang)) {
+            tabText = '\u041E\u0442\u0437\u044B\u0432';
+            webText = '&#1057;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072;<span class="screen_reader"> &#1054;&#1090;&#1082;&#1088;&#1086;&#1077;&#1090;&#1089;&#1103; &#1085;&#1086;&#1074;&#1086;&#1077; &#1086;&#1082;&#1085;&#1086;</span>';
+            prodText = '&#1055;&#1088;&#1086;&#1076;&#1091;&#1082;&#1090;<span class="screen_reader"> &#1054;&#1090;&#1082;&#1088;&#1086;&#1077;&#1090;&#1089;&#1103; &#1085;&#1086;&#1074;&#1086;&#1077; &#1086;&#1082;&#1085;&#1086;</span>';
+            servText = '&#1057;&#1077;&#1088;&#1074;&#1080;&#1089;<span class="screen_reader"> &#1054;&#1090;&#1082;&#1088;&#1086;&#1077;&#1090;&#1089;&#1103; &#1085;&#1086;&#1074;&#1086;&#1077; &#1086;&#1082;&#1085;&#1086;</span>';
+            chromePrompt = '\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430 \u043E\u0442\u0432\u0435\u0442\u044C\u0442\u0435 \u043D\u0430 \u0432\u043E\u043F\u0440\u043E\u0441\u044B \u043D\u0438\u0436\u0435';
+            wpIntro = '<strong>&#1055;&#1086;&#1084;&#1086;&#1095;&#1100; &#1085;&#1072;&#1084; &#1091;&#1083;&#1091;&#1095;&#1096;&#1080;&#1090;&#1100; &#1089;&#1077;&#1088;&#1074;&#1080;&#1089;</strong><br /><span style="font-size:0.7em;line-height:1.0em;">&#1074;&#1099;&#1073;&#1077;&#1088;&#1080;&#1090;&#1077; &#1082;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1080;&#1102; &#1086;&#1090;&#1079;&#1099;&#1074;&#1072;</span>';
+            tsText = '&#1042;&#1072;&#1084; &#1085;&#1091;&#1078;&#1085;&#1072; &#1090;&#1077;&#1093;&#1085;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1087;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1082;&#1072;? <a href="' + supporturl + '/ru/ru/contactus" onclick=g("' + supporturl + '/ru/ru/contactus")>&#1057;&#1074;&#1103;&#1078;&#1080;&#1090;&#1077;&#1089;&#1100; &#1089; &#1085;&#1072;&#1084;&#1080;</a>.';
+            poweredBy = '&#1057;&#1086;&#1079;&#1076;&#1072;&#1085;&#1086; OpinionLab. &#1054;&#1090;&#1082;&#1088;&#1086;&#1077;&#1090;&#1089;&#1103; &#1085;&#1086;&#1074;&#1086;&#1077; &#1086;&#1082;&#1085;&#1086;';
+            closeDialog = '&#1047;&#1072;&#1082;&#1088;&#1099;&#1090;&#1100;';
+            inviteIntro = '<strong>&#1053;&#1072;&#1084; &#1074;&#1072;&#1078;&#1085;&#1086; &#1042;&#1072;&#1096;&#1077; &#1084;&#1085;&#1077;&#1085;&#1080;&#1077;</strong><br /><br />&#1042;&#1072;&#1089; &#1085;&#1077; &#1079;&#1072;&#1090;&#1088;&#1091;&#1076;&#1085;&#1080;&#1090; &#1086;&#1089;&#1090;&#1072;&#1074;&#1080;&#1090;&#1100; &#1089;&#1074;&#1086;&#1081; &#1086;&#1090;&#1079;&#1099;&#1074;? &#1069;&#1090;&#1086; &#1079;&#1072;&#1081;&#1084;&#1077;&#1090; &#1084;&#1077;&#1085;&#1077;&#1077; &#1084;&#1080;&#1085;&#1091;&#1090;&#1099;';
+            inviteYes = '&#1044;&#1072;<span class="screen_reader"> &#1054;&#1090;&#1082;&#1088;&#1086;&#1077;&#1090;&#1089;&#1103; &#1085;&#1086;&#1074;&#1086;&#1077; &#1086;&#1082;&#1085;&#1086;</span>';
+            inviteNo = '&#1053;&#1077;&#1090;';
+            mw = 'oo_inv_monitor_ru.html';
+        } else if (/tr/.test(lang)) {
+            tabText = 'Geri bildirim';
+            webText = 'Web sitesi<span class="screen_reader"> Bu se&#231;enek yeni bir pencere a&#231;acak.</span>';
+            prodText = '&#220;r&#252;n<span class="screen_reader"> Bu se&#231;enek yeni bir pencere a&#231;acak.</span>';
+            servText = 'Servis<span class="screen_reader"> Bu se&#231;enek yeni bir pencere a&#231;acak.</span>';
+            chromePrompt = 'L&#252;tfen anketi doldurunuz.';
+            wpIntro = '<strong>Size daha iyi hizmet verebilmemiz i&#231;in yard&#305;mc&#305; olun.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">G&#246;r&#252;&#351;lerinize en yak&#305;n kategoriyi se&#231;in.</span>';
+            tsText = 'Teknik deste&#287;e mi ihtiyac&#305;n&#305;z var? <a href="' + supporturl + '/tr/tr/contactus" onclick=g("' + supporturl + '/tr/tr/contactus")>Bizimle ileti&#351;ime ge&#231;in</a>.';
+            poweredBy = 'Powered by OpinionLab.';
+            closeDialog = 'Close dialog';
+            inviteIntro = '<strong>D&#252;&#351;&#252;nceleriniz bizim i&#231;in &#246;nemli!</strong><br /><br />Ziyaretinizin ard&#305;ndan geri bildirimde bulunmak ister misiniz? Bu sadece birka&#231; dakikan&#305;z&#305; alacak.';
+            inviteYes = 'Evet<span class="screen_reader"> Bu se&#231;enek yeni bir pencere a&#231;acak.</span>';
+            inviteNo = 'Hay&#305;r, te&#351;ekk&#252;rler';
+            mw = 'oo_inv_monitor_tr.html';
+        } else if (/uk/.test(lang)) {
+            tabText = '\u0437\u0432\u043E\u0440\u043E\u0442\u043D\u0438\u0439 \u0437\u0432\'\u044F\u0437\u043E\u043A';
+            webText = '&#1042;&#1077;&#1073;-&#1089;&#1072;&#1081;&#1090;<span class="screen_reader"> &#1055;&#1088;&#1080; &#1094;&#1100;&#1086;&#1084;&#1091; &#1074;&#1110;&#1076;&#1082;&#1088;&#1080;&#1108;&#1090;&#1100;&#1089;&#1103; &#1085;&#1086;&#1074;&#1077; &#1074;&#1110;&#1082;&#1085;&#1086;.</span>';
+            prodText = '&#1055;&#1088;&#1086;&#1076;&#1091;&#1082;&#1090;<span class="screen_reader"> &#1055;&#1088;&#1080; &#1094;&#1100;&#1086;&#1084;&#1091; &#1074;&#1110;&#1076;&#1082;&#1088;&#1080;&#1108;&#1090;&#1100;&#1089;&#1103; &#1085;&#1086;&#1074;&#1077; &#1074;&#1110;&#1082;&#1085;&#1086;.</span>';
+            servText = '&#1055;&#1086;&#1089;&#1083;&#1091;&#1075;&#1072;<span class="screen_reader"> &#1055;&#1088;&#1080; &#1094;&#1100;&#1086;&#1084;&#1091; &#1074;&#1110;&#1076;&#1082;&#1088;&#1080;&#1108;&#1090;&#1100;&#1089;&#1103; &#1085;&#1086;&#1074;&#1077; &#1074;&#1110;&#1082;&#1085;&#1086;.</span>';
+            chromePrompt = '\u0411\u0443\u0434\u044C \u043B\u0430\u0441\u043A\u0430, \u0437\u0430\u043F\u043E\u0432\u043D\u0456\u0442\u044C \u0430\u043D\u043A\u0435\u0442\u0443.';
+            wpIntro = '<strong>&#1044;&#1086;&#1087;&#1086;&#1084;&#1086;&#1078;&#1110;&#1090;&#1100; &#1085;&#1072;&#1084; &#1087;&#1086;&#1082;&#1088;&#1072;&#1097;&#1080;&#1090;&#1080; &#1088;&#1110;&#1074;&#1077;&#1085;&#1100; &#1086;&#1073;&#1089;&#1083;&#1091;&#1075;&#1086;&#1074;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;.</strong><br /><span style="font-size:0.7em;line-height:1.0em;">&#1042;&#1080;&#1073;&#1077;&#1088;&#1110;&#1090;&#1100; &#1082;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1110;&#1102;, &#1103;&#1082;&#1072; &#1085;&#1072;&#1081;&#1073;&#1110;&#1083;&#1100;&#1096; &#1074;&#1110;&#1076;&#1087;&#1086;&#1074;&#1110;&#1076;&#1072;&#1108; &#1093;&#1072;&#1088;&#1072;&#1082;&#1090;&#1077;&#1088;&#1091; &#1074;&#1072;&#1096;&#1086;&#1075;&#1086; &#1074;&#1110;&#1076;&#1075;&#1091;&#1082;&#1091;.</span>';
+            tsText = '&#1042;&#1080; &#1087;&#1086;&#1090;&#1088;&#1077;&#1073;&#1091;&#1108;&#1090;&#1077; &#1090;&#1077;&#1093;&#1085;&#1110;&#1095;&#1085;&#1086;&#1111; &#1087;&#1110;&#1076;&#1090;&#1088;&#1080;&#1084;&#1082;&#1080;? <a href="' + supporturl + '/uk/uk/contactus" onclick=g("' + supporturl + '/uk/uk/contactus")>&#1047;&#1074;\'&#1103;&#1078;&#1110;&#1090;&#1100;&#1089;&#1103; &#1079; &#1085;&#1072;&#1084;&#1080;</a>.';
+            poweredBy = 'Powered by OpinionLab';
+            closeDialog = 'Close dialog';
+            inviteIntro = '<strong>&#1052;&#1080; &#1094;&#1110;&#1085;&#1091;&#1108;&#1084;&#1086; &#1042;&#1072;&#1096;&#1091; &#1076;&#1091;&#1084;&#1082;&#1091;!</strong><br /><br />&#1059; &#1042;&#1072;&#1089; &#1079;&#1085;&#1072;&#1081;&#1076;&#1077;&#1090;&#1100;&#1089;&#1103; &#1093;&#1074;&#1080;&#1083;&#1080;&#1085;&#1082;&#1072;, &#1097;&#1086;&#1073; &#1074;&#1079;&#1103;&#1090;&#1080; &#1091;&#1095;&#1072;&#1089;&#1090;&#1100; &#1074; &#1086;&#1087;&#1080;&#1090;&#1091;&#1074;&#1072;&#1085;&#1085;&#1110; &#1087;&#1110;&#1089;&#1083;&#1103; &#1079;&#1072;&#1074;&#1077;&#1088;&#1096;&#1077;&#1085;&#1085;&#1103;  &#1074;&#1110;&#1079;&#1080;&#1090;&#1091; &#1074;&#1077;&#1073;-&#1089;&#1072;&#1081;&#1090;&#1091;.';
+            inviteYes = '&#1076;&#1072;<span class="screen_reader"> &#1055;&#1088;&#1080; &#1094;&#1100;&#1086;&#1084;&#1091; &#1074;&#1110;&#1076;&#1082;&#1088;&#1080;&#1108;&#1090;&#1100;&#1089;&#1103; &#1085;&#1086;&#1074;&#1077; &#1074;&#1110;&#1082;&#1085;&#1086;.</span>';
+            inviteNo = '&#1085;&#1077;&#1084;&#1072;&#1108; &#1089;&#1087;&#1072;&#1089;&#1080;&#1073;&#1110;';
+            mw = 'oo_inv_monitor_uk.html';
+        }
+
+        OOo.oo_waypoint = new OOo.Waypoint({
+            /* REQUIRED - Asset identification */
+            pathToAssets: assetDirectory,
+            companyLogo: assetDirectory + 'ol_invite_logo.png',
+            companySlogan: 'Lenovo',
+            categories: {
+                website: {
+                    oCode: {
+                        referrerRewrite: [pageurl, (/\?/.test(w.location.href)) ? '&' : '?', 'olSegment=wpWebsite'].join(''),
+                        customVariables: {
+                            businessType: typeof lmd !== 'undefined' ? (typeof lmd.bu !== 'undefined' ? lmd.bu : '') : '',
+                            dtmSource: '',
+                            isMobile: (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) ? 'true' : 'false',
+                            country: typeof lmd !== 'undefined' ? (typeof lmd.cc !== 'undefined' ? lmd.cc : '') : '',
+                            language: typeof lmd !== 'undefined' ? (typeof lmd.language !== 'undefined' ? lmd.language : '') : '',
+                            olSegment: 'wpWebsite',
+                            pageName: typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '',
+                            pageType: typeof lmd !== 'undefined' ? (typeof lmd.subsection !== 'undefined' ? lmd.subsection : '') : '',
+                            sAccount: typeof s_account !== 'undefined' ? s_account : '',
+                            sVi: OOo.readCookie('s_vi'),
+                            timeStamp: OOo.readCookie('s_vi') + (new Date().getTime()),
+                            microsite: typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '',
+                            productselected: typeof lmd !== 'undefined' ? (typeof lmd.productselected !== 'undefined' ? lmd.productselected : '') : '',
+                            machineType: typeof lmd !== 'undefined' ? (typeof lmd.machinetype !== 'undefined' ? lmd.machinetype : '') : '',
+                            domainmeta: domain_meta,
+                            url: pageurl,
+                            deviceType: deviceType,
+                            browsername: GetBrowserName(),
+                            countryByIP: typeof lmd !== 'undefined' ? (typeof lmd.countrysource !== 'undefined' ? lmd.countrysource : '') : '',
+                            docID: typeof lmd !== 'undefined' ? (typeof lmd.docID !== 'undefined' ? lmd.docID : '') : '',
+                            docType: typeof lmd !== 'undefined' ? (typeof lmd.docType !== 'undefined' ? lmd.docType : '') : '',
+                            loginstatus: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.loginStatus !== 'undefined' ? lmd.loginInfo.loginStatus : '') : '',
+                            lenovoID: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.lenovoID !== 'undefined' ? lmd.loginInfo.lenovoID : '') : '',
+                            visitorID: typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '',
+                            serialnumber: typeof lmd !== 'undefined' ? (typeof lmd.serialnumber !== 'undefined' ? lmd.serialnumber : '') : '',
+                            resolution: screenResolution
+                        }
+                    },
+                    icon: 'icon_web.png',
+                    buttonText: webText
+                },
+                product: {
+                    oCode: {
+                        referrerRewrite: [pageurl, (/\?/.test(w.location.href)) ? '&' : '?', 'olSegment=wpProduct'].join(''),
+                        customVariables: {
+                            businessType: typeof lmd !== 'undefined' ? (typeof lmd.bu !== 'undefined' ? lmd.bu : '') : '',
+                            dtmSource: '',
+                            isMobile: (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) ? 'true' : 'false',
+                            country: typeof lmd !== 'undefined' ? (typeof lmd.cc !== 'undefined' ? lmd.cc : '') : '',
+                            language: typeof lmd !== 'undefined' ? (typeof lmd.language !== 'undefined' ? lmd.language : '') : '',
+                            olSegment: 'wpProduct',
+                            pageName: typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '',
+                            pageType: typeof lmd !== 'undefined' ? (typeof lmd.subsection !== 'undefined' ? lmd.subsection : '') : '',
+                            sAccount: typeof s_account !== 'undefined' ? s_account : '',
+                            sVi: OOo.readCookie('s_vi'),
+                            timeStamp: OOo.readCookie('s_vi') + (new Date().getTime()),
+                            microsite: typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '',
+                            productselected: typeof lmd !== 'undefined' ? (typeof lmd.productselected !== 'undefined' ? lmd.productselected : '') : '',
+                            machineType: typeof lmd !== 'undefined' ? (typeof lmd.machinetype !== 'undefined' ? lmd.machinetype : '') : '',
+                            domainmeta: domain_meta,
+                            url: pageurl,
+                            deviceType: deviceType,
+                            browsername: GetBrowserName(),
+                            countryByIP: typeof lmd !== 'undefined' ? (typeof lmd.countrysource !== 'undefined' ? lmd.countrysource : '') : '',
+                            docID: typeof lmd !== 'undefined' ? (typeof lmd.docID !== 'undefined' ? lmd.docID : '') : '',
+                            docType: typeof lmd !== 'undefined' ? (typeof lmd.docType !== 'undefined' ? lmd.docType : '') : '',
+                            loginstatus: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.loginStatus !== 'undefined' ? lmd.loginInfo.loginStatus : '') : '',
+                            lenovoID: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.lenovoID !== 'undefined' ? lmd.loginInfo.lenovoID : '') : '',
+                            visitorID: typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '',
+                            serialnumber: typeof lmd !== 'undefined' ? (typeof lmd.serialnumber !== 'undefined' ? lmd.serialnumber : '') : '',
+                            resolution: screenResolution
+                        }
+                    },
+                    icon: 'icon_product.png',
+                    buttonText: prodText
+                },
+                service: {
+                    oCode: {
+                        referrerRewrite: [pageurl, (/\?/.test(w.location.href)) ? '&' : '?', 'olSegment=wpService'].join(''),
+                        customVariables: {
+                            businessType: typeof lmd !== 'undefined' ? (typeof lmd.bu !== 'undefined' ? lmd.bu : '') : '',
+                            dtmSource: '',
+                            isMobile: (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) ? 'true' : 'false',
+                            country: typeof lmd !== 'undefined' ? (typeof lmd.cc !== 'undefined' ? lmd.cc : '') : '',
+                            language: typeof lmd !== 'undefined' ? (typeof lmd.language !== 'undefined' ? lmd.language : '') : '',
+                            olSegment: 'wpService',
+                            pageName: typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '',
+                            pageType: typeof lmd !== 'undefined' ? (typeof lmd.subsection !== 'undefined' ? lmd.subsection : '') : '',
+                            sAccount: typeof s_account !== 'undefined' ? s_account : '',
+                            sVi: OOo.readCookie('s_vi'),
+                            timeStamp: OOo.readCookie('s_vi') + (new Date().getTime()),
+                            microsite: typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '',
+                            productselected: typeof lmd !== 'undefined' ? (typeof lmd.productselected !== 'undefined' ? lmd.productselected : '') : '',
+                            machineType: typeof lmd !== 'undefined' ? (typeof lmd.machinetype !== 'undefined' ? lmd.machinetype : '') : '',
+                            domainmeta: domain_meta,
+                            url: pageurl,
+                            deviceType: deviceType,
+                            browsername: GetBrowserName(),
+                            countryByIP: typeof lmd !== 'undefined' ? (typeof lmd.countrysource !== 'undefined' ? lmd.countrysource : '') : '',
+                            docID: typeof lmd !== 'undefined' ? (typeof lmd.docID !== 'undefined' ? lmd.docID : '') : '',
+                            docType: typeof lmd !== 'undefined' ? (typeof lmd.docType !== 'undefined' ? lmd.docType : '') : '',
+                            loginstatus: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.loginStatus !== 'undefined' ? lmd.loginInfo.loginStatus : '') : '',
+                            lenovoID: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.lenovoID !== 'undefined' ? lmd.loginInfo.lenovoID : '') : '',
+                            visitorID: typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '',
+                            serialnumber: typeof lmd !== 'undefined' ? (typeof lmd.serialnumber !== 'undefined' ? lmd.serialnumber : '') : '',
+                            resolution: screenResolution
+                        }
+                    },
+                    icon: 'icon_other.png',
+                    buttonText: servText
+                }
+            },
+            wpmarkup: '<div id="oo_waypoint_prompt" role="dialogue" aria-describedby="oo_waypoint_message"><div id="oo_waypoint_company_logo"></div><div id="oo_waypoint_content"><p id="oo_waypoint_message">' + wpIntro + '</p><p id="waypoint_icons"></p><p style="font-size:0.7em;">' + tsText + '</p><p id="ol_waypoint_brand_logo"><a href="#" onclick=openopinionlab(\'' + opinionlabhref + '\');  aria-label="' + poweredBy + '"></a></p></div><a id="oo_waypoint_close_prompt" href="#" aria-label="' + closeDialog + '"><div class="screen_reader">' + closeDialog + '</div><span aria-hidden="true">&#10006;</span></a></div>'
+        });
+
+        function isRedirectComment() {
+            var result = false;
+            try {
+                var cuurentRealm = l.Common.getCurrentRealm();
+                var reg = new RegExp(/\/{1}qrhome|\/{1}PremierSupport|\/{1}PremierSupportQR|\/{1}servicecardQR|\/{1}premiumcareqrhome|\/{1}premierqrhome/gi);
+                if (cuurentRealm === 2 && reg.test(window.location.pathname)) {
+                    result = true;
+                }
+                return result;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        function threeSteps() {
+            var result = false;
+            try {
+                var cuurentRealm = l.Common.getCurrentRealm();
+                var reg = new RegExp(/\/threesteps/gi);
+                if (cuurentRealm === 2 && reg.test(window.location.pathname)) {
+                    result = true;
+                }
+                return result;
+            } catch (e) {
+                return false;
+            }
+        }
+        if (isRedirectComment()) {
+            OOo.oo_tab = new OOo.Ocode({
+                tab: {
+                    position: 'right',
+                    title: tabText,
+                    tabType: 0,
+                    verbiage: tabText,
+                    iconPath: assetDirectory
+                },
+                disableShow: false
+            });
+        } else if (threeSteps()) {
+            OOo.oo_tab = new OOo.Ocode({
+                tab: {
+                    position: 'right',
+                    title: tabText,
+                    tabType: 0,
+                    verbiage: tabText,
+                    iconPath: assetDirectory
+                },
+                referrerRewrite: [pageurl, (/\?/.test(w.location.href)) ? '&' : '?', 'olSegment=wpWebsite'].join(''),
+                disableShow: false
+            });
+        } else {
+            OOo.oo_tab = new OOo.Ocode({
+                tab: {
+                    position: 'right',
+                    title: tabText,
+                    tabType: 0,
+                    verbiage: tabText,
+                    iconPath: assetDirectory
+                },
+                disableShow: true
+            });
+            OOo.appendWaypoint('oo_tab');
+        }
+
+        OOo.oo_invite = new OOo.Invitation({
+            pathToAssets: assetDirectory,
+            monitorWindow: mw,
+            companyLogo: assetDirectory + 'ol_invite_logo.png',
+            companySlogan: 'Lenovo',
+            responseRate: 45, // sample rate
+            repromptTime: 7776000, // 90 days before showing a user the invite again
+            pagesHit: 2, // page views before displaying invite
+            promptDelay: 60, // seconds on page before displaying invite
+            asm: 2,
+            newWindowSize: [840, 500],
+            referrerRewrite: [pageurl, (/\?/.test(w.location.href)) ? '&' : '?', 'olSegment=invitation'].join(''),
+            thirdPartyCookies: [{ read: true, name: 'oo_inv_eComm_session' }],
+            //due to a problem with the invite monitor window loading, custom vars are being appended to the referrer in the monitor window.
+            //be sure to use custom monitor window
+            customVariablesAppended: {  
+                businessType: typeof lmd !== 'undefined' ? (typeof lmd.bu !== 'undefined' ? lmd.bu : '') : '',
+                dtmSource: '',
+                isMobile: (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0, 4))) ? 'true' : 'false',
+                country: typeof lmd !== 'undefined' ? (typeof lmd.cc !== 'undefined' ? lmd.cc : '') : '',
+                language: typeof lmd !== 'undefined' ? (typeof lmd.language !== 'undefined' ? lmd.language : '') : '',
+                olSegment: 'invitation',
+                pageName: typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '',
+                pageType: typeof lmd !== 'undefined' ? (typeof lmd.subsection !== 'undefined' ? lmd.subsection : '') : '',
+                sAccount: typeof s_account !== 'undefined' ? s_account : '',
+                sVi: OOo.readCookie('s_vi'),
+                timeStamp: OOo.readCookie('s_vi') + (new Date().getTime()),
+                microsite: typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '',
+                productselected: typeof lmd !== 'undefined' ? (typeof lmd.productselected !== 'undefined' ? lmd.productselected : '') : '',
+                machineType: typeof lmd !== 'undefined' ? (typeof lmd.machinetype !== 'undefined' ? lmd.machinetype : '') : '',
+                domainmeta: domain_meta,
+                url: pageurl,
+                deviceType: deviceType,
+                browsername: GetBrowserName(),
+                countryByIP: typeof lmd !== 'undefined' ? (typeof lmd.countrysource !== 'undefined' ? lmd.countrysource : '') : '',
+                docID: typeof lmd !== 'undefined' ? (typeof lmd.docID !== 'undefined' ? lmd.docID : '') : '',
+                docType: typeof lmd !== 'undefined' ? (typeof lmd.docType !== 'undefined' ? lmd.docType : '') : '',
+                loginstatus: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.loginStatus !== 'undefined' ? lmd.loginInfo.loginStatus : '') : '',
+                lenovoID: typeof lmd !== 'undefined' ? (typeof lmd.loginInfo.lenovoID !== 'undefined' ? lmd.loginInfo.lenovoID : '') : '',
+                visitorID: typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '',
+                serialnumber: typeof lmd !== 'undefined' ? (typeof lmd.serialnumber !== 'undefined' ? lmd.serialnumber : '') : '',
+                ipaddress: typeof lmd !== 'undefined' ? (typeof lmd.ipAddress !== 'undefined' ? lmd.ipAddress : '') : '',
+                supportusertype: typeof lmd !== 'undefined' ? (typeof lmd.supportUserType !== 'undefined' ? lmd.supportUserType : '') : '',
+                resolution: screenResolution
+            },
+            repromptCookie: 'oo_inv_support',
+            inviteMarkup: '<div id="oo_invitation_prompt" role="dialog" aria-describedby="oo_invite_message"><div id="oo_invitation_company_logo"></div><div id="oo_invite_content"><p id="oo_invite_message">' + inviteIntro + '</p><p class="prompt_button"><a href="#" id="oo_launch_prompt">' + inviteYes + '</a></p><p class="prompt_button"><a href="#" id="oo_no_thanks">' + inviteNo + '</a></p><p id="ol_invitation_brand_logo"><a href="#"; onclick=openopinionlab(\'' + opinionlabhref + '\');  aria-label="' + poweredBy + '"></a></p></div><a id="oo_close_prompt" href="#" aria-label="' + closeDialog + '"><div class="screen_reader">' + closeDialog + '</div><span aria-hidden="true">&#10006;</span></a></div>',
+            callBacks: {
+                prompt: function () {
+                    OOo.createCookie('oo_inv_eSupport_session', '1');
+                    if (typeof lmd !== 'undefined' && typeof _satellite !== 'undefined') {
+                        lmd.ol = typeof lmd.ol !== 'undefined' ? lmd.ol : {};
+                        lmd.ol.invite = 1;
+                        _satellite.track('ol-invite-prompt');
+                    }
+                }
+            }
+        });
+
+        for (var i = 0; i < scripts.length; i++) {
+            if (/adobedtm/i.test(scripts[i].src)) {
+                OOo.oo_waypoint.options.categories.website.oCode.customVariables.dtmSource = scripts[i].src;
+                OOo.oo_waypoint.options.categories.product.oCode.customVariables.dtmSource = scripts[i].src;
+                OOo.oo_waypoint.options.categories.service.oCode.customVariables.dtmSource = scripts[i].src;
+                OOo.oo_invite.options.customVariablesAppended.dtmSource = scripts[i].src;
+                break;
+            }
+        }
+
+        var inviteCallback = function (e) {
+            var evt = e || w.event,
+                target = evt.target || evt.srcElement;
+
+            if (target.nodeName === 'A' || target.nodeName === 'IMG' || target.nodeName === 'INPUT' || target.nodeName === 'BUTTON') {
+                OOo.Invitation.notifyFriendlyLocationChange();
+            }
+        };
+
+        OOo.addEventListener(d, 'click', inviteCallback, false);
+
+        if (typeof OOo !== 'undefined' && typeof OOo.releaseDetails !== 'object') { OOo.releaseDetails = []; }
+        OOo.releaseDetails.push({
+            author: 'KS',
+            timeStamp: '07/26/2019, 10:58:55',
+            fileName: 'oo_conf_real.js',
+            fileVersion: '4.0',
+            ticketNumber: 'DYN-1033135'
+        });
+
+    });
+
+}
+
+if (Cookies.get("OpinionLab") !== 'off') {
+    OpinionLab(window, document, OOo);
+}
+
+function g(i) { document.location.href = i; }
+
+function openopinionlab(url) {
+    window.open(url);
+}
+
+function isIE() { //ie?
+    if (!!window.ActiveXObject || "ActiveXObject" in window) {
+        return true;
+    }
+    else if (isNormalIE()) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function isNormalIE() {
+    if (window.navigator.userAgent.toLowerCase().indexOf("msie") >= 0)
+        return true;
+    else
+        return false;
+}
+
+function isFirefox() {
+    if (window.navigator.userAgent.toLowerCase().indexOf("firefox") >= 0)
+        return true;
+    else
+        return false;
+}
+
+function isChrome() {
+    if (window.navigator.userAgent.toLowerCase().indexOf("chrome") >= 0)
+        return true;
+    else
+        return false;
+}
+
+function GetBrowserName() {
+    var result = 'Other';
+    var isie = isIE();
+    var isfirefox = isFirefox();
+    var ischrome = isChrome();
+    if (isie) {
+        result = "IE";
+    }
+    else if (isfirefox) {
+        result = "Firefox";
+    }
+    else if (ischrome) {
+        result = "Chrome";
+    }
+    return result;
+}
+
+function getDeviceType(){
+    var result = "desktop";
+    if (window.innerWidth > 991) {
+        result = "desktop";
+    }
+    else if (window.innerWidth < 768) {
+        result = "mobile";
+    } else {
+        result = "tablet";
+    }
+    return result;
+}
+
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function () {
+            oldonload();
+            func();
+        }
+    }
+}
+
+
+addLoadEvent(loadOOoCustomVariable);
+
+function loadOOoCustomVariable() 
+{
+    if (OOo.oo_invite) {
+        OOo.oo_invite.options.customVariablesAppended.sAccount = (typeof s_account !== 'undefined' ? s_account : '');
+        OOo.oo_invite.options.customVariablesAppended.pageName = (typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '');
+        OOo.oo_invite.options.customVariablesAppended.microsite = (typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '');
+        OOo.oo_invite.options.customVariablesAppended.visitorID = (typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '');
+    }
+
+    if (OOo.oo_waypoint) {
+        OOo.oo_waypoint.options.categories.website.oCode.customVariables.sAccount = (typeof s_account !== 'undefined' ? s_account : '');
+        OOo.oo_waypoint.options.categories.website.oCode.customVariables.pageName = (typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '');
+        OOo.oo_waypoint.options.categories.website.oCode.customVariables.microsite = (typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '');
+        OOo.oo_waypoint.options.categories.website.oCode.customVariables.visitorID = (typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '');
+
+        OOo.oo_waypoint.options.categories.product.oCode.customVariables.sAccount = (typeof s_account !== 'undefined' ? s_account : '');
+        OOo.oo_waypoint.options.categories.product.oCode.customVariables.pageName = (typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '');
+        OOo.oo_waypoint.options.categories.product.oCode.customVariables.microsite = (typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '');
+        OOo.oo_waypoint.options.categories.product.oCode.customVariables.visitorID = (typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '');
+
+        OOo.oo_waypoint.options.categories.service.oCode.customVariables.sAccount = (typeof s_account !== 'undefined' ? s_account : '');
+        OOo.oo_waypoint.options.categories.service.oCode.customVariables.pageName = (typeof s !== 'undefined' ? (typeof s.pageName !== 'undefined' ? s.pageName : '') : '');
+        OOo.oo_waypoint.options.categories.service.oCode.customVariables.microsite = (typeof s !== 'undefined' ? (typeof s.server !== 'undefined' ? s.server : '') : '');
+        OOo.oo_waypoint.options.categories.service.oCode.customVariables.visitorID = (typeof s !== 'undefined' ? (typeof s.prop22 !== 'undefined' ? s.prop22 : '') : '');
+    }
+}

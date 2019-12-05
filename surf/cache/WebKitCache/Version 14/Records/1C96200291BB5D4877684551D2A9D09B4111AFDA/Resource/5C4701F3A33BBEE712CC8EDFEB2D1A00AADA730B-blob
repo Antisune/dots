@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+     <link rel="shortcut icon" href="https://www.thewatchcartoononline.tv/favicon.ico" type="image/x-icon" />
+<style>
+@media only screen and (max-width: 599px) { #ac-lre-wrapper{max-width: 300px;} #sidebar_r1{display: inline-block; width: 100%; max-width: 400px; height: 332px;} }
+@media only screen and (min-width: 600px) { #sidebar_r1{float:right; display: inline-block; width: 100%; max-width: 400px; height: 332px;} }
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{color:#333;font-size:13px;font-family:Verdana,Geneva,sans-serif;background:#3F474E;margin-top:-2px}.logo{float:left}.header-top{height:40px;background:#FF7C00;color:#FFF;line-height:35px;padding-left:20px;margin-top:20px}.header-top a{color:#FFF;font-weight:400}.header-top a:hover{color:#b85128}.header-top a:visited{color:#FFF}.catara{width:250px;height:20px}.searching{float:right;margin-top:70px}.searching-bar{max-width:250px;height:25px;border-radius:3px}.button1{background-color:#F87101;color:white;border:1px solid #DF5006}.button1:hover{background-color:#DF5006;color:white}.aramabutonu{border-radius:2px;text-align:center;text-decoration:none;display:inline-block;font-size:14px;width:60px;height:25px;-webkit-transition-duration:1.4s;transition-duration:0.4s;cursor:pointer}.sidebar-all{border-style:solid;border-color:#FF7C00;border-width:2px;background:#1E262D;border-radius:8px 8px 8px 8px}.sidebar-header{background:#FF7C00;height:35px;border-radius:4px 4px 0 0;color:#FFF;font-size:15px;text-align:left;font-weight:700;padding-top:9px;padding-left:7px}.sidebar-titles{padding-left:2px;padding-right:10px;color:#FFF;margin-top:-4px}.recent-release{background:#FF7C00;height:37px;border-radius:8px 8px 0 0;color:#FFF;font-size:15px;text-align:left;font-weight:700;padding-top:9px;padding-left:10px;clear:left;clear:right}.recent-release a{color:#FFF}.recent-release2{color:#FFF;font-size:15px;text-align:left;font-weight:700;clear:left;clear:right}.recent-release2 a{color:#FFF}.category{border:#FF7C00 solid 2px;border-radius:8px 8px 8px 8px}.kategory-desc{padding:8px}.today-buton{background:#FF7C00;padding:4px 8px 4px 8px;border-radius:4px}.today-buton:hover{background:#f9af6f}.genre-buton{background:#FF7C00;padding:2px 8px 2px 8px;border-radius:4px;line-height:25px}.genre-buton:hover{background:#f9af6f}.genre-buton2 a{background:#FFF;padding:10px 8px 10px 8px;margin-left:2px;border-radius:4px;line-height:40px}.genre-buton2 a:hover{background:#f9af6f}.video-title2{clear:right;background:#FF7C00;height:37px;color:#FFF;font-size:15px;margin-bottom:5px;text-align:left;border-radius:4px;font-weight:700;padding-top:10px;padding-left:5px;clear:left;clear:right}.episode-descp{color:#FFF;font-size:13px}.episode-descp a{color:#EC8304;font-size:15px;font-weight:700}.header-tag{color:#FFF}.header-tag a{color:#EC8304}.header-tag h2{font-weight:400;font-size:16px;color:#EC8304;margin:30px 0 0 0;padding:0;display:inline}.h1-tag{padding:10px 0 0 10px}.video-title{background:#FF7C00;min-height:37px;color:#FFF;border-radius:8px 8px 0 0}.video-title h1{font-size:15px;display:inline;padding:5px 0 10px 0}.video-title a{color:#FFF;font-size:15px}.video-title h2{font-size:15px;display:inline;padding:5px 0 10px 0}#sidebar_right{background-color:#1E262D;padding:8px;padding-bottom:20px;position:relative;border-right:solid;border-left:solid;border-bottom:solid;border-radius:0 0 8px 8px;border-color:#FF7C00;border-width:2px;color:aliceblue;margin-bottom:10px;overflow:auto}#sidebar_today{background-color:#1E262D;padding:8px;padding-bottom:20px;position:relative;border-right:solid;border-left:solid;border-bottom:solid;border-radius:0 0 8px 8px;border-color:#FF7C00;border-width:2px;color:aliceblue;margin-bottom:10px;overflow:auto}#sidebar_cat{background-color:#1E262D;padding:8px;padding-bottom:20px;position:relative;border-right:solid;border-left:solid;border-bottom:solid;border-radius:0 0 8px 8px;border-color:#FF7C00;border-width:2px;color:aliceblue;margin-bottom:10px;overflow:auto}#sidebar_cat a{color:#FFF;font-weight:700;font-size:14px}#sidebar_today a{color:#FFF;font-weight:700;font-size:14px}#sidebar_right2{background-color:#1E262D;padding:8px 8px 0 8px;position:relative;border-right:solid;border-left:solid;border-bottom:solid;border-radius:0 0 8px 8px;border-color:#FF7C00;border-width:2px;color:aliceblue;margin-bottom:10px;overflow:auto}#sidebar_right3{background-color:#1E262D;padding:8px 8px 15px 8px;position:relative;border-right:solid;border-left:solid;border-bottom:solid;border-radius:0 0 8px 8px;border-color:#FF7C00;border-width:2px;color:aliceblue;overflow:auto;margin-bottom:20px}#sidebar_right3 a:visited{color:#f5a383}#sidebar_right4{padding:8px 8px 0 8px;position:relative;border-right:solid;border-left:solid;border-bottom:solid;border-radius:0 0 8px 8px;border-color:#FF7C00;border-width:2px;margin-bottom:10px;overflow:auto}.img2{padding-right:10px;padding-bottom:10px}.recent-release-main{clear:both;padding-top:10px}.recent-releases{clear:both}.video-page-main{clear:both}.todays-text{max-width:200px;float:left}.left{float:left}.div1{width:100px;height:50px;margin:10px;border:3px solid #73AD21;float:left}.div2{float:right}.cat-eps{max-width:768px;border-bottom:1px dashed #FF7C00;padding:5px 0 5px 0}.cat-eps a{color:#FFF;font-size:17px}.cat-eps:hover{background:#FF7C00}.ad300{width:300px;height:250px;border:1px solid black;margin-bottom:15px}.right{float:right}.left{margin-bottom:20px}.footer-kismi{border-top:#FF7C00 solid 2px;margin-top:20px;min-height:50px;color:aliceblue;text-align:center;line-height:40px}.cerceve{min-width:220px;height:20px;background:#1E262D;float:left;text-align:center}.cerceve:hover{background-color:#635b6b}.cerceve2{min-width:153px;min-height:280px;max-width:168px;max-height:330px;background:#1E262D;margin:2px 2px 2px 2px;float:left;text-align:center}.cerceve2:hover{background-color:#635b6b}.cerceve2 a{color:#FF7C00;font-size:12px;text-decoration:none;margin:0 0 0 0}.cerceve2 a:visited{color:#AE5400;font-size:12px;text-decoration:none;margin:0 0 0 0}.cerceve2 a:hover{color:#d74207;font-size:12px;text-decoration:none}.iccerceve{margin:2px 2px 4px 2px;text-align:center}.iccerceve2{margin:2px 2px 4px 2px;text-align:center}.cerceve-tur-ve-genre{margin-left:10px;margin-bottom:10px}.cerceve a{color:#FF7C00;font-size:12px;text-decoration:none;margin:0 0 0 0}.cerceve a:visited{color:#AE5400;font-size:12px;text-decoration:none;margin:0 0 0 0}.cerceve a:hover{color:#d74207;font-size:12px;text-decoration:none}.todays-anime-main{min-width:300px;border:#FF7C00 solid 2px;width:100%;height:300px;float:left;border-radius:8px 8px 8px 8px;background:#1E262D;color:#FFF}.video-top{min-width:300px;border:#FF7C00 solid 2px;width:57%;height:250px;float:left;border-radius:8px 8px 8px 8px;background:#1E262D;color:#FFF}.todays-anime{background:#FF7C00;height:37px;border-radius:4px 4px 0 0;color:#FFF;font-size:15px;text-align:left;font-weight:700;padding-top:7px;padding-left:5px;width:100%}.clearfix{overflow:auto}.img2{float:left;padding-top:30px}.img3{float:left;margin:10px;max-width:200px;height:200px}.img5{float:left;margin:10px;max-width:240px;max-height:340px}.img4{max-width:150px}#map_canvas embed{max-width:none}.sidebar-titles li{margin-left:-22px;padding:5px 0 5px 0;min-height:18px;border-bottom:1px dashed #FF7C00}.sidebar-titles a,.sidebar-titles a:visited{color:#FFF;font-size:12px;text-decoration:none;margin:0 0 0 0}.sidebar-titles a:hover{color:#d74207;font-size:12px;text-decoration:none}.episode-titles{margin-top:-8px}.episode-titles li{margin-left:-23px;padding:10px 10px 5px;min-height:40px}.episode-titles a,.episode-titles a:visited{color:#FFF;font-size:15px;text-decoration:none;margin:0 0 0 0}.episode-titles a:hover{color:#d74207;font-size:15px;text-decoration:none}ul.sidebar{list-style-image:url(tabs.jpg)}ul.episode-titles{list-style-image:url(tabs.jpg)}ul.episode-titles li{border-bottom:solid #FF7C00 1px}.episode-titles li:hover{background-color:#F3E2A9}#map_canvas img{max-width:none}#map_canvas object{max-width:none}h1{font-size:44px}h2{font-size:37px}h3{font-size:27px}h5{font-size:17px}h6{font-size:14px}.row{width:980px;max-width:100%;min-width:768px;margin:0 auto;background:#1E262D;border-right:solid #202020 2px;border-left:solid #202020 2px}.row .row{width:auto;max-width:none;min-width:0;margin:0 -6px}.row.collapse .column,.row.collapse .columns{padding:0}.row .row{width:auto;max-width:none;min-width:0;margin:0 -6px}.row .row.collapse{margin:0}.column,.columns{float:left;min-height:1px;padding:0 4px;position:relative}.column.centered,.columns.centered{float:none;margin:0 auto}[class*="column"] + [class*="column"]:last-child{float:right}[class*="column"] + [class*="column"].end{float:left}.row .one{width:8.333%}.row .two{width:16.667%}.row .three{width:25%}.row .four{width:24.333%}.row .fifteen{width:17.35%}.row .five{width:41.667%}.row .six{width:50%}.row .seven{width:58.333%}.row .eight{width:75.65%}.row .fourteen{width:82.65%}.row .nine{width:75%}.row .ten{width:83.333%}.row .eleven{width:91.667%}.row .twelve{width:100%}.row .offset-by-one{margin-left:8.333%}.row .offset-by-two{margin-left:16.667%}.row .offset-by-three{margin-left:25%}.row .offset-by-four{margin-left:25.333%}.row .offset-by-five{margin-left:41.667%}.row .offset-by-six{margin-left:50%}.row .offset-by-seven{margin-left:58.333%}.row .offset-by-eight{margin-left:74.65%}.row .offset-by-nine{margin-left:75%}.row .offset-by-ten{margin-left:83.333%}.push-two{left:16.667%}.pull-two{right:16.667%}.push-three{left:25%}.pull-three{right:25%}.push-four{left:33.333%}.pull-four{right:33.333%}.push-five{left:41.667%}.pull-five{right:41.667%}.push-six{left:50%}.pull-six{right:50%}.push-seven{left:58.333%}.pull-seven{right:58.333%}.push-eight{left:66.667%}.pull-eight{right:66.667%}.push-nine{left:75%}.pull-nine{right:75%}.push-ten{left:83.333%}.pull-ten{right:83.333%}img,object,embed{max-width:100%;height:auto}img{-ms-interpolation-mode:bicubic}#map_canvas img,.map_canvas img{max-width:none!important}.row{*zoom:1}.row:before,.row:after{content:"";display:table}.row:after{clear:both}@media only screen and (max-width :768px) {body{-webkit-text-size-adjust:none;-ms-text-size-adjust:none;width:100%;min-width:0;margin-left:0;margin-right:0;padding-left:0;padding-right:0}.row{width:auto;min-width:0;margin-left:0;margin-right:0}.column,.columns{width:auto!important;float:none}.column:last-child,.columns:last-child{float:none}[class*="column"] + [class*="column"]:last-child{float:none}.column:before,.columns:before,.column:after,.columns:after{content:"";display:table}.column:after,.columns:after{clear:both}.no-left-margin,.offset-by-one,.offset-by-two,.offset-by-three,.offset-by-four,.offset-by-five,.offset-by-six,.offset-by-seven,.offset-by-eight,.offset-by-nine,.offset-by-ten{margin-left:0!important}.left-auto,.push-two,.push-three,.push-four,.push-five,.push-six,.push-seven,.push-eight,.push-nine,.push-ten{left:auto}.right-auto,.pull-two,.pull-three,.pull-four,.pull-five,.pull-six,.pull-seven,.pull-eight,.pull-nine,.pull-ten{right:auto}.row .mobile-one{width:25%!important;float:left;padding:0 5px}.row .mobile-one:last-child{float:right}.row.collapse .mobile-one{padding:0}.row .mobile-two{width:50%!important;float:left;padding:0 5px}.row .mobile-two:last-child{float:right}.row.collapse .mobile-two{padding:0}.row .mobile-three{width:75%!important;float:left;padding:0 5px}.row .mobile-three:last-child{float:right}.row.collapse .mobile-three{padding:0}.row .mobile-four{width:100%!important;float:left;padding:0 5px}.row .mobile-four:last-child{float:right}.row.collapse .mobile-four{padding:0}.push-one-mobile{left:25%}.pull-one-mobile{right:25%}.push-two-mobile{left:50%}.pull-two-mobile{right:50%}.push-three-mobile{left:75%}.pull-three-mobile{right:75%}}.block-grid{display:block;overflow:hidden;padding:0}.block-grid>li{display:block;height:auto;float:left}.block-grid.two-up{margin:0 -15px}.block-grid.two-up>li{width:50%;padding:0 15px 15px}.block-grid.three-up{margin:0 -12px}.block-grid.three-up>li{width:33.33%;padding:0 12px 12px}.block-grid.four-up{margin:0 -10px}.block-grid.four-up>li{width:25%;padding:0 10px 10px}.block-grid.five-up{margin:0 -8px}.block-grid.five-up>li{width:20%;padding:0 8px 8px}@media only screen and (max-width :768px) {.block-grid.mobile{margin-left:0}.block-grid.mobile>li{float:none;width:100%;margin-left:0}}.nav-bar{height:40px;background:#FF7C00;margin-top:5px;padding:0;border-radius:8px 8px 8px 8px;padding-left:8px}.nav-bar>li{max-width:200px;float:left;display:block;position:relative;padding:0;line-height:40px}.nav-bar>li.active{background:#AE5400;border-color:#FF7C00}.nav-bar>li.active>a{color:white;cursor:default}.nav-bar>li.active:hover{background:#AE5400;cursor:default}.nav-bar>li:hover{background:#AE5400}.nav-bar>li a{color:#e6e6e6}.nav-bar>li ul{margin-bottom:0}.nav-bar>li .flyout{display:none}.nav-bar>li.has-flyout>a:first-child{padding-right:36px;position:relative}.nav-bar>li.has-flyout>a:first-child:after{content:"";display:block;width:0;height:0;border:solid 4px;border-color:#e6e6e6 transparent transparent transparent;position:absolute;right:20px;top:17px}.nav-bar>li.has-flyout>a.flyout-toggle{border-left:0!important;position:absolute;right:0;top:0;padding:22px;z-index:2;display:block}.nav-bar>li.has-flyout.is-touch>a:first-child{padding-right:55px}.nav-bar>li.has-flyout.is-touch>a.flyout-toggle{border-left:1px dashed #FF7C00}.nav-bar>li>a:first-child{position:relative;padding:0 15px;display:block;text-decoration:none;font-size:14px}.nav-bar>li>input{margin:0 10px}.nav-bar.vertical{height:auto;margin-top:0}.nav-bar.vertical>li{float:none;border-bottom:none}.nav-bar.vertical>li.has-flyout>a:first-child:after{content:"";display:block;width:0;height:0;border:solid 4px;border-color:transparent transparent transparent #e6e6e6}.nav-bar.vertical>li .flyout{left:100%;top:-1px}.nav-bar.vertical>li .flyout.right{left:auto;right:100%}@media only screen and (max-device-width:1280px) {.touch .nav-bar li.has-flyout>a{padding-right:36px!important}}@media only screen and (max-width:1279px) and (min-width:768px) {.touch .nav-bar li a{font-size:13px;font-size:1.3rem}.touch .nav-bar li.has-flyout>a.flyout-toggle{padding:20px!important}.touch .nav-bar li.has-flyout>a{padding-right:36px!important}}@media only screen and (max-width :768px) {.nav-bar{height:auto}.nav-bar>li{float:none;display:block;border-right:none}.nav-bar>li>a.main{text-align:left;border-top:1px solid #ddd;border-right:none}.nav-bar>li:first-child>a.main{border-top:none}.nav-bar>li.has-flyout>a.flyout-toggle{position:absolute;right:0;top:0;padding:22px;z-index:2;display:block}.nav-bar>li.has-flyout.is-touch>a.flyout-toggle span{content:"";width:0;height:0;display:block}.nav-bar>li.has-flyout>a.flyout-toggle:hover span{border-top-color:#141414}.nav-bar.vertical>li.has-flyout>.flyout{left:0}.flyout{position:relative;width:100%!important;top:auto;margin-right:-2px;border-width:1px 1px 0 1px}.flyout.right{float:none;right:auto;left:-1px}.flyout.small,.flyout.large{width:100%!important}.flyout p:last-child{margin-bottom:18px}}form{margin:0 0 19.416px}.row form .row{margin:0 -6px}.row form .row .column,.row form .row .columns{padding:0 6px}.row form .row.collapse{margin:0}.row form .row.collapse .column,.row form .row.collapse .columns{padding:0}label{font-size:14px;color:#4d4d4d;cursor:pointer;display:block;font-weight:500;margin-bottom:3px}label.right{float:none;text-align:right}label.inline{line-height:32px;margin:0 0 12px 0}@media only screen and (max-width :768px) {label.right{text-align:left}}.prefix,.postfix{display:block;position:relative;z-index:2;text-align:center;width:100%;padding-top:0;padding-bottom:0;height:32px;line-height:31px}a.button.prefix,a.button.postfix{padding-left:0;padding-right:0;text-align:center}span.prefix,span.postfix{background:#f2f2f2;border:1px solid #ccc}.prefix{left:2px;-moz-border-radius-topleft:2px;-webkit-border-top-left-radius:2px;border-top-left-radius:2px;-moz-border-radius-bottomleft:2px;-webkit-border-bottom-left-radius:2px;border-bottom-left-radius:2px}.postfix{right:2px;-moz-border-radius-topright:2px;-webkit-border-top-right-radius:2px;border-top-right-radius:2px;-moz-border-radius-bottomright:2px;-webkit-border-bottom-right-radius:2px;border-bottom-right-radius:2px}textarea{height:auto}select{width:100%}@media only screen and (max-width :768px) {.reveal-modal-bg{position:absolute}.reveal-modal,.reveal-modal.small,.reveal-modal.medium,.reveal-modal.large,.reveal-modal.xlarge{width:80%;top:15px;left:50%;margin-left:-40%;padding:20px;height:auto}}.items{margin-left:-40px}ul.items{margin-top:20px}ul.items li{float:left;position:relative;margin-left:1.867%;width:23.5849%;text-align:center;list-style:none;margin-bottom:20px;vertical-align:top}ul.items li .img{overflow:hidden;position:relative}ul.items li .img:before{content:"";display:block;padding-top:125%}ul.items li .img img{width:100%;max-width:100%;height:auto}ul.items li .img a{position:absolute;top:0;left:0;display:block;width:100%;height:100%;overflow:hidden}ul.items li:nth-child(4n+1){margin-left:0}ul.items li p.name{line-height:16px;height:34px;overflow:hidden}ul.items li p.name a{color:#ffc119;font-size:13px;font-family:mySecondFont}ul.items li p.name a:hover{color:#FFF}.recent-release-episodes{height:50px;padding-top:2px}.recent-release-episodes a{color:#FFF;font-weight:700;font-size:11px}.recent-release-episodes a:hover{color:#FF7C00}.recent-release-episodes a:visited{color:#f5a383}@media only screen and (max-width:449px) {ul.items li{margin-left:3%;width:48.5%}ul.items li:nth-child(2n+1){margin-left:0}.recent-release-episodes{height:20px}}@media only screen and (min-width:450px) and (max-width:650px) {ul.items li{margin-left:2%;width:32%}ul.items li:nth-child(4n+1){margin-left:2%}ul.items li:nth-child(3n+1){margin-left:0}.recent-release-episodes{height:50px}}@media only screen and (max-width:650px) {.img5{height:200px;max-width:200px}}@media only screen and (max-width:970px) {.sidebar-header{font-size:13px}} @media only screen and (min-width:767px) and (max-width:970px) {.cat-eps a{font-size:15px}}@media only screen and (min-width:100px) and (max-width:650px) {.cat-eps a{font-size:13px}}@media only screen and (max-width:768px) {.saklasanabunu{display:none}}@media only screen and (max-width:500px) {.addthis_sharing_toolbox_i7jo{display:none}}.slider-titles{height:52px}.prev-fln{padding-top:10px;max-width:800px;min-height:60px;color:#FFF;font-size:13px;text-align:left;font-weight:300}.prev-next{min-height:30px;max-width:390px;margin-bottom:10px;background:#d45928;padding:2px 8px 2px 8px;border-radius:4px}.prev-fln a{color:#FFF}.prev-next:hover{background:#f9af6f}.slider-titles a{color:#FFF}.addthis_sharing_toolbox_i7jo{margin-top:3px}.anti-ad{clear:both;max-width:800px;height:30px;line-height:25px;border:dashed 1px;border-color:#d45928;text-align:center;vertical-align:middle;margin-bottom:10px}.anti-ad a{color:#d45928;font-weight:700}.jcarousel-wrapper{position:relative}.jcarousel{position:relative;overflow:hidden;width:100%}.jcarousel ul{width:20000em;position:relative;list-style:none;margin:0;padding:0}.jcarousel li{width:200px;float:left;border:3px solid #1e262d;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.jcarousel img{display:block;max-width:100%;height:auto!important}.jcarousel-control-prev,.jcarousel-control-next{position:absolute;top:50%;margin-top:-15px;width:30px;height:30px;text-align:center;background:#4E443C;color:#fff;text-decoration:none;text-shadow:0 0 1px #000;font:24px/27px Arial,sans-serif;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;-webkit-box-shadow:0 0 4px #F0EFE7;-moz-box-shadow:0 0 4px #F0EFE7;box-shadow:0 0 4px #F0EFE7}.jcarousel-control-prev{left:15px}.jcarousel-control-next{right:15px}.jcarousel-pagination{position:absolute;bottom:-40px;left:50%;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);margin:0}.jcarousel-pagination a{text-decoration:none;display:inline-block;font-size:11px;height:10px;width:10px;line-height:10px;background:#fff;color:#4E443C;border-radius:10px;text-indent:-9999px;margin-right:7px;-webkit-box-shadow:0 0 2px #4E443C;-moz-box-shadow:0 0 2px #4E443C;box-shadow:0 0 2px #4E443C}.jcarousel-pagination a.active{background:#4E443C;color:#fff;opacity:1;-webkit-box-shadow:0 0 2px #F0EFE7;-moz-box-shadow:0 0 2px #F0EFE7;box-shadow:0 0 2px #F0EFE7}a.reklam_kapat{float:right;cursor:pointer;color:#fff;border:1px solid #AEAEAE;border-radius:20px;background:#605F61;font-size:15px;font-weight:700;display:inline-block;line-height:0;padding:9px 3px}.reklam_kapat:before{content:"x"}.wco-footer{color:#d45928;font-weight:700}.wco-footer a{color:#d45928;font-weight:700}
+#btnTopPage {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  width: 130px;
+}
+#btnTopPage:hover {
+  background-color: #555;
+}
+.share-button { clear: both; }
+.share-button a {
+	color: unset;
+	text-decoration: none;
+}
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+}
+.alert.info {background-color: #2196F3;}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+</style><title>Watch Cartoons and Anime Online in HD for Free</title>
+<meta name="description" content="We have wide range of cartoons and anime that you can watch in HD and High quality for free." />
+<link rel="canonical" href="https://www.thewatchcartoononline.tv" />
+<meta property="og:image" content="https://www.thewatchcartoononline.tv/logo.gif" />
+</head>
+<body>
+	<div class="row">
+	<div class="header-top">
+	<a href="https://www.thewatchcartoononline.tv">Home</a> | <a href="https://www.thewatchcartoononline.tv/contact">Contact</a>
+		<div class="addthis_sharing_toolbox_i7jo" style="float:right;"></div>	
+	</div>
+	
+		<div class="twelve columns">
+		<a href="https://www.thewatchcartoononline.tv"><img class="img2" src="https://www.thewatchcartoononline.tv/logo.gif"></a>
+	<br>
+      
+           
+    
+ <div class="searching">
+<form action="https://www.thewatchcartoononline.tv/search" method="post" id="konuara">
+        <input type="search" name="catara" maxlength="40" id="searchbox" placeholder="What are you looking for?" class="searching-bar">
+        <input type="submit" value="Search" class="aramabutonu button1">
+      <div class="searchboxtop">
+<select name="konuara" form="konuara">
+<option value="series">Anime Search</option>
+<option value="episodes">Episode Search</option>
+</select>
+</div>
+    </form>
+    </div>
+		</div>
+	</div>
+	<div class="row">
+	
+		<div class="twelve columns">
+			<ul class="nav-bar" style="font-weight:bold">
+	      <li class="active"><a href="https://www.thewatchcartoononline.tv/">Home</a></li>
+	      <li><a href="https://www.thewatchcartoononline.tv/dubbed-anime-list">Dubbed Anime</a></li>
+              <li><a href="https://www.thewatchcartoononline.tv/cartoon-list">Cartoons</a></li>
+              <li><a href="https://www.thewatchcartoononline.tv/subbed-anime-list">Subbed Anime</a></li>
+              <li><a href="https://www.thewatchcartoononline.tv/movie-list">Movies</a></li>
+              <li><a href="https://www.thewatchcartoononline.tv/ova-list">Ova Series</a></li>
+
+			</ul>
+		</div>
+	</div>
+    <div class="row">
+    <div class="alert" style="max-width:980px">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong style="color:white">Important!:</strong> Dear visitors we were forced to change our domain name. Our new domain name is <strong style="color:white">theWatchCartoonOnline.TV</strong>. Please bookmark us!
+</div>
+				<div class="twelve columns">
+			<div class="row">
+				<div class="eight columns">
+				
+				<div class="recent-release">
+				<a style="text-decoration: none;" href="https://www.thewatchcartoononline.tv/anime/toradora">Toradora!</a></div>
+
+<div id="sidebar_today">
+	<div id="sidebar_r1">
+	  <IFRAME width="400" height="300" frameborder="0" scrolling="no" rel="external nofollow" src="https://www.thewatchcartoononline.tv/ads/ads4.php"></IFRAME>	</div>
+	<a href="https://www.thewatchcartoononline.tv/anime/toradora"><img class="img3" src="https://www.thewatchcartoononline.tv/wp-content/catimg/158616.jpg" alt="Movies" /></a>	<p><p>Despite Ryuji Takasu&#8217;s gentle personality, his eyes make him look like an intimidating delinquent. Class rearrangements on his second high school year put him together with his best friend, Yusaku Kitamura, and his hidden crush, Minori Kushieda. Along with these two comes Kushieda&#8217;s best friend, Taiga Aisaka. Her delicate appearance contrasts with her brutal personality. Secretly in love with Kitamura, Taiga agrees to help Ryuji with his love interest as long as he helps her get c</p>
+	<p><a href="https://www.thewatchcartoononline.tv/anime/toradora" class="today-buton">Watch Now</a></p>
+</div>
+				<div class="recent-release-main">
+  <div class="recent-release">
+Recent Releases - <a href="https://www.watchcartoononline.io/last-50-recent-release">Last 50 Releases</a>
+</div>
+<div id="sidebar_right">
+<ul class="items">
+                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/vampirina-season-2-episode-21-a-gargoyle-carol-deliver-eeek">
+				    <img class="hover-img1" alt="Vampirina" src="https://www.thewatchcartoononline.tv/wp-content/catimg/572150.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/vampirina-season-2-episode-21-a-gargoyle-carol-deliver-eeek" rel="bookmark">Vampirina Season 2 Episode 21 - A Gargoyle Carol/Deliver-eeek!</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/doc-mcstuffins-season-5-episode-8-arctic-exposure">
+				    <img class="hover-img1" alt="Doc McStuffins" src="https://www.thewatchcartoononline.tv/wp-content/catimg/184352.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/doc-mcstuffins-season-5-episode-8-arctic-exposure" rel="bookmark">Doc McStuffins Season 5 Episode 8 - Arctic Exposure</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/sword-art-online-alicization-war-of-underworld-episode-8-english-subbed">
+				    <img class="hover-img1" alt="Sword Art Online: Alicization English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/679205.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/sword-art-online-alicization-war-of-underworld-episode-8-english-subbed" rel="bookmark">Sword Art Online: Alicization - War of Underworld Episode 8 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/bokutachi-wa-benkyou-ga-dekinai-season-2-episode-9-english-subbed">
+				    <img class="hover-img1" alt="Bokutachi wa Benkyou ga Dekinai English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/726260.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/bokutachi-wa-benkyou-ga-dekinai-season-2-episode-9-english-subbed" rel="bookmark">Bokutachi wa Benkyou ga Dekinai Season 2 Episode 9 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/kono-oto-tomare-season-2-episode-9-english-subbed">
+				    <img class="hover-img1" alt="Kono Oto Tomare! English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/726336.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/kono-oto-tomare-season-2-episode-9-english-subbed" rel="bookmark">Kono Oto Tomare! Season 2 Episode 9 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/high-score-girl-season-2-episode-6-english-subbed">
+				    <img class="hover-img1" alt="High Score Girl English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/649013.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/high-score-girl-season-2-episode-6-english-subbed" rel="bookmark">High Score Girl Season 2 Episode 6 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/soukyuu-no-fafner-dead-aggressor-the-beyond-episode-3-english-subbed">
+				    <img class="hover-img1" alt="Soukyuu no Fafner: Dead Aggressor - The Beyond English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/795690.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/soukyuu-no-fafner-dead-aggressor-the-beyond-episode-3-english-subbed" rel="bookmark">Soukyuu no Fafner: Dead Aggressor - The Beyond Episode 3 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/soukyuu-no-fafner-dead-aggressor-the-beyond-english-subbed">
+				    <img class="hover-img1" alt="Soukyuu no Fafner: Dead Aggressor - The Beyond English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/795690.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/soukyuu-no-fafner-dead-aggressor-the-beyond-english-subbed" rel="bookmark">Soukyuu no Fafner: Dead Aggressor - The Beyond Episode 1 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/star-twinkle-precure-episode-38-english-subbed">
+				    <img class="hover-img1" alt="Star Twinkle Precure English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/709280.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/star-twinkle-precure-episode-38-english-subbed" rel="bookmark">Star Twinkle Precure Episode 38 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/star-twinkle-precure-episode-37-english-subbed">
+				    <img class="hover-img1" alt="Star Twinkle Precure English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/709280.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/star-twinkle-precure-episode-37-english-subbed" rel="bookmark">Star Twinkle Precure Episode 37 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/my-hero-academia-season-4-episode-7-english-dubbed">
+				    <img class="hover-img1" alt="My Hero Academia" src="https://www.thewatchcartoononline.tv/wp-content/catimg/268781.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/my-hero-academia-season-4-episode-7-english-dubbed" rel="bookmark">My Hero Academia Season 4 Episode 7 English Dubbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/the-legend-of-the-galactic-heroes-die-neue-these-english-dubbed">
+				    <img class="hover-img1" alt="The Legend of the Galactic Heroes: Die Neue These" src="https://www.thewatchcartoononline.tv/wp-content/catimg/624131.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/the-legend-of-the-galactic-heroes-die-neue-these-english-dubbed" rel="bookmark">The Legend of the Galactic Heroes: Die Neue These English Dubbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/fate-grand-order-zettai-majuu-sensen-babylonia-episode-9-english-subbed">
+				    <img class="hover-img1" alt="Fate/Grand Order: Zettai Majuu Sensen Babylonia English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/768619.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/fate-grand-order-zettai-majuu-sensen-babylonia-episode-9-english-subbed" rel="bookmark">Fate/Grand Order: Zettai Majuu Sensen Babylonia Episode 9 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/douluo-dalu-season-2-episode-54-english-subbed">
+				    <img class="hover-img1" alt="Douluo Dalu english Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/705192.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/douluo-dalu-season-2-episode-54-english-subbed" rel="bookmark">Douluo Dalu Season 2 Episode 54 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/mairimashita-iruma-kun-episode-9-english-subbed">
+				    <img class="hover-img1" alt="Mairimashita! Iruma-kun English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/780653.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/mairimashita-iruma-kun-episode-9-english-subbed" rel="bookmark">Mairimashita! Iruma-kun Episode 9 English Subbed</a>
+  </div>                                  
+</li>
+                                                                    <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/cardfight-vanguard-zoku-koukousei-hen-episode-29-english-subbed">
+				    <img class="hover-img1" alt="Cardfight!! Vanguard (2018) English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/627680.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/cardfight-vanguard-zoku-koukousei-hen-episode-29-english-subbed" rel="bookmark">Cardfight!! Vanguard: Zoku Koukousei-hen Episode 29 English Subbed</a>
+  </div>                                  
+</li>
+                                                            </ul>
+                          </div>      
+    <div class="recent-release-main">
+  <div class="recent-release">
+Series Recently Added 
+</div>
+
+<div id="sidebar_right2">
+<ul class="items">
+
+<li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/donald-duck">
+				    <img class="hover-img1" alt="Donald Duck" src="https://www.thewatchcartoononline.tv/wp-content/catimg/795695.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/donald-duck" rel="bookmark">Donald Duck</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/soukyuu-no-fafner-dead-aggressor-the-beyond-english-subbed">
+				    <img class="hover-img1" alt="Soukyuu no Fafner: Dead Aggressor - The Beyond English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/795690.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/soukyuu-no-fafner-dead-aggressor-the-beyond-english-subbed" rel="bookmark">Soukyuu no Fafner: Dead Aggressor - The Beyond English Subbed</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/harley-quinn">
+				    <img class="hover-img1" alt="Harley Quinn" src="https://www.thewatchcartoononline.tv/wp-content/catimg/795626.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/harley-quinn" rel="bookmark">Harley Quinn</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/geronimo-stilton">
+				    <img class="hover-img1" alt="Geronimo Stilton" src="https://www.thewatchcartoononline.tv/wp-content/catimg/795195.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/geronimo-stilton" rel="bookmark">Geronimo Stilton</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/erky-perky">
+				    <img class="hover-img1" alt="Erky Perky" src="https://www.thewatchcartoononline.tv/wp-content/catimg/794882.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/erky-perky" rel="bookmark">Erky Perky</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/home-adventures-with-tip-oh">
+				    <img class="hover-img1" alt="Home: Adventures with Tip & Oh" src="https://www.thewatchcartoononline.tv/wp-content/catimg/794570.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/home-adventures-with-tip-oh" rel="bookmark">Home: Adventures with Tip & Oh</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/doraemon-us">
+				    <img class="hover-img1" alt="Doraemon US" src="https://www.thewatchcartoononline.tv/wp-content/catimg/794361.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/doraemon-us" rel="bookmark">Doraemon US</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/dennis-and-gnasher-unleashed">
+				    <img class="hover-img1" alt="Dennis and Gnasher: Unleashed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/793642.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/dennis-and-gnasher-unleashed" rel="bookmark">Dennis and Gnasher: Unleashed</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/dick-figures">
+				    <img class="hover-img1" alt="Dick Figures" src="https://www.thewatchcartoononline.tv/wp-content/catimg/793473.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/dick-figures" rel="bookmark">Dick Figures</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/deep-space-69">
+				    <img class="hover-img1" alt="Deep Space 69" src="https://www.thewatchcartoononline.tv/wp-content/catimg/793472.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/deep-space-69" rel="bookmark">Deep Space 69</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/haunted-tales-for-wicked-kids">
+				    <img class="hover-img1" alt="Haunted Tales for Wicked Kids" src="https://www.thewatchcartoononline.tv/wp-content/catimg/793048.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/haunted-tales-for-wicked-kids" rel="bookmark">Haunted Tales for Wicked Kids</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/harvey-street-kids">
+				    <img class="hover-img1" alt="Harvey Street Kids" src="https://www.thewatchcartoononline.tv/wp-content/catimg/792891.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/harvey-street-kids" rel="bookmark">Harvey Street Kids</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/dennis-and-gnasher">
+				    <img class="hover-img1" alt="Dennis and Gnasher" src="https://www.thewatchcartoononline.tv/wp-content/catimg/792750.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/dennis-and-gnasher" rel="bookmark">Dennis and Gnasher</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/crusader-rabbit">
+				    <img class="hover-img1" alt="Crusader Rabbit" src="https://www.thewatchcartoononline.tv/wp-content/catimg/792557.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/crusader-rabbit" rel="bookmark">Crusader Rabbit</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/actors-songs-connection">
+				    <img class="hover-img1" alt="Actors: Songs Connection" src="https://www.thewatchcartoononline.tv/wp-content/catimg/792512.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/actors-songs-connection" rel="bookmark">Actors: Songs Connection</a>
+  </div>                                  
+</li>
+     <li>
+                                     <div class="img">
+				    <a href="https://www.thewatchcartoononline.tv/anime/mitaiken-horizon-english-subbed">
+				    <img class="hover-img1" alt="Mitaiken Horizon English Subbed" src="https://www.thewatchcartoononline.tv/wp-content/catimg/792511.jpg">
+				    </a>
+				    </div>
+                                    <div class="recent-release-episodes"><a href="https://www.thewatchcartoononline.tv/anime/mitaiken-horizon-english-subbed" rel="bookmark">Mitaiken Horizon English Subbed</a>
+  </div>                                  
+</li>
+       
+     </ul>
+                          </div> 
+                          
+<div class="recent-release-main">
+  <div class="recent-release">
+Genre List</div>
+
+<div id="sidebar_right3" class="left">
+<div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/4">Adventure</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/6">Comedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/8">Fantasy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/10">Science Fiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/12">Mystery</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/14">Action</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/16">Drama</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/18">Surrealist Comedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/20">Horror</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/22">Romance</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/23">Animated</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/24">Thriller</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/25">Slice Of Life</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/26">Supernatural</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/27">Romantic Comedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/28">Harem</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/29">Sports</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/30">Psychological</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/31">Magical Girl</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/32">Mecha</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/33">Role-playing</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/34">Military</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/35">Mecha</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/36">Science Fantasy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/37">Martial Arts</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/38">High School</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/39">Parody</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/40">Virtual Reality</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/41">Space Opera</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/42">Post-Apocalyptic</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/43">Music</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/44">Dark Fantasy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/45">Historical Fantasy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/46">Yuri</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/47">Superpower</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/48">Magic</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/49">Alternate History</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/50">Sci-fi</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/51">Girls With Guns</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/52">Tournament</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/53">School</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/54">Romantic Drama</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/55">Crime</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/56">Historical</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/57">Dystopian</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/58">Steampunk</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/59">Metafiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/60">Police</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/61">Detective Fiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/62">Occult</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/63">Tragedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/65">Fighter</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/66">Animated television series</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/67">Children's television series</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/68">Family television series</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/69">Absurdist humor</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/70">Dark humor</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/71">Surreal humor</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/72">Adult animation</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/73">Teen Drama</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/74">Superhero</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/75">Cyberpunk</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/76">Suspense</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/77">Sitcom</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/78">Satire</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/79">Anthology series</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/80">Edutainment</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/81">Espionage</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/82">Surrealism</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/83">Teen Animation</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/84">Toilet humour</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/85">Cutaway gag humor</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/86">Splatter</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/87">Deadpan</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/88">Car racing</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/89">Chanbara</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/90">Goth</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/93">Game</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/94">Magical boy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/95">Shounen</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/96">Kids</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/97">shoujo</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/98">Baseball</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/99">Manga</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/100">Friendship</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/101">School Dormitory</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/102">Ecchi</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/103">Seinen</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/104">Coming-of-age story</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/105">Idol anime</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/106">Samurai</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/107">Reverse Harem</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/108">Urban</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/109">War</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/110">Vampire</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/111">Demons</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/112">Urban fantasy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/113">Mythic fiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/114">Space</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/115">Shounen Ai</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/116">Shoujo Ai</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/117">Slapstick</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/118">Surreal</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/119">Chinese Cartoon</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/120">Short</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/121">Movie</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/123">Family</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/125">Animation</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/128">Educational</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/129">Musical</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/132">Yaoi</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/133">Documentary</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/134">Football</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/135">Learning</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/136">Pre-School</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/137">Graphic novel</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/140">Contemporary fantasy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/141">Adult Cartoons</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/142">Cartoon series</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/143">Off-color humor</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/147">History</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/149">Superhero fiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/155">Sword and sorcery</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/157">Stop Motion</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/159">Horror comedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/163">Social satire</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/166">Black comedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/168">Animated sitcom</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/170">Game-Show</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/172">Western</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/176">Comic science fiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/178">Situation comedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/181">Adapted Literature</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/202">Harold and the Purple Crayon</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/203">Spy fiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/204">Children's fiction</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/205">Sketch comedy</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/206">Josei</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/208">Dementia</a></div>
+ <div class="cerceve"><a href="https://www.thewatchcartoononline.tv/search-by-genre/209">Cars</a></div>
+ </div>
+ </div>                    
+             </div>
+             </div>
+             </div>
+		
+				<div class="four columns">
+				 <div class="sidebar-all">
+<div class="sidebar-header">
+Ongoing & Popular Series
+</div>
+<div class="sidebar-titles">
+<ul style="margin-top:6px;"><li><a href="https://www.thewatchcartoononline.tv/anime/actors-songs-connection-english-subbed" title="Actors: Songs Connection English Subbed">Actors: Songs Connection English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/africa-no-salaryman-english-subbed" title="Africa no Salaryman English Subbed">Africa no Salaryman English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/ahiru-no-sora-english-subbed" title="Ahiru no Sora English Subbed">Ahiru no Sora English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/aikatsu-on-parade-english-subbed" title="Aikatsu on Parade English Subbed">Aikatsu on Parade English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/american-dad-season-16" title="American Dad! Season 16">American Dad! Season 16</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/assassins-pride-english-subbed" title="Assassins Pride English Subbed">Assassins Pride English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/azur-lane-english-subbed" title="Azur Lane English Subbed">Azur Lane English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/babylon-english-subbed" title="Babylon English Subbed">Babylon English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/bakugan-battle-planet" title="Bakugan Battl Planet">Bakugan Battl Planet</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/beastars-english-subbed" title="Beastars-english-subbed">Beastars-english-subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/beccas-bunch" title="Becca's Bunch">Becca's Bunch</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/beyblade-burst-chouzetsu" title="Beyblade Burst Chouzetsu">Beyblade Burst Chouzetsu</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/beyblade-burst-gachi-english-subbed-2" title="Beyblade Burst Gachi English Subbed">Beyblade Burst Gachi English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/black-clover-tv-english-subbed" title="Black Clover (TV) English Subbed">Black Clover (TV) English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/bobs-burgers" title="Bob's Burgers">Bob's Burgers</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/boku-no-hero-academia-english-subbed" title="Boku no Hero Academia English Subbed">Boku no Hero Academia English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/bokutachi-wa-benkyou-ga-dekinai-english-subbed" title="Bokutachi wa Benkyou ga Dekinai English Subbed">Bokutachi wa Benkyou ga Dekinai English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/boruto-naruto-next-generations" title="Boruto: Naruto Next Generations">Boruto: Naruto Next Generations</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/boruto-naruto-next-generations-english-subbed" title="Boruto: Naruto Next Generations English Subbed">Boruto: Naruto Next Generations English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/business-fish-english-subbed" title="Business Fish English Subbed">Business Fish English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/cardfight-vanguard-2018" title="Cardfight!! Vanguard (2018)">Cardfight!! Vanguard (2018)</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/cardfight-vanguard-2018-english-subbed" title="Cardfight!! Vanguard (2018) English Subbed">Cardfight!! Vanguard (2018) English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/chou-yuu-sekai-being-the-reality-english-subbed" title="Chou Yuu Sekai: Being the Reality English Subbed">Chou Yuu Sekai: Being the Reality English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/choujin-koukousei-tachi-wa-isekai-demo-yoyuu-de-ikinuku-you-desu-english-subbed" title="Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu! English Subbed">Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu! English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/chuukan-kanriroku-tonegawa" title="Chuukan Kanriroku Tonegawa">Chuukan Kanriroku Tonegawa</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/craig-of-the-creek" title="Craig of the Creek">Craig of the Creek</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/dc-super-hero-girls-2019" title="DC Super Hero Girls 2019">DC Super Hero Girls 2019</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/devidol" title="Devidol">Devidol</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/diamond-no-ace-act-ii-english-subbed" title="Diamond no Ace: Act II English Subbed">Diamond no Ace: Act II English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/doc-mcstuffins" title="Doc McStuffins">Doc McStuffins</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/dorothy-and-the-wizard-of-oz" title="Dorothy and the Wizard of Oz">Dorothy and the Wizard of Oz</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/douluo-dalu-english-subbed" title="Douluo Dalu english Subbed">Douluo Dalu english Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/dr-stone" title="Dr. Stone">Dr. Stone</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/dr-stone-english-subbed" title="Dr. Stone English-subbed">Dr. Stone English-subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/dragon-ball-heroes-english-subbed" title="DRAGON BALL HEROES English Subbed">DRAGON BALL HEROES English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/elena-of-avalor" title="Elena of Avalor">Elena of Avalor</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/ensemble-stars-english-subbed" title="Ensemble Stars English Subbed">Ensemble Stars English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/fairy-gone" title="Fairy gone">Fairy gone</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/fairy-gone-english-subbed" title="Fairy Gone English Subbed">Fairy Gone English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/fancy-nancy" title="Fancy Nancy">Fancy Nancy</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/fate-grand-order-zettai-majuu-sensen-babylonia-english-subbed" title="Fate/Grand Order: Zettai Majuu Sensen Babylonia English Subbed">Fate/Grand Order: Zettai Majuu Sensen Babylonia English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/future-card-buddyfight-ace" title="Future Card Buddyfight Ace">Future Card Buddyfight Ace</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/future-card-buddyfight-ace-english-subbed" title="Future Card Buddyfight Ace English Subbed">Future Card Buddyfight Ace English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/gegege-no-kitarou-2018-english-subbed" title="Gegege no Kitarou (2018) English Subbed">Gegege no Kitarou (2018) English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/genndy-tartakovskys-primal" title="Genndy Tartakovsky's Primal">Genndy Tartakovsky's Primal</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/gundam-vs-hello-kitty-english-subbed" title="Gundam vs Hello Kitty English Subbed">Gundam vs Hello Kitty English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/happy-sugar-life" title="Happy Sugar Life">Happy Sugar Life</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/hataage-kemono-michi-english-subbed" title="Hataage! Kemono Michi English Subbed">Hataage! Kemono Michi English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/hero-mask-2019" title="Hero Mask (2019)">Hero Mask (2019)</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/hitoribocchi-no-oo-seikatsu-english-subbed" title="Hitoribocchi no Marumaru Seikatsu English Subbed">Hitoribocchi no Marumaru Seikatsu English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/honzuki-no-gekokujou-shisho-ni-naru-tame-ni-wa-shudan-wo-erandeiraremasen-english-subbed" title="Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen English Subbed">Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/hoshiai-no-sora-english-subbed" title="Hoshiai no Sora English Subbed">Hoshiai no Sora English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/houkago-saikoro-club-english-subbed" title="Houkago Saikoro Club English Subbed">Houkago Saikoro Club English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/hua-jianghu-zhi-huan-shi-men-sheng-english-subbed" title="Hua Jianghu Zhi Huan Shi Men Sheng English Subbed">Hua Jianghu Zhi Huan Shi Men Sheng English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/isekai-cheat-magician" title="Isekai Cheat Magician">Isekai Cheat Magician</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/jue-ming-xiang-ying-english-subbed" title="Jue Ming Xiang Ying English Subbed">Jue Ming Xiang Ying English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/kabukichou-sherlock-english-subbed" title="Kabukichou Sherlock English Subbed">Kabukichou Sherlock English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/kampfer" title="Kampfer">Kampfer</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/kandagawa-jet-girls-english-subbed" title="Kandagawa Jet Girls English Subbed">Kandagawa Jet Girls English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/keishichou-tokumubu-tokushu-kyouakuhan-taisakushitsu-dainanaka-tokunana-english-subbed" title="Keishichou Tokumubu Tokushu Kyouakuhan Taisakushitsu Dainanaka: Tokunana english Subbed">Keishichou Tokumubu Tokushu Kyouakuhan Taisakushitsu Dainanaka: Tokunana english Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/kimetsu-no-yaiba" title="Kimetsu no Yaiba">Kimetsu no Yaiba</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/kiratto-prichan-english-subbed" title="Kiratto Pri Chan English Subbed">Kiratto Pri Chan English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/knights-of-the-zodiac-saint-seiya-english-subbed" title="Knights of the Zodiac: Saint Seiya English Subbed">Knights of the Zodiac: Saint Seiya English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/beyblade-burst-gachi-english-subbed" title="Kono Oto Tomare! English Subbed">Kono Oto Tomare! English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/kyoukai-senjou-no-horizon-xxi-pv-english-subbed" title="Kyoukai Senjou no Horizon XXI-PV English Subbed">Kyoukai Senjou no Horizon XXI-PV English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/ling-long-incarnation-english-subbed" title="Ling Long: Incarnation English Subbed">Ling Long: Incarnation English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/lupin-iii-part-v" title="Lupin III Part V">Lupin III Part V</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/mairimashita-iruma-kun-english-subbed" title="Mairimashita! Iruma-kun English Subbed">Mairimashita! Iruma-kun English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/majimoji-rurumo-kanketsu-hen-english-subbed" title="Majimoji Rurumo: Kanketsu-hen English Subbed">Majimoji Rurumo: Kanketsu-hen English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/mickey-and-the-roadster-racers" title="Mickey and the Roadster Racers">Mickey and the Roadster Racers</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/mini-yuri-english-subbed" title="Mini Yuri English Subbed">Mini Yuri English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/miraculous-ladybug" title="Miraculous Ladybug">Miraculous Ladybug</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/miru-tights-english-subbed" title="Miru Tights English Subbed">Miru Tights English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/monster-strike-the-animation-english-subbed" title="Monster Strike the Animation English Subbed">Monster Strike the Animation English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/mugen-no-juunin-immortal-english-subbed" title="Mugen no Juunin: Immortal-english-subbed">Mugen no Juunin: Immortal-english-subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/muppet-babies-2018" title="Muppet Babies 2018">Muppet Babies 2018</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/my-hero-academia" title="My Hero Academia">My Hero Academia</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/my-teen-romantic-comedy-snafu" title="My Teen Romantic Comedy SNAFU">My Teen Romantic Comedy SNAFU</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/no-guns-life-english-subbed" title="No Guns Life English Subbed">No Guns Life English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/one-piece-english-dubbed-guide" title="One Piece">One Piece</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/one-piece-english-subbed-episodes" title="One Piece English Subbed">One Piece English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/one-punch-man" title="One Punch Man">One Punch Man</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/ore-wo-suki-nano-wa-omae-dake-ka-yo-english-subbed" title="Ore wo Suki nano wa Omae dake ka yo English Subbed">Ore wo Suki nano wa Omae dake ka yo English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/owarimonogatari-english-subbed" title="Owarimonogatari English Subbed">Owarimonogatari English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/pat-the-dog" title="Pat the Dog">Pat the Dog</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/paw-patrol" title="Paw Patrol">Paw Patrol</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/pinky-malinky" title="Pinky Malinky">Pinky Malinky</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/pj-masks" title="PJ Masks">PJ Masks</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/pokemon-sun-moon" title="Pokemon Sun &amp; Moon">Pokemon Sun &amp; Moon</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/pokemon-sun-moon-english-subbed" title="Pokemon Sun &amp; Moon English Subbed">Pokemon Sun &amp; Moon English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/power-rangers-beast-morphers" title="Power Rangers Beast Morphers">Power Rangers Beast Morphers</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/queens-blade-unlimited-english-subbed" title="Queen's Blade: Unlimited English Subbed">Queen's Blade: Unlimited English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/red-baron-english-subbed" title="Red Baron English Subbed">Red Baron English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/revue-starlight" title="Revue Starlight">Revue Starlight</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/rifle-is-beautiful-english-subbed" title="Rifle Is Beautiful English Subbed">Rifle Is Beautiful English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/rokka-braves-of-the-six-flowers-13" title="Rokka Braves of the Six Flowers">Rokka Braves of the Six Flowers</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/sarazanmai-english-subbed" title="Sarazanmai English Subbed">Sarazanmai English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/sd-gundam-world-sangoku-souketsuden-english-subbed" title="SD Gundam World: Sangoku Souketsuden English Subbed">SD Gundam World: Sangoku Souketsuden English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/seishun-buta-yarou-wa-bunny-girl-senpai-no-yume-wo-minai-picture-drama-english-subbed" title="Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai Picture Drama English Subbed">Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai Picture Drama English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/sheng-shi-zhuang-niang-english-subbed" title="Sheng Shi Zhuang Niang English Subbed">Sheng Shi Zhuang Niang English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/shimmer-and-shine" title="Shimmer and Shine">Shimmer and Shine</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/shin-chuuka-ichiban-english-subbed" title="Shin Chuuka Ichiban! English Subbed">Shin Chuuka Ichiban! English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/shinchou-yuusha-kono-yuusha-ga-ore-tueee-kuse-ni-shinchou-sugiru-english-subbed" title="Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru English Subbed">Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/shounen-ashibe-go-go-goma-chan-english-subbed" title="Shounen Ashibe: Go! Go! Goma-chan English Subbed">Shounen Ashibe: Go! Go! Goma-chan English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/spider-man-2017" title="Spider-Man 2017">Spider-Man 2017</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/stand-my-heroes-pece-of-truth-english-subbed" title="Stand My Heroes: Piece of Truth English Subbed">Stand My Heroes: Piece of Truth English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/star-twinkle-precurenglish-subbed" title="Star Twinkle Precure English Subbed">Star Twinkle Precure English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/stop-this-sound" title="Stop This Sound!">Stop This Sound!</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/super-drags" title="Super Drags">Super Drags</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/super-shiro-english-subbed" title="Super Shiro English Subbed">Super Shiro English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/teen-titans-go" title="Teen Titans Go!">Teen Titans Go!</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/the-loud-house" title="The Loud House">The Loud House</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/the-ones-within" title="The Ones Within">The Ones Within</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/to-be-heroine-english-subbed" title="To Be Heroine English Subbed">To Be Heroine English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/to-the-abandoned-sacred-beasts" title="To the Abandoned Sacred Beasts">To the Abandoned Sacred Beasts</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/total-dramarama" title="Total DramaRama">Total DramaRama</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/transformers-cyberverse" title="Transformers: Cyberverse">Transformers: Cyberverse</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/val-x-love-english-subbed" title="Val x Love English Subbed">Val x Love English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/vampirina" title="Vampirina">Vampirina</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/vinland-saga-english-subbed" title="Vinland Saga English Subbed">Vinland Saga English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/wacky-races-2017" title="Wacky Races (2017)">Wacky Races (2017)</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/wan-jie-shen-zhu-english-subbed" title="Wan Jie Shen Zhu English Subbed">Wan Jie Shen Zhu English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/watashi-nouryoku-wa-heikinchi-de-tte-itta-yo-ne-english-subbed" title="Watashi Nouryoku wa Heikinchi de tte Itta yo ne! English Subbed">Watashi Nouryoku wa Heikinchi de tte Itta yo ne! English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/wtf-101" title="WTF 101">WTF 101</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/xiang-ling-ji-english-subbed" title="Xiang Ling Ji nglish Subbed">Xiang Ling Ji nglish Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/xiong-bing-lian-english-subbed" title="Xiong Bing Lian English Subbed">Xiong Bing Lian English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/yarob" title="Yarob">Yarob</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/youkai-watch-2019-english-subbed" title="Youkai Watch (2019) English Subbed">Youkai Watch (2019) English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/youkai-watch-shadow-side-english-subbed" title="Youkai Watch: Shadow Side English Subbed">Youkai Watch: Shadow Side English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/yu-gi-oh-vrains" title="Yu-Gi-Oh! Vrains">Yu-Gi-Oh! Vrains</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/zx-code-reunion-english-subbed" title="Z/X: Code Reunion English Subbed">Z/X: Code Reunion English Subbed</a></li>
+ <li><a href="https://www.thewatchcartoononline.tv/anime/zoids-wild-englis-subbed" title="Zoids Wild English Subbed">Zoids Wild English Subbed</a></li>
+ </ul>
+</div>
+</div>
+					</div>
+			</div>
+		</div>
+	</div>
+<div class="row">
+		
+		<div style="height:30px; background:#FF7C00; color: #1E262F; margin-top:20px; margin-bottom:20px; line-height:30px">
+<p style="color:#FFF; font-size:13px" align="center">©2018. Designed for theWatchCartoonOnline.TV - Watch Anime Online</p>
+
+	</div>
+	</div>	
+<button onclick="topFunction()" id="btnTopPage" title="Go to top">Scroll to Top</button>	
+	<!-- Siteskin Code -->
+
+<!-- Siteskin Code -->
+<script type="text/javascript">
+var cpmstar_siteskin_settings = {
+pid: 16255, //your poolid
+centerWidth: '980px', //distance IN PIXELS of ad from left side of page, e.g. "800px"
+fixed: '1', //fix ads near top of screen: "0" to allow ads to scroll with page
+topPos: '0px', //optionally shift the ad down from top of page
+zIndex: 100 //adjust layering of ad vs. other page elements
+};
+(function(){var t=document.createElement('script');t.type='text/javascript';t.async=1;t.src=(document.location.protocol == "https:"?"//server":"//cdn") + ".cpmstar.com/cached/js/siteskin_v100.pack.js";var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(t,s);})();
+</script>
+
+<!-- END SITESKIN CODE -->
+<!-- BEGIN BEBI SKIN JS TAG -->
+<script type="text/javascript">
+    if(!window.BB_ind) { BB_ind = 0; }
+    if(!window.BB_r) { BB_r = Math.floor(Math.random()*1000000000)}
+    BB_ind++;
+
+    window.BB_skin = {
+        centerWidth: 980,
+        centerDomId: '',
+        leftOffset: 0,
+        rightOffset: 0,
+        topPos: 0,
+        deferLoading: false,
+        fixed: true,
+        fixedStickTopOnScroll: false,
+        fixedScrollSecondaryTop: 0,
+        adjustSkinOnDynamicCenter: true,
+        zIndex: 0,
+        leftFrameId: '',
+        rightFrameId: '',
+
+        pl: 45103,
+        index: BB_ind
+    };
+
+</script>
+<script type="text/javascript" data-cfasync="false" async src="//st.bebi.com/bebi_v3.js"></script>
+<!-- END TAG -->
+
+<!-- END SITESKIN CODE -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130953766-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130953766-1');
+
+// When the user scrolls down 40px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        document.getElementById("btnTopPage").style.display = "block";
+        setTimeout(
+          function() {
+            document.getElementById("btnTopPage").style.display = "none";
+          }, 10000);        
+    } else {
+        document.getElementById("btnTopPage").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}  
+</script>
+<script type="text/javascript">if(top.location != window.location){window.location='https://www.thewatchcartoononline.tv/error_iframe.html';}</script>
+<script async type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=cyberalone"></script>
+<script>(function(w,t,d,s){d=w.document;w.ggv2id=t;s=d.createElement('script');s.async=true;s.src='https://js.gumgum.com/services.js';d.getElementsByTagName('head')[0].appendChild(s);}(top,'c5afe0a5'));</script></body>
+</html>

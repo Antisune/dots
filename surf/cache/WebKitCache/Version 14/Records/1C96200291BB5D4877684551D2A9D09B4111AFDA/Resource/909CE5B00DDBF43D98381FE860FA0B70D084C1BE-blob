@@ -1,0 +1,820 @@
+/**/voidcommits({
+  "meta": {
+    "Content-Type": "application/javascript; charset=utf-8",
+    "X-RateLimit-Limit": "60",
+    "X-RateLimit-Remaining": "59",
+    "X-RateLimit-Reset": "1574490956",
+    "Cache-Control": "public, max-age=60, s-maxage=60",
+    "Vary": "Accept",
+    "ETag": "\"070146ac02ab4875db0d5a0ab73c9e1a\"",
+    "Last-Modified": "Sun, 17 Nov 2019 12:22:15 GMT",
+    "X-GitHub-Media-Type": "github.v3; format=json",
+    "Link": [
+      [
+        "https://api.github.com/repositories/137503503/commits?page=2&per_page=10&callback=voidcommits&sha=master",
+        {
+          "rel": "next"
+        }
+      ],
+      [
+        "https://api.github.com/repositories/137503503/commits?page=339&per_page=10&callback=voidcommits&sha=master",
+        {
+          "rel": "last"
+        }
+      ]
+    ],
+    "status": 200
+  },
+  "data": [
+    {
+      "sha": "85b8b3bbb72ab6de6f4d72c9a2ca3f2be053eeb1",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOjg1YjhiM2JiYjcyYWI2ZGU2ZjRkNzJjOWEyY2EzZjJiZTA1M2VlYjE=",
+      "commit": {
+        "author": {
+          "name": "q66",
+          "email": "daniel@octaforge.org",
+          "date": "2019-11-14T16:40:54Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-17T12:22:15Z"
+        },
+        "message": "lib/package_alternatives.c: prune obsolete alternatives groups\n\nIn the edge case when an updated package has different (or no)\nalternatives groups, make sure to prune those that are in pkgdb\nbut not in the newly installed package.\n\nA potentially common case of this is when a package that formerly\nhad alternatives gets removed and a transitional metapackage\ntakes its place (which has no alternatives).\n\nWhen the new package has no dependencies, oldest next possible\nalternatives group will be used. This is because that indicates\na removed package. When there are dependencies, the newest one\nwill be used; as this indicates a transitional package.",
+        "tree": {
+          "sha": "7a31da17938f9be8544c817052ba1ce69240d865",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/7a31da17938f9be8544c817052ba1ce69240d865"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/85b8b3bbb72ab6de6f4d72c9a2ca3f2be053eeb1",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/85b8b3bbb72ab6de6f4d72c9a2ca3f2be053eeb1",
+      "html_url": "https://github.com/void-linux/xbps/commit/85b8b3bbb72ab6de6f4d72c9a2ca3f2be053eeb1",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/85b8b3bbb72ab6de6f4d72c9a2ca3f2be053eeb1/comments",
+      "author": {
+        "login": "q66",
+        "id": 222373,
+        "node_id": "MDQ6VXNlcjIyMjM3Mw==",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/222373?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/q66",
+        "html_url": "https://github.com/q66",
+        "followers_url": "https://api.github.com/users/q66/followers",
+        "following_url": "https://api.github.com/users/q66/following{/other_user}",
+        "gists_url": "https://api.github.com/users/q66/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/q66/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/q66/subscriptions",
+        "organizations_url": "https://api.github.com/users/q66/orgs",
+        "repos_url": "https://api.github.com/users/q66/repos",
+        "events_url": "https://api.github.com/users/q66/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/q66/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "5c9be1eefd0025f168a7a892a3a31825de6afae3",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/5c9be1eefd0025f168a7a892a3a31825de6afae3",
+          "html_url": "https://github.com/void-linux/xbps/commit/5c9be1eefd0025f168a7a892a3a31825de6afae3"
+        }
+      ]
+    },
+    {
+      "sha": "5c9be1eefd0025f168a7a892a3a31825de6afae3",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOjVjOWJlMWVlZmQwMDI1ZjE2OGE3YTg5MmEzYTMxODI1ZGU2YWZhZTM=",
+      "commit": {
+        "author": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-17T11:18:44Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-17T11:18:44Z"
+        },
+        "message": "travis: update xbps and system and then install deps.\n\ncode is too strict (or stupid) to allow unmatched versions.",
+        "tree": {
+          "sha": "c53a8a7f6753df7cecb534accc22f77d1205cc0d",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/c53a8a7f6753df7cecb534accc22f77d1205cc0d"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/5c9be1eefd0025f168a7a892a3a31825de6afae3",
+        "comment_count": 0,
+        "verification": {
+          "verified": true,
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIcBAABAgAGBQJd0SzEAAoJEK8Z9stIL5NovHkP/ioOS7OtTlDihEIECmuLk7sA\nRyqfDBMYvEkGGREOc7+zcmS7PsJnz5O+Ee5EJodIJevCO+/Xs8ljMBRr7es3Y+Ey\nimeUxXDJPxekW0EPLXGLLIb860RupAO1p+W3Yf8NVkE8lk0dqJMKzWfEldcAP/yu\nNmpnR3zlUlkiGwvSVQCN4oEZRUei0ZVBN6VBBGwooe2474TXsZUKZ5bvfiYuoEzo\nkoN9P2WM4iAyebB2CngSnwQ2EcPTL7pvm3B8IsYnB06qmZzC1XfDdnHxmd5aepOz\nG+GewUPRz7v2V+vZAgt5/VtecVfP+TDyOwmV6pjTcRto1FD1gWaR32ypXCVOgV4Z\nmgvHyPGzWPiiKTijUHdxqQ/PHqlwpVtKfEWoSXQglqs72LqW1Xb+IqCyKL9P3KmU\nUlezb4ZAdmL5KO3B91ZqC5ZMtsV52puUw6BQNsHFV11Ti7jtB5678V0eTCmHW1lD\nBiak5F6DMDvryJ5ZWaWB8OnfgTt5AYr02z8lZcX45zkwcNNwJYFDolE7EJTLeUQh\nuIl+2tM7a/DTa0ZkR+VHdnhjv6Syf7Njla1r9BKczwvWFXGeYU/XViBwQlfYXPvU\nYPIaZ6k/608ac1Epj91eg3fQvhRC/g0holOTgb9NezshQaBGPyV9aVNmnoMgTeqi\n1aQVQdDvDSZ9GqrEm7+h\n=8vnc\n-----END PGP SIGNATURE-----",
+          "payload": "tree c53a8a7f6753df7cecb534accc22f77d1205cc0d\nparent d785e7e48375288f3d212da146c036f47b30e29a\nauthor Juan RP <xtraeme@gmail.com> 1573989524 +0100\ncommitter Juan RP <xtraeme@gmail.com> 1573989524 +0100\n\ntravis: update xbps and system and then install deps.\n\ncode is too strict (or stupid) to allow unmatched versions.\n"
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/5c9be1eefd0025f168a7a892a3a31825de6afae3",
+      "html_url": "https://github.com/void-linux/xbps/commit/5c9be1eefd0025f168a7a892a3a31825de6afae3",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/5c9be1eefd0025f168a7a892a3a31825de6afae3/comments",
+      "author": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "d785e7e48375288f3d212da146c036f47b30e29a",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/d785e7e48375288f3d212da146c036f47b30e29a",
+          "html_url": "https://github.com/void-linux/xbps/commit/d785e7e48375288f3d212da146c036f47b30e29a"
+        }
+      ]
+    },
+    {
+      "sha": "d785e7e48375288f3d212da146c036f47b30e29a",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOmQ3ODVlN2U0ODM3NTI4OGYzZDIxMmRhMTQ2YzAzNmY0N2IzMGUyOWE=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-11-02T10:06:55Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Tests for signing metadata",
+        "tree": {
+          "sha": "400079f87f56ac49a06383d445a7003c36eec6d9",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/400079f87f56ac49a06383d445a7003c36eec6d9"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/d785e7e48375288f3d212da146c036f47b30e29a",
+        "comment_count": 2,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/d785e7e48375288f3d212da146c036f47b30e29a",
+      "html_url": "https://github.com/void-linux/xbps/commit/d785e7e48375288f3d212da146c036f47b30e29a",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/d785e7e48375288f3d212da146c036f47b30e29a/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "a1481cb285acb0e9d78f1f1122fe4d220f4ca839",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/a1481cb285acb0e9d78f1f1122fe4d220f4ca839",
+          "html_url": "https://github.com/void-linux/xbps/commit/a1481cb285acb0e9d78f1f1122fe4d220f4ca839"
+        }
+      ]
+    },
+    {
+      "sha": "a1481cb285acb0e9d78f1f1122fe4d220f4ca839",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOmExNDgxY2IyODVhY2IwZTlkNzhmMWYxMTIyZmU0ZDIyMGY0Y2E4Mzk=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-10-01T19:18:25Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Verify index-meta for in-memory sync",
+        "tree": {
+          "sha": "70674aed815205b07b57ab87c97cff6883aea40a",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/70674aed815205b07b57ab87c97cff6883aea40a"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/a1481cb285acb0e9d78f1f1122fe4d220f4ca839",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/a1481cb285acb0e9d78f1f1122fe4d220f4ca839",
+      "html_url": "https://github.com/void-linux/xbps/commit/a1481cb285acb0e9d78f1f1122fe4d220f4ca839",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/a1481cb285acb0e9d78f1f1122fe4d220f4ca839/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7",
+          "html_url": "https://github.com/void-linux/xbps/commit/61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7"
+        }
+      ]
+    },
+    {
+      "sha": "61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOjYxZWY1YzNmOGFhYjVkYTNjNjQ2MzFmMjgzYTI2YWJkMmFjN2I0Yjc=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-10-01T19:18:25Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Read also unsigned index-meta",
+        "tree": {
+          "sha": "0f306a616284cf5641484cdeac01cad50f032691",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/0f306a616284cf5641484cdeac01cad50f032691"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7",
+      "html_url": "https://github.com/void-linux/xbps/commit/61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/61ef5c3f8aab5da3c64631f283a26abd2ac7b4b7/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "09125769bd76819b91416e39cd94c424f42b6a59",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/09125769bd76819b91416e39cd94c424f42b6a59",
+          "html_url": "https://github.com/void-linux/xbps/commit/09125769bd76819b91416e39cd94c424f42b6a59"
+        }
+      ]
+    },
+    {
+      "sha": "09125769bd76819b91416e39cd94c424f42b6a59",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOjA5MTI1NzY5YmQ3NjgxOWI5MTQxNmUzOWNkOTRjNDI0ZjQyYjZhNTk=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-10-01T19:18:25Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Verify index-meta",
+        "tree": {
+          "sha": "52625d9af31dcea670c1ea41d5cfcd7d4e83c827",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/52625d9af31dcea670c1ea41d5cfcd7d4e83c827"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/09125769bd76819b91416e39cd94c424f42b6a59",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/09125769bd76819b91416e39cd94c424f42b6a59",
+      "html_url": "https://github.com/void-linux/xbps/commit/09125769bd76819b91416e39cd94c424f42b6a59",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/09125769bd76819b91416e39cd94c424f42b6a59/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "ae26a83ad27b03c08df6fdd757e1ee29141330cc",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/ae26a83ad27b03c08df6fdd757e1ee29141330cc",
+          "html_url": "https://github.com/void-linux/xbps/commit/ae26a83ad27b03c08df6fdd757e1ee29141330cc"
+        }
+      ]
+    },
+    {
+      "sha": "ae26a83ad27b03c08df6fdd757e1ee29141330cc",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOmFlMjZhODNhZDI3YjAzYzA4ZGY2ZmRkNzU3ZTFlZTI5MTQxMzMwY2M=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-10-01T19:18:25Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Preserve meta-index data on change of signing key",
+        "tree": {
+          "sha": "0c435304d50aa378db9891d73f27e644297c723c",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/0c435304d50aa378db9891d73f27e644297c723c"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/ae26a83ad27b03c08df6fdd757e1ee29141330cc",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/ae26a83ad27b03c08df6fdd757e1ee29141330cc",
+      "html_url": "https://github.com/void-linux/xbps/commit/ae26a83ad27b03c08df6fdd757e1ee29141330cc",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/ae26a83ad27b03c08df6fdd757e1ee29141330cc/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "4e3d4d228747a5e3c55863346568d5f3d8699c50",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/4e3d4d228747a5e3c55863346568d5f3d8699c50",
+          "html_url": "https://github.com/void-linux/xbps/commit/4e3d4d228747a5e3c55863346568d5f3d8699c50"
+        }
+      ]
+    },
+    {
+      "sha": "4e3d4d228747a5e3c55863346568d5f3d8699c50",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOjRlM2Q0ZDIyODc0N2E1ZTNjNTU4NjMzNDY1NjhkNWYzZDg2OTljNTA=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-10-01T19:18:25Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Don't assume repodata is signed when has index-meta.plist",
+        "tree": {
+          "sha": "26ab5ec69eedc7e66ff73220216334891bfa655e",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/26ab5ec69eedc7e66ff73220216334891bfa655e"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/4e3d4d228747a5e3c55863346568d5f3d8699c50",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/4e3d4d228747a5e3c55863346568d5f3d8699c50",
+      "html_url": "https://github.com/void-linux/xbps/commit/4e3d4d228747a5e3c55863346568d5f3d8699c50",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/4e3d4d228747a5e3c55863346568d5f3d8699c50/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "381b7b76005d96a8ba2fc782252ec7348fbc45f9",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/381b7b76005d96a8ba2fc782252ec7348fbc45f9",
+          "html_url": "https://github.com/void-linux/xbps/commit/381b7b76005d96a8ba2fc782252ec7348fbc45f9"
+        }
+      ]
+    },
+    {
+      "sha": "381b7b76005d96a8ba2fc782252ec7348fbc45f9",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOjM4MWI3Yjc2MDA1ZDk2YThiYTJmYzc4MjI1MmVjNzM0OGZiYzQ1Zjk=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-10-01T19:18:25Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Sign index-meta",
+        "tree": {
+          "sha": "febd7c1af4fecca4254d9d79cbbde4ea1ed7b503",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/febd7c1af4fecca4254d9d79cbbde4ea1ed7b503"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/381b7b76005d96a8ba2fc782252ec7348fbc45f9",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/381b7b76005d96a8ba2fc782252ec7348fbc45f9",
+      "html_url": "https://github.com/void-linux/xbps/commit/381b7b76005d96a8ba2fc782252ec7348fbc45f9",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/381b7b76005d96a8ba2fc782252ec7348fbc45f9/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "b4e93a95bff6b9c2f69388bffb83320637169bca",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/b4e93a95bff6b9c2f69388bffb83320637169bca",
+          "html_url": "https://github.com/void-linux/xbps/commit/b4e93a95bff6b9c2f69388bffb83320637169bca"
+        }
+      ]
+    },
+    {
+      "sha": "b4e93a95bff6b9c2f69388bffb83320637169bca",
+      "node_id": "MDY6Q29tbWl0MTM3NTAzNTAzOmI0ZTkzYTk1YmZmNmI5YzJmNjkzODhiZmZiODMzMjA2MzcxNjliY2E=",
+      "commit": {
+        "author": {
+          "name": "Piotr Wójcik",
+          "email": "chocimier@tlen.pl",
+          "date": "2019-10-01T19:18:25Z"
+        },
+        "committer": {
+          "name": "Juan RP",
+          "email": "xtraeme@gmail.com",
+          "date": "2019-11-02T10:53:14Z"
+        },
+        "message": "Turn off repodata signing",
+        "tree": {
+          "sha": "2258426c578ec6f70deb12e1cecbb42b59b00372",
+          "url": "https://api.github.com/repos/void-linux/xbps/git/trees/2258426c578ec6f70deb12e1cecbb42b59b00372"
+        },
+        "url": "https://api.github.com/repos/void-linux/xbps/git/commits/b4e93a95bff6b9c2f69388bffb83320637169bca",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/void-linux/xbps/commits/b4e93a95bff6b9c2f69388bffb83320637169bca",
+      "html_url": "https://github.com/void-linux/xbps/commit/b4e93a95bff6b9c2f69388bffb83320637169bca",
+      "comments_url": "https://api.github.com/repos/void-linux/xbps/commits/b4e93a95bff6b9c2f69388bffb83320637169bca/comments",
+      "author": {
+        "login": "Chocimier",
+        "id": 2065803,
+        "node_id": "MDQ6VXNlcjIwNjU4MDM=",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/2065803?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chocimier",
+        "html_url": "https://github.com/Chocimier",
+        "followers_url": "https://api.github.com/users/Chocimier/followers",
+        "following_url": "https://api.github.com/users/Chocimier/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chocimier/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chocimier/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chocimier/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chocimier/orgs",
+        "repos_url": "https://api.github.com/users/Chocimier/repos",
+        "events_url": "https://api.github.com/users/Chocimier/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chocimier/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "xtraeme",
+        "id": 860073,
+        "node_id": "MDQ6VXNlcjg2MDA3Mw==",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/860073?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/xtraeme",
+        "html_url": "https://github.com/xtraeme",
+        "followers_url": "https://api.github.com/users/xtraeme/followers",
+        "following_url": "https://api.github.com/users/xtraeme/following{/other_user}",
+        "gists_url": "https://api.github.com/users/xtraeme/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/xtraeme/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/xtraeme/subscriptions",
+        "organizations_url": "https://api.github.com/users/xtraeme/orgs",
+        "repos_url": "https://api.github.com/users/xtraeme/repos",
+        "events_url": "https://api.github.com/users/xtraeme/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/xtraeme/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "ce4873a1f1c1fd40af0411bf5032cc5a29722db7",
+          "url": "https://api.github.com/repos/void-linux/xbps/commits/ce4873a1f1c1fd40af0411bf5032cc5a29722db7",
+          "html_url": "https://github.com/void-linux/xbps/commit/ce4873a1f1c1fd40af0411bf5032cc5a29722db7"
+        }
+      ]
+    }
+  ]
+})

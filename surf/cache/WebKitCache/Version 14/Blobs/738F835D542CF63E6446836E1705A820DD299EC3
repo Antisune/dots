@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Reference:GeoGebra Installation - GeoGebra Manual</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Reference","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":102,"wgPageName":"Reference:GeoGebra_Installation","wgTitle":"GeoGebra Installation","wgCurRevisionId":58864,"wgRevisionId":58864,"wgArticleId":6559,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Installation"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Reference:GeoGebra_Installation","wgRelevantArticleId":6559,"wgRequestId":"59beee026112f3113df2c316","wgIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"],"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":true,"publish":true},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":false,"usePageDescriptions":true},"wgWikibaseItemId":"Q1557","wgVisualEditorToolbarScrollOffset":0});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.geogebra.styles":"ready"});mw.loader.implement("user.options@0j3lz3q",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens@0az0ouh",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","ext.visualEditor.desktopArticleTarget.init"]);});</script>
+<link rel="stylesheet" href="/s/en/load.php?debug=false&amp;lang=en&amp;modules=ext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.geogebra.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=geogebra"/>
+<script async="" src="/s/en/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=geogebra"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/s/en/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=geogebra"/>
+<meta name="generator" content="MediaWiki 1.28.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/s/en/opensearch_desc.php" title="GeoGebra Manual (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//wiki.geogebra.org/s/en/api.php?action=rsd"/>
+<link rel="copyright" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="GeoGebra Manual Atom feed" href="/s/en/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/s/en/skins/GeoGebra/csshover.min.htc")}</style><![endif]-->
+
+    <!-- GEOGEBRA COMMON STYLE INFORMATION -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/files/lib/jqueryui/1.11.1/smoothness/jquery-ui.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.geogebra.org/static/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="https://cdn.geogebra.org/static//img/geogebra152.png?v=1541505561"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/static/css/structure.ltr.css?v=1541505561" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/static/css/screen.ltr.css?v=1541505561" media="screen and (min-width: 801px)" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/static/css/tablet.ltr.css?v=1541505561" media="screen and (min-width: 481px) and (max-width: 800px)" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/static/css/phone.ltr.css?v=1541505561" media="screen and (min-width: 0px) and (max-width: 480px)" />
+
+    <!-- FONTS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/files/lib/webfont/ggb-fonts.min.css" />
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/static/css/screen.ltr.css?v=1541505561" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.geogebra.org/static/css/ie8-down.ltr.css?v=1541505561" />
+    <![endif]-->
+
+    <!-- GEOGEBRA COMMON STYLE INFORMATION END --><!-- LLLArray
+(
+    [0] => Array
+        (
+            [href] => http://wiki.geogebra.org/es/Referencia:Instalaci%C3%B3n_de_GeoGebra
+            [text] => gges:Referencia:Instalación de GeoGebra
+            [title] => gges:Referencia:Instalación de GeoGebra
+            [class] => interlanguage-link interwiki-gges
+            [link-class] => interlanguage-link-target
+            [lang] => gges
+            [hreflang] => gges
+        )
+
+    [1] => Array
+        (
+            [href] => http://wiki.geogebra.org/fr/R%C3%A9f%C3%A9rence:Installation_GeoGebra
+            [text] => ggfr:Référence:Installation GeoGebra
+            [title] => ggfr:Référence:Installation GeoGebra
+            [class] => interlanguage-link interwiki-ggfr
+            [link-class] => interlanguage-link-target
+            [lang] => ggfr
+            [hreflang] => ggfr
+        )
+
+    [2] => Array
+        (
+            [href] => http://wiki.geogebra.org/it/Riferimenti:Installazione_di_GeoGebra
+            [text] => ggit:Riferimenti:Installazione di GeoGebra
+            [title] => ggit:Riferimenti:Installazione di GeoGebra
+            [class] => interlanguage-link interwiki-ggit
+            [link-class] => interlanguage-link-target
+            [lang] => ggit
+            [hreflang] => ggit
+        )
+
+)
+-->	<script type="text/javascript" src="https://cdn.geogebra.org/files/lib/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.geogebra.org/static/js/styling.js"></script>
+    <script type="text/javascript" src="https://cdn.geogebra.org/static/js/ggbJS.js"></script>
+	<meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    </head>
+    
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-102 ns-subject page-Reference_GeoGebra_Installation rootpage-Reference_GeoGebra_Installation skin-geogebra action-view"><!-- MAIN PAGE -->
+<div id="ggbPage">
+	    	    
+    <!-- GEOGEBRA NAVIGATION BAR -->
+
+        
+    <div id="ggbHeader" >
+        <div id="ggbHeaderContent">
+            <div id="ggbLogo">
+                <a href="https://www.geogebra.org/" tabindex="1">
+                                            <img src="https://cdn.geogebra.org/static/img/GeoGebra-logo.png?v=1541505561" alt="GeoGebra" />
+                                    </a>
+            </div>
+
+                        <a id="ggbShowMenuBtn" href="#"></a>
+            
+            <div id="ggbNavigation">
+
+                
+                <ul id="ggbMainMenu">
+                    
+            <li class=" submenu-popup-container">
+                <a href='javascript: void(0)' title="Create New" class="submenu-toggle-btn">
+                                            <span class="active-icon icon-new bigger">
+                                                    </span>
+                                    </a>
+
+                                    <div class="submenu-popup">
+                        <div class="submenu-arrow"></div>
+                        <ul class="submenu-content ">
+                            
+            <li>
+                <a href='https://www.geogebra.org/apps' title="Start GeoGebra"  target="_blank">
+                                            <span class="menu-icon icon-applet">
+                            Start GeoGebra                        </span>
+                                    </a>
+
+                            </li>
+                    <li class="separator"></li>
+            
+            <li class=" hiddenOnTablet">
+                <a href='https://www.geogebra.org/worksheet/new' title="Create Activity" >
+                                            <span class="menu-icon icon-new-worksheet">
+                            Create Activity                        </span>
+                                    </a>
+
+                            </li>
+        
+            <li class=" hiddenOnPhone">
+                <a href='https://www.geogebra.org/book/create' title="Create Book" >
+                                            <span class="menu-icon icon-new-book">
+                            Create Book                        </span>
+                                    </a>
+
+                            </li>
+        
+            <li class=" hiddenOnPhone">
+                <a href='https://www.geogebra.org/material/create' title="Upload…" >
+                                            <span class="menu-icon icon-upload">
+                            Upload…                        </span>
+                                    </a>
+
+                            </li>
+                    <li class="separator hiddenOnPhone"></li>
+            
+            <li>
+                <a href='https://www.geogebra.org/group/settings' title="Create Group" >
+                                            <span class="menu-icon icon-new-group">
+                            Create Group                        </span>
+                                    </a>
+
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/groups' title="Join Group" >
+                                            <span class="menu-icon icon-join-group">
+                            Join Group                        </span>
+                                    </a>
+
+                            </li>
+                                </ul>
+                    </div>
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/' >
+                                            Resources                                    </a>
+
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/download' >
+                                            Downloads                                    </a>
+
+                            </li>
+        
+            <li>
+                <a href='https://community.geogebra.org/en' >
+                                            Blog                                    </a>
+
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/help/' >
+                                            Help                                    </a>
+
+                            </li>
+                        </ul>
+
+                                    <div id="ggbLoginContainer">
+                        <a href="https://accounts.geogebra.org/user/signin/expiration/129600/clientinfo/website/?lang=en&amp;url=https%3A%2F%2Fwiki.geogebra.org%2Fen%2FReference%3AGeoGebra_Installation" class="button">Sign in</a>
+                    </div>
+                
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+        <!-- GEOGEBRA NAVIGATION BAR END -->
+		
+			
+			<div class="ggbPageContent">
+			
+    <div id="searchbar">
+        <div id="p-search">
+            <!--<h5><label for="searchInput"></label></h5>-->
+            <form action="/s/en/index.php" id="searchform">
+                <input type='hidden' name="title" value="Special:Search"/>
+                <div id="simpleSearch" class="form-line input-button"> 	
+                    <input id="searchInput" name="search" type="text" 
+                         value="" />
+                    <button id="searchButton" type='submit' name='button'
+                        >Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div id="toolbox">
+            <div class="portlet">
+
+        <ul class="nomargin">
+            <li><img src="/skins//GeoGebra/images/tools.png" title="Tools" style="vertical-align: middle;"/></li>
+            <li id="ca-nstab-reference" class="selected"><a href="/en/Reference:GeoGebra_Installation">Reference</a></li><li id="ca-talk" class="new"><a href="/s/en/index.php?title=Reference_talk:GeoGebra_Installation&amp;action=edit&amp;redlink=1">Discussion</a></li><li id="ca-viewsource"><a href="/s/en/index.php?title=Reference:GeoGebra_Installation&amp;action=edit">View source</a></li><li id="ca-history"><a href="/s/en/index.php?title=Reference:GeoGebra_Installation&amp;action=history">History</a></li>
+            
+                                <li><span class="wb-langlinks-edit wb-langlinks-link"><a href="//wiki.geogebra.org/data/Q1557#sitelinks-gg" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></li>
+                
+                <li id="t-whatlinkshere"><a href="/en/Special:WhatLinksHere/Reference:GeoGebra_Installation">What links here</a></li>
+
+                                    <li id="t-recentchangeslinked"><a href="/en/Special:RecentChangesLinked/Reference:GeoGebra_Installation"
+                        >Related changes</a></li>
+                            
+            
+            
+                                                                                            <li id="t-specialpages"><a href="/en/Special:SpecialPages"
+                        >Special pages</a></li>
+                            
+            
+                            <li id="t-permalink"><a href="/s/en/index.php?title=Reference:GeoGebra_Installation&amp;oldid=58864"
+                    >Permanent link</a></li>
+            
+            
+        </ul>
+    </div>    </div>
+	    <div id="content-container">
+        <div id="content">
+
+            <a name="top" id="top"></a>
+            			<h1 id="firstHeading" class="firstHeading" lang="en">Reference:GeoGebra Installation<a onclick="$('#toolbox').toggle('slow')">
+                    <img src="/skins//GeoGebra/images/tools.png" title="Tools" />
+                </a></h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From GeoGebra Manual</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="infobox-wrapper">
+<div class="infobox tool">
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#GeoGebra_Installation"><span class="tocnumber">1</span> <span class="toctext">GeoGebra Installation</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#GeoGebra_Scientific_Calculator"><span class="tocnumber">2</span> <span class="toctext">GeoGebra Scientific Calculator</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#GeoGebra_Graphing_Calculator"><span class="tocnumber">3</span> <span class="toctext">GeoGebra Graphing Calculator</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#GeoGebra_Geometry"><span class="tocnumber">4</span> <span class="toctext">GeoGebra Geometry</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#GeoGebra_CAS_Calculator"><span class="tocnumber">5</span> <span class="toctext">GeoGebra CAS Calculator</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#GeoGebra_3D_Graphing_Calculator"><span class="tocnumber">6</span> <span class="toctext">GeoGebra 3D Graphing Calculator</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#GeoGebra_Augmented_Reality"><span class="tocnumber">7</span> <span class="toctext">GeoGebra Augmented Reality</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#GeoGebra_Classic_6"><span class="tocnumber">8</span> <span class="toctext">GeoGebra Classic 6</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Windows"><span class="tocnumber">8.1</span> <span class="toctext">Windows</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Mac"><span class="tocnumber">8.2</span> <span class="toctext">Mac</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Other_GeoGebra_Classic_6_versions"><span class="tocnumber">8.3</span> <span class="toctext">Other GeoGebra Classic 6 versions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#GeoGebra_in_Exams"><span class="tocnumber">9</span> <span class="toctext">GeoGebra in Exams</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Exam_Stick"><span class="tocnumber">9.1</span> <span class="toctext">Exam Stick</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#GeoGebra_Classic_5_for_Desktop"><span class="tocnumber">10</span> <span class="toctext">GeoGebra Classic 5 for Desktop</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Supported_devices_and_Troubleshooting"><span class="tocnumber">11</span> <span class="toctext">Supported devices and Troubleshooting</span></a></li>
+</ul>
+</div>
+
+<h3><span class="mw-headline" id="GeoGebra_Installation">GeoGebra Installation</span></h3>
+<ul><li> <strong class="selflink">Installation</strong></li>
+<li> <a href="/en/Reference:GeoGebra_Mass_Installation" title="Reference:GeoGebra Mass Installation">Mass Installation</a></li>
+<li> <a href="/en/Reference:GeoGebra_Installation_FAQ" title="Reference:GeoGebra Installation FAQ">FAQ</a></li></ul>
+</div>
+</div>
+<table class="metadata plainlinks mbox" style="">
+<tr>
+<td class="mbox-image"><div style="width: 52px;">
+  <img alt="" src="/uploads/c/c8/Ambox_notice.png" width="40" height="40" /></div></td>
+<td class="mbox-text" style=""> Please note that all our installers are subject to the <a rel="nofollow" class="external text" href="https://www.geogebra.org/license">GeoGebra non-commercial license</a>. If you plan to install GeoGebra on multiple devices you may be interested in <a href="/en/Reference:GeoGebra_Mass_Installation" title="Reference:GeoGebra Mass Installation">GeoGebra Mass Installation</a> </td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="GeoGebra_Scientific_Calculator">GeoGebra Scientific Calculator</span></h2>
+<ul><li> Android Phones &amp; Tablets: <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.geogebra.android.scicalc">GeoGebra Scientific Calculator on Google Play Store</a> </li>
+<li> iPhone &amp; iPad: <a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/geogebra-scientific-calculator/id1412748754">GeoGebra Scientific Calculator on App Store</a></li></ul>
+<h2><span class="mw-headline" id="GeoGebra_Graphing_Calculator">GeoGebra Graphing Calculator</span></h2>
+<ul><li> Android Phones &amp; Tablets: <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.geogebra.android">GeoGebra Graphing Calculator on Google Play Store</a> (recommended), <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/android-graphing">APK</a></li>
+<li> iPhone &amp; iPad: <a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/geogebra-graphing-calculator/id1146717204">GeoGebra Graphing Calculator on App Store</a></li>
+<li> Windows desktop: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/windows-graphing">GeoGebra Graphing Offline Installer</a> &#8211; updates automatically</li>
+<li> Windows tablets: <a rel="nofollow" class="external text" href="https://www.microsoft.com/store/p/geogebra-graphing-calculator/9p10r1c4t6m0">GeoGebra Graphing Calculator on Windows Store</a></li>
+<li> Mac Store: <a rel="nofollow" class="external text" href="https://itunes.apple.com/app/geogebra-graphing-calculator/id1294018688">GeoGebra Graphing Calculator in the Mac App Store</a> (recommended, updates automatically)</li>
+<li> Mac Portable: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/mac-graphing">GeoGebra Graphing Calculator for OSX 10.9 or later</a></li>
+<li> Chromebooks: <a rel="nofollow" class="external text" href="https://chrome.google.com/webstore/detail/geogebra-graphing-calcula/ajijpokmmljpgdacmnejdjkbjjpjjekj">GeoGebra Graphing Calculator for Chrome</a></li></ul>
+<h2><span class="mw-headline" id="GeoGebra_Geometry">GeoGebra Geometry</span></h2>
+<ul><li> Android Phones &amp; Tablets: <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.geogebra.android.geometry">GeoGebra Geometry on Google Play Store</a> (recommended), <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/android-geometry">APK</a></li>
+<li> iPhone &amp; iPad: <a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/geogebra-geometry-calculator/id1232591335">GeoGebra Geometry on App Store</a></li>
+<li> Windows desktop: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/windows-geometry">GeoGebra Geometry Offline Installer</a> &#8211; updates automatically</li>
+<li> Windows tablets: <a rel="nofollow" class="external text" href="https://www.microsoft.com/store/p/geogebra-geometry/9pd1rdsvh6ql">GeoGebra Geometry on Windows Store</a></li>
+<li> Mac Store: <a rel="nofollow" class="external text" href="https://itunes.apple.com/app/geogebra-graphing-calculator/id1294020062">GeoGebra Geometry in the Mac App Store</a> (recommended, updates automatically)</li>
+<li> Mac Portable: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/mac-geometry">GeoGebra Geometry for OSX 10.9 or later</a></li>
+<li> Chromebooks: <a rel="nofollow" class="external text" href="https://chrome.google.com/webstore/detail/geogebra-geometry/hokbjblijjdkihbodaabbgabhockefhj">GeoGebra Geometry for Chrome</a></li></ul>
+<h2><span class="mw-headline" id="GeoGebra_CAS_Calculator">GeoGebra CAS Calculator</span></h2>
+<ul><li> Android Phones &amp; Tablets: <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.geogebra.android.cascalc">GeoGebra CAS Calculator on Google Play Store</a></li>
+<li> iPhone &amp; iPad: <a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/geogebra-cas-calculator/id1436278267">GeoGebra CAS Calculator on App Store</a></li></ul>
+<h2><span class="mw-headline" id="GeoGebra_3D_Graphing_Calculator">GeoGebra 3D Graphing Calculator</span></h2>
+<ul><li> Android Phones &amp; Tablets: <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.geogebra.android.g3d">GeoGebra 3D Grapher on Google Play Store</a> (recommended), <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/android-3dgrapher">APK</a> </li>
+<li> iPhone &amp; iPad: <a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/geogebra-3d-graphing-calc/id1445871976">GeoGebra 3D Graphing Calculator on App Store</a></li></ul>
+<h2><span class="mw-headline" id="GeoGebra_Augmented_Reality">GeoGebra Augmented Reality</span></h2>
+<ul><li> iPhone and iPad: <a rel="nofollow" class="external text" href="https://itunes.apple.com/app/geogebra-augmented-reality/id1276964610">GeoGebra AR on App Store</a> (Requires iPhone 6s+, iPad Pro or iPad 5th generation, minimal iOS version is 11.)</li></ul>
+<h2><span class="mw-headline" id="GeoGebra_Classic_6">GeoGebra Classic 6</span></h2>
+<p>The following offline versions of GeoGebra Classic 6 are available for tablets, laptops and desktops and include the same user interface as <a rel="nofollow" class="external text" href="https://www.geogebra.org/classic">www.geogebra.org/classic</a>. This version includes: Graphing, CAS, Geometry, 3D Graphing, Spreadsheet, Probability Calculator and Exam mode.
+</p>
+<h4><span class="mw-headline" id="Windows">Windows</span></h4>
+<ul><li> <b><a rel="nofollow" class="external text" href="https://download.geogebra.org/package/win-autoupdate">GeoGebra Classic 6 Installer for Windows</a></b> (offline installer file, recommended for all Windows versions, updates automatically)</li>
+<li> <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/win-port6">GeoGebra Classic 6 Portable for Windows</a> (runs from USB memory sticks for example, does NOT update automatically)</li>
+<li> <a rel="nofollow" class="external text" href="https://www.microsoft.com/store/p/geogebra/9wzdncrfj48n">GeoGebra Classic 6 in the Windows Store</a> (for Windows 8 tablets, updates automatically)</li></ul>
+<h4><span class="mw-headline" id="Mac">Mac</span></h4>
+<ul><li> <b><a rel="nofollow" class="external text" href="https://itunes.apple.com/us/app/geogebra-math-apps/id1182481622">GeoGebra Classic 6 in the Mac App Store</a></b></li>
+<li> <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/mac-port">GeoGebra Classic 6 Portable for Mac</a> (runs from USB memory sticks for example, does NOT update automatically)</li>
+<li> On older Macs (before OS 10.9), please use <a rel="nofollow" class="external text" href="https://www.geogebra.org/classic">www.geogebra.org/classic</a> or <a href="/en/Reference:GeoGebra_Installation#GeoGebra_Classic_5_for_Desktop" title="Reference:GeoGebra Installation">GeoGebra Classic 5</a></li></ul>
+<h4><span class="mw-headline" id="Other_GeoGebra_Classic_6_versions">Other GeoGebra Classic 6 versions</span></h4>
+<ul><li> iPad: <a rel="nofollow" class="external text" href="https://itunes.apple.com/gb/app/geogebra/id687678494?mt=8">GeoGebra Classic in the App Store</a></li>
+<li> Android Tablets: <a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.geogebra">GeoGebra Classic in Google Play</a></li>
+<li> Chrome Store: <a rel="nofollow" class="external text" href="https://chrome.google.com/webstore/detail/geogebra/bnbaboaihhkjoaolfnfoablhllahjnee">GeoGebra Classic (with Exam Mode) in the Chrome Web Store</a></li>
+<li> Linux (deb): <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/deb.php?arch=amd64&amp;ver=6">64 bit</a> / <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/deb.php?arch=i386&amp;ver=6">32 bit</a> installers for <b>.deb</b> based systems (Mint ≥ 18, Debian ≥ 8, Ubuntu ≥ 14.10)</li>
+<li> Linux (rpm): <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/rpm.php?arch=amd64&amp;ver=6">64 bit</a> / <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/rpm.php?arch=i386&amp;ver=6">32 bit</a> installers for <b>.rpm</b> based systems (openSUSE ≥ 42.1, Fedora ≥ 22, Mageia ≥ 5)</li>
+<li> Linux Portable: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/linux-port6">64 bit</a>, <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/linux-port6-32">32 bit</a> (runs from USB memory sticks for example)</li>
+<li> Raspberry Pi 3: <a rel="nofollow" class="external text" href="https://archive.raspberrypi.org/debian/pool/main/g/geogebra-classic/">Raspbian jessie/stretch</a></li></ul>
+<div class="block-note"><span class="block-contents"> <b>Note:</b> <div>
+<dl><dd><ul><li>Ad Linux: the .deb and .rpm installers will automatically add the official GeoGebra repository to the package management system on the workstation. This will enable automatic update of GeoGebra every time a new version is released. If you want to include GeoGebra in your custom Linux distribution with GeoGebra included, the best way is to add the official GeoGebra repository (<a rel="nofollow" class="external free" href="http://www.geogebra.net/linux/">http://www.geogebra.net/linux/</a>) to your package management system. The GPG key of the repository is at <a rel="nofollow" class="external free" href="https://static.geogebra.org/linux/office@geogebra.org.gpg.key">https://static.geogebra.org/linux/office@geogebra.org.gpg.key</a> - the name of the package is <b>geogebra-classic</b>.</li>
+<li> Installing GeoGebra directly from the command line: for Ubuntu, these two commands eliminate the need for downloading .deb files:</li></ul></dd></dl>
+<pre>
+   $ sudo apt-add-repository -u 'deb http://www.geogebra.net/linux/ stable main' 
+   $ sudo apt install geogebra-classic </pre>
+</div></span></div>
+<h2><span class="mw-headline" id="GeoGebra_in_Exams">GeoGebra in Exams</span></h2>
+<p>Several of our GeoGebra apps already include a special exam mode in the main menu. If you have questions or suggestions regarding GeoGebra in exams please write us at support@geogebra.org
+</p>
+<h4><span class="mw-headline" id="Exam_Stick">Exam Stick</span></h4>
+<p>The <a rel="nofollow" class="external text" href="https://download.geogebra.org/geogebrastick">GeoGebra Exam Stick</a> is an exam environment which is based on an own operating system running on a USB stick. It allows you to make sure that no Internet and no file access is possible on a Windows or Mac laptop for high-stakes exams. Please see our tutorial <a rel="nofollow" class="external text" href="https://download.geogebra.org/geogebrastick/GeoGebraExamStick.pdf">how to create an exam stick</a>. The exam stick uses <a rel="nofollow" class="external text" href="https://magicermine.com/">Ermine</a> to provide portable GeoGebra Classic.
+</p>
+<h2><span class="mw-headline" id="GeoGebra_Classic_5_for_Desktop">GeoGebra Classic 5 for Desktop</span></h2>
+<p>The good old GeoGebra 5 desktop application with its classic user interface.
+</p>
+<ul><li> Windows Installer: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/win">GeoGebra Classic 5 Installer for Windows</a> (recommended, updates automatically)</li>
+<li> Windows Portable: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/win-port">GeoGebra Classic 5 Portable for Windows</a> (runs from USB memory sticks for example)</li>
+<li> Mac Portable: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/mac">GeoGebra Classic 5 Portable for OSX 10.8 or later</a> (<b>doesn't automatically update</b>)</li>
+<li> Mac Portable (OSX 10.7 or below): <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/mac-old">GeoGebra Classic 5 Portable for OSX 10.6 and 10.7</a>. </li>
+<li> Linux (deb): <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/deb.php?arch=amd64">64 bit</a> / <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/deb.php?arch=i386">32 bit</a> installers for <b>.deb</b> based systems (Debian, Mint, Ubuntu)</li>
+<li> Linux (rpm): <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/rpm.php?arch=amd64">64 bit</a> / <a rel="nofollow" class="external text" href="https://www.geogebra.org/download/rpm.php?arch=i386">32 bit</a> installers for <b>.rpm</b> based systems (Red Hat, Fedora, openSUSE)</li>
+<li> Linux Portable: <a rel="nofollow" class="external text" href="https://download.geogebra.org/package/linux-port">Portable Linux</a> bundle for 64 and 32 bit Linux systems </li></ul>
+<p>Ad Linux: the .deb and .rpm installers will automatically add the official GeoGebra repository to the package management system on the workstation. This will enable automatic update of GeoGebra every time a new version is released. Note that the portable version will not automatically update. If you want to include GeoGebra in your custom Linux distribution with GeoGebra included, the best way is to add the official GeoGebra repository (<a rel="nofollow" class="external free" href="http://www.geogebra.net/linux/">http://www.geogebra.net/linux/</a>) to your package management system. The GPG key of the repository is at <a rel="nofollow" class="external free" href="https://static.geogebra.org/linux/office@geogebra.org.gpg.key">https://static.geogebra.org/linux/office@geogebra.org.gpg.key</a> - the name of the package is <b>geogebra5</b>. This will conflict with the earlier versions (4.0, 4.2 and 4.4), which are named <b>geogebra</b> (and <b>geogebra44</b> for 4.4) and should be deleted first.
+</p>
+<h2><span class="mw-headline" id="Supported_devices_and_Troubleshooting">Supported devices and Troubleshooting</span></h2>
+<p>Please check the <a rel="nofollow" class="external text" href="https://wiki.geogebra.org/en/Reference:Supported_Devices">Supported devices</a> page for further information about running GeoGebra on different devices, have a look at <a rel="nofollow" class="external text" href="https://wiki.geogebra.org/en/Reference:GeoGebra_Installation_FAQ">the FAQ</a> for more information and visit <a rel="nofollow" class="external text" href="https://help.geogebra.org/">the forum</a> for support.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20191129200056
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.132 seconds
+Real time usage: 0.157 seconds
+Preprocessor visited node count: 176/1000000
+Preprocessor generated node count: 903/1000000
+Post‐expand include size: 3657/2097152 bytes
+Template argument size: 2862/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   67.768      1 - -total
+ 65.76%   44.562      1 - Template:Mbox
+ 38.76%   26.268      1 - Template:Mbox/core
+ 15.51%   10.510      1 - Template:Note
+ 14.96%   10.137      1 - Template:Installation_Guide
+-->
+</div>									<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="http://wiki.geogebra.org/s/en/index.php?title=Reference:GeoGebra_Installation&amp;oldid=58864">http://wiki.geogebra.org/s/en/index.php?title=Reference:GeoGebra_Installation&amp;oldid=58864</a>"					</div>
+												
+									<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/en/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/en/Category:Installation" title="Category:Installation">Installation</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		
+		<div id="footer" role="contentinfo">
+			
+			
+				
+						<div style="clear:both"></div>
+		</div>
+		</div>
+		</div>
+		    <div id="ggbFooterPlaceholder"></div>
+
+</div>
+<!-- MAIN PAGE END -->
+<!-- GGB FOOTER -->
+<div id="ggbFooter">
+    <div id="ggbFooterTop">
+        <div id="ggbFooterTopContent">
+            <ul id="ggbFooterMenu">
+                
+            <li>
+                <a href='https://www.geogebra.org/about' >
+                                            GeoGebra                                    </a>
+
+                                    <ul>
+                                                    
+            <li>
+                <a href='https://www.geogebra.org/about' >
+                                            About                                    </a>
+
+                            </li>
+                                                            
+            <li>
+                <a href='https://www.geogebra.org/team' >
+                                            Team                                    </a>
+
+                            </li>
+                                                            
+            <li>
+                <a href='https://community.geogebra.org/en' >
+                                            Blog                                    </a>
+
+                            </li>
+                                                    </ul>
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/help/' >
+                                            Help                                    </a>
+
+                                    <ul>
+                                                    
+            <li>
+                <a href='https://wiki.geogebra.org/en/Tutorials' >
+                                            Tutorials                                    </a>
+
+                            </li>
+                                                            
+            <li>
+                <a href='https://www.geogebra.org/help/' >
+                                            Forum                                    </a>
+
+                            </li>
+                                                            
+            <li>
+                <a href='https://wiki.geogebra.org/en/Manual' >
+                                            Manual                                    </a>
+
+                            </li>
+                                                    </ul>
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/partners' >
+                                            Partners                                    </a>
+
+                                    <ul>
+                                                    
+            <li>
+                <a href='https://www.geogebra.org/partners' >
+                                            Partners                                    </a>
+
+                            </li>
+                                                            
+            <li>
+                <a href='https://www.geogebra.org/institutes' >
+                                            Institutes                                    </a>
+
+                            </li>
+                                                            
+            <li>
+                <a href='https://www.geogebra.org/get-involved' >
+                                            Get Involved                                    </a>
+
+                            </li>
+                                                    </ul>
+                            </li>
+                        <li>
+                    Contact us                    <ul>
+                        <li><a href="https://www.geogebra.org/help/">Feedback & Questions</a></li>
+                        <li>
+                            <script language='JavaScript' type='text/javascript'>
+                                //<![CDATA[
+                                var prefix = 'm&#97;&#105;lt&#111;:';
+                                var suffix = '';
+                                var attribs = '';
+                                var path = 'hr' + 'ef' + '=';
+                                var addy67965 = '&#111;ff&#105;c&#101;' + '&#64;';
+                                addy67965 = addy67965 + 'g&#101;&#111;g&#101;br&#97;' + '&#46;' + '&#111;rg';
+                                document.write( '<a ' + path + '\'' + prefix + addy67965 + suffix + '\'' + attribs + ' target="_blank">' );
+                                document.write( addy67965 );
+                                document.write( '<\/a>' );
+                                //]]>
+                            </script>
+                            <span id="ws_email_prtctd">This email address is being protected from spambots. You need JavaScript enabled to view it.</span>
+                            <script language='JavaScript' type='text/javascript'>
+                                document.getElementById("ws_email_prtctd").style.display = "none";
+                            </script>
+                        </li>
+                        <li><a href="tel:+4367761372693">+43 677 6137&thinsp;2693</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div id="ggbFooterOptions">
+                <div id="ggbFollowUs">
+                    <a href="https://www.facebook.com/geogebra" rel="publisher" target="_blank" style="text-decoration:none;">
+                        <img src="https://cdn.geogebra.org/static/img/facebook_logo.png?v=1541505561" alt="Facebook"/>
+                    </a>
+                    <a href="https://twitter.com/geogebra" rel="publisher" target="_blank" style="text-decoration:none;">
+                        <img src="https://cdn.geogebra.org/static/img/twitter_logo.png?v=1541505561" alt="Twitter"/>
+                    </a>
+                    <a href="https://plus.google.com/113423679416838996129" rel="publisher" target="_blank" style="text-decoration:none;">
+                        <img src="https://cdn.geogebra.org/static/img/gplus_logo.png?v=1541505561" alt="Google+" style="border:0; width:30px; height:30px;"/>
+                    </a>
+                    <a href="https://www.youtube.com/user/GeoGebraChannel" rel="publisher" target="_blank" style="text-decoration:none;">
+                        <img src="https://cdn.geogebra.org/static/img/YouTube_logo_square.png?v=1541505561" alt="YouTube"/>
+                    </a>
+                </div>
+                                <form method="get">
+                    <select onchange="document.location.assign(this.value);" name="lang">
+                                            <option value="#" selected>English</option>
+                                            <option value="https://wiki.geogebra.org/fr/R%C3%A9f%C3%A9rence:Installation_GeoGebra">French / Français‎</option>
+                                            <option value="https://wiki.geogebra.org/it/Riferimenti:Installazione_di_GeoGebra">Italian / Italiano‎</option>
+                                            <option value="https://wiki.geogebra.org/es/Referencia:Instalaci%C3%B3n_de_GeoGebra">Spanish (Spain) / Español (España)‎</option>
+                                        </select>
+                    <noscript>
+                        <input type="submit" value="go" />
+                    </noscript>
+                </form>
+                            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="ggbFooterBottom">
+        <div id="ggbFooterBottomContent">
+            <ul>
+                
+            <li>
+                <a href='https://www.geogebra.org/tos' >
+                                            Terms of Service                                    </a>
+
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/privacy' >
+                                            Privacy                                    </a>
+
+                            </li>
+        
+            <li>
+                <a href='https://www.geogebra.org/license' >
+                                            License                                    </a>
+
+                            </li>
+                    </ul>
+            &copy; 2019 International GeoGebra Institute
+        </div>
+    </div>
+</div>
+<!-- GGB FOOTER END -->
+		<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1780044-1']);
+    _gaq.push(['_setDomainName', 'wiki.geogebra.org']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","ext.visualEditor.targetLoader"]);});</script>
+<script type='text/javascript' src='//wiki.geogebra.org/extensions/MathQuill/mathquillggb.js'></script>
+<script type='text/javascript'>WebFontConfig = {
+            loading: function() {},
+            active: function() {},
+            inactive: function() {},
+            fontloading: function(familyName, fvd) {},
+            fontactive: function(familyName, fvd) {},
+            fontinactive: function(familyName, fvd) {},
+            custom: {
+                families: ["geogebra-serif", "geogebra-sans-serif" ],
+                urls: [ "//web.geogebra.org/5.0/web3d/css/fonts.css?v=1.15" ]
+            }
+        };</script>
+
+<script src="//web.geogebra.org/5.0/web3d/js/webfont.js?v=1.15"></script>
+<link rel="stylesheet" href='//wiki.geogebra.org/extensions/MathQuill/mathquillggb.css'/><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":651});});</script>
+	</body>
+</html>
