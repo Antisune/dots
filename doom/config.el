@@ -4,7 +4,7 @@
 
 (setq doom-theme 'doom-gruvbox)
 
-(setq doom-font (font-spec :family "Iosevka Term SS05" :size 10 :weight 'medium))
+(setq doom-font (font-spec :family "Iosevka Term SS05" :size 11 :weight 'medium))
 
 (setq org-agenda-format-date (lambda (date) (concat "\n"
                                                     (make-string (window-width) 9472)
